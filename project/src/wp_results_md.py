@@ -121,6 +121,8 @@ def main() -> int:
         f"b = 0, {b3row.feasibility_escapes} at b = 3, none at b = 5 or wider. A narrow",
         "band is the one that strains against availability, not a wide one.", "",
         "## 5. Where the gain lives (`wpa_stations.csv`)", "",
+        "![frontier](wpa_frontier_real.png)", "",
+        "![stations](wpa_station_real.png)", "",
         "| station | units | shift factor | observed r | effectiveness r | observed cut, MWh |",
         "|---|---|---|---|---|---|",
     ]

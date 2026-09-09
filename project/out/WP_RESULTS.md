@@ -94,6 +94,10 @@ band is the one that strains against availability, not a wide one.
 
 ## 5. Where the gain lives (`wpa_stations.csv`)
 
+![frontier](wpa_frontier_real.png)
+
+![stations](wpa_station_real.png)
+
 | station | units | shift factor | observed r | effectiveness r | observed cut, MWh |
 |---|---|---|---|---|---|
 | CUNGHILL | 1 | 0.2947 | 0.0698 | 0.2863 | 271.0 |
