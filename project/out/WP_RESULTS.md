@@ -123,7 +123,36 @@ The team does not choose the weights. This is the transfer function:
 
 Rows are shown where the winner changes. Full sweep in the CSV.
 
-## 7. Limits of this section
+## 7. Can the control room run it? (`wpc_burden.csv`)
+
+Merriman's objection is that per-farm dispatch inside a group is too
+slow without automation. The implementable form keeps **one operator
+action per event**: the group is pre-split into k sub-groups and the
+eligible list is refreshed on a slow cadence, not solved in the hour.
+
+Gain retained against the ideal effectiveness ordering, %:
+
+| partition | k | hour | day | week | month |
+|---|---|---|---|---|---|
+| tiers | 2 | 43.7 | 44.4 | 43.9 | 39.5 |
+| tiers | 3 | 18.4 | 15.5 | 12.8 | 38.8 |
+| tiers | 4 | 11.2 | 24.5 | 30.2 | 54.1 |
+| interleaved | 2 | 53.2 | 54.1 | 55.7 | 49.6 |
+| interleaved | 3 | 42.2 | 43.7 | 37.7 | 41.9 |
+| interleaved | 4 | 48.4 | 48.5 | 43.2 | 59.3 |
+
+C5 as the brief states it - k <= 3, daily cadence, at least 50 % of the
+ideal gain retained - is **falsified**: k = 2 retains 54.1 %,
+k = 3 retains 43.7 %. Reported as failed rather
+than softened.
+
+The first-order choice is the partition, not k. Contiguous shift-factor
+tiers perform badly because the least-burdened tier is almost always the
+low-SF one, so equity-driven rotation picks the least effective units.
+An interleaved split gives every sub-group a similar spread and roughly
+triples retained gain at k = 3.
+
+## 8. Limits of this section
 
 - One summer, 88 days, one constraint group. Not a year.
 - Shift factors come from the 2024 TYTFS network and are applied to 2026

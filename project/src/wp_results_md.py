@@ -24,6 +24,9 @@ def main() -> int:
     asrt = pd.read_csv(OUT / "wpa_assertions.csv")
     stations = pd.read_csv(OUT / "wpa_stations.csv")
     sens = pd.read_csv(OUT / "wpg_weight_sensitivity.csv")
+    wpc = pd.read_csv(OUT / "wpc_burden.csv") if (OUT / "wpc_burden.csv").exists() else None
+    wpcs = (json.loads((OUT / "wpc_summary.json").read_text(encoding="utf-8"))
+            if (OUT / "wpc_summary.json").exists() else None)
 
     w0, w1 = wpa["window"]
     days = (pd.Timestamp(w1) - pd.Timestamp(w0)).total_seconds() / 86400.0
@@ -140,10 +143,42 @@ def main() -> int:
             L.append(f"| {r.weight_on_spill:.2f} | {r.winner_by_realised_equity} | "
                      f"{r.winner_by_guaranteed_bound} |")
             prev = key
+    L += ["", "Rows are shown where the winner changes. Full sweep in the CSV.", ""]
+
+    if wpc is not None and wpcs is not None:
+        L += [
+            "## 7. Can the control room run it? (`wpc_burden.csv`)", "",
+            "Merriman's objection is that per-farm dispatch inside a group is too",
+            "slow without automation. The implementable form keeps **one operator",
+            "action per event**: the group is pre-split into k sub-groups and the",
+            "eligible list is refreshed on a slow cadence, not solved in the hour.", "",
+            "Gain retained against the ideal effectiveness ordering, %:", "",
+            "| partition | k | hour | day | week | month |",
+            "|---|---|---|---|---|---|",
+        ]
+        for pn in wpc.partition.unique():
+            for k in sorted(wpc[wpc.partition == pn].k.unique()):
+                d = wpc[(wpc.partition == pn) & (wpc.k == k)].set_index("cadence")
+                L.append(f"| {pn} | {k} | " + " | ".join(
+                    f"{d.loc[c, 'gain_retained_pct']:.1f}" if c in d.index else "-"
+                    for c in ("hour", "day", "week", "month")) + " |")
+        c5 = "holds" if wpcs["C5_holds"] else "**falsified**"
+        vals = wpcs["C5_values_pct"]
+        L += [
+            "",
+            f"C5 as the brief states it - k <= 3, daily cadence, at least 50 % of the",
+            f"ideal gain retained - is {c5}: k = 2 retains {vals.get('2', float('nan')):.1f} %,",
+            f"k = 3 retains {vals.get('3', float('nan')):.1f} %. Reported as failed rather",
+            "than softened.", "",
+            "The first-order choice is the partition, not k. Contiguous shift-factor",
+            "tiers perform badly because the least-burdened tier is almost always the",
+            "low-SF one, so equity-driven rotation picks the least effective units.",
+            "An interleaved split gives every sub-group a similar spread and roughly",
+            "triples retained gain at k = 3.", "",
+        ]
+
     L += [
-        "",
-        "Rows are shown where the winner changes. Full sweep in the CSV.", "",
-        "## 7. Limits of this section", "",
+        "## 8. Limits of this section", "",
         f"- One summer, {days:.0f} days, one constraint group. Not a year.",
         "- Shift factors come from the 2024 TYTFS network and are applied to 2026",
         "  operation; the fleet has changed since.",
