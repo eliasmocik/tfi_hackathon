@@ -14,22 +14,23 @@ permitted and are used where the network itself is needed.
 | # | check | status |
 |---|---|---|
 | 1 | LODF for the monitored rows, re-derived and checked against pypsa calculate_BODF | done - `v01_lodf.md` |
-| 2 | F and O recomputed from raw flows for 50 random hours | done - `v02_flows.md` |
-| 3 | Sum SF*c >= O and c <= p0 for each rule over 200 random overload hours | done - `v03_relief.md` |
-| 4 | Per-hour ordering of total cut, and band-inf == rule 2 | done - `v04_ordering.md` |
+| 2 | F and O recomputed from raw flows for 50 random hours | done - `v02_flows_WP2024s42.md`, `v02_flows_WP2033s42.md` |
+| 3 | Sum SF*c >= O and c <= p0 for each rule over 200 random overload hours | done - `v03_relief_WP2024s42.md`, `v03_relief_WP2033s42.md` |
+| 4 | Per-hour ordering of total cut, and band-inf == rule 2 | done - `v04_ordering_WP2024s42.md`, `v04_ordering_WP2033s42.md` |
 | 5 | Jain, Gini, D and the ratios recomputed from farm_r.csv | done - `v05_metrics.md` |
 | 6 | Measurement recomputed from the raw BM files with independent code | done - `v06_measurement.md` |
 | 7 | Every WDT quotation found verbatim; group station lists checked | done - `v07_quotes.md` |
 | 8 | Priority classification checked against eirgrid_gss1_res_units.csv | done - `v08_priority.md` |
 | 9 | Sanity: cut MWh vs overload MWh, tie link at cap, load shedding | done - `v09_sanity.md` |
 | 10 | Every discrepancy with its size, and which RESULTS.md numbers it affects | see section below |
-| 11 | The band rule re-implemented from MASTER section 4 and compared with cuts_band3.parquet (the HANDOFF's most valuable check) | done - `v11_band_rule.md` |
-| 12 | The same re-implementation at b = infinity - the control that isolates path dependence | done - `v11_band_inf.md` |
+| 11 | The band rule re-implemented from MASTER section 4 and compared with cuts_band3.parquet (the HANDOFF's most valuable check) | done - `v11_band_rule_WP2024s42.md`, `v11_band_rule_WP2033s42.md` |
+| 12 | The same re-implementation at b = infinity - the control that isolates path dependence | done - `v11_band_inf_WP2024s42.md`, `v11_band_inf_WP2033s42.md` |
 
 ## Findings by check
 
 ### 1. LODF for the monitored rows, re-derived and checked against pypsa calculate_BODF
 
+**v01_lodf**
 - re-derived denominator: **0.224264205328567**
 - denominator in `WP2024s42_lodf.csv`: **0.224264205328388** (difference 1.795e-13)
 - worst |re-derived - saved|: **6.914e-13**
@@ -38,33 +39,52 @@ Full report: [`v01_lodf.md`](v01_lodf.md).
 
 ### 2. F and O recomputed from raw flows for 50 random hours
 
+**v02_flows_WP2024s42**
 - `FLG_SLIGO_N1`: 50 hours, worst |O - max(|F| - rating, 0)| = **7.105e-15**
 - `T25221_N1`: 50 hours, worst |O - max(|F| - rating, 0)| = **0.000e+00**
 - `T25222_N1`: 50 hours, worst |O - max(|F| - rating, 0)| = **0.000e+00**
 - `FLG_SLIGO_N0`: 50 hours, worst |O - max(|F| - rating, 0)| = **0.000e+00**
 - comparisons: **200**
 - mismatches: **0**
+**v02_flows_WP2033s42**
+- `FLG_SLIGO_N1`: 50 hours, worst |O - max(|F| - rating, 0)| = **1.427e-14**
+- `T25221_N1`: 50 hours, worst |O - max(|F| - rating, 0)| = **0.000e+00**
+- `T25222_N1`: 50 hours, worst |O - max(|F| - rating, 0)| = **0.000e+00**
+- `FLG_SLIGO_N0`: 50 hours, worst |O - max(|F| - rating, 0)| = **0.000e+00**
+- comparisons: **200**
+- mismatches: **0**
 
-Full report: [`v02_flows.md`](v02_flows.md).
+Full report: [`v02_flows`](v02_flows).
 
 ### 3. Sum SF*c >= O and c <= p0 for each rule over 200 random overload hours
 
+**v03_relief_WP2024s42**
 - hour-rule-row samples checked: **2244**
 - samples where relief fell short of the overload by more than 1e-4: **0**
 - worst shortfall: **1.421e-14 MW**
+**v03_relief_WP2033s42**
+- hour-rule-row samples checked: **6666**
+- samples where relief fell short of the overload by more than 1e-4: **0**
+- worst shortfall: **2.842e-14 MW**
 
-Full report: [`v03_relief.md`](v03_relief.md).
+Full report: [`v03_relief`](v03_relief).
 
 ### 4. Per-hour ordering of total cut, and band-inf == rule 2
 
+**v04_ordering_WP2024s42**
 - hours with sum c(rule3) > sum c(rule2) + 1e-6: **0** (worst 1.137e-13)
 - hours with sum c(rule2) > sum c(rule1) + 1e-6: **0** (worst 0.000e+00)
 - max |band-inf - rule2| element-wise: **0.000e+00**
+**v04_ordering_WP2033s42**
+- hours with sum c(rule3) > sum c(rule2) + 1e-6: **0** (worst 1.904e-12)
+- hours with sum c(rule2) > sum c(rule1) + 1e-6: **0** (worst 0.000e+00)
+- max |band-inf - rule2| element-wise: **0.000e+00**
 
-Full report: [`v04_ordering.md`](v04_ordering.md).
+Full report: [`v04_ordering`](v04_ordering).
 
 ### 5. Jain, Gini, D and the ratios recomputed from farm_r.csv
 
+**v05_metrics**
 - comparisons: **363**
 - mismatches: **0**
 - worst relative deviation: **2.113e-13**
@@ -73,34 +93,45 @@ Full report: [`v05_metrics.md`](v05_metrics.md).
 
 ### 6. Measurement recomputed from the raw BM files with independent code
 
+**v06_measurement**
 **48 fewer half-hours** per unit than the committed measurement
 - **committed** — `out/measurement_units.csv` as published (Elias's pull).
 - **pipeline_fresh_pull** — `src/measurement.py` re-run on a fresh 2026-09-09 pull.
 - **independent_fresh_pull** — this file's own code on that same fresh pull.
 - units compared: **25**
 - worst |independent − pipeline| on the same data (code agreement): **9.71e-17**
+- worst |fresh − committed| (shorter window, not a code difference): **3.82e-03**
 
 Full report: [`v06_measurement.md`](v06_measurement.md).
 
 ### 7. Every WDT quotation found verbatim; group station lists checked
 
+**v07_quotes**
 **WDT-attributed quotes checked:** 2; **not found: 0**.
 
 Full report: [`v07_quotes.md`](v07_quotes.md).
 
 ### 8. Priority classification checked against eirgrid_gss1_res_units.csv
 
+**v08_priority**
 - units: **66**; class agreement **66/66**; match-status agreement 66/66
 - classes in file: {'P': 45, 'U': 15, 'N': 6}
 - matched (file): 51/66 = 77.3 %
 - units: **72**; class agreement **72/72**; match-status agreement 72/72
 - classes in file: {'P': 46, 'U': 15, 'N': 11}
 - matched (file): 56/72 = 77.8 %
+- units: **72**; class agreement **72/72**; match-status agreement 72/72
+- classes in file: {'P': 46, 'U': 15, 'N': 11}
+- matched (file): 56/72 = 77.8 %
+- units checked: **210**
+- class agreement: **210/210**
+- match-status agreement: 210/210
 
 Full report: [`v08_priority.md`](v08_priority.md).
 
 ### 9. Sanity: cut MWh vs overload MWh, tie link at cap, load shedding
 
+**v09_sanity**
 - total overload energy, all rows: **34,817.1 MWh** (`WP2024s42_overload_stats.json`)
 - total cut under rule 1: **157,180.9 MWh**
 - ratio cut / overload: **4.514**
@@ -112,25 +143,41 @@ Full report: [`v09_sanity.md`](v09_sanity.md).
 
 ### 11. The band rule re-implemented from MASTER section 4 and compared with cuts_band3.parquet (the HANDOFF's most valuable check)
 
+**v11_band_rule_WP2024s42**
 - case `WP2024s42`, first **500** hours, **51** cuttable farms
+- relief is targeted on `FLG_SLIGO_N1` only. In the main case that is the only
 - hours with an overload in the window: **135**
 - total cut, re-derived: **15,408.326 MW**
 - total cut, `WP2024s42_cuts_band3.parquet`: **15,415.859 MW**
 - relative difference in total: **4.887e-04**
 - worst element-wise |difference|: **7.380e+01 MW**
+- elements differing by more than 1e-6 MW: **1634** of 25500
+- worst |cumulative cut difference| per farm: **71.591 MW** on totals of order 2,440 MW
+- correlation of per-farm cumulative cut: **0.999336**
+- year-to-date ratio spread, re-derived: **13.740 pp**
+- year-to-date ratio spread, saved: **13.873 pp**
+**These are not an error.** The same farm is cut fully by one
 
-Full report: [`v11_band_rule.md`](v11_band_rule.md).
+Full report: [`v11_band_rule`](v11_band_rule).
 
 ### 12. The same re-implementation at b = infinity - the control that isolates path dependence
 
+**v11_band_inf_WP2024s42**
 - case `WP2024s42`, first **500** hours, **51** cuttable farms
+- relief is targeted on `FLG_SLIGO_N1` only. In the main case that is the only
 - hours with an overload in the window: **135**
 - total cut, re-derived: **13,489.936 MW**
 - total cut, `WP2024s42_cuts_bandinf.parquet`: **13,489.936 MW**
 - relative difference in total: **1.348e-16**
 - worst element-wise |difference|: **2.842e-14 MW**
+- elements differing by more than 1e-6 MW: **0** of 25500
+- worst |cumulative cut difference| per farm: **0.000 MW** on totals of order 2,734 MW
+- correlation of per-farm cumulative cut: **1.000000**
+- year-to-date ratio spread, re-derived: **55.240 pp**
+- year-to-date ratio spread, saved: **55.240 pp**
+**v11_band_inf_WP2033s42**
 
-Full report: [`v11_band_inf.md`](v11_band_inf.md).
+Full report: [`v11_band_inf`](v11_band_inf).
 
 ## 10. Discrepancies, with size and effect
 

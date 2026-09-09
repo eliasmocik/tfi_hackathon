@@ -132,6 +132,10 @@ def main() -> int:
         "re-implemented from MASTER section 4 against the saved availability,",
         "baseline dispatch, overload series and shift factors.", "",
         f"- case `{CASE}`, first **{len(hours)}** hours, **{n}** cuttable farms",
+        f"- relief is targeted on `{ROW}` only. In the main case that is the only",
+        "  row that ever overloads, so the re-derivation is complete; in the WP2033",
+        "  cases the two Flagford transformer windings also bind, so hours driven by",
+        "  those rows are outside this re-derivation and show up as small residuals.",
         f"- hours with an overload in the window: "
         f"**{int((O > 0).sum())}**",
         f"- total cut, re-derived: **{tot_mine:,.3f} MW**",
@@ -189,7 +193,8 @@ def main() -> int:
         lines.append("The re-derivation reproduces the saved cut vector exactly.")
         lines.append("")
 
-    name = "v11_band_rule.md" if not np.isinf(B_PP) else "v11_band_inf.md"
+    stem = "v11_band_inf" if np.isinf(B_PP) else "v11_band_rule"
+    name = f"{stem}_{CASE}.md"
     (VER / name).write_text("\n".join(lines), encoding="utf-8")
     print("\n".join(l for l in lines if l.startswith("- ")))
     return 0

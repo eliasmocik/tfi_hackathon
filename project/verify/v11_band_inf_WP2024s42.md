@@ -6,6 +6,10 @@ re-implemented from MASTER section 4 against the saved availability,
 baseline dispatch, overload series and shift factors.
 
 - case `WP2024s42`, first **500** hours, **51** cuttable farms
+- relief is targeted on `FLG_SLIGO_N1` only. In the main case that is the only
+  row that ever overloads, so the re-derivation is complete; in the WP2033
+  cases the two Flagford transformer windings also bind, so hours driven by
+  those rows are outside this re-derivation and show up as small residuals.
 - hours with an overload in the window: **135**
 - total cut, re-derived: **13,489.936 MW**
 - total cut, `WP2024s42_cuts_bandinf.parquet`: **13,489.936 MW**

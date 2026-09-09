@@ -157,12 +157,13 @@ def check_3_4() -> tuple[str, str]:
 def main() -> int:
     if not need(OUT / f"{CASE}_overloads.csv"):
         return 1
-    (VER / "v02_flows.md").write_text(check_2(), encoding="utf-8")
+    (VER / f"v02_flows_{CASE}.md").write_text(check_2(), encoding="utf-8")
     t3, t4 = check_3_4()
-    (VER / "v03_relief.md").write_text(t3, encoding="utf-8")
-    (VER / "v04_ordering.md").write_text(t4, encoding="utf-8")
-    print("wrote v02_flows.md, v03_relief.md, v04_ordering.md")
-    for f in ("v02_flows.md", "v03_relief.md", "v04_ordering.md"):
+    (VER / f"v03_relief_{CASE}.md").write_text(t3, encoding="utf-8")
+    (VER / f"v04_ordering_{CASE}.md").write_text(t4, encoding="utf-8")
+    print(f"wrote v02/v03/v04 reports for {CASE}")
+    for f in (f"v02_flows_{CASE}.md", f"v03_relief_{CASE}.md",
+              f"v04_ordering_{CASE}.md"):
         print("---", f)
         print("\n".join(l for l in (VER / f).read_text(encoding="utf-8").splitlines()
                         if l.startswith("- ")))

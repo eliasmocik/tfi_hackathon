@@ -22,10 +22,10 @@ ROOT = VER.parents[1]
 CHECKS = {
     1: ("LODF for the monitored rows, re-derived and checked against "
         "pypsa calculate_BODF", "v01_lodf.md"),
-    2: ("F and O recomputed from raw flows for 50 random hours", "v02_flows.md"),
+    2: ("F and O recomputed from raw flows for 50 random hours", "v02_flows"),
     3: ("Sum SF*c >= O and c <= p0 for each rule over 200 random overload hours",
-        "v03_relief.md"),
-    4: ("Per-hour ordering of total cut, and band-inf == rule 2", "v04_ordering.md"),
+        "v03_relief"),
+    4: ("Per-hour ordering of total cut, and band-inf == rule 2", "v04_ordering"),
     5: ("Jain, Gini, D and the ratios recomputed from farm_r.csv", "v05_metrics.md"),
     6: ("Measurement recomputed from the raw BM files with independent code",
         "v06_measurement.md"),
@@ -38,9 +38,9 @@ CHECKS = {
     10: ("Every discrepancy with its size, and which RESULTS.md numbers it affects",
          None),
     11: ("The band rule re-implemented from MASTER section 4 and compared with "
-         "cuts_band3.parquet (the HANDOFF's most valuable check)", "v11_band_rule.md"),
+         "cuts_band3.parquet (the HANDOFF's most valuable check)", "v11_band_rule"),
     12: ("The same re-implementation at b = infinity - the control that isolates "
-         "path dependence", "v11_band_inf.md"),
+         "path dependence", "v11_band_inf"),
 }
 
 
@@ -82,10 +82,14 @@ def main() -> int:
             present[i] = None
             L.append(f"| {i} | {title} | see section below |")
             continue
-        p = VER / fname
-        if p.exists():
-            present[i] = p.read_text(encoding="utf-8")
-            L.append(f"| {i} | {title} | done - `{fname}` |")
+        # a check may have one report, or one per case
+        hits = ([VER / fname] if (VER / fname).exists()
+                else sorted(VER.glob(f"{Path(fname).stem}*.md")))
+        if hits:
+            present[i] = "\n".join(
+                f"**{h.stem}**\n" + h.read_text(encoding="utf-8") for h in hits)
+            L.append(f"| {i} | {title} | done - " +
+                     ", ".join(f"`{h.name}`" for h in hits) + " |")
         else:
             present[i] = None
             L.append(f"| {i} | {title} | **not run** |")
@@ -95,7 +99,7 @@ def main() -> int:
         if fname is None or present[i] is None:
             continue
         L += [f"### {i}. {title}", ""]
-        L += first_summary(present[i])
+        L += first_summary(present[i], n=14)
         L += ["", f"Full report: [`{fname}`]({fname}).", ""]
 
     missing = [i for i, (t, f) in CHECKS.items() if f and present[i] is None]
