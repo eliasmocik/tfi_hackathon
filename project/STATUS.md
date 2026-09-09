@@ -58,13 +58,17 @@ committed outputs are untouched.
 
 Case coverage: checks 5, 7 and 8 cover all three cases from the committed files.
 Checks 2, 3, 4, 11 and 12 need the parquet and so need an engine re-run; they
-are done for **WP2024s42** and **WP2033s42**, with WP2033s43 running. Reports
-carry the case in the filename (`v03_relief_WP2024s42.md` and so on).
+are done for **all three cases**. Reports carry the case in the filename
+(`v03_relief_WP2024s42.md` and so on). All three engine cases were regenerated
+from scratch on Windows and reproduce the committed outputs (shift factors to
+1.3e-12, LODF to 3.5e-13, overloads to 1.2e-10).
 
-In WP2033s42 the band∞ control leaves 7 residual elements of 28500 rather than
-0. That is not tie-breaking: the two Flagford transformer windings also bind in
-the WP2033 cases, and the re-derivation targets one row. Stated in the report
-rather than tuned away.
+The band∞ control reproduces the saved cuts **exactly** in the main case (0 of
+25500 elements, correlation 1.000000), which is what makes D9 conclusive. In the
+WP2033 cases it leaves residuals (7 of 28500 in s42; correlation 0.9980 in s43).
+That is not tie-breaking: the two Flagford transformer windings also bind there,
+and the re-derivation targets one row. Stated in the reports rather than tuned
+away — the control is exact only where a single row binds.
 
 ## Design brief v2 work packages (2026-09-09)
 

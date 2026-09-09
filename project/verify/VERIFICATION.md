@@ -14,17 +14,17 @@ permitted and are used where the network itself is needed.
 | # | check | status |
 |---|---|---|
 | 1 | LODF for the monitored rows, re-derived and checked against pypsa calculate_BODF | done - `v01_lodf.md` |
-| 2 | F and O recomputed from raw flows for 50 random hours | done - `v02_flows_WP2024s42.md`, `v02_flows_WP2033s42.md` |
-| 3 | Sum SF*c >= O and c <= p0 for each rule over 200 random overload hours | done - `v03_relief_WP2024s42.md`, `v03_relief_WP2033s42.md` |
-| 4 | Per-hour ordering of total cut, and band-inf == rule 2 | done - `v04_ordering_WP2024s42.md`, `v04_ordering_WP2033s42.md` |
+| 2 | F and O recomputed from raw flows for 50 random hours | done - `v02_flows_WP2024s42.md`, `v02_flows_WP2033s42.md`, `v02_flows_WP2033s43.md` |
+| 3 | Sum SF*c >= O and c <= p0 for each rule over 200 random overload hours | done - `v03_relief_WP2024s42.md`, `v03_relief_WP2033s42.md`, `v03_relief_WP2033s43.md` |
+| 4 | Per-hour ordering of total cut, and band-inf == rule 2 | done - `v04_ordering_WP2024s42.md`, `v04_ordering_WP2033s42.md`, `v04_ordering_WP2033s43.md` |
 | 5 | Jain, Gini, D and the ratios recomputed from farm_r.csv | done - `v05_metrics.md` |
 | 6 | Measurement recomputed from the raw BM files with independent code | done - `v06_measurement.md` |
 | 7 | Every WDT quotation found verbatim; group station lists checked | done - `v07_quotes.md` |
 | 8 | Priority classification checked against eirgrid_gss1_res_units.csv | done - `v08_priority.md` |
 | 9 | Sanity: cut MWh vs overload MWh, tie link at cap, load shedding | done - `v09_sanity.md` |
 | 10 | Every discrepancy with its size, and which RESULTS.md numbers it affects | see section below |
-| 11 | The band rule re-implemented from MASTER section 4 and compared with cuts_band3.parquet (the HANDOFF's most valuable check) | done - `v11_band_rule_WP2024s42.md`, `v11_band_rule_WP2033s42.md` |
-| 12 | The same re-implementation at b = infinity - the control that isolates path dependence | done - `v11_band_inf_WP2024s42.md`, `v11_band_inf_WP2033s42.md` |
+| 11 | The band rule re-implemented from MASTER section 4 and compared with cuts_band3.parquet (the HANDOFF's most valuable check) | done - `v11_band_rule_WP2024s42.md`, `v11_band_rule_WP2033s42.md`, `v11_band_rule_WP2033s43.md` |
+| 12 | The same re-implementation at b = infinity - the control that isolates path dependence | done - `v11_band_inf_WP2024s42.md`, `v11_band_inf_WP2033s42.md`, `v11_band_inf_WP2033s43.md` |
 
 ## Findings by check
 
@@ -66,6 +66,10 @@ Full report: [`v02_flows`](v02_flows).
 - hour-rule-row samples checked: **6666**
 - samples where relief fell short of the overload by more than 1e-4: **0**
 - worst shortfall: **2.842e-14 MW**
+**v03_relief_WP2033s43**
+- hour-rule-row samples checked: **6798**
+- samples where relief fell short of the overload by more than 1e-4: **0**
+- worst shortfall: **2.842e-14 MW**
 
 Full report: [`v03_relief`](v03_relief).
 
@@ -77,6 +81,10 @@ Full report: [`v03_relief`](v03_relief).
 - max |band-inf - rule2| element-wise: **0.000e+00**
 **v04_ordering_WP2033s42**
 - hours with sum c(rule3) > sum c(rule2) + 1e-6: **0** (worst 1.904e-12)
+- hours with sum c(rule2) > sum c(rule1) + 1e-6: **0** (worst 0.000e+00)
+- max |band-inf - rule2| element-wise: **0.000e+00**
+**v04_ordering_WP2033s43**
+- hours with sum c(rule3) > sum c(rule2) + 1e-6: **0** (worst 4.889e-12)
 - hours with sum c(rule2) > sum c(rule1) + 1e-6: **0** (worst 0.000e+00)
 - max |band-inf - rule2| element-wise: **0.000e+00**
 
