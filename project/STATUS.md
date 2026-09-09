@@ -38,6 +38,7 @@ Scripts in `verify/`, none importing rules/metrics/measurement/compare/robustnes
 | 9 | sanity | **pass** — cut/overload 4.514 vs 1/SF 4.538, agreement 0.995; tie link at cap 100.0 % of hours |
 | 10 | discrepancy list | D1–D9 in VERIFICATION.md |
 | 11 | band rule re-derived | aggregates reproduce (total 4.9e-4, spread 13.74 vs 13.87 pp); per-hour assignment does not — the rule is path-dependent (D9) |
+| 12 | band∞ control | **reproduces exactly** — 0 of 25500 elements differ, correlation 1.000000. This is what makes D9 conclusive: same code, ledger removed |
 
 **Cross-platform reproduction.** The whole pipeline was re-run from scratch on
 Windows with different package versions. Synthetic year files are byte-identical;
@@ -55,8 +56,15 @@ committed outputs are untouched.
    fresh run in `verify/repro/`.
 2. **Windows.** Run everything with `PYTHONUTF8=1` (D7).
 
-Not re-run here: the WP2033 engine cases (~45 min each). Only WP2024s42 was
-regenerated, so checks 3, 4 and 11 cover the main case.
+Case coverage: checks 5, 7 and 8 cover all three cases from the committed files.
+Checks 2, 3, 4, 11 and 12 need the parquet and so need an engine re-run; they
+are done for **WP2024s42** and **WP2033s42**, with WP2033s43 running. Reports
+carry the case in the filename (`v03_relief_WP2024s42.md` and so on).
+
+In WP2033s42 the band∞ control leaves 7 residual elements of 28500 rather than
+0. That is not tie-breaking: the two Flagford transformer windings also bind in
+the WP2033 cases, and the re-derivation targets one row. Stated in the report
+rather than tuned away.
 
 ## Design brief v2 work packages (2026-09-09)
 
