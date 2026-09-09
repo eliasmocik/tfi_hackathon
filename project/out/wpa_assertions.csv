@@ -5,3 +5,4 @@ A3 no negative cut,0 negative entries,True
 A4 band 0 tracks observed pro-rata,gap 0.235 %,True
 A5 annual cut monotone non-increasing in b,0 breaks; totals 10819 > 10638 > 10519 > 10438 > 10317 > 10137 > 9915,True
 A6 every half-hour feasible,0 infeasible of 638,True
+A7 observed r matches the measurement pipeline,"15 units, worst abs diff 8.951e-16",True

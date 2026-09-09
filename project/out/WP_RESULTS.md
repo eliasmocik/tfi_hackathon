@@ -50,6 +50,7 @@ closed to zero the replay converges on what actually happened.
 | A4 band 0 tracks observed pro-rata | gap 0.235 % | yes |
 | A5 annual cut monotone non-increasing in b | 0 breaks; totals 10819 > 10638 > 10519 > 10438 > 10317 > 10137 > 9915 | yes |
 | A6 every half-hour feasible | 0 infeasible of 638 | yes |
+| A7 observed r matches the measurement pipeline | 15 units, worst abs diff 8.951e-16 | yes |
 
 A1 is the load-bearing one. Every rule delivers the observed relief to a
 worst relative deviation of 3.3e-16, so no rule buys MWh with security.

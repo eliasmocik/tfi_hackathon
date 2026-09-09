@@ -98,6 +98,20 @@ def main() -> int:
     annual = np.array([cum_cut[b].sum() for b in W.BANDS])
     monotone_breaks = int((np.diff(annual) > 1e-6).sum())
 
+    # A7: the replay's own observed-cut bookkeeping against the separate
+    # measurement pipeline, which reaches the same quantity by a different route
+    a7_worst, a7_n = float("nan"), 0
+    mu = OUT.parent / "verify" / "repro" / "measurement_units.csv"
+    wu = OUT / "wpa_units.csv"
+    if mu.exists() and wu.exists():
+        m = pd.read_csv(mu).set_index("unit")
+        w = pd.read_csv(wu).set_index("unit")
+        common = [u for u in w.index if u in m.index]
+        if common:
+            a7_n = len(common)
+            a7_worst = float((w.loc[common, "r_observed"]
+                              - m.loc[common, "constraint_only_ratio"]).abs().max())
+
     rows = [
         ("A1 relief delivered == observed relief R", f"worst rel dev {worst_relief:.3e}",
          worst_relief <= TOL_REL),
@@ -110,6 +124,9 @@ def main() -> int:
          monotone_breaks == 0),
         ("A6 every half-hour feasible", f"{n_infeasible} infeasible of {n_halfhours}",
          n_infeasible == 0),
+        ("A7 observed r matches the measurement pipeline",
+         f"{a7_n} units, worst abs diff {a7_worst:.3e}",
+         bool(a7_n) and a7_worst < 1e-12),
     ]
     df = pd.DataFrame(rows, columns=["assertion", "detail", "passed"])
     df.to_csv(OUT / "wpa_assertions.csv", index=False)
