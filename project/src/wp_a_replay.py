@@ -46,8 +46,19 @@ CLR_CODES = {"LCLO": "constraint", "CRLO": "curtail"}
 ALL_CODES = {**SET_CODES, **CLR_CODES}
 
 
+#: The SEM-O unit map and the model spell some stations differently. Without
+#: this, Cathaleen's Fall units are silently dropped from the group: the map
+#: says CATH_FALL and the model says "Cathaleen's Fall". Today those units have
+#: no BM-101 rows so nothing is lost, but that is luck, not correctness.
+STATION_ALIASES = {
+    "CATH FALL": "CATHALEENS FALL",
+    "CATHALEENS FALL": "CATHALEENS FALL",
+}
+
+
 def canon_station(s) -> str:
-    return str(s).upper().replace("'", "").replace("_", " ").strip()
+    c = str(s).upper().replace("'", "").replace("_", " ").strip()
+    return STATION_ALIASES.get(c, c)
 
 
 def band_key(b: float) -> str:
