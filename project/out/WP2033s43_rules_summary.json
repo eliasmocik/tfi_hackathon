@@ -1,0 +1,67 @@
+{
+ "case": "WP2033s43",
+ "seconds": 6.901286602020264,
+ "rule1": {
+  "residual_hours": 0,
+  "phi_max": 0.8259769128635526,
+  "phi_mean": 0.2602420207304806,
+  "hours_phi_eq_1": 0
+ },
+ "rule2": {
+  "residual_hours": 0,
+  "iter_max": 12
+ },
+ "rule3": {
+  "residual_hours": 0,
+  "lp_success": 777,
+  "lp_total": 777,
+  "max_residual_after_lp": 4.263256414560601e-14,
+  "statuses": {
+   "Optimization terminated successfully. (HiGHS Status 7: Optimal)": 777
+  }
+ },
+ "rule1N": {
+  "residual_hours": 0,
+  "tiers": {
+   "N_then_P": 475,
+   "N_only": 302
+  },
+  "cut_MWh_N": 131598.02667719667,
+  "cut_MWh_P": 91823.8633553907
+ },
+ "band0": {
+  "residual_hours": 0,
+  "hours_widened": 294,
+  "max_widen": 30
+ },
+ "band1": {
+  "residual_hours": 0,
+  "hours_widened": 60,
+  "max_widen": 18
+ },
+ "band2": {
+  "residual_hours": 0,
+  "hours_widened": 33,
+  "max_widen": 17
+ },
+ "band3": {
+  "residual_hours": 0,
+  "hours_widened": 26,
+  "max_widen": 9
+ },
+ "band5": {
+  "residual_hours": 0,
+  "hours_widened": 11,
+  "max_widen": 8
+ },
+ "band10": {
+  "residual_hours": 0,
+  "hours_widened": 3,
+  "max_widen": 6
+ },
+ "bandinf": {
+  "residual_hours": 0,
+  "hours_widened": 0,
+  "max_widen": 0
+ }
+}

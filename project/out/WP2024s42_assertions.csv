@@ -1,0 +1,16 @@
+case,check,max_abs_diff,total_diff_MWh,passed,max_violation,hours_violating,tol,hours,hours_rule2_gt_rule3,max_c_minus_p0,min_c,max_residual_MW,cut_MW_in_hours_without_overload
+WP2024s42,bandinf_equals_rule2_elementwise,0.0,0.0,True,,,,,,,,,
+WP2024s42,per_hour_rule3_le_rule2,,,True,1.1368683772161603e-13,0.0,1e-06,,,,,,
+WP2024s42,per_hour_rule2_le_rule1,,,True,0.0,0.0,1e-06,,,,,,
+WP2024s42,hours_rule2_equals_rule3_within_1e-9,,,True,,,,8760.0,0.0,,,,
+WP2024s42,rule1_cuts_valid,,,True,,,,,,0.0,0.0,0.0,0.0
+WP2024s42,rule2_cuts_valid,,,True,,,,,,0.0,0.0,7.105427357601002e-15,0.0
+WP2024s42,rule3_cuts_valid,,,True,,,,,,0.0,0.0,2.842170943040401e-14,0.0
+WP2024s42,rule1N_cuts_valid,,,True,,,,,,0.0,0.0,0.0,0.0
+WP2024s42,band0_cuts_valid,,,True,,,,,,0.0,0.0,1.4210854715202004e-14,0.0
+WP2024s42,band1_cuts_valid,,,True,,,,,,0.0,0.0,1.4210854715202004e-14,0.0
+WP2024s42,band2_cuts_valid,,,True,,,,,,0.0,0.0,1.4210854715202004e-14,0.0
+WP2024s42,band3_cuts_valid,,,True,,,,,,0.0,0.0,1.4210854715202004e-14,0.0
+WP2024s42,band5_cuts_valid,,,True,,,,,,0.0,0.0,1.4210854715202004e-14,0.0
+WP2024s42,band10_cuts_valid,,,True,,,,,,0.0,0.0,1.4210854715202004e-14,0.0
+WP2024s42,bandinf_cuts_valid,,,True,,,,,,0.0,0.0,7.105427357601002e-15,0.0

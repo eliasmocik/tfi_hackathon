@@ -24,3 +24,6 @@ project/kit/*.nc
 
 # desktop app scratch
 Claude outputs/
+
+# local git bundle used for the first push
+tfi_hackathon.bundle

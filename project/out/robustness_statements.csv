@@ -1,0 +1,26 @@
+statement,WP2024s42_holds,WP2033s42_holds,WP2033s43_holds,WP2024s42_value,WP2033s42_value,WP2033s43_value,holds_in_all
+D_rule2 < D_rule1 (effectiveness order cuts less energy than pro rata),True,True,True,1.2020009309187198,1.014446968976813,1.1021557527527825,True
+D_rule3 <= D_rule2 (LP never worse than greedy),True,True,True,0.0,0.026792794427203503,0.041036559855044175,True
+PoF_eff(rule1) between 0.10 and 0.20,True,True,True,0.1683140749132285,0.1207637173883436,0.1166306168965482,True
+PoF_eff(rule1) > 0.10,True,True,True,0.1683140749132285,0.1207637173883436,0.1166306168965482,True
+D_ratio(rule2) between 0.85 and 0.90,True,True,True,0.8559342230592152,0.89224872690405,0.8955512994792317,True
+Jain_farm(rule1) > 0.97,True,True,True,0.9918555787541208,0.9783598420579418,0.9704389273929964,True
+Jain_farm(rule2) < 0.35,True,True,True,0.2092514077518068,0.2984294421171662,0.3229859234151991,True
+Gini(rule2) > 0.65,True,True,True,0.8106105565206937,0.6991520989834943,0.6540927169802616,True
+worst_over_mean(rule2) > 4,True,True,True,5.44733465335433,4.213427584548309,4.302500747177818,True
+D decreases monotonically with b (band0 ... bandinf),True,True,True,-0.06813712392378157,-0.10620207237471924,-0.08662278246633548,True
+Jain_farm decreases monotonically with b,True,True,True,-0.04108289639199747,-0.03865203731601563,-0.029419363909581664,True
+band3 keeps Jain_farm > 0.75,True,True,True,0.7889139542844967,0.854269717604065,0.8838790359247309,True
+band3 recovers more than a third of the rule-1 excess over rule 2 ((D1-D_b3)/(D1-D2) > 1/3),False,True,True,0.26377304021115455,0.5333985103789806,0.457325007397061,False
+band3 recovers less than half of the rule-1 excess over rule 2,True,False,True,0.26377304021115455,0.5333985103789806,0.457325007397061,False
+band10 keeps Jain_farm > 0.35,True,True,True,0.3811463768711993,0.464688468875531,0.5983322664118524,True
+D_rule1N > D_rule1 (non-priority first cuts more energy than pro rata),True,True,True,0.07271294768599468,0.25001174785592006,0.27731477195836796,True
+Jain_farm(rule1N) < 0.5,True,True,True,0.3789774385865332,0.4899695179368049,0.4906029558625575,True
+band0 within 0.3 pp of rule 1 in D,True,True,True,0.00037164279157231306,0.013939621655488565,0.02514380377457215,True
+no residual hours under any rule,True,True,True,0,0,0,True
+post-cut violations: rule 1 has none,True,True,True,0,0,0,True
+post-cut violations: rule 2 has none,True,False,False,0,8,10,False
+Jain_farm(rule3) > Jain_farm(rule2),True,True,False,0.01790660665129898,0.004795343780920502,-0.0030194301148745994,False
+Sligo is the most-cut station under rule 2,True,True,True,Sligo,Sligo,Sligo,True
+Station max/min under rule 1 < 1.5,True,True,False,1.2344099602293572,1.4732305615827592,1.5538274224085835,False
+Top rule-1 station equals WP2024s42's top station,True,True,True,Mulreavy,Mulreavy,Mulreavy,True
