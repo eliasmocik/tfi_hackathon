@@ -27,3 +27,6 @@ Claude outputs/
 
 # local git bundle used for the first push
 tfi_hackathon.bundle
+
+# local virtualenv (Windows working copy)
+.venv/
