@@ -1,0 +1,7 @@
+assertion,detail,passed
+A1 relief delivered == observed relief R,worst rel dev 3.344e-16,True
+A2 cut <= declared availability,worst excess 0.000e+00 MW,True
+A3 no negative cut,0 negative entries,True
+A4 band 0 tracks observed pro-rata,gap 0.235 %,True
+A5 annual cut monotone non-increasing in b,0 breaks; totals 10819 > 10638 > 10519 > 10438 > 10317 > 10137 > 9915,True
+A6 every half-hour feasible,0 infeasible of 638,True
