@@ -24,6 +24,7 @@ permitted and are used where the network itself is needed.
 | 9 | Sanity: cut MWh vs overload MWh, tie link at cap, load shedding | done - `v09_sanity.md` |
 | 10 | Every discrepancy with its size, and which RESULTS.md numbers it affects | see section below |
 | 11 | The band rule re-implemented from MASTER section 4 and compared with cuts_band3.parquet (the HANDOFF's most valuable check) | done - `v11_band_rule.md` |
+| 12 | The same re-implementation at b = infinity - the control that isolates path dependence | done - `v11_band_inf.md` |
 
 ## Findings by check
 
@@ -120,6 +121,17 @@ Full report: [`v09_sanity.md`](v09_sanity.md).
 
 Full report: [`v11_band_rule.md`](v11_band_rule.md).
 
+### 12. The same re-implementation at b = infinity - the control that isolates path dependence
+
+- case `WP2024s42`, first **500** hours, **51** cuttable farms
+- hours with an overload in the window: **135**
+- total cut, re-derived: **13,489.936 MW**
+- total cut, `WP2024s42_cuts_bandinf.parquet`: **13,489.936 MW**
+- relative difference in total: **1.348e-16**
+- worst element-wise |difference|: **2.842e-14 MW**
+
+Full report: [`v11_band_inf.md`](v11_band_inf.md).
+
 ## 10. Discrepancies, with size and effect
 
 Every difference found, whether or not it changes a reported number.
@@ -134,7 +146,7 @@ Every difference found, whether or not it changes a reported number.
 | D6 | HANDOFF section 3 cites "section 10 item 5's second half" for the band-rule re-derivation | n/a | No | Item 5 is only the Jain/Gini/D recompute; the band-rule re-derivation is not in the numbered list. |
 | D7 | `src/measurement.py` and `src/engine_prep.py` write text with `Path.write_text()` and `print()` without an encoding | crashes on Windows (cp1252) partway through, after some outputs are written | No - output values are unaffected | Run with `PYTHONUTF8=1`. A one-word `encoding="utf-8"` would make it portable. |
 | D8 | `node_table.csv` sorts nodes by shift factor and flags the "significant step change" by comparing each node with the next. Buses 1401 and 14016 have effectively equal shift factors | the sort is unstable between runs, so the flagged step moved from bus 1401 to bus 14016 and `step_after_name` from BELLACORICK to CROAGHAUN; the shift factors themselves agree to 1.7e-12 | **Only the node table.** Group membership is fixed by MASTER section 0, not derived from the step, so no headline number moves | Break the tie deterministically (bus id as secondary sort key). Relevant to hackathon problem 3.2, which proposes generating groups from this threshold. |
-| D9 | The band rule is **path-dependent**: r_i feeds the next hour's eligible set | an independent re-implementation reproduces the total cut to 4.9e-4 and the year-end ratio spread to 0.13 pp (13.74 vs 13.87 pp), with per-farm cumulative cut correlating 0.9993, but 1634 of 25500 per-hour-per-farm entries differ, the largest by a whole 73.8 MW farm alternating between adjacent hours | No - every reported quantity is an aggregate and those agree | Not a bug in either implementation. But if the rule is ever codified, the tie-break and float tolerance must be specified: two conforming implementations will otherwise issue different per-farm instructions. |
+| D9 | The band rule is **path-dependent**: r_i feeds the next hour's eligible set | an independent re-implementation reproduces the total cut to 4.9e-4 and the year-end ratio spread to 0.13 pp (13.74 vs 13.87 pp), with per-farm cumulative cut correlating 0.9993, but 1634 of 25500 per-hour-per-farm entries differ, the largest by a whole 73.8 MW farm alternating between adjacent hours | No - every reported quantity is an aggregate and those agree | **Controlled.** The same re-implementation at b = infinity, which has no ledger gating eligibility, reproduces the saved cuts *exactly*: 0 of 25500 elements differ, total difference 1.3e-16, per-farm correlation 1.000000. Same code, same data, ledger removed. So the ordering, node handling, availability caps and relief targeting are all exactly right, and the b = 3 divergence is caused solely by path dependence - not by an error in either implementation. If the rule is codified, the tie-break and float tolerance must be specified, or two conforming implementations will issue different per-farm instructions. |
 
 ### Reproduction on different hardware
 

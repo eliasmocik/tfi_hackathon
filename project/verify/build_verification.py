@@ -39,6 +39,8 @@ CHECKS = {
          None),
     11: ("The band rule re-implemented from MASTER section 4 and compared with "
          "cuts_band3.parquet (the HANDOFF's most valuable check)", "v11_band_rule.md"),
+    12: ("The same re-implementation at b = infinity - the control that isolates "
+         "path dependence", "v11_band_inf.md"),
 }
 
 
@@ -163,9 +165,15 @@ def main() -> int:
         "with per-farm cumulative cut correlating 0.9993, but 1634 of 25500 "
         "per-hour-per-farm entries differ, the largest by a whole 73.8 MW farm "
         "alternating between adjacent hours | No - every reported quantity is an "
-        "aggregate and those agree | Not a bug in either implementation. But if "
-        "the rule is ever codified, the tie-break and float tolerance must be "
-        "specified: two conforming implementations will otherwise issue different "
+        "aggregate and those agree | **Controlled.** The same re-implementation at "
+        "b = infinity, which has no ledger gating eligibility, reproduces the "
+        "saved cuts *exactly*: 0 of 25500 elements differ, total difference "
+        "1.3e-16, per-farm correlation 1.000000. Same code, same data, ledger "
+        "removed. So the ordering, node handling, availability caps and relief "
+        "targeting are all exactly right, and the b = 3 divergence is caused "
+        "solely by path dependence - not by an error in either implementation. "
+        "If the rule is codified, the tie-break and float tolerance must be "
+        "specified, or two conforming implementations will issue different "
         "per-farm instructions. |",
         "",
         "### Reproduction on different hardware",

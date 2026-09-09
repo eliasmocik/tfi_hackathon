@@ -29,13 +29,14 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT, VER = ROOT / "project" / "out", ROOT / "project" / "verify"
 
 CASE = sys.argv[1] if len(sys.argv) > 1 else "WP2024s42"
-B_PP = float(sys.argv[2]) if len(sys.argv) > 2 else 3.0
+B_PP = float(sys.argv[2]) if len(sys.argv) > 2 else 3.0  # "inf" is allowed
 N_HOURS = int(sys.argv[3]) if len(sys.argv) > 3 else 500
 ROW = "FLG_SLIGO_N1"
 
 
 def main() -> int:
-    saved_p = OUT / f"{CASE}_cuts_band{B_PP:g}.parquet"
+    tag = "inf" if np.isinf(B_PP) else f"{B_PP:g}"
+    saved_p = OUT / f"{CASE}_cuts_band{tag}.parquet"
     if not saved_p.exists():
         print(f"missing {saved_p.name}")
         return 1
@@ -74,7 +75,10 @@ def main() -> int:
             continue
         r = np.divide(cum_cut, cum_av, out=np.zeros(n), where=cum_av > 0)
         rbar = cum_cut.sum() / cum_av.sum() if cum_av.sum() > 0 else 0.0
-        elig = r <= rbar + B_PP / 100.0
+        # band inf has no ledger gate at all: it is the control that
+        # isolates path dependence as the cause of any divergence
+        elig = (np.ones(n, bool) if np.isinf(B_PP)
+                else r <= rbar + B_PP / 100.0)
 
         c = np.zeros(n)
         remaining = need
@@ -122,7 +126,7 @@ def main() -> int:
     n_bad = int((d > 1e-6).sum())
 
     lines = [
-        f"# Verification - the band rule re-derived (b = {B_PP:g} pp)", "",
+        f"# Verification - the band rule re-derived (b = {tag} pp)", "",
         "The HANDOFF calls this the most valuable check: it tests the rule's logic,",
         "not the bookkeeping. `src/rules.py` is not imported; the rule is",
         "re-implemented from MASTER section 4 against the saved availability,",
@@ -185,7 +189,8 @@ def main() -> int:
         lines.append("The re-derivation reproduces the saved cut vector exactly.")
         lines.append("")
 
-    (VER / "v11_band_rule.md").write_text("\n".join(lines), encoding="utf-8")
+    name = "v11_band_rule.md" if not np.isinf(B_PP) else "v11_band_inf.md"
+    (VER / name).write_text("\n".join(lines), encoding="utf-8")
     print("\n".join(l for l in lines if l.startswith("- ")))
     return 0
 
