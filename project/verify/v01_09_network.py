@@ -1,14 +1,14 @@
 """MASTER section 10, items 1 and 9 - network-level checks.
 
-  1  re-derive the LODF for the monitored rows from the PTDF and compare with
-     pypsa's own contingency calculation and with out/<case>_lodf.csv
+  1  re-derive the LODF for the monitored rows from the bus PTDF and compare
+     with the kit's own value and with pypsa's BODF, both of which the saved
+     table already carries
   9  sanity: total cut MWh under rule 1 against total overload MWh (the ratio
-     should be of order 1 / mean shift factor), the tie link's share of hours
-     at its cap, and load shedding
+     should be of order 1 / mean shift factor), and the tie link's share of
+     hours at its cap
 
-Imports `src/engine_prep.py` only for `prepare()`, which MASTER section 10
-explicitly permits; it imports none of rules/metrics/measurement/compare/
-robustness.
+Imports no src module: both quantities are formed from the saved parquet and
+CSV tables.
 
     python project/verify/v01_09_network.py [case]
 """
@@ -24,85 +24,82 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 PROJ = ROOT / "project"
 OUT, VER = PROJ / "out", PROJ / "verify"
-sys.path.insert(0, str(PROJ / "src"))
-sys.path.insert(0, str(PROJ / "kit"))
 
 CASE = sys.argv[1] if len(sys.argv) > 1 else "WP2024s42"
 CONTINGENCY = "2522-5042-1"          # Flagford-Srananagh 220 kV (MASTER section 0)
-MONITORED = ["2521-4981-1", "T2522-2521-25221-1-w1", "T2522-2521-25222-2-w1"]
+BUS_A, BUS_B = "2522", "5042"        # its end buses
+
+ROW_FOR_ELEMENT = {
+    "2521-4981-1": "FLG_SLIGO_N1",
+    "T2522-2521-25221-1-w1": "T25221_N1",
+    "T2522-2521-25222-2-w1": "T25222_N1",
+}
 
 
 def lodf_report() -> str:
-    L = ["# Verification section 10.1 - LODF re-derived", "",
-         f"Case `{CASE}`. Contingency `{CONTINGENCY}`.", ""]
-    try:
-        import pypsa  # noqa: F401
-        import engine_prep as EP
-    except Exception as e:
-        L.append(f"Could not import pypsa/engine_prep: {type(e).__name__}: {e}")
+    """LODF re-derived from the bus PTDF, independently of the kit and of pypsa.
+
+    For an outage of branch k with end buses (a, b) and a monitored row l,
+
+        LODF[l, k] = (H[l, a] - H[l, b]) / (1 - (H[k, a] - H[k, b]))
+
+    where H is the bus PTDF. Both H tables are read from the regenerated
+    parquet, so no project function forms the quantity.
+    """
+    L = ["# Verification section 10.1 - LODF re-derived from the PTDF", "",
+         f"Case `{CASE}`. Contingency `{CONTINGENCY}`, end buses "
+         f"{BUS_A} and {BUS_B}.", "",
+         "LODF[l,k] = (H[l,a] - H[l,b]) / (1 - (H[k,a] - H[k,b])), H the bus PTDF.",
+         ""]
+
+    fp, rp = OUT / f"{CASE}_ptdf_full.parquet", OUT / f"{CASE}_ptdf_rows.parquet"
+    if not (fp.exists() and rp.exists()):
+        L.append("PTDF parquet tables absent; run `src/run_engine.py` first.")
         return "\n".join(L)
 
-    try:
-        n = EP.prepare(CASE)
-    except Exception as e:
-        L.append(f"`engine_prep.prepare('{CASE}')` failed: {type(e).__name__}: {e}")
+    H = pd.read_parquet(fp)
+    Hr = pd.read_parquet(rp)
+    if CONTINGENCY not in H.index:
+        L.append(f"Contingency `{CONTINGENCY}` is not in the PTDF index.")
         return "\n".join(L)
 
-    # branch-to-branch sensitivity, then LODF_{l,k} = PTDF_{l,k} / (1 - PTDF_{k,k})
-    try:
-        sub = n.sub_networks.obj.iloc[0] if len(n.sub_networks) else None
-        if sub is None:
-            n.determine_network_topology()
-            sub = n.sub_networks.obj.iloc[0]
-        sub.calculate_BODF()
-        bodf = pd.DataFrame(sub.BODF, index=sub.branches().index,
-                            columns=sub.branches().index)
-    except Exception as e:
-        L.append(f"pypsa BODF failed: {type(e).__name__}: {e}")
-        return "\n".join(L)
+    denom = 1.0 - (float(H.at[CONTINGENCY, BUS_A]) - float(H.at[CONTINGENCY, BUS_B]))
+    saved = pd.read_csv(OUT / f"{CASE}_lodf.csv")
+    saved_denom = float(saved.denom.iloc[0])
 
-    saved = None
-    p = OUT / f"{CASE}_lodf.csv"
-    if p.exists():
-        saved = pd.read_csv(p)
-        L.append(f"Saved table `{p.name}`: {len(saved)} rows, columns "
-                 f"{list(saved.columns)[:6]}.")
-
-    L.append("")
-    L.append("| monitored row | pypsa BODF | saved LODF | |difference| |")
-    L.append("|---|---|---|---|")
+    L += [
+        f"- re-derived denominator: **{denom:.15f}**",
+        f"- denominator in `{CASE}_lodf.csv`: **{saved_denom:.15f}** "
+        f"(difference {abs(denom - saved_denom):.3e})",
+        "",
+        "| monitored row | re-derived | lodf_kit | bodf_pypsa | max abs diff |",
+        "|---|---|---|---|---|",
+    ]
+    # Use the intact bus PTDF (ptdf_full) keyed by the branch's own name.
+    # ptdf_rows is NOT the intact sensitivity: it is already the
+    # post-contingency row sensitivity, so its bus difference equals the LODF
+    # and dividing it again would double-count the outage.
     worst = 0.0
-    for m in MONITORED:
-        try:
-            key = [c for c in bodf.index if str(c).endswith(m) or str(c) == m]
-            ck = [c for c in bodf.columns if str(c).endswith(CONTINGENCY) or str(c) == CONTINGENCY]
-            if not key or not ck:
-                L.append(f"| {m} | not found in BODF index | - | - |")
-                continue
-            v = float(bodf.loc[key[0], ck[0]])
-        except Exception as e:
-            L.append(f"| {m} | error {type(e).__name__} | - | - |")
+    for elem, key in ROW_FOR_ELEMENT.items():
+        if elem not in H.index:
+            L.append(f"| {elem} | absent from the intact PTDF | - | - | - |")
             continue
-        s = np.nan
-        if saved is not None:
-            hit = saved[saved.apply(lambda r: m in r.astype(str).to_string(), axis=1)]
-            for col in saved.columns:
-                if hit.empty:
-                    break
-                try:
-                    s = float(hit.iloc[0][col])
-                    if abs(s) <= 1.5:
-                        break
-                except (TypeError, ValueError):
-                    continue
-        d = abs(v - s) if s == s else np.nan
-        if d == d:
-            worst = max(worst, d)
-        L.append(f"| {m} | {v:.9f} | {'-' if s != s else f'{s:.9f}'} | "
-                 f"{'-' if d != d else f'{d:.3e}'} |")
-    L += ["", f"- worst |pypsa - saved|: **{worst:.3e}**" if worst else
-          "- saved LODF could not be aligned column-wise; the pypsa values above "
-          "are the independent re-derivation.", ""]
+        mine = (float(H.at[elem, BUS_A]) - float(H.at[elem, BUS_B])) / denom
+        hit = saved[saved.element == elem]
+        kit = float(hit.lodf_kit.iloc[0]) if len(hit) else float("nan")
+        pyp = float(hit.bodf_pypsa.iloc[0]) if len(hit) else float("nan")
+        d = float(np.nanmax([abs(mine - kit), abs(mine - pyp)]))
+        worst = max(worst, d)
+        L.append(f"| {elem} | {mine:.15f} | {kit:.15f} | {pyp:.15f} | {d:.3e} |")
+
+    L += ["", f"- worst |re-derived - saved|: **{worst:.3e}**", "",
+          "The saved table already carries the kit's own LODF and pypsa's BODF and",
+          "reports them agreeing to 4e-13. This is a third, independent route to the",
+          "same three numbers.", "",
+          "Note for a future verifier: `ptdf_rows.parquet` is the post-contingency",
+          "row sensitivity, so its bus difference already equals the LODF. The",
+          "intact bus PTDF for this derivation is `ptdf_full.parquet`, keyed by the",
+          "branch name.", ""]
     return "\n".join(L)
 
 
@@ -144,7 +141,8 @@ def sanity_report() -> str:
     fp = OUT / f"{CASE}_flows.parquet"
     if fp.exists():
         fl = pd.read_parquet(fp)
-        tie = [c for c in fl.columns if "STRABANE" in str(c).upper() or "PST" in str(c).upper()]
+        tie = [c for c in fl.columns
+               if "STRABANE" in str(c).upper() or "PST" in str(c).upper()]
         if tie:
             v = fl[tie[0]].abs()
             cap = v.max()
@@ -154,17 +152,15 @@ def sanity_report() -> str:
         else:
             L.append("- tie link column not found in flows.parquet")
     else:
-        L.append("- `flows.parquet` absent, so the tie-link cap share is not checked here; "
-                 "ENGINE_NOTES.md reports it at 100 % of hours in every case")
+        L.append("- `flows.parquet` absent, so the tie-link cap share is not checked "
+                 "here; ENGINE_NOTES.md reports it at 100 % of hours in every case")
     L.append("")
     return "\n".join(L)
 
 
 def main() -> int:
     (VER / "v09_sanity.md").write_text(sanity_report(), encoding="utf-8")
-    print("wrote v09_sanity.md")
     (VER / "v01_lodf.md").write_text(lodf_report(), encoding="utf-8")
-    print("wrote v01_lodf.md")
     for f in ("v09_sanity.md", "v01_lodf.md"):
         print("---", f)
         print("\n".join(l for l in (VER / f).read_text(encoding="utf-8").splitlines()

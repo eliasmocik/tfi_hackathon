@@ -13,7 +13,7 @@ permitted and are used where the network itself is needed.
 
 | # | check | status |
 |---|---|---|
-| 1 | LODF for the monitored rows, re-derived and checked against pypsa calculate_BODF | **not run** |
+| 1 | LODF for the monitored rows, re-derived and checked against pypsa calculate_BODF | done - `v01_lodf.md` |
 | 2 | F and O recomputed from raw flows for 50 random hours | done - `v02_flows.md` |
 | 3 | Sum SF*c >= O and c <= p0 for each rule over 200 random overload hours | done - `v03_relief.md` |
 | 4 | Per-hour ordering of total cut, and band-inf == rule 2 | done - `v04_ordering.md` |
@@ -23,8 +23,17 @@ permitted and are used where the network itself is needed.
 | 8 | Priority classification checked against eirgrid_gss1_res_units.csv | done - `v08_priority.md` |
 | 9 | Sanity: cut MWh vs overload MWh, tie link at cap, load shedding | done - `v09_sanity.md` |
 | 10 | Every discrepancy with its size, and which RESULTS.md numbers it affects | see section below |
+| 11 | The band rule re-implemented from MASTER section 4 and compared with cuts_band3.parquet (the HANDOFF's most valuable check) | done - `v11_band_rule.md` |
 
 ## Findings by check
+
+### 1. LODF for the monitored rows, re-derived and checked against pypsa calculate_BODF
+
+- re-derived denominator: **0.224264205328567**
+- denominator in `WP2024s42_lodf.csv`: **0.224264205328388** (difference 1.795e-13)
+- worst |re-derived - saved|: **6.914e-13**
+
+Full report: [`v01_lodf.md`](v01_lodf.md).
 
 ### 2. F and O recomputed from raw flows for 50 random hours
 
@@ -39,11 +48,17 @@ Full report: [`v02_flows.md`](v02_flows.md).
 
 ### 3. Sum SF*c >= O and c <= p0 for each rule over 200 random overload hours
 
+- hour-rule-row samples checked: **2244**
+- samples where relief fell short of the overload by more than 1e-4: **0**
+- worst shortfall: **1.421e-14 MW**
 
 Full report: [`v03_relief.md`](v03_relief.md).
 
 ### 4. Per-hour ordering of total cut, and band-inf == rule 2
 
+- hours with sum c(rule3) > sum c(rule2) + 1e-6: **0** (worst 1.137e-13)
+- hours with sum c(rule2) > sum c(rule1) + 1e-6: **0** (worst 0.000e+00)
+- max |band-inf - rule2| element-wise: **0.000e+00**
 
 Full report: [`v04_ordering.md`](v04_ordering.md).
 
@@ -90,16 +105,20 @@ Full report: [`v08_priority.md`](v08_priority.md).
 - ratio cut / overload: **4.514**
 - capacity-weighted mean effective shift factor: **0.2204**, so 1 / mean SF = **4.538**
 - agreement: ratio / (1/mean SF) = **0.995** (1.0 would be exact)
-- `flows.parquet` absent, so the tie-link cap share is not checked here; ENGINE_NOTES.md reports it at 100 % of hours in every case
+- tie link `LKY-STRABANE-PST`: |flow| max 93.00 MW, at cap in **100.0 %** of hours
 
 Full report: [`v09_sanity.md`](v09_sanity.md).
 
-## Checks not run
+### 11. The band rule re-implemented from MASTER section 4 and compared with cuts_band3.parquet (the HANDOFF's most valuable check)
 
-These require the large parquet tables, which are git-ignored and were
-regenerated locally; if the engine run did not complete they are absent.
+- case `WP2024s42`, first **500** hours, **51** cuttable farms
+- hours with an overload in the window: **135**
+- total cut, re-derived: **15,408.326 MW**
+- total cut, `WP2024s42_cuts_band3.parquet`: **15,415.859 MW**
+- relative difference in total: **4.887e-04**
+- worst element-wise |difference|: **7.380e+01 MW**
 
-- **1. LODF for the monitored rows, re-derived and checked against pypsa calculate_BODF**
+Full report: [`v11_band_rule.md`](v11_band_rule.md).
 
 ## 10. Discrepancies, with size and effect
 
@@ -114,6 +133,31 @@ Every difference found, whether or not it changes a reported number.
 | D5 | HANDOFF section 2 describes the repository as private and says only Elias can push | n/a | No | The repository is public (`"private": false`) and DarraghE has write access. |
 | D6 | HANDOFF section 3 cites "section 10 item 5's second half" for the band-rule re-derivation | n/a | No | Item 5 is only the Jain/Gini/D recompute; the band-rule re-derivation is not in the numbered list. |
 | D7 | `src/measurement.py` and `src/engine_prep.py` write text with `Path.write_text()` and `print()` without an encoding | crashes on Windows (cp1252) partway through, after some outputs are written | No - output values are unaffected | Run with `PYTHONUTF8=1`. A one-word `encoding="utf-8"` would make it portable. |
+| D8 | `node_table.csv` sorts nodes by shift factor and flags the "significant step change" by comparing each node with the next. Buses 1401 and 14016 have effectively equal shift factors | the sort is unstable between runs, so the flagged step moved from bus 1401 to bus 14016 and `step_after_name` from BELLACORICK to CROAGHAUN; the shift factors themselves agree to 1.7e-12 | **Only the node table.** Group membership is fixed by MASTER section 0, not derived from the step, so no headline number moves | Break the tie deterministically (bus id as secondary sort key). Relevant to hackathon problem 3.2, which proposes generating groups from this threshold. |
+| D9 | The band rule is **path-dependent**: r_i feeds the next hour's eligible set | an independent re-implementation reproduces the total cut to 4.9e-4 and the year-end ratio spread to 0.13 pp (13.74 vs 13.87 pp), with per-farm cumulative cut correlating 0.9993, but 1634 of 25500 per-hour-per-farm entries differ, the largest by a whole 73.8 MW farm alternating between adjacent hours | No - every reported quantity is an aggregate and those agree | Not a bug in either implementation. But if the rule is ever codified, the tie-break and float tolerance must be specified: two conforming implementations will otherwise issue different per-farm instructions. |
+
+### Reproduction on different hardware
+
+The whole pipeline was re-run from scratch on Windows with different
+package versions (pandas 3.0.5, numpy 2.4.6, pypsa from the current
+release) against Elias's macOS run:
+
+| stage | worst difference from the committed output |
+|---|---|
+| synthetic year (`sites`, `fleet`, `anchors`) | byte-identical |
+| shift factors | 1.7e-12 |
+| LODF | 6.9e-13 |
+| overload series | 1.7e-10 |
+| overload energy totals | 1.6e-7 MWh on 34,817 MWh |
+| post-cut violations, sign-convention check | 9.4e-10 |
+| `rules_summary.json` | wall-clock `seconds` only |
+
+Every regenerated file was compared and then **restored** from git, so
+the committed outputs are untouched. The two files that differ beyond
+float noise are `node_table.csv` (D8) and `lodf_dcpf_check.csv`, the
+latter because it samples random hours without a fixed seed and so drew
+a different sample - not a discrepancy, but it does mean that file
+cannot be diffed between runs.
 
 ### What this does not cover
 

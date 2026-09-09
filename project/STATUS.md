@@ -20,30 +20,43 @@ Overloads on Flagford–Sligo 110 kV under loss of Flagford–Srananagh 220 kV:
 All assertions pass in all three cases (band ∞ = rule 2 element-wise; Σc rule 3 ≤ rule 2 ≤ rule 1 per hour; no residual hours). The WP2033s43 §3.4 stage had never been run; `src/engine_notes.py` now runs it when the stats file is missing.
 Headline (WP2024s42, `out/WP2024s42_summary.csv`): see `out/RESULTS.md` §4–§5. The measured-vs-simulated station rank correlation is negative and not significant (`out/comparison_stats.csv`).
 
-## Phase 3 — verification (in progress, 2026-09-09)
+## Phase 3 — verification (complete, 2026-09-09)
 
 Scripts in `verify/`, none importing rules/metrics/measurement/compare/robustness.
 `verify/VERIFICATION.md` is assembled by `verify/build_verification.py`.
 
 | # | check | result |
 |---|---|---|
-| 1 | LODF vs pypsa BODF | waiting on the engine run |
+| 1 | LODF re-derived from the PTDF | **pass** — agrees with kit and pypsa to 6.9e-13 |
 | 2 | overload series recomputed | **pass** — 200 comparisons, 0 mismatches, worst 7.1e-15 |
-| 3 | relief delivered per rule | needs `_cuts_*.parquet` (Phase 2 rerun) |
-| 4 | ordering of total cut | needs `_cuts_*.parquet` |
+| 3 | relief delivered per rule | **pass** — 2244 samples, 0 shortfalls, worst 1.4e-14 MW |
+| 4 | ordering of total cut | **pass** — 0 violations; band∞ = rule 2 exactly (0.0) |
 | 5 | metrics from farm_r.csv | **pass** — 363/363, worst rel dev 2.1e-13 |
 | 6 | measurement from raw BM | **pass** — independent code agrees to 9.7e-17 |
 | 7 | WDT quotations | **pass** — 9 attributed quotes, 0 not found |
 | 8 | priority classification | **pass** — 210/210 units |
-| 9 | sanity, cut vs overload | **pass** — ratio 4.514 vs 1/SF 4.538, agreement 0.995 |
-| 10 | discrepancy list | D1–D7 in VERIFICATION.md |
+| 9 | sanity | **pass** — cut/overload 4.514 vs 1/SF 4.538, agreement 0.995; tie link at cap 100.0 % of hours |
+| 10 | discrepancy list | D1–D9 in VERIFICATION.md |
+| 11 | band rule re-derived | aggregates reproduce (total 4.9e-4, spread 13.74 vs 13.87 pp); per-hour assignment does not — the rule is path-dependent (D9) |
 
-**Retention finding.** The SEM-O window can no longer be pulled in full: the API
-now starts at 2026-06-09 23:00, so a fresh pull is 48 half-hours short of the
-committed measurement. `out/measurement_*.csv` therefore cannot be regenerated
-from the API. They were restored, not overwritten; the fresh run is in
-`verify/repro/`. **Elias's local raw BM files are the only complete copy of
-2026-06-08..09 and should be backed up.**
+**Cross-platform reproduction.** The whole pipeline was re-run from scratch on
+Windows with different package versions. Synthetic year files are byte-identical;
+shift factors agree to 1.7e-12, LODF 6.9e-13, overloads 1.7e-10, post-cut checks
+9.4e-10. Every regenerated file was compared and then restored from git, so the
+committed outputs are untouched.
+
+**Two things a future run must know.**
+
+1. **Retention.** The SEM-O window can no longer be pulled in full: the API now
+   starts at 2026-06-09 23:00, so a fresh pull is 48 half-hours short. The
+   committed `out/measurement_*.csv` cannot be regenerated from the API.
+   **Elias's local raw BM files are the only complete copy of 2026-06-08..09 and
+   should be backed up.** A fresh pull is in `project/data/` (git-ignored) and the
+   fresh run in `verify/repro/`.
+2. **Windows.** Run everything with `PYTHONUTF8=1` (D7).
+
+Not re-run here: the WP2033 engine cases (~45 min each). Only WP2024s42 was
+regenerated, so checks 3, 4 and 11 cover the main case.
 
 ## Design brief v2 work packages (2026-09-09)
 

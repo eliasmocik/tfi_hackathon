@@ -37,6 +37,8 @@ CHECKS = {
         "v09_sanity.md"),
     10: ("Every discrepancy with its size, and which RESULTS.md numbers it affects",
          None),
+    11: ("The band rule re-implemented from MASTER section 4 and compared with "
+         "cuts_band3.parquet (the HANDOFF's most valuable check)", "v11_band_rule.md"),
 }
 
 
@@ -145,6 +147,49 @@ def main() -> int:
         "Windows (cp1252) partway through, after some outputs are written | No - "
         "output values are unaffected | Run with `PYTHONUTF8=1`. A one-word "
         "`encoding=\"utf-8\"` would make it portable. |",
+        "| D8 | `node_table.csv` sorts nodes by shift factor and flags the "
+        "\"significant step change\" by comparing each node with the next. Buses "
+        "1401 and 14016 have effectively equal shift factors | the sort is "
+        "unstable between runs, so the flagged step moved from bus 1401 to bus "
+        "14016 and `step_after_name` from BELLACORICK to CROAGHAUN; the shift "
+        "factors themselves agree to 1.7e-12 | **Only the node table.** Group "
+        "membership is fixed by MASTER section 0, not derived from the step, so "
+        "no headline number moves | Break the tie deterministically (bus id as "
+        "secondary sort key). Relevant to hackathon problem 3.2, which proposes "
+        "generating groups from this threshold. |",
+        "| D9 | The band rule is **path-dependent**: r_i feeds the next hour's "
+        "eligible set | an independent re-implementation reproduces the total cut "
+        "to 4.9e-4 and the year-end ratio spread to 0.13 pp (13.74 vs 13.87 pp), "
+        "with per-farm cumulative cut correlating 0.9993, but 1634 of 25500 "
+        "per-hour-per-farm entries differ, the largest by a whole 73.8 MW farm "
+        "alternating between adjacent hours | No - every reported quantity is an "
+        "aggregate and those agree | Not a bug in either implementation. But if "
+        "the rule is ever codified, the tie-break and float tolerance must be "
+        "specified: two conforming implementations will otherwise issue different "
+        "per-farm instructions. |",
+        "",
+        "### Reproduction on different hardware",
+        "",
+        "The whole pipeline was re-run from scratch on Windows with different",
+        "package versions (pandas 3.0.5, numpy 2.4.6, pypsa from the current",
+        "release) against Elias's macOS run:",
+        "",
+        "| stage | worst difference from the committed output |",
+        "|---|---|",
+        "| synthetic year (`sites`, `fleet`, `anchors`) | byte-identical |",
+        "| shift factors | 1.7e-12 |",
+        "| LODF | 6.9e-13 |",
+        "| overload series | 1.7e-10 |",
+        "| overload energy totals | 1.6e-7 MWh on 34,817 MWh |",
+        "| post-cut violations, sign-convention check | 9.4e-10 |",
+        "| `rules_summary.json` | wall-clock `seconds` only |",
+        "",
+        "Every regenerated file was compared and then **restored** from git, so",
+        "the committed outputs are untouched. The two files that differ beyond",
+        "float noise are `node_table.csv` (D8) and `lodf_dcpf_check.csv`, the",
+        "latter because it samples random hours without a fixed seed and so drew",
+        "a different sample - not a discrepancy, but it does mean that file",
+        "cannot be diffed between runs.",
         "",
         "### What this does not cover",
         "",
@@ -159,7 +204,8 @@ def main() -> int:
 
     (VER / "VERIFICATION.md").write_text("\n".join(L), encoding="utf-8")
     done = sum(1 for i, (t, f) in CHECKS.items() if f and present[i] is not None)
-    print(f"wrote verify/VERIFICATION.md - {done} of 9 scripted checks present"
+    total = sum(1 for i, (t, f) in CHECKS.items() if f)
+    print(f"wrote verify/VERIFICATION.md - {done} of {total} scripted checks present"
           f"{'; missing ' + ', '.join(map(str, missing)) if missing else ''}")
     return 0
 

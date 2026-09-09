@@ -10,4 +10,4 @@ Case `WP2024s42`.
 MASTER section 10.9 expects the ratio to be of order 1 / mean SF: cutting 1 MW of wind removes only SF MW of flow, so relieving 1 MWh of overload costs about 1/SF MWh of spill.
 - agreement: ratio / (1/mean SF) = **0.995** (1.0 would be exact)
 
-- `flows.parquet` absent, so the tie-link cap share is not checked here; ENGINE_NOTES.md reports it at 100 % of hours in every case
+- tie link `LKY-STRABANE-PST`: |flow| max 93.00 MW, at cap in **100.0 %** of hours
