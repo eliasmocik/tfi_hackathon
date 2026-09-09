@@ -1,0 +1,17 @@
+year cols matching generators: 594 of 710 ; generators with a profile in kit week: 603
+load cols matching: 246 of 246
+p_min_pu clipped for 42 units
+  chunk 1/14 done, 93s
+  chunk 10/14 done, 970s
+  chunk 11/14 done, 1058s
+  chunk 12/14 done, 1142s
+  chunk 13/14 done, 1226s
+  chunk 14/14 done, 1234s
+                                                         case  rating   lodf  intact_hours_over  intact_max  n1_hours_over  n1_share  n1_max  n1_overload_MWh
+CG3 Flagford T 220/110 w1 (2nd) | loss Flagford-Srananagh 220   125.0 -0.269                  0        80.7              0     0.000   109.7              0.0
+NW branches overloaded intact under unconstrained dispatch (share of hours):
+        branch        from          to  rating  share_over  max_flow
+  3581-89516-1 LETTERKENNY    STRA_PST   123.0       0.884     349.8
+T89515-89516-1    STRA_PST    STRA_PST   125.0       0.858     349.8
+T89510-89515-1    STRABANE    STRA_PST   125.0       0.858     349.8
+   2321-3581-1    DRUMKEEN LETTERKENNY   123.0       0.135     143.5

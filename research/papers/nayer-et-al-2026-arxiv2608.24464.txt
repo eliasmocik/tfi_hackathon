@@ -1,0 +1,690 @@
+ 
+ Modelling Renewable Curtailment and Constraints in Ireland’s Electricity System 
+ Report GitHub Issue 
+ × 
+ Title: 
+ Content selection saved. Describe the issue below: 
+ Description: 
+ Submit without GitHub 
+ Submit in GitHub 
+ arXiv is now an independent nonprofit! 
+ Learn more 
+ × 
+ Back to arXiv 
+ Why HTML? 
+ Report Issue 
+ Back to Abstract 
+ Download PDF 
+ Abstract 
+ I Introduction 
+ II Literature Review & Contributions 
+ III Island of Ireland Electricity System Operation 
+ III-A Surplus 
+ III-B Curtailment 
+ III-C Constraint 
+ IV Model Description 
+ IV-A Market Model 
+ IV-A 1 Generation 
+ IV-A 2 Power Balance 
+ IV-A 3 Demand 
+ IV-A 4 Overall formulation of the market model 
+ IV-B Curtailment Model 
+ IV-B 1 Generation 
+ IV-B 2 Demand & Power Balance 
+ IV-B 3 Security constraints 
+ IV-B 4 SNSP 
+ IV-B 5 MUON 
+ IV-B 6 Overall formulation of Curtailment Model 
+ IV-C Constraint Model 
+ IV-C 1 Generation 
+ IV-C 2 Demand 
+ IV-C 3 Power Balance 
+ IV-C 4 Power Flow 
+ IV-C 5 Security constraints 
+ IV-C 6 Pro-Rata Constraint for multiple Groups 
+ IV-C 7 Overall formulation of Constraint Model 
+ IV-D Allocation of Curtailment & Constraint Volumes 
+ V Results 
+ V-A An Illustrative Test Case 
+ V-B All-Island Testcase 
+ VI Discussion & Conclusions 
+ References 
+ A Security Constraints in Irish Electricity System 
+ License: CC BY 4.0
+arXiv:2608.24464v1 [math.OC] 25 Aug 2026 
+ \old@ps@headings 
+ Modelling Renewable Curtailment and Constraints in Ireland’s Electricity System 
+ Richard Nayer, Sam Hodges, Waqquas Bukhsh
+ Affiliation:  University of Strathclyde
+ Glasgow, Scotland (UK)
+ {richard.nayer,sam.hodges,waqquas.bukhsh}@strath.ac.uk
+ Claver Chitambo, Chanura Wijeratne
+ Affiliation:  Renewable Energy Solutions 
+ Kings Langley, UK
+ {claver.chitambo,chanura.wijeratne}@res-group.com
+ Abstract 
+ This paper describes the electricity markets and operational processes in the Irish power system and translates them into a Mixed Integer Linear Programming (MILP) model. The model is designed to estimate renewable generation Curtailment and Constraint . A full mathematical formulation is presented and tested on both a simple example and a realistic model of the Irish transmission network. The results show that the proposed formulation works as intended, capturing curtailment and constraint effects, while also highlighting model limitations and directions for future improvement. 
+ Index Terms:  active network management; constraint; curtailment; electricity system modelling; power systems analysis; renewable energy sources
+ I Introduction 
+ In market based power systems, generators have traditionally received firm connection agreements from Distribution and Transmission Network Operators (DNOs/TNOs), ensuring uninterrupted network access. However, the rapid build out of renewable generators at both transmission and distribution level has outpaced network reinforcement, leading to long lead-times and high costs for securing firm connections. To address this, non-firm connection agreements have become increasingly common, under which grid access may be curtailed without compensation when network constraints or system security requirements arise. Such arrangements expose renewable generators to revenue uncertainty. A review of international practices in [ 1 ] highlights the growing importance of forecasting export reductions, which is critical for developers’ investment decisions. 
+ The process by which non-firm connections and export limits are managed differs across power systems and operators  [ 1 ] . For example, in Great Britain, DNOs apply a Last-In-First-Out (LIFO) principle, where the most recent connections are curtailed first in real time  [ 1 ] . On the Island of Ireland, the TNOs use a pro-rata approach, where curtailments are shared proportionally among renewable generators  [ 1 ] . In South Australia, the DNOs apply Dynamic Operating Envelopes (DOE), with capacity limits updated ahead of each dispatch interval  [ 1 ] . This paper focuses on the island of Ireland, where pro-rata reductions can be applied across all non-synchronous generators on the transmission network to address system security requirements, or to specific constraint groups (which may overlap) to address local transmission constraints. Figure  1 presents a schematic of the high-voltage transmission network in Ireland, with the main constraint groups shown geographically  [ 2 ] . These groups are not static; they change over time depending on the expected operating conditions, which in turn are influenced by the level of non-synchronous generation, the network state, cross-border imports and exports, and the availability of wind and solar resources. 
+ Fig. 1: Ireland Constraint Groups (While the figure states ”Wind Constraint Group Map”, solar generators will also be constrained within these pro-rata groups) [ 2 ] . 
+ II Literature Review & Contributions 
+ The use of mathematical modelling for power system operation and planning is well established in both industry and academia, with a wealth of associated literature [ 3 , 4 , 5 ] . Several open source power system optimisation tools have been developed [ 6 , 7 , 8 ] , many of which can implicitly model generator curtailment. However, most of these tools focus on generic constraints and do not capture system-specific curtailment rules, such as pro-rata curtailment in overlapping constraint groups. In this paper, we build on a modified version of OATS [ 6 ] , which has previously been applied to curtailment analysis in [ 9 ] . 
+ While there is some literature related to pro-rata curtailment, there is limited research that reflects the detailed curtailment and constraint approaches used in Ireland. EirGrid, the Irish Transmission System Operator, regularly assess renewable curtailment using a commercial platform called PLEXOS  [ 10 ] , but the exact model formulation is not available. In [ 11 ] , a MATPOWER model performs optimal power flow (OPF) assessments of LIFO, Rota and Pro-Rata curtailment policies. The method assumed a single pro-rata group, whereas in Ireland generators can belong to multiple, and potentially overlapping, pro-rata groups. A different approach in [ 12 ] used a game theoretic model with statistical distributions of generation and demand to compare curtailment under LIFO, pro-rata, and rota policies. However, the approach does not explicitly model the network and was limited to two demand regions. The recent work in [ 13 ] analysed dispatch instruction data from 2020-2021 to estimate curtailment volumes in Ireland. The study found that most system level curtailment resulted from minimum unit run requirements (MUON), with the remainder driven by the System Non-Synchronous Penetration (SNSP) limit of 75%. SNSP is defined by EirGrid/SONI as  [ 14 ] : 
+ “the ratio of the real-time MW contribution from non-synchronous generation (including BESS discharges and interconnector imports) to demand (including BESS charges and interconnector exports)” . 
+ To best of authors’ knowledge, no published work provides an Irish electricity system-specific definition of curtailment and constraints, a step-by-step representation of how these are applied in practice, or a mathematical model that captures the overlapping and dynamic nature of constraint groups. This paper addresses that gap. Our contributions are twofold: 
+ • 
+ Elicitation and formalisation of the high-level requirements of the curtailment and constraint framework in Irish electricity system. 
+ • 
+ Development of a simple yet representative market and network model for Ireland that can estimate curtailment and constraint volumes while accounting for the complexities of overlapping constraint groups. 
+ The remainder of the paper is organised as follows. Section  III provides an overview of the Irish electricity market and introduces definitions of curtailment and constraint. Section  IV presents the mathematical model. Section  V demonstrates the results using both an illustrative test system and a representative Irish system. The paper concludes in Section  VI . 
+ III Island of Ireland Electricity System Operation 
+ In Ireland, the terms Curtailment and Constraint have specific definitions, which are emphasised here to distinguish them from more general uses. The electricity transmission network across the Republic of Ireland (ROI) and Northern Ireland (NI) is jointly operated by the two TSOs, Eirgrid and SONI. Together they also operate the Single Electricity Market Operator (SEMO) for the all-island market. As part of the EU internal market, they also act as Nominated Electricity Market Operators (NEMOs) through the SEMO Power Exchange (SEMOpx). SEMOpx operate the following three wholesale markets   [ 15 ] . 
+ • 
+ The Day-Ahead Market (DAM), which sets day-ahead price in Ireland and interconnection flows determined by the EUPHEMIA algorithm  [ 16 ] . 
+ • 
+ The Intraday Auctions (IDA1, IDA2, IDA3), which allow adjustments closer to real time. IDA1 and IDA2 are coupled with Great Britain, while IDA3 is local to Ireland. 
+ • 
+ The Intraday Continuous Market (IDC), which is also local to Ireland. 
+ Imbalances between traded and actual generation are settled in the Balancing Mechanism, managed by SEMO. The DAM clears in 1-hour trading periods, while the intraday markets and balancing market operate in 30-minute periods (with 5-minute pricing in the balancing market). The last intraday market to close is the IDC, which stops trading one hour before delivery, known as Gate Closure 2 (GC2). At this point, generators submit their Final Physical Notification (FPN) of expected output. It should be noted that for the majority of renewable generators an FPN is not required to be submitted, and the forecast value will be taken. Figure  2 ) presents an example of how the position of a participant in the markets could vary with time. 
+ Fig. 2: All-Ireland Market Formation Sketch 
+ After the gate closure, the TSOs run a Security Constrained Unit Commitment (SCUC) to produce indicative schedules for up to 48 hours ahead. This process, known as Long Term Scheduling (LTS), gives
+market participants time to adjust their positions. Closer to real-time, further SCUC runs are performed in the Rea-Time Commitment (RTC), followed by Security Constrained Economic Dispatch (SCED), which informs dispatch instructions issued from the control room [ 17 , 18 ] . Deviations from FPNs are priced in the balancing market. The balancing market follows three main principles, in the following order of priority  [ 10 ] : 
+ 1. 
+ Ensuring operational security (by performing curtailment if required); 
+ 2. 
+ Maximise the use of priority-dispatch generation (mainly renewables); and, 
+ 3. 
+ Ensure the efficient operation of the SEM. 
+ Fig. 3: Curtailment & Constraint Types [ 19 ] 
+ The TSOs classify dispatch actions on non-synchronous generators (wind, solar, interconnectors) into Curtailment , Constraint or Other (see Fig.  3 , as described in the following sections. These volumes are reported publicly by SEMO. An additional measure of interest is Surplus, which reflects oversupply of renewables relative to demand  [ 20 ] . 
+ III-A Surplus 
+ Surplus occurs when the potential to generate power from renewables in a period exceeds the power demand on the system. It can be considered to be the difference between the technically achievable export from a generator (e.g. for renewables the forecast generation based on the weather), relative to their position achieved in the market (noting renewables are not required to submit FPNs). 
+ III-B Curtailment 
+ Curtailment is dispatch down from the FPN to ensure system security. The reasons for curtailment are weekly published  [ 21 ] . Common reasons include the SNSP limit, minimum inertia or frequency requirements, and the need to keep a minimum number of conventional units online. 
+ III-C Constraint 
+ Constraint is the dispatch down (relative to the FPN) by the control room of renewable generators due to local transmission constraints. Renewables are all allocated to Constraint groups (as shown in Fig. 1 ), which are defined by modelling to identify which generators contributed to particular network constraints  [ 2 ] . 
+ Renewable generation is currently prioritised to avoid dispatch down, as required under EU and Irish regulations  [ 10 ] . In SCUC and SCED runs, their bid prices are replaced with negative values to ensure they are scheduled ahead of conventional plants. A 2019 decision [ 22 ] stated that new renewable generators would lose priority dispatch status, but in practice this has not yet been fully implemented  [ 23 ] . 
+ IV Model Description 
+ The model significantly reworks and extends upon an existing modelling framework developed at the University of Strathclyde, OATS [ 6 ] . The high level requirements and approach of the model (as summarised in Fig.  4 ) are as follows. Note that the model is not time coupled, and ran as a series of snapshots: 
+ 1. 
+ Market: Determine the ex-ante market position for each generator. Copper-Plate Unit Commitment (UC) is ran as surrogate to provide market derived generation set-points. 
+ 2. 
+ Curtailed: Determine the volume of SNSP and MUON curtailment for renewable generation. Additional constraints are added to the Copper-Plate UC to incorporate market outcomes, and replicate the constraints applied by EirGrid to secure the system (e.g. SNSP, MUON). 
+ 3. 
+ Constrained: Determine the volume of renewable constrain dispatch down. The model is reformulated as a UC DCOPF to account for local transmission constraints, and determined further redispatch. 
+ Fig. 4: Model Flow Diagram (each snapshot). Parameters are shown on the left, with variables on the right. 
+ Notation 
+ Sets 
+ ℬ \mathcal{B} 
+ Buses, indexed by b b 
+ 𝒢 \mathcal{G} 
+ Generators, indexed by g g 
+ 𝒟 \mathcal{D} 
+ Demands, indexed by d d 
+ ℒ \mathcal{L} 
+ Lines, indexed by l = ( b , b ′ ) l=(b,b^{\prime}) 
+ 𝒞 \mathcal{C} 
+ Constrained groups, indexed by c c 
+ 𝒦 i \mathcal{K}_{i} 
+ i t ​ h i^{th} Constraint group, indexed by k k 
+ Parameters 
+ P g LB , P g UB \text{P}^{\text{LB}}_{g},\text{P}^{\text{UB}}_{g} 
+ Upper, lower bound of generator g g 
+ P d D \text{P}^{\text{D}}_{d} 
+ Active power demand at d d 
+ c g 0 , c g 1 c_{g}^{\text{0}},c_{g}^{\text{1}} 
+ Start-up, Per-MW of generator g g 
+ c d D,VOLL c^{\text{D,VOLL}}_{\text{d}} 
+ Value of Lost Load cost at d d 
+ c g offer , c g bid c_{g}^{\text{offer}},c_{g}^{\text{bid}} 
+ Offer, bid costs of generator g g 
+ S l L \text{S}^{\text{L}}_{l} 
+ Active power limit of line l l 
+ X l L \text{X}^{\text{L}}_{l} 
+ Reactance of line l l 
+ Variables 
+ p g G p^{\text{G}}_{\text{g}} 
+ Active power output of generator g g 
+ u g G u_{\text{g}}^{\text{G}} 
+ Binary variable for on/off state of generator g g 
+ α d D \alpha_{\text{d}}^{\text{D}} 
+ Proportion of demand met for demand d d 
+ p g ↑ , p g ↓ p_{\text{g}}^{\uparrow},p_{\text{g}}^{\downarrow} 
+ Positive (offer) and negative (bid) dispatch of generator g g 
+ ζ C \zeta^{\text{C}} 
+ Pro-Rata Curtailment of generators 
+ ξ g G \xi_{\text{g}}^{\text{G}} 
+ Pro-Rata Constraint of generator g g 
+ ξ k K \xi_{\text{k}}^{\text{K}} 
+ Pro-Rata constraint of Constraint group k k 
+ β g , k \beta_{g,k} 
+ Binary variable modelling minimum pro-rata Constraint of g g in all k k 
+ δ b B \delta_{\text{b}}^{\text{B}} 
+ Voltage angle at bus b b 
+ p l L p^{\text{L}}_{l} 
+ Active power flow in line l l 
+ IV-A Market Model 
+ This model represents the formation of the market merit order, therefore no network constraints are considered. Key outputs are the FPNs and generator on/off state, p g M p_{g}^{\text{M}} , u g M u_{g}^{\text{M}} during the time period of interest. 
+ IV-A 1 Generation 
+ Binary variable u g G u_{\text{g}}^{\text{G}} is defined for each generating unit g, to represent the generators on/off state. Generation for each unit g, p g G p_{\text{g}}^{\text{G}} , is constrained to be between defined upper and lower bounds, P g UB \text{P}^{\text{UB}}_{\text{g}} & P g LB \text{P}^{\text{LB}}_{\text{g}} : 
+ u g G ​ P g LB ≤ p g G ≤ u g G ​ P g UB u^{\text{G}}_{\text{g}}\text{P}^{\text{LB}}_{\text{g}}\leq p^{\text{G}}_{\text{g}}\leq u^{\text{G}}_{\text{g}}\text{P}^{\text{UB}}_{\text{g}} 
+ (1) 
+ IV-A 2 Power Balance 
+ The power balance is defined over the sets of generators and demands. At this stage, the network is not considered, and the model is therefore represented as a copper-plate system. 
+ ∑ g ∈ 𝒢 p g G = ∑ d ∈ 𝒟 p d D \sum_{g\in\mathcal{G}}p^{\text{G}}_{\text{g}}=\sum_{d\in\mathcal{D}}p^{\text{D}}_{\text{d}} 
+ (2) 
+ IV-A 3 Demand 
+ Let P d D \text{P}^{\text{D}}_{d} denote the active power demand at demand node d d . In some situations, the total generation may not be sufficient to meet the overall demand. In such cases, part of the demand is shed to maintain power balance. We define α d \alpha_{d} as the proportion of demand served at node d d . The demand model is then given as follows: α d D ∈ [ 0 , 1 ] , ∀ d ∈ 𝒟 \alpha^{\text{D}}_{\text{d}}\in\left[0,1\right],\forall d\in\mathcal{D} : 
+ p d D = α d D ​ P d D p^{\text{D}}_{\text{d}}=\alpha^{\text{D}}_{\text{d}}\text{P}^{\text{D}}_{\text{d}} 
+ (3) 
+ IV-A 4 Overall formulation of the market model 
+ The objective function is to minimise generation and lost load costs subjects to power balance, generation and demand model. The overall formulation is given as follows: 
+ min ⁡ ∑ g ∈ 𝒢 ( c g 1 ​ p g G + c g 0 ​ u g G ) ⏟ Generation Cost + ∑ d ∈ 𝒟 c d VOLL ​ ( 1 − α d D ) ​ P d D ⏟ Load shedding cost \displaystyle\min\underbrace{\sum_{g\in\mathcal{G}}(c^{1}_{\text{g}}p^{\text{G}}_{\text{g}}+c^{0}_{\text{g}}u^{\text{G}}_{\text{g}})}_{\text{Generation Cost}}+\underbrace{\sum_{d\in\mathcal{D}}c^{\text{VOLL}}_{\text{d}}(1-\alpha^{\text{D}}_{\text{d}})\text{P}_{d}^{D}}_{\text{Load shedding cost}} 
+ (4a) 
+ subject to 
+ ( 1 − 3 ) \displaystyle(1-3)~~~~~~~~~~~~~~~~~~~~ 
+ (4b) 
+ IV-B Curtailment Model 
+ This model is a surrogate for security considerations defined by the transmission system operators. The key inputs from the previous model are the market positions and on/off state for each generator, P g M P_{g}^{\text{M}} and U g M U_{\text{g}}^{\text{M}} (note these are capitalised as in this model they are parameters, not variables). The key outputs are updated variables p g S p_{\text{g}}^{\text{S}} and u g S u_{\text{g}}^{\text{S}} . 
+ IV-B 1 Generation 
+ The constraint ( 1 ) remains in effect. We introduce positive variables p g ↑ , p g ↓ p^{\uparrow}_{\text{g}},p^{\downarrow}_{\text{g}} for each unit g (offer to increase generation, bid to reduce generation), redispatch relative to P g M \text{P}^{\text{M}}_{g} is then: 
+ p g G = P g M + p g ↑ − p g ↓ p^{\text{G}}_{\text{g}}=\text{P}^{\text{M}}_{g}+p_{\text{g}}^{\uparrow}-p_{\text{g}}^{\downarrow} 
+ (5) 
+ In order to model pro-rata Curtailment of renewables, the variable ζ C ∈ [ 0 , 1 ] \zeta^{\text{C}}\in\left[0,1\right] is defined to control power output
+ ∀ g ∈ 𝒢 n ​ s \forall g\in\mathcal{G}_{ns} : 
+ p g G = P g M × ζ C p^{\text{G}}_{\text{g}}=\text{P}^{\text{M}}_{\text{g}}\times\zeta^{C} 
+ (6) 
+ IV-B 2 Demand & Power Balance 
+ The constraints defined in ( 2 ) and ( 3 ) remain in place. 
+ IV-B 3 Security constraints 
+ Security constraints are defined based on those in the SEMO ‘Weekly Operational Constraints Report’ [ 21 ] . Only SNSP and MUON constraints are built into the model. Rate of Change of Frequency (RoCoF) and Inertia only account for circa 0.6% of Curtailment [ 13 ] , and are neglected to limit model complexity. 
+ IV-B 4 SNSP 
+ SNSP constraints apply to non-synchronous generators, where 𝒢 n ​ s \mathcal{G}_{ns} include non-synchronous generators, and 𝒢 I + \mathcal{G}_{I+} and 𝒢 I − \mathcal{G}_{I-} are sets of exporting and importing interconnectors respectively. This is a simplification, as pumped-hydro and BESS are not included in the model, which would also appear on the denominator as per the definition in Section II . The SNSP limit is a parameter defined as x SNSP ∈ [ 0 , 1 ] x_{\text{SNSP}}\in[0,1] . In current operations x SNSP = 0.75 x_{\text{SNSP}}=0.75 [ 21 ] . 
+ ∑ g ∈ 𝒢 n ​ s p g G + ∑ g ​ ∀ 𝒢 I + p g G ≤ x S ​ N ​ S ​ P ( ∑ d ∈ 𝒟 P d D + ∑ g ∈ 𝒢 I − − p g G ) \sum_{g\in\mathcal{G}_{ns}}p^{\text{G}}_{\text{g}}+\sum_{g\forall\mathcal{G}_{I+}}p^{\text{G}}_{\text{g}}\leq x_{SNSP}\left(\sum_{d\in\mathcal{D}}\text{P}^{\text{D}}_{\text{d}}+\sum_{g\in\mathcal{G}_{I-}}-p^{\text{G}}_{\text{g}}\right) 
+ (7) 
+ IV-B 5 MUON 
+ Constraints are defined as ‘MW’ (limit MW ouput), ‘MWR’ (limit MW output + reserve), or ‘NB’ (limit on/off status), and are applied to individual units or groups of units. We define 𝒢 X ⊂ 𝒢 \mathcal{G}_{\text{X}}\subset\mathcal{G} to contain each generator controlled by constraint X . The constraints are defined according to the generic inequalities in ( 8 ). 
+ The sets and parameters for econstraints that apply in the Irish system are defined in II and IV in the Appendix. Constraints IDs reference those defined by EirGrid & SONI in [ 21 ] (e.g. S_MWMAX_NI_GT constrains output from set of generators G S_MWMAX_NI_GT G_{\texttt{S\_MWMAX\_NI\_GT}} to maintain sufficient replacement reserve in Northern Ireland). Note that inter-area flow constraints between ROI and NI (e.g S_MWR_ROI ) are not included here in MUON, as they can be included in line flow limits in the DCOPF model. Some NB constraints only apply in specific circumstances based on model parameters (e.g. demand); these are defined in IV . 
+ P X LB ≤ ∑ g ∈ 𝒢 X p g G \displaystyle P_{\text{X}}^{\text{LB}}\leq\sum_{g\in\mathcal{G}_{\text{X}}}p^{\text{G}}_{\text{g}} 
+ ≤ P X UB \displaystyle\leq P_{\text{X}}^{\text{UB}} 
+ (8a) 
+ U X LB ≤ ∑ g ∈ 𝒢 X u g G \displaystyle U_{\text{X}}^{\text{LB}}\leq\sum_{g\in\mathcal{G}_{\text{X}}}u^{\text{G}}_{\text{g}} 
+ ≤ U X UB \displaystyle\leq U_{\text{X}}^{\text{UB}} 
+ (8b) 
+ The NB (On/Off) constraints S_MBMIN_CPS and S_NBMIN_MP_NB are enforced dependent on the variable p g G p^{\text{G}}_{\text{g}} . To retain linearity of the model big-M formulations are used to enforce constraints. The Big-M parameters are calculated based on ∑ g ∈ 𝒢 X P g UB \sum_{g\in\mathcal{G}_{\text{X}}}P_{\text{g}}^{\text{UB}} and ∑ g ∈ 𝒢 X P g LB \sum_{g\in\mathcal{G}_{\text{X}}}P_{\text{g}}^{\text{LB}} to ensure they are as small as possible to avoid numerical solver issues. 
+ North West Generation Constraint ( S_MBMIN_CPS ) 
+ This constraint ensures that Coolkeeragh unit C30 is online, and is enforced when the NI system demand is greater than or equal to 1,550 MW, CGT8 is unavailable and NI wind generation < < 450 MW. As availability is not included in the model the CGT8 requirement is neglected.
+Relevant generators are defined in sub-set 𝒢 CPS \mathcal{G}_{\text{CPS}} . A big-M formulation is used to make the constraint conditional, introducing binary control variables y CPS G , y CPS y^{\text{G}}_{\text{CPS}},y_{\text{CPS}} , binary demand parameter y CPS D ∈ { 0 , 1 } \text{y}^{\text{D}}_{\text{CPS}}\in\left\{{0,1}\right\} and upper and lower big-M parameters, M CPS-U \text{M}_{\text{CPS-U}} , M CPS-L \text{M}_{\text{CPS-L}} . 
+ y CPS D = { 1 if ​ ∑ d ∈ 𝒟 NI P d D ≥ 1,550 0 otherwise \displaystyle\text{y}^{\text{D}}_{\text{CPS}}=\begin{cases}1&\text{if}\sum_{d\in\mathcal{D}_{\text{NI}}}\text{P}^{\text{D}}_{\text{d}}\geq 1,550\\
+0&\text{otherwise}\end{cases} 
+ (9a) 
+ M CPS-U = ∑ g ∈ 𝒢 NI,Wind P g UB − 450 \displaystyle\text{M}_{\text{CPS-U}}=\sum_{g\in\mathcal{G}_{\text{NI,Wind}}}\text{P}^{\text{UB}}_{\text{g}}-450 
+ (9b) 
+ M CPS-L = 450 − ∑ g ∈ 𝒢 NI,Wind P g LB \displaystyle\text{M}_{\text{CPS-L}}=450-\sum_{g\in\mathcal{G}_{\text{NI,Wind}}}\text{P}^{\text{LB}}_{\text{g}} 
+ (9c) 
+ 450 − ∑ g ∈ 𝒢 NI,Wind p g G ≤ M CPS-L ​ ( y CPS G ) \displaystyle 450-\sum_{g\in\mathcal{G}_{\text{NI,Wind}}}p_{g}^{G}\leq\text{M}_{\text{CPS-L}}(y^{\text{G}}_{\text{CPS}}) 
+ (9d) 
+ ∑ g ∈ 𝒢 NI,Wind p g G − 450 ≤ M CPS-U ​ ( 1 − y CPS G ) \displaystyle\sum_{g\in\mathcal{G}_{\text{NI,Wind}}}p_{\text{g}}^{\text{G}}-450\leq\text{M}_{\text{CPS-U}}(1-y^{\text{G}}_{\text{CPS}}) 
+ (9e) 
+ y CPS ≤ y CPS G \displaystyle y_{\text{CPS}}\leq y^{\text{G}}_{\text{CPS}} 
+ (9f) 
+ y CPS ≤ y CPS D \displaystyle y_{\text{CPS}}\leq\text{y}^{\text{D}}_{\text{CPS}} 
+ (9g) 
+ y CPS ≥ y CPS G + y CPS D − 1 \displaystyle y_{\text{CPS}}\geq y^{\text{G}}_{\text{CPS}}+\text{y}^{\text{D}}_{\text{CPS}}-1 
+ (9h) 
+ ∑ g ∈ 𝒢 CPS u g G ≥ 1 × y CPS \displaystyle\sum_{g\in\mathcal{G}_{\text{CPS}}}u^{\text{G}}_{\text{g}}\geq 1\times y_{\text{CPS}} 
+ (9i) 
+ 400 kV Network Support ( S_NBMIN_MP_NB ) 
+ This constraint ensures at least one generator in G S_NBMIN_MP_NB G_{\texttt{S\_NBMIN\_MP\_NB}} is operational enforced when wind generation in Republic of Ireland ( 𝒢 ROI,W ⊂ 𝒢 \mathcal{G}_{\text{ROI,W}}\subset\mathcal{G} ) is less than 1,000 MW. Relevant generators are defined in sub-set 𝒢 400kV \mathcal{G}_{\text{400kV}} . A big-M formulation is used to make the constraint conditional, introducing binary variable y 400kV G y^{\text{G}}_{\text{400kV}} and Big-M parameters M 400kV UB \text{M}_{\text{400kV}}^{\text{UB}} & M 400kV LB \text{M}_{\text{400kV}}^{\text{LB}} . 
+ M 400kV UB = ∑ g ∈ 𝒢 ROI,W P g UB − 1000 \displaystyle\text{M}_{\text{400kV}}^{\text{UB}}=\sum_{g\in\mathcal{G}_{\text{ROI,W}}}\text{P}^{\text{UB}}_{\text{g}}-1000 
+ (10a) 
+ M 400kV LB = 1000 − ∑ g ∈ 𝒢 ROI,W P g LB \displaystyle\text{M}_{\text{400kV}}^{\text{LB}}=1000-\sum_{g\in\mathcal{G}_{\text{ROI,W}}}\text{P}^{\text{LB}}_{\text{g}} 
+ (10b) 
+ 1000 − ∑ g ∈ 𝒢 ROI,W p g G ≥ M 400kV LB ​ ( y 400kV G ) \displaystyle 1000-\sum_{g\in\mathcal{G}_{\text{ROI,W}}}p_{\text{g}}^{\text{G}}\geq\text{M}_{\text{400kV}}^{\text{LB}}(y^{\text{G}}_{\text{400kV}}) 
+ (10c) 
+ ∑ g ∈ 𝒢 ROI,W p g G − 1000 ≤ M 400kV UB ​ ( 1 − y 400kV G ) \displaystyle\sum_{g\in\mathcal{G}_{\text{ROI,W}}}p_{\text{g}}^{\text{G}}-1000\leq\text{M}_{\text{400kV}}^{\text{UB}}(1-y^{\text{G}}_{\text{400kV}}) 
+ (10d) 
+ ∑ g ∈ 𝒢 400kV u g G ≥ 1 × y CPS \displaystyle\sum_{g\in\mathcal{G}_{\text{400kV}}}u^{\text{G}}_{\text{g}}\geq 1\times y_{\text{CPS}} 
+ (10e) 
+ IV-B 6 Overall formulation of Curtailment Model 
+ Bid and offer prices for the re-dispatch of generators are relative to P g M \text{P}_{\text{g}}^{\text{M}} as per ( 12 ). The overall formulation is given as follows: 
+ min ⁡ ∑ g ∈ 𝒢 ( c g offer ​ p g ↑ + c g bid ​ p g ↓ + c g 0 ​ u g G ​ ( 1 − U g M ) CLOSE ⏟ Redispatch Cost \displaystyle\min\underbrace{\sum_{g\in\mathcal{G}}(c_{\text{g}}^{\text{offer}}p_{\text{g}}^{\uparrow}+c_{\text{g}}^{\text{bid}}p_{\text{g}}^{\downarrow}+c_{\text{g}}^{\text{0}}u_{\text{g}}^{\text{G}}(1-U_{\text{g}}^{\text{M}})}_{\text{Redispatch Cost}}~~~~~~ 
+ + ∑ d ∈ 𝒟 c d VOLL ​ ( 1 − α d D ) ​ P d D ⏟ Load shedding cost \displaystyle+\underbrace{\sum_{d\in\mathcal{D}}c^{\text{VOLL}}_{d}(1-\alpha^{\text{D}}_{\text{d}})\text{P}_{\text{d}}^{\text{D}}}_{\text{Load shedding cost}} 
+ (11a) 
+ subject to 
+ ( 1 , 2 , 5 − 10 ) \displaystyle(\ref{eq:market_genbounds2},\ref{eq:market_powerbalance},\ref{eq:curtailment_bidoffer}-\ref{eq:S_NBMIN_MP_NB})~~~~~~~~~~~~~~~~~ 
+ (11b) 
+ IV-C Constraint Model 
+ This model represents the final dispatched position of generators on the network. The key inputs from the previous model are the re-dispatched generator set-points and on/off state for each generator, P g S \text{P}_{\text{g}}^{\text{S}} & U g S \text{U}_{\text{g}}^{\text{S}} . The key outputs are updated constrained generator variables, p g C p_{\text{g}}^{\text{C}} & u g C u_{\text{g}}^{\text{C}} . 
+ IV-C 1 Generation 
+ The constraints defined in ( 1 ) remain in effect. The bid/offer constraint in ( 5 ) is reformulated to be relative to P g S \text{P}_{\text{g}}^{S} : 
+ p g G = P g S + p g ↑ − p g ↓ p^{\text{G}}_{\text{g}}=\text{P}^{\text{S}}_{\text{g}}+p^{\uparrow}_{\text{g}}-p^{\downarrow}_{\text{g}} 
+ (12) 
+ IV-C 2 Demand 
+ Demand constraints remain as in the previous model. 
+ IV-C 3 Power Balance 
+ The power balance constraint ( 2 ) is replaced with ( 13 ). Let 𝒢 b \mathcal{G}_{b} , 𝒟 b \mathcal{D}_{b} and ℒ b \mathcal{L}_{b} be sets of generators, demand and lines at bus b b , then ∀ b ∈ ℬ \forall b\in\mathcal{B} : 
+ ∑ g ∈ 𝒢 b p g G = ∑ d ∈ 𝒟 b P d D + ∑ l ∈ ℒ b p l L \sum_{g\in\mathcal{G}_{b}}p^{\text{G}}_{\text{g}}=\sum_{d\in\mathcal{D}_{b}}\text{P}^{\text{D}}_{\text{d}}+\sum_{l\in\mathcal{L}_{b}}p^{\text{L}}_{\text{l}} 
+ (13) 
+ where p g G p^{\text{G}}_{\text{g}} is active power output of generator g g , P d D \text{P}^{\text{D}}_{\text{d}} is active power demand at d d , and p l L p^{\text{L}}_{\text{l}} is active power flow on a line l l . 
+ IV-C 4 Power Flow 
+ AC power flow is a non-linear function of bus voltages, and computationally challenging to solve. We employ the widely used DC Optimal Power Flow (DCOPF) linearisation, that neglects reactive power and assumed a constant voltage magnitude at all buses  [ 24 ] . The power flow equations for both lines and transformers are defined in ( 14 ), where p l L p^{\text{L}}_{\text{l}} is active power flow in line l l , δ b’ \delta_{\text{b'}} and δ b \delta_{\text{b}} are voltage angles are the two ends of line l l , and X l L \text{X}^{\text{L}}_{\text{l}} is the reactance of the line l l . 
+ p l L = δ b’ − δ b X l L p^{\text{L}}_{\text{l}}=\frac{\delta_{\text{b'}}-\delta_{\text{b}}}{\text{X}^{\text{L}}_{\text{l}}} 
+ (14) 
+ The active power flow in a line l l is bounded by it’s capacity S l L \text{S}^{\text{L}}_{l} 
+ − S l L ≤ p l L ≤ S l L -\text{S}^{\text{L}}_{\text{l}}\leq p^{\text{L}}_{\text{l}}\leq\text{S}^{\text{L}}_{\text{l}} 
+ (15) 
+ IV-C 5 Security constraints 
+ The security constraints defined in the previous section remain in place. Inter-area flows between NI and ROI are constrained by S_MWR_ROI and S_MWR_NI . These are implemented by defining S l L S_{\text{l}}^{\text{L}} appropriately for constraint ( 15 ). 
+ IV-C 6 Pro-Rata Constraint for multiple Groups 
+ The pro-rata Curtailment constraint ( 6 ) is replaced with the following. Let 𝒦 = { 𝒦 1 , 𝒦 2 , ⋯ , 𝒦 n } \mathcal{K}=\{\mathcal{K}_{1},\mathcal{K}_{2},\cdots,\mathcal{K}_{n}\} be n n Constraint groups such that the i ​ t ​ h ith Constraint group is defined as 𝒦 i ⊆ 𝒢 \mathcal{K}_{i}\subseteq\mathcal{G} . Note that the Constraint groups may overlap and they may not be collectively exhaustive i.e. the union of all Constraint groups may not be equal to the set of generators. Let ξ k K ∈ [ 0 , 1 ] \xi_{\text{k}}^{\text{K}}\in[0,1] be a variable modelling the pro-rata curtailment in Constrained group k k . We define a set 𝒞 g \mathcal{C}_{g} that contains all the Constraint groups of each generator g g . 
+ 𝒞 g = { 𝒦 i : g ∈ 𝒦 i , 1 ≤ i ≤ n } \mathcal{C}_{g}=\{\mathcal{K}_{i}:g\in\mathcal{K}_{i},1\leq i\leq n\} 
+ The pro-rata Constraint constraint can be modelled as follows: 
+ p g G = min ⁡ { ξ k K ​ P g UB : k ∈ 𝒞 g } p^{\text{G}}_{\text{g}}=\min\{\xi_{\text{k}}^{\text{K}}\text{P}^{\text{UB}}_{\text{g}}:~k\in\mathcal{C}_{g}\} 
+ (16) 
+ ( 16 ) is a discontinuous function and problematic to solve using an LP or MILP solver, so we define an equivalent formulation using binary variables is modelled as follows. Let β g,k \beta_{\text{g,k}} be a binary variable 
+ β g,k = { 1 if  ξ k  is minimum 0 otherwise \beta_{\text{g,k}}=\begin{cases}1&\text{if $\xi_{k}$ is minimum}\\
+0&\text{otherwise}\end{cases} 
+ Noting that ξ k K ∈ [ 0 , 1 ] \xi_{\text{k}}^{\text{K}}\in[0,1] , then ∀ g ∈ 𝒢 \forall g\in\mathcal{G} : 
+ − ξ g G ​ P g S ≤ \displaystyle-\xi^{\text{G}}_{\text{g}}\text{P}_{\text{g}}^{\text{S}}\leq 
+ p g G ≤ ξ g G ​ P g S \displaystyle p^{\text{G}}_{\text{g}}\leq\xi^{\text{G}}_{\text{g}}\text{P}^{\text{S}}_{\text{g}} 
+ (17a) 
+ ξ k K − ( ξ k UB − ξ k LB ) ​ ( 1 − β g,k ) ≤ \displaystyle\xi_{\text{k}}^{\text{K}}-(\xi_{\text{k}}^{\text{UB}}-\xi_{\text{k}}^{\text{LB}})(1-\beta_{\text{g,k}})\leq 
+ ξ g G ≤ ξ k K \displaystyle\xi^{\text{G}}_{\text{g}}\leq\xi_{\text{k}}^{\text{K}} 
+ (17b) 
+ ∑ k ∈ 𝒞 g β g,k \displaystyle\sum_{k\in\mathcal{C}_{g}}\beta_{\text{g,k}} 
+ = 1 \displaystyle=1 
+ (17c) 
+ IV-C 7 Overall formulation of Constraint Model 
+ Bid and offer prices are relative to P g M \text{P}_{\text{g}}^{M} in ( 12 ), and the cost function is updated costs for turning a unit only incurred if U g S = 0 \text{U}_{\text{g}}^{S}=0 . 
+ min ⁡ ∑ g ∈ 𝒢 ( c g offer ​ p g ↑ + c g bid ​ p g ↓ + c g 0 ​ u g G ​ ( 1 − U g S ) CLOSE ⏟ Redispatch Cost \displaystyle\min\underbrace{\sum_{g\in\mathcal{G}}(c_{\text{g}}^{\text{offer}}p_{\text{g}}^{\uparrow}+c_{\text{g}}^{\text{bid}}p_{\text{g}}^{\downarrow}+c_{\text{g}}^{\text{0}}u_{\text{g}}^{\text{G}}(1-U_{\text{g}}^{\text{S}})}_{\text{Redispatch Cost}}~~~~~~ 
+ + ∑ d ∈ 𝒟 c d VOLL ​ ( 1 − α d D ) ​ P d D ⏟ Load shedding cost \displaystyle+\underbrace{\sum_{d\in\mathcal{D}}c^{\text{VOLL}}_{\text{d}}(1-\alpha^{\text{D}}_{\text{d}})\text{P}_{d}^{D}}_{\text{Load shedding cost}} 
+ (18a) 
+ subject to 
+ ( 1 , 3 , 7 − 10 , 12 − 17 ) \displaystyle(\ref{eq:market_genbounds2},\ref{eq:market_demand},\ref{eq:SNSP}-\ref{eq:S_NBMIN_MP_NB},\ref{eq:constraint_bidoffer}-\ref{eq:constraint_prorata})~~~~~~~~~~~~~~~~~ 
+ (18b) 
+ IV-D Allocation of Curtailment & Constraint Volumes 
+ Volumes of Surplus, Curtailment and Constraint are determined post modelling. This aligns with the TSO methodology in [ 25 ] , where dispatch actions are flagged by the control room systems ex-ante . 
+ Surplus is the difference between the maximum potential output of non-synchronous generation and their market position: 
+ V Surplus = ∑ g ∈ 𝒢 n ​ s ( P g UB − P g M ) \text{V}^{\text{Surplus}}=\sum_{g\in\mathcal{G}_{ns}}\left(P_{\text{g}}^{\text{UB}}-\text{P}_{\text{g}}^{\text{M}}\right) 
+ (19) 
+ If the SNSP constraint is active, the as suggested in [ 25 ] is is assumed that all curtailment to meet the limit is flagged as SNSP. V SNSP \text{V}^{\text{SNSP}} is therefore defined as: 
+ Δ SNSP = ∑ g ∈ 𝒢 n ​ s P g M + ∑ g ∈ 𝒢 I + P g M ⏟ Non-Synchronous Supply \displaystyle\Delta^{\text{SNSP}}=\underbrace{\sum_{g\in\mathcal{G}_{ns}}\text{P}^{\text{M}}_{\text{g}}+\sum_{g\in\mathcal{G}_{I+}}\text{P}^{\text{M}}_{\text{g}}}_{\text{Non-Synchronous Supply}}~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ − x SNSP ( ∑ d ∈ 𝒟 P D d + ∑ g ∈ 𝒢 I − − P M g ) ⏟ Net Loads \displaystyle-\underbrace{x_{\text{SNSP}}\left(\sum_{d\in\mathcal{D}}\text{P}^{\text{D}}_{\text{d}}+\sum_{g\in\mathcal{G}_{I-}}-\text{P}^{\text{M}}_{\text{g}}\right)}_{\text{Net Loads}} 
+ (20a) 
+ V SNSP = max ⁡ ( 0 , Δ SNSP ) \displaystyle\text{V}^{\text{SNSP}}=\max(0,\Delta^{\text{SNSP}}) 
+ (20b) 
+ The volume of MUON Curtailment is defined as reductions in non-synchronous generation to secure the network beyond V SNSP \text{V}^{\text{SNSP}} . 
+ V MUON = ∑ g ∈ 𝒢 n ​ s ( P g M − P g S ) − V SNSP \text{V}^{\text{MUON}}=\sum_{g\in\mathcal{G}_{ns}}\left(\text{P}^{\text{M}}_{\text{g}}-\text{P}^{\text{S}}_{\text{g}}\right)-\text{V}^{\text{SNSP}} 
+ (21) 
+ Network constraints are introduced in the final UC-DCOPF model. The amount of Constraint can then be calculated as: 
+ V TC = ∑ g ∈ 𝒢 n ​ s ( P g S − p g C ) \text{V}^{\text{TC}}=\sum_{g\in\mathcal{G}_{ns}}\left(\text{P}^{\text{S}}_{\text{g}}-p^{\text{C}}_{\text{g}}\right) 
+ (22) 
+ V Results 
+ The model described in the previous sections is demonstrated on a reduced illustrative example, and then on a representative Irish model. The formulation is coded in python using pyomo, with Gurobi as the default solver [ 26 ] . 
+ V-A An Illustrative Test Case 
+ To test model behaviour a snapshot test-case was used, based on one developed by RES, who funded development of an earlier version of a ‘ Constraint tool’. The diagram in see Fig. 5 shows generator availability, demand and line/transformer ratings. c g 0 c_{\text{g}}^{0} & c g 1 c_{\text{g}}^{1} were set higher for synchronous generators than wind, and c g bid c_{\text{g}}^{\text{bid}} set lower. The MUON constraints shown in the Table I were active. Constraint groups are defined as 𝒦 1 = { W ​ 1.1 , W ​ 1.2 } , 𝒦 2 = { W ​ 1.2 , W ​ 2.1 } , 𝒦 3 = { W ​ 2.1 , W ​ 2.2 } \mathcal{K}_{1}=\left\{W1.1,W1.2\right\},\mathcal{K}_{2}=\left\{W1.2,W2.1\right\},\mathcal{K}_{3}=\left\{W2.1,W2.2\right\} . Note that to demonstrate pro-rata curtailment in overlapping constraint groups W ​ 1.1 ∈ { 𝒦 1 , 𝒦 2 } W1.1\in\left\{\mathcal{K}_{1},\mathcal{K}_{2}\right\} . 
+ TABLE I: Illustrative Example MUON Constraints 
+ ID 
+ 𝒢 𝒳 \mathcal{G_{X}} 
+ Notes 
+ S_MWMAX_NI_GT 
+ { G ​ 1 } \left\{G1\right\} 
+ ∑ g ∈ 𝒢 x p g G ≤ 80 \sum_{g\in\mathcal{G}_{x}}{p^{G}_{g}}\leq 80 
+ S_NBMIN_DUB_L2 
+ { G ​ 2.1 , G ​ 2.2 } \left\{G2.1,G2.2\right\} 
+ ∑ g ∈ 𝒢 x u g ≥ 1 \sum_{g\in\mathcal{G}_{x}}{u_{g}}\geq 1 
+ Fig. 5: Illustrative Test Case (Original) 
+ The results (see Fig.  6 ) in MW ⋅ Δ ​ t \cdot\Delta t ( Δ ​ t \Delta t being the timestep length, which is undefined for this test) are: 
+ • 
+ V Surplus = 21.00 V^{\text{Surplus}}=21.00 
+ • 
+ V SNSP = 17.25 V^{\text{SNSP}}=17.25 
+ • 
+ V MUON = 32.75 V^{\text{MUON}}=32.75 
+ • 
+ V TC = 17.00 V^{\text{TC}}=17.00 
+ Fig. 6: Illustrative Test Results 
+ The market allocates wind where possible, however due to the minimum generation requirement of G1, wind from W1.1 is displaced, leading to surplus. The inclusion of minimum generation levels in the market model reflects the ability to submit ‘Minimum Acceptance Volumes’ for Price-Quanity pairs in the market [ 15 ] . The impact of this behaviour will be small on a realistic Ireland network model, as the minimum generation levels of synchronous generators will be smaller relative to the total system demand, and non-synchronous generation unlikely (at present) to approach such high proportions of available generation. 
+ Wind is then curtailed pro-rata across the system due to SNSP Curtailment , and MUON Curtailment . In the Constraint model wind generation in 𝒦 1 \mathcal{K}_{1} at bus 2 is dispatched down ’pro-rata’, as demand at D3 is 107 MW, however only 40 MW of transmission capacity exists. Despite W1.2 belonging to a shared pro-rata group with W2.1, it is not dispatched down to the same level, demonstrating that the formulation in 17 achieves the desired outcome. 
+ V-B All-Island Testcase 
+ A representative transmission system network was built for the purposes of testing the tool, including busses (446), lines (586), transformers (183) and generators (288). The construction of the model requires significant manual review of the data to address inaccuracies and inconsistencies, and is in a developed draft stage [ 27 ] , but is sufficient to test the operation of the model. The main source of the data for this is the All-Island Ten Year Transmission Forecast Statement 2022 (TYTFS) [ 28 ] , with further data taken from the SEMO Market Data Portal [ 29 ] and EirGrid Quarterly System and Renewable Data Reports [ 30 ] . Interconnector flows are taken from the GB Balancing Mechanism Reporting Service (BMRS) [ 31 ] . 
+ A test run for the month of July 2025 at half-hourly resolution (1,488 periods) was carried out on a Dell XPS 15 laptop with an Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz and 32 GB of RAM solving in 32 minutes. The results are compared to actual dispatch down data from EirGrid [ 30 ] . It can be seen in Fig.  7 that the actual output of wind & solar is a reasonable estimate, but generally overestimated. It is clear however from Fig.  8 that the model under estimates total dispatch down, Constraints and MUON, while overestimating SNSP Curtailment . The under prediction of Constraints is an expected limitation of this model, as N-1 security constraints are not considered and the network model still requires validation. 
+ Fig. 7: All-Island Testcase (July 2025) - Wind & Solar Generation, Modelled vs. Actual 
+ Fig. 8: All-Island Testcase (July 2025) - Dispatch Down, Modelled vs. Actual 
+ Calculating the real world actual pre curtailment SNSP levels and volumes of SNSP Curtailment from [ 30 ] , the SNSP volumes are lower than expected using the logic in 20 . This could be caused by demand increases from pumped-storage or BESS charging, differences in the tagging/flagging of dispatch actions relative to the model logic (e.g. allocation to MUON or Constraints ), or the lack of time-coupling to represent minimum up-time of synchronous generators and dispatch actions from previous periods that reduce the set-point below where the SNSP constraint is bounding. This appears to be a key driver in over-estimates of SNSP Curtailment , such that MUON volumes are never the limiting constraint. Implementing more detailed flagging logic, and implementing time-coupling are key areas of future work. 
+ VI Discussion & Conclusions 
+ The Irish electricity system involves complex market arrangements and Transmission System Operator (TSO) operations. While much information is available about how these systems function, there is limited technical detail on the exact commitment and dispatch formulations used by the TSO. 
+ This paper presents a replicable mathematical modelling formulation that captures Ireland-specific security constraints, including a novel pro-rata dispatch method for generators within multiple constraint groups. A representative Irish transmission network model was developed  [ 27 ] , and operational data for July 2025 were assembled to perform model validation. The validation results provide confidence in the accuracy of the proposed approach, while also revealing its limitations. 
+ The use of the model is dependent on sufficiently accurate input data, such as generator parameters (operating ranges, costs), interconnector flows, and network physical and topological characteristics. Cost challenges can be overcome by assuming cost values relative to type (e.g c gas 1 < c coal 1 c^{1}_{\text{gas}}<c^{1}_{\text{coal}} ) to estimate market formation. An area of ongoing work is the further development of a model of the Irish transmission network. 
+ The authors acknowledge that the simple model is limited by the lack of time-coupling and (N-1) contingencies, leading to deviations from real world results when tested on the All-Island Testcase. Introducing time-coupling would ensure detailed generator operation and market behaviour is captured, such as ramping rates, dwell points, and minimum up/down times. The capability to time-couple dispatch instructions would also allow for more realistic modelling of the system. 
+ Incorporating (N-1) contingency analysis would provide more realistic transmission system availability and constraint volumes; and having an understanding of interconnected regions would ensure market/price formation is more realistic. This reformulation would result in a Security Constrained Unit Commitment (SCUC) Optimal Power Flow, increasing computation time and complexity relative to the model presented here, while introducing further data requirements for accurate generator parameters. 
+ Interconnectors are currently modelled as generators with a P g L ​ B < 0 P_{g}^{LB}<0 with static marginal costs, while in reality the volume and direction of flow will depend on the relative cost of the coupled markets (GB and EU). The current model does not model storage (e.g. pump hydro, or grid scale battery), which are increasingly providing flexibility services, and where paired with generators could reduce curtailment by shifting export times. 
+ In summary, this paper has articulated the requirements of a model of the Irish test system and formulated a simplified representation, providing an important starting point for further open source model development that can support analysis of Curtailment and Constraint of renewables in Ireland. 
+ Acknowledgements 
+ The research leading to these results has received funding from Renewable Energy Systems Limited (RES) through the Innovation Project under Grant agreement number 20125. The authors would also like to thank Manuel Hurtado of EirGrid for providing time and advice. 
+ References 
+ [1] 
+ M. R. Monterde, E. F. Alvarez, and O. Valarezo (2025) 
+ Non-firm grid connections: a review of access types, mechanisms, and regulatory frameworks .
+ Current Sustainable/Renewable Energy Report 12 ( 23 ), pp. 2196–3010 .
+ External Links: Document 
+ Cited by: §I ,
+ §I .
+ [2] 
+ EirGrid (2024) 
+ Wind dispatch tool constraint group overview .
+ External Links: Link 
+ Cited by: Fig. 1 ,
+ §I ,
+ §III-C .
+ [3] 
+ A. C. Mary B. Cain (2013) 
+ History of optimal power flow and formulations: optimal power flow paper 1 .
+ External Links: Link 
+ Cited by: §II .
+ [4] 
+ A. Kaya, A. J. Conejo, and S. Rebennack (2025) 
+ Fifty years of power systems optimization .
+ European Journal of Operational Research .
+ External Links: ISSN 0377-2217 ,
+ Document 
+ Cited by: §II .
+ [5] 
+ V. N. Motta, M. F. Anjos, and M. Gendreau (2024) 
+ Survey of optimization models for power system operation and expansion planning with demand response .
+ European Journal of Operational Research 312 ( 2 ), pp. 401–412 .
+ External Links: ISSN 0377-2217 ,
+ Document 
+ Cited by: §II .
+ [6] 
+ W. Bukhsh, C. Edmunds, and K. Bell (2020) 
+ OATS: optimisation and analysis toolbox for power systems .
+ IEEE Transactions on Power Systems 35 ( 5 ), pp. 3552–3561 .
+ External Links: Document 
+ Cited by: §II ,
+ §IV .
+ [7] 
+ T. Brown, J. Hörsch, and D. Schlachtberger (2018) 
+ PyPSA: python for power system analysis .
+ Journal of Open Research Software 6 .
+ External Links: Document 
+ Cited by: §II .
+ [8] 
+ L. Thurner, A. Scheidler, F. Schafer, J. H. Menke, J. Dollichon, F. Meier, S. Meinecke, and M. Braun (2018) 
+ Pandapower - an open source python tool for convenient modeling, analysis and optimization of electric power systems .
+ IEEE Transactions on Power Systems .
+ External Links: Document ,
+ ISSN 0885-8950 
+ Cited by: §II .
+ [9] 
+ G. Hawker (2022) 
+ The potential for hydrogen to reduce curtailment of renewable energy in scotland .
+ Technical report 
+ Climate XChange .
+ External Links: Document ,
+ Link 
+ Cited by: §II .
+ [10] 
+ Eirgrid, SONI (2025) 
+ Balancing market principles statement, a guide to scheduling and dispatch in the single electricity market version 9.0 .
+ External Links: Link 
+ Cited by: §II ,
+ §III-C ,
+ §III .
+ [11] 
+ L. Kane and G. W. Ault (2015) 
+ Evaluation of wind power curtailment in active network management schemes .
+ IEEE Transactions on Power Systems 30 ( 2 ), pp. 672–679 .
+ External Links: Document 
+ Cited by: §II .
+ [12] 
+ M. Andoni, V. Robu, W. Früh, and D. Flynn (2017) 
+ Game-theoretic modeling of curtailment rules and network investments with distributed generation .
+ Applied Energy 201 , pp. 174–187 .
+ External Links: ISSN 0306-2619 ,
+ Document 
+ Cited by: §II .
+ [13] 
+ M. Hurtado, T. Kërçi, S. Tweed, E. Kennedy, N. Kamaluddin, and F. Milano (2023) 
+ Analysis of wind energy curtailment in the ireland and northern ireland power systems .
+ In 2023 IEEE Power & Energy Society General Meeting (PESGM) ,
+ Vol. , pp. 1–5 .
+ External Links: Document 
+ Cited by: §II ,
+ §IV-B3 .
+ [14] 
+ EirGrid, SONI (2025) 
+ System nonsynchronous penetration, calculation update, revision 1.0: operational policy .
+ External Links: Link 
+ Cited by: §II .
+ [15] 
+ SEMOpx (07/04/2025) 
+ SEMOpx operating procedures dam, ida, idc .
+ External Links: Link 
+ Cited by: §III ,
+ §V-A .
+ [16] 
+ N. Committee (2019) 
+ EUPHEMIA public description: single price coupling algorithm .
+ External Links: Link 
+ Cited by: 1st item .
+ [17] 
+ EirGrid, SONI (2025) 
+ Business process, bp_so_3.4 dispatch wind units via ems .
+ External Links: Link 
+ Cited by: §III .
+ [18] 
+ EirGrid, SONI (2025) 
+ Business process, bp_so_3.2 issue dispatch instructions .
+ External Links: Link 
+ Cited by: §III .
+ [19] 
+ EirGrid 
+ Dispatch down half-hourly data report, 2024 .
+ External Links: Link 
+ Cited by: Fig. 3 .
+ [20] 
+ EirGrid (2024) 
+ Enduring connection policy 2.4, solar and wind constraints report: assumptions and methodology .
+ Technical report 
+ EirGrid .
+ External Links: Link 
+ Cited by: §III .
+ [21] 
+ SEMO (29/08/2025) 
+ Weekly operational constraints update, 1st september 2025 to 7th september 2025 (week 36) .
+ External Links: Link 
+ Cited by: Appendix A ,
+ §III-B ,
+ §IV-B3 ,
+ §IV-B4 ,
+ §IV-B5 .
+ [22] 
+ SEMO (2021) 
+ SEM committee, sem-21-027, proposed decision on treatment of new renewable units in the sem .
+ External Links: Link 
+ Cited by: §III-C .
+ [23] 
+ SEMO (2022) 
+ SEM-22-009, decision paper on dispatch, redispatch and compensation pursuant to regulation (eu) 2019/943 .
+ External Links: Link 
+ Cited by: §III-C .
+ [24] 
+ A. J. Wood and B. F. Wollenberg (1996) 
+ Power generation, operation and control .
+ Wiley .
+ Cited by: §IV-C4 .
+ [25] 
+ EirGrid (2018) 
+ METHODOLOGY for determining system operator and nonmarginal flags .
+ External Links: Link 
+ Cited by: §IV-D ,
+ §IV-D .
+ [26] 
+ R. Nayer, S. Hodges, and W. Bukhsh (2025) 
+ Richardnayer/oats_curtailment: release for pscc paper .
+ External Links: Link 
+ Cited by: §V .
+ [27] 
+ R. Nayer (2025) 
+ Ireland electricity system model .
+ External Links: Link 
+ Cited by: §V-B ,
+ §VI .
+ [28] 
+ EirGrid, Soni (2023) 
+ All-island ten-year transmission forecast statement 2022 .
+ Technical report 
+ External Links: Link 
+ Cited by: §V-B .
+ [29] 
+ SEMO 
+ Market data .
+ External Links: Link 
+ Cited by: §V-B .
+ [30] 
+ EirGrid 
+ System and renewable data reports .
+ External Links: Link 
+ Cited by: §V-B ,
+ §V-B ,
+ §V-B .
+ [31] 
+ Elexon 
+ Interconnector flows .
+ External Links: Link 
+ Cited by: §V-B .
+ Appendix A Security Constraints in Irish Electricity System 
+ Constraints IDs reference those defined by EirGrid & SONI in [ 21 ] (e.g. S_MWMAX_NI_GT constrains output from set of generators G S_MWMAX_NI_GT G_{\texttt{S\_MWMAX\_NI\_GT}} to maintain sufficient replacement reserve in Northern Ireland) 
+ TABLE II: Security MW Constraints 
+ ID 
+ 𝒢 𝒳 \mathcal{G_{X}} 
+ P g LB \text{P}_{\text{g}}^{\text{LB}} 
+ P g UB \text{P}_{\text{g}}^{\text{UB}} 
+ S_MWMAX_NI_GT 
+ 𝒢 N ​ I ​ _ ​ G ​ T \mathcal{G}_{NI\_GT} 
+ - 
+ 272 
+ S_MWMIN_EWIC 
+ g E ​ W ​ I ​ C g_{EWIC} 
+ -526 
+ - 
+ S_MWMAX_EWIC 
+ g E ​ W ​ I ​ C g_{EWIC} 
+ 504 
+ S_MWMIN_MOYLE 
+ g M ​ O ​ Y ​ L ​ E g_{MOYLE} 
+ -410 
+ S_MWMAX_MOYLE 
+ g M ​ O ​ Y ​ L ​ E g_{MOYLE} 
+ 441 
+ S_REP_ROI 
+ 𝒢 R ​ O ​ I ​ G ​ T \mathcal{G}_{ROIGT} 
+ - 
+ [1] 
+ S_MWMAX_ROI_GT 
+ S_MWMIN_CRK_MW 
+ 𝒢 C ​ R ​ K ​ _ ​ M ​ W \mathcal{G}_{CRK\_MW} 
+ 0 
+ S_MWMAX_CRK_MW 
+ 1,370 
+ S_MWMIN_STH_MW 
+ 𝒢 S ​ T ​ H ​ _ ​ M ​ W \mathcal{G}_{STH\_MW} 
+ 0 
+ S_MWMAX_STH_MW 
+ 1,835 
+ [1] MWR Limit: ∑ g ∈ 𝒢 R ​ O ​ I ​ G ​ T P g UB − 325 \sum_{g\in\mathcal{G}_{ROIGT}}\text{P}^{\text{UB}}_{g}-325 
+ TABLE III: Security NB (On/Off) Constraints 
+ ID 
+ 𝒢 𝒳 \mathcal{G_{X}} 
+ U g L ​ B \text{U}_{\text{g}}^{LB} 
+ U g U ​ B \text{U}_{\text{g}}^{UB} 
+ S_NBMIN_MINNIU 
+ 𝒢 M ​ I ​ N ​ N ​ I ​ U \mathcal{G}_{MINNIU} 
+ 3 
+ - 
+ S_NBMIN_MINNI3 
+ 𝒢 M ​ I ​ N ​ N ​ I ​ 3 \mathcal{G}_{MINNI3} 
+ 1 
+ - 
+ S_NBMIN_ROImin 
+ 𝒢 R ​ O ​ I ​ m ​ i ​ n \mathcal{G}_{ROImin} 
+ 4 
+ - 
+ S_NBMIN_DubNB 
+ 𝒢 D ​ u ​ b ​ N ​ B \mathcal{G}_{DubNB} 
+ 1 
+ - 
+ S_NBMIN_DubNB2 
+ 𝒢 D ​ u ​ b ​ _ ​ N ​ B ​ 2 \mathcal{G}_{Dub\_NB2} 
+ 2 
+ - 
+ S_NBMIN_DUB_L1 
+ 𝒢 D ​ U ​ B ​ _ ​ L ​ 1 \mathcal{G}_{DUB\_L1} 
+ 3 
+ - 
+ S_NBMIN_DUB_L2 
+ 𝒢 D ​ U ​ B ​ _ ​ L ​ 2 \mathcal{G}_{DUB\_L2} 
+ 1 
+ - 
+ MP5_NB 
+ 𝒢 M ​ P ​ X \mathcal{G}_{MPX} 
+ - 
+ 1 
+ TABLE IV: Security NB (On/Off) Constraints Logic 
+ ID 
+ Parameter 
+ Operator 
+ Limit 
+ S_NBMIN_DUB_L1 
+ ∑ d ∈ 𝒟 R ​ O ​ I P d D \sum_{d\in\mathcal{D}_{ROI}}P^{\text{D}}_{d} 
+ ≥ \geq 
+ 4,000 
+ S_NBMIN_DUB_L2 
+ ∑ d ∈ 𝒟 R ​ O ​ I P d D \sum_{d\in\mathcal{D}_{ROI}}P^{\text{D}}_{d} 
+ ≥ \geq 
+ 4,700 
+ Experimental support, please
+ view the build logs 
+ for errors. Generated by
+ L
+ A 
+ T
+ E 
+ xml 
+ .
+ Instructions for reporting errors 
+ We are continuing to improve HTML versions of papers, and your feedback helps enhance accessibility and mobile
+ support. To report errors in the HTML that will help us improve conversion and rendering, choose any of the
+ methods listed below: 
+ Click the "Report Issue" ( 
+ ) button, located in the page header. 
+ Tip: You can select the relevant text first, to include it in your report. 
+ Our team has already identified the following issues . We appreciate your time reviewing and reporting rendering errors we
+ may not have found yet. Your efforts will help us improve the HTML versions for all readers, because disability
+ should not be a barrier to accessing research. Thank you for your continued support in championing open access for
+ all. 
+ Have a free development cycle? Help support accessibility at arXiv! Our collaborators at LaTeXML maintain a list of packages that need conversion , and welcome developer contributions . 
+ We gratefully acknowledge support from
+ our major funders ,
+ member institutions , ,
+ and all contributors.
+ About 
+ · 
+ Help 
+ · 
+ Contact 
+ · 
+ Subscribe 
+ · 
+ Copyright 
+ · 
+ Privacy 
+ · 
+ Accessibility 
+ · 
+ Operational Status (opens in new tab) 
+ Major funding support from 

@@ -1,0 +1,3573 @@
+   Wind Dispatch Tool
+Constraint Group Overview
+         01 February 2024
+Disclaimer
+EirGrid plc, the Transmission System Operator (TSO) for Ireland, and SONI Limited, the TSO for
+Northern Ireland, support the provision of information to the marketplace by publishing operational
+data, processes, methodologies and reports. This information is key to a well-functioning market
+and as a transparency measure, assisting understanding of our decision making processes.
+EirGrid plc and SONI Limited make no warranties or representations of any kind with respect of
+this document, including, without limitation, its quality, accuracy and completeness. EirGrid plc
+and SONI Limited do not accept liability for any loss or damage arising from the use of this
+document or any reliance on the information it contains. Use of this document and the information
+it contains is at the user’s sole risk.
+CONTENTS
+1   Introduction ..............................................................................................................................5
+2   Northern Ireland Constraint Groups .........................................................................................9
+    2.1     Constraint Group number 1 – NW Northern..................................................................... 9
+    2.2     Constraint Group number 2 – NW Southern .................................................................... 9
+    2.3     Constraint group number 3 – Oma-Dromore ................................................................. 10
+    2.4     Constraint group number 4 – All NI................................................................................ 10
+    2.5     Constraint group number 5 – Kells - Rasharkin ............................................................. 10
+3   Ireland North west Constraint Groups ................................................................................... 11
+    3.1     North West Constraint Group 1: Letterkenny A1 Busbar Flows ..................................... 12
+    3.2     North West Constraint Group 2: Letterkenny A2 Busbar Flows ..................................... 14
+    3.3     North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV Transformer
+            Flows............................................................................................................................. 16
+    3.4     North West Constraint Group 4: Carrick-on-Shannon to Arva Flows.............................. 21
+    3.5     North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro Flows ...... 23
+    3.6     North West Constraint Group 6 (Outage Driven): Binbane to Cathaleen’s Fall Flows .... 24
+    3.7     North West Constraint Group 7 Corderry to Srananagh Flows (Retired) ........................ 24
+4   Ireland West Constraint Groups ............................................................................................. 25
+    4.1     West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows ............. 26
+    4.2     West Constraint Group 2: Shannonbridge to Maynooth Flows....................................... 33
+    4.3     West Constraint Group 3: Salthill To Galway Salthill To Cashla and Knockranny To
+            Galway Flows ................................................................................................................ 36
+    4.4     West Constraint Group 4: Cauteen 110 kV Station Voltage Stability.............................. 36
+    4.5     West Constraint Group 5: Lisheen to Thurles Flows ...................................................... 37
+    4.6     West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows .................... 37
+    4.7     West Constraint Group 7: Moy To Glenree Flows.......................................................... 40
+    4.8     West Constraint Group 8: Cunghill To Sligo Flows ........................................................ 41
+    4.9     West Constraint Group 9 (Outage Driven): Thurles Instability........................................ 42
+5   Ireland South West Constraint Groups ................................................................................... 43
+    5.1     South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2 (Retired) ........ 44
+    5.2     South West Constraint Group 2: Rathkeale to Limerick Flows ....................................... 45
+    5.3     South West Constraint Group 3a: Glenlara to Ballynahulla Flows ................................. 45
+    5.4     South West Constraint Group 3b: Glenlara to Charleville Flows .................................... 46
+    5.5     South West Constraint Group 3c: Charleville to Mallow Flows ....................................... 47
+    5.6     South West Constraint Group 4: Ballylickey Voltage Stability ........................................ 47
+    5.7     South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows .......... 48
+    5.8     South West Constraint Group 6 (Outage Driven): Garrow to Clonkeen Flows ............... 50
+    5.9     South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge (110 kV)
+            Flows............................................................................................................................. 52
+    5.10 South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows ........ 55
+
+
+                                                               PAGE 3 OF 74
+    5.11 South West Constraint Group 9 (Outage Driven): Trien to Knockanure Flows ............... 57
+    5.12 South West Constraint Group 10 (Outage Driven): Clahane to Tralee Flows................. 58
+    5.13 South West Constraint Group 11 (Outage Driven): Cauteen to Killonan Flows .............. 59
+6   Ireland South East Constraint Groups .................................................................................... 60
+    6.1    South East Constraint Group 1 (Outage Driven): Arklow to Ballybeg Flows................... 60
+    6.2    South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary Flows . 60
+    6.3    South East Constraint Group 3 (Outage Driven): Thornsberry to Derryiron Flows ......... 61
+    6.4    South East Constraint Group 4 (Outage Driven): Crane to Wexford Flows .................... 62
+7   Ireland North East Constraint Groups .................................................................................... 63
+    7.1    North East Constraint Group 1: Ratrussan to Louth Flows ............................................ 63
+    7.2    North East Constraint Group 2: Platin to Drybridge Flows ............................................. 64
+8   Ireland Nationwide Constraint Group ..................................................................................... 65
+    8.1    Constraint group number 1 – All IE ................................................................................ 65
+Appendix 1 Application of Constraint in the Wind Dispatch Tool .................................................. 66
+Appendix 2 Procedure to Determine and Change WDT Constraint Groups in Ireland .................. 70
+    Case Creation/Study Assumptions ......................................................................................... 70
+    Reviewing the Results of the Study Case............................................................................... 70
+    WDT Constraint Group Determination .................................................................................... 71
+    WDT Constraint Group Determination For transmission outages ........................................... 72
+
+
+
+
+                                                        PAGE 4 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+1   INTRODUCTION
+
+OVERVIEW
+Wind and solar generation is treated as priority dispatch (per SONI and EirGrid licences, SEM
+Committee decision SEM-11-062 and subsequent mods) however it is sometimes necessary to
+constrain or curtail its output to maintain system security. Constraints result from power flow
+limitations due to the topology and characteristics of the transmission network. Constraints are
+applied locally. Curtailment arises due to binding all-island system wide limits such as the System
+Non-Synchronous Penetration (SNSP) limit or minimum inertia levels. Curtailment is applied All-
+Island.
+We use the Wind Dispatch Tool (WDT) in the TSOs’ Control Centres to manage wind/solar
+constraints and curtailment in real time operation of the power system. The WDT allows the
+application of active power (MW) limits to the outputs of individual, controllable, wind/solar farms.
+While curtailment is applied globally to all wind/solar farms, constraints are applied to individual
+wind/solar farms or groups of wind/solar farms associated with the constraint. This document
+provides an overview of the main wind/solar constraint groups for Ireland and Northern Ireland
+that are currently defined in the WDT.
+We plan to review the Wind Dispatch Tool constraint groups on a regular basis. We want to work
+in partnership with industry and welcome any feedback that you may have for consideration in
+future iterations. Please send feedback on this document to info@eirgrid.com or info@soni.ltd.uk.
+
+
+CONSTRAINTS
+
+
+Through real time monitoring of power flows and voltages, and modelling of the impact of
+contingency events, we determine the location and magnitude of generation constraints required
+to ensure EirGrid and SONI Operating Security Standards (OSS) are maintained.
+The constraints set out in this report reflect the requirement for EirGrid and SONI to maintain
+power flows on transmission circuits within their thermal rating and to maintain voltage stability.
+Constraints can arise under a number of different scenarios:
+    •   Intact Network – Even with all transmission circuits in service there can still be cases when
+        the level of wind/solar generation exceeds the thermal rating of the transmission circuits in
+        the area. These issues are known as ‘base case’ overloads. Flows on transmission
+        circuits must be maintained below the normal continuous circuit ratings of these limiting
+        elements.
+    •   Single Contingency – A contingency or tripping of a single item of transmission equipment
+        (also known as a ‘N-1’ event) such as a transmission line, cable or transformer should not
+        result in an unacceptable overload of any other item of transmission equipment. Flows on
+        transmission circuits will be limited pre-contingency to ensure that the post-contingency
+        flows are within acceptable limits.
+    •   Planned Outage - During planned outages of transmission equipment, the transmission
+        system must remain within limits in the ‘base case’ and for ‘N-1’ events. A contingency
+        event that is coincident with a planned outage is known as a ‘N-1-1’ event.
+
+
+
+
+                                             PAGE 5 OF 74
+                                                  WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Voltage stability issues can also arise under these scenarios. These tend to arise when large
+power flows cause voltages to sag and, if left unchecked, can result in voltage collapse.
+Restricting power flows resolves these issues.
+
+
+CONSTRAINT GROUPS
+
+
+In order to manage these constraints, wind/solar farms are grouped together depending on their
+effectiveness to alleviate constraints. The effectiveness is a measure of the change in wind/solar
+farm output relative to the change in the level of the ‘base case’, ‘N-1’ or ‘N-1-1’ overload. The
+effectiveness of each wind/solar farm is a function of the topology of the transmission network.
+Wind/solar farms connected at the same transmission station will generally have the same
+effectiveness in controlling power flows from that station so they are grouped together from a
+constraint management perspective. An exception to this arises if the transmission station is split
+or sectionalised, i.e. different wind/solar farms are selected to feed their output onto different parts
+of the transmission network.
+Wind/solar farms connected at different transmission stations that are geographically/electrically
+spread apart will generally have different effectiveness levels in controlling power flows from that
+part of the transmission system. The grouping of these wind/solar farms is based on analysis of
+their effectiveness in managing the constraint as outlined in Appendix 2. Wind/solar farms that
+can contribute to alleviating the constraint are included in the constraint group. Wind/solar farms
+that do not substantially contribute to alleviating the constraint are excluded from the constraint
+group.
+
+
+
+
+APPLICATION OF CONSTRAINT GROUPS IN THE WIND DISPATCH TOOL
+
+
+For each constraint group, all wind/solar farms with Controllability Category 21 connected to the
+transmission stations in that group (either connected directly to the transmission station or
+connected via the local distribution network) are included in the predefined constraint groups in
+the WDT.
+Constraint groups are predefined in the WDT to allow for their quick application in real time
+system operations.
+Based on real time monitoring and analysis of the power system, we determine the need to apply
+and remove constraints. To apply a constraint, the appropriate predefined group is selected and a
+MW reduction level specified in the WDT. The WDT then calculates the MW setpoint for each
+wind/solar farm in the group and issues individual MW setpoints to the control system of each
+wind/solar farm. A description of how these MW setpoints are determined in the WDT is set out in
+Appendix 1.
+The following presents a geographic illustration of the main constraint groups in the WDT.
+
+
+
+1
+    http://www.eirgridgroup.com/site-files/library/EirGrid/Wind%20Farm%20Controllability%20Categorisation%20Policy.pdf
+
+                                                            PAGE 6 OF 74
+                      WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+
+Transmission
+System                                   1                             5
+                                                           1
+Wind Constraint                               2
+Group Map                                              2
+                                                                     4
+                                                   3
+                           3
+                      8                                        1
+          7
+                  4
+              6            5                                                    2
+
+              3                1
+
+
+
+                                              5
+                                   4
+                  2
+              3A/B
+                          3C       2
+
+      1
+                                                  Constraint Groups:
+                                                  NI Constraint Group
+                                                  West Constraint Group
+          4                                       North West Constraint Group
+                                                  South West Constraint Group
+                                                  North East Constraint Group
+
+
+
+
+                               PAGE 7 OF 74
+                            WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+
+The following sections outline in more detail these constraint groups predefined in
+the WDT. Outages of transmission circuits and changes to the topology of the
+transmission system (new transmission circuits) will change the effectiveness of
+wind/solar farms to manage constraints. As a result, modifications will be made to
+existing constraint groups, new constraint groups will be created and no longer
+relevant constraint groups will be removed as power system conditions change.
+This document reports on the results of an analysis carried out to determine all
+constraint groups required for a fully intact network at the time of publication and
+aims to address all key changes that will be required to these groups under outage
+conditions under the same network assumption. At times unforeseen issues present
+themselves in Real Time that require the application of a constraint group not
+covered in this publication.
+The geographic spread of each constraint group is illustrated and a table of the
+transmission stations with controllable wind connected is provided.
+
+
+
+
+                                    PAGE 8 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+2     NORTHERN IRELAND CONSTRAINT GROUPS
+
+
+
+
+                                                5
+                                    1
+
+                                2
+                                                4
+                     3
+
+
+
+
+Figure 1: Northern Ireland Geographical Constraint Groups
+
+2.1   Constraint Group number 1 – NW Northern
+This constraint group is designed to resolve a contingency on the Kells-Rasharkin 110 kV line or
+the runback scheme, which would cause the largest potential overload to be on the Coolkeeragh
+– Limavady 110 kV line or on the Kells-Rasharkin 110 kV line respectively.
+This constraint group includes all generation connected to the following transmission nodes;
+
+                                           Station
+
+ Brockaghboy                                    Lisaghmore
+
+ Coleraine                                      Loguestown
+
+ Coolkeeragh                                    Rasharkin
+
+ Limavady                                        Garvagh
+
+2.2   Constraint Group number 2 – NW Southern
+This constraint group is used when the largest potential overloads are between Coolkeeragh -
+Strabane 110 kV line as a result of the loss of the Coolkeeragh -Killymallaght line.
+This constraint group includes all generation connected to the following transmission nodes:
+
+
+
+
+                                           PAGE 9 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+                                             Station
+
+ Aghyoule                                        Gort
+
+ Drumquin                                        Magherakeel
+
+ Strabane                                        Omagh
+
+ Enniskillen                                     Tremoge
+
+ Killymallaght                                   Slieve Kirk
+
+
+2.3   Constraint group number 3 – Oma-Dromore
+This constraint group is needed to relieve potential overloads between Dromore and Omagh 110
+kV.
+This constraint group includes all generation connected to the following transmission nodes:
+
+ Station
+
+ Aghyoule
+
+ Drumquin
+
+ Enniskillen
+
+2.4   Constraint group number 4 – All NI
+This constraint group is required to manage flows on the 275/220 kV tie-lines between Tandragee
+275 kV station and Louth 220 kV Station. It includes all controllable renewable Northern Ireland
+generation.
+
+2.5   Constraint group number 5 – Kells - Rasharkin
+This constraint group alleviates contingencies on Coolkeeragh-Limavady or Limavady-Coleraine
+lines that can occur during standard operation but in particular, during times when there are
+outages in the area.
+This constraint group includes all generation connected to the following transmission nodes:
+
+                                            Station
+
+ Brockaghboy                                     Garvagh
+
+ Coleraine                                       Loguestown
+
+ Limavady                                        Rasharkin
+
+
+
+
+                                           PAGE 10 OF 74
+                                  WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+3   IRELAND NORTH WEST CONSTRAINT GROUPS
+
+
+
+
+                                                         1
+
+
+                                                             2
+
+
+
+
+                              3
+
+
+
+                          4
+
+
+
+Figure 2: North West Geographical Constraint Groups
+
+
+
+
+                                        PAGE 11 OF 74
+                                       WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+3.1       North West Constraint Group 1: Letterkenny A1 Busbar Flows
+
+
+This constraint group is used when power export from North Donegal is limited for the post
+contingency risk of overloads on sections of the Letterkenny 110 kV busbar (or for excessive
+basecase loading of these busbar sections under outage conditions).
+
+
+This Constraint Group is used to resolve excessive N-1 overloads on the Letterkenny 110 kV A1
+busbar section for the tripping of 110 kV lines between Letterkenny and Binbane, most notably the
+Binbane-Cathaleen’s Fall 110 kV circuit.
+
+
+Intact Network Constraint Group:
+
+ Station
+
+ Ardnagappary
+
+ Binbane
+
+ Lenalea
+
+ Sorne Hill
+
+ Trillick
+
+
+
+            NORTH WEST CONSTRAINT GROUP 1: OUTAGE CONSIDERATIONS
+
+
+Under certain outage conditions the North West Constraint Group 1 will have to be temporarily
+modified to account for changes in the resultant power flows for the duration of that outage
+condition. Some of the key changes that can be expected in this constraint group are summarised
+here.
+
+
+Outage Condition 1: Disconnection of Electrical Connectivity Between Lenalea and
+Letterkenny:
+
+
+Sample outages that will result in this condition:
+      •    Lenalea-Letterkenny 110 kV circuit
+
+
+
+
+                                                PAGE 12 OF 74
+                                   WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+North West Constraint Group 1: Modification
+Temporary Group for Outage Condition:
+
+ Station
+
+ Ardnagappary
+
+ Binbane
+
+ Lenalea
+
+ Sorne Hill
+
+ Trillick
+
+
+
+Outage Condition 2: Disconnection of Electrical Connectivity Between Tievebrack and
+Lenalea:
+
+
+Sample outages that will result in this condition:
+    •   Lenalea-Tievebrack 110 kV circuit
+    •   Tievebrack 110 kV Sectionalising Cubicle SA1-2
+
+
+North West Constraint Group 2: Modification
+Temporary Group for Outage Condition:
+
+ Station
+
+ Ardnagappary
+
+ Binbane
+
+ Lenalea
+
+ Sorne Hill
+
+ Trillick
+
+
+
+Outage Condition 3: Disconnection of Electrical Connectivity Between Tievebrack and
+Binbane:
+
+
+Sample outages that will result in this condition:
+    •   Binbane-Tievebrack 110 kV circuit
+
+
+
+
+                                            PAGE 13 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+North West Constraint Group 1: Modification
+Temporary Group for Outage Condition:
+
+ Station
+
+ Ardnagappary
+
+ Binbane
+
+ Lenalea
+
+ Sorne Hill
+
+ Trillick
+
+
+
+Outage Condition 4: Disconnection of Electrical Connectivity Between Tievebrack and
+Binbane A2:
+
+
+Sample outages that will result in this condition:
+      •    Binbane 110 kV Sectionalising Cubicle SA1-2 & Binbane T141
+
+
+North West Constraint Group 1: Modification
+Temporary Group for Outage Condition:
+
+ Station
+
+ Ardnagappary
+
+ Binbane A1
+
+ Lenalea
+
+ Sorne Hill
+
+ Trillick
+
+
+
+Summary of changes:
+      •    Binbane A2 node removed
+
+
+3.2       North West Constraint Group 2: Letterkenny A2 Busbar Flows
+
+
+This Constraint Group is used to resolve excessive N-1 overloads on the Letterkenny 110 kV A2
+busbar section for the tripping of Clogher-Drumkeen 110 kV circuit.
+
+
+
+                                            PAGE 14 OF 74
+                                   WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Intact Network Constraint Group:
+
+ Station
+
+ Meentycat
+
+
+
+           NORTH WEST CONSTRAINT GROUP 2: OUTAGE CONSIDERATIONS
+
+
+No changes to group identified under transmission outage conditions.
+
+
+
+
+                                          PAGE 15 OF 74
+                                      WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+3.3   North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV
+      Transformer Flows
+
+
+This constraint group is used due to limitations on the Flagford-Sligo 110 kV circuit when there is
+an excessive export of wind/solar from the North West Donegal/Sligo/Mayo region which is not
+backed off by large wind/solar output from the Midlands and West regions.
+
+A constraint is required to protect this circuit against the potential risk of the loss of the 220 kV
+circuit accommodating large flows from Srananagh to Flagford out of the region.
+
+
+
+Intact Network Constraint Group:
+
+                                               Station
+
+ Ardnagappary                                       Meentycat
+
+ Binbane                                            Moy
+
+ Cathaleen’s Fall                                   Mulreavy
+
+ Corderry                                           Sligo
+
+ Cunghill                                           Sorne Hill
+
+ Garvagh                                            Tawnaghmore
+
+ Glenree                                            Trillick
+
+ Lenalea
+
+
+
+In order to minimise constraints on the 110 kV network in the North West, Flagford is often
+sectionalised at 110 kV in which the busbar is often split to restrict through flow on the busbar and
+force increased flows onto the 220 kV network which is capable of transferring more power to the
+east.
+
+When Flagford is split at 110 kV the binding network issue that requires a constraint in the region
+moves from limitations on Flagford-Sligo 100 kV circuit to limitations on the Flagford 220/110 kV
+transformer, T2102, again for the loss of Flagford-Srananagh 220 kV circuit.
+
+This could prompt coupling of Flagford again at 110 kV and constrain for limitations on Flagford-
+Sligo 110 kV or constrain this same constraint group for limitations on the Flagford 220/110 kV
+transformer, T2102.
+
+
+
+
+                                              PAGE 16 OF 74
+                                       WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+           NORTH WEST CONSTRAINT GROUP 3: OUTAGE CONSIDERATIONS
+
+
+Under certain outage conditions the North West Constraint Group 3 will have to be temporarily
+modified to account for changes in the resultant power flows for the duration of that outage
+condition. Some of the key changes that can be expected in this constraint group are summarised
+here.
+
+
+Outage Condition 1: Disconnection of Electrical Connectivity Between Corderry and
+Srananagh:
+
+
+Sample outages that will result in this condition:
+   •   Corderry-Srananagh 110 kV circuit
+
+
+North West Constraint Group 3: Modification
+Temporary Group for Outage Condition:
+
+                                            Station
+
+ Ardnagappary                                    Meentycat
+
+ Binbane                                         Moy
+
+ Cathaleen’s Fall                                Mulreavy
+
+ Corderry                                        Sligo
+
+ Cunghill                                        Sorne Hill
+
+ Garvagh                                         Tawnaghmore
+
+ Glenree                                         Trillick
+
+ Lenalea
+
+
+
+Outage Condition 2: Disconnection of Electrical Connectivity Between Cunghill and Sligo:
+
+
+Sample outages that will result in this condition:
+   •   Cunghill-Sligo 110 kV circuit
+
+
+
+
+                                           PAGE 17 OF 74
+                                   WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+North West Constraint Group 3: Modification
+Temporary Group for Outage Condition:
+
+                                          Station
+
+ Ardnagappary                                  Meentycat
+
+ Binbane                                       Moy
+
+ Cathaleen’s Fall                              Mulreavy
+
+ Corderry                                      Sligo
+
+ Cunghill                                      Sorne Hill
+
+ Garvagh                                       Tawnaghmore
+
+ Glenree                                       Trillick
+
+ Lenalea
+
+
+
+Outage Condition 3: Disconnection of Electrical Connectivity Between Cunghill and
+Glenree:
+
+
+Sample outages that will result in this condition:
+   •   Cunghill-Glenree 110 kV circuit
+
+
+North West Constraint Group 3: Modification
+Temporary Group for Outage Condition:
+
+                                          Station
+
+ Ardnagappary                                  Meentycat
+
+ Binbane                                       Moy
+
+ Cathaleen’s Fall                              Mulreavy
+
+ Corderry                                      Sligo
+
+ Cunghill                                      Sorne Hill
+
+ Garvagh                                       Tawnaghmore
+
+ Glenree                                       Trillick
+
+ Lenalea
+
+
+
+
+                                         PAGE 18 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Outage Condition 4: Disconnection of Electrical Connectivity Between Cunghill and
+Glenree A1:
+
+
+Sample outages that will result in this condition:
+   •   Glenree 110 kV Sectionalising Cubicle SA1-2
+
+
+North West Constraint Group 3: Modification
+Temporary Group for Outage Condition:
+
+                                          Station
+
+ Ardnagappary                                  Meentycat
+
+ Binbane                                       Moy
+
+ Cathaleen’s Fall                              Mulreavy
+
+ Corderry                                      Sligo
+
+ Cunghill                                      Sorne Hill
+
+ Garvagh                                       Tawnaghmore
+
+ Glenree A2                                    Trillick
+
+ Lenalea
+
+
+
+Summary of changes:
+   •   Glenree A1 node removed
+   •   Moy node removed
+   •   Tawnaghmore node removed
+
+
+Outage Condition 5: Disconnection of Electrical Connectivity Between Glenree and Moy:
+
+
+Sample outages that will result in this condition:
+   •   Glenree-Moy 110 kV circuit
+
+
+North West Constraint Group 3: Modification
+Temporary Group for Outage Condition:
+
+                                          Station
+
+ Ardnagappary                                  Meentycat
+
+
+                                         PAGE 19 OF 74
+                                  WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+ Binbane                                       Moy
+
+ Cathaleen’s Fall                              Mulreavy
+
+ Corderry                                      Sligo
+
+ Cunghill                                      Sorne Hill
+
+ Garvagh                                       Tawnaghmore
+
+ Glenree                                       Trillick
+
+ Lenalea
+
+
+
+
+Outage Condition 6: Disconnection of Electrical Connectivity Between Cathaleen’s Fall and
+Srananagh:
+
+
+Sample outages that will result in this condition:
+   •   Cathaleen’s Fall-Srananagh 110 kV circuit no.1 & Cathaleen’s Fall Srananagh 110 kV
+       circuit no.2
+
+
+North West Constraint Group 3: Modification
+Temporary Group for Outage Condition:
+
+                                          Station
+
+ Ardnagappary                                  Meentycat
+
+ Binbane                                       Moy
+
+ Cathaleen’s Fall                              Mulreavy
+
+ Corderry                                      Sligo
+
+ Cunghill                                      Sorne Hill
+
+ Garvagh                                       Tawnaghmore
+
+ Glenree                                       Trillick
+
+ Lenalea
+
+
+
+
+                                         PAGE 20 OF 74
+                                        WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Outage Condition 7: Disconnection of Electrical Connectivity Between Bellacorick and
+Castlebar:
+
+
+Sample outages that will result in this condition:
+      •    Bellacorick-Castlebar 110 kV circuit
+
+
+North West Constraint Group 3: Modification
+Temporary Group for Outage Condition:
+
+                                                  Station
+
+ Ardnagappary                                           Meentycat
+
+ Binbane                                                Moy
+
+ Cathaleen’s Fall                                       Mulreavy
+
+ Corderry                                               Sligo
+
+ Cunghill                                               Sorne Hill
+
+ Garvagh                                                Srahnakilly
+
+ Glenree                                                Tawnaghmore
+
+ Lenalea                                                Trillick
+
+
+
+Summary of changes:
+      •    Srahnakilly node added
+
+
+
+
+3.4       North West Constraint Group 4: Carrick-on-Shannon to Arva Flows
+
+This constraint group is used due to limitations on the Arva-Carrick-on-Shannon 110 kV circuit
+when there is an excessive export of wind/solar from the entire West and North West Regions to
+the East of the Network.
+
+A pre-constraint is required to protect this circuit against the potential risk of the loss of a section
+of a parallel path out of the region from Cathaleen’s Fall to Arva.
+
+Sectionalising of the Network is often carried out in order to greatly reduce constraints in the
+region. This can involve splitting Flagford or Arva 110 kV stations or a combination of both. This
+puts greater stress on the Arva-Carrick-on-Shannon 110 kV circuit making this condition binding.
+
+
+
+
+                                                  PAGE 21 OF 74
+                                   WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Intact Network Constraint Group:
+
+                                          Station
+
+ Ardnagappary                                  Meentycat
+
+ Binbane                                       Moy
+
+ Castlebar                                     Mulreavy
+
+ Cathaleen’s Fall                              Sliabh Bawn
+
+ Corderry                                      Sligo
+
+ Cunghill                                      Sorne Hill
+
+ Dalton                                        Srahnakilly
+
+ Garvagh                                       Tawnaghmore
+
+ Glenree                                       Trillick
+
+ Lenalea
+
+
+
+           NORTH WEST CONSTRAINT GROUP 4: OUTAGE CONSIDERATIONS
+
+
+Under certain outage conditions the North West Constraint Group 4 will have to be temporarily
+modified to account for changes in the resultant power flows for the duration of that outage
+condition. Some of the key changes that can be expected in this constraint group are summarised
+here.
+
+
+Outage Condition 1: Disconnection of Electrical Connectivity Between Cathaleen’s Fall and
+Srananagh:
+
+
+Sample outages that will result in this condition:
+   •   Cathaleen’s Fall-Srananagh 110 kV circuit no.1 & Cathaleen’s Fall Srananagh 110 kV
+       circuit no.2
+
+
+North West Constraint Group 4: Modification
+Temporary Group for Outage Condition:
+
+                                          Station
+
+ Ardnagappary                                  Meentycat
+
+ Binbane                                       Moy
+
+
+                                         PAGE 22 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+ Castlebar                                       Mulreavy
+
+ Cathaleen’s Fall                                Sliabh Bawn
+
+ Corderry                                        Sligo
+
+ Cunghill                                        Sorne Hill
+
+ Dalton                                          Srahnakilly
+
+ Garvagh                                         Tawnaghmore
+
+ Glenree                                         Trillick
+
+ Lenalea
+
+
+
+
+3.5   North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro
+      Flows
+
+
+When the wind/solar in the West and Midlands is much less than the wind/solar in the North West
+as per the binding condition for constraint group 4, there is a risk that the Lanesboro-Sliabh Bawn
+110 kV circuit will get overloaded for the loss of Flagford-Srananagh 220 kV circuit during a range
+of Transmission Outage conditions in the region and particularly outages driving the need to
+couple Flagford at 110 kV.
+
+“N-1-1” Network Constraint Group:
+
+                                            Station
+
+ Ardnagappary                                    Lenalea
+
+ Binbane                                         Meentycat
+
+ Cathaleen’s Fall                                Mulreavy
+
+ Corderry                                        Sliabh Bawn
+
+ Cunghill                                        Sligo
+
+ Garvagh                                         Sorne Hill
+
+ Glenree                                         Trillick
+
+
+
+
+                                           PAGE 23 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+3.6   North West Constraint Group 6 (Outage Driven): Binbane to Cathaleen’s Fall
+      Flows
+
+
+When the North West is under very onerous outage conditions in which the connection between
+Cathaleen’s Fall to Clogher is disconnected, weakeness materialise on the Binbane-Cathaleen’s
+Fall 110 kV circuit trying to export power out of the region. This condition is driven by double
+circuit outages of the Cathaleen’s Fall – Clogher 110 kV circuits.
+
+These contingency issues might need to be managed by restricting the output of renewable
+generation connected to the following nodes as part of a temporary constraint group.
+
+“N-1-1” Network Constraint Group:
+
+                                            Station
+
+ Ardnagappary                                    Mulreavy
+
+ Binbane                                         Sorne Hill
+
+ Lenalea                                         Trillick
+
+ Meentycat
+
+
+
+3.7   North West Constraint Group 7 Corderry to Srananagh Flows (Retired)
+
+
+This constraint group was used due to limitations on the Corderry-Srananagh 110 kV circuit.
+Since the uprate of this circuit this constraint group is no longer active. The group remains coded
+in the WDT.
+
+
+Retired Constraint Group:
+
+ Station
+
+ Corderry
+
+ Garvagh
+
+
+
+
+                                           PAGE 24 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+4   IRELAND WEST CONSTRAINT GROUPS
+
+
+
+
+                                7         8
+
+                                     6
+
+                                         5
+
+
+
+                                                         1
+                                     3
+
+
+
+
+                                                                 5
+
+                                                             4
+
+
+
+                                                   2
+
+
+
+
+Figure 3: West Geographical Constraint Groups
+
+
+
+                                         PAGE 25 OF 74
+                                      WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+4.1    West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows
+
+
+This constraint group is used due to limitations on the Lanesboro-Mullingar 110 kV circuit or
+sections of the Lanesboro 110 kV busbar when there is an excessive export of wind/solar from the
+entire West Region to the East of the Network.
+
+A pre-constraint is required to protect this equipment against the potential risk of the loss of a path
+to the 400 kV network from Oldstreet to Woodland to transfer power from the West to the East of
+the network.
+
+Sectionalising of the Network is often carried out in order to greatly reduce constraints in the
+region. This can involve opening the Kinnegad 110 kV circuit breaker in Mullingar 110 kV station
+or splitting the Flagford busbar at 110 kV.
+
+
+Intact Network Constraint Group:
+
+                                              Station
+
+ Ardnacrusha                                       Knockalough
+
+ Booltiagh                                         Lisheen
+
+ Buffy                                             Moneypoint
+
+ Castlebar                                         Moy
+
+ Cauteen                                           Rathkeale
+
+ Corderry                                          Salthill
+
+ Cunghill                                          Sliabh Bawn
+
+ Dallow                                            Slieve Callan
+
+ Dalton                                            Sligo
+
+ Derrybrien                                        Srahnakilly
+
+ Garvagh                                           Tawnaghmore
+
+ Glenree                                           Thurles
+
+ Ikerrin                                           Tullabrack
+
+ Kill Hill                                         Uggool
+
+
+
+
+                                             PAGE 26 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+             WEST CONSTRAINT GROUP 1: OUTAGE CONSIDERATIONS
+
+
+Under certain outage conditions the West Constraint Group 1 will have to be temporarily modified
+to account for changes in the resultant power flows for the duration of that outage condition. Some
+of the key changes that can be expected in this constraint group are summarised here.
+
+
+Outage Condition 1: Disconnection of Electrical Connectivity Between Dallow and
+Shannonbridge:
+
+
+Sample outages that will result in this condition:
+    •    Dallow Tee-Shannonbridge 110 kV circuit section.
+
+
+West Constraint Group 1: Modification
+Temporary Group for Outage Condition:
+
+                                            Station
+
+ Ardnacrusha                                     Knockalough
+
+ Booltiagh                                       Lisheen
+
+ Buffy                                           Moneypoint
+
+ Castlebar                                       Moy
+
+ Cauteen                                         Rathkeale
+
+ Corderry                                        Salthill
+
+ Cunghill                                        Sliabh Bawn
+
+ Dallow                                          Slieve Callan
+
+ Dalton                                          Sligo
+
+ Derrybrien                                      Srahnakilly
+
+ Garvagh                                         Tawnaghmore
+
+ Glenree                                         Thurles
+
+ Ikerrin                                         Tullabrack
+
+ Kill Hill                                       Uggool
+
+
+
+
+                                           PAGE 27 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Outage Condition 2: Disconnection of Electrical Connectivity Between Flagford and Sliabh
+Bawn:
+
+
+Sample outages that will result in this condition:
+    •    Flagford-Sliabh Bawn 110 kV circuit.
+
+
+West Constraint Group 1: Modification
+Temporary Group for Outage Condition:
+
+                                                Station
+
+ Ardnacrusha                                        Knockalough
+
+ Booltiagh                                          Lisheen
+
+ Buffy                                              Moneypoint
+
+ Castlebar                                          Moy
+
+ Cauteen                                            Rathkeale
+
+ Corderry                                           Salthill
+
+ Cunghill                                           Sliabh Bawn
+
+ Dallow                                             Slieve Callan
+
+ Dalton                                             Sligo
+
+ Derrybrien                                         Srahnakilly
+
+ Garvagh                                            Tawnaghmore
+
+ Glenree                                            Thurles
+
+ Ikerrin                                            Tullabrack
+
+ Kill Hill                                          Uggool
+
+
+
+
+Outage Condition 3: Disconnection of Electrical Connectivity Between Lanesboro and
+Sliabh Bawn:
+
+
+Sample outages that will result in this condition:
+    •    Lanesboro-Sliabh Bawn 110 kV circuit.
+
+
+
+
+                                            PAGE 28 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+West Constraint Group 1: Modification
+Temporary Group for Outage Condition:
+
+                                             Station
+
+ Ardnacrusha                                      Knockalough
+
+ Booltiagh                                        Lisheen
+
+ Buffy                                            Moneypoint
+
+ Castlebar                                        Moy
+
+ Cauteen                                          Rathkeale
+
+ Corderry                                         Salthill
+
+ Cunghill                                         Sliabh Bawn
+
+ Dallow                                           Slieve Callan
+
+ Dalton                                           Sligo
+
+ Derrybrien                                       Srahnakilly
+
+ Garvagh                                          Tawnaghmore
+
+ Glenree                                          Thurles
+
+ Ikerrin                                          Tullabrack
+
+ Kill Hill                                        Uggool
+
+
+
+Outage Condition 4: Disconnection of Electrical Connectivity Between Ikerrin and
+Shannonbridge:
+
+
+Sample outages that will result in this condition:
+    •    Ikerrin Tee-Shannonbridge 110 kV circuit section.
+
+
+West Constraint Group 1: Modification
+Temporary Group for Outage Condition:
+
+                                             Station
+
+ Ardnacrusha                                      Knockalough
+
+ Booltiagh                                        Lisheen
+
+ Buffy                                            Moneypoint
+
+
+                                            PAGE 29 OF 74
+                                      WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+ Castlebar                                         Moy
+
+ Cauteen                                           Rathkeale
+
+ Corderry                                          Salthill
+
+ Cunghill                                          Sliabh Bawn
+
+ Dallow                                            Slieve Callan
+
+ Dalton                                            Sligo
+
+ Derrybrien                                        Srahnakilly
+
+ Garvagh                                           Tawnaghmore
+
+ Glenree                                           Thurles
+
+ Ikerrin                                           Tullabrack
+
+ Kill Hill                                         Uggool
+
+
+
+Outage Condition 5: Disconnection of Electrical Connectivity Between Thurles and
+Shannonbridge:
+
+
+Sample outages that will result in this condition:
+    •    Ikerrin Tee-Thurles 110 kV circuit section.
+    •    Ikerrin-Shannonbridge-Thurles 110 kV circuit
+
+
+West Constraint Group 1: Modification
+Temporary Group for Outage Condition:
+
+                                              Station
+
+ Ardnacrusha                                       Knockalough
+
+ Booltiagh                                         Lisheen
+
+ Buffy                                             Moneypoint
+
+ Castlebar                                         Moy
+
+ Cauteen                                           Rathkeale
+
+ Corderry                                          Salthill
+
+ Cunghill                                          Sliabh Bawn
+
+ Dallow                                            Slieve Callan
+
+                                             PAGE 30 OF 74
+                                        WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+ Dalton                                              Sligo
+
+ Derrybrien                                          Srahnakilly
+
+ Garvagh                                             Tawnaghmore
+
+ Glenree                                             Thurles
+
+ Ikerrin                                             Tullabrack
+
+ Kill Hill                                           Uggool
+
+
+
+Outage Condition 6: Disconnection of Electrical Connectivity Between Kill Hill and Thurles:
+
+
+Sample outages that will result in this condition:
+    •    Kill Hill-Thurles 110 kV circuit section.
+
+
+West Constraint Group 1: Modification
+Temporary Group for Outage Condition:
+
+                                                Station
+
+ Ardnacrusha                                         Knockalough
+
+ Booltiagh                                           Lisheen
+
+ Buffy                                               Moneypoint
+
+ Castlebar                                           Moy
+
+ Cauteen                                             Rathkeale
+
+ Corderry                                            Salthill
+
+ Cunghill                                            Sliabh Bawn
+
+ Dallow                                              Slieve Callan
+
+ Dalton                                              Sligo
+
+ Derrybrien                                          Srahnakilly
+
+ Garvagh                                             Tawnaghmore
+
+ Glenree                                             Thurles
+
+ Ikerrin                                             Tullabrack
+
+ Kill Hill                                           Uggool
+
+
+                                               PAGE 31 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Outage Condition 7: Disconnection of Electrical Connectivity Between Limerick and
+Rathkeale:
+
+
+Sample outages that will result in this condition:
+    •    Limerick-Rathkeale 110 kV circuit section.
+
+
+West Constraint Group 1: Modification
+Temporary Group for Outage Condition:
+
+                                             Station
+
+ Ardnacrusha                                      Knockalough
+
+ Booltiagh                                        Lisheen
+
+ Buffy                                            Moneypoint
+
+ Castlebar                                        Moy
+
+ Cauteen                                          Rathkeale
+
+ Corderry                                         Salthill
+
+ Cunghill                                         Sliabh Bawn
+
+ Dallow                                           Slieve Callan
+
+ Dalton                                           Sligo
+
+ Derrybrien                                       Srahnakilly
+
+ Garvagh                                          Tawnaghmore
+
+ Glenree                                          Thurles
+
+ Ikerrin                                          Tullabrack
+
+ Kill Hill                                        Uggool
+
+
+
+
+                                            PAGE 32 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+4.2   West Constraint Group 2: Shannonbridge to Maynooth Flows
+
+
+When there is an excessive export of wind/solar from the entire West Region to the East of the
+Network, for the loss of the link from the 220 kV to 400 kV network from Tynagh to Oldstreet or
+the loss of the 400 kV link from Oldstreet to Woodland, there is a risk of excessively overloading
+the Maynooth-Shannonbridge 220 kV circuit. At times this issue can be reduced by sectionalizing
+Maynooth at 220 kV, isolating the Shannonbridge 220 kV cubicle from the higher load north
+Dublin bound feeders, Kellystown and Gorman.
+
+Due to the increased tendency for power to flow up onto the 220 kV network before transferring to
+the east of the network, this constraint group is made up of a wider range of Westerly nodes.
+
+
+Intact Network Constraint Group:
+
+                                            Station
+
+ Ardnacrusha                                     Glenree
+
+ Ardnagappary                                    Ikerrin
+
+ Athea                                           Kill Hill
+
+ Ballylickey                                     Kilpaddoge
+
+ Bandon                                          Knockacummer
+
+ Barrymore                                       Knockalough
+
+ Binbane                                         Knockearagh
+
+ Boggeragh                                       Lenalea
+
+ Booltiagh                                       Lisheen
+
+ Buffy                                           Macroom
+
+ Carrigdangan                                    Meentycat
+
+ Castlebar                                       Midleton
+
+ Cathaleen's Fall                                Moneypoint
+
+ Cauteen                                         Moy
+
+ Charleville                                     Mulreavy
+
+ Clahane                                         Oughtragh
+
+ Cloghboola                                      Rathkeale
+
+ Coolnanoonagh                                   Reamore
+
+
+                                           PAGE 33 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+ Coomagearlaghy                                  Salthill
+
+ Coomataggart                                    Sliabh Bawn
+
+ Cordal                                          Slieve Callan
+
+ Corderry                                        Sligo
+
+ Cunghill                                        Sorne Hill
+
+ Dallow                                          Srahnakilly
+
+ Dalton                                          Tawnaghmore
+
+ Derrybrien                                      Thurles
+
+ Dromada                                         Tobertoreen
+
+ Dunmanway                                       Tralee
+
+ Garrow                                          Trien
+
+ Garvagh                                         Trillick
+
+ Glanlee                                         Tullabrack
+
+ Glenlara                                        Uggool
+
+
+
+           WEST CONSTRAINT GROUP 2: OUTAGE CONSIDERATIONS
+
+
+Under certain outage conditions the West Constraint Group 2 will have to be temporarily modified
+to account for changes in the resultant power flows for the duration of that outage condition. Some
+of the key changes that can be expected in this constraint group are summarised here.
+
+
+Outage Condition 1: Disconnection of Electrical Connectivity Between Dallow and
+Shannonbridge:
+
+
+Sample outages that will result in this condition:
+   •   Dallow Tee-Shannonbridge 110 kV circuit section.
+
+
+West Constraint Group 2: Modification
+Temporary Group for Outage Condition:
+
+                                            Station
+
+ Ardnacrusha                                     Glenree
+
+
+                                           PAGE 34 OF 74
+                   WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+Ardnagappary                 Ikerrin
+
+Athea                        Kill Hill
+
+Ballylickey                  Kilpaddoge
+
+Bandon                       Knockacummer
+
+Barrymore                    Knockalough
+
+Binbane                      Knockearagh
+
+Boggeragh                    Lenalea
+
+Booltiagh                    Lisheen
+
+Buffy                        Macroom
+
+Carrigdangan                 Meentycat
+
+Castlebar                    Midleton
+
+Cathaleen's Fall             Moneypoint
+
+Cauteen                      Moy
+
+Charleville                  Mulreavy
+
+Clahane                      Oughtragh
+
+Cloghboola                   Rathkeale
+
+Coolnanoonagh                Reamore
+
+Coomagearlaghy               Salthill
+
+Coomataggart                 Sliabh Bawn
+
+Cordal                       Slieve Callan
+
+Corderry                     Sligo
+
+Cunghill                     Sorne Hill
+
+Dallow                       Srahnakilly
+
+Dalton                       Tawnaghmore
+
+Derrybrien                   Thurles
+
+Dromada                      Tobertoreen
+
+Dunmanway                    Tralee
+
+
+
+                       PAGE 35 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+ Garrow                                          Trien
+
+ Garvagh                                         Trillick
+
+ Glanlee                                         Tullabrack
+
+ Glenlara                                        Uggool
+
+
+
+
+4.3   West Constraint Group 3: Salthill To Galway Salthill To Cashla and Knockranny
+      To Galway Flows
+
+
+This constraint group is used due to limitations exporting wind out of the Galway region in low
+load conditions and weaknesses on the Galway-Salthill, Cashla-Salthill and Galway Knockranny
+110 kV circuits. These weaknesses are further enhanced if either of the three circuits are on
+outage.
+
+
+Intact Network Constraint Group:
+
+ Station
+
+ Buffy
+
+ Knockalough
+
+ Salthill
+
+ Uggool
+
+
+
+            WEST CONSTRAINT GROUP 3: OUTAGE CONSIDERATIONS
+
+
+No changes to group identified under transmission outage conditions.
+
+
+4.4   West Constraint Group 4: Cauteen 110 kV Station Voltage Stability
+
+
+This constraint group is used to prevent post-contingency voltage instability at Cauteen 110 kV for
+the loss of Cauteen-Tipperary 110 kV circuit.
+
+Voltage stability is maintained at Cauteen 110 kV station for the loss of the Cauteen-Killonan 110
+kV circuit through the operation of a Special Protection Scheme (SPS).
+
+
+
+
+                                           PAGE 36 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Intact Network Constraint Group:
+ Station
+
+ Cauteen
+
+
+
+           WEST CONSTRAINT GROUP 4: OUTAGE CONSIDERATIONS
+
+
+No changes to group identified under transmission outage conditions.
+
+
+4.5   West Constraint Group 5: Lisheen to Thurles Flows
+
+
+This constraint group is used to manage base case flows on the Lisheen-Thurles 110 kV circuit
+when there is high outputs of wind/solar out of Lisheen and under high temperature conditions.
+
+
+Intact Network Constraint Group:
+ Station
+
+ Lisheen
+
+
+           WEST CONSTRAINT GROUP 5: OUTAGE CONSIDERATIONS
+
+
+No changes to group identified under transmission outage conditions.
+
+
+4.6   West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows
+
+
+For a number of Transmission conditions in the Mayo region of the network, post contingency
+weaknesses materialise on the Castlebar-Cloon 110 kV circuit, the Cashla-Dalton 110 kV circuit
+and the Dalton 110 kV busbar when high wind is trying to export out of the region particulary when
+a path to Cashla or a path to Cloon is temporarily disconnected. These contingency issues might
+need to be managed by restricting the output of renewable generation connected to the following
+nodes as part of this constraint group.
+
+Intact Network Constraint Group:
+
+                                           Station
+
+ Castlebar                                       Moy
+
+ Cunghill                                        Srahnakilly
+
+ Dalton                                          Tawnaghmore
+
+
+
+                                           PAGE 37 OF 74
+                                   WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+ Glenree
+
+
+
+
+           WEST CONSTRAINT GROUP 6: OUTAGE CONSIDERATIONS
+
+
+Under specific outage conditions the West Constraint Group 6 may need to be modified to
+account for the resultant change in load flows.
+
+
+Outage Condition 1: Disconnection of Electrical Connectivity Between Castlebar and
+Dalton:
+
+
+Sample outages that will result in this condition:
+   •   Castlebar-Dalton 110 kV circuit
+
+
+West Constraint Group 6: Modification
+Temporary Group for Outage Condition:
+
+                                          Station
+
+ Castlebar                                     Moy
+
+ Cunghill                                      Srahnakilly
+
+ Dalton                                        Tawnaghmore
+
+ Glenree
+
+
+
+Outage Condition 2: Disconnection of Electrical Connectivity Between Cunghill and
+Glenree:
+
+
+Sample outages that will result in this condition:
+   •   Cunghill-Glenree 110 kV circuit
+
+
+West Constraint Group 6: Modification
+Temporary Group for Outage Condition:
+
+                                          Station
+
+ Castlebar                                     Moy
+
+ Cunghill                                      Srahnakilly
+
+
+                                         PAGE 38 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+ Dalton                                        Tawnaghmore
+
+ Glenree
+
+
+
+Outage Condition 3: Disconnection of Electrical Connectivity Between Cunghill and
+Glenree A1:
+
+
+Sample outages that will result in this condition:
+   •   Glenree 110 kV Sectionalising Cubicle SA1-2
+
+
+West Constraint Group 6: Modification
+Temporary Group for Outage Condition:
+
+                                          Station
+
+ Castlebar                                     Moy
+
+ Cunghill                                      Srahnakilly
+
+ Dalton                                        Tawnaghmore
+
+ Glenree A1
+
+
+
+Summary of changes:
+   •   Cunghill node removed
+   •   Glenree A2 node removed
+
+
+Outage Condition 4: Disconnection of Electrical Connectivity Between Glenree and Moy:
+
+
+Sample outages that will result in this condition:
+   •   Glenree-Moy 110 kV circuit
+
+
+West Constraint Group 6: Modification
+Temporary Group for Outage Condition:
+
+                                          Station
+
+ Castlebar                                     Moy
+
+ Cunghill                                      Srahnakilly
+
+ Dalton                                        Tawnaghmore
+
+                                         PAGE 39 OF 74
+                                       WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+ Glenree
+
+
+
+Outage Condition 5: Disconnection of Electrical Connectivity Between Moy and
+Bellacorick:
+
+
+Sample outages that will result in this condition:
+      •    Bellacorick-Moy 110 kV circuit
+
+
+West Constraint Group 6: Modification
+Temporary Group for Outage Condition:
+
+                                            Station
+
+ Castlebar                                        Moy
+
+ Cunghill                                         Srahnakilly
+
+ Dalton                                           Tawnaghmore
+
+ Glenree
+
+
+
+
+4.7       West Constraint Group 7: Moy To Glenree Flows
+
+
+This constraint group is used when power export from North Mayo is limited for the post
+contingency risk of overloads on the Moy-Glenree 110 kV circuit for the loss of Bellacorick-
+Castlebar 110 kV circuit (or for excessive basecase loading of this circuit under outage
+conditions).
+
+
+An SPS is being developed to mitigate the need for this constraint when the system is intact and
+the SPS is in service. This constraint group will then, largely be used during outage conditions on
+the system.
+
+
+Intact Network Constraint Group:
+
+                                            Station
+
+ Moy                                              Tawnaghmore
+
+ Srahnakilly
+
+
+
+
+                                            PAGE 40 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+           WEST CONSTRAINT GROUP 7: OUTAGE CONSIDERATIONS
+
+
+No changes to group identified under transmission outage conditions.
+
+
+4.8    West Constraint Group 8: Cunghill To Sligo Flows
+
+
+This constraint group is used when power export from North Mayo is limited for the post
+contingency risk of overloads on the Cunghill-Sligo 110 kV circuit for the loss of Bellacorick-
+Castlebar 110 kV circuit (or for excessive basecase loading of this circuit under outage
+conditions).
+
+
+An SPS is being developed to mitigate the need for this constraint when the system is intact and
+the SPS is in service. This constraint group will then, largely be used during outage conditions on
+the system.
+
+
+Intact Network Constraint Group:
+
+                                             Station
+
+ Cunghill                                         Srahnakilly
+
+ Glenree                                          Tawnaghmore
+
+ Moy
+
+
+
+           WEST CONSTRAINT GROUP 8: OUTAGE CONSIDERATIONS
+
+
+No changes to group identified under transmission outage conditions.
+
+
+
+
+                                            PAGE 41 OF 74
+                                      WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+4.9    West Constraint Group 9 (Outage Driven): Thurles Instability
+
+
+During the long term outage of Thurles CAP2, required to install a new Statcom in the station,
+there is a risk of voltage instability in the Thurles region during additional outage and high wind
+conditions until the Statcom is installed. If Thurles CAP1 or the Cahir-Kill Hill 110 kV circuit goes
+on outage this constraint group might have to be restricted to ensure voltage stability in the
+region.
+
+
+
+
+“N-1-1” Network Constraint Group:
+
+                                              Station
+
+ Ikerrin                                           Lisheen
+
+ Kill Hill                                         Thurles
+
+
+
+             WEST CONSTRAINT GROUP 9: OUTAGE CONSIDERATIONS
+
+
+No changes to group identified under transmission outage conditions.
+
+
+
+
+                                             PAGE 42 OF 74
+                                 WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+5
+    IRELAND SOUTH WEST CONSTRAINT GROUPS
+
+
+
+
+                                            2
+
+                                      3A/B
+                                                  3C
+
+
+
+
+                             4
+
+Figure 4: South West Geographical Constraint Groups
+
+
+
+
+                                        PAGE 43 OF 74
+                                   WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+5.1   South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2
+      (Retired)
+
+
+This constraint group was used due to limitations on the Moneypoint 400/220 kV Transformer
+No.2. Since this transformer was replaced this constraint group is no longer active. The group
+remains coded in the WDT.
+
+
+Intact Network Constraint Group:
+                                             Station
+
+ Ardnacrusha                                     Dunmanway
+
+ Athea                                           Garrow
+
+ Ballylickey                                     Glanlee
+
+ Bandon                                          Kilpaddoge
+
+ Boggeragh                                       Knockearagh
+
+ Booltiagh                                       Macroom
+
+ Carrigdangan                                    Moneypoint
+
+ Clahane                                         Oughtragh
+
+ Cloghboola                                      Rathkeale
+
+ Coolnanoonagh                                   Reamore
+
+ Coomagearlaghy                                  Slieve Callan
+
+ Coomataggart                                    Tobertoreen
+
+ Cordal                                          Tralee
+
+ Derrybrien                                      Trien
+
+ Dromada                                         Tullabrack
+
+
+
+
+                                          PAGE 44 OF 74
+                                      WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+5.2   South West Constraint Group 2: Rathkeale to Limerick Flows
+
+
+This constraint group is used due to limitations on the Limerick -Rathkeale 110 kV circuit when
+exporting wind/solar from Kerry when there is less midlands and west wind/solar to back off flows
+transferring the export across the 110 kV network.
+
+Pre-contingency constraints are required to protect the circuit for the risk of tripping North Kerry
+220 kV circuits.
+
+Intact Network Constraint Group:
+ Station
+
+ Rathkeale
+
+
+
+           SOUTH WEST CONSTRAINT GROUP 2: OUTAGE CONSIDERATIONS
+
+
+No changes to group identified under transmission outage conditions.
+
+
+5.3   South West Constraint Group 3a: Glenlara to Ballynahulla Flows
+
+
+This constraint group is used due to basecase limitations on the Ballynahulla - Glenlara 110 kV
+circuit.
+
+Intact Network Constraint Group:
+ Station
+
+ Glenlara A1
+
+ Knockacummer
+
+
+
+           SOUTH WEST CONSTRAINT GROUP 3A: OUTAGE CONSIDERATIONS
+
+
+Under certain combined outage conditions the South West Constraint Group 3 will have to be
+modified to account for changes in the resultant power flows for the duration of that outage
+condition. Some of the key changes that can be expected in this constraint group are summarised
+here.
+
+
+
+
+                                             PAGE 45 OF 74
+                                        WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Outage Condition 1: Disconnection of Electrical Connectivity Between Charleville and
+Glenlara:
+
+
+Sample outages that will result in this condition:
+      •    Charleville-Glenlara 110 kV circuit.
+      •    Charleville 110 kV A1 busbar.
+      •    Glenlara 110 kV Sectionslising Cubicle SA1-2 & Glenlara T142
+
+
+South West Constraint Group 3a: Modification
+Temporary Group for Outage Condition:
+
+ Station
+
+ Glenlara
+
+ Knockacummer
+
+
+
+Summary of changes:
+      •    Glenlara A2 node added
+
+
+5.4       South West Constraint Group 3b: Glenlara to Charleville Flows
+
+
+This constraint group is used due to basecase limitations on the Charleville - Glenlara 110 kV
+circuit.
+
+In order to minimise constraints in the entire South West region, Glenlara is often operationally tail
+fed into Charleville resulting in the presence of this constraint group. This constraint grouop is also
+required during outages of the Ballynahulla-Glenlara 110 kV circuit.
+
+Intact Network Constraint Group:
+ Station
+
+ Glenlara
+
+ Knockacummer
+
+
+
+            SOUTH WEST CONSTRAINT GROUP 3B: OUTAGE CONSIDERATIONS
+No changes to group identified under transmission outage conditions.
+
+
+
+
+                                                  PAGE 46 OF 74
+                                      WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+5.5   South West Constraint Group 3c: Charleville to Mallow Flows
+
+
+This constraint group is used due to post contingency overloads on the Charleville – Mallow 110
+kV circuit for the loss of the Charleville-Killonan 110 kV circuit.
+
+In order to minimise constraints in the entire South West region, Glenlara is often operationally tail
+fed into Charleville resulting in the presence of this constraint group. This constraint group is also
+required during outages of the Ballynahulla-Glenlara 110 kV circuit.
+
+Intact Network Constraint Group:
+ Station
+
+ Charleville
+
+ Glenlara
+
+ Knockacummer
+
+
+
+           SOUTH WEST CONSTRAINT GROUP 3C: OUTAGE CONSIDERATIONS
+
+
+No changes to group identified under transmission outage conditions.
+
+
+5.6   South West Constraint Group 4: Ballylickey Voltage Stability
+
+
+This constraint group is used due to the risk of voltage instability at Ballylickey 110 kV station if its
+connection point at Dunmanway is tailed post contingency under high wind/solar conditions.
+
+
+Intact Network Constraint Group:
+ Station
+
+ Ballylickey
+
+
+
+           SOUTH WEST CONSTRAINT GROUP 4: OUTAGE CONSIDERATIONS
+
+
+No changes to group identified under transmission outage conditions.
+
+
+
+
+                                              PAGE 47 OF 74
+                                         WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+5.7       South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows
+
+
+For a number of Transmission Outage conditions in the Cork/Kerry region of the network, post
+contingency weaknesses materialise on the Bandon-Dunmanway 110 kV circuit when high wind is
+trying to export out of the region to the Cork urban load. This is generally required when the
+system is subject to a large 220 kV outage in the region or when the electrical connection form the
+South West to Kilbarry is disconnected
+
+These contingency issues might need to be managed by restricting the output of renewable
+generation connected to the following nodes as part of a temporary constraint group.
+
+
+“N-1-1” Constraint Group:
+                                                 Station
+
+ Ballylickey                                            Dunmanway
+
+ Boggeragh                                              Garrow
+
+ Carrigdangan                                           Glanlee
+
+ Coomagearlaghy                                         Knockearagh
+
+ Coomataggart                                           Macroom
+
+ Cordal
+
+
+
+            SOUTH WEST CONSTRAINT GROUP 5: OUTAGE CONSIDERATIONS
+
+
+Under certain combined outage conditions the South West Constraint Group 5 will have to be
+modified to account for changes in the resultant power flows for the duration of that outage
+condition. Some of the key changes that can be expected in this constraint group are summarised
+here.
+
+
+Outage Condition 1: Disconnection of Electrical Connectivity Between Ballynahulla and
+Ballyvouskill:
+
+
+Sample outages that will result in this condition:
+      •    Ballynahulla-Ballyvouskill 220 kV circuit.
+
+
+
+
+                                                PAGE 48 OF 74
+                                  WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+South West Constraint Group 5: Modification
+Temporary Group for Outage Condition:
+
+                                          Station
+
+ Ballylickey                                   Dunmanway
+
+ Boggeragh                                     Garrow
+
+ Carrigdangan                                  Glanlee
+
+ Coomagearlaghy                                Knockearagh
+
+ Coomataggart                                  Macroom
+
+ Cordal
+
+
+
+
+Outage Condition 2: Disconnection of Electrical Connectivity Between Clonkeen and
+Knockearagh:
+
+
+Sample outages that will result in this condition:
+   •   Clonkeen-Knockearagh 110 kV circuit.
+
+
+South West Constraint Group 5: Modification
+Temporary Group for Outage Condition:
+
+                                          Station
+
+ Ballylickey                                   Dunmanway
+
+ Boggeragh                                     Garrow
+
+ Carrigdangan                                  Glanlee
+
+ Coomagearlaghy                                Knockearagh
+
+ Coomataggart                                  Macroom
+
+ Cordal
+
+
+
+
+                                         PAGE 49 OF 74
+                                        WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Outage Condition 3: Disconnection of Electrical Connectivity Between Charleville and
+Glenlara:
+
+
+Sample outages that will result in this condition:
+      •    Charleville-Glenlara 110 kV circuit.
+      •    Charleville 110 kV A1 busbar
+      •    Glenlara 110 kV Sectionslising Cubicle SA1-2 & Glenlara T142
+
+
+South West Constraint Group 5: Modification
+Temporary Group for Outage Condition:
+
+                                                  Station
+
+ Ballylickey                                            Garrow
+
+ Boggeragh                                              Glanlee
+
+ Carrigdangan                                           Glenlara
+
+ Coomagearlaghy                                         Knockearagh
+
+ Coomataggart                                           Knockacummer
+
+ Cordal                                                 Macroom
+
+ Dunmanway
+
+
+
+Summary of changes:
+      •    Glenlara node added
+      •    Knockacummer node added
+
+
+Please note:
+If outage condition 3 occurs in conjunction with any of outage conditions 1-2, a hybrid group will
+be created with the nodes added to the South West Constraint Group 5 as per outage condition 3
+and nodes removed from the group as per outage condition 1-2.
+
+
+5.8       South West Constraint Group 6 (Outage Driven): Garrow to Clonkeen Flows
+
+
+For a number of Transmission Outage conditions in the Cork/Kerry region of the network, post
+contingency weaknesses materialise on the Clonkeen-Garrow 110 kV circuit when high wind is
+trying to export out of the region. This is generally required when the system is subject to a large
+220 kV outages between Clashavoon and Kilpaddoge.
+
+
+                                                  PAGE 50 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+These contingency issues might need to be managed by restricting the output of renewable
+generation connected to the following nodes as part of a temporary constraint group.
+
+
+“N-1-1” Constraint Group:
+ Station
+
+ Coomataggart
+
+ Cordal
+
+ Garrow
+
+
+
+           SOUTH WEST CONSTRAINT GROUP 6: OUTAGE CONSIDERATIONS
+
+
+Under certain combined outage conditions the South West Constraint Group 6 will have to be
+modified to account for changes in the resultant power flows for the duration of that outage
+condition. Some of the key changes that can be expected in this constraint group are summarised
+here.
+
+
+Outage Condition 1: Disconnection of Electrical Connectivity Between Ballynahulla and
+Ballyvouskill:
+Sample outages that will result in this condition:
+   •   Ballynahulla-Ballyvouskill 220 kV circuit.
+
+
+South West Constraint Group 6: Modification
+Temporary Group for Outage Condition:
+
+ Station
+
+ Coomataggart
+
+ Cordal
+
+ Garrow
+
+
+
+Outage Condition 2: Disconnection of Electrical Connectivity Between Charleville and
+Glenlara:
+
+
+Sample outages that will result in this condition:
+   •   Charleville-Glenlara 110 kV circuit.
+   •   Charleville 110 kV A1 busbar
+   •   Glenlara 110 kV Sectionslising Cubicle SA1-2 & Glenlara T142
+
+                                              PAGE 51 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+South West Constraint Group 6: Modification
+Temporary Group for Outage Condition:
+
+ Station
+
+ Coomataggart
+
+ Cordal
+
+ Garrow
+
+ Glenlara
+
+ Knockacummer
+
+
+
+Summary of changes:
+      •    Glenlara node added
+      •    Knockacummer node added
+
+
+
+
+Please note:
+If outage condition 2 occurs in conjunction with outage condition 1, a hybrid group will be created
+with the nodes added to the South West Constraint Group 6 as per outage condition 2 and nodes
+removed from the group as per outage condition 1.
+
+
+5.9       South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge
+          (110 kV) Flows
+
+
+For a number of Transmission Outage conditions in the Cork/Kerry region of the network, post
+contingency weaknesses materialise on the Kilpaddoge-Knockanure 110 kV circuit when high
+wind is trying to export out of the region onto the 400 kV network. This is generally required when
+the system is subject to a large 220 kV outages between Clashavoon and Kilpaddoge.
+
+These contingency issues might need to be managed by restricting the output of renewable
+generation connected to the following nodes as part of a temporary constraint group.
+
+
+
+
+                                           PAGE 52 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+“N-1-1” Constraint Group:
+                                            Station
+
+ Athea                                             Dromada
+
+ Clahane                                           Tobertoreen
+
+ Cloghboola                                        Trien
+
+ Cordal
+
+
+
+          SOUTH WEST CONSTRAINT GROUP 7: OUTAGE CONSIDERATIONS
+
+
+Under certain combined outage conditions the South West Constraint Group 7 will have to be
+modified to account for changes in the resultant power flows for the duration of that outage
+condition. Some of the key changes that can be expected in this constraint group are summarised
+here.
+
+
+Outage Condition 1: Disconnection of Electrical Connectivity Between Ballynahulla and
+Knockanure:
+
+
+Sample outages that will result in this condition:
+   •     Ballynahulla-Knockanure 220 kV circuit.
+
+
+South West Constraint Group 7: Modification
+Temporary Group for Outage Condition:
+
+                                            Station
+
+ Athea                                             Dromada
+
+ Clahane                                           Tobertoreen
+
+ Cloghboola                                        Trien
+
+ Cordal
+
+
+
+Outage Condition 2: Disconnection of Electrical Connectivity Between Clahane and Trien:
+
+
+Sample outages that will result in this condition:
+   •     Clahane-Trien 110 kV circuit.
+   •     Trien 110 kV A1 busbar.
+
+
+                                           PAGE 53 OF 74
+                                      WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+South West Constraint Group 7: Modification
+Temporary Group for Outage Condition:
+
+
+
+                                                Station
+
+ Athea                                                Dromada
+
+ Clahane                                              Tobertoreen
+
+ Cloghboola                                           Trien
+
+ Cordal
+
+
+
+Outage Condition 3: Disconnection of Electrical Connectivity Between Charleville and
+Glenlara:
+
+
+Sample outages that will result in this condition:
+   •     Charleville-Glenlara 110 kV circuit.
+   •     Charleville 110 kV A1 busbar
+   •     Glenlara 110 kV Sectionslising Cubicle SA1-2 & Glenlara T142
+
+
+South West Constraint Group 7: Modification
+Temporary Group for Outage Condition:
+
+                                                Station
+
+ Athea                                                Glenlara
+
+ Clahane                                              Knockacummer
+
+ Cloghboola                                           Tobertoreen
+
+ Cordal                                               Trien
+
+ Dromada
+
+
+
+Summary of changes:
+   •     Glenlara node added
+   •     Knockacummer node added
+
+
+
+
+                                                PAGE 54 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Please note:
+If outage condition 3 occurs in conjunction with any of outage conditions 1-2, a hybrid group will
+be created with the nodes added to the South West Constraint Group 7 as per outage condition 3
+and nodes removed from the group as per outage condition 1-2.
+
+
+5.10 South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows
+
+
+For a number of Transmission Outage conditions in the Cork/Kerry region of the network, in
+particular a key 220 kV circuit from Clashavoon to Kilpaddoge coupled with an outage of one of
+the Clashavoon-Macroom 110 kV circuits, creates post contingency weaknesses on the remaining
+Clashavoon-Macroom 110 kV circuit when high wind is trying to export out of the region into the
+large Cork urban load centre.
+
+These contingency issues might need to be managed by restricting the output of renewable
+generation connected to the following nodes as part of a temporary constraint group.
+
+“N-1-1” Constraint Group:
+                                             Station
+
+ Ballylickey                                        Cordal
+
+ Boggeragh                                          Dunmanway
+
+ Carrigdangan                                       Garrow
+
+ Coomagearlaghy                                     Glanlee
+
+ Coomataggart                                       Knockearagh
+
+
+
+         SOUTH WEST CONSTRAINT GROUP 8: OUTAGE CONSIDERATIONS
+
+
+Under certain combined outage conditions the South West Constraint Group 8 will have to be
+modified to account for changes in the resultant power flows for the duration of that outage
+condition. Some of the key changes that can be expected in this constraint group are summarised
+here.
+
+
+Outage Condition 1: Disconnection of Electrical Connectivity Between Ballynahulla and
+Ballyvouskill:
+
+
+Sample outages that will result in this condition:
+   •   Ballynahulla-Ballyvouskill 220 kV circuit.
+
+
+South West Constraint Group 8: Modification
+
+                                            PAGE 55 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Temporary Group for Outage Condition:
+
+                                              Station
+
+ Ballylickey                                        Cordal
+
+ Boggeragh                                          Dunmanway
+
+ Carrigdangan                                       Garrow
+
+ Coomagearlaghy                                     Glanlee
+
+ Coomataggart                                       Knockearagh
+
+
+
+Outage Condition 2: Disconnection of Electrical Connectivity Between Clonkeen and
+Knockearagh:
+
+
+Sample outages that will result in this condition:
+   •   Clonkeen-Knockearagh 110 kV circuit.
+
+
+South West Constraint Group 8: Modification
+Temporary Group for Outage Condition:
+
+                                              Station
+
+ Ballylickey                                        Cordal
+
+ Boggeragh                                          Dunmanway
+
+ Carrigdangan                                       Garrow
+
+ Coomagearlaghy                                     Glanlee
+
+ Coomataggart                                       Knockearagh
+
+
+
+Outage Condition 3: Disconnection of Electrical Connectivity Between Charleville and
+Glenlara:
+
+
+Sample outages that will result in this condition:
+   •   Charleville-Glenlara 110 kV circuit.
+   •   Charleville 110 kV A1 busbar
+   •   Glenlara 110 kV Sectionalizing Cubicle SA1-2 & Glenlara T142
+
+
+
+
+                                              PAGE 56 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+South West Constraint Group 8: Modification
+Temporary Group for Outage Condition:
+
+                                            Station
+
+ Ballylickey                                     Dunmanway
+
+ Boggeragh                                       Garrow
+
+ Carrigdangan                                    Glanlee
+
+ Coomagearlaghy                                  Glenlara
+
+ Coomataggart                                    Knockearagh
+
+ Cordal                                          Knockacummer
+
+
+
+Summary of changes:
+   •     Glenlara node added
+   •     Knockacummer node added
+
+
+Please note:
+If outage condition 3 occurs in conjunction with any of outage conditions 1-2, a hybrid group will
+be created with the nodes added to the South West Constraint Group 8 as per outage condition 3
+and nodes removed from the group as per outage condition 1-2.
+
+
+5.11 South West Constraint Group 9 (Outage Driven): Trien to Knockanure Flows
+
+
+For a number of Transmission Outage conditions in the Kerry region of the network, in particular a
+key 110 kV circuit out of Trien that prevents the ability to sectionalise the network in the region
+and produces an excess post contingency overload on the Knockanure-Trien 110 kV circuit no.2
+when power is trying to export onto the 400 kV network.
+
+These contingency issues might need to be managed by restricting the output of renewable
+generation connected to the following nodes as part of a temporary constraint group.
+
+
+“N-1-1” Constraint Group:
+ Station
+
+ Clahane
+
+ Cloghboola
+
+ Trien
+
+
+
+                                           PAGE 57 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+           SOUTH WEST CONSTRAINT GROUP 9: OUTAGE CONSIDERATIONS
+
+
+Under certain combined outage conditions the South West Constraint Group 9 will have to be
+modified to account for changes in the resultant power flows for the duration of that outage
+condition. Some of the key changes that can be expected in this constraint group are summarised
+here.
+
+
+Outage Condition 1: Disconnection of Electrical Connectivity Between Clahane and Trien:
+
+
+Sample outages that will result in this condition:
+   •     Clahane-Trien 110 kV circuit.
+   •     Trien 110 kV A1 busbar.
+
+
+South West Constraint Group 9: Modification
+Temporary Group for Outage Condition:
+
+ Station
+
+ Clahane
+
+ Cloghboola
+
+ Trien
+
+
+
+5.12 South West Constraint Group 10 (Outage Driven): Clahane to Tralee Flows
+
+
+For a number of Transmission Outage conditions in the Kerry region of the network, in particular a
+key 110 kV circuit out of Trien that prevents the ability to sectionalise the network in the region
+and produces an excess post contingency overload on the Clahane-Tralee 110 kV circuit when
+power is trying to export onto the 400 kV network.
+
+These contingency issues might need to be managed by restricting the output of renewable
+generation connected to the following nodes as part of a temporary constraint group.
+
+
+“N-1-1” Constraint Group:
+ Station
+
+ Clahane
+
+ Cloghboola
+
+ Trien
+
+
+                                           PAGE 58 OF 74
+                                  WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+5.13 South West Constraint Group 11 (Outage Driven): Cauteen to Killonan Flows
+
+
+For a number of Transmission Outage conditions in the midlands network, most notably key 110
+kV links from Cahir to Cullenagh, most notably Cahir-Doon 110 kV circuit, post contingency
+weakenesses develop on the Cauteen-Killonan 110 kV circuit with midlands generation trying to
+find an alternative path to feed the Eastern load centres.
+
+These contingency issues might need to be managed by restricting the output of renewable
+generation connected to the following nodes as part of a temporary constraint group.
+
+
+“N-1-1” Constraint Group:
+                                          Station
+
+ Barrymore                                     Lisheen
+
+ Cauteen                                       Thurles
+
+ Kill Hill
+
+
+
+
+                                         PAGE 59 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+6
+      IRELAND SOUTH EAST CONSTRAINT GROUPS
+
+
+In general, it is not deemed necessary to constrain renewable generation feeding into the South
+East of the network under fully intact system conditions.
+
+Binding constraints in the South East region are rare and the region is generally managed by a
+combination of conventional generation re-dispatch or system sectionalising.
+
+Temporary constraint groups are required however, when the network in the South East is under
+outage conditions.
+
+
+6.1   South East Constraint Group 1 (Outage Driven): Arklow to Ballybeg Flows
+
+
+For a number of Transmission Outage conditions in the South East region of the network, in
+particular key 220 kV outages feeding into South Dublin and outages that prevent the ability to
+sectionalise the network in the region, post contingency weaknesses develop on the Arklow-
+Ballybeg 110 kV circuit and the Arklow 220/110 kV transformers trying to export power from the
+110 kV South East Network to the large urban load centre in Dublin.
+
+These contingency issues might need to be managed by restricting the output of renewable
+generation connected to the following nodes as part of a temporary constraint group.
+
+
+“N-1-1” Constraint Group:
+                                           Station
+
+ Arklow                                          Crory
+
+ Ballywater                                      Great Island
+
+ Banoge                                          Rosspile
+
+ Castledockrell                                  Waterford
+
+ Crane                                           Wexford
+
+
+
+6.2   South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary
+      Flows
+
+
+For extreme outage conditions issues on the Arklow-Ballybeg 110 kV circuit and the Arklow
+220/110 kV transformers cannot be fully resolved by constraining the wind available in the South
+East Constraint Group 1. Under these conditions and when all the available wind is exhausted
+
+
+
+                                           PAGE 60 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+from the South East Constraint Group 1, a secondary group may be required to be constrained
+using a group of less effective nodes as follows;
+
+“N-1-1” Constraint Group:
+                                             Station
+
+ Ballylickey                                      Garrow
+
+ Bandon                                           Glanlee
+
+ Barrymore                                        Ikerrin
+
+ Boggeragh                                        Kill Hill
+
+ Carlow                                           Lisheen
+
+ Carrigdangan                                     Macroom
+
+ Cauteen                                          Midleton
+
+ Coomagearlaghy                                   Thurles
+
+ Coomataggart                                     Woodhouse
+
+ Dunmanway
+
+
+
+
+          SOUTH EAST CONSTRAINT GROUP 2: OUTAGE CONSIDERATIONS
+
+
+Under certain combined outage conditions the South East Constraint Group 2 will need to be
+revised. As this constraint group is so infrequently required, outage considerations wlll only be
+considered when the system is in the condtion that will require this group to be active.
+
+
+
+6.3   South East Constraint Group 3 (Outage Driven): Thornsberry to Derryiron Flows
+
+
+This group is required due to weaknesses on the Derryiron-Thornsberry 110 kV circuit when
+wind/solar is being exported from the South East/Midlands up into the Dublin urban load center,
+particularly when subject to 110 kV circuit outages south of Cushaling.
+
+These contingency issues might need to be managed by restricting the output of renewable
+generation connected to the following nodes as part of a temporary constraint group
+
+
+
+
+                                            PAGE 61 OF 74
+                                   WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+“N-1-1” Constraint Group:
+ Station
+
+ Mount Lucas
+
+ Kilcumber
+
+
+
+6.4   South East Constraint Group 4 (Outage Driven): Crane to Wexford Flows
+
+
+This group is required due to weaknesses on the Crane-Wexford 110 kV circuit when wind/solar is
+being exported from the South East to the load center at Wexford and onto the 220 kV network at
+Great Island. This constraint group is required when the connection from this group of nodes is
+cut off from a 220 kV path East of Great Island. This can occur during outages of a 110 kV link
+between Arklow and Crane for for an outage of the Lodgewood 220/110 kV transformer.
+
+This constraint group might have to be restricted to prevent N-1 overloads on Crane-Wexford
+during these outage conditions.
+
+
+“N-1-1” Constraint Group:
+                                          Station
+
+ Ballywater                                     Crory
+
+ Banoge                                         Crane
+
+ Castledockrell
+
+
+
+
+                                          PAGE 62 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+7
+      IRELAND NORTH EAST CONSTRAINT GROUPS
+
+
+
+
+                         1
+
+
+
+
+                                                                             Gallanstown
+                                                 Garballagh    2
+
+
+
+
+Figure 5: North East Geographical Constraint Groups
+
+
+
+7.1   North East Constraint Group 1: Ratrussan to Louth Flows
+
+
+This constraint group is required due to weaknesses in the Louth-Ratrussan 110 kV circuit when
+large amounts of renewables are exporting from the North West/North East of the network to the
+load catchment area in Louth having a direct feed to Northern Ireland and Dublin load centers.
+
+Pre-contingency constraints may need to be applied to this group to protect this circuit against
+overloads for the tripping of 110 kV connections between Shankill, Lislea, Lisdrum and Louth.
+
+
+Intact Constraint Group:
+ Station
+
+ Ratrussan
+
+ Shankill
+
+
+
+                                            PAGE 63 OF 74
+                                   WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+7.2   North East Constraint Group 2: Platin to Drybridge Flows
+
+
+This constraint group is required due to weaknesses in the Oldbridge-Platin, Drybridge-Oldbridge
+and Gorman-Garballagh 110 kV circuits when trying to export large amounts of solar to Dublin
+and Northern Ireland load centers
+
+These contingency issues might need to be managed by restricting the output of renewable
+generation connected to the following nodes as part of a temporary constraint group.
+
+Intact Constraint Group:
+ Station
+
+ Garballagh
+
+ Gallanstown
+
+
+
+
+                                          PAGE 64 OF 74
+                                    WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+8     IRELAND NATIONWIDE CONSTRAINT GROUP
+
+
+8.1   Constraint group number 1 – All IE
+
+
+This constraint group is required to manage flows on the 275/220 kV tie-lines between Tandragee
+275 kV station in Northern Ireland and Louth 220 kV Station. It includes all controllable Category 2
+renewable generation in Ireland.
+
+
+
+
+                                           PAGE 65 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+APPENDIX 1 APPLICATION OF CONSTRAINT IN THE WIND DISPATCH TOOL
+
+
+The level of constraint/curtailment is determined by monitoring real time power system conditions.
+Through real time modelling of contingency (N-1) events and system limits we identify what
+generation is effective and what level of reduction in generation is required to ensure that system
+security standards are maintained. The application, updating and removal of
+constraints/curtailment is a dynamic process that considers: the variability in wind production, the
+ability of other non-wind units to respond to changes in energy production and the often
+interacting nature of constraints and curtailment.
+
+
+In both constraint and curtailment scenarios, we use the Wind Dispatch Tool (WDT) to implement
+the required constraint/curtailment levels on individual wind/solar farms. The WDT determines the
+active power (MW) set point for each wind/solar farm based on: a) selection of the wind/solar
+farms impacting the constraint (or all wind/solar farms if a system wide limit) as determined by the
+control room operator and b) the total constraint/curtailment level (MW) required as specified by
+the control room operator. The following sections describe how the individual wind/solar farm
+active power (MW) set-points for constraint/curtailment are calculated in the WDT.
+
+
+Wind Dispatch Tool Active Power Set Point Calculation Methodology
+
+
+The wind/solar farm active power set point calculation in the WDT accounts for the impact of
+wind/solar farms providing frequency response, the control category of wind/solar farms and
+SEMC wind farm constraint groups. In order to illustrate the key aspect of the calculation we have
+provided a simplified example below that ignores the additional complexities introduced by the
+items specified above. Further details on the impact of frequency response are included at the
+end of this appendix.
+In this example, four wind/solar farms form a defined constraint group although the same logic
+would apply to application to global curtailment. The constraint on each wind/solar farm is applied
+pro-rata using the following formula:
+
+
+Wind/Solar Farm “A” dispatch set point = Wind/Solar Farm “A” Active Power output – (group total
+constraint down required)*(Wind/Solar Farm “A” Active Power output /Sum of Wind/Solar Farm
+Active power output of all wind/solar farms in the operator defined group)
+
+
+
+
+                                            PAGE 66 OF 74
+                                          WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Time T, applying a constraint
+
+ Total Availability   400 MW          Total Output of       400 MW     Wind/Solar         100 MW
+ of Wind/Solar                        Wind/Solar Farm                  Constraint Down
+ Farm Group                           Group                            Required
+
+
+
+                      Wind/Solar            Wind/Solar          Wind/Solar           Wind/Solar
+                      Farm A                Farm B              Farm C               Farm D
+
+ Permissible          100 MW                150 MW              250 MW               200 MW
+ Capacity
+
+ Available Active     50 MW                 100 MW              150 MW               100 MW
+ Power
+
+ Active Power         50 MW                 100 MW              150 MW               100 MW
+ Output
+
+ Dispatch             50 – (100*50/400)     100 –               150 –                100 –
+ Instruction                                (100*100/400)       (100*150/400)        (100*100/400)
+                      = 37.5 MW
+                                            = 75 MW             = 112.5 MW           = 75 MW
+
+ Constraint           12.5 MW (25%)         25 MW (25%)         37.5 MW (25%)        25 MW (25%)
+
+
+
+So the 100 MW constraint is applied in proportion to the active power output of each wind/solar
+farm which, for the initial application of the constraint, is also equal to the available active power of
+each wind/solar farm.
+
+
+
+
+                                              PAGE 67 OF 74
+                                        WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+If the wind/solar farms are further dispatched down as the constraint/curtailment becomes worse
+this will always be pro-rata based on the wind/solar farm actual output and does not consider the
+changing availability of the wind/solar farm.
+
+
+Time T+1, additional wind/solar available, further constraint
+
+ Total Availability   530 MW            Total Output of     300 MW    Wind/solar        100 MW
+ of Wind/solar                          Wind/solar Farm               Constraint Down
+ Farm Group                             Group                         Required
+
+
+
+                       Wind/solar Farm A    Wind/solar Farm B   Wind/solar Farm C   Wind/solar Farm D
+
+ Permissible           100 MW               150 MW              250 MW              200 MW
+ Capacity
+
+ Available Active      100 MW               80 MW               200 MW              150 MW
+ Power
+
+ Active Power          37.5 MW              75 MW               112.5 MW            75 MW
+ Output
+
+ Dispatch              37.5 –               75 – (100*75/300)   112.5 –             75 – (100*75/300)
+ Instruction           (100*37.5/300)                           (100*112.5/300)
+                                            = 50 MW                                 = 50 MW
+                       = 25 MW                                  = 75 MW
+
+ Constraint            75 MW (75%)          30 MW (37.5%)       125 MW (62.5%)      100 MW (66.67%)
+
+
+
+When a constraint/curtailment is being released, the amount being released pro-rata on each
+wind/solar farm will be relative to the dispatch head room available on each wind/solar farm. This
+head room will be based on the point in time difference between the available active power (for
+constraints) or the minimum of available active power and last binding constraint set point (for
+curtailments) to the active power output of the wind/solar farm. Although a release will use the
+wind/solar farms point in time available active power in the calculation, this will only be used to
+distribute the amount of constraint/curtailment being released more evenly among the wind/solar
+farms given updated availabilities as opposed to distributing the group total constraint/curtailment
+at the point of time more evenly across all wind/solar farms given updated availabilities.
+
+
+
+
+                                               PAGE 68 OF 74
+                                        WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+Time T+2, relaxing the constraint
+
+ Total Availability   530 MW          Total Output of      200 MW      Wind/solar       100 MW
+ of Wind/solar                        Wind/solar Farm                  Constraint
+ Farm Group                           Group                            Relaxed by
+
+
+
+                       Wind/solar Farm A   Wind/solar Farm B   Wind/solar Farm C    Wind/solar Farm D
+
+ Permissible           100 MW              150 MW              250 MW               200 MW
+ Capacity
+
+ Available Active      100 MW              80 MW               200 MW               150 MW
+ Power
+
+ Active Power          25 MW               50 MW               75 MW                50 MW
+ Output
+
+ Head Room             100-25 = 75 MW      80-50 = 30 MW       200-75 = 125 MW      150-50= 100 MW
+
+ Dispatch              25 + (100*75/330)   50 + (100*30/330)   75 +                 50 +
+ Instruction                                                   (100*125/330)        (100*100/330) =
+                       = 47.7 MW           = 59.1 MW
+                                                                                    80.3 MW
+                                                               = 112.9 MW
+
+ Constraint            52.3 MW (52.3%)     20.9 MW (26.1%)     87.1 MW (43.6%)      69.7 MW (46.4%)
+
+
+
+Impact of Frequency Response
+In 2017, the WDT calculation methodology was updated to account for Frequency response.
+Instead of the active power output used in the calculation we use a frequency adjusted power
+output but the same trend in the calculation output is seen. This calculation aims to both evenly
+distribute a constraint/curtailment at a point in time and also account for wind/solar farms that are
+not contributing to frequency response as expected. Additional constraints or curtailments to this
+wind/solar farm group will again not take into consideration updated wind/solar farm availabilities.
+For curtailment/constraint releases wind/solar farm availabilities will be used to assist in the
+relative pro-rata release of the constraint/curtailment but again as above will not re-distribute the
+total group constraint/curtailment based on the new availabilities at that point in time.
+The frequency adjusted power output is calculated as follows;
+    1. The nominal power output of all wind/solar farms assuming no frequency response is
+       approximated
+           a. This is assumed to be the available active power or
+           b. The previous dispatch set point
+    2. The difference between all active and nominal outputs is calculated for all wind/solar
+       farms in the constraint group and this is deemed the groups full frequency response
+    3. The nominal output of each wind/solar farm is adjusted based on a pro-rata distribution of
+       the group’s frequency response relative to the permissible capacity of each wind/solar
+       farm in the group. This is termed the frequency adjusted power output of each wind/solar
+       farm.
+
+
+
+                                             PAGE 69 OF 74
+                                     WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+APPENDIX 2 PROCEDURE TO DETERMINE AND CHANGE WDT CONSTRAINT
+   GROUPS IN IRELAND
+
+
+    Case Creation/Study Assumptions
+
+
+  1. Develop a low load analysis using the control centre EMS load flow analysis tool with all electrical
+     equipment assumed in their standard operating configuration. This assumes summer equipment
+     ratings for all equipment.
+
+
+      [Please note renewable generation constraint groups are based on the most onerous
+      system condition. If N/N-1/N-1-1 security violations occur under winter/spring/autumn
+      conditions the WDT constraint group will still be valid.]
+
+
+  2. In the region being analysed, all renewable generators within the region itself and in the
+     neighbouring regions are dispatched up to a maximum output in the STNET save case.
+  3. EWIC is assumed to have a high export profile in the study case in line with general high wind
+     conditions.
+  4. Implement all actions in line with SEM-11-062 to maximise the secure dispatch of renewables on
+     the system including the following;
+          •   Dispatch down/off conventional generation/lower priority generation from the system
+              that is contributing to the contingency issues presented in the case while maintaining a
+              secure system in line with all published generation constraints found at the following link;
+
+
+              https://www.sem-o.com/publications/general-publications/
+
+
+          •   Where possible transmission equipment is operationally sectionalised to maximise the
+              output of renewable generation in line with the principles of SEM-11-062 while also
+              maintaining operational security standards
+
+
+              Operating Security Standards (eirgridgroup.com)
+
+
+    Reviewing the Results of the Study Case
+
+
+    When all available actions to maximise the output of renewable generation are carried out,
+    a number of issues will remain in the case making it non-compliant with the Operational
+    Security Standards. When a base case analysis is complete for all regions of the system, a
+    list of base case and N-1 issues is created. The only ability for control room operators to
+    resolve these issues is through the constraint of a group of renewable generators feeding
+    into the problematic part of the network. Each network issue identified will require the
+    creation of a constraint group in the WDT. A shift factor analysis is carried out on all
+
+
+                                             PAGE 70 OF 74
+                                       WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+      generation nodes containing category 1 or category 2 renewable generators to determine
+      which renewable generators should be included in each constraint group.
+
+
+      WDT Constraint Group Determination
+
+
+      For each network issue noted above
+        •   Note the base case or post contingency current flow for the relevant circuit violation in the
+            STNET save case.
+
+
+
+
+Figure 1: Post Contingency AMP value before changing wind farm output (Amp 1)
+
+
+        •   Reduce the power output of one renewable generator at each node feeding into the
+            Transmission issue by 10 MW. Balance this decrease in generation by adding 10 MW to
+            another conventional generator far removed from the Transmission issue in the Generator
+            Overview page in STNET.
+
+        Note: Only one wind farm per node requires studying as each will have the same effectiveness at
+        alleviating the constraint.
+
+        •   Run the case and note the new post contingency current flow. This will be used to calculate
+            the Shift Factor for the node.
+
+
+
+
+Figure 2: Post Contingency AMP value after changing wind farm output (Amp 2)
+
+
+        •   Return this wind farm to its maximum output value and repeat the study for additional
+            renewable generation nodes in the problematic region ensuring the remote balancing
+            generator is always the same.
+
+
+                                              PAGE 71 OF 74
+                                WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+ •   The Shift Factor of a wind node is defined as follows:
+
+                                                  ∆𝑓𝑒
+                                        𝑆𝐹𝑒,𝑛 =
+                                                  ∆𝑃𝑛
+
+                   𝑒 = 𝑛𝑒𝑡𝑤𝑜𝑟𝑘 𝑒𝑙𝑒𝑚𝑒𝑛𝑡 𝑖𝑛𝑑𝑒𝑥
+                   𝑛 = 𝑤𝑖𝑛𝑑 𝑛𝑜𝑑𝑒 𝑖𝑛𝑑𝑒𝑥
+                   ∆𝑓𝑒 = 𝑐ℎ𝑎𝑛𝑔𝑒 𝑖𝑛 𝐴𝑀𝑃 𝑐𝑢𝑟𝑟𝑒𝑛𝑡 𝑓𝑙𝑜𝑤 𝑜𝑛 𝑛𝑒𝑡𝑤𝑜𝑟𝑘 𝑒𝑙𝑒𝑚𝑒𝑛𝑡 𝑒 𝑤ℎ𝑒𝑛
+                         𝑎 𝑟𝑒𝑑𝑢𝑐𝑡𝑖𝑜𝑛 𝑖𝑛 𝑔𝑒𝑛𝑒𝑟𝑎𝑡𝑖𝑜𝑛 𝑜𝑓 ∆𝑃𝑛 𝑜𝑐𝑐𝑢𝑟𝑠 𝑎𝑡 𝑛
+                    𝑃𝑛 = 𝑟𝑒𝑑𝑢𝑐𝑡𝑖𝑜𝑛 𝑖𝑛 𝑔𝑒𝑛𝑒𝑟𝑎𝑡𝑖𝑜𝑛 𝑎𝑡 𝑤𝑖𝑛𝑑 𝑛𝑜𝑑𝑒 𝑛
+
+ •   A shift factor greater than 0 indicates that the renewable generator is effective in reducing
+     the relevant contingency or base case issue. When the shift factor is 0 or below, it is not
+     effective in reducing the relevant contingency and will not be included the constraint group.
+ •   It is necessary to decide on a Shift Factor Threshold above which relevant renewable
+     generators are included constraint group. This threshold will differ for each contingency issue
+     and will be based on the relative effectiveness of the renewable generators in alleviating the
+     contingency violation. In general, the value will be based on a significant step change in the
+     shift factors calculated for the relevant renewable generators. The Shift Factor threshold
+     ensures that constraints are applied only to those renewable generators that have the
+     biggest impact on alleviating a particular constraint, and that those with a much smaller
+     impact are not constrained down inefficiently, which would ultimately be inconsistent with
+     the principles of SEM-11-062.
+
+
+
+
+WDT Constraint Group Determination For transmission outages
+
+
+ •   Using the STNET save case created, increase the MW generation of each renewable generator
+     in the constraint group being analysed to their maximum output. [STNET> Powerflow >
+     Network Unit Summary]
+ •   Apply the relevant transmission outage being assessed to the STNET study case, sectionalise
+     the network to maximise the output of renewable generation and run the study. Balance
+     generation with available conventional generation. The case is now ready to carry out a shift
+     factor analysis.
+ •   Note the post contingency current flow for the relevant circuit violation.
+
+
+
+
+                                       PAGE 72 OF 74
+                                       WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+
+Figure 3: Post Contingency AMP value before changing wind farm output (Amp 1)
+
+
+        •   Reduce the power output of one renewable generator by 10 MW. Balance this decrease in
+            generation by adding 10 MW to another conventional generator remote of the Transmission
+            issue in the Generator Overview page in STNET.
+
+        Note: Only one wind farm per node requires study as each will have the same effectiveness at
+        alleviating the constraint.
+
+        •   Run the case and note the new post contingency current flow value. This will be used to
+            calculate the Shift Factor for the renewable generation node.
+
+
+
+
+Figure 4: Post Contingency AMP value after changing wind farm output (Amp 2)
+
+
+        •   Return this renewable generator to its maximum output and repeat the study for additional
+            renewable generation nodes in the constraint group. Studies may also be required for
+            renewable generators not originally included in the constraint group that have become
+            effective in alleviating the constraint due to the transmission outage.
+
+        •   The Shift Factor of a wind node is defined as follows:
+
+                                                         ∆𝑓𝑒
+                                               𝑆𝐹𝑒,𝑛 =
+                                                         ∆𝑃𝑛
+
+                          𝑒 = 𝑛𝑒𝑡𝑤𝑜𝑟𝑘 𝑒𝑙𝑒𝑚𝑒𝑛𝑡 𝑖𝑛𝑑𝑒𝑥
+                          𝑛 = 𝑤𝑖𝑛𝑑 𝑛𝑜𝑑𝑒 𝑖𝑛𝑑𝑒𝑥
+                          ∆𝑓𝑒 = 𝑐ℎ𝑎𝑛𝑔𝑒 𝑖𝑛 𝐴𝑀𝑃 𝑐𝑢𝑟𝑟𝑒𝑛𝑡 𝑓𝑙𝑜𝑤 𝑜𝑛 𝑛𝑒𝑡𝑤𝑜𝑟𝑘 𝑒𝑙𝑒𝑚𝑒𝑛𝑡 𝑒 𝑤ℎ𝑒𝑛
+                                𝑎 𝑟𝑒𝑑𝑢𝑐𝑡𝑖𝑜𝑛 𝑖𝑛 𝑔𝑒𝑛𝑒𝑟𝑎𝑡𝑖𝑜𝑛 𝑜𝑓 ∆𝑃𝑛 𝑜𝑐𝑐𝑢𝑟𝑠 𝑎𝑡 𝑛
+                           𝑃𝑛 = 𝑟𝑒𝑑𝑢𝑐𝑡𝑖𝑜𝑛 𝑖𝑛 𝑔𝑒𝑛𝑒𝑟𝑎𝑡𝑖𝑜𝑛 𝑎𝑡 𝑤𝑖𝑛𝑑 𝑛𝑜𝑑𝑒 𝑛
+
+                                              PAGE 73 OF 74
+                                       WIND DISPATCH TOOL CONSTRAINT GROUP OVERVIEW
+
+
+
+
+        •   A shift factor greater than 0 indicates that the renewable generator is effective in reducing
+            the relevant contingency. When the shift factor is reduced by a significant step change as a
+            result of an outage, it is no longer as effective in reducing the relevant contingency and will
+            be removed from the constraint group. Additionally, a renewable generator not previously
+            included in the constraint group may now return a positive shift factor of the same order to
+            other effective renewable generators already in the constraint group and these generators
+            will now be added to the constraint group.
+
+
+
+Example 1.1: Calculating Shift Factor for Wind Farm1 for LA-MUL Group (Intact Network)
+
+ Node       Wind         P1 (MW)      P2 (MW)      Delta P      Amp 1      Amp 2      Delta      Shift
+            Farm                                                                      AMP        Factor
+
+ Node 1     WF1          5            -5           10           711.1      708.2      2.9        0.29
+
+
+
+
+Example 1.2: Calculating Shift Factor for Wind Farm 1 for LA-MUL Group (LA-SLB on Outage)
+
+ Node       Wind         P1 (MW)      P2 (MW)      Delta P      Amp 1      Amp 2      Delta      Shift
+            Farm                                                                      AMP        Factor
+
+ Node 1     WF1          5            -5           10           583.8      584        -0.2       -0.02
+
+
+
+
+        •   Example 1.1: Wind Farm 1 is included in the West Constraint Group 1: Lanesboro to Mullingar
+            constraint group for an intact network
+        •   Example 1.2: Wind Farm 1 should be removed from the West Constraint Group 1: Lanesboro
+            to Mullingar constraint group when Lanesboro-Sliabh Bawn 110 kV circuit is on outage, as the
+            shift factor is <0.
+
+
+
+
+                                               PAGE 74 OF 74
+

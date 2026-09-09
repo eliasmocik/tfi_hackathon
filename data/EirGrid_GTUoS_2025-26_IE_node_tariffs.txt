@@ -1,0 +1,898 @@
+Approved 2025/2026
+Generator Use of
+System Charges
+(GTUoS)
+
+29 August 2025
+Contents
+1. Approved GTUoS Charges 2025/26 Table              4
+
+
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025   Page 2
+COPYRIGHT © EirGrid/SONI
+
+All rights reserved. No part of this work may be modified or reproduced or copied in any
+form or by means - graphic, electronic or mechanical, including photocopying, recording,
+taping or information and retrieval system, or used for any purpose other than its
+designated purpose, without the written permission of EirGrid/SONI.
+
+
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                   Page 3
+1. Proposed GTUoS Charges 2025/26
+   Table
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Ireland Transmission Connected Conventional
+
+  Aghada/Longpoint     Aghada/Longpoint           726         726       €10.9008      €908.4000
+
+  Ardnacrusha Hydro    Ardnacrusha                 86          86        €9.4567      €788.0583
+
+  Aughinish            Alumina CHP                130         130        €9.6409      €803.4083
+
+  Irishtown            Dublin Bay Power           415         415        €8.8537      €737.8083
+
+  Cushaling            Edenderry Peaking          116         116        €9.2529      €771.0750
+
+  Cushaling            Edenderry Power            121.5      121.5       €9.2532      €771.1000
+
+  Cathaleen's Fall     Cathaleens Fall             45          45        €9.1621      €763.5083
+
+  Cliff                Cliff                       20          20        €9.1621      €763.5083
+
+  Glanagow             Whitegen                   445         445       €10.9074      €908.9500
+
+  Great Island         Great Island               464         464        €9.8769      €823.0750
+
+  Huntstown            Huntstown 1                352         352        €6.7356      €561.3000
+
+  Corduff              Huntstown 2                412         412        €6.7357      €561.3083
+
+  Corduff              Corduff Flexgen            63.5        63.5       €7.0329      €586.0750
+
+  Carrigadrohid        Lee Carrigadrohid           8           8        €14.2783     €1,189.8583
+
+  Inniscarra           Lee Inniscarra              19          19       €13.0805     €1,090.0417
+
+  Pollaphuca           Liffey                     34.18      34.18       €9.0703      €755.8583
+
+  Moneypoint           Moneypoint                 862.5      862.5       €8.3081      €692.3417
+
+  Shellybanks          Poolbeg CCGT               476         476        €8.9440      €745.3333
+
+  Poolbeg              Poolbeg Flexgen            63.5        63.5       €9.0667      €755.5583
+
+  Irishtown            Ringsend Flexgen           63.5        63.5       €8.8537      €737.8083
+
+  Derryiron            Rhode                      103.6      103.6       €8.5106      €709.2167
+                       Tawnaghmore
+  Tawnaghmore                                     104         104       €11.9859      €998.8250
+                       Peaking Plant
+  Turlough Hill        Turlough Hill              292         292        €8.0498      €670.8167
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                          Page 4
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Tynagh               Tynagh                     404         404        €7.6854      €640.4500
+                       Greener Ideas
+  Barnakyle            Profile Park               100         100        €3.2384      €269.8667
+                       Generator
+  Castlelost           Castlelost Generator       275         275        €8.2862      €690.5167
+
+  Cuilleen             Cuilleen Generator         100         100        €8.5659      €713.8250
+
+  Cruiserath           Kilshane Generator         293         293        €6.7384      €561.5333
+
+
+
+  Ireland Transmission Connected Renewable
+
+  Athea                Athea                      34.35      34.35      €13.4941     €1,124.5083
+                       Beananaspuck &
+  Athea                                           23.15      23.15      €13.4941     €1,124.5083
+                       Toberatoreen
+  Ballinknockane       Ballinknockane Solar        50          50        €9.6493      €804.1083
+
+  Ballyvouskil         Knocknamork                54.5        54.5      €11.7296      €977.4667
+
+  Ballywater           Ballywater                  42          42        €9.9305      €827.5417
+
+  Blundlestown         Blundlestown Solar          60          60        €7.5300      €627.5000
+
+  Boggeragh            Boggeragh 1                 57          57       €12.3044     €1,025.3667
+
+  Boggeragh            Boggeragh 2                65.7        65.7      €12.3044     €1,025.3667
+
+  Booltiagh            Booltiagh                  31.45      31.45       €8.8644      €738.7000
+
+  Castledockrell       Castledockrell             41.4        41.4       €9.3532      €779.4333
+
+  Clahane              Clahane                    51.6        51.6       €9.9821      €831.8417
+                       Knocknagashel Wind
+  Cloghboola                                       46          46       €13.4941     €1,124.5083
+                       (Cloghboola (1))
+                       Croaghonagh
+  Clogher                                          90          90        €9.4819      €790.1583
+                       Windfarm
+  Coomagearlahy        Coomagearlahy               81          81       €11.6967      €974.7250
+
+  Coomataggart         Grousemount WF             114.2      114.2      €13.8323     €1,152.6917
+
+  Cordal               Cordal                     89.85      89.85      €12.5261     €1,043.8417
+
+  Cunghill             Kingsmountain              34.8        34.8      €12.1441     €1,012.0083
+
+  Cushaling            Cloncreen                   75          75        €9.2529      €771.0750
+
+  Derrybrien           Derrybrien                 59.5        59.5       €8.7801      €731.6750
+
+  Derrycarney          Cloghan                     34          34        €8.9297      €744.1417
+
+  Derrycarney          Derrinlough                105         105        €8.9297      €744.1417
+                       Yellow River
+  Derryiron                                       101         101        €8.5105      €709.2083
+                       Windfarm
+
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                          Page 5
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Derryiron            Clonin Solar                47          47        €8.5108      €709.2333
+
+  Dromada              Dromada                     28.5       28.5      €13.4941     €1,124.5083
+
+  Drombeg              Drombeg Solar               50          50        €9.8601      €821.6750
+                       Carrigdangan (Was
+  Dunmanway                                        54.3       54.3      €12.0607     €1,005.0583
+                       Barnidivane)
+  Gallanstown          Gallanstown Solar           119        119        €6.9526      €579.3833
+                       Harlockstown Solar
+  Gallanstown                                      31.6       31.6       €6.9526      €579.3833
+                       Farm
+  Garballagh           Gillinstown                 95          95        €7.1632      €596.9333
+
+  Garballagh           Garballagh 2 Solar          48          48        €7.1632      €596.9333
+
+  Garrow               Coomacheo                  59.225     59.225     €11.7221      €976.8417
+
+  Garvagh              Garvagh                     48          48        €9.0291      €752.4250
+                       Gaskinstown Solar
+  Gaskinstown                                      85          85        €7.1117      €592.6417
+                       Farm
+  Glanlee              Glanlee                     29.8       29.8      €11.6967      €974.7250
+
+  Golagh               Golagh                      12          12        €9.4819      €790.1583
+
+  Kill Hill            Kill Hill                   36          36        €9.6906      €807.5500
+
+  Kilpadogge           Kelwin                      39          39        €9.7022      €808.5167
+
+  Knockacummer         Knockacummer                100        100       €12.5261     €1,043.8417
+
+  Knockranny           Knockalough                 33.6       33.6       €9.5196      €793.3000
+
+  Knockranny           Ardderoo                    91.2       91.2       €9.5196      €793.3000
+
+  Lenalea              Lenalea                     30.1       30.1      €10.2288      €852.4000
+
+  Lisheen              Lisheen                     59          59        €9.4358      €786.3167
+
+  Lisheen              Lisheen 3                   28.8       28.8       €9.4358      €786.3167
+
+  Lislea               Drumlins Park               48.8       48.8       €7.4101      €617.5083
+                       Lysaghtstown Solar
+  Lysaghtstown                                     87          87       €11.2846      €940.3833
+                       Park
+  Meentycat            Meentycat                  84.96      84.96       €9.8287      €819.0583
+
+  Moneypoint           Moneypoint WF              17.25      17.25       €8.7391      €728.2583
+
+  Mountlucas           Mountlucas                  79.2       79.2       €9.0332      €752.7667
+
+  Mountlucas           Moanvane                    56.4       56.4       €9.0332      €752.7667
+
+  Mulreavy             Mulreavy                   95.25      95.25       €9.4819      €790.1583
+
+  Philipstown          Cushaling Windfarm          50          50        €9.2501      €770.8417
+
+  Rathnaskilloge       Rathnaskilloge Solar        95          95       €10.2537      €854.4750
+
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                          Page 6
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Ratrussan            Mountain Lodge             30.62      30.62       €8.9540      €746.1667
+
+  Raffeen              Ballinrea Solar             55          55       €11.4638      €955.3167
+
+  Rattin               Clonfad Solar               100        100        €8.5344      €711.2000
+
+  Ratrussan            Ratrussan                   48          48        €8.9540      €746.1667
+
+  Rosspile             Rosspile Solar              95          95       €12.6484     €1,054.0333
+
+  Sliabh Bawn          Sliabh Bawn                 58          58        €8.2737      €689.4750
+
+  Slievecallan         Boolinrudda                44.515     44.515      €8.9904      €749.2000
+
+  Slievecallan         Knockalassa                26.875     26.875      €8.9904      €749.2000
+
+  Srahnakilly          Oweninney Power             89          89       €12.6177     €1,051.4750
+
+  Srahnakilly          Oweninney 2                 83          83       €12.6177     €1,051.4750
+                       Timahoe North Solar
+  Timahoe North                                    70          70        €8.0864      €673.8667
+                       Farm
+  Timoney              Erkina                     66.56      66.56       €9.1272      €760.6000
+
+  Tullabeg             Tullabeg Solar Park         50          50        €9.5060      €792.1667
+
+  Uggool               Seecon                      105        105        €9.2232      €768.6000
+
+  Uggool               Uggool                      64          64        €9.2232      €768.6000
+
+  Wexford              Tracystown Solar           101.1      101.1      €13.9193     €1,159.9417
+
+  Woodhouse            Woodhouse                   20          20       €10.6332      €886.1000
+
+
+
+  Ireland Distribution Connected
+
+  Ardnacrusha          Knockastanna                7.5        2.5        €9.4569      €788.0750
+
+  Ardnagappary         Cronalaght 2               17.96      12.96      €11.0280      €919.0000
+
+  Arklow               Arklow Bank                 25.2       20.2       €8.5840      €715.3333
+
+  Arklow               Ballycumber                 18          13        €8.5840      €715.3333
+
+  Arklow               Raheenleagh                 35.2       30.2       €8.5840      €715.3333
+
+  Arklow               Knockadosan                  6          1         €8.5840      €715.3333
+
+  Ballybeg             Carrick Solar               5.8        0.8        €9.9077      €825.6417
+
+  Ballybeg             Millvale PV                  8          3         €8.5392      €711.6000
+
+  Ballylickey          Ballybane                  45.45      40.45      €12.0607     €1,005.0583
+
+  Ballylickey          Kealkil                     8.5        3.5       €12.0607     €1,005.0583
+                       Parksgrove
+  Ballyragget                                      35          30        €9.3746      €781.2167
+                       Windfarm
+
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                          Page 7
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Baltrasna            Hilltown PV                 10          5         €6.9942      €582.8500
+                       Painestown Hill
+  Baltrasna                                        7.14       2.14       €6.9942      €582.8500
+                       Solar Farm
+  Bandon               Garranereagh                8.75       3.75      €11.7658      €980.4833
+                       Callatrim South
+  Bandon                                           5.95       0.95      €11.7660      €980.5000
+                       Solar
+  Bandon               Finnis Solar                8.5        3.5       €11.7660      €980.5000
+
+  Barrymore            Barranafaddock              32.4       27.4      €10.6922      €891.0167
+
+  Barrymore            Farran South Solar          15          10       €10.6927      €891.0583
+                       Dairygold,
+  Barrymore T                                      8.55       3.55      €10.6927      €891.0583
+                       Mitchelstown
+  Bellacorick          Bellacorick                 6.45       1.45      €12.6177     €1,051.4750
+                       Sheskin Windfarm
+  Bellacorick                                      16.8       11.8      €12.6177     €1,051.4750
+                       Ltd
+  Binbane              Clogheravaddy               20          15       €10.7778      €898.1500
+
+  Binbane              Corkermore 1                9.99       4.99      €10.7778      €898.1500
+
+  Binbane              Killin Hill                  6          1        €10.7778      €898.1500
+
+  Binbane              Loughderryduff              7.65       2.65      €10.7778      €898.1500
+
+  Binbane              Meenachullalan              11.9       6.9       €10.7778      €898.1500
+
+  Boggeragh            Carrigcannon                20          15       €12.3044     €1,025.3667
+
+  Boggeragh            Esk                        23.35      18.35      €12.3044     €1,025.3667
+
+  Booltiagh            Boolynagleragh             36.98      31.98       €8.8644      €738.7000
+
+  Booltiagh            Cahermurphy                  6          1         €8.8644      €738.7000
+
+  Booltiagh            Glenmore                    32          27        €8.8644      €738.7000
+
+  Booltiagh            Lissycasey                 13.399     8.399       €8.8644      €738.7000
+
+  Booltiagh            Crossmore                   15          10        €8.8644      €738.7000
+
+  Cahir                Monroe East Solar            8          3         €9.9059      €825.4917
+
+  Cahir                Ballymacadam                21          16        €9.9059      €825.4917
+
+  Carlow               Gortahile                   21          16        €9.0700      €755.8333
+                       Derrynadivva (prev.
+  Castlebar                                        15.3       10.3      €12.2511     €1,020.9250
+                       Raheen Bar 2)
+  Castlebar            Raheen Barr 1               18.7       13.7      €12.2511     €1,020.9250
+
+  Cathaleen's Fall     Spaddan                     17.5       12.5       €9.1624      €763.5333
+
+  Cauteen              Cappagh White B            13.18       8.18       €9.7290      €810.7500
+
+  Cauteen              Cappawhite A                52          47        €9.7290      €810.7500
+
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                          Page 8
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Cauteen              Garracummer                 37.9       32.9       €9.7290      €810.7500
+
+  Cauteen              Glencarbry                  33          28        €9.7290      €810.7500
+
+  Cauteen              Glenough                    33          28        €9.7290      €810.7500
+
+  Cauteen              Holyford                     9          4         €9.7290      €810.7500
+
+  Charleville          Knocknatallig               18.3       13.3      €10.1905      €849.2083
+
+  Charleville          Castlepook                  33.1       28.1      €10.1905      €849.2083
+
+  Cloghboola           Cloghanaleskirt            12.55       7.55      €13.4941     €1,124.5083
+
+  Cloghboola           Glanaruddery 1              20          15       €13.4941     €1,124.5083
+
+  Cloghboola           Glanaruddery 2              12          7        €13.4941     €1,124.5083
+
+  Cloghboola           Glantaunyalkeen             10          5        €13.4941     €1,124.5083
+
+  Coolroe              Garravagh Solar             9.99       4.99      €12.8562     €1,071.3500
+
+  Coomataggart         Cleanrath                  42.64      37.64      €13.8323     €1,152.6917
+
+  Cordal               Coollegrean                 18.5       13.5      €12.5261     €1,043.8417
+
+  Cordal               Scartaglen                 39.25      34.25      €12.5261     €1,043.8417
+
+  Corderry             Altagowlan                  7.65       2.65       €9.0290      €752.4167
+
+  Corderry             Black Banks 2               6.8        1.8        €9.0290      €752.4167
+
+  Corderry             Tullynamoyle 1               9          4         €9.0290      €752.4167
+
+  Corderry             Tullynamoyle 2             10.225     5.225       €9.0290      €752.4167
+
+  Corderry             Tullynamoyle 3             13.58       8.58       €9.0290      €752.4167
+
+  Corderry             Tullynamoyle 5             16.35      11.35       €9.0290      €752.4167
+
+  Crane                Macallian Solar Ltd          9          4        €10.1920      €849.3333
+
+  Dallow               Meenwaun WF                9.999      4.999       €8.8515      €737.6250
+
+  Dalton               Magheramore                 40.8       35.8      €11.1385      €928.2083
+                       Horsepasture Solar
+  Doon                                              8          3         €9.8754      €822.9500
+                       Farm
+  Drombeg              Ballylongford Wind          25.2       20.2       €9.8282      €819.0167
+                       Meath Waste-to-
+  Drybridge                                        20.5       15.5       €7.2343      €602.8583
+                       Energy
+  Dundalk              Grove Hill                  16.1       11.1       €7.5250      €627.0833
+
+  Dunfirth             Hortland PV                 14          9         €8.0696      €672.4667
+
+  Dunfirth             Dysart                      17.5       12.5       €8.0696      €672.4667
+                       Carbery Milk
+  Dunmanway                                         6          1        €12.0613     €1,005.1083
+                       Products CHP
+
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                          Page 9
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Dunmanway            Coomatallin                 5.95       0.95      €12.0607     €1,005.0583
+
+  Dunmanway            Killaveenoge                24.8       19.8      €12.0607     €1,005.0583
+
+  Dunmanway            Milane Hill                 5.94       0.94      €12.0607     €1,005.0583
+                       Knockeenbui
+  Dunmanway                                        13.8       8.8       €12.0607     €1,005.0583
+                       Windfarm
+  Finglas              Bullstown Solar             8.42       3.42       €6.8560      €571.3333
+
+  Garrow               Caherdowney                 10          5        €11.7221      €976.8417
+                       Derrysallagh Wind
+  Garvagh                                          34          29        €9.0291      €752.4250
+                       Farm
+  Glasmore             Mainscourt Solar           39.99      34.99       €7.2343      €602.8583
+
+  Glenlara             Dromdeeveen                 27          22       €10.1905      €849.2083
+
+  Glenlara             Mauricetown                 13.8       8.8       €10.1905      €849.2083
+
+  Glenlara             Taurbeg                     26          21       €12.5261     €1,043.8417
+
+  Glenree              Black Lough                 12.5       7.5       €15.0065     €1,250.5417
+
+  Glenree              Bunnyconellan               28          23       €15.0065     €1,250.5417
+  Glenree              Carrowleagh                 36.8       31.8      €15.0065     €1,250.5417
+  Grange Castle        Ballymakaily OCGT          115.2      110.2       €7.1441      €595.3417
+
+  Great Island         Ballyedock Solar            12          7        €10.3288      €860.7333
+
+  Ikerrin              Monaincha Bog              35.95      30.95       €9.1351      €761.2583
+
+  Inchicore            Guinness CHP               8.075      3.075       €7.1442      €595.3500
+
+  Kilpaddoge           Leanamore                   18          13        €9.7022      €808.5167
+  Kilteel              Arthurstown                 9.78       4.78       €8.0926      €674.3833
+                       Threecastles Solar
+  Kilteel                                          15          10        €8.0926      €674.3833
+                       Farm
+  Knockearagh          Gneeves                     9.35       4.35      €11.1045      €925.3750
+                       WEDcross &
+  Knockearagh                                      7.5        2.5       €11.1045      €925.3750
+                       Adambridge Mfrs.
+                       Keatingstown Solar
+  Kilkenny                                          6          1         €8.9038      €741.9833
+                       Farm
+  Letterkenny          Cark                        15          10        €9.9340      €827.8333
+  Letterkenny          Culliagh                   11.88       6.88       €9.9340      €827.8333
+  Letterkenny          Lettergull                  20          15        €9.9340      €827.8333
+
+  Lisheen              Bruckana                    39.6       34.6       €9.4358      €786.3167
+
+  Lodgewood            Ballycadden                24.212     19.212      €9.3532      €779.4333
+
+  Lodgewood            Gibbet Hill                 14.8       9.8        €9.3532      €779.4333
+
+
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                         Page 10
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Lodgewood            Knocknalour                8.95        3.95       €9.3532      €779.4333
+
+  Lodgewood            The Dell Solar              20          15        €9.5572      €796.4333
+
+  Macroom              Bawnmore                    24          19       €14.4674     €1,205.6167
+
+  Meath Hill           Bailie Foods               5.21        0.21       €7.3540      €612.8333
+
+  Meath Hill           Gartnaneane                10.5        5.5        €7.3540      €612.8333
+
+  Meath Hill           Mullananalt                 7.5        2.5        €7.3540      €612.8333
+
+  Meath Hill           Raragh 2                   11.5        6.5        €7.3540      €612.8333
+
+  Meath Hill           Teevurcher                  9           4         €7.3540      €612.8333
+
+  Meath Hill           Taghart                    23.06      18.06       €7.3540      €612.8333
+
+  Moy                  Lackan                      6           1        €11.5870      €965.5833
+
+  Mullingar            Slanemore PV               16.85      11.85       €8.4471      €703.9250
+                       Dunmurry Springs
+  Newbridge                                        12          7         €8.4418      €703.4833
+                       Solar
+  Oughtragh            Knockaneden                 9           4        €10.4454      €870.4500
+
+  Portlaoise           Lisdowney                   9.2        4.2        €9.5082      €792.3500
+
+  Rathkeale            Grouse Lodge                15          10        €9.9870      €832.2500
+
+  Rathkeale            Rathcahill                 12.5        7.5        €9.9870      €832.2500
+
+  Reamore              Knocknagoum                44.35      39.35      €10.1202      €843.3500
+
+  Reamore              Muingnaminnane             15.3        10.3      €10.1202      €843.3500
+
+  Reamore              Stacks Mountain            25.3        20.3      €10.1202      €843.3500
+                       Dublin Waste to
+  Ringsend                                         72          67        €9.0666      €755.5500
+                       Energy Facility
+                       Leitir Guingaid &
+  Salthill                                        40.9        35.9       €9.5196      €793.3000
+                       Doire Chrith1 & 2
+                       Carrickallen Wind
+  Shankill                                         22          17        €7.4579      €621.4917
+                       Farm
+  Sligo                Carrickeeney               7.65        2.65       €9.9824      €831.8667
+
+  Sligo                Faughary                    6           1         €9.9824      €831.8667
+
+  Somerset             Sonnagh Old                7.65        2.65       €8.5398      €711.6500
+
+  Sorne Hill           Flughland                   9.2        4.2        €9.9343      €827.8583
+
+  Sorne Hill           Sorne Hill                 38.9        33.9       €9.9343      €827.8583
+
+  Tawnaghmore Wind     Killala                    19.2        14.2      €11.9864      €998.8667
+
+  Thornsberry          Muinagh Solar               5.8        0.8       €11.5864      €965.5333
+
+  Thurles              An Cnoc                    11.5        6.5        €9.4358      €786.3167
+
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                         Page 11
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Thurles              Ballybay                   13.8        8.8        €9.4358      €786.3167
+
+  Thurles              Foyle                       9.6        4.6        €9.4358      €786.3167
+
+  Tonroe               Largan Hill                5.94        0.94       €8.9019      €741.8250
+
+  Tralee               Ballincollig Hill           15          10       €10.1202      €843.3500
+
+  Tralee               Mount Eagle                 5.1        0.1       €10.1202      €843.3500
+
+  Tralee               Tursillagh 1                15          10       €10.1202      €843.3500
+
+  Tralee               Tursillagh 2                6.8        1.8       €10.1202      €843.3500
+
+  Tralee               Ballenaghty Solar           9.9        4.9       €10.1512      €845.9333
+
+  Trien                Tournafulla 1               7.5        2.5        €9.8899      €824.1583
+
+  Trien                Tournafulla 2              17.2        12.2      €13.4941     €1,124.5083
+
+  Trien                Knockawarriga              29.1        24.1      €13.4941     €1,124.5083
+
+  Trillick             Beam Hill                   14          9         €9.9343      €827.8583
+
+  Trillick             Drumlough Hill 2           9.99        4.99       €9.9343      €827.8583
+
+  Trillick             Meenaward                   6.9        1.9        €9.9343      €827.8583
+
+  Tullabrack           Moanmore 1                 12.6        7.6        €8.7733      €731.1083
+
+  Tullabrack           Tullabrack 1               13.8        8.8        €8.7733      €731.1083
+
+  Waterford            Ballymartin                14.28       9.28      €10.1597      €846.6417
+
+  Waterford            Farranmacedmond             6           1        €10.1599      €846.6583
+
+  Wexford              Carnsore                   11.9        6.9       €13.9197     €1,159.9750
+
+  Wexford              Richfield                   27          22       €13.9197     €1,159.9750
+
+  Wexford              Blusheens Solar Park       7.98        2.98      €13.9193     €1,159.9417
+
+
+
+  NI Transmission Connected
+
+  Ballylumford         Ballylumford B10           97.6        97.6       €7.6038      €633.6500
+
+  Ballylumford         Ballylumford B31           246.8      246.8       €7.6038      €633.6500
+
+  Ballylumford         Ballylumford B32           246.8      246.8       €7.6038      €633.6500
+
+  Ballylumford         Ballylumford GT7            58          58        €7.6308      €635.9000
+
+  Ballylumford         Ballylumford GT8            58          58        €7.6308      €635.9000
+
+  Brockaghboy          Brockaghboy                47.5        47.5       €7.7231      €643.5917
+
+  Coolkeeragh          Coolkeeragh C30 GT         266         266        €7.6780      €639.8333
+
+  Coolkeeragh          Coolkeeragh C30 ST         147         147        €7.7663      €647.1917
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                         Page 12
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Coolkeeragh          Coolkeeragh GT8             53          53        €7.7662      €647.1833
+
+  Kilroot              Kilroot GT1                 29          29        €7.6050      €633.7500
+
+  Kilroot              Kilroot GT2                 29          29        €7.6050      €633.7500
+
+  Kilroot              Kilroot GT3                 42          42        €7.6051      €633.7583
+
+  Kilroot              Kilroot GT4                 42          42        €7.6051      €633.7583
+
+  Kilroot              Kilroot GT6                 350        350        €7.6051      €633.7583
+
+  Kilroot              Kilroot GT7                 350        350        €7.6051      €633.7583
+
+  Slievekirk           Slievekirk                  73.6       73.6       €7.8207      €651.7250
+
+
+
+  NI Transmission Connected Battery
+
+  Castlereagh          Castlereagh BESS            50          50        €7.5090      €625.7500
+
+  Kells                Kells Battery               50          50        €7.6852      €640.4333
+
+  Tandragee            Mullavilly                  50          50        €7.1898      €599.1500
+
+  Tamnamore            Drumkee                     50          50        €8.2036      €683.6333
+
+
+
+  NI Distribution Connected
+
+  Aghyoule             Molly Mountain              15          10        €8.8676      €738.9667
+
+  Aghyoule             Slieve Rushen2              54          49        €8.8676      €738.9667
+
+  Aghyoule             Snugborough                 13.5       8.5        €8.8676      €738.9667
+
+  Agivey               Corlacky                    47.3       42.3       €7.7231      €643.5917
+
+  Agivey               Craiggore                   23.5       18.5       €7.7231      €643.5917
+
+  Agivey               Evishagaran                 46.8       41.8       €7.7231      €643.5917
+
+  Antrim               Millar Farm PV              6.27       1.27       €7.6852      €640.4333
+
+  Ballymena            Ballygarvey Road             6          1         €7.6852      €640.4333
+
+  Ballymena            Elginny Hill                23          18        €7.6852      €640.4333
+
+  Ballymena            Rathsherry                 21.15      16.15       €7.6852      €640.4333
+
+  Ballynahinch         Crabtree BESS               12          7         €7.5091      €625.7583
+
+  Banbridge            Ballydown BESS             12.224     7.224       €7.1902      €599.1833
+
+  Carnmoney            Carn Hill                   13.8       8.8        €7.6307      €635.8917
+
+  Coleraine            Dunbeg                      42          37        €7.7429      €645.2417
+
+  Coleraine            Dunmore                     21          16        €7.7429      €645.2417
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                         Page 13
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Coleraine            Garves                      15          10        €7.7429      €645.2417
+
+  Coleraine            Gruig                       25          20        €7.7429      €645.2417
+                       Lishally Power
+  Coolkeeragh                                     17.6        12.6       €7.7663      €647.1917
+                       Station
+  Coolkeeragh          Monnaboy                    12          7         €7.7662      €647.1833
+
+  Coolkeeragh          Springtown BESS             17          12        €7.7662      €647.1833
+
+  Curraghamulkin       Castlecraig                 25          20        €8.8676      €738.9667
+
+  Curraghamulkin       Cornavarrow                 36          31        €8.8676      €738.9667
+
+  Curraghamulkin       Slieveglass                 6.9        1.9        €8.8676      €738.9667
+
+  Dungannon            Crockagarran                18          13        €8.1956      €682.9667
+
+  Enniskillen          Callagheen                 17.8        12.8       €8.8676      €738.9667
+
+  Enniskillen          Ora More                    15          10        €8.8676      €738.9667
+
+  Glengormley          Ballyutoag                 11.5        6.5        €7.6852      €640.4333
+
+  Gort                 Altamuskin                 14.1        9.1        €8.0910      €674.2500
+
+  Gort                 Crockbaravally              7.5        2.5        €8.0910      €674.2500
+
+  Gort                 Murley Mountain            21.6        16.6       €8.0910      €674.2500
+
+  Gort                 Shantavny Scotch           16.1        11.1       €8.0910      €674.2500
+
+  Gort                 Slieve Divena 2            18.8        13.8       €8.0910      €674.2500
+
+  Gort                 Teiges                      11          6         €8.0910      €674.2500
+
+  Killymallaght        Carrickatane               20.7        15.7       €7.8207      €651.7250
+
+  Killymallaght        Eglish                      15          10        €7.8207      €651.7250
+
+  Larne                Ballykeel                  16.1        11.1       €7.6552      €637.9333
+
+  Larne                Wolf Bog                    10          5         €7.6552      €637.9333
+
+  Limavady             Altahullion                 26          21        €7.7520      €646.0000
+
+  Limavady             Altahullion 2              11.7        6.7        €7.7520      €646.0000
+
+  Lisaghmore           Curryfree                   15          10        €7.7662      €647.1833
+
+  Lisburn              Ballinderry Road PV        16.92      11.92       €7.4229      €618.5750
+
+  Lisburn              Lough Road                  21          16        €7.4229      €618.5750
+
+  Lisburn              Maghaberry Road            20.43      15.43       €7.4229      €618.5750
+
+  Loguestown           Cloonty                     9.2        4.2        €7.7429      €645.2417
+
+  Magherakeel          Church Hill                18.4        13.4       €8.0443      €670.3583
+
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                         Page 14
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Magherakeel          Crigshane                  32.2        27.2       €8.0443      €670.3583
+
+  Magherakeel          Gronan                     11.75       6.75       €8.0443      €670.3583
+
+  Magherakeel          Magherakeel                7.05        2.05       €8.0443      €670.3583
+
+  Magherakeel          Seegronan                  14.1        9.1        €8.0443      €670.3583
+
+  Magherakeel          Thornog                     20          15        €8.0443      €670.3583
+
+  Magherakeel          Tievenameenta              34.5        29.5       €8.0443      €670.3583
+
+  Newry North          Newry                       20          15        €7.1902      €599.1833
+
+  Omagh                Bessybell2                  9           4         €8.0443      €670.3583
+
+  Omagh                Hunters Hill                20          15        €8.0443      €670.3583
+
+  Omagh                Lendrum's Bridge           13.2        8.2        €8.0443      €670.3583
+
+  Omagh                Screggagh                   20          15        €8.0443      €670.3583
+
+  Omagh                Slieve Divena 1             30          25        €8.0443      €670.3583
+
+  Omagh                Tappaghan                  28.5        23.5       €8.0443      €670.3583
+
+  Rasharkin            Altaveedan                  18          13        €7.7231      €643.5917
+
+  Rasharkin            Bann Road                  29.81      24.81       €7.7822      €648.5167
+
+  Rasharkin            Finvoy Road                5.209      0.209       €7.7822      €648.5167
+
+  Rasharkin            Glenbuck                    9.2        4.2        €7.7231      €643.5917
+
+  Rasharkin            Long Mountain              27.6        22.6       €7.7231      €643.5917
+
+  Rosebank             Bombardier                 9.98        4.98       €7.5474      €628.9500
+
+  Strabane             Bin Mountain                9           4         €7.8622      €655.1833
+
+  Strabane             Lough Hill                  7.8        2.8        €7.8622      €655.1833
+
+  Strabane             Owenreagh                   5.5        0.5        €7.8622      €655.1833
+
+  Strabane             Owenreagh2                  5.1        0.1        €7.8622      €655.1833
+
+  Tremoge              Cregganconroe              13.8        8.8        €8.1196      €676.6333
+
+  Tremoge              Crockandun                  15          10        €8.1196      €676.6333
+
+  Tremoge              Crockdun                   12.5        7.5        €8.1196      €676.6333
+
+  Tremoge              Eshmore                    7.05        2.05       €8.1196      €676.6333
+
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                         Page 15
+                                              Contracted   Chargeable
+                                                                                       Network
+                                               Maximum      Maximum
+                                                                        Equivalent     Capacity
+  Station              Generation Facility      Export       Export
+                                                                        €/kW/year    Charge Rate
+                                               Capacity     Capacity
+                                                                                     €/MW/month
+                                                 (MW)         (MW)
+  Tremoge              Gortfinbar                  15          10        €8.1196      €676.6333
+
+  Tremoge              Inishative                  13.8       8.8        €8.1196      €676.6333
+
+  Waringstown          Laurel Hill Solar           8.5        3.5        €7.1898      €599.1500
+
+                       Empower AGU                12.764     7.764       €6.8560      €571.3333
+
+                       iPower AGU                 62.606     57.606      €6.8560      €571.3333
+
+
+
+
+Approved 2025/26 GTUoS Charges – 29 August 2025                                         Page 16
+

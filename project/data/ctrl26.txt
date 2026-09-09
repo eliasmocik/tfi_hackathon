@@ -1,0 +1,463 @@
+Controllability Status
+Update
+
+June 2026
+1 Introduction
+The SEM-11-062 decision paper1 identified a three-level hierarchy classification for Wind Farm Power
+Stations (WFPS) in Ireland and Northern Ireland; level (i), (ii) or (iii).
+On 24th of March 2017, the SEM Committee confirmed that on an interim basis solar and tidal generation
+is entered onto the priority hierarchy in the same position as wind generation. This is without prejudice to
+the outcome of any future consultation arising from a wider review of the original decision.
+Power Park Modules (PPMs) is a new generic term used in this document to represent specific technology
+types of Wind Farms, Solar and Tidal units. During this interim time period, all process notes referencing
+WFPS are applied to PPMs.
+This document outlines the list of all Controllable PPMs, 5MW or more on the EirGrid and SONI systems.
+Each unit is categorised as level (i), (ii) or (iii). The technology types are listed and identified as
+appropriate within the tables. This list will continue to be updated on a monthly basis.
+
+
+
+
+1
+ https://www.semcommittee.com/files/semcommittee/media-files/SEM-11-
+062%20Principles%20of%20Dispatch%20and%20the%20Design%20of%20the%20Market%20Schedule%20in%20th
+e%20Trading%20and%20Settlement%20Code%20%20SEM%20Committee%20Decision%20Paper%20.pdf
+
+Controllability Update | June 2026                                                                     Page 2
+1.1. Ireland
+     PPMs
+  connected          July             August    September   October    November   December
+  in Ireland         2025              2025        2025      2025        2025       2025
+     (MW)
+       (i)           4.95              28.00     12.00       12.00       6.00       0.00
+      (ii)          5573.27          5703.074   5736.024    5765.424   5821.424   5827.424
+      (iii)         249.204            96.35     100.9        71.5       21.5       76.4
+    Total          5827.424          5827.424   5848.924    5848.924   5848.924   5903.824
+
+
+
+
+     PPMs
+  connected         January          February     March      April       May        June
+  in Ireland         2026              2026       2026       2026        2026       2026
+     (MW)
+       (i)           0.00              0.00       0.00        13.00      13.00      13.00
+      (ii)         5835.924          5838.924   5838.924    6028.524   6028.524   6053.724
+      (iii)          399.2             447.8     560.86      371.86     476.86     451.66
+    Total          6235.124          6286.724   6399.784    6413.384   6518.384   6518.384
+
+
+
+
+1.2. Northern Ireland
+      PPMs
+   connected         July             August    September   October    November   December
+  in Northern        2025              2025        2025      2025        2025       2025
+ Ireland (MW)
+        (i)          16.9             16.9        16.9       16.9       16.9       16.9
+       (ii)         1215.24          1192.32     1262.57    1262.57    1262.57    1262.57
+       (iii)         47.3             77.3        17.04      17.04      17.04      17.04
+     Total          1279.44          1286.52     1296.51    1296.51    1296.51    1296.51
+
+
+
+
+      PPMs
+   connected        January          February     March      April       May        June
+  in Northern        2026              2026       2026       2026        2026       2026
+ Ireland (MW)
+        (i)          16.9             16.9        16.9       16.9       16.9       16.9
+       (ii)         1262.57          1262.57     1262.57    1262.57    1269.62    1269.62
+       (iii)         17.04            17.04       17.04      17.04      9.99       19.19
+     Total          1296.51          1296.51     1296.51    1296.51    1296.51    1305.71
+
+
+
+
+Controllability Update | June 2026                                                     Page 3
+1.3. Process Notes
+• Categorisation Policy Document - 5th March 2012.2 3
+• Performance monitoring of controllability requirements - 1st February 2013.4
+• PPMs are obliged to achieve Compliance Certificate within 12 months of energisation. (Operational
+  Certificate, Operational Certificate Justification or Final Compliance Certificate). The Notification list
+  process applied to PPM’s without Certificate is published.5 In line with the CER decision6, an additional
+  timeline (one month per 10MW or part of) for PPM’s with a Registered Capacity of >50MW is applied.
+• Notification list for testing is published.7
+• Category (i) PPM may involve the use of circuit breaker for dispatch purposes. These PPM’s shall
+  consider the appropriate procedures to bring the PPM back online (either remotely or by personnel on
+  site) when the curtailment or constraint has been removed by the TSO.
+
+
+
+
+2
+
+https://cms.eirgrid.ie/sites/default/files/publications/Wind%20Farm%20Controllability%20Categorisation%
+20Policy.pdf
+3
+
+http://www.soni.ltd.uk/media/documents/Operations/Renewables/Wind%20Farm%20Controllability%20Ca
+tegorisation%20Policy.pdf
+4
+ http://www.eirgridgroup.com/site-files/library/EirGrid/Windfarm-Performance-monitoring-process-
+October-2015.pdf
+5
+ https://www.eirgridgroup.com/site-files/library/EirGrid/2017-03-22-Notification-List-for-
+Testing_Final.pdf
+6
+ https://cruie-live-96ca64acab2247eca8a850a7e54b-5b34f62.divio-media.com/documents/CER16165-CER-
+Decision-Paper-MEC-Security.pdf
+7
+ http://www.eirgridgroup.com/site-files/library/EirGrid/2017-03-22-Notification-List-for-
+Testing_Final.pdf
+
+Controllability Update | June 2026                                                                     Page 4
+2 PPM Category
+2.1. Ireland
+    PPM Name                             Associated 110kV           Installed           Category   Type
+                                         Station                  Capacity MW8
+    Monroe East                          Cahir                          13                 (i)      PV
+    Total Hierarchy (i)                                               13.00
+    Altagowtan                           Corderry                      7.65                (ii)    WFPS
+    Athea                                Athea                        34.35                (ii)    WFPS
+    Ballincollig Hill                    Tralee                        13.3                (ii)    WFPS
+    Ballybane 1 & 2                      Ballylickey                   29.9                (ii)    WFPS
+    Ballybane Phase 2a                   Ballylickey                   13.8                (ii)    WFPS
+    Ballybane 3                          Ballylickey                   4.6                 (ii)    WFPS
+    Ballycadden Phase 1                  Crory                          15                 (ii)    WFPS
+    Ballycadden Phase 2                  Crory                         11.5                (ii)    WFPS
+    Ballymartin Phase 1                  Waterford                      7                  (ii)    WFPS
+    Ballymartin Phase 2                  Waterford                      8                  (ii)    WFPS
+    Ballywater                           Crane                          42                 (ii)    WFPS
+    Barranafaddock                       Barrymore                     34.2                (ii)    WFPS
+    Bawnmore                             Macroom                       25.3                (ii)    WFPS
+    Beam Hill                            Trillick                       14                 (ii)    WFPS
+    Bindoo                               Ratrussan                      48                 (ii)    WFPS
+    Black Banks 2                        Corderry                      6.8                 (ii)    WFPS
+    Boggeragh 1                          Boggeragh                      57                 (ii)    WFPS
+    Boggeragh 2                          Boggeragh                     65.7                (ii)    WFPS
+    Booltiagh Phase 1                    Booltiagh                     19.5                (ii)    WFPS
+    Booltiagh Phase 2                    Booltiagh                     13.8                (ii)    WFPS
+    Bruckana                             Lisheen                        42                 (ii)    WFPS
+    Caherdowney                          Garrow                        9.2                 (ii)    WFPS
+    Carraigcannon                        Boggeragh                      23                 (ii)    WFPS
+    Carrickeeny                          Sligo                          8                  (ii)    WFPS
+    Carrowleagh                          Glenree                       36.8                (ii)    WFPS
+    Castledockrell                       Castledockrell                41.4                (ii)    WFPS
+    Clahane                              Clahane                        40                 (ii)    WFPS
+    Cloghboola                           Cloghboola                     48                 (ii)    WFPS
+    Coomacheo                            Garrow                        59.8                (ii)    WFPS
+    Coomatallin                          Dunmanway                      6                  (ii)    WFPS
+    Coomagearlahy 1 (Kilgarvan)          Coomagearlahy                  45                 (ii)    WFPS
+    Coomagearlahy 2 (Sillahertane)       Coomagearlahy                 8.5                 (ii)    WFPS
+    Coomagearlahy 3 (Inchincoosh)        Coomagearlahy                 32.5                (ii)    WFPS
+    Cronelea 1                           Carlow                        4.6                 (ii)    WFPS
+    Cronelea 2                           Carlow                        4.6                 (ii)    WFPS
+    Derrybrien                           Agannygal                     59.5                (ii)    WFPS
+    Dromada                              Dromada                       28.5                (ii)    WFPS
+    Dromdeeveen                          Glenlara                       28                 (ii)    WFPS
+    Drumlough Hill 2                     Trillick                      10.2                (ii)    WFPS
+    Faughary                             Sligo                          6                  (ii)    WFPS
+
+8
+    For the purposes of this report, it is assumed that category 3 units are fully installed.
+
+Controllability Update | June 2026                                                                   Page 5
+ Flughland                           Sorne Hill          9.2    (ii)   WFPS
+ Garracummer                         Cauteen             42.5   (ii)   WFPS
+ Garraneragh                         Macroom             9.2    (ii)   WFPS
+ Garvagh 1 (Glebe)                   Garvagh              26    (ii)   WFPS
+ Garvagh 2 (Tullynahaw)              Garvagh              22    (ii)   WFPS
+ Gibbet Hill                         Crory                15    (ii)   WFPS
+ Glanlee (Midas Gen unit)            Galnlee            32.45   (ii)   WFPS
+ Glenough                            Cauteen             32.5   (ii)   WFPS
+ Gortahile                           Carlow               20    (ii)   WFPS
+ Gneeves                             Knockearagh         9.35   (ii)   WFPS
+ Grove Hill                          Dundalk             17.1   (ii)   WFPS
+ Grouse Lodge                        Rathkeale          15.42   (ii)   WFPS
+ Hollyford                           Cauteen             9.3    (ii)   WFPS
+ Kealkil                             Ballylickey         8.5    (ii)   WFPS
+ Killaveenoge                        Dunmanway            25    (ii)   WFPS
+ Kill Hill                           Kill Hill            36    (ii)   WFPS
+ Kingsmountain 2 (Dunneil)           Cunghill           11.05   (ii)   WFPS
+ Knockacummer                        Knockacummer        100    (ii)   WFPS
+ Knockaneden                         Oughtrah            9.2    (ii)   WFPS
+ Knockastanna                        Ardnacrusha          6     (ii)   WFPS
+ Knockawarriga                       Trien               22.5   (ii)   WFPS
+ Knocknagoum                         Reamore            44.35   (ii)   WFPS
+ Knocknalour                         Crory               9.2    (ii)   WFPS
+ Lacken                              Moy                 6.9    (ii)   WFPS
+ Leitir Guingaid                     Salthill            42.8   (ii)   WFPS
+ Lisdowney                           Portlaoise          9.2    (ii)   WFPS
+ Lisheen Phase 1                     Lisheen              36    (ii)   WFPS
+ Lisheen Phase 2                     Lisheen              24    (ii)   WFPS
+ Loughderryduff                      Binbane             7.65   (ii)   WFPS
+ Meenachullalan                      Binbane             13.8   (ii)   WFPS
+ Meentycat                           Drumkeen            88.5   (ii)   WFPS
+ Monaincha                           Ikerrin              36    (ii)   WFPS
+ Mountain Lodge                      Ratrussan           31.5   (ii)   WFPS
+ Mountlucas                          Mountlucas           84    (ii)   WFPS
+ Muingnaminanne                      Reamore             14.8   (ii)   WFPS
+ Mullananalt                         Meath Hill          7.5    (ii)   WFPS
+ Mulreavy 1                          Mulreavy             90    (ii)   WFPS
+ Mulreavy 2                          Mulreavy             5     (ii)   WFPS
+ Raheen Bar 2 (Derrynadivva)         Castlebar            8     (ii)   WFPS
+ Raheenleagh                         Arklow              35.2   (ii)   WFPS
+ Rathcahill                          Rathkeale           12.5   (ii)   WFPS
+ Richfield                           Wexford              27    (ii)   WFPS
+ Sliabh Bawn                         Sliabh Bawn          64    (ii)   WFPS
+ Sorne Hill 1 & 2                    Sorne Hill          38.9   (ii)   WFPS
+ Spaddan                             Cathaleen’s Fall    17.1   (ii)   WFPS
+ Taurbeg                             Glenlara            25.3   (ii)   WFPS
+ Tournafulla 1                       Trien               7.5    (ii)   WFPS
+ Tournafulla 2                       Trien               19.5   (ii)   WFPS
+ Tullynamoyle                        Corderry            9.2    (ii)   WFPS
+ Uggool                              Uggool               64    (ii)   WFPS
+ Woodhouse                           Woodhouse            20    (ii)   WFPS
+ Glencarbry                          Cauteen             35.6   (ii)   WFPS
+
+
+Controllability Update | June 2026                                       Page 6
+ Moneypoint                          Moneypoint     17.25   (ii)   WFPS
+ Seecon                              Uggool          108    (ii)   WFPS
+ Ballybay                            Thurles         13.8   (ii)   WFPS
+ Foyle                               Thurles         9.6    (ii)   WFPS
+ Tullabrack                          Tullabrack      14.1   (ii)   WFPS
+ Cappawhite A                        Cauteen        56.85   (ii)   WFPS
+ An Cnoc                             Thurles         11.5   (ii)   WFPS
+ Killin Hill                         Binbane          6     (ii)   WFPS
+ Tullynamoyle 3                      Corderry        13.5   (ii)   WFPS
+ Knocknatallig                       Charleville     19.2   (ii)   WFPS
+ Castlepook                          Charleville      35    (ii)   WFPS
+ Meenwaun                            Dallow           11    (ii)   WFPS
+ Meenaward                           Trillick        6.9    (ii)   WFPS
+ Leanamore                           Kilpadogge      20.7   (ii)   WFPS
+ Scartaglen 1                        Cordal           41    (ii)   WFPS
+ Tullynamoyle 2                      Corderry        11.5   (ii)   WFPS
+ Glanaruddery 1                      Cloghboola      23.1   (ii)   WFPS
+ Glanaruddery 2                      Cloghboola      13.2   (ii)   WFPS
+ Teevurcher                          Meath Hill     10.25   (ii)   WFPS
+ Cordal 1                            Cordal          35.2   (ii)   WFPS
+ Cordal 2                            Cordal          54.4   (ii)   WFPS
+ Coollegrean                         Cordal          17.5   (ii)   WFPS
+ Scartaglen 2                        Cordal           6     (ii)   WFPS
+ Cloghaneleskirt                     Cloghboola      11.5   (ii)   WFPS
+ Cappawhite B                        Cauteen         13.2   (ii)   WFPS
+ Clahane 2                           Clahane         13.8   (ii)   WFPS
+ Corkermore                          Binbane          10    (ii)   WFPS
+ Kelwin                              Kilpaddogue    37.05   (ii)   WFPS
+ Boolinrudda                         Slievacallan     45    (ii)   WFPS
+ Knockalassa                         Slievacallan    27.5   (ii)   WFPS
+ Carrickallen                        Shankill         22    (ii)   WFPS
+ Glantaunyalkeen                     Cloghboola      10.2   (ii)   WFPS
+ Kilbranish                          Crane           2.5    (ii)   WFPS
+ Knockalough                         Knockranny      35.2   (ii)   WFPS
+ Magheramore                         Dalton          43.2   (ii)   WFPS
+ Ballycumber                         Arklow          19.2   (ii)   WFPS
+ Carrowleagh ext                     Glenree         2.65   (ii)   WFPS
+ Killala                             Tawnaghmore     20.4   (ii)   WFPS
+ Oweninny 1                          Srahnakilly     92.8   (ii)   WFPS
+ Cronalaght 2                        Ardnagappary     18    (ii)   WFPS
+ Boolynagleragh                      Booltiagh        40    (ii)   WFPS
+ Sorrell Island                      Booltiagh      25.65   (ii)   WFPS
+ Lissycasey                          Booltiagh       14.1   (ii)   WFPS
+ Raragh 2                            Meath Hill      11.5   (ii)   WFPS
+ Clogheravaddy 1                     Binbane         10.8   (ii)   WFPS
+ Knockawarriga Extension             Trien           7.5    (ii)   WFPS
+ Derrynadivva Extension              Castlebar       7.05   (ii)   WFPS
+ Cleanrath                           Coomataggart    43.8   (ii)   WFPS
+ Derrysallagh                        Garvagh          32    (ii)   WFPS
+ Grousemount                         Coomataggart    122    (ii)   WFPS
+ Beenanaspuck and Tobertoreen        Tobertoreen     23.1   (ii)   WFPS
+ Bunnyconnellan                      Glenree         27.6   (ii)   WFPS
+
+
+Controllability Update | June 2026                                   Page 7
+ Cahermurphy                         Booltiagh         7.05    (ii)   WFPS
+ Black Lough                         Glenree           14.1    (ii)   WFPS
+ Mauricetown                         Glenlara          14.1    (ii)   WFPS
+ Esk                                 Boggeragh         23.2    (ii)   WFPS
+ Carrigdangan                        Carrigdangan      54.3    (ii)   WFPS
+ Sorrell Island Ext.                 Booltiagh         8.55    (ii)   WFPS
+ Clogheravaddy 2                     Binbane           10.8    (ii)   WFPS
+ Taghart                             Meath Hill       23.06    (ii)   WFPS
+ Cloncreen                           Kilcumber         75.6    (ii)   WFPS
+ Cloghan                             Derrycarney       37.8    (ii)   WFPS
+ Lisheen 3                           Lisheen           28.8    (ii)   WFPS
+ Millvale North                      Ballybeg           8      (ii)    PV
+ Oweninny 2                          Srahnakilly      99.51    (ii)   WFPS
+ Rosspile                            Rosspile          112     (ii)    PV
+ Gillinstown                         Garballagh        112     (ii)    PV
+ Davidstown                          Wexford           5.5     (ii)    PV
+ Lurrig                              Midleton          3.99    (ii)    PV
+ Gallanstown                         Gallanstown      137.6    (ii)    PV
+ Ballycullane                        Great Island       6      (ii)    PV
+ Knockglass                          Macroom            4      (ii)    PV
+ Curraghmartin                       Waterford         4.75    (ii)    PV
+ Blusheens 1                         Wexford           9.75    (ii)    PV
+ Hortland                            Dunfirth           14     (ii)    PV
+ Ardderoo                            Buffy            101.2    (ii)   WFPS
+ Hilltown                            Baltrasna          10     (ii)    PV
+ Gorey                               Banoge             4      (ii)    PV
+ Blundelstown                        Blundelstown      70.1    (ii)    PV
+ Lenalea                             Lenalea           30.1    (ii)   WFPS
+ Macallian                           Crane              9      (ii)    PV
+ Sheskin 1                           Bellacorick        18     (ii)   WFPS
+ Drumlins                            Lislea            48.8    (ii)   WFPS
+ Tullabeg                            Tullabeg           57     (ii)    PV
+ Beaulieu                            Drybridge         3.99    (ii)    PV
+ Clogheravaddy 3                     Binbane           3.6     (ii)   WFPS
+ Painestown Hill                     Baltrasna         7.25    (ii)    PV
+ Lehinch                             Thornsbury        4.5     (ii)    PV
+ Lysaghtstown                        Lysaghtstown       87     (ii)    PV
+ Moanvane                            Bogtown           56.4    (ii)   WFPS
+ Timahoe North                       Timahoe          77.75    (ii)    PV
+ Derrinlough                         Stonestown        126     (ii)   WFPS
+ Drumgarriff South                   Kilbarry          4.95    (ii)    PV
+ Dromalour                           Glenlara          4.95    (ii)    PV
+ Crossfield                          Mallow            4.95    (ii)    PV
+ Coolyduff                           Kilbarry          4.95    (ii)    PV
+ Ballymacadam                        Cahir             21.8    (ii)    PV
+ Yellow River                        Knockdrin        104.4    (ii)   WFPS
+ Gaskinstown                         Deenes            95.4    (ii)    PV
+ Harlockstown                        Gallanstown       34.6    (ii)    PV
+ Bullstown                           Finglas          10.104   (ii)    PV
+ Rathnaskilloge                      Rathnaskilloge   115.5    (ii)    PV
+
+
+
+Controllability Update | June 2026                                      Page 8
+ Friarspark                          Navan           4.2      (ii)     PV
+ Cooltubbrid West                    Dungarvan        4       (ii)     PV
+ Liss                                Mullingar        4       (ii)     PV
+ Shanagraigue                        Trabeg          4.95     (ii)     PV
+ Kerdiffstown                        Monread          4       (ii)     PV
+ Dunmurry Springs                    Newbridge        12      (ii)     PV
+ Lisnageeragh                        Richmond         4       (ii)     PV
+ Crossmore                           Booltiagh       29.4     (ii)     PV
+ Ballykilleen                        Philipstown      50      (ii)    WFPS
+ Courtown                            Banoge           6       (ii)     PV
+ Castlekelly                         Kilkenny         6       (ii)     PV
+ Finnis                              Bandon          8.5      (ii)     PV
+ Clonfad                             Rattin         111.3     (ii)     PV
+ Clonin North                        Derryiron       54.9     (ii)     PV
+ Rathlockstown                       Gallanstown     23.4     (ii)     PV
+ Ballylongford                       Drombeg         25.2     (ii)    WFPS
+ Total Hierarchy (ii)                              6053.724
+ Erkina 1                            Timoney          70      (iii)    PV
+ Erkina 2                            Timoney          90      (iii)    PV
+ Drombeg 1                           Drombeg          60      (iii)    PV
+ Ballymoneen                         Gortatleva      100      (iii)    PV
+ Muiniagh                            Thornsberry     5.8      (iii)    PV
+ Callatrim South                     Bandon          7.26     (iii)    PV
+ Ardnadoman                          Somerset        4.8      (iii)    PV
+ Ballinalard                         Tipperary        4       (iii)    PV
+ Creevy                              Lanesboro       4.8      (iii)    PV
+ The Dell                            Crory            24      (iii)    PV
+ Garreenleen                         Bendinstown      81      (iii)    PV
+ Total Hierarchy (iii)                              451.66
+ Total                                             6518.384
+
+
+
+
+Controllability Update | June 2026                                      Page 9
+2.2. Northern Ireland
+    PPM Name                             Associated 110kV           Installed           Category     Type
+                                         Station                  Capacity MW9
+                                                                                            (i)
+                                                                                       Compliance
+                                                                                       certificate
+    Callagheen                           Enniskillen                   16.9                          WFPS
+                                                                                      not achieved
+                                                                                         through
+                                                                                         process
+    Total Hierarchy (i)                                                16.9
+    Owenreagh 2                          Strabane                       5.1                (ii)      WFPS
+    Curryfree                            Lisamore                       15                 (ii)      WFPS
+    Altahullion 2                        Limavady                      11.7                (ii)      WFPS
+    Bessy Bell 2                         Omagh                           9                 (ii)      WFPS
+    Bin Mountain                         Strabane                        9                 (ii)      WFPS
+    Church Hill                          Magherakeel                   18.4                (ii)      WFPS
+    Crighshane                           Magherakeel                   32.2                (ii)      WFPS
+    Crockagarran                         Dungannon                     17.5                (ii)      WFPS
+    Garves                               Coleraine                      15                 (ii)      WFPS
+    Gruig                                Coleraine                      25                 (ii)      WFPS
+    Hunters Hill                         Omagh                          20                 (ii)      WFPS
+    Lough Hill                           Strabane                       7.8                (ii)      WFPS
+    Screggagh                            Omagh                          20                 (ii)      WFPS
+    Slieve Divena                        Omagh                          30                 (ii)      WFPS
+    Slieve Kirk                          Killymallaght                 73.6                (ii)      WFPS
+    Slieve Rushen 2                      Aghyoule                       54                 (ii)      WFPS
+    Tappaghan                            Omagh                         28.5                (ii)      WFPS
+    Carrickatane                         Killymallaght                 20.7                (ii)      WFPS
+    Carn Hill                            Carnmoney                     13.8                (ii)      WFPS
+    Dunmore                              Coleraine                      21                 (ii)      WFPS
+    Dunbeg                               Coleraine                      42                 (ii)      WFPS
+    Molly Mountain                       Aghyoule                       15                 (ii)      WFPS
+    Thornog                              Magherakeel                    20                 (ii)      WFPS
+    Monnaboy                             Coolkeeragh                    12                 (ii)      WFPS
+    Tievenameenta                        Magherakeel                   34.5                (ii)      WFPS
+    Oramore                              Enniskillen                    15                 (ii)      WFPS
+    Gortfinbar                           Tremoge                        15                 (ii)      WFPS
+    Seegronan                            Magherakeel                   14.1                (ii)      WFPS
+    Cloonty                              Loguestown                     9.2                (ii)      WFPS
+    Eglish                               Killymallaght                  15                 (ii)      WFPS
+    Glenbuck                             Rasharkin                      9.2                (ii)      WFPS
+    Eshmore                              Tremoge                       7.05                (ii)      WFPS
+    Slieve Divena 2                      Gort                          18.8                (ii)      WFPS
+    Crockbaravally                       Gort                           7.5                (ii)      WFPS
+    Crockandun                           Tremoge                        15                 (ii)      WFPS
+    Shantavny Scotch                     Gort                          16.1                (ii)      WFPS
+    Inishative                           Tremoge                       13.8                (ii)      WFPS
+    Altaveedan                           Rasharkin                      18                 (ii)      WFPS
+
+9
+    For the purposes of this report, it is assumed that category 3 units are fully installed.
+
+Controllability Update | June 2026                                                                    Page 10
+ Altamuskin                          Gort                        14.1   (ii)    WFPS
+ Cregganconroe                       Tremoge                     13.8   (ii)    WFPS
+ Long Mountain                       Rasharkin                   27.6   (ii)    WFPS
+ Crockdun                            Tremoge                     12.5   (ii)    WFPS
+ Bann Road                           Rasharkin                  29.81   (ii)     PV
+ Lough Road                          Lisburn                    21.00   (ii)     PV
+ Millar Farm                         Antrim Main                 6.27   (ii)     PV
+ Brockaghboy                         Rasharkin                   47.5   (ii)    WFPS
+ Finvoy Road                         Rasharkin                   5.21   (ii)     PV
+ Rathsherry                          Ballymena                  21.15   (ii)    WFPS
+ Elginny Hill                        Ballymena                    23    (ii)    WFPS
+ Maghaberry                          Lisburn                    20.43   (ii)     PV
+ Laurel Hill                         Waringstown                 8.5    (ii)     PV
+ Cornavarrow                         Curraghmulkin                36    (ii)    WFPS
+ Teiges                              Gort                         11    (ii)    WFPS
+ Castlecraig                         Curraghmulkin                25    (ii)    WFPS
+ Slieveglass                         Curraghmulkin               6.9    (ii)    WFPS
+ Wolf Bog                            Larne                        10    (ii)    WFPS
+ Craiggore                           Garvagh Main                23.5   (ii)    WFPS
+ Evishagaran                         Garvagh Main                46.8   (ii)    WFPS
+ Ballykeel                           Larne Main                  16.1   (ii)    WFPS
+ Murley Mountain                     Gort                        21.6   (ii)    WFPS
+ Ballygarvey                         Ballymena                    6     (ii)     PV
+ Lisburn                             Lisburn                    16.95   (ii)     PV
+ Corlacky                            Garvagh                     47.3   (ii)    WFPS
+ Magherakeel                         Magherakeel                 7.05   (ii)    WFPS
+ Total Hierarchy (ii)                                         1269.62
+ Ballyutoag                          Glengormley                 9.99   (iii)   WFPS
+ Gronan                              Magherakeel                 9.2    (iii)   WFPS
+ Total Hierarchy (iii)                                         19.19
+ Total                                                        1305.71
+ NB This does not include Pre Grid Code, exempt PPMs or Units <5MW
+
+
+
+
+Controllability Update | June 2026                                               Page 11
+3 Contacts
+If you have any specific queries, please contact info@eirgrid.com or neartime@soni.ltd.uk.
+
+
+
+
+Controllability Update | June 2026                                                           Page 12
+

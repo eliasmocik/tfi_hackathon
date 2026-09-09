@@ -1,0 +1,25 @@
+loaded WP2033 all-island: 754 buses, 755 lines, 168 hours
+tagged from EirGrid list: {'non-priority': 49, 'priority': 25}
+
+total NW dispatch-down: equal 22,432 MWh, priority rule 22,422 MWh (system-wide waste changes by -10 MWh)
+
+by status:
+              offered_mwh  cut_equal_mwh  cut_priority_rule_mwh
+status                                                         
+non-priority      42430.0        13927.0                21695.0
+priority          15144.0         8505.0                  727.0
+
+farms that lose most under the priority rule:
+                   station        status  cut_equal_mwh  cut_priority_rule_mwh  extra_cut_mwh
+51971-1  51911 CROAGHONAGH  non-priority          492.0                 3722.0         3229.0
+51972-1  51911 CROAGHONAGH  non-priority            0.0                 1721.0         1721.0
+68402-1    5191 TIEVEBRACK  non-priority          103.0                  880.0          777.0
+68204-1   3581 LETTERKENNY  non-priority          303.0                 1014.0          712.0
+68260-1  1571 ARDNAGAPPARY  non-priority           97.0                  698.0          601.0
+68269-1       1341 BINBANE  non-priority            0.0                  187.0          187.0
+43774-2       4371 GLENREE  non-priority           61.0                  182.0          121.0
+43771-1       4371 GLENREE  non-priority           50.0                  158.0          109.0
+68268-1       1341 BINBANE  non-priority            0.0                   52.0           52.0
+68407-1       1341 BINBANE  non-priority            0.0                   34.0           34.0
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q6_priority.csv
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q6_priority.png

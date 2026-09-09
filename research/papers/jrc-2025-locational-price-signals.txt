@@ -1,0 +1,2679 @@
+                                            Joint Research Centre
+
+
+
+
+Locational Price Signals in
+Europe
+Future-proofing the European power market
+
+Thomassen, G., Fuhrmanek, A.
+2025
+This document is a publication by the Joint Research Centre (JRC), the European Commission’s science and knowledge
+service. It aims to provide evidence-based scientific support to the European policymaking process. The contents of this
+publication do not necessarily reflect the position or opinion of the European Commission. Neither the European
+Commission nor any person acting on behalf of the Commission is responsible for the use that might be made of this
+publication. For information on the methodology and quality underlying the data used in this publication for which the
+source is neither Eurostat nor other Commission services, users should contact the referenced source. The designations
+employed and the presentation of material on the maps do not imply the expression of any opinion whatsoever on the
+part of the European Union concerning the legal status of any country, territory, city or area or of its authorities, or
+concerning the delimitation of its frontiers or boundaries.
+
+Contact information
+Name: Georg Thomassen
+Email: georg.thomassen@ec.europa.eu
+
+The Joint Research Centre: EU Science Hub
+https://joint-research-centre.ec.europa.eu
+
+JRC142047
+EUR 40495
+
+
+PDF      ISBN 978-92-68-32691-6         ISSN 1831-9424       doi:10.2760/7466842      KJ-01-25-525-EN-N
+
+Luxembourg: Publications Office of the European Union, 2025
+
+© European Union, 2025
+
+
+
+
+The reuse policy of the European Commission documents is implemented by the Commission Decision 2011/833/EU of 12
+December 2011 on the reuse of Commission documents (OJ L 330, 14.12.2011, p. 39). Unless otherwise noted, the reuse
+of this document is authorised under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence
+(https://creativecommons.org/licenses/by/4.0/). This means that reuse is allowed provided appropriate credit is given and
+any changes are indicated.
+
+For any use or reproduction of photos or other material that is not owned by the European Union permission must be
+sought directly from the copyright holders.
+
+Cover page illustration, © www.freepik.com
+
+How to cite this report: Thomassen, G. and Fuhrmanek, A., Locational Price Signals in Europe - Future-proofing the
+European power market, Publications Office of the European Union, Luxembourg, 2025,
+https://data.europa.eu/doi/10.2760/7466842, JRC142047
+Contents
+Abstract ...................................................................................................................................................................................................... 3
+
+Acknowledgements .............................................................................................................................................................................. 4
+
+Executive summary.............................................................................................................................................................................. 5
+
+1 Introduction ....................................................................................................................................................................................... 8
+
+2 Theoretical background ........................................................................................................................................................... 10
+
+      2.1 Regulatory aspects .......................................................................................................................................................... 10
+
+             2.1.1           Bidding zone reconfiguration ....................................................................................................................... 10
+
+             2.1.2           Locational marginal pricing .......................................................................................................................... 10
+
+             2.1.3           Locational investment signals ..................................................................................................................... 10
+
+      2.2 Summary of the political and the scientific discussion .............................................................................. 11
+
+             2.2.1           Key take aways .................................................................................................................................................... 13
+
+3 Methodology .................................................................................................................................................................................. 14
+
+      3.1 Scenarios ............................................................................................................................................................................... 14
+
+             3.1.1           Investment incentives ...................................................................................................................................... 15
+
+      3.2 Investment and cash flow modelling .................................................................................................................... 16
+
+             3.2.1           Renewable generation ..................................................................................................................................... 16
+
+             3.2.2           Contracts for difference.................................................................................................................................. 18
+
+             3.2.3           Firm and storage capacity ............................................................................................................................. 19
+
+                   3.2.3.1             Grid reserves ............................................................................................................................................... 20
+
+             3.2.4           Hydrogen ................................................................................................................................................................. 20
+
+             3.2.5           Revenue gap .......................................................................................................................................................... 20
+
+             3.2.6           Grids ........................................................................................................................................................................... 21
+
+                   3.2.6.1             Grid expansion ........................................................................................................................................... 21
+
+                   3.2.6.2             Congestion revenue ................................................................................................................................ 22
+
+      3.3 Flow-based market coupling ...................................................................................................................................... 22
+
+             3.3.1           Optimized GSK calculation ............................................................................................................................ 24
+
+      3.4 Redispatch optimization................................................................................................................................................ 24
+
+             3.4.1           Improved cross-zonal congestion management ............................................................................... 25
+
+      3.5 Modelling workflow ......................................................................................................................................................... 25
+
+                                                                                                       1
+4 Results ............................................................................................................................................................................................... 27
+
+      4.1 Grid expansion needs ..................................................................................................................................................... 27
+
+      4.2 Operations ............................................................................................................................................................................ 28
+
+            4.3.1           Capacity needs ..................................................................................................................................................... 33
+
+            4.3.2           System cost ........................................................................................................................................................... 34
+
+      4.4 Consumer costs ................................................................................................................................................................. 37
+
+            4.4.1           Locational investment incentives .............................................................................................................. 41
+
+      4.5 Producer profits ................................................................................................................................................................. 42
+
+            4.5.1           Locational investment incentives .............................................................................................................. 46
+
+      4.6 Sensitivity analysis for auction efficiency parameter ................................................................................. 47
+
+5 Discussion........................................................................................................................................................................................ 48
+
+      5.1 Supply security ................................................................................................................................................................... 48
+
+      5.2 System cost and welfare effects ............................................................................................................................ 49
+
+      5.3 Impact on investment conditions for renewables .......................................................................................... 49
+
+6 Policy options ................................................................................................................................................................................ 51
+
+      6.1 Locational investment signals ................................................................................................................................... 51
+
+      6.2 Bidding zone splits ........................................................................................................................................................... 52
+
+      6.3 Locational marginal pricing ........................................................................................................................................ 52
+
+      6.4 Mitigating potential risk increases for renewables ....................................................................................... 53
+
+7 Conclusions and policy recommendations .................................................................................................................... 55
+
+      7.1 Policy roadmap .................................................................................................................................................................. 56
+
+References ............................................................................................................................................................................................. 58
+
+List of abbreviations and definitions ...................................................................................................................................... 61
+
+List of figures ....................................................................................................................................................................................... 63
+
+List of tables ......................................................................................................................................................................................... 64
+
+
+
+
+                                                                                                     2
+Abstract
+As Europe strives to become the first climate neutral continent, grid congestion is becoming an
+increasingly urgent issue, with the potential to lead to large-scale curtailment of renewables and
+undermine the system’s security. Accordingly, the Mission Letter to Commissioner for Energy and
+Affordable Housing Dan Jørgensen lists the task to improve locational price signals. These aim to
+ensure that investments occur where they are most beneficial to the system, while incentivizing an
+efficient operation of the system that takes into consideration the grid’s topology.
+
+In this work, we assess three different regulatory scenarios, which correspond to locational price
+signals at different spatial resolutions: A Status Quo scenario, representing the current bidding zone
+configurations; a Multi Split scenario, which assumes that ambitious bidding zone splits lead to 101
+zones; as well as a Locational scenario with locational marginal pricing and locational investment
+signals. Both zonal scenarios (Status Quo and Multi Split) are further assessed in combination with
+locational investment signals of a high granularity.
+
+We identified significant system security concerns, i.e. substantial curtailment of load, associated with
+the Status Quo, as well as the Multi Split scenario – yet at a lower magnitude in the latter case. These
+concerns can be traced to an inefficient operation of flexibility – such as storage and demand
+response – due to insufficient information on existing bottlenecks being present in the market-
+clearing process. Any system cleared with locational marginal pricing, on the other hand, always led
+to perfect reliability – even when applied to the investment outcomes of the Status Quo and Multi
+Split scenarios.
+
+Our results further suggest substantial cost savings in the context of the Locational and the Multi
+Split scenarios. By 2040, the Locational scenario could reduce the total system cost by 26 – 61 Bn.
+EUR annually. These savings are in the order of magnitude of those associated with the integration
+of European electricity markets. They are a result of lower firm capacity requirements and a higher
+utilization of low-carbon energy sources. In addition, consumers in 62-90% of the geographic cells
+underpinning the model benefit from more granular pricing in our case study, – depending on the
+scenario. Increases beyond 5 EUR/MWh occurred only within up to 1.2% of all cells.
+
+Due to the reliability benefits and the substantial increase in economic efficiency suggested by our
+results, we recommend to implement locational investment signals in all relevant investment
+mechanisms and introduce locational marginal pricing as an element of the European target model.
+
+
+
+
+                                                   3
+Acknowledgements
+We would like to thank Anthony Papavasiliou, Javier Aycart and Leonidas Mantzos for the thorough
+review of the study. We would further like to thank all participants of the two-day workshop in October
+2023 at the JRC Ispra for their input, the fruitful discussions, and their helpful comments.
+
+In addition, the authors would like to express their gratitude to Fabian Hofmann, Tom Brown, Fabian
+Neumann, and the entire PyPSA and linopy Teams for their support and discussions, as well as the
+general work they do in the field of open energy modelling.
+
+Lastly, we would like to thank Gianluca Fulli and Silvia Vitiello for their guidance and support on this
+project.
+
+Authors
+
+Thomaßen, G.K., Fuhrmanek, A.,
+
+
+
+
+                                                   4
+Executive summary
+
+Policy context
+
+Grid congestion is becoming an increasingly urgent issue within the European electricity market. In
+2023, the Agency for the Cooperation of Energy Regulators (ACER) warned that congestion
+management measures of 50 TWh were necessary in 2023 (ACER, 2024). An assessment of the Joint
+Research Centre (JRC) further indicated that these redispatch measures could increase to more than
+800 TWh and 100 Bn. EUR in 2040 in a scenario with low grid build out and uncoordinated renewable
+deployment (Thomaßen et al., 2024). Accordingly, the Mission Letter to Commissioner for Energy and
+Affordable Housing Dan Jørgensen includes the task to “improve locational price signals” within the
+European electricity system, i.e. price signals with a high spatial granularity (von der Leyen, 2024). In
+this context, this work investigates which benefits can be achieved with both, locational operational
+price signals, as well as locational investment signals.
+
+Key conclusions
+
+ — Our results suggest that zonal electricity markets struggle to maintain security of supply
+   through the market, rendering the constant out-of-the-market procurement of targeted
+   reserves necessary. In the Status Quo scenario, large volumes of demand remained unsupplied.
+   Substantially lower, yet still highly significant volumes of demand shedding occurred in an ambitious
+   bidding zone split scenario (Multi Split). Operating under locational marginal pricing (LMP) always
+   resulted in perfect reliability, even when applied to the investment outcome of the Status Quo or Multi
+   Split scenarios. Zonal markets require maintaining costly reserve capacity to ensure operational security.
+
+ — Locational price signals were found to lead to substantial economic benefits, with benefits
+   being the largest if grid expansion was low. Locational policies can therefore be seen as a
+   hedge against insufficient grid build out, yet also achieve substantial savings when grid
+   expansion is cost optimal: System cost savings in 2040 were estimated at 26-61 Bn. EUR annually –
+   depending on the level of grid build out. The Multi Split scenario achieved substantial benefits as well,
+   with system cost savings of 10-37 Bn. EUR/a.
+
+ — Introducing only locational investment signals leads to system cost savings of 12-29 Bn.
+   EUR/a in 2040 in a Status Quo setting, highlighting the need to ensure that future deployment
+   takes place in the right places. Locational investment signals can be introduced by evaluating
+   locational impact as a non-price criterion in renewable auctions and introducing a locational component
+   to capacity markets.
+
+ — The largest part of these savings is passed on to consumers, who overwhelmingly benefit
+   from locational price signals. The Locational scenario resulted in consumer savings between 24-58
+   Bn. EUR/a in 2040, while the Multi Split scenario achieved savings between 9 and 35 Bn. EUR/a.
+   Producers also see their profits increase in most cases, and by up to 7%.
+
+ — Given the large identified benefits, we recommend to seriously consider adding LMP to the
+   target model, and introduce locational investment signals as soon as possible, given the
+   substantial security and cost benefits. This should further be flanked by a reform of European
+   forward trading which renders hedging activities independent from specific bidding-zone
+   delineations. In addition, an ambitious bidding zone split scenario can already deliver most 2030
+   benefits. It needs to be weighed carefully whether the benefits of such a complete reconfiguration of
+   many bidding zones prior to the introduction of LMP outweigh the associated costs. On the other hand,
+   bidding zone splits that can be implemented without an additional round of the bidding zone review
+   could be a low-hanging fruit to reduce congestion inside the European power system.
+
+
+
+                                                      5
+ Figure 1: Change in total system cost compared to Status Quo scenario. 40% and 20% limit refer to those
+grid expansion scenarios that implement a corresponding cap on inner-country grid expansion. The white bar
+                                           indicates net change.
+
+
+
+
+                                            Source: JRC analysis
+
+
+Main findings
+
+In this work, we assess the evolution of the European power system under three different regulatory
+scenarios with regard to the target years 2030 and 2040: (1) A Status Quo scenario, which represents
+the current bidding zone configurations; (2) an ambitious bidding-zone-reconfiguration scenario,
+leading to 101 zones in the European market coupling algorithm (Multi Split), roughly doubling the
+number of bidding zones; as well as (3) a locationally optimized scenario which relies on LMP
+operation and locational investment signals (Locational). In addition, both zonal scenarios are
+investigated with an implementation of locational investment signals. We further assess three
+different levels of grid expansion.
+
+
+
+
+                                                     6
+We find that security of supply towards 2040 cannot be maintained through market-based
+investments in zonal markets. This is due to flexibility – incentivized by wholesale market prices in
+large zones – operating regularly against the system, leading to capacity needs that cannot be
+fulfilled at the redispatch stage. This leads to 1.9-4.0 TWh of load curtailment in the Status Quo
+scenario, depending on the level of grid expansion. Smaller zones improve the issue – with the Multi
+Split scenario resulting in 0.8-1.4 TWh of lost load - while LMP operation always led to perfectly
+reliable operation. Zonal operation of the system therefore leads to a substantial and additional need
+for capacity to safeguard inefficient trades, which do not achieve a benefit to the system. This implies
+as well that capacity remuneration mechanisms would need to take into consideration this need for
+additional capacity at the redispatch stage to ensure a secure operation.
+
+The substantial system cost savings are driven by a lower need for firm capacity – as LMP operation
+does not require the out-of-the-market procurement of power plant capacity to ensure a feasible
+(re)dispatch. The Locational scenario further minimizes the use of combustible fuels, such as coal,
+natural gas and hydrogen, by maximizing the integration of low-carbon and low-cost energy carriers.
+This does not only reduce costs and emissions but also leads to a lower dependence on fuel imports.
+
+We further find that consumers benefit overwhelmingly from more granular locational pricing. Under
+both, the Locational and the Multi Split scenarios, consumers in 62-90% of all geographic cells
+underpinning the model benefitted in 2040, compared to the Status Quo scenario, while less than
+1.2% of cells saw consumer cost increases beyond 5 EUR/MWh. These higher increases were primarily
+limited to some areas in Northern Scandinavia and the Western Balkans.
+Our results suggest that an increase in risk for renewable investment in the Locational scenario is
+unlikely, since market values remain stable or increase, and can further be addressed by policy action.
+In the unlikely case that the introduction of LMP would lead to a risk increase for renewable
+investment, substantial cost savings can be expected to remain. The necessary hurdle rate increases
+to wipe out all savings were calculated to be between 1.1 and 2.8 % in the Locational scenario
+(depending on the level of grid investment). To maximize the benefits from more granular locational
+pricing, however, policy measures can be introduced that avoid risk increases to a large degree.
+Potential measures include longer remuneration periods and adjustments to the contracts awarded
+in renewable auctions. While these measures would increase investment security for renewables, they
+would also benefit European consumers as our results suggest that they would lead to lower
+electricity bills.
+
+Related JRC work
+
+In 2024, the JRC published an assessment of how redispatch would evolve in the European system,
+assuming different grid expansion pathways (Thomaßen et al., 2024). Further activities in this area
+include a qualitative assessment of the introduction of nodal pricing in the Internal Electricity Market
+in 2020, discussing as well regulatory aspects (Antonopoulos et al., 2020). In the context of the
+European market design debate of 2022, the JRC has further proposed an overhaul of renewable and
+capacity auctions to include locational information in the auctioning process (Thomaßen et al., 2023).
+
+Quick guide
+
+The study is structured as follows: Section 1 introduces the issue, while section 2 expands on the
+theoretical background, discussing regulatory aspects as well as previous findings from the literature.
+Section 3 describes the methodology, and section 4 presents the results. These are discussed in
+section 5, with section 6 discussing potential policy measures to address the issue of grid congestion.
+Lastly, section 7 concludes with policy recommendations.
+
+
+                                                   7
+1 Introduction
+The European Union has set out the target to achieve net zero emissions by 2050, a state in which
+all remaining carbon emissions would be offset by negative emission technologies or natural sinks.
+For the year 2040, the European Commission has proposed a 90% emissions reduction target. This
+target basically implies a full decarbonization of the power sector, as abatement costs are lower than
+in other hard-to-abate sectors, while simultaneously serving as an input for far-reaching
+electrification of the end-use sectors (European Commission, 2024).
+
+The decarbonization of the power sector currently relies largely on the deployment of variable
+renewables, such as wind and solar PV. As a side effect of uncoordinated renewable deployment –
+allocating capacity asymmetrically across zones – grid congestion has increased substantially within
+the European system. Inner-zonal grid congestion can render the outcome of the wholesale market
+infeasible, creating the need for TSOs to order the out-of-the-market activation of resources to
+maintain the stability of the grid. In 2024, the Agency for the Cooperation of Energy Regulators (ACER)
+published a Market Monitoring report, highlighting that 50 TWh of such redispatch measures occurred
+in 2023, costing the European consumer 4.3 Bn. EUR (ACER, 2024). An assessment from the JRC
+further estimated that redispatch volumes could increase beyond 800 TWh by the year 2040 and
+could produce costs of up to 100 Bn. EUR annually under a scenario with low grid expansion
+(Thomaßen et al., 2024).
+
+Accordingly, the Mission Letter to the Commissioner for Energy and Affordable Housing Dan
+Jørgensen includes the task to “improve locational price signals” within the European electricity
+system (von der Leyen, 2024). As a first step into this direction, the Implementing Regulation on
+Article 26 of the Net Zero Industry Act (NZIA) features provisions that allow considering the locational
+impact of renewable projects within a renewable auction. In this context, (Thomaßen and Fuhrmanek,
+2025) have shown that locational investment incentives within a zonal electricity market can
+substantially increase the amount of renewable energy integrated into the system, while reducing
+redispatch needs and costs to the consumer.
+
+Locational price signals can, however, be improved as well for short-term dispatch decisions.
+Especially in the context of flexibility, a higher granularity might be necessary to provide efficient
+incentives for load-shifting operations while signalling the right time to storage operators to charge
+or feed electricity back to the grid. In the presence of inner-zonal grid congestion, the uniform zonal
+price applied to an entire bidding zone regularly does not signal the action most beneficial with regard
+to the local conditions in the grid, as a study by the German TSO TenneT suggests (TenneT, 2024).
+
+The Bidding Zone Review (BZR) is the European process that assesses whether the current bidding
+zone configurations are still fit fur purpose. According to the Electricity Regulation1, bidding zone
+delineations should reflect structural congestion – being taken into consideration at the border – while
+redispatch measures should remain a temporary measure. The current iteration of the BZR evaluates
+splits of Germany, France, Italy, Sweden and the Netherlands. In this context, the European TSOs
+jointly recommended to split the German bidding zone into five, as this configuration achieved the
+highest monetary benefit (ENTSO-E, 2025a).
+
+
+
+
+1
+    Regulation (EU) 2019/943
+
+
+
+                                                   8
+Some TSOs have proposed to take it one step further: Already in 2018, the Polish TSO PSE argued for
+the introduction of locational marginal pricing (LMP) at a high spatial granularity (PSE, 2018). They
+argued that aligning market outcomes as far as possible with the physical reality was a “precondition
+for managing future challenges related to operating the new power system”.
+
+In this study, we assess different approaches to locational price signals and evaluate their overall
+efficiency. To this aim, we investigate different combinations of locational investment and locational
+operational signals. On the one hand, we assess the impact of different structures of the wholesale
+market – one scenario representing the Status Quo, one an ambitious bidding zone split scenario
+which roughly doubles the number of zones present in the European electricity market (Multi Split),
+and one scenario which depicts the introduction of LMP and locational investment signals (Locational).
+On the other hand, we assess a sensitivity that describes the introduction of locational investment
+signals to both scenarios that rely on zonal pricing (Status Quo and Multi Split).
+
+
+
+
+                                                  9
+2 Theoretical background
+In the first part of this section, we dive deeper into the regulatory aspects of introducing different
+locational price signals within the European system. In the second part, we discuss and summarize
+the literature on the issue, with a focus on relevant aspects for the European discussion.
+
+
+2.1 Regulatory aspects
+
+2.1.1 Bidding zone reconfiguration
+Within the current regulatory framework, the BZR is the instrument through which the spatial
+granularity of wholesale market clearing can be increased incrementally. The BZR assesses the
+efficiency of the current bidding zone borders and investigates whether a new configuration would
+reduce structural congestion inside bidding zones, and would improve market outcomes within the
+European electricity market (Thomaßen et al., 2024).
+The European TSOs have presented the results of the first iteration – which started in 2020 – in spring
+2025 and issued a recommendation to split the German bidding zone into five (the DE5 split).
+According to their assessment, this would lead to savings of more than 339 Mio EUR each year. ACER
+considers these benefits to be underestimated, as they assume a perfect coordination of remedial
+actions, which does not reflect the current practices of congestion management in Europe (ACER,
+2025). They found that the actual benefits could be as high as 540 Mio. EUR/a under more realistic
+assumptions. As a next step, Member States have to decide whether to follow this recommendation
+or whether to maintain the Status Quo.
+
+2.1.2 Locational marginal pricing
+Instead of splitting zones iteratively, a far-reaching alignment between physical reality and market
+transactions can be achieved through the introduction of LMP. During the 1990s and 2000s, LMP has
+been introduced in the US electricity markets and in New Zealand. While there are different
+interpretations, we define LMP as a market which is cleared at a sufficiently high spatial granularity
+so that market operations are overwhelmingly aligned with the physical reality of the system, i.e. that
+very little to no remedial actions remain necessary. This implies that electricity is priced at a high
+resolution, reflecting all major transmission constraints within the market clearing algorithm.
+
+In principle, (Antonopoulos et al., 2020) found that LMP could be implemented in the European system
+with the existing legislation, as there is no limit to how small a bidding zone could be defined. In
+practice, however, successive splitting of zones until an LMP-like system was created appears
+impractical to say the least, given that the first iteration of the BZR has taken already five years. It
+would likely lead to a protracted period with high levels of uncertainty, since it was unclear how the
+future system would exactly look like. Therefore, a successive implementation of LMP in sub-regions
+of the European electricity market could present a more feasible option, as proposed by (Neuhoff et
+al., 2024). However, this would likely require adapting at least some of the existing legislation, which
+could prove a lengthy process (Scott, 2024).
+
+2.1.3 Locational investment signals
+Locational investment signals in renewable auctions have previously been implemented in Mexico,
+where projects received a mark-up or a penalty depending on their location. These adders were
+calculated based on a nodal simulation of the Mexican system, and reflected the average nodal price
+
+
+                                                  10
+in their location. Developing renewables in areas with high production costs therefore provided a
+competitive advantage over those projects that were developed in regions with an abundance of low-
+cost generation (del Río, 2017).
+
+The Implementing Regulation of Article 26 of NZIA includes provisions that allow to implement
+locational investment signals within renewable auctions in the form of non-price criteria. It allows
+Member States to evaluate renewable projects based on their expected impact on the grid, benefitting
+those projects that would relieve bottlenecks.
+
+In addition, locational investment signals can be implemented within capacity remuneration
+mechanisms, such as capacity markets, to ensure that firm capacity is available in the right locations
+enabling a feasible (re)dispatch. In PJM (Pennsylvania-New Jersey-Maryland Interconnection) and
+CAISO (California Independent System Operator), the capacity market is cleared with several sub-
+system-level zones, while Chile performs a clearing of the capacity market at full nodal resolution. In
+Europe, Germany, France, Belgium and Ireland have in the past tendered firm capacity to ensure that
+import-restricted regions are supplied with enough capacity to maintain a safe operation of the
+system (Eicke et al., 2020; Papavasiliou, 2021).
+
+
+2.2 Summary of the political and the scientific discussion
+The current iteration of the BZR – which investigates splitting the German zone into 2-5 smaller zones
+(ACER, 2022a) – has triggered a debate in Germany. In this context, twelve leading energy economists
+published an open letter to the German government, advocating for wholesale market prices that
+reflect the local conditions, and thereby for abandoning the uniform price zone (Hirth et al., 2024).
+They argue that a uniform price within a system with structural congestion will set the wrong
+operational incentives during many hours, leading to a highly inefficient dispatch. Local prices would
+thus not only be important to incentivize efficient siting decisions, but first and foremost to ensure
+an efficient operation of the system.
+
+Eleven German industrial associations replied to this appeal, arguing against a split of the German
+price zone, highlighting benefits of a large market zone, such as a high liquidity in forward electricity
+trading and stable expectations of what price level new investments can expect years ahead (BEE et
+al., 2024). Currently, forward trading activities in the European Union largely focus on the largest
+bidding zones. To detach the issue of bidding zone reconfigurations from forward markets, ACER has
+proposed to establish a virtual trading hub for the Core region, similar to the one established in the
+Nordics (ACER, 2023a).
+
+In their investigation of the proposed German bidding zone splits, (Tiedemann et al., 2024) found that
+some generators – primarily wind in renewable-surplus regions – would see a substantial decrease
+in their market value. This has been confirmed in a UK context by (AFRY, 2023) who see risks for
+investments on the generation-surplus side of a bottleneck, potentially resulting in system cost
+increases if these risks were to increase hurdle rates for renewable investments. They identified a
+lower market value during the merchant tail – the period after the remuneration contract has ended
+– as a substantial cause. Volume risks were further identified by (Blyth et al., 2024) as a potential
+cost driver for clearing prices in renewable auctions: Smaller zones can increase the risk that operators
+will be unable to sell their electricity, due to a surplus of renewable energy occurring locally. If the
+remuneration contract is coupled to the actual production, this implies that also no subsidy will be
+paid during these periods. (Tiedemann et al., 2024) accordingly concluded that any bidding zone
+reconfiguration should therefore be accompanied by an appropriate compensation mechanism, for
+example through the introduction of contracts that are based on virtual reference plants, rather than
+
+
+
+                                                   11
+actual production volumes (Newbery, 2023; Schlecht et al., 2024). The performance of these virtual
+reference plants would be calculated based on the (theoretical) energy production of a similar plant
+under the realized weather conditions.
+
+At the same time, they found that consumers were only marginally affected by any of the investigated
+bidding zone reconfigurations. This aligns with the findings of (Knörr et al., 2024), who investigated
+the proposed German splits in a 2025 setting, finding no substantial impact on average wholesale
+prices. They further identified price differences between different locations as beneficial for
+supporting the system’s stability. This effect was largest in a setting with locational marginal pricing
+(LMP): While the system effects of storage operation in large bidding zones appear to be arbitrary at
+best (TenneT, 2024), the highly-granular price signals in LMP operation employ storage and other
+flexibility to manage congestions and relieve the grid, becoming a pillar of the system’s security.
+Accordingly, (Knörr et al., 2024) identified operational cost savings of 7-14% through LMP.
+
+In a previous assessment, (Neuhoff et al., 2013) estimated 1.1-3.6% operational cost savings through
+LMP in a 2013 setting. This could indicate that savings increase with higher levels of decarbonization,
+potentially due to dispatchable generation becoming more costly, a higher penetration of flexibility,
+such as storage and demand response and a higher volatility in prices through low-cost variable
+renewable generation. (Lété et al., 2022) further modelled the longer-term evolution of the CWE
+(Central Western Europe) system until 2035. They concluded that a locationally optimized system
+would decrease the cost of the entire system by 3%, indicating that the long-run effects can be even
+larger, if not only operational but also investment decisions take into consideration the grid’s topology.
+This is confirmed by (Thomaßen and Fuhrmanek, 2025) which found that locationally optimized
+renewable expansion could lead to large system cost savings and consumer benefits, even if European
+markets continue operating within their current bidding zone configuration. (Brown et al., 2020),
+however, question whether LMP alone could incentivize locationally optimal investment patterns,
+which could suggest that additional locational investment mechanisms are required to achieve
+efficient deployment patterns (Eicke et al., 2020).
+
+These findings generally align with non-EU studies that identified substantial cost savings from an
+increase in spatial granularity in market-clearing operations. In the UK, the topic has been debated
+extensively in the context of a review of the electricity market design: (FTI Consulting and Energy
+Systems Catapult, 2023) found that an ambitious split scenario of the UK zone could achieve 6-15
+Bn. GBP (~7-18 Bn. EUR) of welfare benefits until 2040, with consumers benefitting in each region of
+the UK, while reducing emissions by 65-100 Mt of CO2. An introduction of LMP was estimated to
+deliver between 28 and 51 Bn. GBP (~33-61 Bn. EUR) within the same time horizon. An update of the
+study – which considered only operational impacts, without regulatory changes affecting the locations
+where investments occurred – found that a more ambitious bidding zone split scenario could deliver
+54 Bn. GBP (~64 Bn. EUR) of consumer benefits until 2050 (FTI Consulting, 2025). These results were
+disputed by (AFRY, 2025, 2023), which estimated the benefits of comparable bidding zone splits only
+at 3.3 Bn. GBP (~3.9 Bn. EUR) until 2040, and the benefits of an introduction of LMP at 4.5 Bn. GBP
+(~5.3 Bn. EUR) until 2050. A key difference in the two approaches appears to be the assumption of
+unconstrained grid expansion post 2035 in (AFRY, 2025, 2023), indicating that constrained grid
+expansion may lead to a higher comparative advantage of increased locational price signals
+compared to uniform pricing . This is confirmed as well by both consultancies: (FTI Consulting, 2023),
+noted that the results by (AFRY, 2023) imply that an ambitious bidding zone split scenario could
+deliver consumer benefits of 14 Bn. GBP (~17 Bn. EUR) and an increase of 9 Bn. GBP (~11 Bn. EUR)
+in overall welfare in a scenario where transmission build out was delayed by five years.
+
+
+
+
+                                                   12
+Outside of Europe, several assessments have concluded with similar findings. In the US, where all
+electricity markets have implemented LMP, ex-post analyses have estimated operational cost savings
+of 2.1% in California and 3.9% in Texas. (NERA, 2020) further assessed the introduction of LMP in
+the Australian electricity market, considering both, the impact on operations and on investment. They
+estimated a 14% reduction in the system’s cost until 2040, with a similar additional benefit to
+consumers driven by a reduction in producer surplus. This indicates that the long-run benefits of
+spatially optimized investment and operational decisions combined could accumulate to significant
+consumer and efficiency benefits.
+
+In addition to welfare impacts, the market clearing resolution appears to impact the system’s
+reliability with increasing deployment of distributed renewables. Experts from the German TSO
+Amprion have published an article stating that the security of the system might be threatened if
+market signals do not reflect the physical reality in the grid (Sapp et al., 2024). Aligning with this
+assessment, the Polish TSO PSE has in the past concluded that a transition to LMP operation would
+be essential to remain able to manage a system which consists of large volumes of distributed
+resources (PSE, 2018). Instead of aligning market operations better with the physical reality, (Sapp et
+al., 2024), however, propose to limit the operating ranges of power plants, effectively introducing
+limits to free electricity trade. Such an approach, if implemented, could undermine the liberalization
+of European electricity markets as it would be up to the TSO to decide which power plants would be
+allowed – or even mandated – to operate, and which not.
+
+2.2.1 Key take aways
+Several assessments indicate that locational price signals can achieve significant welfare benefits, if
+they lead to efficient operational and/or investment decisions. This effect appears to increase with
+decarbonization. In a system that consists of large numbers of distributed generators, storage and
+flexible consumers – potentially down to the household level – a higher granularity appears to be
+beneficial for coordinating short-term operations. In fact, an effective integration could make
+flexibility a key pillar of the system’s reliability.
+
+Risks were identified with regard to the predictability of future wholesale prices, which could
+potentially undermine hedging activities and increase investment risks. This indicates that any reform
+should be accompanied by a reform of European forward markets that ensure continuity as well in
+cases when bidding zones are reconfigured, for example through the introduction of virtual trading
+hubs (ACER, 2023a). To maximize the benefits from more granular locational pricing, it appears
+further to be key to ensure a stable investment environment. This concerns especially renewable
+investments, as renewable production is foreseen to scale up massively over the next decades
+(European Commission, 2024). An increase in their capital costs could thus disproportionally affect
+the total cost of the system.
+
+
+
+
+                                                  13
+3 Methodology
+In this section, we describe the methodology that was applied in the case study. We rely on a 1024
+node model generated with the standard PyPSA-Eur workflow – which uses a k-means clustering
+algorithm based on the physical location of the substations – and using climate data for the year
+2013 as the base model. Country level load curves are furthermore distributed based on GDP and
+population inside each cell (Hörsch et al., 2018). The PyPSA model uses energy balances for various
+components, such as buses, generators, storage units, lines and links, and determines the least-cost
+dispatch through linear optimization. For the full set of equations, we refer the reader to (PyPSA,
+2025), which features an extensive documentation. The additional features, developed for this case
+study, are further described in this section.
+
+Based on this model, we build representations of the European system in 2030 and 2040, in line with
+the Impact Assessment for the proposed 2040 target with regard to key indicators such as total
+demand per type (inflexible, heat pumps and electric vehicles), as well as installed renewables and
+electrolysis capacity (European Commission, 2024). We further assume that carbon neutrality is
+achieved in the power system by 2040.
+For the zonal scenarios, representations of zonal market configurations are generated, which are
+cleared using a representation of flow-based market coupling (FBMC). In a second step, redispatch
+optimization is performed to achieve a physically feasible dispatch. The corresponding computational
+routines are described in this section. They further represent an evolutionary development of the
+workflow applied in (Thomaßen et al., 2024).
+
+
+3.1 Scenarios
+In this case study, we compare different regulatory scenarios with respect to the spatial resolution at
+which the wholesale market is cleared. The baseline, against which all other scenarios are compared,
+is the Status Quo scenario, which reflects the current bidding zone configurations of the European
+power system. Cross-zonal flows are allocated with the help of FBMC, while bottlenecks are relieved
+through redispatch2.
+The second scenario represents an ambitious bidding-zone-split scenario, which might be attained
+through several iterations of the BZR – or one ambitious application. This Multi Split scenario thus
+assumes a strong increase in the number of bidding zones, leading to 101 zones3 and therefore goes
+beyond the currently proposed bidding zone reconfigurations. These zones have been generated
+through the PyPSA network clustering functionality using a k-means clustering algorithm. The
+corresponding configuration can be seen in Figure 2. Every new zone created within the Multi Split
+scenario has an equal or larger electricity demand than the smallest zone in the current zonal
+configuration of the European electricity market. The overall market structure remains the same as
+in the Status Quo scenario, including FBMC to allocate cross zonal capacities, and redispatch for
+congestion management.
+
+
+
+
+2
+    In this study, we use redispatch as an umbrella term which also covers countertrading activities.
+3
+    Out of which we model 97 zones, as Cyprus, Malta, Ukraine and Moldova, are not explicitly modelled for this assessment.
+
+
+                                                              14
+For the Locational scenario, we clear the market at a resolution of 1024 nodes, which can be
+considered as an LMP operation of the system. This corresponds to the resolution of the clustered
+network we use for this analysis. Flows between nodes need to fulfil Kirchhoff conditions.
+
+                     Figure 2: Bidding zone configuration in the Multi Split scenario.
+
+
+
+
+                                            Source: JRC analysis
+
+
+3.1.1 Investment incentives
+We further assume that all investment instruments reflect at least the geospatial resolution of market
+clearing. This assumption was chosen since it makes little sense to introduce spatial price signals at
+a high resolution within short-term markets, while relying on investment mechanisms that would then
+
+
+
+
+                                                    15
+again blunt the resulting investment signals4. It appears to be common sense that such a scenario
+would yield worse results than a scenario in which investment signals reflect at least the spatial
+resolution of the market. Therefore, this combination was not investigated. At the same time, we
+always need to consider that the results presented in this case study do not only reflect a spatial
+market clearing resolution, but as well a corresponding type of investment incentives.
+
+In addition, we assess a sensitivity which investigates the effect of having locational incentives for
+investment within zonal market configurations. This sensitivity therefore assumes that investment
+into renewables, dispatchable generation and storage occurs in the same spot as it would in the
+Locational scenario, while the market is operated at the respective spatial resolution of the scenario
+(Status Quo or Multi Split). It implies a locational design of renewable auctions, capacity markets and
+potential flexibility investment mechanisms.
+
+It has to be highlighted that the locational incentives investigated in this case study assume improving
+the business case for deployment in areas which are beneficial to the grid. They do not imply
+restrictions on building capacity in any region, but assume instead that grid location is considered in
+the clearing process of renewable auctions, capacity markets, or other financing mechanisms. This is
+done by giving a higher value – explicitly or through a locational non-price criterion – to projects that
+relieve congestion.
+
+
+3.2 Investment and cash flow modelling
+To reach the 90% emission reduction target by 2040, large volumes of investment into power system
+infrastructure are necessary. To depict this, we model investment into renewables, dispatchable
+resources and storage, as well as grids. The basis for these investment decisions is a time-reduced
+model, similar to (FTI Consulting and Energy Systems Catapult, 2023; NERA, 2020). In each scenario,
+generator investment is calculated using models that represent the respective market configuration.
+In the Locational scenario, as well as when locational investment signals are being applied, this
+corresponds to the entire grid model. In the Multi Split and Status Quo scenarios without locational
+investment signals, generators and storage units were connected to aggregated nodes, which
+represent the respective zonal configuration.
+
+3.2.1 Renewable generation
+On a country level, the capacities for each renewable technology are the same in each scenario for
+the same target year. The scenarios differ, however, where inside each country the capacity is
+installed.
+
+Renewable deployment is modelled through a two-step process. First, we model an auction of
+renewable capacity, which is achieved by adding a constraint to the investment model, enforcing that
+a certain level of capacity for each technology has to be installed in each zone, while minimizing the
+total cost of the system. These auction targets are aligned with the Impact Assessment regarding the
+proposed 2040 climate target.
+
+
+
+
+4
+    Such an unreasonable combination could be, for example, a renewable auction without locational elements, which
+       awards a contract for difference (CfD) which is coupled to the local energy price.
+
+
+                                                            16
+                                           ∑ 𝐶𝑎𝑝𝑔𝑎𝑢𝑐𝑡 = 𝑇𝑐𝑡
+                                          𝑔∈𝑡,𝑐
+
+With 𝑇𝑐𝑡 being the auction target for country 𝑐 and renewable technology 𝑡, and 𝐶𝑎𝑝𝑔𝑖𝑛𝑠 being the
+installed capacity of an individual renewable generator. The deployment takes into consideration
+which types of land are available for deploying each renewable technology, excluding areas such as
+nature reserves, built-up areas or where renewables are already deployed (Hörsch et al., 2018).
+Such an auction model achieves, however, an unrealistic deployment of capacity, since it deploys a
+lot of capacity to the best sites, leading to a high concentration of capacity in some areas and little
+to none in others. In reality, there are other factors which ensure that capacity is spread out further:
+permitting needs, for example, would likely lead to local administrations being completely
+overwhelmed if all developers focussed only on the best areas. The cost of land in attractive areas
+would further increase, due to the high demand, making it more attractive to search for available
+land in less attractive regions. These and other factors therefore reduce the allocative efficiency of
+renewable deployment.
+
+To account for the effect of capacity spreading out, we rely on a second distribution, one that
+distributes capacity evenly across all cells inside a given country, based on the available land. This
+approach has been applied previously in (Thomaßen and Fuhrmanek, 2025) and assumes that in each
+cell of a given country, the same share of available area is used to deploy a given technology. The
+final distribution is then calculated with the help of the auction effectiveness 𝜂𝑎𝑢𝑐𝑡 :
+
+                          𝐶𝑎𝑝𝑔 = 𝜂 𝑎𝑢𝑐𝑡 ∙ 𝐶𝑎𝑝𝑔𝑎𝑢𝑐𝑡 + (1 − 𝜂 𝑎𝑢𝑐𝑡 ) ∙ 𝐶𝑎𝑝𝑔𝑒𝑣𝑒𝑛
+
+With 𝐶𝑎𝑝𝑔𝑒𝑣𝑒𝑛 being the amount of capacity deployed to the respective cell using the second
+distribution. The auction effectiveness thus describes how much deployment is focussed on those
+sites inside a country, which are most competitive under the given auction rules (see (Thomaßen and
+Fuhrmanek, 2025) for further information on the mechanism).
+For this assessment, we assume an auction effectiveness of 60%. This parameter was determined
+by increasing the auction effectiveness successively in 20% steps and comparing the resulting
+distribution of capacity with deployment data from Germany. Germany is a suitable case for
+calibration, as the location of renewable installations is known on a zip code basis. The comparison
+between the modelled distribution and the actual observed distribution can be seen in Figure 3. The
+influence of this parameter on the results is assessed with the help of a sensitivity analysis in section
+4.5.
+
+
+
+
+                                                   17
+                  Figure 3: Cumulative distribution of onshore wind capacity in Germany.
+
+
+
+
+                                              Source: JRC analysis
+
+
+3.2.2 Contracts for difference
+We further assume that all renewable and nuclear assets are remunerated through a two-way
+contract for difference (CfD) which is referencing the local energy price. If the market price is lower
+than the strike price, the asset in question therefore receives a payment which makes up the
+difference. If the market price exceeds the strike price, however, the operator has to pay back the
+difference between the two. The strike price is further determined in a way that all assets are fully
+refinanced, while the cost of these contracts is taken into consideration separately during the cost-
+benefit analysis.
+
+In the Status Quo and Multi Split scenarios, these reference prices, against which the contracts are
+settled, correspond to the electricity price of the bidding zone that the asset is installed in. In the
+Locational scenario, it refers to the price of the node that the asset is connected to. CfD strike prices
+and payments are calculated ex post, after the market dispatch runs, and based on the resulting
+prices and energy volumes produced. We further assume that energy production is only remunerated
+for as long as the market price is positive, and that CfD contracts are revenue sufficient, i.e. that they
+are fully covering the total cost of the asset, without providing substantial additional rents – as to be
+expected if the renewable auctions are competitive. The strike price of the CfD was therefore
+estimated as:
+                                              𝑎𝑛𝑛𝑢𝑖𝑡𝑦𝑔 + ∑ℎ 𝑀𝐶𝑔 ∙ 𝑃𝑔,ℎ
+                                 𝑝𝑔𝑠𝑡𝑟𝑖𝑘𝑒 =
+                                                      ∑ℎ 𝑃𝑔,ℎ
+
+With 𝑝𝑔𝑠𝑡𝑟𝑖𝑘𝑒 being the strike price of generator 𝑔, 𝑎𝑛𝑛𝑢𝑖𝑡𝑦𝑔 being calculated from the annuitized
+investment cost and the fixed operation and maintenance cost. 𝑀𝐶𝑔 describes the marginal cost of
+said generator, 𝑃𝑔𝑛𝑜𝑚 the nominal capacity and 𝑃𝑔,ℎ the hourly production. The strike price therefore
+reflects the price per MWh the project in question would need to receive throughout the year to
+recuperate all costs. The hourly income of generator 𝑔 through the CfD was calculated as:
+                                    𝐶𝑓𝐷     𝑚𝑎𝑟𝑘𝑒𝑡
+                                   𝐼𝑔,ℎ = (𝑝𝑛,ℎ    − 𝑝𝑔𝑠𝑡𝑟𝑖𝑘𝑒 ) ∙ 𝑃𝑔,ℎ
+
+
+
+                                                      18
+      𝑚𝑎𝑟𝑘𝑒𝑡
+With 𝑝𝑛,ℎ    being the market price at the respective location.
+
+As a first step, we assume that the financing cost of CfD-hedged resources does not change through
+more granular locational pricing. This implies that the CfD agreement references the local market
+price, while locational optimization of capacity deployment is achieved through incentives within the
+auctioning process. Resources are well hedged under any scenario, as they effectively receive the
+strike price for their energy production when selling on the day ahead market. (AFRY, 2023) have
+noted, however, that renewable generators might still be exposed to increased risk, for example due
+to a lower market value during the merchant tail period, i.e. the period after the CfD has ended, yet
+the asset in question is still operational. While we check this hypothesis for all reform cases, we also
+calculate break-even hurdle rate increases for CfD-hedged resources (section 4.4). This allows us to
+evaluate whether a risk increase is likely that could erase all potential benefits associated with a
+reform of the market. In section 6.4, we further discuss potential policy measures that could ensure
+that CfD-hedged resources do not see an increase in their risk profile.
+
+3.2.3 Firm and storage capacity
+To ensure adequate amounts of investment into firm capacity, we add a constraint to the model,
+which ensures a certain level of firm capacity in each country.
+                                                               𝑓𝑖𝑟𝑚
+                                    ∑               𝐶𝑎𝑝𝑔𝑖𝑛𝑠 ≥ 𝑇𝑐
+                                        𝑔∈𝑓𝑖𝑟𝑚, 𝑐
+
+       𝑓𝑖𝑟𝑚
+With 𝑇𝑐     being the firm capacity target for each country, and 𝐶𝑎𝑝𝑔𝑖𝑛𝑠 being the installed capacity
+of dispatchable generator 𝑔.
+
+This level was determined based on (ENTSO-E, 2023a; European Commission, 2024) and adjusted
+further to ensure that no lost load occurred in the market sessions. This is a necessity, as an
+investment model for the full grid model is too large to solve at full hourly resolution and therefore
+scarcity situations might be missed by the time-reduced version. In a second step, we remove excess
+capacity which was not dispatched after the market and redispatch runs. This excess capacity is not
+considered in the cost-benefit analysis. In this way, we take into consideration the different capacity
+needs of the different market configurations. A similar constraint was added for storage capacity to
+achieve deployment in line with the Impact Assessment (European Commission, 2024).
+
+We further consider a change in the cost of financing by applying a higher weighted average cost of
+capital (WACC) for the LMP market, compared to the zonal markets. This is due to conventional power
+plants – even when hedged through a capacity market – being exposed to market prices to a certain
+degree, and therefore rely on them for recuperating the initial investment. For the zonal market
+designs (Status Quo and Multi Split), we applied a WACC of 7%, in line with estimates for the cost of
+new entry in France and Belgium (Elia, 2022; RTE, 2022). For the LMP case, we used an 8% WACC
+estimate – which is in line with estimates for market-based investments in the PJM and ERCOT
+(Electric Reliability Council of Texas) systems (Brattle Group, 2024, 2022) – as both represent markets
+with LMP.
+In addition, we consider location-specific costs for investment into dispatchable capacity. On the one
+hand, we consider whether an existing grid connection is already available in the respective location.
+To this aim, we consider whether a generator was previously decommissioned, which would avoid the
+need to build a completely new grid connection. We further consider the cost of connecting to the gas
+grid for those generators that use gaseous fuels. Pipeline costs of connecting to the gas grid were
+estimated using the distance to the nearest converter station, as well as costs from (EIA, 2024). These
+
+
+
+                                                    19
+apply to hydrogen-ready open- and closed-cycle gas turbines (OCGT and CCGT), with cost estimates
+based on (Aarhus University and TU Berlin, 2024), considering a 15% cost increase of hydrogen-ready
+technologies based on (Öberg et al., 2022). We further assume that nuclear generators receive a
+lifetime extension. These are remunerated with a CfD, following the principle laid out in section 3.2.2.
+The strike price takes into consideration the cost of lifetime extensions (EPA, 2018), as well as the
+production cost of nuclear power.
+
+3.2.3.1 Grid reserves
+
+In the context of our case study, we observed that both zonal scenarios resulted in significant amounts
+of involuntary load shedding at the redispatch stage, while sufficient capacities were available in all
+scenarios to ensure the market always cleared. This implies that the electricity market would not be
+capable of incentivizing additional investment, as these capacities would remain idle during the
+market sessions and therefore would not generate a margin. The redispatch stage, on the other hand
+would not provide additional revenues, as we assume that congestion management is remunerated
+on a cost basis, as currently the practice, for example, in Germany (Hirth et al., 2019). The modelling
+procedure for the cost-based redispatch mechanism is further described in section 3.4.
+
+In reality, regulators would surely intervene in time to ensure that sufficient capacities were available
+to safeguard the operation of the system. In fact, this situation has already occurred, with Germany
+auctioning off the construction of four new power plants to provide redispatch services only, without
+the permission to sell energy to the market (Eicke et al., 2020).
+
+The necessary grid reserves to safeguard the operation of the system are computed using the
+redispatch model as the basis (compare section 3.4). This network comprises of the nodal net
+positions as determined by the market simulation, as well as all existing redispatch options. We
+further add investment options for hydrogen-ready CCGT and OCGT plants to each node. We then
+optimize the investment decisions to determine the capacity level needed to ensure a safe supply.
+
+3.2.4 Hydrogen
+In a deviation from the assumptions applied in (Thomaßen et al., 2024), we further assume that
+hydrogen generation is correlated with renewable surplus. This change has been introduced after a
+screening of the Rystad Hydrogen Solution database, which indicates that planned hydrogen projects
+often correlate with high-renewable-production nodes. Correlating electrolysis capacity with
+renewable surplus nodes will minimize the impact of electrolysis on redispatch needs, as it maximizes
+the local utilization of renewables (compare, for example, (50Hertz et al., 2023; Vom Scheidt et al.,
+2022)). It can be therefore assumed that this assumption will lower the cost estimates for zonal
+markets: A lower correlation with renewable surplus than assumed in this study would lead to a higher
+discrepancy between wholesale market clearing and actual dispatch, causing an additional need for
+redispatch.
+
+3.2.5 Revenue gap
+Lastly, we evaluate the revenue gap for dispatchable generation and storage. The underlying
+assumption is that investors will not invest into new power plants unless they are convinced that
+these are sufficiently profitable. Since we assume adequate levels of capacity to meet the demand
+in the market, no scarcity price signals occur. Several Member States are further planning to introduce
+a capacity market – or have already done so – among them France, Poland, Belgium, Germany and
+Spain. This funding stream, which we do not model, comes on top of the revenue from the market
+
+
+
+                                                   20
+and would likely be sufficient to match any missing money, since it is determined through an
+auctioning process. In addition, the Electricity Market Design reform foresees the possibility to
+establish remuneration schemes for flexibility, which could cover any missing money for storage
+investments.
+
+Assessing a system without refinanced assets would underestimate the cost of the system, as it
+cannot be assumed that these assets would remain in the market. Adequate revenues therefore need
+to be assumed to correctly estimate the cost to consumers. By removing unused capacity, we further
+ensure that no overcapacity is being considered and all units are needed for market and/or redispatch
+operations. We thus consider it a reasonable assumption that the revenue gap would be borne by
+consumers either (1) because investment would be marginally less5, so that scarcity prices would
+occur on a scale that is sufficient to render all remaining assets profitable. Or (2) because additional
+funding mechanisms, such as capacity markets or flexibility schemes, would provide the missing
+funds.
+
+3.2.6 Grids
+
+3.2.6.1 Grid expansion
+
+For each regulatory scenario, the grid expansion needs are determined individually. We therefore do
+not assume that grid expansion plans are set in stone, but that they can be adapted in case the needs
+of the system change. The advantage of the approach is twofold: On the one hand, grid planning
+inside European Member States remains unfortunately rather opaque. National network development
+plans (NDPs) are commonly published in the national language only, and on several occasions lack
+concrete information on the grid projects – such as the concrete number, capacity and location of
+HVDC lines6. On the other hand, we do not evaluate how well a given market design fits with the
+current plans, but we take into consideration that these plans could be adjusted, in case the resulting
+resource mix requires less or different expansion measures. We do, however, rely on NDPs for the
+consideration of new HVDC lines. To this aim, we consider candidate projects, taken from the ten-year
+network development plan (TYNDP), as well as national NDPs (50Hertz et al., 2023; ENTSO-E, 2025b;
+PSE, 2024).
+
+In addition, we assume the roll out of dynamic line rating across the European power system, applying
+the standard PyPSA-Eur functionality (Glaum and Hofmann, 2023). We further enforced a lower limit
+that corresponds to the static line rating, as well as an upper limit that corresponds to a 50% increase
+in capacity. Increasing this level further has little effect on additional grid capacity (Glaum and
+Hofmann, 2023), while it ensures we stay within the limit deemed safe for operations (ENTSO-E,
+2024). This threshold was confirmed to us as a reasonable assumption in the context of bilateral
+discussions with experts from the field.
+
+We further assess each market design in the context of three grid expansion sensitivities. As a first
+step, we calculate the system optimal grid expansion plan, which is given by the cost optimal solution
+
+
+
+
+5
+    In most cases, 2-4 hours of uncovered demand are sufficient to leave the remaining power plants in the market
+       profitable (ENTSO-E, 2023b). The capacity difference between a loss of load expectation of 0 and one of 2 would
+       correspond to the difference between the highest and the third highest load.
+6
+    Though there are notable exceptions such as the German NDP, which lists planned grid projects in great detail (50Hertz
+       et al., 2023)
+
+
+                                                             21
+of the underlying system model. All AC and DC lines are considered as expandable, taking into
+consideration the standard PyPSA-Eur cost assumptions (Hörsch et al., 2018).
+
+In a second step, we calculate additional sensitivities which depict a delayed rollout of transmission
+infrastructure, where cost-optimal expansion is not achievable in time. We do so by introducing upper
+bounds to the expansion of the grids inside a country. For this sensitivity, we applied an upper limit
+of 20%7 and 40% of relative grid expansion – compared to the initial grid capacity of the respective
+country in MWkm.
+
+                                               ∑𝑖 𝑙𝑖𝐴𝐶 𝐹̅𝑖𝐴𝐶,𝑒𝑥𝑝 + ∑𝑖 𝑙𝑖𝐷𝐶 𝐹̅𝑖𝐷𝐶,𝑒𝑥𝑝
+                                         𝛾≥
+                                                 ∑𝑖 𝑙𝑖𝐴𝐶 𝐹̅ 𝐴𝐶,0 + ∑𝑖 𝑙𝑖𝐷𝐶 𝐹̅ 𝐷𝐶,0
+                                                          𝑖                 𝑖
+
+                                   𝐴𝐶/𝐷𝐶                                             𝐴𝐶/𝐷𝐶,0
+With 𝛾 being the expansion limit, 𝑙𝑖     being the the length of AC and DC lines, 𝐹̅𝑖        being the
+               𝐴𝐶/𝐷𝐶,𝑒𝑥𝑝
+initial and 𝐹̅𝑖          the expanded capacity of these lines. For cross-border lines, we further
+introduce an upper limit which corresponds to the expansion level observed under system-optimal
+grid expansion. On the one hand, this limit ensures that insufficient grid expansion inside a country is
+not compensated by cross-border expansion with a different country. If we assume that a country is
+unable to upgrade grids beyond the respective threshold, it is logical to assume that there is no
+additional capacity available to upgrade cross-border grids further than in the system-optimal case.
+On the other hand, this implementation allows for less investment into cross-border capacity, in case
+the cross-border flows cannot be accommodated by the grids inside the country in question. In this
+case, it would be unreasonable to believe that cross-border lines would be expanded to the level seen
+in the system-optimal solution.
+
+3.2.6.2 Congestion revenue
+
+In every market setting, grid infrastructure generates revenue for the TSO. In the zonal scenarios
+(Multi Split, Status Quo), congestion rents are generated when flows occur between bidding zones
+with different prices. In these cases, the congestion rent can be calculated as
+
+                                                             𝑚𝑎𝑟𝑘𝑒𝑡    𝑚𝑎𝑟𝑘𝑒𝑡
+                                    𝐶𝑅𝑧1,𝑧2 = ∑ 𝐹𝑧1,𝑧2,ℎ ∙ (𝑝𝑧2,ℎ   − 𝑝𝑧1,ℎ   )
+                                                  ℎ
+
+With the congestion revenue 𝐶𝑅𝑧1,𝑧2 between two zones, 𝐹𝑧1,𝑧2,ℎ the flow between the zones in
+                                                               𝑚𝑎𝑟𝑘𝑒𝑡
+question, and the market price in the respective market 𝑝𝑧1/2,ℎ       . In the Locational scenario,
+congestion revenue is further generated on each connection between two nodes. We assume that the
+congestion revenue is fully redistributed to consumers via lowered grid charges.
+
+
+3.3 Flow-based market coupling
+The approach for FBMC applied in this case study represents an improved method, compared to the
+status quo currently in place. It largely corresponds with the approach applied in (Thomaßen et al.,
+2024), yet with a different strategy for calculating the generator shift keys (GSKs). In this case study,
+
+
+
+
+7
+    which corresponds to the expansion rate in the AGE (ambitious grid expansion) scenario in (Thomaßen et al., 2024), while
+       the 40% represents a 5% increase from the XGE (extreme grid expansion) scenario.
+
+
+                                                              22
+we apply an optimized method which assumes further technological improvement, compared to
+today’s application in the European electricity market.
+
+The basic framework mirrors the one applied by (Elia, 2023; ENTSO-E, 2023b) for the Belgian or the
+European Resource Adequacy Assessment. Net positions 𝑁𝑃𝑧 are calculated as all flows that leave a
+given bidding zone. The impact of these flows on the critical network elements with contingencies8
+(CNECs) is calculated with the help of zonal power transfer distribution factors (PTDFs). In advanced
+hybrid coupling (AHC), the impact of flows on DC lines is further included directly in the market
+coupling9.
+
+                             𝐹𝐶𝑁𝐸𝐶 = ∑ 𝑁𝑃𝑧 ∙ 𝑃𝑇𝐷𝐹𝑧,𝐶𝑁𝐸𝐶 + ∑ 𝐹𝐷𝐶 ∙ 𝑃𝑇𝐷𝐹𝐷𝐶,𝐶𝑁𝐸𝐶
+                                          𝑧                            𝐷𝐶
+
+𝑃𝑇𝐷𝐹𝑧,𝐶𝑁𝐸𝐶 describes the impact that a net position change of the zone in question has on a given
+CNEC. 𝑃𝑇𝐷𝐹𝐷𝐶,𝐶𝑁𝐸𝐶 further describes the impact of HVDC flow 𝐹𝐷𝐶 on said CNEC. The zonal PTDFs
+are further calculated by weighing the nodal PTDFs of a given zone by the associated GSKs:
+
+                                              𝑃𝑇𝐷𝐹𝑧,ℎ = ∑ 𝐺𝑆𝐾𝑛,ℎ ∙ 𝑃𝑇𝐷𝐹𝑛
+                                                           𝑛∈𝑧
+
+The GSKs represent an expectation of which nodes will participate in a net position change and are
+traditionally calculated considering only large power plants (Elia, 2023; ENTSO-E, 2023b). In section
+3.3.1, we will present the optimized GSK calculation applied in this case study.
+
+A flow on an HVDC line furthermore represents an injection at its end point, as well as an extraction
+at the starting point of the line. 𝑃𝑇𝐷𝐹𝐷𝐶 can therefore be determined with the help of the nodal
+PTDFs of the respective nodes:
+
+                                       𝑃𝑇𝐷𝐹𝐷𝐶 = 𝑃𝑇𝐷𝐹𝐷𝐶,𝑒𝑛𝑑 − 𝑃𝑇𝐷𝐹𝐷𝐶,𝑠𝑡𝑎𝑟𝑡
+
+Zonal net positions and DC flows are bound by the available capacity on each CNEC. To this aim, we
+calculate both, the upper and the lower remaining available margin (RAM).
+                                             +       𝑚𝑎𝑥           0
+                                          𝑅𝐴𝑀𝐶𝑁𝐸𝐶 = 𝐹𝐶𝑁𝐸𝐶 − 𝐹𝑅𝑀 − 𝐹𝐶𝑁𝐸𝐶
+                                           −        𝑚𝑎𝑥           0
+                                        𝑅𝐴𝑀𝐶𝑁𝐸𝐶 = −𝐹𝐶𝑁𝐸𝐶 + 𝐹𝑅𝑀 − 𝐹𝐶𝑁𝐸𝐶
+                                                 −                 +
+                                              𝑅𝐴𝑀𝐶𝑁𝐸𝐶 ≤ 𝐹𝐶𝑁𝐸𝐶 ≤ 𝑅𝐴𝑀𝐶𝑁𝐸𝐶
+        𝑚𝑎𝑥
+With 𝐹𝐶𝑁𝐸𝐶     being the maximum permissible flow on the network element and 𝐹𝑅𝑀 being the flow
+                                                                                           0
+reliability margin. In this case study, we applied a FRM of 10% of the thermal rating. 𝐹𝐶𝑁𝐸𝐶    describes
+the initial line loading, i.e. the flow on the network element if all zonal net positions are set to zero.
+                                                                                         +/−
+The initial line loadings can thus be interpreted as the loop flows. 𝑅𝐴𝑀𝐶𝑁𝐸𝐶 represents the upper and
+the lower RAM, i.e. the free margin on the network element with regard to the upper or the lower
+bound.
+
+
+
+
+8
+    An element of the network which is included in the flow-based formulation. In this way, it is monitored that the flows
+       between bidding zones do not lead to an overload on said element.
+9
+    Since we assume a system-wide introduction of FBMC, there are no external flows to the study area to be considered.
+
+
+                                                              23
+3.3.1 Optimized GSK calculation
+Today, GSKs are usually calculated by considering that large dispatchable or hydro power plants will
+be the major contributors to a change in net position (Elia, 2023; ENTSO-E, 2023b). This is a valid
+approach for as long as renewable curtailment is low and battery penetration is still rather small. The
+more renewable surplus periods occur, the more likely a change in net position will deviate from this
+approximation, as renewables will be the first sources to contribute to a change in net positions.
+We can, for example, consider a case where the potential generation from variable renewables
+exceeded the domestic demand by 30%. In this case, all variable renewables would bid into the
+market at near zero marginal cost, making it already hard to predict which plants would be dispatched
+in the base case. A change in net position – for example increasing exports due to the large availability
+of low-cost energy – would, in turn, then be first and foremost provided by the unused variable
+renewable generation, which would otherwise end up being curtailed. Conventional GSKs would,
+however, implicitly assume that large scale conventional generators would provide the additional
+output. If the location of these generators does not align with those of the variable renewable
+generators providing the exported power, the calculated flows on the CNECs will inevitably be wrong.
+This issue is further exacerbated with increasing levels of decentralized storage applications, such as
+household batteries or medium scale storage installed together with wind parks or solar farms. In
+such a system, a change in net positions cannot accurately be represented only by the distribution of
+large power plants.
+
+For systems with high renewable shares, the conventional GSK approach thus appears less suitable.
+We therefore optimistically assume an evolution of FBMC in which TSOs can predict with a high
+accuracy which nodes will contribute to a change in net position during a given hour. To this aim, we
+run two dispatch models, one with a simplified NTC approach, as well as one without any transfer
+capacity between zones. This allows us to estimate better which nodes contribute to a net position
+change during a given hour:
+                                                   𝑁𝑇𝐶      0
+                                                 𝑁𝑃𝑛.ℎ  − 𝑁𝑃𝑛.ℎ
+                                      𝐺𝑆𝐾𝑛,ℎ =      𝑁𝑇𝐶     0
+                                                 𝑁𝑃𝑧,ℎ  − 𝑁𝑃𝑧,ℎ
+
+The GSK therefore considers the contribution of all power system elements, including conventional
+generation, but also variable renewables, distributed storage or demand response. It is further
+determined for each individual hour.
+
+In itself, the approach presented here is quite optimistic and can hardly be taken as a given. It
+assumes that TSOs will be able to forecast with a high accuracy how thousands of solar farms or
+wind parks will generate, as well as how households will operate their batteries and charge their
+electric vehicles. In this case study, however, we want to assess the zonal market concept considering
+as well efficiency benefits that could be achieved in the future. It remains therefore necessary to
+remember that the FBMC described in this study is an optimized version, while the current
+implementation would likely perform worse.
+
+
+3.4 Redispatch optimization
+The redispatch optimization follows the principles laid out in (Thomaßen et al., 2024). Instead,
+however, of a purely volume-based approach – which only minimizes the volume of interventions –
+we implemented a mixed formulation which minimizes volume and costs at the same time. This is
+achieved by an objective formulation which minimizes the cost of remedial actions, while penalizing
+their total volume:
+
+
+                                                   24
+                                         𝑢𝑝 𝑑𝑜𝑤𝑛                   𝑢𝑝
+                                                                   𝑑𝑜𝑤𝑛
+                       min ∑ 𝑀𝐶𝑔,ℎ (𝑅𝑔,ℎ + 𝑅𝑔,ℎ  ) + 𝛽 ∙ ∑(𝑅𝑔,ℎ − 𝑅𝑔,ℎ  )
+                            𝑔,ℎ                              𝑔,ℎ
+
+                                          𝑢𝑝  𝑑𝑜𝑤𝑛
+With upward and downward redispatch 𝑅𝑔,ℎ and 𝑅𝑔,ℎ  , the penalty factor 𝛽, as well as the marginal
+                                                                                                𝑑𝑜𝑤𝑛
+cost 𝑀𝐶𝑔,ℎ . Please note that a downward redispatch activation results in a negative value for 𝑅𝑔,ℎ  .
+
+The value for 𝛽 is chosen so that it exceeds the difference between the highest and lowest marginal
+cost. In this way, it will ensure that the model only resolves grid constraint violations, but does not
+realize additional trades that would increase welfare: The benefit of substituting one costly unit of
+generation with a low-cost unit of generation can never be greater than the difference in their
+marginal costs. This approach is therefore well suited to depict cost-based redispatch, as TSOs would
+limit their actions to resolving bottlenecks, while aiming to minimize the cost of these interventions.
+
+3.4.1 Improved cross-zonal congestion management
+We further assume that efficient congestion management across market zones is possible in all zonal
+scenarios (Status Quo and Multi Split). In each country, these measures are allowed to provide up to
+30% of all remedial actions, which can already be considered an optimistic evolution of
+countertrading. According to (ACER, 2023b), countertrading accounted only for 15% of all redispatch
+costs.
+
+In addition, we assume that the effectiveness of cross-zonal remedial actions increases as well.
+Classical countertrading limits TSOs to buying energy from another bidding zone, without knowing
+where exactly this additional energy will come from. We assume that TSOs can activate resources in
+different bidding zones in a targeted way to relieve bottlenecks in their own, which implies a
+substantially higher level of cross-border cooperation than conventional countertrading.
+
+
+3.5 Modelling workflow
+Figure 4 details the workflow of the case study. In the first step, the basic grid model is built with
+the help of the PyPSA-Eur workflow. Then, the demand data is imported for the respective target year.
+Afterwards, renewable investment is modelled, as detailed in section 3.2.1. Firm capacity and storage
+are allocated (section 3.2.3), as well as different levels of grid investment (section 3.2.6). The
+modelling of short-term operations begins with the creation of flow based domains, as described in
+section 3.3, followed by the simulation of the market-based dispatch and the redispatch optimization
+(section 3.4), both modelling a year at hourly resolution. The redispatch result is then checked for load
+shedding events, and the grid reserves necessary to uphold the security of supply are determined. As
+a last step, redispatch is rerun with the added reserves. Please note that the short-term operational
+steps detailed above apply only in full to scenarios relying on a zonal dispatch. All runs applying LMP
+operation require only the market dispatch stage to model short-term operations, as no redispatch is
+assumed necessary and no flow-based parameters need to be determined.
+
+
+
+
+                                                   25
+                                              Figure 4: Modelling workflow
+
+
+                                Build basic          Build demand
+ Basic scenario building
+                                  model                scenario
+
+
+
+
+                              Firm capacity                               Grid reserve
+ Capacity allocation                                  Renewables
+                               and storage                                 calculation
+
+
+
+
+                         System-
+                                         Limited grid
+ Grid expansion        optimal grid                                                       Yes
+                                          expansion
+                        expansion
+                                                                                                Reliability
+                                                                                                issues?
+
+                              Calculate flow-
+                                                          Market
+ Short-term operations            based                                      Redispatch           No          Run finished
+                                                        simulation
+                                domains
+
+
+                                                   Source: JRC analysis
+
+
+3.6 Limitations to the approach
+The results presented here assume a certain evolution of the European system with regard to the
+target years 2030 and 2040. While we believe that we depict a reasonable and realistic evolution of
+the system, unforeseen trends could materialize which could affect the outcome of this exercise
+qualitatively and quantitatively. This could relate to the locations that investors choose to deploy
+renewables, or to the technologies they invest in: It is hardly possible to assess every cost factor that
+might influence siting decisions across Europe. Therefore, real deployment patterns may differ from
+the ones assumed in this study. Further, assuming for example a European power system dominated
+by carbon-neutral dispatchable generation, such as Small Modular Reactors (SMRs) or biomass would
+certainly lead to very different results.
+
+We furthermore assume a certain evolution of the European market design with regard to how the
+market is cleared at the day-ahead stage, and how congestion is relieved throughout the European
+system. Considering the full range of potential regulatory architectures that could materialize goes
+beyond the scope of this exercise. Limiting, for example, the operating ranges of generators and
+storage units, as discussed by (Sapp et al., 2024), could reduce congestion, yet would simultaneously
+imply new limits to the free trade of electricity. A less-efficient FBMC or a less-efficient cross-zonal
+redispatch, on the other hand, could lead to more costly congestion relief than shown in this report.
+
+
+
+
+                                                           26
+4 Results
+This section presents the results of the case study. First, we analyse the impact of market design on
+grid expansion needs, before assessing operations in each scenario – evaluating indicators on supply
+security, fuel mix and storage operation. We then discuss capacity needs of the system, before
+evaluating the impact on the system cost, consumers and producers.
+
+
+4.1 Grid expansion needs
+The different scenarios result in different grid expansion needs – which we define as the system
+optimal level of grid expansion. The overall needs calculated for the Status Quo scenario compare
+well with the costs identified by national reports: Our model results in onshore grid expansion costs
+of 86 Bn. EUR10 in Germany, compared to 94.6 Bn. EUR according to the NDP (50Hertz et al., 2023).
+In France, onshore grid expansion was calculated to be 59.3 Bn. EUR, while the French NDP lists 70.0
+Bn. EUR in onshore measures (RTE, 2025). The somewhat higher costs in these NDPs can likely be
+attributed to several factors: On the one hand, we do not model grid expansion until all bottlenecks
+are relieved, but only up to the cost optimum. This cost-optimal level may thus still include some
+structural congestion, if alleviating these bottlenecks through additional expansion is not cost
+efficient. On the other hand, we optimize grid expansion measures in all countries at once, which
+implies a level of coordination that exceeds the current status quo for network planning, where each
+country is planning their own network. It is therefore possible that our model harvests synergies that
+are currently not attained in national network planning. Further differences might be attributed to
+differences in scenario assumptions, among other factors, for example with regard to the
+geographical distribution of renewables, the location of new demands, as well as their flexibility.
+
+Increasing the geographical resolution at which the European market is cleared can substantially
+reduce the necessary volume of grid investment. The Locational scenario leads to an overall reduction
+of grid expansion needs by 56 Bn. EUR by 2040. The largest share of these cost savings can already
+be achieved through the Multi Split scenario, which leads to overall cost reductions of 53 Bn. EUR.
+
+
+
+
+10
+     All values in EUR 2015.
+
+
+                                                 27
+  Figure 5: Difference in inner-country grid investment by 2040 in comparison to the Status Quo scenario.
+
+
+
+
+                                            Source: JRC analysis
+
+
+4.2 Operations
+In this section, we first address the security of supply achieved in the different regulatory scenarios,
+before discussing differences in fuel mix and in the operation of flexibility.
+
+Both zonal scenarios resulted in substantial volumes of lost load. Figure 6 shows the amount of
+involuntary load shedding per scenario and target year. For the Locational scenario, the dispatch
+resulted always in a perfectly reliable supply and therefore no load shedding volumes are reported.
+All load shedding events reported for the zonal runs took place during the redispatch stage, since
+sufficient capacities were available to clear the market at all times (compare section 3.2). As we can
+see, the Status Quo scenario results in substantially higher load shedding than the Multi Split scenario,
+indicating that a 101-zone system already improves the security of supply substantially. While the
+2030 runs result in 7-24 GWh of load shedding in the Status Quo scenario, the Multi Split scenario
+resulted only in 3.5-8 GWh with lost load. In 2040, load shedding is, however, occurring on another
+scale: In the Status Quo scenario, 1.9 TWh of load shedding occur – representing 0.03% of total
+demand – even under system optimal grid expansion. If inner-country grid expansion is constrained
+to 20%, this amount increases to 4.0 TWh (0.07% of total demand). At the same time, the Multi Split
+scenario resulted in 0.8-1.4 TWh of lost load, representing between 0.01% and 0.03% of total
+demand.
+
+These results suggest that larger zones lead to a poorer supply situation. At the same time, they
+indicate that even an ambitious bidding zone split scenario leads to substantial amounts of load
+shedding, if no additional out-of-the-market actions are implemented to combat these scarcity
+situations in a targeted way.
+
+
+
+
+                                                    28
+Figure 6: Load shedding in zonal scenarios in the years 2030 and 2040. Locational scenario not shown as no
+                                       load shedding was observed.
+
+
+
+
+                                            Source: JRC analysis
+
+
+To clarify whether these supply risks are a result of investment occurring in the wrong locations, or
+rather due to a suboptimal operation, we simulated an LMP operation of the Status Quo and the Multi
+Split systems. This could be interpreted as the result of a perfect overnight implementation of LMP,
+after all investments had occurred in the way modelled for the other two scenarios. In this case, all
+configurations led to a perfectly reliable system without any load shedding.
+
+The low reliability of supply therefore cannot be primarily attributed to a suboptimal allocation of
+investments, but is first and foremost related to the operation of the system. This is underpinned by
+the fact that the runs with locational investment signals resulted in similar amounts of load shedding.
+The lower amount of load shedding in the Multi Split scenario is therefore likely as well a result of an
+improved operation of the system, matching supply and demand in smaller zones, thereby taking the
+local conditions better into consideration.
+
+
+
+
+                                                    29
+          Figure 7: Load shedding in Status Quo scenario, year 2040 with optimal grid expansion.
+
+
+
+
+                                            Source: JRC analysis
+
+
+We can understand the nature of these load shedding events better by considering their geographical
+distribution, as shown exemplarily in Figure 7 for the Status Quo scenario in 2040 with optimal grid
+expansion. These take place overwhelmingly on the periphery of the European system, which can be
+explained by the fact that there is less flexibility in these locations to deal with a shortage in supply
+at the redispatch stage: A shortage on a border between two bidding zones might still be compensated
+through cross-border cooperation. This option, however, does not exist at the borders of the system.
+If insufficient redispatch options are available locally, it will therefore result in load shedding. It has
+to be highlighted that our simulations involve an optimized cross-border cooperation during the
+redispatch stage, which is currently not a given (compare section 3.4.1). With less efficient cross-
+border remedial actions, additional load shedding events could take place as well further in the centre
+of the European system.
+
+The fact that the LMP operation of the same systems led to no load shedding indicates that sufficient
+flexibility is in general available to safeguard the operation of the system, even if no locational
+investment signals apply, i.e. even if investment occurs in suboptimal locations. In zonal markets with
+
+
+
+
+                                                    30
+cost-based redispatch, this flexibility is, however, not effectively integrated into congestion
+management, and therefore cannot contribute to resolving these local scarcity situations.
+
+Please note, that we consider only the ability of the model to match supply and demand in each node
+in this assessment. Additional stability criteria, such as inertia, are beyond the scope of the
+assessment. All our scenarios foresee, however, a larger installed dispatchable capacity in 2040 than
+European assessments, such as ERAA (in 2035) or the TYNDP (in 2040). Therefore a lack of capacity
+to provide inertia or other ancillary services can be deemed unlikely. Maintaining grid stability during
+periods with large renewable surpluses could further require the deployment of grid-forming battery
+storage across all scenarios (Pöller, 2024).
+
+Our results suggest further that the spatial resolution of market clearing has a major impact on fuel
+use. Notably, the Status Quo scenario resulted in a larger reliance on combustion fuels, such as natural
+gas and coal in 2030, as well as hydrogen in 2040. This indicates a larger import dependency, as
+natural gas and hard coal are imported to a large degree, while the EU is foreseen to at least partially
+rely on hydrogen imports as well (European Commission, 2024).
+
+Figure 8: Change in primary fuel use compared to Status Quo scenario. Differences between total reductions
+   and increases are due to conversion and storage losses. Please note that hydrogen production through
+electrolysis describes an output of the system, i.e. a negative production. A positive value therefore describes
+                   a decrease in hydrogen production compared to the Status Quo scenario.
+
+
+
+
+                                              Source: JRC analysis
+
+
+
+                                                      31
+On the other hand, the Multi Split and Locational scenarios both lead to an increased utilization of
+low-carbon resources with low marginal costs. For both target years and across all grid-expansion
+sensitivities, we can see a net increase in the utilization of low-carbon energy sources. Under
+constrained grid expansion, all low-carbon sources saw an increase in utilization: With a cap on 20%
+grid expansion, as much as 209 TWh of additional low-carbon electricity could be integrated into the
+grid in 2030 (compared to 115 TWh under optimal grid expansion) in the Locational scenario, and
+more than 271 TWh in 2040 (compared to 100 TWh under optimal grid expansion). At the same time,
+hydrogen net needs (considering as well changes to domestic production) in 2040 could be up to 446
+TWh lower in the Locational scenario and up to 276 TWh lower in the Multi Split scenario.
+A large part of this can be attributed to a better integration of flexibility in the Locational and Multi
+Split scenarios. Price signals of a higher granularity allow these resources to engage actively in
+congestion management, leading to a higher utilization of low-cost resources with a low carbon
+footprint. This aligns with the findings of (Triolo and Wolak, 2022) who found that the utilization of
+low-cost resources increased through the introduction of LMP. In the Status Quo scenario, in turn,
+storage operation was found to operate regularly against the system needs as shown in Figure 9.
+These actions increase the need for redispatch measures, which correct suboptimal dispatch
+decisions.
+
+ Figure 9: Operation in opposite direction of system optimum. Scenario is Status Quo in 2040 with optimal
+                                               grid expansion.
+
+
+
+
+                                            Source: JRC analysis
+
+
+For the analysis of storage dispatch, we compared the operation in the market with an ideal operation,
+for which we solved the Status Quo system model in LMP mode. In a second step, we compare storage
+
+
+                                                    32
+positions between market operation and system-optimal operation. We identify those operations,
+where the market position goes into the opposite direction of the system optimum. For example, if
+discharging would be system optimal, but the storage unit in question would schedule a charging
+operation in the market. This in no way identifies all suboptimal operations, but identifies at least
+those which undoubtedly worsen the state of the system.
+
+We can see that in Germany and Spain, as much as 3 GW were discharged in a situation in which the
+grid would have needed to store electricity. Storage units also engaged in a charging process of
+similar magnitude while the system actually needed them to discharge. While the system therefore
+lacked electricity, storage operation exacerbated the situation by another 3 GW. The maximum
+capacity difference further suggests that storage operations at least in one situation opposed the
+efficient operation of the system by the same magnitude it would have ideally supported it. Therefore,
+if storage units should have ideally provided 3 GW, they were actually increasing the load by another
+3 GW, increasing the need for additional capacity by 6 GW compared to an optimal operation. Storage
+operation under zonal market prices can therefore pose an additional burden to the grid, which
+confirms previous findings by the German TSO Tennet (TenneT, 2024).
+
+4.2.1 Capacity needs
+The different operational patterns result in strongly differing capacity needs, which can be seen in
+Figure 10. The Locational scenario requires 59-64 GW less firm capacity for a safe operation of the
+system, which can be explained by the improved integration of decentralized flexibility. Yet also the
+Multi Split scenario results in 11-33 GW lower firm capacity needs. We can further observe that the
+capacity need decreases continuously with grid build out.
+
+There are thus two factors at play that minimize the firm capacity need of the system: On the one
+hand, a higher spatial resolution in market clearing enables more targeted employment of flexibility,
+thereby decreasing the need for firm capacity to safeguard the system. Likewise, higher grid
+expansion enables a better utilization of those capacities that are available, leading to an overall
+lower requirement.
+
+Figure 10: Change in firm capacity needs compared to Status Quo. Only year 2040 is shown since 2030 did
+                                   not result in significant differences.
+
+
+
+
+                                          Source: JRC analysis
+
+
+
+
+                                                  33
+4.2.2 System cost
+These differences in fuel and capacity needs result in substantial cost savings that can be achieved
+through locational market design choices. The difference to the Status Quo scenario is shown in
+Figure 11. We calculate the system cost as the sum of operating costs, annuitized capital costs for
+power generation and storage, as well as annuitized grid expansion costs.
+
+  Figure 11: Change in total system cost compared to Status Quo scenario. White bar indicates net change.
+
+
+
+
+                                            Source: JRC analysis
+
+
+Across both target years and the three grid expansion sensitivities, increasing the spatial granularity
+of market clearing always leads to a decrease in system costs. If grid expansion is optimal, annual
+savings are lower yet substantial, with 3.6-4.4 Bn. EUR/a in 2030 and 10-26 Bn. EUR/a in 2040. If
+grid expansion is constrained, these savings multiply. In 2040, the Locational scenario would lead to
+a cost reduction of 61 Bn. EUR/a if inner-country grid expansion would be restricted to only 20% of
+today’s capacity, and to 42 Bn. EUR/a if a maximum of 40% was achievable. Savings in the Multi Split
+
+
+                                                    34
+scenario are less, yet still highly substantial. The scenario achieves between 10 and 37 Bn. EUR of
+annual savings in 2040. This shows that already an advanced bidding zone split scenario can achieve
+large savings compared to the Status Quo.
+
+The main drivers of these savings are operational cost reductions, due to an efficient integration of
+flexibility that helps to manage congestion in the grid. This reduces the need to burn costly fuels, such
+as gas and coal in 2030 – which are penalized by the EU ETS – or hydrogen in 2040. Differences in
+grid expansion costs and installed capacities contribute as well, but appear to be a secondary factor.
+
+Large cost savings can already be achieved through locational investment incentives, i.e. by steering
+investment to the right locations (Figure 12). It has to be noted that these savings are calculated in
+relation to the same scenario without locational incentives.
+
+Figure 12: Change in system cost compared to same scenario without locational investment incentives. White
+                                       bar indicates net change.
+
+
+
+
+                                            Source: JRC analysis
+
+
+
+
+                                                    35
+The effect is most pronounced in the Status Quo scenario, especially if grid expansion is restricted.
+With a cap on 20% inner-country grid expansion, the introduction of locational investment signals
+would reduce the cost of the system by 13 Bn. EUR/a in 2030 and by 29 Bn. EUR/a in 2040. Under
+optimal grid expansion, the effect is less pronounced, yet results still in annual savings of 12 Bn. EUR
+in 2040. The savings that can be achieved by an introduction of locational investment incentives in
+the Multi Split scenario are less substantial, indicating that smaller zones are already quite effective
+in steering capacity to the right areas11.
+
+     Figure 13: Contribution of locational investment incentives and LMP operation to savings in Locational
+                                                   scenario.
+
+
+
+
+                                                    Source: JRC analysis
+
+
+We can further attribute the cost savings in the Locational scenario based on whether they are related
+to better siting decisions, or to the LMP operation of the system. The savings associated with LMP
+
+
+
+
+11
+  The Multi Split scenario in its standard form already assumes that incentives at bidding zone level exist, which could, for
+example, be designed in the form of quotas or different mark ups per zone (compare section 3.1.1).
+
+
+
+                                                             36
+operation were calculated based on the system cost difference between the Locational scenario and
+the Status Quo scenario with locational investment incentives. The results are shown in Figure 13.
+
+Both instruments achieve their highest impact under constrained grid expansion. We can see that the
+impact of locational investment incentives is larger in 2030 (under constrained grid expansion), while
+the benefits of LMP operations exceed those of better siting in 2040. This can be attributed to the
+higher presence of flexible resources in 2040 which benefit from an improved coordination.
+
+
+4.3 Consumer costs
+The costs to consumers were calculated considering wholesale market payments, CfD payments,
+support payments to generators and storage (compare section 3.2.3), as well as grid charges and
+redispatch costs. The results on a system level are shown in Figure 14.
+
+Figure 14: Change in consumer costs (including hydrogen producers) compared to Status Quo scenario. White
+                                         bar indicates net change.
+
+
+
+
+                                           Source: JRC analysis
+
+
+
+
+                                                   37
+We can observe that the system cost savings are largely – but not completely – passed on to
+consumers. In 2040, the Locational scenario reduces consumer costs in the European system by 24-
+58 Bn. EUR/a, depending on the level of grid expansion. The Multi split scenario still achieves consumer
+cost reductions between 9 and 35 Bn. EUR/a. In 2030, consumer savings range between 3 and 15 Bn.
+EUR depending on the level of grid expansion and the level to which the spatial granularity of market
+clearing increases. Across all target years, regulatory scenarios and sensitivities, CfD contracts result
+in substantial payments from generators to consumers, proving an effective instrument to stabilize
+and lower their costs.
+
+Consumer savings are largely driven by reduced redispatch costs, as well as grid charges which need
+to refinance a lower build out, and are further reduced through higher congestion revenues in the
+Multi Split and the Locational scenarios. Lower generator support is primarily a factor in the Locational
+scenario, since no grid reserves need to be procured to maintain operational stability.
+
+The distribution of end-consumer benefits can be seen in Figure 15 for the Locational scenario.
+Please note that each plot contains the geographic distribution, as well as a histogram with
+information on the statistical distribution of end-consumer cost changes. The geographical
+distribution of impacts on end consumers is highly relevant. While generation companies would likely
+adapt their portfolios as some regions become more or less attractive for investments, end consumers
+are far less mobile. Especially households, but also existing industries are largely exposed to these
+changes with little possibility to adapt.
+
+Looking at the distribution of impacts, we can note that consumer cost increases beyond 5 EUR/MWh
+are very rare across all target years and grid expansion sensitivities, indicating that there is a low risk
+of substantial cost increases. Cost reductions occur much more frequently, especially under
+constrained grid expansion. In 2040, and assuming a cap on 20% inner country grid expansion, 90.1%
+of all cells see a reduction in end consumer costs, while only 1.2% of cells see a cost increase that
+exceeds 5 EUR/MWh. That compares to 72.5% of cells that see a consumer cost decrease under
+optimal grid expansion – compared to the Status Quo scenario – while only 0.7% of cells would see
+an increase that exceeds 5 EUR/MWh.
+
+
+
+
+                                                    38
+ Figure 15: Geographical and statistical distribution of change in end consumer costs in Locational scenario,
+                                          compared to Status Quo.
+
+
+
+
+                                             Source: JRC analysis
+
+
+We can observe a similar picture if we consider the consumer impacts of the Multi Split scenario, as
+seen in Figure 16. Overall, the geographical trends remain similar, yet at a lower magnitude.
+Substantial cost increases, beyond 5 EUR/MWh remain the exception, with many more areas profiting
+from the additional bidding zone splits. Under optimal grid expansion, consumers in 61.5% of all cells
+would see their costs decrease in 2040, while only those in 1.2% of all cells would see an increase
+that exceeds 5 EUR/MWh. Similarly, cost reductions are most pronounced if grid build-out remains
+
+
+                                                     39
+limited. Under a 20% cap on inner-country grid expansion, 78.6% of cells would see a consumer cost
+decrease, while only 1.9% of all cells would see an increase beyond 5 EUR/MWh.
+
+ Figure 16: Geographical and statistical distribution of change in end consumer costs in Multi Split scenario,
+                                          compared to Status Quo.
+
+
+
+
+                                              Source: JRC analysis
+
+
+
+
+                                                      40
+4.3.1 Locational investment incentives
+The effect of locational investment incentives on consumer costs (Figure 17) follows a similar trend
+as their effect on system costs (compare Figure 12). In this way, their introduction has the largest
+effect on consumer costs if they are introduced in a setting with large zones. This is mainly driven by
+a reduction in redispatch costs, especially if grid expansion is limited.
+In the Multi Split scenario, they can even increase consumer costs slightly. This can be explained by
+the fact that renewables end up being installed in areas with lower capacity factors. Since less
+generation is available to be sold in the market, market prices are higher than without locational
+investment incentives. Total renewable production is nonetheless higher if locational investment
+incentives are implemented, because higher volumes of the sold renewable electricity are integrated,
+instead of getting curtailed at the redispatch stage. The higher market prices lead further to lower
+CfD support needs and lower payments to generators.
+
+  Figure 17: Change in consumer costs (including hydrogen producers) compared to same scenario without
+                     locational investment incentives. White bar indicates net change.
+
+
+
+
+                                           Source: JRC analysis
+
+
+
+                                                   41
+4.4 Producer profits
+Across all scenarios, we can observe that a higher spatial granularity in market clearing increases the
+profits of generators. This can be explained by the fact that the redispatch action is partially (Multi
+Split) or completely (Locational) internalized. Since we assume cost-based redispatch, redispatch
+activities do not generate any profits, while an activation in the market can generate a margin for all
+cheaper resources. In addition, it might even allow the resource in question to generate a margin, in
+case an even costlier redispatch measure was internalized as well during the same time period.
+
+Assuming that generators would generate profits through redispatch action could, of course, alter this
+picture. This could, for example, be the case due to opaque costs on the site of generation companies,
+which could lead to regulators accepting cost estimates that are higher than the real costs. Since
+consumers would have to bear these additional costs, this case would represent a redistribution from
+consumers to producers. In this way, generator profits would benefit less from more granular
+locational pricing, as profits would already be higher in the Status Quo scenario, while consumer bills
+would be reduced even more substantially.
+
+Further, the profits of storage operators are increased in every configuration of the Locational
+scenario. This indicates that they can generate additional revenues by contributing to congestion
+management. In 2040, this applies to the Multi Split scenario as well, while storage operators see
+losses or no change in 2030.
+
+The largest increase in profits for both technology classes occurs in the case that grid expansion is
+constrained. By 2040, both the Multi Split and the Locational scenario increase profits by roughly 2.5
+Bn. EUR, which represents roughly a 7% increase compared to the Status Quo scenario.
+
+
+
+
+                                                  42
+       Figure 18: Change in profits compared to Status Quo scenario. White bar indicates net change.
+
+
+
+
+                                            Source: JRC analysis
+
+
+To identify whether an increase in capital cost is likely for renewable generators, as identified as a
+risk by (AFRY, 2023; Blyth et al., 2024) we can assess the profitability of renewable generators. We
+assume in this case study that they are hedged through a CfD. The market profitability, however,
+allows us to estimate whether there is a higher risk that they will lose out on profits during the
+merchant tail phase, after the remuneration contract has ended. This could affect their cost of capital,
+which is highly relevant as massive investment into renewable technologies is expected over the next
+decades (compare (European Commission, 2024)).
+
+The results for the Locational scenario, in comparison to the Status Quo are shown in Table 1. We
+can see that overall, the Locational scenario increases the profitability of renewable investments for
+most grid expansion sensitivities, target years and renewable technologies. In 2030, all renewable
+technologies see a higher profitability, due to higher wholesale market prices. In 2040, offshore wind
+and solar PV see an increase in profitability, while onshore wind sees a slightly reduced profitability
+under constrained grid expansion, yet these decreases remain below 1%.
+
+
+
+
+                                                    43
+These trends appear reasonable, considering that LMP internalizes congestion management actions,
+which tends to result in resources being dispatched in the market with higher prices, compared to the
+Status Quo scenario. Storage demand for low-cost energy further increases, as it can be employed
+for congestion management, leading to a higher utilization of low-carbon resources and accordingly
+more energy being integrated (compare section 4.2).
+
+Locally there can be an adverse effect, when large renewable surpluses occur behind a bottleneck,
+suppressing local wholesale prices disproportionally. This highlights the need for locationally-
+optimized deployment and the role of locational renewable auctions. Our results suggest that the
+effect of higher wholesale prices in general outweighs the second effect of local renewable surpluses
+in export-constrained regions, even though for onshore wind, these effects more or less cancel each
+other out in 2040.
+
+Table 1: Change in profits in the Locational scenario, compared to the Status Quo.
+
+     Year         Level of grid expansion   Offshore wind        Onshore wind            Solar PV
+
+                        Cap on 20%               8.4%                 4.2%                2.0%
+
+     2030               Cap on 40%               9.4%                 4.5%                3.4%
+
+                       System optimal            8.5%                 3.6%                2.3%
+
+                        Cap on 20%               6.7%                -0.3%                2.1%
+
+     2040               Cap on 40%               7.0%                -0.7%                0.6%
+
+                       System optimal            8.9%                 0.0%                0.1%
+
+Source: JRC analysis
+
+The change in market profits in the Multi Split scenario, compared to the Status Quo, is displayed in
+Table 2. It appears that the price-depressing effect of renewable surpluses is larger in the Multi Split
+scenario than the price-increasing effect of internalized congestion management.
+
+In comparison to larger zones, smaller zones are faster to “flip”, i.e. the price drops faster to zero
+when renewable production is high than it would within a large zone. It appears as though the smaller
+zones on the one hand flip more frequently than a large zone would. At the same time, they still cover
+substantial amounts of trading, leading to more generators being affected than flipping one node in
+an LMP system would.
+
+Further, the individual dispatch of flexibility with LMP operation – being able to dispatch resources at
+different nodes individually – increases the demand for low-cost energy further, leading to a higher
+market value. This appears to be especially significant for offshore wind assets, which lose up to
+15.6% of profits under highly constrained grid expansion in 2030, and 8.1% in 2040. Under optimal
+grid expansion, the market values recover largely. Further, the market values of onshore wind
+decrease in all cases – yet at a lower magnitude – while solar PV sees slight increases in its
+profitability in most cases.
+
+
+
+
+                                                  44
+Table 2: Change in profits in the Multi Split scenario, compared to Status Quo.
+
+
+    Year         Level of grid expansion       Offshore wind          Onshore wind          Solar PV
+
+
+                        Cap on 20%                 -15.6%                 -2.8%               2.3%
+
+
+    2030                Cap on 40%                  -8.8%                 -2.7%               0.6%
+
+
+                       System optimal               -1.3%                 -0.5%               1.2%
+
+
+                        Cap on 20%                  -8.1%                 -1.9%               2.9%
+
+
+    2040                Cap on 40%                   0.9%                 -1.5%               0.8%
+
+
+                       System optimal                4.1%                 -2.1%               -1.7%
+
+Source: JRC analysis
+
+Considering these results, an increase in capital cost for renewable resources appears to be more
+realistic in the case of the Multi Split scenario, rather than in the context of the Locational scenario,
+since the latter tends to stabilize and even increase profits. We nonetheless calculated the break-
+even hurdle rate increase for both scenarios, by which the capital cost of CfD-hedged resources would
+need to increase to erase all system-cost savings in 2040. The results can be seen in Table 3.
+
+The break-even hurdle rate increases in the Locational scenario are much higher than in the Multi
+Split scenario, and highest if grid expansion is limited. With a 20% cap on grid expansion, hurdle rates
+would need to increase by 2.8% to wipe out all the gains. This drops to 1.1%, if system optimal grid
+expansion was achieved. The necessary hurdle rate increases would therefore need to be quite large
+to erase all the benefits that can be achieved with the locational policies implied by the Locational
+scenario.
+
+In the Multi Split scenario, the break-even hurdle rates are lower. Especially under constrained grid
+expansion, they would still represent a highly substantial increase in risk perception to wipe out all
+system cost savings (1.0-1.7%). If system-optimal grid expansion was, however, achieved, the
+necessary hurdle rate increase would constitute only 0.4%. At the same time, our results suggest that
+profitability of renewable generation during the merchant tail period could be reduced, making an
+increase in hurdle rates likelier than in the Locational scenario.
+
+Table 3: Break even hurdle rate increase. Base year is 2040.
+
+
+      Level of grid expansion                     Locational                         Multi Split
+
+             Cap on 20%                              2.8%                              1.7%
+
+             Cap on 40%                              1.9%                              1.0%
+
+           System optimal                            1.1%                              0.4%
+Source: JRC analysis
+
+
+
+                                                      45
+4.4.1 Locational investment incentives
+Locational incentives generally improve profits of generators as there is less renewable energy sold
+in the market – though more of it is integrated into the system after redispatch – due to more capacity
+being installed in areas with lower capacity factors. Power prices are higher in these scenarios – due
+to a less-pronounced merit order effect – leading to higher margins of market-exposed generators in
+most cases, as well as more arbitrage opportunities for storage. Only in one case – if applied within
+the Multi Split scenario and if inner-country grid expansion is constrained to 20% – storage producers
+generate slightly less revenue than in the same scenario without locational investment incentives.
+
+
+
+
+Figure 19: Change in profits compared to same scenario without locational investment incentives. White bar
+                                          indicates net change.
+
+
+
+
+                                            Source: JRC analysis
+
+
+
+
+                                                    46
+4.5 Sensitivity analysis for auction effectiveness parameter
+Finally, we assess the impact of the auction effectiveness on the final results. As indicated in section
+3.2.1, we assume an efficiency of 60% as the standard value for this assessment.
+The impact on resource distribution can be seen exemplarily for German onshore wind installations
+in Figure 20, as well as the impact on system cost savings associated with the different reform
+scenarios in 2040, assuming a cap of 40% on inner-country grid expansion. As to be expected, savings
+are reduced when auction effectiveness decreases, yet remain still highly substantial with 32 Bn. EUR
+of system cost savings in the Locational scenario and 17 Bn. EUR in the Multi Split scenario in 2040.
+Reduced savings can be explained by the fact that more renewables are installed in areas with lower
+capacity factors, or at unsuitable locations in the grid, if the auction’s effectiveness is lower. On the
+other hand, an increase in effectiveness to 80% can further increase the associated cost savings.
+These results highlight the importance of highly competitive renewable auctions to maximize the
+benefits of more granular locational pricing.
+
+ Figure 20: Impact on the resource distribution of German onshore wind under different values for auction
+ effectiveness (left), as well as changes in system cost savings (calculated in comparison to the Status Quo
+    scenario) for the scenario with a maximum of 40% inner country grid expansion (right). Year is 2040.
+
+
+
+
+                                             Source: JRC analysis
+
+
+
+
+                                                     47
+5 Discussion
+
+5.1 Supply security
+LMP operation appears to be essential to maintaining security of supply at lowest cost in low-carbon
+electricity systems with a high share of flexibility. This is due to the fact that the coordinated operation
+of flexible assets requires price signals at a high spatial granularity to achieve an efficient dispatch.
+With zonal pricing, we identified substantial deviations from optimal operational patterns of flexibility,
+on some occasions operating against the system’s needs. A higher spatial granularity in wholesale
+pricing is therefore essential to signal to storage operators and flexible consumers what actions fit
+best with the local needs.
+
+As a result of inefficient integration, we identified severe risks to the security of supply, resulting in
+up to 4 TWh of load shedding in 2040 (0.07% of total demand). All of these load shedding events
+occurred at the redispatch stage. Since LMP operation of the same system resulted in perfect
+reliability, these issues can be attributed to the operation of the system, and are not primarily related
+to investment in the wrong places. It is therefore not a matter of insufficient availability of resources,
+but rather an issue how the operation of these resources is coordinated. The Multi Split scenario, on
+the other hand, resulted in substantially lower load shedding, indicating that ambitious bidding zone
+splits can be an important step towards improving the security of supply.
+
+This indicates that zonal markets with large bidding zones struggle with maintaining security of supply
+through the market. Substantial out-of-the-market action becomes necessary to ensure that enough
+power plant capacities are available to provide the necessary redispatch. Our results suggest that the
+Locational scenario, which assumes locational operation and investment signals, could result in up to
+64 GW less firm capacity needed to safeguard operations. Ambitious bidding zone splits, as assumed
+in the Multi Split scenario, could already reduce firm capacity requirements by up to 33 GW. This
+additional capacity need, triggered by the operation of flexibility, must be procured through out-of-
+the-market mechanisms, such as capacity markets or designated grid reserves. ENTSO-E has already
+acknowledged the need for these grid reserves, as indicated by the results of the BZR (ENTSO-E,
+2025a).
+
+Generally, it has been confirmed as well by some TSOs – or associated experts – that the decoupling
+between market trade and physical reality can lead to supply security issues (PSE, 2018; Sapp et al.,
+2024). Coincidentally, the two TSO(-associated) publications outline the two directions of policy action
+through which the issue could be mitigated: While (PSE, 2018) argue for the introduction of LMP – a
+market-based solution – (Sapp et al., 2024) advocate for limiting the operating ranges of power plants
+through the introduction of so-called feasibility ranges. This would mean that TSOs define how power
+plant operators are allowed operate their plants, undermining the liberalization of the electricity sector
+to a large degree. With the issue of grid congestion becoming increasingly dominant in the future, the
+portion handled by the market would likely shrink successively. There is an additional risk, since TSOs
+are not market operators and therefore have a different expertise than NEMOs. It is therefore not a
+given that the prescribed feasibility ranges would automatically optimize the cost of the system.
+There could further be an incentive for TSOs to prioritize short-term operations over, for example, the
+optimal intertemporal dispatch of flexible assets, such as storages or demand response.
+
+
+
+
+                                                    48
+5.2 System cost and welfare effects
+Since less power plants are needed to “correct” inefficient operations from flexible assets, the
+Locational and the Multi Split scenario both reduce the need to burn costly fuels. On the contrary,
+storage and demand response contribute effectively to integrating higher shares of low-carbon
+electricity from renewables or nuclear power plants. This reduces the need for burning fossil fuels in
+2030 and hydrogen in 2040. It is fair to assume that a large share of these fuels would need to be
+imported, therefore we can anticipate that price signals of a higher spatial granularity would likely
+reduce the dependency on energy imports by increasing the utilization of domestic low-carbon energy
+sources.
+
+Lower capacity requirements and lower needs for combustible fuels result in substantially lower costs
+in the Locational and the Multi Split scenario than in the Status Quo scenario. In 2040, the Locational
+scenario leads to cost reductions of up to 61 Bn. EUR annually if inner-country grid expansion is
+capped at 20%. But even under optimal grid expansion, savings would still amount to 26 Bn. EUR
+each year. For comparison, the annual benefits of European electricity market integration were
+estimated at 34 Bn. EUR (ACER, 2022b), thus of a similar magnitude. A substantial amount of the
+estimated savings can already be achieved through an ambitious bidding zone split scenario: The
+Multi Split scenario resulted in cost savings between 10 and 37 Bn. EUR annually in 2040.
+
+Similarly, locational investment signals can contribute to unlocking a part of these cost savings. They
+were found to provide the largest benefit in the Status Quo setting, with today’s bidding zone
+configuration. In these cases, they were able to reduce annual system costs by 12-29 Bn. EUR.
+Analogous to locational operational price signals, their effect is largest when introduced in a setting
+with constrained grid expansion. Both, LMP and locational investment signals can therefore be
+considered also as a hedge against less-than-optimal grid expansion.
+Our results further suggest that both, consumers and producers receive a net benefit from the
+identified cost savings. Analysing the distribution of consumer cost reductions, we can further
+conclude that the overwhelming part of European consumers – in 62-90% of the geographical cells
+that underpin the model – would benefit from lower electricity costs by 2040 in both, the Locational
+and the Multi Split scenario. A cost increase beyond 5 EUR/MWh was identified only in up to 1.2% of
+all cells. These larger cost increases occurred primarily in the Western Balkans, as well as in Northern
+Scandinavia.
+Further, overall profits increase in almost all cases, with the only exception being the Multi Split
+scenario under optimal grid expansion. In general, constrained grid expansion appears to be increasing
+profits for generators and storage, as less grid capacity is available to reduce price arbitrage between
+different locations.
+
+
+5.3 Impact on investment conditions for renewables
+Our results do not suggest that a reform in line with the Locational scenario would increase risks for
+renewable investments during the merchant tail phase. To the contrary, we find that an introduction
+of LMP, in combination with spatially optimized deployment actually increases the market value of
+offshore wind and solar PV in general, as well as onshore wind with a 2030 perspective. Towards
+2040, onshore wind saw a minimal decrease, below 1%. If anything, one could argue that the
+increased market value during the merchant tail phase could therefore rectify a lower cost of capital.
+(Please note that we did not consider any changes in the hurdle rate due to the increased profitability
+in the Locational scenario.) Break even hurdle rates for the Locational scenario are furthermore large,
+reducing the likelihood that a risk increase for renewable investments would erase all efficiency gains.
+
+
+                                                  49
+Nonetheless, policy action should aim to avoid or at least minimize risk increases to maximize the
+benefits from more granular locational pricing.
+
+The situation is somewhat different in the Multi Split scenario. Here we find more decreases in market
+value for wind technologies, while solar PV remains a beneficiary of reforms under most
+configurations. The Multi Split scenario could therefore indeed increase the risk of investing into wind
+generation, which represents a clear disadvantage compared to the other scenarios. An ambitious
+bidding zone split scenario, if to be implemented, should therefore be mitigated by appropriate policy
+action to increase revenue stability for these investments. At the same time the break-even hurdle
+rate increase under optimal grid expansion was estimated at only 0.4%, indicating a non-neglectable
+risk that efficiency gains could be wiped out by a risk increase for renewables, if system-optimal
+volumes of grid expansion are achieved. This increases the need for appropriate policy action if an
+ambitious bidding zone split scenario should be envisaged (compare section 6.4).
+
+
+
+
+                                                  50
+6 Policy options
+The results presented in the previous sections suggest strongly that locational operational price
+signals of a higher spatial granularity are necessary to achieve a market design that ensures a safe
+operation of the European power system without the need for constant redispatching, while keeping
+the cost of the system low. Our results further suggest that locational investment signals are a no-
+regret option, which can reduce the cost of the system, especially when clearing the wholesale market
+at a coarse spatial granularity. In the following, we discuss the three main policy options going
+forward, which are: (1) the widespread introduction of locational investment signals, (2) a gradual
+increase in market clearing resolution by splitting bidding zones, as well as (3) a transition to LMP.
+Please note that (1) can (and potentially should) be combined with the other two options. We further
+discuss how to de-risk renewable investment – which is foreseen to scale up massively in the coming
+decades – in the context of potential reforms towards more granular locational pricing to maximize
+their benefits.
+
+
+6.1 Locational investment signals
+Our results suggest that substantial benefits can be achieved by implementing locational investment
+signals that lead to spatially-optimized investment decisions. Given the high benefits, as well as the
+comparably low cost of implementation, we consider locational investment signals to be a no-regret
+option, which can be implemented regardless of whether the granularity of operational price signals
+should be increased. Implementing policies that steer capacity to those locations where it is most
+beneficial to the system can be considered the highest priority in the current context, as the coming
+decades decide how the system will be set up. If the massive roll-out of renewables and storage
+focusses on the wrong locations, it would result in a costly system which would be tedious to correct.
+
+A locational non-price criterion (compare section 2.1.3) enables Member States to pick those projects
+in an auction process that provide the largest benefit to the system, considering the impact on grid
+congestion. Achieving a meaningful impact within renewable auctions would further rely on giving
+said mechanism an adequate weight, in comparison to other non-price criteria but also with regard
+to the bid price. In addition, it should be considered to mandate that locational impact has to be
+considered in any renewable auction which covers a region where structural grid congestion is present.
+
+Even if the granularity of market clearing will be increased, through bidding zone splits or a full-scale
+introduction of LMP, locational auctions should be implemented, since previous research suggests
+that the effectiveness of short-term operational signals on steering capacity to the most beneficial
+locations is limited (Brown et al., 2020). Incentivizing CfD-hedged resources to move towards the
+right locations without a locational auction mechanism would further mean exposing them to local
+market price differences, for example by indexing the CfD to a national average price12. This, in turn,
+could increase investment risks, as the development of local prices could be hard for investors to
+predict. It is therefore preferable to steer the deployment of capacity through a locational auction
+mechanism, while providing a high degree of security to those investments that receive a CfD,
+indexing said contract to the local price. In this way, operators could be assured to receive the strike
+
+
+
+
+12
+     If a CfD was indexed to a national average price, investments in high-priced regions would be more profitable compared
+        to those in average- or low-priced regions.
+
+
+                                                             51
+price as an effective remuneration of their production when selling their electricity for the local market
+price.
+
+Locational investment signals should further be applied to investment mechanisms beyond renewable
+auctions. Outside of Europe, system operators have already gathered experience with locational
+capacity markets, as CAISO, PJM and Chile have introduced either a nodal or a zonal component to
+the market clearing mechanism. Introducing similar elements in European capacity markets would
+ensure that investments into firm capacity occur in the right locations, enabling a feasible
+(re)dispatch. For hydrogen, the introduction appears to be a no-regret option, as a spatial correlation
+between hydrogen production and renewable surpluses would lead to less stress on the grid (50Hertz
+et al., 2023; Vom Scheidt et al., 2022). The introduction should further be evaluated in the context of
+flexibility auctions, ensuring that storage and demand response are enabled in locations where they
+can most effectively relieve bottlenecks. In this context, it has to be noted that an effective use of
+flexibility for congestion management requires additionally price signals that reflect the local grid
+conditions.
+
+
+6.2 Bidding zone reconfiguration
+Bidding zone splits are the instrument currently foreseen by the European legislation to increase the
+geographical resolution at which the market is cleared. The BZR is conducted regularly and proposes
+new bidding zone configurations that address structural congestion in the grid. The current iteration
+of the BZR proposed to increase the number of European zones by four – still a far way to go from
+the Multi Split scenario investigated in this study which relied on 101 market zones.
+
+The current iteration further started in 2020, and presented final results in spring of 2025. This
+process would have to be sped up to reach a configuration which is closer aligned with the physical
+reality in the grid. In addition, more ambitious splits should be investigated to ensure that a system
+is reached that is sufficiently granular to efficiently coordinate the dispatch of flexible resources.
+
+To achieve a more efficient dispatch, it could further be reasonable to expand the criteria necessary
+to warrant a split of bidding zones. While reducing structural congestion should undoubtedly remain
+a major objective, the system could further benefit from smaller zones, as it would allow to activate
+resources in a more targeted way, for example with the objective of relieving bottlenecks on cross-
+border lines.
+The main downside of a continuous splitting of bidding zones is the increased risk that such a strategy
+would expose investors to. With new splits being implemented every couple of years, they would
+always be exposed to the risk of finding themselves in a zone with unfavourable prices. (Maurer et
+al., 2018) have therefore argued that a one-off reform of the market could be preferable to an
+iterative redesign of bidding zones. Potentially, such a reform could be implemented through the BZR.
+This would, however, require a longer-term outlook, investigating which bidding zone configurations
+would be fit for a net-zero energy system. The outcome could well comprise of several hundred
+market zones, and might resemble an LMP system, at least one of a comparably coarse resolution.
+
+
+6.3 Locational marginal pricing
+The benefits of an LMP implementation assessed in this case study are substantial, with 26-61 Bn.
+EUR of annual savings, depending on how much grid expansion proves to be feasible. Even more
+importantly, LMP operation was able to ensure a completely reliable operation of the system, even if
+investments occurred at suboptimal locations. Zonal operation of the same systems led to high
+
+
+
+                                                   52
+volumes of load shedding in 2040. This highlights the importance of aligning market operations
+closely with the physical reality, as previously noted as well by PSE and experts from Amprion (PSE,
+2018; Sapp et al., 2024).
+
+At the same time, an implementation of LMP would require substantial policy action, amounting to a
+fundamental reform of the European market rules. While the current market rules do not inhibit a
+transition towards LMP in principle (Antonopoulos et al., 2020), some elements may impede its
+introduction. (Scott, 2024) compiled a comprehensive overview of policy measures that might be
+necessary to successfully implement LMP in the European electricity market.
+
+An introduction of LMP would likely warrant a simplification of bidding formats currently used by
+EUPHEMIA, potentially transitioning to unit-based bidding. While portfolios could theoretically be
+nominated as well at each location, a change towards unit-based bids would be reasonable: Such
+portfolios would comprise of a much lower volume than today’s portfolio bids, thereby losing a key
+advantage of the format. Instead, some portfolios would potentially consist only of one power plant.
+Unit-based bidding could, however, provide additional advantages, for example facilitate market
+surveillance. As regulators are clearly aware what kind of power plant is associated with which bid,
+marginal costs can easier be estimated, allowing for more effective market power mitigation (Hogan
+and Pope, 2017). Further, the differentiation between congestion management and balancing,
+introduced as part of the fourth energy package, would need to be removed, since an LMP real-time
+market solves congestion constraints in lockstep with balancing needs (Neuhoff et al., 2024).
+
+Institutional changes appear further necessary for a successful implementation of LMP, as the
+operation of the market is related to the system’s operation to a much higher degree. Accordingly,
+power markets relying on LMP are often operated by an independent system operator (ISO). Creating
+ISOs in Europe could require splitting the system’s operation from the operation of the transmission
+network, and joining it with the operation of the market (Scott, 2024). (Neuhoff et al., 2024) however
+argued that a more practical approach could be an increased cooperation, or potentially even mergers,
+between TSOs and NEMOs.
+
+
+6.4 Mitigating potential risk increases for renewables
+There is an ongoing discussion to what degree more granular locational pricing increases risk for
+renewable investments, erasing some or all benefits associated with reforms. These assessments
+focus on the increase in hurdle rates for renewable investments due to higher risks during the
+merchant tail phase – as well as on higher volume risks, since market periods with a renewable
+generation surplus could occur more frequently in smaller zones or under LMP.
+
+While our results suggest that investors would benefit financially in the Locational scenario during
+the merchant tail phase, risks were identified only for the Multi Split scenario, representing a clear
+disadvantage of this scenario. A straightforward way to address these risks would be to shorten the
+merchant tail by offering CfDs for a longer period, if an ambitious bidding zone split scenario was
+about to be pursued. Our results indicate that this would even benefit European consumers, as CfDs
+result in net payments from generators to consumers across all target years and all scenarios.
+Extending contract periods could therefore marry the desire of investors for safe revenues with lower
+costs to consumers.
+
+Volume risks, as identified by (Blyth et al., 2024) in a UK context, could further be addressed through
+an adapted CfD design where necessary. (Schlecht et al., 2022) have previously proposed a contract
+design under which renewable operators would receive a monthly payment, ensuring a high level of
+revenue security. At the same time, they would be exposed to a zero strike price, effectively paying
+
+
+                                                  53
+back the expected market revenue. The payments would be settled based on the performance of a
+virtual reference plant to ensure the asset is marketed efficiently on the wholesale market. This
+reference could well be calibrated based on the same location of the real installation, referencing a
+weather forecast picked by the renewable operator, as proposed by (Newbery, 2023). In this way,
+volume risk would not be an issue, as the virtual reference would be exposed to the same market
+conditions as the real one. As an added benefit, such a contract design would alleviate other
+distortions that go hand in hand with conventional CfDs (Newbery, 2023; Schlecht et al., 2024).
+
+
+
+
+                                                 54
+7 Conclusions and policy recommendations
+In this study, we have assessed three different market clearing resolutions in the context of the
+European electricity market: The Status Quo, a Multi Split scenario with 101 zones, as well as a
+locationally optimized scenario (Locational) with locational investment signals and locational
+marginal pricing (LMP). The two scenarios relying on bidding zones (Status Quo and Multi Split) were
+further assessed in combination with locational investment signals.
+
+We have identified substantial reliability benefits in the context of the Locational scenario: While both,
+Status Quo and Multi Split scenario led to system adequacy concerns, the Locational scenario was
+always able to maintain a perfectly reliable supply. Locational investment signals were not sufficient
+to solve this issue, indicating that these load shedding events were not primarily a result of
+investment in wrong locations, but rather a result of a suboptimal operation of the system. This was
+further confirmed by simulating an LMP operation of the Status Quo and Multi Split systems, which
+always resulted in perfect reliability. LMP enables an effective integration of flexible assets, such as
+storage and demand response, which, in turn, become important pillars of the system’s security. We
+further note that the Multi Split scenario already improves the reliability of the system considerably,
+leading to substantially lower volumes of load shedding.
+
+This shows that markets with larger bidding zones are unable to provide the necessary operational
+and investment signals to ensure system adequacy without out-of-the-market measures. Instead,
+larger bidding zones require substantial amounts of excess capacity, the associated investment costs
+of which are not covered by market prices. Maintaining the Status Quo bidding zone configuration
+would therefore require creating large reserves outside the market over the next decades to ensure
+a safe supply.
+
+Due to lower capacity and fuel needs, the Locational scenario resulted in substantial economic
+benefits. System cost savings in 2040 were estimated at 26-61 Bn. EUR annually in the Locational
+scenario and at 10-37 Bn. EUR/a in the Multi Split scenario, an order of magnitude comparable to the
+savings associated with the integration of European electricity markets. While wholesale prices
+increase if congestion management measures are being internalized, a more efficient dispatch of
+flexibility reduces the dependence on costly fuels. Simultaneously, this leads to less capacity being
+needed to maintain a stable operation of the system. In zonal markets, on the other hand, storage
+operation was found to regularly operate against the needs of the system, exacerbating both scarcity
+and surplus situations. These findings align with those of the German TSO TenneT, who identified
+similar shortcomings in a German context (TenneT, 2024).
+
+Most of the identified cost savings are passed on to consumers, with consumer costs being reduced
+by 24-58 Bn. EUR each year in the Locational scenario and by 9-35 Bn. EUR/a in the Multi Split
+scenario. Considering the distribution of these benefits, we further find that the overwhelming part
+of European consumers would benefit under both scenarios – in 62-90% of the cells that underpin
+the model – while end-consumer cost increases beyond 5 EUR/MWh, compared to the Status Quo, are
+extremely rare. Less than 1.2% of all cells saw an increase that exceeded this threshold in both
+reform scenarios and under all sensitivities. More substantial increases occurred almost exclusively
+in Northern Scandinavia and on the Western Balkans.
+A substantial part of these benefits can be achieved by introducing locational investment signals.
+Considering the Status Quo scenario, their introduction resulted in system cost savings between 12-
+29 Bn. EUR/a in 2040. Their introduction can be considered as a no-regret option, and as a vital
+element going forward, considering the large volume of power sector investment that is expected to
+come on line within the next decades. If these investments take place in the wrong locations, they
+
+
+                                                   55
+could substantially increase the total cost of the system, while corrections would take a long time.
+Locational investment signals should be implemented even if the spatial resolution of market clearing
+is increased through bidding zone splits or an introduction of LMP, as previous research suggests that
+short-term pricing might not suffice to incentivize efficient investment decisions (Brown et al., 2020).
+
+Producers further tend to profit from more granular locational pricing, increasing their profits in most
+scenarios, and by up to 7%. Internalizing congestion management measures increases the margins
+that can be generated in the market, as they tend to increase wholesale prices, as well as arbitrage
+opportunities.
+
+Further, the Locational scenario results in stable or increased market values for renewable
+technologies. This is especially relevant with regard to discussions whether there is a risk of a reduced
+profitability during the merchant tail period, which could result in higher capital costs. This risk does
+not appear to be substantial under the Locational scenario, given the high profitability of renewable
+investments. Our analysis further suggests that substantial hurdle rate increases between 1.1% and
+2.8% would be necessary to wipe out all system cost savings. The situation is somewhat different in
+the Multi Split scenario, as market values of renewable generators are reduced in several cases. In
+addition, the break-even hurdle rates were estimated to be between 0.4% and 1.7%. In both scenarios,
+the lower break-even hurdle rate occurred, however, in the scenario with optimal grid expansion, while
+the highest occurred when inner-country grid expansion was limited to 20%.
+
+These circumstances convey that risk to renewable investments must be minimized to maximize the
+benefits that can be achieved by more granular locational pricing. There appear to be, however,
+policies which could alleviate these risks by taking over price- and volume risks altogether. Contract
+durations of CfDs could be extended, to reduce the merchant tail period, and thereby the associated
+risks. While we could not identify an increased risk in this period in the case of the Locational scenario,
+this might be a necessary measure if a Multi Split scenario should be pursued. At the same time,
+European consumers would likely benefit from longer contract durations: Our results suggest that
+CfDs result in a net payment to consumers, lowering their energy bills in both, 2030 and 2040.
+Adapting the design of those CfDs could further alleviate any volume risks, as discussed in section
+6.4. Please note that while CfDs generate a benefit for consumers in both target years of our analysis,
+it can, of course, not be ruled out that this balance reverses further down the road. After years of
+substantial additional renewable investment, market values of renewables could decrease further,
+leading to CfDs resulting in net payments from consumers to producers.
+
+Given the large benefits that were observed in the Locational scenario – which were found to be in
+the order of magnitude of the benefits associated with European electricity market integration – we
+recommend the introduction of LMP and of locational investment signals. While this would imply a
+substantial reform of the way that electricity is being traded in Europe, the benefits with regard to
+system security and the system’s cost appears to rectify such a reform. On the other hand, it appears
+hardly feasible to efficiently incorporate flexibility into the system in a market setting with large
+bidding zones.
+
+
+7.1 Policy roadmap
+As a first step in this direction, we recommend to define LMP as a part of the target model, while
+aiming for an introduction in the 2030s. This would give market participants sufficient time to prepare
+for the reform, while allowing for policy measures that flank the introduction of LMP.
+
+Accordingly, locational investment signals should be strengthened or introduced for all investment
+mechanisms as soon as possible. The evaluation of locational impact as part of renewable auctions
+
+
+                                                    56
+should be mandatory in every country with congestion issues. A locational criterion should further be
+introduced in forward capacity markets, hydrogen and flexibility auctions to ensure that the system
+we build today is fit for a net zero future.
+
+Trading hubs for forward trading, as proposed by (ACER, 2023a), should be established to detach
+hedging activities from concrete bidding zone delineations. Further measures – such as unit-based
+bidding – can be introduced in today’s setting, while ensuring an efficient bidding process in an LMP
+system. For a comprehensive list of policy measures that can accompany the introduction of LMP in
+a European setting, we refer the reader to (Scott, 2024).
+
+Further, most benefits with regard to a 2030 horizon can be achieved with an ambitious bidding zone
+split scenario. Implementing the DE5 split, which (ENTSO-E, 2025a) assessed to reduce European
+redispatch by 50%, thus remains a no-regret option. In the next iteration of the BZR, more ambitious
+splits could further be investigated – similar to the one presented in the Multi Split scenario – as these
+could prepare the European power system for the 2030s, reducing the need for a swift introduction
+of LMP, thereby allowing for a thorough implementation. At the same time, another BZR, triggering
+substantial bidding zone reconfigurations, could potentially bind substantial resources and lead to
+significant uncertainty if it was clear to market participants that LMP was about to be introduced only
+a couple of years later. This is a trade-off that needs to be weighed carefully.
+
+
+
+
+                                                   57
+References
+50Hertz, Amprion, Tennet, Transnet BW, 2023. Netzentwicklungsplan Strom 2037 mit Ausblick
+       2045, Version 2023.
+Aarhus University, TU Berlin, 2024. technology-data. https://technology-data.readthedocs.io/.
+ACER, 2025. OPINION No 09/2025 on the transmission system operators’ proposal on the
+       alternative bidding zone configurations.
+ACER, 2024. Transmission capacities for cross-zonal trade of electricity and congestion
+       management in the EU - 2024 Market Monitoring Report.
+ACER, 2023a. Further Development Of The EU Electricity Forward Market.
+ACER, 2023b. Progress of EU electricity wholesale market integration - 2023 Market Monitoring
+       Report.
+ACER, 2022a. ACER Decision 11-2022 on alternative BZ configurations - Annex I.
+ACER, 2022b. Final Assessment of the EU Wholesale Electricity Market Design.
+AFRY, 2025. Enhanced National electricity market design for Great Britain.
+AFRY, 2023. Review of electricity market design in Great Britain.
+       https://afry.com/sites/default/files/2023-
+       09/afry_brochure_energy_market_report_phase_two_summary_report.pdf
+Antonopoulos, G., Vitiello, S., Fulli, G., Masera, M., 2020. Nodal pricing in the European internal
+       electricity market. Publications Office, LU.
+BEE, BDEW, BDI, DBV, Energy Traders Deutschland, VBW, VCI, VDA, VKU, ZVEI, 2024. Gemeinsamer
+       Appell führender Wirtschaftsverbände zum Erhalt der deutschen Stromgebotszone.
+Blyth, W., Gross, R., Heptonstall, P., MacIver, C., Jamieson, M., 2024. Zonal Pricing, Volume Risk and
+        the 2030 Clean Power Target.
+Brattle Group, 2024. ERCOT CONE for 2026.
+Brattle Group, 2022. PJM CONE 2026/2027 Report.
+Brown, D.P., Zarnikau, J., Woo, C.-K., 2020. Does locational marginal pricing impact generation
+       investment location decisions? An analysis of Texas’s wholesale electricity market. J Regul
+       Econ 58, 99–140. https://doi.org/10.1007/s11149-020-09413-0
+del Río, P., 2017. Designing auctions for renewable electricity support. Best practices from around
+         the world. Energy for Sustainable Development 41, 1–13.
+         https://doi.org/10.1016/j.esd.2017.05.006
+EIA, 2024. Capital Cost and Performance Characteristics for Utility-Scale Electric Power Generating
+        Technologies.
+Eicke, A., Khanna, T., Hirth, L., 2020. Locational Investment Signals: How to Steer the Siting of New
+         Generation Capacity in Power Systems? EJ 41. https://doi.org/10.5547/01956574.41.6.aeic
+Elia, 2023. Adequacy & Flexibility Study for Belgium (2024-2034).
+Elia, 2022. Cout d’un nouvel entrant.
+ENTSO-E, 2025a. Bidding Zone Review of the 2025 Target Year.
+ENTSO-E, 2025b. TYNDP 2024.
+
+
+                                                    58
+ENTSO-E, 2024. Dynamic Line Rating. https://www.entsoe.eu/Technopedia/techsheets/dynamic-line-
+      rating-dlr. Accessed: 13.08.2024.
+ENTSO-E, 2023a. TYNDP 2022 System Needs Study – Final Version May 2023.
+ENTSO-E, 2023b. European Resource Adequacy Assessment 2023.
+      https://www.entsoe.eu/outlooks/eraa/2023/
+EPA, 2018. Nuclear Power Plant Life Extension Cost Development Methodology.
+European Commission, 2024. Impact Assessment Report Europe’s 2040 climate target and path to
+       climate neutrality by 2050 building a sustainable, just and prosperous society.
+FTI Consulting, 2025. Impact of a Potential Zonal Market Design in Great Britain.
+FTI Consulting, 2023. High-level response to recent publications on locational wholesale electricity
+        prices in GB.
+FTI Consulting, Energy Systems Catapult, 2023. Assessment of locational wholesale electricity
+        market design options in GB.
+Glaum, P., Hofmann, F., 2023. Leveraging the existing German transmission grid with dynamic line
+       rating. Applied Energy 343, 121199. https://doi.org/10.1016/j.apenergy.2023.121199
+Hirth, L., Ockenfels, A., Bichler, M., Edenhofer, O., Grimm, V., Löschel, A., Matthes, F.Chr., Maurer, C.,
+          Neuhoff, K., Pittel, K., Warmbach, A., Zachmann, G., 2024. Der deutsche Strommarkt braucht
+          lokale Preise.
+Hirth, L., Schlecht, I., Maurer, C., Tersteegen, B., 2019. Cost- or market-based? Future redispatch
+          procurement in Germany.
+Hogan, W.W., Pope, S.L., 2017. Priorities for the Evolution of an Energy‐Only Electricity Market
+       Design in ERCOT.
+Hörsch, J., Hofmann, F., Schlachtberger, D., Brown, T., 2018. PyPSA-Eur: An open optimisation model
+        of the European transmission system. Energy Strategy Reviews 22, 207–215.
+        https://doi.org/10.1016/j.esr.2018.08.012
+Knörr, J., Bichler, M., Dobos, T., 2024. Zonal vs. Nodal Pricing: An Analysis of Different Pricing Rules in
+         the German Day-Ahead Market. https://doi.org/10.48550/arXiv.2403.09265
+Lété, Q., Smeers, Y., Papavasiliou, A., 2022. An analysis of zonal electricity pricing from a long-term
+         perspective. Energy Economics 107, 105853. https://doi.org/10.1016/j.eneco.2022.105853
+Maurer, C., Zimmer, C., Hirth, L., 2018. Nodale und zonale Strompreissysteme im Vergleich.
+        https://neon.energy/Neon_Nodale-Zonale-Preise_BMWi.pdf
+NERA, 2020. Costs and Benefits of Access Reform.
+       https://www.aemc.gov.au/sites/default/files/documents/nera_benchmarking_consultant_repo
+       rt_-_aemc_transmission_access_reform_-_march_update.pdf
+Neuhoff, K., Barquin, J., Bialek, J.W., Boyd, R., Dent, C.J., Echavarren, F., Grau, T., von Hirschhausen, C.,
+       Hobbs, B.F., Kunz, F., Nabe, C., Papaefthymiou, G., Weber, C., Weigt, H., 2013. Renewable
+       electric energy integration: Quantifying the value of design of markets for international
+       transmission capacity. Energy Economics 40, 760–772.
+       https://doi.org/10.1016/j.eneco.2013.09.004
+Neuhoff, K., Klaucke, F., Olmos, L., Ryan, L., Vitielo, S., Papavasiliou, A., Nabe, C., Staschus, K., 2024.
+       EU power market reform toward locational pricing: Rewarding flexible consumers for
+       resolving transmission constraints.
+
+
+
+                                                     59
+Newbery, D., 2023. Efficient Renewable Electricity Support: Designing an Incentive-compatible
+      Support Scheme. EJ 44. https://doi.org/10.5547/01956574.44.3.dnew
+Öberg, S., Odenberger, M., Johnsson, F., 2022. Exploring the competitiveness of hydrogen-fueled gas
+        turbines in future energy systems. International Journal of Hydrogen Energy 47, 624–644.
+        https://doi.org/10.1016/j.ijhydene.2021.10.035
+Papavasiliou, A., 2021. Overview of EU Capacity Remuneration Mechanisms.
+Pöller, M., 2024. System stability in a renewables-based power system.
+PSE, 2024. Zintegrowany Raport Wplywu 2023.
+PSE, 2018. EU electricity market. the good, the bad and the ugly.
+PyPSA, 2025. PyPSA: Python for Power System Analysis - Documentation.
+       https://pypsa.readthedocs.io/. Accessed: 23.09.2025.
+RTE, 2025. Schéma décennal de développement du réseau - Synthèse.
+RTE, 2022. Critere Securite Proposition De Mise A Jour 2022.
+Sapp, F., Maaz, A., Peters, A., Flinkerbusch, K., 2024. Zurück zur Physik – Wege zur
+         Zusammenführung von Stromhandel und Netzbetrieb.
+Schlecht, I., Hirth, L., Maurer, C., 2022. Financial Wind CfDs.
+Schlecht, I., Maurer, C., Hirth, L., 2024. Financial contracts for differences: The problems with
+       conventional CfDs in electricity markets and how forward contracts can help solve them.
+       Energy Policy 186, 113981. https://doi.org/10.1016/j.enpol.2024.113981
+Scott, D., 2024. Mechanics of implementing nodal pricing in European wholesale markets.
+        https://blueprint.raponline.org/deep-dive/implementing-nodal-pricing/. Accessed: 03.27.2025.
+TenneT, 2024. Quo Vadis, Großbatteriespeicher?
+Thomaßen, G., Chondrogiannis, S., Flego, G., Vitiello, S., 2023. Redesigning the European electricity
+      market: an overview of policy options and their implications. Publications Office, LU.
+Thomaßen, G., Fuhrmanek, A., 2025. Where to build renewables in Europe? The benefits of locational
+      auction design. [submitted manuscript].
+Thomaßen, G., Fuhrmanek, A., Cadenovic, R., Pozo Camara, D., Vitiello, S., 2024. Redispatch and
+      congestion management: future proofing the European power market. Publications Office,
+      LU.
+Tiedemann, S., Stiewe, C., Kratzke, C., Hirth, L., Jentsch, M., Damm, N., Gerhardt, N., Pape, C., 2024.
+       Gebotszonenteilung: Auswirkungen auf den Marktwert der Erneuerbaren Energien im Jahr
+       2030. Potsdam Institute for Climate Impact Research.
+       https://doi.org/10.48485/PIK.2024.002
+Triolo, R.C., Wolak, F.A., 2022. Quantifying the benefits of a nodal market design in the Texas
+         electricity market. Energy Economics 112, 106154.
+         https://doi.org/10.1016/j.eneco.2022.106154
+Vom Scheidt, F., Qu, J., Staudt, P., Mallapragada, D.S., Weinhardt, C., 2022. Integrating hydrogen in
+      single-price electricity systems: The effects of spatial economic signals. Energy Policy 161,
+      112727. https://doi.org/10.1016/j.enpol.2021.112727
+von der Leyen, U., 2024. Dan Jørgensen - Mission letter.
+
+
+
+
+                                                    60
+List of abbreviations and definitions
+
+
+a           year
+
+AC          Alternating current
+
+ACER        Agency for the Cooperation of Energy Regulators
+
+AHC         Advanced hybrid coupling
+
+Bn          Billion
+
+BZR         Bidding Zone Review
+
+CAISO       California Independent System Operator
+
+CACM        Capacity allocation and congestion management
+
+CCGT        Combined cycle gas turbine
+
+CfD         Contract for difference
+
+CNEC        Critical network element with a contingency
+
+CWE         Central Western Europe
+
+DC          Direct current
+
+ENTSO-E     European Network of Transmission System Operators for Electricity
+
+EUR         Euro
+
+EU          European Union
+
+ETS         Emissions trading system
+
+FBMC        Flow-based market coupling
+
+GBP         Pound Sterling
+
+GSK         Generator shift key
+
+GW          Gigawatt
+
+GWh         Gigawatthour
+
+HVDC        High-voltage direct current
+
+JRC         Joint Research Centre
+
+LMP         Locational marginal pricing
+
+Mio         Million
+
+MWh         Megawatthour
+
+NEMO        Nominated Electricity Market Operators
+
+NDP         Network development plan
+
+
+
+                                            61
+NTC     Net transfer capacity
+
+NZIA    Net Zero Industry Act
+
+OCGT    Open cycle gas turbine
+
+PJM     Pennsylvania New Jersey Maryland Interconnection
+
+PV      Photovoltaics
+
+PSE     Polskie Sieci Elektroenergetyczne
+
+PTDF    Power transfer distribution factor
+
+RAM     Remaining available margin
+
+TSO     Transmission System Operator
+
+TYNDP   Ten-year network development plan
+
+TWh     Terawatthour
+
+UK      United Kingdom
+
+US      United States
+
+WACC    Weighted average cost of capital
+
+
+
+
+                                           62
+List of figures
+Figure 1: Change in total system cost compared to Status Quo scenario. 40% and 20% limit refer
+to those grid expansion scenarios that implement a corresponding cap on inner-country grid
+expansion. White bar indicates net change............................................................................................................................. 6
+
+Figure 2: Bidding zone configuration in the Multi Split scenario............................................................................ 15
+
+Figure 4: Modelling workflow ..................................................................................................................................................... 26
+
+Figure 5: Difference in inner-country grid investment in comparison to Status Quo scenario. ........... 28
+
+Figure 6: Load shedding in zonal scenarios in the years 2030 and 2040. Locational scenario not
+shown as no load shedding was observed. .......................................................................................................................... 29
+
+Figure 7: Load shedding in Status Quo scenario, year 2040 with optimal grid expansion. ................... 30
+
+Figure 8: Change in primary fuel use compared to Status Quo scenario. Differences between
+reductions and increases due to conversion and storage losses. Please note that hydrogen
+production through electrolysis describes an output of the system, i.e. a negative production. A
+positive value therefore describes a decrease in hydrogen production compared to the Status Quo
+scenario. ................................................................................................................................................................................................... 31
+
+Figure 9: Operation in opposite direction of system optimum. Scenario is Status Quo in 2040 with
+optimal grid expansion. ................................................................................................................................................................... 32
+
+Figure 11: Change in total system cost compared to Status Quo scenario. White bar indicates net
+change. ...................................................................................................................................................................................................... 34
+
+Figure 12: Change in system cost compared to same scenario without locational investment
+incentives. White bar indicates net change. ......................................................................................................................... 35
+
+Figure 14: Change in consumer costs compared to Status Quo scenario. White bar indicates net
+change. ...................................................................................................................................................................................................... 37
+
+Figure 15: Geographical and statistical distribution of change in end consumer costs in Locational
+scenario, compared to Status Quo. ........................................................................................................................................... 39
+
+Figure 16: Geographical and statistical distribution of change in end consumer costs in Multi Split
+scenario, compared to Status Quo. ........................................................................................................................................... 40
+
+Figure 17: Change in consumer costs compared to same scenario without locational investment
+incentives. White bar indicates net change. ......................................................................................................................... 41
+
+Figure 18: Change in profits compared to Status Quo scenario. White bar indicates net change. .... 43
+
+Figure 19: Change in profits compared to same scenario without locational investment incentives.
+White bar indicates net change. ................................................................................................................................................. 46
+
+Figure 20: Impact on the resource distribution of German onshore wind under different auction
+efficiencies (left), as well as changes in system cost savings (calculated in comparison to the Status
+Quo scenario) for the scenario with a maximum of 40% inner country grid expansion (right). Year is
+2040. .......................................................................................................................................................................................................... 47
+
+
+
+
+                                                                                                       63
+List of tables
+Table 1: Change in profits in the Locational scenario, compared to the Status Quo. ................................ 44
+
+Table 2: Change in profits in the Multi Split scenario, compared to Status Quo. ......................................... 45
+
+Table 3: Break even hurdle rate increase. Base year is 2040. ................................................................................ 45
+
+
+
+
+                                                                      64
+Getting in touch with the EU
+
+In person
+All over the European Union there are hundreds of Europe Direct centres. You can find the address of the cen-
+tre nearest you online (european-union.europa.eu/contact-eu/meet-us_en).
+On the phone or in writing
+Europe Direct is a service that answers your questions about the European Union. You can contact this service:
+— by freephone: 00 800 6 7 8 9 10 11 (certain operators may charge for these calls),
+— at the following standard number: +32 22999696,
+— via the following form: european-union.europa.eu/contact-eu/write-us_en.
+
+
+Finding information about the EU
+
+Online
+Information about the European Union in all the official languages of the EU is available on the Europa web-
+site (european-union.europa.eu).
+EU publications
+You can view or order EU publications at op.europa.eu/en/publications. Multiple copies of free publications can
+be obtained by contacting Europe Direct or your local documentation centre (european-
+union.europa.eu/contact-eu/meet-us_en).
+EU law and related documents
+For access to legal information from the EU, including all EU law since 1951 in all the official language ver-
+sions, go to EUR-Lex (eur-lex.europa.eu).
+EU open data
+The portal data.europa.eu provides access to open datasets from the EU institutions, bodies and agencies.
+These can be downloaded and reused for free, for both commercial and non-commercial purposes. The portal
+also provides access to a wealth of datasets from European countries.
+The Joint Research Centre (JRC) provides independent,
+evidence-based knowledge and science, supporting
+EU policies to positively impact society
+
+
+
+
+Scan the QR code to visit:
+The Joint Research Centre: EU Science Hub
+https://joint-research-centre.ec.europa.eu
+

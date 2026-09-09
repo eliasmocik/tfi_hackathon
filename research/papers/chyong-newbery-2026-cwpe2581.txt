@@ -1,0 +1,2666 @@
+Marginal curtailment under network con-
+straints: evidence from the 2030 GB power
+system
+
+Chi Kong Chyong1 and David Newbery2
+EPRG Working Paper                EPRG2524
+Cambridge Working Paper in Economics                    CWPE2581
+
+Abstract
+High Variable Renewable Electricity (VRE) penetration inevitably leads to
+curtailment (shedding), typically measured by average curtailment. Marginal
+curtailment (mc, the fraction of potential output curtailed by the last MW) can be
+many times higher, raising the long-run marginal cost of investment, proportional to
+1/(1-mc). A unit commitment and economic dispatch model of Britain, divided into
+seven zones by transmission constraints in 2030, demonstrates that these
+constraints considerably increase mc compared to no congestion, despite the
+considerable planned expansion of transmission, interconnectors, and storage that
+mitigates curtailment. The current auction design favours levelised costs, ignoring
+curtailment, but long-run marginal costs may be 90% higher, suggesting the need for
+careful locational planning and VRE support design.
+
+
+
+Keywords Variable Renewable Electricity, Marginal Curtailment, Average
+Curtailment, Levelised Cost of Electricity, VRE support design.
+
+JEL Classification L94; Q28; Q42; Q48
+
+Contact      David Newbery, dmgn@cam.ac.uk
+             Energy Policy Research Group,
+             Faculty of Economics,
+             University of Cambridge,
+             Sidgwick Ave., Cambridge,
+             CB3 9DD, UK
+
+
+1
+  Oxford Institute for Energy Studies, 57 Woodstock Road, Oxford OX2 6FA.
+kong.chyong@oxfordenergy.org
+2
+  dmgn@cam.ac.uk, Faculty of Economics, University of Cambridge, Sidgwick Ave.
+Cambridge CB3 9DD.
+                            www.eprg.group.cam.ac.uk
+    Marginal curtailment under network constraints: evidence from the 2030 GB
+                                  power system
+                           Chi Kong Chyong1 and David Newbery2
+                                 Version 30 January 2026
+
+                                            Abstract
+       High Variable Renewable Electricity (VRE) penetration inevitably leads to curtailment
+       (shedding), typically measured by average curtailment. Marginal curtailment (mc, the fraction
+       of potential output curtailed by the last MW) can be many times higher, raising the long-run
+       marginal cost of investment, proportional to 1/(1-mc). A unit commitment and economic
+       dispatch model of Britain, divided into seven zones by transmission constraints in 2030,
+       demonstrates that these constraints considerably increase mc compared to no congestion,
+       despite the considerable planned expansion of transmission, interconnectors, and storage that
+       mitigates curtailment. The current auction design favours levelised costs, ignoring
+       curtailment, but long-run marginal costs may be 90% higher, suggesting the need for careful
+       locational planning and VRE support design.
+
+       Key words: Variable Renewable Electricity, Marginal Curtailment, Average Curtailment,
+       Levelised Cost of Electricity, VRE support design.
+
+    1. Introduction
+Electricity systems in most countries are undergoing rapid expansion of variable renewable
+electricity (VRE), particularly wind and solar photovoltaic generation. This reflects both
+decarbonisation policies and the sustained decline in the cost of these technologies, which has
+brought new renewables into closer competition with fossil generation once carbon costs are
+factored in. As VRE penetration rises, curtailment becomes more common. When demand,
+storage, and export opportunities are saturated, surplus output has limited value and must be
+spilled.
+Recent work shows that curtailment is not solely determined by VRE penetration. It also
+depends on the composition of VRE technologies and on where they are located. Newbery
+and Chyong (2025) show that expanding one VRE technology, for example, onshore wind,
+can increase curtailment of other technologies, including offshore wind and solar PV, because
+their output profiles differ across hours. In such settings, marginal curtailment, the
+curtailment associated with an incremental unit of capacity, can be far above average
+curtailment. This divergence is particularly strong in systems with multiple VRE
+technologies, compared with systems dominated by a single resource such as the island of
+Ireland, which has a high share of onshore wind (Newbery, 2023).
+We extend that analysis by focusing on the role of internal transmission constraints. Where
+internal boundaries bind, additional VRE capacity affects not only local balancing but also
+
+
+1
+  Corresponding author; Oxford Institute for Energy Studies, 57 Woodstock Road, Oxford OX2 6FA.
+kong.chyong@oxfordenergy.org
+2
+  Faculty of Economics, University of Cambridge, Sidgwick Ave., Cambridge CB3 9DE.
+dmgn@cam.ac.uk
+
+                                                                                                   1
+interzonal flows and the curtailment of neighbouring regions. The resulting spillovers raise
+marginal curtailment for both new and existing generation. In turn, they increase the long-run
+marginal cost of investment in constrained areas even when average curtailment remains
+relatively modest. In this setting, curtailment is not simply a feature of technology and
+temporal coincidence; network constraints and the spatial pattern of investment also shape it.
+These issues are closely linked to the legacy structure of transmission networks. Most
+systems were built around large, centralised fossil and nuclear stations and designed to
+deliver power to load centres. VRE, by contrast, is typically located where resources are
+strongest, often distant from demand. As deployment has accelerated, internal and inter-
+regional congestion has become more frequent, prompting the need for network
+reinforcement mechanisms to better guide investment and operation across space. In Great
+Britain (GB), these concerns were a central motivation for the Review of Electricity Market
+Arrangements (REMA) launched in 2022 (HMG, 2022).
+A key feature of this transition is the widening gap between average and marginal
+curtailment. Average curtailment is the metric most commonly reported by system operators
+and planners, but marginal curtailment is what governs the economics of incremental
+investment. Where transmission capacity is poorly aligned with the emerging spatial pattern
+of generation and demand, marginal curtailment can exceed average curtailment by a wide
+margin. That has direct implications for both policy and investment, because it strengthens
+the case for more explicit locational guidance to avoid further concentration of capacity
+behind already constrained boundaries.
+Congestion can be managed through a mix of better siting of new generation, improved
+utilisation of existing assets, and long-term transmission investment. In GB, the National
+Energy System Operator, NESO, has been tasked with strategic spatial energy planning.
+These measures are necessary, but we emphasise a complementary point: when binding
+internal constraints are present, VRE investments should be assessed using marginal rather
+than average delivered costs. As we show below, the marginal cost of delivered VRE
+increases non-linearly with marginal curtailment, scaling as 1/(1-mc), where mc denotes
+marginal curtailment (as a share of potential output).
+In systems where investment decisions are decentralised, the relevance of these cost
+differences depends on whether they are visible to investors. In liberalised electricity markets,
+the siting of new capacity is guided by prices, network charges, and the design of renewable
+support schemes rather than by central allocation. Internal constraints must be respected in
+dispatch regardless of the pricing regime, such as national, zonal or locational marginal
+pricing. However, the extent to which curtailment risk is reflected in revenues and support
+payments depends on the degree of spatial price aggregation and on contract design. When
+marginal curtailment differs sharply across locations but is not reflected in commercial
+incentives, investment can be steered towards high-resource areas even when the delivered-
+value penalty from congestion dominates. What has been missing from much of the policy
+debate and from much applied economic modelling is a systematic measurement of how
+marginal curtailment varies across space in constrained systems and what that implies for
+location-specific long-run marginal costs of renewable investment.
+
+                                                                                               2
+We address that gap by quantifying average and marginal curtailment across zones in a power
+system with binding internal transmission constraints and by deriving location-specific long-
+run marginal costs for wind and solar generation. Using a 2030 GB electricity market as a
+detailed case study, we show how internal constraints translate into sharp differences in
+marginal delivered costs across space, and we discuss the implications for aligning pricing
+and support arrangements with efficient renewable deployment in liberalised electricity
+markets more broadly. The article is structured as follows: we review the literature in the next
+section; present our research framework in Section 3, Sections 4 and 5 report modelling
+results and implications for long-run marginal costs; policy implications are presented in
+Section 6 and conclusions in Section 7.
+    2. Literature review
+The rapid expansion of wind and solar has brought renewed attention to whether electricity
+market arrangements provide sufficiently clear spatial signals for efficient investment and
+system operation. As VRE deployment increases, congestion and curtailment are increasingly
+determined by where generation is built relative to demand and network capacity. Much of
+the academic and policy literature still treats these outcomes in highly aggregated terms.
+Curtailment is typically reported as a system-level average, even though the economics of
+further investment depend on marginal curtailment: the additional curtailment caused by an
+incremental increase in capacity in a particular location. Compared with average curtailment,
+marginal curtailment has received much less systematic treatment, despite being the relevant
+metric for the viability of new projects in constrained parts of the system.
+Early work on renewable curtailment often abstracted from internal transmission constraints.
+Newbery (2021), for example, examined wind curtailment in the Single Electricity Market in
+the island of Ireland under frequency-stability constraints but did not model internal system
+bottlenecks. Simshauser and Newbery (2024) analysing a Renewable Energy Zone in
+Queensland, show that when export limits bind, marginal curtailment considerably exceeds
+average curtailment. Newbery and Chyong (2025) extend this logic to a multi-technology
+setting in simulations of a future GB power system. Under a copper-plate representation with
+export constraints but without internal transmission limits, they report marginal-to-average
+curtailment ratios in the range of five to seven. The implication is that even without internal
+congestion, the relationship between renewable penetration and the marginal cost of
+additional clean generation can be strongly non-linear.
+In parallel, a large empirical and modelling literature evaluates how spatial price granularity -
+typically zonal pricing or locational marginal pricing (LMP) - affects dispatch efficiency and,
+in some cases, investment incentives. On dispatch efficiency, evidence from markets that
+have adopted nodal pricing points shows measurable operational efficiency gains. In ERCOT,
+Zarnikau et al. (2014) report that nodal pricing reduced average wholesale prices paid by
+load-serving entities by around 2-3%. Triolo and Wolak (2022) estimate a 3.9% reduction in
+thermal generation costs, translating into annual savings exceeding USD 300 million. Wolak
+(2011) documents a 2.5% reduction in fuel consumption for gas-fired generation following
+the introduction of nodal pricing in California. While these contributions establish that
+dispatch outcomes can improve with greater spatial granularity they say less about how
+
+                                                                                               3
+curtailment evolves across pricing regimes or, the far more important issue of how spatial
+pricing affects the economics of incremental renewable investment.
+In the same vein, European contributions tend to focus on zonal pricing and the configuration
+of bidding zones for existing generation. Using data and scenarios associated with ENTSO-
+E’s Bidding Zone Review, Bichler et al. (2025) simulate alternative zonal arrangements for
+Germany and find only modest system-wide dispatch efficiency gains. Dobos et al. (2025)
+similarly conclude that data-driven zone proposals deliver limited and unstable improvements
+in congestion management. In the Swedish context, Loiacono et al. (2025) find clearer price
+differentiation in constrained southern regions, but relatively small effects on aggregate
+efficiency. Thus, this strand of work suggests that the main step-change in dispatch efficiency
+comes from moving away from a single national price where congestion is material; beyond
+that, the benefits of further refinement depend on the extent to which internal congestion
+becomes persistent as VRE penetration increases.
+The more important (in terms of system cost) literature examines investment responses and
+curtailment outcomes under different degrees of spatial price differentiation. Ambrosius et al.
+(2020), using a multilevel optimisation model of the German market, find that optimally
+defined price zones can reduce renewable curtailment and redirect investment across
+technologies. Katzen and Leslie (2024) provide empirical evidence from Australia that zonal
+pricing can encourage siting behind constraints, with observed curtailment rates of 4.4% for
+wind and 4.7% for solar - levels they argue would likely be lower under nodal pricing. Also
+in Australia Newbery and Biggar (2024) showed that if VRE developers pay the full cost of
+connecting to an unconstrained system, accepting unremunerated curtailment allocated in
+proportion to offers leads to efficient sizing of transmission and VRE investment. Lundin
+(2022) finds that Sweden’s zonal reform induced developers to reallocate around 18% of
+planned wind projects towards higher-priced zones, indicating that investment can respond to
+spatial price differentials when these are sufficiently salient.
+More recent work also highlights the interaction between spatial pricing and demand-side
+flexibility. Using a high-resolution European model, Boehnke et al. (2025) show that nodal
+pricing reveals localised “flexibility hot spots”, where distributed storage, electric vehicles
+and heat pumps deliver higher system value than under zonal pricing. Lyden et al. (2024)
+report analogous findings for Great Britain, showing that locational pricing changes the
+operating cost of heat pumps across regions and can influence where electrified heat is
+deployed. Kenis et al. (2024) extend the argument to hybrid offshore wind and hydrogen
+production, finding that nodal pricing can reduce curtailment and increase welfare when
+flexible demand is co-located with generation. The broader point is that spatial price
+granularity has implications beyond generation dispatch: it can shape the location and value
+of flexibility resources that mitigate curtailment.
+The welfare implications of granular pricing have been examined in both theoretical and
+applied settings. Green (2007) estimates that nodal pricing in a stylised GB system could
+increase welfare by around 1.3% of generator revenues. Neuhoff et al. (2013), using a
+European network model, find that nodal pricing can increase cross-border flows by 34% and
+reduce operating costs by up to EUR 2 billion per year. Aravena and Papavasiliou (2016)
+
+                                                                                                  4
+compare nodal and zonal coordination mechanisms and show that zonal designs can lead to
+higher balancing and redispatch costs, particularly when forecast errors are material, which is
+directly relevant in systems with high shares of wind and solar.
+Despite the breadth of this literature, two central gaps remain. First, curtailment is still most
+often analysed as an average or aggregate outcome rather than as a marginal object linked to
+incremental investment in specific locations. Second, even when studies compare uniform,
+zonal, and nodal pricing in terms of dispatch efficiency or welfare, they rarely examine how
+binding internal transmission constraints reshape marginal curtailment and, through that
+channel, alter long-run investment incentives. These limitations are also visible in applied
+modelling and planning work,3 which often reports total curtailed volumes or constraint costs
+but does not quantify marginal curtailment or translate it into the long-run marginal cost of
+renewable deployment (Oree et al., 2017; Koltsaklis and Dagoumas, 2018; Dagoumas and
+Koltsaklis, 2019; van Ouwerkerk et al., 2022). This matters for market design and support-
+scheme calibration, where marginal metrics serve as the basis for assessing the cost of
+additional capacity in constrained areas.
+We contribute to this literature by explicitly computing both average and marginal
+curtailment in a system with binding internal transmission constraints, and by documenting
+how marginal curtailment varies across technologies and locations. We then translate these
+estimates into location-specific long-run marginal costs of wind and solar investment, linking
+curtailment dynamics directly to the investment problem faced in liberalised markets. In
+doing so, we shift attention from average outcomes and aggregate efficiency comparisons to
+the marginal, location-specific costs that sit at the centre of efficient renewable deployment
+when congestion is persistent.
+    3. Research framework
+3.1 A stylised dispatch framework, marginal curtailment, and cost metrics
+To make the role of internal transmission constraints transparent, we use a stylised linear
+dispatch problem that reproduces the feasibility logic of a standard unit commitment and
+economic dispatch (UCED) model (for detailed mathematical formulation of the UCED
+model, see Appendix 3 and for data inputs and assumption see Appendix 1), while abstracting
+from unit commitment binaries and other operational details that are not needed for the
+curtailment results that follow.
+
+Consider a power system comprising a set of zones 𝑧 ∈ 𝑍, connected by transfer-constrained
+internal boundaries, and operating over a set of hours ℎ ∈ 𝐻. Variable renewable electricity
+(VRE) generation is indexed by technology 𝑖∈𝐼, where 𝐼={onshore wind, offshore wind, solar
+PV}. Dispatchable generation technologies are indexed by 𝑗∈𝐽.
+
+
+3
+ See, e.g., consulting studies commissioned to inform the GB Review of Electricity Market
+Arrangements (REMA). These consulting studies provide valuable system-specific insight on the
+potential impacts of spatial pricing reform. Studies by FTI Consulting (2023, 2025), AFRY (2025a,
+b), Aurora (2023), Frontier Economics & LCP Delta (2024), and LCP Delta (2024) model various
+zonal and national pricing scenarios, primarily using dispatch and investment models calibrated to
+GB’s network and capacity plans.
+
+                                                                                                     5
+For each technology, zone and hour, the potential VRE output 𝑤   ̅ 𝑖𝑧ℎ is exogenously given by
+installed capacity and weather conditions. Actual realised VRE generation 𝑤𝑖𝑧ℎ may be lower
+than potential output due to system constraints, with the difference interpreted as curtailment.
+Dispatchable generation 𝑔𝑖𝑧ℎ , interzonal power flows 𝑓𝑧→𝑘,ℎ and (where relevant) storage
+operations ensure hourly balance. The system is represented by the following constraints.
+
+VRE availability and curtailment: 0 ≤ 𝑤𝑖𝑧ℎ ≤ 𝑤                   ̅ 𝑖𝑧ℎ − 𝑤𝑖𝑧ℎ , where 𝑐𝑖𝑧ℎ
+                                                  ̅ 𝑖𝑧ℎ , 𝑐𝑖𝑧ℎ ≡ 𝑤
+denotes curtailment of technology 𝑖 in zone 𝑧 during hour ℎ.
+
+Zonal power balance: ∑𝑗 𝑔𝑗𝑧ℎ + ∑𝑖 𝑤𝑗𝑧ℎ + ∑𝑘 𝑓𝑘→𝑧,ℎ = 𝑑𝑧ℎ + ∑𝑘 𝑓𝑧→𝑘,ℎ , where 𝑑𝑧ℎ denotes
+electricity demand in zone 𝑧 and hour ℎ. Storage charging and discharging can be included
+without loss of generality, but are omitted here for expositional clarity.
+
+Internal transmission constraints: 0 ≤ 𝑓𝑧→𝑘,ℎ ≤ 𝐹̅𝑧𝑘 , where 𝐹̅𝑧𝑘 denotes the transfer
+capacity of the internal boundary between zones 𝑧 and 𝑘.
+
+Dispatchable generation bounds: 0 ≤ 𝑔𝑗𝑧ℎ ≤ 𝑔̅𝑗𝑧 , with 𝑔̅𝑗𝑧 denoting installed capacity.
+
+Additional system-wide feasibility constraints: in particular, high penetrations of inverter-
+based generation often require limits on instantaneous VRE output to maintain frequency
+stability. This can be represented by a system stability constraint of the form:
+
+               ∑ ∑ 𝑤𝑖𝑧ℎ ≤ 𝛼 (∑ 𝑑𝑧ℎ + 𝑒𝑥𝑝𝑜𝑟𝑡𝑠ℎ + 𝑠𝑡𝑜𝑟𝑎𝑔𝑒 𝑐ℎ𝑎𝑟𝑔𝑖𝑛𝑔ℎ ),
+                𝑧   𝑖               𝑧
+
+where α ∈ (0, 1) captures the maximum share of VRE compatible with secure operation.
+Given these constraints, the system operator selects feasible dispatch and flows to minimise
+short-run system cost:
+
+                                  𝑚𝑖𝑛 ∑ 𝑣𝑗 𝑔𝑗𝑧ℎ + 𝑣𝑖 𝑤𝑖𝑧ℎ ,
+                                        ℎ,𝑧,𝑖,𝑗
+
+where 𝑣𝑗 denotes the variable cost of dispatchable technology 𝑗. Curtailment arises implicitly
+as the residual required to maintain feasibility when potential VRE output exceeds what can
+be absorbed locally or exported through the network.
+This formulation highlights three properties that are central to the subsequent analysis. First,
+curtailment arises endogenously as a feasibility outcome rather than as an exogenous
+assumption. Second, curtailment is location- and technology-specific, reflecting both the
+spatial distribution of VRE potential and the configuration of internal transmission
+constraints. Third, and most importantly for this article, the optimal curtailment response to a
+marginal increase in VRE potential in a given zone depends critically on whether internal
+transfer constraints are binding in the relevant hours. This dependence is explored formally in
+the next subsection through the definition and measurement of marginal curtailment.
+Curtailment is measured as the fraction of potential VRE output that cannot be
+accommodated by the system. For each technology 𝑖, zone 𝑧, and hour ℎ, curtailment is
+
+                                                                                                6
+defined as: 𝑐𝑖𝑧ℎ ≡ 𝑤̅ 𝑖𝑧ℎ − 𝑤𝑖𝑧ℎ . Aggregating over time yields total curtailment 𝐶𝑖𝑧 = ∑ℎ 𝑐𝑖𝑧ℎ
+and total potential output 𝑊̅𝑖𝑧 = ∑ℎ 𝑤̅ 𝑖𝑧ℎ . Average curtailment is then given as
+                                                    𝐶𝑖𝑧
+                                           𝑎𝑐𝑖𝑧 =
+                                                    ̅𝑖𝑧
+                                                    𝑊
+This statistic describes the fraction of potential output lost for the existing fleet. It is widely
+reported, but it is not appropriate for incremental investment appraisal. We measure marginal
+curtailment by applying a small proportional increase in the potential output of technology i
+in zone z,
+                                        ′
+                                      𝑤
+                                      ̅ 𝑖𝑧ℎ = (1 + 𝜀)𝑤
+                                                     ̅ 𝑖𝑧ℎ ,
+                                                                                    ̅𝑖𝑧 .
+and computing the resulting changes in total curtailment ∆𝐶𝑖𝑧 and potential output ∆𝑊
+Marginal curtailment is
+                                                    ∆𝐶𝑖𝑧
+                                          𝑚𝑐𝑖𝑧 =
+                                                     ̅𝑖𝑧
+                                                    ∆𝑊
+The distinction between 𝑎𝑐𝑖𝑧 and 𝑚𝑐𝑖𝑧 is central to the analysis. When curtailment arises
+primarily in a limited subset of hours, such as periods when system-wide stability limits
+(SNSP) bind or when internal transmission constraints are congested, additional capacity is
+disproportionately curtailed. In such cases, marginal curtailment can substantially exceed
+average curtailment, reflecting the non-linear interaction between new VRE output and
+binding constraints.
+Curtailment directly affects the effective utilisation of installed capacity and therefore the
+cost of delivered electricity. Let 𝑃𝐶𝐹𝑖𝑧 denote the potential capacity factor of technology 𝑖 in
+zone 𝑧, defined as potential output per unit of installed capacity. Average and marginal
+capacity factors are then given by
+
+                              𝐴𝐶𝐹𝑖𝑧 = (1 − 𝑎𝑐𝑖𝑧 )𝑃𝐶𝐹𝑖𝑧 ,                                    (1)
+                             𝑀𝐶𝐹𝑖𝑧 = (1 − 𝑚𝑐𝑖𝑧 )𝑃𝐶𝐹𝑖𝑧 .                                     (2)
+The standard levelised cost of electricity (LCoE) is defined as
+                                                 𝐹𝑖
+                                  𝐿𝐶𝑜𝐸𝑖𝑧 =                + 𝑣𝑖,
+                                             8760 ∙ 𝑃𝐶𝐹𝑖𝑧
+
+where 𝐹𝑖 denotes the annualised fixed cost per unit of capacity (including capital recovery
+and fixed operating costs) and 𝑣𝑖 the variable operating cost, both in £/MWh. This measure
+implicitly assumes that all potential output is delivered.
+When curtailment is present, the relevant cost metrics differ. The levelised average cost of
+delivered electricity is
+                                  𝐹𝑖              𝐿𝐶𝑜𝐸𝑖𝑧 − 𝑣𝑖                               (3)
+                 𝐿𝐴𝐶𝑜𝐸𝑖𝑧 =                 + 𝑣𝑖 =             + 𝑣𝑖 ,
+                              8760 ∙ 𝐴𝐶𝐹𝑖𝑧         1 − 𝑎𝑐𝑖𝑧
+
+
+
+                                                                                                   7
+ while the levelised marginal cost of delivered electricity associated with an
+ incremental capacity addition is
+                                  𝐹𝑖               𝐿𝐶𝑜𝐸𝑖𝑧 − 𝑣𝑖                         (4)
+                𝐿𝑀𝐶𝑜𝐸𝑖𝑧 =                  + 𝑣𝑖 =                + 𝑣𝑖 .
+                            8760 ∙ 𝑀𝐶𝐹𝑖𝑧             1 − 𝑚𝑐𝑖𝑧
+For technologies with low (wind) or zero (PV) variable operating costs these expressions
+simplify to
+                                   𝐿𝐶𝑜𝐸𝑖𝑧                      𝐿𝐶𝑜𝐸𝑖𝑧
+                      𝐿𝐴𝐶𝑜𝐸𝑖𝑧 ≈             ,    𝐿𝑀𝐶𝑜𝐸𝑖𝑧 ≈             .
+                                   1 − 𝑎𝑐𝑖𝑧                   1 − 𝑚𝑐𝑖𝑧
+The amplification factors 1/(1-aciz) and 1/(1-mciz) provide a convenient metrics for how
+curtailment inflates average and marginal costs.
+Because marginal curtailment can be several times larger than average curtailment, the
+divergence between 𝐿𝐴𝐶𝑜𝐸𝑖𝑧 and 𝐿𝑀𝐶𝑜𝐸𝑖𝑧 can be substantial. This implies that investment
+decisions guided by average curtailment or headline LCoE figures may significantly
+understate the actual cost of expanding VRE capacity in constrained locations. The rest of
+this article focuses on identifying 𝑚𝑐𝑖𝑧 and the associated 𝐿𝑀𝐶𝑜𝐸𝑖𝑧 using a detailed UCED
+model that captures the interaction between temporal VRE profiles, internal transmission
+constraints, external export capability, storage and system-wide feasibility constraints
+(SNSP).
+3.2 UCED implementation, data, and scenario design
+The analytical framework set out in Section 3.1 is implemented using a detailed Pan-
+European UCED model. The model extends the framework developed by Chyong and
+Newbery (2022) and captures the interactions among high-resolution temporal variability in
+VRE output, internal transmission constraints, external trade, system-wide feasibility limits
+and hydrogen production.
+3.2.1 Spatial and temporal resolution
+The model represents 19 European electricity systems, with Great Britain modelled at a finer
+spatial resolution to explicitly capture internal congestion. GB is divided into seven zones
+(Z1-Z7), separated by transfer-constrained internal boundaries selected to reflect persistent
+and material transmission bottlenecks. These zonal boundaries are illustrated in Figure 1, and
+the associated directional transfer capacities for 2023 and 2030 are reported in Table 1.
+
+
+
+
+                                                                                                8
+                                    From     To   Boundary      2023      2030     IC*     To
+                                                                cap.      cap.
+                                    Z1       Z2   B4             4,000     7,300       0
+                                    Z2       Z3   B6             6,700    10,200     450   SEM
+                                    Z3       Z4   B7a            9,400    13,500   1,464   NO
+                                    Z4       Z5   B8            11,000    16,400     500   SEM
+                                    Z5       Z6   EC5            3,300    13,500   7,100   BE,
+                                                                                           DE,
+                                                                                           DK,
+                                                                                           NL,
+                                                                                           SEM,
+                                                                                           FR
+                                    Z5        Z7 SC1              3,900    6,100   5,000   BE,FR
+                                   * IC - external interconnectors
+
+
+    Figure 1: Zonal boundaries     Table 1: Transfer capacity (MW) in 2023 and 2030, and 2030
+    selected for zonal pricing     export capacity (MW)
+    experiments                    Source: ESO (2024) and Appendix 1
+
+Internal transmission constraints limit flows across boundaries such as B4, B6, B7a, B8, EC5,
+and SC1. Zones are also connected to external systems via aggregated interconnector
+capacities that limit trade with neighbours (e.g. SEM, Norway, Belgium, France, the
+Netherlands, Germany, and Denmark as shown). External systems are modelled at national
+and sub-national resolution and provide price-responsive import and export opportunities,
+subject to interconnector limits, the assumed generation mix, and input costs.
+The model is solved at hourly resolution over a full year. Hourly zonal demand and VRE
+output profiles are constructed using historical weather-based generation data, preserving the
+underlying temporal correlation between wind, solar, and demand across zones and countries.
+All simulations, therefore, respect the joint distribution of demand and renewable output
+rather than relying on representative hours or stylised profiles. Full details of data
+construction and coverage are provided in Appendix 1.
+3.2.2 Generation technologies and operational constraints
+The generation mix includes variable renewables (onshore wind, offshore wind, and solar
+PV), dispatchable thermal plant, nuclear generation, and storage. Nuclear and waste-to-
+energy units are treated as must-run within technical limits, reflecting their cost4 and system
+stability (inertial) characteristics. Dispatchable fossil generation is dispatched subject to
+capacity limits and variable operating costs.
+System-wide feasibility constraints are imposed: instantaneous VRE output is capped at a
+fixed share (90%) of demand plus exports and storage charging, representing limits on non-
+synchronous penetration (SNSP). When this constraint binds, additional VRE output must be
+curtailed, irrespective of transmission availability. These constraints interact with internal
+
+
+4
+ Such as the increased cost of reducing then increasing output that encourages negative bidding for
+decreasing output.
+
+                                                                                                      9
+transmission limits and play an important role in shaping the timing and location of
+curtailment.
+Transmission losses are not modelled explicitly. Instead, zonal transmission marginal cost
+adders are applied to reflect the increasing marginal losses associated with longer power
+transfers.5 These adders stabilise curtailment ordering across zones when multiple feasible
+curtailment patterns exist with identical short-run costs. They do not affect outcomes when
+internal constraints do not bind, nor do they affect the measurement of total or marginal
+curtailment.
+3.2.3 Identification of marginal curtailment
+Average curtailment for each technology and zone is computed as the ratio of total curtailed
+energy to total potential output over the simulation horizon as in 3.1. Marginal curtailment is
+identified through controlled, zone-specific perturbations to VRE capacity. For each
+technology i and zone z, installed capacity is increased to give an increase in average
+potential output of 200 MW on a GB-wide hourly basis. This increment is applied one zone
+at a time, holding all other capacities and system assumptions fixed. The resulting change in
+total curtailment, aggregated over all zones and hours, is used to compute marginal
+curtailment as defined in Section 3.1. The size of the increment reflects a trade-off between
+numerical stability and marginality. The perturbations are small relative to installed capacity
+but large enough to avoid rounding artefacts in the optimisation. Sensitivity tests confirm that
+marginal curtailment estimates are locally linear over a wide range of increment sizes,
+consistent with earlier results reported in Newbery and Chyong (2025).
+3.2.4 Scenario design
+The analysis is structured around a set of scenarios designed to isolate the mechanisms
+identified in Section 3.1. The baseline reflects the 2030 assumptions of the Electricity System
+Operator’s Future Energy Scenario Hydrogen Evolution (which has a larger share of
+conventional generation), including projected VRE capacities, demand, interconnector
+availability, storage and nuclear commissioning schedules. Against this baseline, three
+classes of experiments are conducted (Table 2):
+    1. Internal transmission reinforcement, comparing curtailment outcomes under 2023 and
+       2030 internal transfer capacities while holding generation fixed.
+    2. Zone-by-zone VRE expansion, used to identify marginal curtailment and derive zone-
+       and technology-specific LMCoEs.
+    3. Higher European VRE penetration, reflecting more ambitious National Energy and
+       Climate Plan outcomes and their implications for GB export opportunities.
+Each experiment modifies a single dimension of the baseline in a controlled manner, allowing
+changes in curtailment and costs to be attributed unambiguously to the mechanism under
+
+
+
+5
+ In GB, transmission losses are used in the dispatch merit order for balancing and charged to
+consumers.
+
+                                                                                                10
+consideration. We commend this as a way of providing useful policy-relevant information
+when running large and often opaque dispatch models.
+Table 2: Case design and model output metrics
+
+ Experiment         Constraints       VRE capacity     External      Output metrics
+                                      change           assumption
+ Boundary           Compare 2023      None             FES HE        Curtailment differences by zone &
+ reinforcement      vs 2030                                          tech; total reduction
+                    transfer limits
+ Zone-by-zone       2030 transfer     One-zone         FES HE        Δcurtailment, mc, ac, and PCF/MCF
+ VRE increments     limits            increment at a                 multipliers 1/(1-mc)
+                                      time (+200
+                                      MWh/h GB avg
+                                      by tech)
+ High EU VRE        2030 transfer     None             Higher EU     Curtailment by zone; % increase;
+                    limits                             VRE           change in GB net exports
+                                                       penetration
+                                                       (NECP)
+GB provides a particularly suitable setting for analysing marginal curtailment under internal
+transmission constraints. It combines high and rapidly growing VRE penetration, pronounced
+spatial variation in renewable resource quality, persistent internal congestion, and substantial
+interconnection with neighbouring systems. These features are not unique to GB but are
+increasingly common in decarbonising power systems. The results should, therefore, be
+interpreted as illustrating general mechanisms rather than as producing system-specific
+forecasts.
+    4. Modelling results
+Table 3 reports key results for the baseline 2030 FES HE with internal constraints and
+compares them with the benchmark copper plate case taken from Newbery and Chyong
+(2025). With zonal constraints, total VRE curtailment is 10,426 GWh, 19% higher than under
+copper plate (8,771 GWh). Curtailment is highly concentrated: Z1 and Z2 together contribute
+86% of the total. Z1 is curtailed 1,852 hours, and Z2 is curtailed 948 hours. Z1 is always
+curtailed when Z2 is curtailed, underscoring the dominance of the B6 boundary at the
+Scottish border (Figure 1).
+Technology shares differ across zones: Z4 and Z6 have the highest shares of offshore wind,
+Z5 and Z7 of PV, and Z1 and Z2 of onshore wind, so pro-rata curtailment at the zonal level
+amplifies technology-specific effects relative to national pro-rata curtailment.
+External trade impacts are modest: the average absolute hourly difference in exports between
+zonal pricing and copper plate is 37 MW (standard deviation 166 MW), and total GB external
+exports fall by about 1%. Exports do little to relieve internal constraints because Scottish
+zones Z1 can only export to Z2 and Z2 can export only modest volumes to the SEM, as the
+larger Norway link is in the English zone Z3.
+
+
+
+
+                                                                                                        11
+Table 3: Zonal results in 2030 GB FES HE scenario
+        Baseline                Z1       Z2       Z3       Z4           Z5        Z6        Z7      Total   Copper
+                                                                                                              Plate
+ Capacity (MW)
+         OFF               4,356       3,516    2,890   11,785       5,824    11,708      3,399    43,476    43,476
+         ON                6,930       9,672      908    2,071       2,698       271        530    23,081    23,081
+         PV                  743         628    1,530    3,730      14,598     1,098      5,318    27,644    27,644
+         VRE              12,028      13,817    5,328   17,586      23,119    13,076      9,246    94,201    94,201
+ Transmission marginal    €0.50        €0.40    €0.30    €0.20       €0.00     €0.10      €0.10
+ costs (€/MWh)
+ Potential output (GWh)
+         OFF              18,785      15,202   13,034   55,148      27,582    54,483    14,619    198,854   198,854
+         ON               16,996      23,653    2,285    5,159       6,865       687     1,291     56,935    56,935
+         PV                  575         511    1,378    3,234      13,827     1,108     5,565     26,199    26,199
+         VRE              36,356      39,366   16,698   63,540      48,274    56,278    21,475    281,988   281,988
+ Curtailment (GWh)
+         OFF                  2,559    1,264     190      456           306       56        80      4,910        6,075
+         ON                   2,784    2,308      39       50            90        1         8      5,280        2,088
+         PV                      43       33      16       22           102        1        20        236          608
+         VRE                  5,386    3,604     245      527           497       58       108     10,426        8,771
+ Average curtailment (%
+ of potential output)
+         OFF              13.6%        8.3%     1.5%     0.8%        1.1%       0.1%      0.5%      2.5%         1.6%
+         ON               16.4%        9.8%     1.7%     1.0%        1.3%       0.1%      0.7%      9.3%         1.0%
+         PV                 7.5%       6.4%              0.7%        0.7%       0.1%      0.4%      0.9%         0.3%
+         VRE              14.8%        9.2%     1.5%     0.8%        1.0%       0.1%      0.5%      3.7%         1.1%
+ Zonal average trade      3,016        2,394     498     3,195     -15,721      6,823      -205
+ (MW)
+Notes: Copper plate results from Newbery and Chyong (2025); OFF: offshore wind, ON: onshore
+wind.
+4.1 Boundary reinforcement: effect of internal transfer limits on curtailment
+Holding 2030 VRE capacities fixed, Table 4 compares curtailment under 2023 internal
+boundary transfer capacities with curtailment under the higher 2030 transfer capacities.
+Aggregate VRE curtailment falls from 46,326 GWh to 10,426 GWh, a reduction of 35,900
+GWh (77%). Most of this reduction occurs in Z6, where curtailment falls from 30,975 GWh
+to 58 GWh.
+Table 4 also shows that the reduction in curtailment is not uniform across zones. Curtailment
+is lower in Scottish Z1 and Z2 under 2030 transfer capacities, while curtailment is higher
+south of the border in Z3-Z5. This pattern is consistent with curtailment being shaped by
+binding internal constraints and the rerouting of surplus generation across zones when
+transfer capability is expanded, as set out in the stylised framework in Section 3.1.
+Table 4: VRE Curtailment: 2030 vs 2023 transmission capacity
+
+                                       Z1      Z2       Z3       Z4      Z5      Z6         Z7     Total
+ 2030 Transmission Capacity    GWh     5,386   3,604    245       527     497        58     108    10,426
+ 2023 Transmission Capacity    GWh     9,720   4,910    162       280     226    30,975      54    46,326
+ difference                    GWh     4,334   1,306    -83      -247    -272    30,917     -54    35,900
+
+
+
+
+                                                                                                            12
+4.2 Zone-by-zone VRE increments: marginal curtailment
+The next set of experiments increases one VRE technology in one zone at a time, holding all
+other capacities and assumptions fixed, to identify marginal curtailment, mc, as defined in
+Section 3.1. Table 5 reports the incremental potential output associated with each zonal
+perturbation (“delta potential output”), the corresponding increase in total curtailment relative
+to the baseline (“delta curtailment”), and the implied marginal curtailment rate mc.
+To illustrate the interpretation, increasing offshore wind in Z1 yields an incremental potential
+output of 166 GWh and increases total curtailment by 57 GWh relative to the baseline, giving
+mc = 34% (= 57/166). The lower panel reports the associated scaling factors 1/(1-mc),
+consistent with equations (2)-(4) in Section 3.1.
+Table 5 shows substantial variation in mc across zones and technologies. For onshore wind,
+mc is 48% in Z1 and 47% in Z2, compared with values between 0% and 24% in Z3-Z7. For
+offshore wind, mc is 34% in Z1 and 36% in Z2, compared with 16-17% in Z3-Z7. For solar
+PV, mc ranges from 10% to 26% across zones, with 26% in Z1 and Z2 and 10-17% in Z3-Z7.
+These results imply that the proportional cost uplift captured by 1/(1-mc) is markedly larger
+in Z1-Z2 for wind technologies than in the other zones.
+Table 5 applies common zonal potential capacity factor assumptions for wind technologies,
+reflecting the interpretation that within-zone site selection leads developers to locate in the
+best wind resource areas within each zone. For solar PV, zonal-average potential capacity
+factors are retained, and the final line of Table 6 reports the corresponding scaled PV factor,
+as indicated in the table notes.
+Appendix 2 (Table A7) reports the distribution of curtailment changes by zone associated
+with each increment, showing that an increment in one zone can change curtailment in other
+zones.
+
+
+
+
+                                                                                              13
+Table 5: Marginal contributions of additional VRE capacity, zone by zone
+
+                                Z1       Z2       Z3       Z4        Z5        Z6         Z7     total
+ delta potential         OFF     166      134      115      486       243       480        129    1753
+ output, GWh             ON      523      728       70      159       211        21         40    1752
+                         PV       38       34       92      216       922        74        371    1747
+ delta curtailment,      OFF      57       48       20       84        39        80         22     350
+ GWh                     ON      249      339       15       39        48         0          6     694
+                         PV       10        9       11       22       115        13         38     218
+  mc p.c. of potential   OFF    34%      36%     17%       17%      16%       17%        17%      20%
+ output                  ON     48%      47%     21%       24%      23%         0%       14%      40%
+                         PV     26%      26%     12%       10%      12%       17%        10%      12%
+  ac p.c. pot. output    PV    8.9%     9.3%    10.3%     9.9%     10.8%     11.5%      12.0%     11%
+ 1/(1-mc)                OFF    1.52     1.56     1.21     1.21      1.19      1.20       1.20    1.25
+                         ON     1.91     1.87     1.27     1.32      1.29      1.00       1.16    1.66
+                         PV     1.35     1.36     1.14     1.11      1.14      1.21       1.11    1.14
+ scaled for PV CF*       PV     1.67     1.61     1.22     1.24      1.16      1.15       1.03    1.14
+Notes: OFF: offshore wind, ON: onshore wind.
+* Scaled for the average PV zonal capacity factors to give the relevant PCF/MCF.
+
+4.3 Higher European VRE penetration: sensitivity to export opportunities
+The final experiment tests how GB curtailment changes when higher wind and solar
+deployment in Europe reduces Britain’s ability to export surplus VRE output. Table 6 reports
+curtailment by zone under the higher European VRE assumption and compares it with the
+baseline. Total VRE curtailment increases from 10,426 GWh to 16,904 GWh, an increase of
+6,478 GWh (62%). Net exports fall from 35 TWh to 18 TWh.
+The proportional increase in curtailment differs across zones. Table 6 shows increases of 37%
+in Z1 and 80% in Z2, compared with increases above 100% in Z3-Z7. In the baseline, the
+central and southern zones are also those with larger interconnector access, as set out in
+Section 3.2.1 and Table 1, and the result is consistent with the mechanism that export
+headroom influences the ability to absorb surplus VRE output.
+Table 6: Impact of higher EU VRE penetration
+
+                                       Z1       Z2       Z3       Z4        Z5        Z6      Z7      Total
+ high EU VRE curtailment, GWh          7,365    6,491      527    1,061     1,106       122     233   16,904
+ baseline curtailment, GWh             5,386    3,604      245      527       497        58     108   10,426
+ Increase,                             1,980    2,887      281      534       609        64     124    6,478
+ p.c. increase                          37%      80%     115%     101%      122%      111%    114%      62%
+
+    5. Cost Implications
+Curtailment reduces the share of potential output ultimately delivered to the system, thereby
+raising the cost per delivered MWh. Section 3.1 distinguished between two delivered-cost
+concepts relevant to investment appraisal. The levelised average cost of delivered electricity
+(LACoE) adjusts the underlying levelised cost of electricity (LCoE) for average curtailment
+through the delivered average capacity factor. As noted earlier, this is relevant where
+developers pay shared deep connection charges and accept curtailment without
+compensation.
+
+
+                                                                                                               14
+In contrast, the levelised marginal cost of delivered electricity (LMCoE) applies the same
+adjustment using marginal curtailment and the delivered marginal capacity factor. The
+distinction is economically important because marginal curtailment can exceed average
+curtailment by a wide margin in specific locations, implying that the cost penalty faced by
+incremental investment may be substantially larger than average outcomes suggest.
+
+
+
+
+Figure 2: Location-specific divergence between average and marginal delivered costs for
+variable renewables.
+Notes: The figure highlights large spatial differences in marginal delivered electricity costs
+that are not captured by average curtailment or headline LCoE measures. These differences
+arise from the interaction between marginal curtailment and internal transmission
+constraints, and are most pronounced in zones where curtailment is already high. Values are
+expressed in £2024/MWh and reflect construction costs for 2030 as in BEIS (2023).
+Figure 2 summarises these relationships by zone and technology. For each zone, the figure
+reports three related objects: the zonal benchmark LCoE net of variable operating costs and
+adjusted for network charges (see Table A. 3, Appendix 1); the corresponding LACoE based
+on average curtailment (Table A9, Appendix 2); and the LMCoE implied by marginal
+curtailment (Table A10, Appendix 2). The figure, therefore, separates location-specific cost
+differences arising solely from network charges from those that emerge endogenously
+through curtailment, and shows how marginal investment costs diverge from average
+delivered costs in constrained parts of the system.
+Two patterns stand out. First, there is a pronounced spatial gradient in delivered costs for
+wind technologies. In the northern (Scottish) zones (Z1 and Z2), where marginal curtailment
+rates are highest, LMCoE substantially exceeds both the zonal LCoE benchmark and the
+corresponding LACoE. For offshore wind, LMCoE exceeds £90/MWh in Z1 and remains
+above £80/MWh in Z2, while falling below £50/MWh in the southern and central zones. A
+similar pattern is observed for onshore wind, with LMCoE above £100/MWh in Z1 and
+below £40/MWh in the least constrained zones. These differences are an order of magnitude
+larger than the underlying variation in headline LCoE assumptions and reflect the
+amplification effect of marginal curtailment rather than differences in technology costs per
+se.
+Second, the divergence between LACoE and LMCoE is itself strongly location-specific. In
+zones with low marginal curtailment, average and marginal delivered costs remain close,
+indicating that average curtailment provides a reasonable approximation to the cost impact of
+
+                                                                                              15
+incremental investment. However, in zones with high marginal curtailment, LACoE
+understates the cost faced by additional capacity by a wide margin. This is most evident in Z1
+and Z2, where the gap between LACoE and LMCoE is large across wind technologies,
+reflecting the fact that incremental output is curtailed disproportionately relative to average
+output.
+Solar PV exhibits the same qualitative pattern, though with a less extreme gradient. Marginal
+delivered costs are again highest in Z1 and Z2 and fall sharply in zones with lower marginal
+curtailment. For PV mid-scale, the absolute level of LMCoE is higher across all zones due to
+the higher underlying LCoE assumption. Still, the spatial structure remains governed by
+curtailment rather than by technology costs alone.
+These results arise mechanically from the non-linear scaling relationship between delivered
+costs and marginal curtailment derived in Section 3.1. Where marginal curtailment is already
+elevated, even modest further increases translate into disproportionately large increases in the
+cost per delivered MWh. The delivered-cost gradients observed in Figure 2, therefore, reflect
+the interaction between internal transmission constraints and incremental investment, rather
+than differences in resource quality or technology cost assumptions across zones.
+Full numerical results underlying Figure 2, including the construction of LACoE and LMCoE
+from zonal curtailment outcomes and cost assumptions, are reported in Appendices 1 and 2.
+The sensitivity results under higher European VRE penetration further reinforce this
+conclusion: reductions in export headroom raise marginal curtailment most sharply in
+already-constrained zones, leading to additional increases in marginal delivered costs that are
+concentrated spatially rather than evenly spread across the system.
+
+    6. Discussion and policy implications
+This article quantifies how binding internal transmission constraints raise marginal
+curtailment and, through that channel, create significant spatial differences in the marginal
+cost of delivered electricity from wind and solar investment. The underlying mechanism is
+that when congestion and system stability limits (SNSP) bind in a limited set of hours,
+incremental output is disproportionately curtailed relative to the existing fleet. Because
+delivered costs scale non-linearly with marginal curtailment, moderate differences in mc
+imply large differences in the long-run marginal cost of investment, LMCoE.
+The transmission reinforcement experiment highlights the first-order role of internal transfer
+capacity. Holding the 2030 generation portfolio fixed, increasing internal transfer limits from
+2023 to 2030 levels reduces total curtailment from 46,326 GWh to 10,426 GWh, a reduction
+of 35,900 GWh (77%). The reduction is concentrated in Z6, where curtailment falls from
+30,975 GWh to 58 GWh, while curtailment increases in Z3-Z5. Reinforcement can, therefore,
+sharply reduce curtailment in particular constrained areas, but it also reroutes surplus flows
+and changes where curtailment is ultimately absorbed.
+The zone-by-zone increment experiments show that marginal curtailment varies sharply
+across locations. For onshore wind, mc is 48% in Z1 and 47% in Z2, compared with 0-24% in
+Z3-Z7. For offshore wind, mc is 34% in Z1 and 36% in Z2, compared with 16-17% in Z3-Z7.
+
+
+                                                                                                16
+These differences imply large gradients in marginal delivered costs. Offshore wind LMCoE
+is £95.36/MWh in Z1 and £83.64/MWh in Z2, compared with £37.39/MWh in Z5 and
+£41.32-£51.48/MWh in Z3-Z7. For onshore wind, LMCoE is £102.46/MWh in Z1 and
+£84.74/MWh in Z2, compared with £35.73/MWh in Z6 and £37.02-£48.29/MWh in Z3-Z7.
+By comparison, the corresponding LACoE values are materially lower in the high-
+curtailment zones, reflecting the fact that average curtailment does not capture the conditions
+faced by incremental investment where congestion binds.
+The high-EU-VRE sensitivity indicates that GB curtailment also depends on external
+conditions that determine export headroom. With higher European wind and solar
+deployment, total GB curtailment increases from 10,426 GWh to 16,904 GWh (62%), while
+net exports fall from 35 TWh to 18 TWh. Curtailment increases by more than 100% in Z3-
+Z7, compared with 37% in Z1 and 80% in Z2. This pattern is consistent with the distribution
+of interconnectors access across zones and with correlated surplus conditions as neighbouring
+systems decarbonise.
+These results bear directly on how REMA has been framed: greater spatial granularity in
+wholesale prices versus retaining a national, uniform price, combined with stronger locational
+signals delivered through other channels. The modelling evidence points to persistent,
+location-specific differences in the marginal cost of delivered renewable output, driven
+primarily by congestion-induced marginal curtailment rather than by assumed technology
+costs. Under a national wholesale price, the central issue is whether the investment
+environment makes these location-specific marginal delivered-cost consequences visible to
+developers and financiers. If not, decentralised investment will tend to concentrate in high-
+resource areas even when marginal curtailment erodes delivered value. For wind, the implied
+wedge between Z1 (north) and the least-constrained zones is of the order of £50-£70/MWh in
+LMCoE terms, which is too large to treat as a minor adjustment.
+A practical test for Reformed National Pricing in GB (and changes in transmission charges)
+is, therefore, whether it reduces the gap between private incentives and the marginal
+delivered costs implied by mc and LMCoE. Instruments that sharpen locational signals
+without moving to nodal prices are likely to matter most where mc is highest and where the
+cost amplification is steepest.
+The results are also directly relevant to renewable support, because contract design
+determines how curtailment risk is allocated and whether investors face incentives aligned
+with location-specific marginal delivered costs. If support arrangements treat curtailed output
+as close to equivalent to delivered output, then projects in high-mc zones can appear privately
+attractive even when the cost of delivered energy from additional capacity is high.
+Conversely, where contracts expose projects to predictable curtailment risk, or where
+procurement places more weight on delivered energy, incentives move closer to the system
+objective of procuring low-carbon electricity at least cost.
+Three design implications follow.
+First, incremental procurement value should be judged using marginal rather than average
+curtailment. The LMCoE gradients are driven by mc, not by ac. When mc is high, appraisal
+
+                                                                                             17
+based on average curtailment systematically underestimates the cost of delivered output from
+additional capacity.
+Second, locational differentiation can be introduced within a national CfD framework. This
+does not require nodal prices. It can be implemented through transparent zone- and
+technology-specific adjustment factors derived from mc (or equivalently from LMCoE) when
+comparing bids, and/or through differentiated procurement volumes or capacity caps in
+persistently constrained areas.
+Third, where congestion is expected to persist, support can be aligned more closely with
+delivered output while preserving bankability. Network expansion lead times imply that
+congestion will remain binding for a period even under accelerated reinforcement. Contract
+structures that tighten the link between remuneration and delivered energy reduce incentives
+to concentrate new capacity behind already-constrained boundaries. The case is strongest for
+wind in northern zones (Z1-Z2), where mc approaches one-half for onshore wind and exceeds
+one-third for offshore wind, implying significant marginal delivered-cost uplifts. For
+example, an option is to offer CfDs that pay on delivered (uncurtailed) output only, but for a
+specified number of full operating hours (e.g., 40,000 MWh/MW capacity), rather than
+paying on offers for a fixed number of years (Newbery, 2023).s
+Here, we do not attempt a welfare evaluation of specific CfD, transmission access, and
+charging reforms. The contribution of this article is narrower: it quantifies marginal
+curtailment and the implied location-specific marginal delivered costs, which can be used to
+calibrate locational adjustments within support mechanisms in a way that is consistent with
+the system costs implied by congestion and curtailment.
+Beyond CfDs, a small set of complementary tools follows from the mechanisms identified in
+this research.
+First, connection and access arrangements. Distinguishing between firm and non-firm access,
+and making curtailment risk explicit in connection terms, provides a direct way to translate
+high marginal curtailment into a private investment signal. For example, developers could be
+offered a non-firm connection (last in, first off without compensation) for a number of years
+until export capacity is adequately increased. The aim is not to eliminate curtailment but to
+avoid systematically adding capacity in locations where incremental output is predictably
+curtailed.
+Second, strategic spatial planning informed by marginal metrics. Publishing zone- and
+technology-specific indicators of marginal curtailment and implied LMCoE would provide an
+operational signal for investors and planners. This is particularly relevant under a national
+price, where locational incentives rely on a combination of charges, planning, and connection
+rules rather than on granular wholesale locational marginal prices.
+Third, network reinforcement prioritised by curtailment elasticities. The reinforcement
+experiment modelled here shows that increasing transfer limits can materially reduce
+curtailment, while also redistributing it across zones. A natural implication is to prioritise
+
+
+                                                                                                 18
+reinforcement where additional transfer capability most reduces system-wide marginal
+curtailment, rather than relying solely on average curtailment levels.
+Finally, the high-EU-VRE case indicates that export headroom is unlikely to remain a stable
+outlet for surplus generation as neighbouring systems deploy wind and solar in correlated
+hours. This strengthens the case for domestic instruments that steer investment and flexibility
+to locations where they reduce marginal curtailment.
+
+    7. Conclusions and limitations
+This article shows that internal transmission constraints can generate significant divergences
+between average and marginal curtailment and, as a result, substantial spatial differences in
+the marginal cost of delivered electricity from incremental renewable investment. In the 2030
+GB system configuration examined here, marginal curtailment for additional onshore wind is
+close to one-half in the northern (Scottish) zones (Z1-Z2), while being below one-quarter
+elsewhere. The implied wind LMCoE estimates differ by tens of pounds per MWh across
+zones. The results also indicate that curtailment outcomes depend on export headroom, which
+weakens as neighbouring systems deploy wind and solar in correlated hours. The economic
+implication is that incremental investment appraisal in constrained systems should be based
+on marginal curtailment and should be treated as location-specific when congestion persists.
+This also applies to evaluating interconnector investments.
+Several limitations qualify the interpretation. The UCED model captures the main feasibility
+constraints shaping dispatch and curtailment. However, it does not represent the full range of
+ancillary service and reserve requirements that may bind at high VRE penetration.
+Curtailment allocation across technologies within zones and across zones can also depend on
+modelling conventions when avoidable costs are similar. The marginal curtailment estimates
+are local to the baseline configuration used here; as network capacity, generation portfolios,
+and neighbouring-system conditions evolve, mc and LMCoE will change. The results are
+therefore best read as evidence of how congestion reshapes the economics of incremental
+renewable deployment in a system with binding internal constraints, and as empirical inputs
+for strengthening locational signals within a national, uniform pricing framework.
+
+
+
+
+                                                                                             19
+References
+AFRY Management Consulting (2025a). Enhanced National Electricity Market Designs for
+       Great Britain. Report prepared for industry stakeholders, February 2025.
+       https://afry.com/en/enhanced-national-electricity-market-designs-great-britain
+AFRY Management Consulting (2025b). Sensitivity Analysis on the Modelled Benefits of
+       Zonal Electricity Markets in Great Britain. Report prepared for industry stakeholders,
+       May 2025. https://afry.com/en/sensitivity-analysis-modelled-benefits-zonal-
+       electricity-markets-in-great-britain
+Ambrosius, M., Grimm, V., Kleinert, T., Liers, F., Schmidt, M., & Zöttl, G. (2020).
+       Endogenous price zones and investment incentives in electricity markets: An
+       application of multilevel optimisation with graph partitioning. Energy Economics, 92,
+       104879. https://doi.org/10.1016/j.eneco.2020.104879
+Aravena, I., & Papavasiliou, A. (2016). Renewable energy integration in zonal markets. IEEE
+       Transactions on Power Systems, 32(2), 1334-1349.
+       https://ieeexplore.ieee.org/document/7501844
+Aurora Energy Research (2023). Locational Marginal Pricing in Great Britain. September
+       2023. https://auroraer.com/wp-content/uploads/2023/09/Locational-Marginal-Pricing-
+       GB-Aurora-Public-Report.pdf
+BEIS, 2020. Electricity Generation Costs (2020),
+       https://www.gov.uk/government/publications/beis-electricity-generation-costs-2020
+BEIS, 2023. Electricity Generation Costs (2023), October
+       https://www.gov.uk/government/publications/electricity-generation-costs-2023
+Bichler, Martin and Dobos, Teodora and Knoerr, Johannes, Zonal vs. Nodal Pricing: An
+       Analysis of Different Pricing Rules in the German Day-Ahead Market. Available at
+       SSRN: https://ssrn.com/abstract=5204814 or http://dx.doi.org/10.2139/ssrn.5204814
+Chyong, C., Pollitt, M., & Cruise, R. (2019). Can wholesale electricity prices support
+       “subsidy-free” generation investment in Europe? Available at:
+       https://www.jstor.org/stable/resrep30343?seq=1
+Chyong, C. K., & Newbery, D. (2022). A unit commitment and economic dispatch model of
+       the GB electricity market-Formulation and application to hydro pumped storage.
+       Energy Policy, 170, 113213.
+Dagoumas, A. S., & N.E. Koltsaklis. 2019. “Review of models for integrating renewable
+       energy in the generation expansion planning.” Applied Energy, 242, 1573-1587.
+       https://doi.org/10.1016/j.apenergy.2019.03.194
+DESNZ, 2024a. Review of Electricity Market Arrangements Second Consultation at
+       https://assets.publishing.service.gov.uk/media/65ef6694133c220011cd37cd/review-
+       electricity-market-arrangements-second-consultation-document.pdf
+DESNZ, 2024b. Review of Electricity Market Arrangements Options Assessment at
+       https://assets.publishing.service.gov.uk/media/65eb48f362ff48ff7487b30a/rema-
+       options-assessment.pdf
+DESNZ, 2025a. Energy Trends: UK Renewables, at
+       https://www.gov.uk/government/statistics/energy-trends-section-6-renewables
+DESNZ, 2025b. Review of electricity market arrangements (REMA): Summer update, 2025 at
+       https://www.gov.uk/government/publications/review-of-electricity-market-
+       arrangements-rema-summer-update-2025/review-of-electricity-market-arrangements-
+       rema-summer-update-2025-accessible-webpage
+Dobos, T., Bichler, M., & Knörr, J. (2025). Challenges in finding stable price zones in
+       European electricity markets: Aiming to square the circle? Applied Energy, 382,
+       125315. https://arxiv.org/abs/2404.06489
+
+
+                                                                                          20
+Eicke, A., & Schittekatte, T. (2022). Fighting the wrong battle? A critical assessment of
+       arguments against nodal electricity prices in the European debate. Energy Policy, 170,
+       113220. https://ssrn.com/abstract=4033908
+ENTSO-E, 2022. Report on the Locational Marginal Pricing Study of the Bidding Zone
+       Review Process, at https://eepublicdownloads.blob.core.windows.net/public-cdn-
+       container/clean-
+       documents/Publications/Market%20Committee%20publications/ENTSO-
+       E%20LMP%20Report_publication.pdf
+ENTSO-E, 2025. Bidding Zone Review of the 2025 Target Year. At
+       https://www.entsoe.eu/network_codes/bzr/#Downloads_of_the_Bidding_Zone_Revie
+       w_(BZR)_Report_for_the_target_year_2025
+EU, 2024. Regulation (EU) 2024/1747 of the European Parliament and of the Council of 13
+       June 2024 amending Regulations (EU) 2019/942 and (EU) 2019/943 as regards
+       improving the Union’s electricity market design (Text with EEA relevance)
+       PE/1/2024/REV/1at https://eur-lex.europa.eu/eli/reg/2024/1747/oj/eng
+Frontier Economics & LCP Delta, 2024. Zonal Pricing in Great Britain: Assessing the
+       Impacts on support payments. Commissioned report for SSE, October 2024.
+FTI Consulting, 2023. Assessment of locational wholesale electricity market design options
+       in GB, at https://www.ofgem.gov.uk/sites/default/files/2023-
+       10/FINAL%20FTI%20Assessment%20of%20locational%20wholesale%20electricity
+       %20market%20design%20options%20-%2027%20Oct%202023%205.pdf
+FTI Consulting, 2025. Impact of a Potential Zonal Market Design in Great Britain:
+       Quantitative Assessment of GB Welfare Impacts. Report for Octopus Energy,
+       February 2025. https://octopus.energy/press/octopus-energy-fti-report-zonal-pricing/
+Green, R. (2007). Nodal pricing of electricity: how much does it cost to get it wrong? Journal
+       of Regulatory Economics, 31(2), 125-149. https://doi.org/10.1007/s11149-006-9019-3
+HM Government, 2022. Review of electricity market arrangements (REMA), published July
+       2022. https://www.gov.uk/government/collections/review-of-electricity-market-
+       arrangements-rema#rema-consultations
+Katzen, M., & Leslie, G. W. (2024). Siting and operating incentives in electrical networks: A
+       study of mispricing in zonal markets. International Journal of Industrial
+       Organization, 94, 103069. https://doi.org/10.1016/j.ijindorg.2024.103069
+Kenis, M., Dvorkin, V., Schittekatte, T., Bruninx, K., Delarue, E., & Botterud, A. (2024).
+       Evaluating Offshore Electricity Market Design Considering Endogenous
+       Infrastructure Investments: Zonal or Nodal? IEEE Transactions on Energy Markets,
+       Policy and Regulation. https://ieeexplore.ieee.org/document/10530165
+Koltsaklis, N. E., & A.S. Dagoumas. 2018. State-of-the-art generation expansion planning: A
+       review. Applied Energy, 230, 563-589.
+       https://doi.org/10.1016/j.apenergy.2018.08.087
+Kröger. M. and D. Newbery, 2024. Renewable electricity contracts: lessons from European
+       experience, Papales de Energiá, 24 at https://www.funcas.es/revista/papeles-de-
+       energia-24/
+LCP Delta (2024). Zonal Pricing in Great Britain: Assessing the impacts of the ‘Beyond
+       2030’ Network Plans. Commissioned report for SSE, October 2024.
+       https://www.sse.com/media/x3ehjdpg/lcp-d-sse-impacts-of-beyond-2030-network-
+       plans-on-zonal-pricing-october-2024.pdf
+
+
+                                                                                           21
+Li, C., C.K. Chyong, D. Reiner & F. Roques. 2024. Taking a Portfolio approach to wind and
+        solar deployment: The case of the National Electricity Market in Australia. Applied
+        Energy, 369. DOI: https://doi.org/10.1016/j.apenergy.2024.123427
+Lindberg, M. B. (2022). The power of power markets: Zonal market designs in advancing
+        energy transitions. Environmental Innovation and Societal Transitions, 45, 132-153.
+        https://doi.org/10.1016/j.eist.2022.08.004
+Loiacono, L., Rizzo, L., & Stagnaro, C. (2025). Impact of bidding zone re-configurations on
+        electricity prices: Evidence from Sweden. Energy Economics, 141, 108106.
+        https://doi.org/10.1016/j.eneco.2024.108106
+Lundin, E. (2022). Geographic price granularity and investments in wind power: Evidence
+        from a Swedish electricity market splitting reform. Energy Economics, 113, 106208.
+        https://doi.org/10.1016/j.eneco.2022.106208
+Neuhoff, K., Barquin, J., Bialek, J. W., Boyd, R., Dent, C. J., Echavarren, F., ... & Weigt, H.
+        (2013). Renewable electric energy integration: Quantifying the value of design of
+        markets for international transmission capacity. Energy Economics, 40, 760-772.
+        https://doi.org/10.1016/j.eneco.2013.09.004
+Newbery, D. 2021. National Energy and Climate Plans for the island of Ireland: wind
+        curtailment, interconnectors and storage. Energy Policy 158, 112513, 1-11.
+        https://doi.org/10.1016/j.enpol.2021.112513
+Newbery, D., 2023. Designing efficient Renewable Electricity Support Schemes, The Energy
+        Journal, Vol. 44(3), 1-22., https://doi.org/10.5547/01956574.44.3.dnew
+Newbery, D. 2025. Implications of Renewable Electricity Curtailment for Delivered Costs,
+        Energy Economics, May. https://doi.org/10.1016/j.eneco.2025.108472
+Newbery, D. and Chyong, C-K. 2025. Marginal curtailment and the efficient cost of clean
+        power. EPRG WP2505. https://www.jbs.cam.ac.uk/wp-content/uploads/2025/05/eprg-
+        wp2505.pdf
+Newbery, D. and D. Biggar. 2024. Marginal curtailment of wind and solar PV: transmission
+        constraints, pricing and access regimes for efficient investment. Energy Policy 191,
+        114206. https://doi.org/10.1016/j.enpol.2024.114206
+Oree, V., S. Hassen & P. Fleming. 2017. Generation expansion planning optimisation with
+        renewable energy integration: A review. Renewable and Sustainable Energy Reviews,
+        69, 790-803. https://doi.org/10.1016/j.rser.2016.11.120
+Savelli, I., Hardy, J., Hepburn, C., & Morstyn, T. (2022). Putting wind and solar in their
+        place: Internalising congestion and other system-wide costs with enhanced contracts
+        for difference in Great Britain. Energy Economics, 113, 106218.
+        https://doi.org/10.1016/j.eneco.2022.106218
+Simshauser, P. and D. Newbery, 2024. Non-firm vs priority access: On the long run average
+        and marginal costs of renewables in Australia, Energy Economics, 136, 107671.
+        https://doi.org/10.1016/j.eneco.2024.107671
+Triolo, R. C., & Wolak, F. A. (2022). Quantifying the benefits of a nodal market design in the
+        Texas electricity market. Energy Economics, 112, 106154.
+        https://doi.org/10.1016/j.eneco.2022.106154
+Wolak, F. A. (2011). Measuring the benefits of greater spatial granularity in short-term
+        pricing in wholesale electricity markets. American Economic Review, 101(3), 247-
+        252. https://doi.org/10.1257/aer.101.3.247
+
+
+
+                                                                                            22
+Zarnikau, J., Woo, C. K., & Baldick, R. (2014). Did the introduction of a nodal market
+       structure impact wholesale electricity prices in the Texas (ERCOT) market? Journal
+       of Regulatory Economics, 45, 194-208. https://doi.org/10.1007/s11149-013-9240-9
+
+
+
+
+                                                                                        23
+Appendix 1: Data Sources for the UCED Model
+This appendix lists data sources and their processing and transformation calibrated to projections from
+the Future Energy Scenarios Hydrogen Evolution (FES HE, ESO 2024a,b) and ENTSO-E TYNDP
+2022. It also describes GB’s interconnector capacity and storage capacity in 2023.
+Demand
+The model considers 19 European national electricity markets (Table A.1), divided into 28 zones to
+explicitly account for key sub-national transmission constraints in GB (7 zones), Denmark (2 zones),
+and Norway (3 Zones). Annual demand (in TWh) is for Hydrogen Evolution (ESO, 2024b).6 Annual
+projections were multiplied by hourly load profiles to give hourly load time series for the dispatch
+model. The hourly profiles were taken from PECD (2021). The 1998 climate year was chosen to
+represent a normal year (Ah-Voun et al., 2024) to preserve spatial correlation between GB and
+European markets, as well as hourly wind and solar capacity factors (from TYNDP 2022, Appendix
+VI: Demand). These hourly load profiles vary by scenario and are created bottom-up based on
+different types of demand (e.g., electric vehicles, heat pumps/electric heating). All inputs will be
+available at https://github.com/KongChyong
+
+Table A.1 Annual electricity demand (TWh) projection for 2030
+    Country           Country       2030        Country         Country      2030
+                      Code                                      Code
+
+    GB1               GB            5.87        Spain           ES           286.63
+    GB2               GB            15.85       Finland         FI           103.15
+    GB3               GB            14.57       France          FR           516.22
+    GB4               GB            56.00       Italy           IT           380.75
+    GB5               GB            178.05      Luxembourg      LU           9.01
+    GB6               GB            5.73        Netherlands     NL           180.39
+    GB7               GB            38.29       Norway          NO           170.26
+    Austria           AT            84.35       Poland          PL           197.6
+    Belgium           BE            99.47       Portugal        PT           60.88
+    Switzerland       CH            71.68       Sweden          SE           168.69
+    Czech Republic    CZ            80.96       SEM             SEM          52.17
+    Germany           DE            684.36      Slovenia        SI           16.59
+    Denmark           DK            54.42
+Generation
+Electricity generation in the model includes gas, thermal coal, oil, biomass, low-carbon hydrogen,
+nuclear, solar PV, wind, and other renewable supplies (RES, such as marine and waste energy). Gross
+installed capacity was taken from FES HE scenario 2030 for GB (tab “ES1”) and Europe (tab “ES2”).
+Table A. 4 reports the total installed generation capacity per country in the model.
+         Technoeconomic parameters such as ramp rates, minimum up and downtime, start-up and
+shutdown costs, thermal efficiency, and variable operating and maintenance (non-fuel) costs for
+dispatchable generation were primarily sourced from ENTSOE’s ERAA 2023 Study.7 All costs and
+prices used in the model are Euro 2023 prices.
+       The installed capacities were primarily sourced from the FES HE scenario (ESO,
+2024) dataset, with GB-wide solar and wind hourly capacity factors (CFs) obtained from the
+PECD (2021) for the 1998 climate year. The GB zonal VRE capacity factors were sourced from
+
+6
+ GB demand is at tab ES1, EU demand at tab ES2.
+7
+ The original source for these parameters is the worksheet titled "Thermal Properties" within the
+Excel file named “ERAA2023 PEMMDB Generation.xlsx”, derived from the Pan-European Market
+Modelling Database.
+
+                                                                                                    24
+https://www.renewables.ninja/, selecting representative NUTS-2 regional hourly CFs and adjusting
+them as explained below to obtain the final CFs, whose zonal averages are given in Table A. 2. For
+solar technologies, the analysis distinguished between utility-scale and rooftop PV installations.
+Rooftop solar profiles were adjusted for utility-scale PV using a factor of 1.11, derived from Jacobson
+and Jadhav (2018), to account for differences in sunlight incidence due to panel tilt and tracking.
+Weighted averages were then calculated for each zone, incorporating sub-zonal capacities for utility
+and rooftop solar.
+         The PECD climate database for Europe treats GB as a single zone. Further, the PECD
+database is a composite “normal” climate year rather than a specific year, although it is based on 1998
+data. Its correlation with the actual Ninja data8 for GB onshore wind in 1998 is 99%, and that is the
+year chosen for downloading Ninja data at the NUTS level, disaggregated to hourly resolution. Zonal
+values were calculated for the one or two NUTS regions with the highest average CFs (see Table A.2)
+and averaged, on the basis that developers would choose the most favourable locations within zones.
+Offshore hourly CFs are taken from the nearest onshore NUTS (in some cases, the average of the east
+and west coast values). For PV, representative zonal longitude and latitude values were used to
+download suitable Ninja CFs, which were then scaled as for other VREs.
+         The resulting zonal hourly capacity factors (CFz,h) reflect the cross-zonal correlations of
+weather. A consistent zonal VRE hourly output involves scaling CFz,h to preserve the GB-level zonal
+aggregate output correlation with the PECD GB data. The first step involved scaling and then
+flattening the CFz,h to ensure that they remain within the range [0%,100%]. Let ∑z CFz,hKz /Yh = θh be
+a scaling factor, where Yh is the PECD hourly output. As this varies between 0.16 and 1.54 for
+onshore wind, simply scaling by this factor would produce CFs outside the acceptable range. The next
+adjustment is first, to scale the original CFz,h to revised CFs: CF*z,h = 0.5θh + (1- 0.5θh* CFz,h) and
+then rescale by a further scaling factor φh = ∑z CF*z,hKz /Yh, which gives a GB hourly aggregate equal
+to the PECD value and preserves the cross-zonal correlations. The same approach was followed for
+offshore wind, except for a few cases in which the resulting CFz,h exceeded 100% and was capped at
+100%. It should be recognised that actual windfarms might have quite different CFs even in the same
+zone. Still, the purpose of the zonal exercise is to capture boundary constraints at any hour, and for
+that, good correlations within the zone are more important than the actual CFs.
+         This method fails for PV because the scaling factors can be too high and produce improbable
+hourly CFs; these were capped at the centred monthly NUTS zonal values, then scaled hourly to be
+consistent with the PECF GB hourly values, and finally capped at the maximum value of the original
+zonal CFs. Table A.2 lists the NUTS 2 zones used for onshore wind CFs, while the map shows their
+locations.9
+
+
+
+
+8
+  From Renewables.ninja Wind (NUTS-2 hourly data, 1980-2019) - ninja_wind_country_GB_merra-
+2_nuts-2_corrected - Version: 1.3 - License: https://creativecommons.org/licenses/by-nc/4.0/ -
+Reference: https://doi.org/10.1016/j.energy.2019.08.060
+9
+  At
+https://commons.wikimedia.org/wiki/File:NUTS_2_statistical_regions_of_the_United_Kingdom_201
+5_map.svg
+
+                                                                                                    25
+Table A. 2: GB Zonal wind and solar potential capacity factors (PCF)
+      Zone     NUTS2          OFF          ON           PV
+       Z1       M5-6           49.2%       28.0%            8.8%
+       Z2       M2-3           49.4%       27.9%            9.3%
+       Z3      C2,D1           51.5%       28.7%        10.3%
+       Z4       L1,E1          53.4%       28.4%            9.9%
+       Z5       F3,L1          54.1%       29.0%        10.8%
+        6          H1          53.1%       28.9%        11.5%
+       Z7       K2, J2         49.1%       27.8%        11.9%
+       GB                      52.2%       28.2%        10.8%
+
+
+
+
+At present, NESO charges intermittent generators an annual charge in £/kW that varies by location.
+The charge is made up of a year-round shared element x Average CF + a year-round non-shared
+element + adjustment tariff. If a transmission-connected generator is directly connected to a substation
+that is defined as a Main Interconnected Transmission System (MITS) node, it will only need to pay
+the onshore local substation tariff.10 The following table starts from the assumed grid and the
+connection charges already included in the Levelised Cost of Electricity (LcoE) in BEIS (2020, 2023),
+and adds deviations of the TNUoS zonal charge from the average across all NESO zones (on the
+assumption that the LcoEs used average figures). Thus, in Z1, the TNUoS charge for offshore wind is
+£25.34/kWyr, but the average is £8.52/kWyr and this is deducted, resulting in an additional charge of
+£16.83/kWyr. To add to the LcoE. The results are shown in Table A. 3.
+
+Table A. 3: Levelised costs and TNUoS adders for 2030, £(2024)/MWh
+ Zone                   OFF         ON          PV           PV mid-scale
+ Z1                       £16.83      £14.27      £12.02        £12.02
+ Z2                         £7.51       £5.76       £4.21       £4.21
+ Z3                        -£3.57      -£3.29      -£3.04       -£3.04
+ Z4                        -£9.72      -£8.10      -£6.66       -£6.66
+ Z5                      -£14.92     -£12.61     -£10.58       -£10.58
+ Z6                        -£8.05      -£7.15      -£6.35       -£6.35
+ ssZ7                    -£11.91       -£9.34      -£7.06       -£7.06
+ LCoE                   £46.44      £42.87       £44.06         £86.93
+ variable cost v          £1.19       £7.15       £0.00         £0.00
+ LCoE-v                 £45.25      £35.73       £44.06         £86.93
+Source: BEIS (2025), uprated to £2024 with the CPI
+
+
+
+
+10
+     https://www.neso.energy/document/130271/download
+
+                                                                                                     26
+  Table A. 4: Electricity generation capacity by fuels in 2030 (MW)
+                          Biomass   Coal     Gas       Oil     Hydrogen   Other RES   Solar     Wind Onshore   Nuclear   Wind Offshore   Total
+Austria                   585                1,997     164                293          9,620    8,691                                    21,349
+Belgium                   668                8,772     150                452          9,590    4,396          2,077     5,805           31,909
+Czech Republic            410       3,690    856               500                     6,080    1,506          3,936                     16,978
+Denmark                   2,534              628                                       5,029    5,479                    9,730           23,401
+Finland                   1,600              2,969                                     3,185    14,326         3,380     7,101           32,561
+France                    2,120              12,486    1,041   500         240         38,769   29,632         60,320    4,964           150,072
+Germany                   12,110             35,604    857     500        2,100       156,298   82,128                   28,021          317,619
+GB1                        86                 2,309     52                 85          743      6,930                    4,356           14,561
+GB2                        62                 38        52                 40          628      9,672                    3,516           14,009
+GB3                        366                392       52                 299         1,530    908                      2,890           6,437
+GB4                        2,248              11,101    52                1,252        3,730    2,071                    11,785          32,240
+GB5                        1,111              23,911    52                3,747        14,598   2,698          2,709     5,824           54,649
+GB6                        69                 1,234     52                 82          1,098    271            1,861     11,708          16,375
+GB7                        285                4,426     52                 314         5,318    530                      3,399           14,323
+Island of Ireland (SEM)                      7,723     693                 103         4,496    8,749                    4,344           26,107
+Italy                     4,672              50,222                                    63,568   16,743                   1,940           137,145
+Netherlands               1,059              15,386                                    28,084   7,795          485       16,979          69,788
+Norway                    732                                                          2,563    6,369                    8,779           18,444
+Poland                    1,535     16,584   8,182                                     15,597   15,554                   10,560          68,012
+Portugal                  700                4,016                                     13,490   9,751                    330             28,287
+Slovenia                  23        539      460                                       1,768    981            696                       4,467
+Spain                     1,100              18,875            200                     55,227   41,035         4,104     1,680           122,221
+Sweden                    2,220                                                        4,830    22,459         6,881     1,599           37,989
+Switzerland               400                                             200          10,264   495            1,220                     12,580
+
+
+
+
+                                                                                                                                         27
+Storage
+Conventional storage (pumped storage, hydroelectric generation with reservoir, batteries, compressed
+and liquid air energy storage) and demand-side response (DSR: load shifting and peak shaving) are
+modelled (see Table A. 5). All storage and DSR assumptions are taken from ESO (2024) and
+ENTSOe (2024). Hydro energy inflow data, discharge and charge capacities for the modelled market
+zones are derived from the Pan-European Market Modelling Database (PEMMDB),11 part of the
+ERAA2023 study. Hydro inflows are sourced from the “Storage_technology - Year Dependent” sheet
+in the files accessible via the Hydro Inflows ZIP, with the reference year set to 1998 under normal
+climatic conditions. Discharge, charge, and volume capacities are obtained from the sheet “TY2030”
+in ERAA 2023 PEMMDB Generation.xlsx.
+Assumptions and data processing for hydro and PS technologies:
+     - Zones with positive discharge capacity but zero volume capacity assume discharge capacity
+          equals volume capacity.
+     - Efficiency losses for pumped storage are assumed to be 25%.
+Battery and DSR discharge, charge, and volume capacities are primarily based on ESO (2024),
+supplemented by ERAA 2023 PEMMDB Generation.xlsx for non-GB zones. DSR capacities for
+Great Britain (GB) are sourced from FES, while for other regions, data is derived from the “TY2030”
+in ERAA 2023 PEMMDB Generation.xlsx. Note that we take hydro generation capacity from the
+PEMMDB dataset. In particular, according to the PEMMDB dataset, GB has 2,219.5 MW of hydro-
+run-of-river generation capacity with storage capability (pondage).
+Assumptions and data processing for batteries and DSR:
+     - GB DSR capacity values are exclusively based on FES, while other zones use PEMMDB
+          data.
+     - Battery storage calculations are based on the injection/offtake ratio in TYNDP, assuming 3
+          hours of energy storage for zones without specific data.
+     - Round-trip efficiency losses for batteries are assumed to be 15%.
+     - Implicit (load shifting) DSR assumes a uniform 4-hour “storage” (or shifting) capacity.
+     - Peak shaving is modelled in great detail following assumptions on price bands, capacity and
+          availability hours, according to ERAA 2023 PEMMDB.
+According to FES HE 2030, GB’s total consumer DSR (residential, industrial, and commercial
+consumers) may provide up to 2.07 GW of demand reduction at its peak in 2030 (in 2023, this is 1.24
+GW, according to FES HE). Further, FES HE 2030 assumes 8.16 GW of demand flexibility from
+smart charging (1.97 GW) and flexibility from domestic and industrial heat storage, hybrid heat
+pumps and thermal storage (in 2023, this is 6.04 GW, according to FES HE). Thus, in the FES HE
+scenario, GB is projected to have 10.22 GW of demand-side flexibility by 2030. Overall, this
+flexibility level is rather ambitious and sits at the high end of forecasts from other stakeholders and
+institutions (e.g., according to Torriti (2024), Carbon Trust and Imperial College London forecast
+optimal DSR capacity to be between 4.1 GW and 11.4 GW by 2030). Our dispatch model assumes
+2.07 GW of implicit DSR (load shifting) and another 6.19 GW of peak shaving (taken from ERAA
+2023 PEMMDB), totalling 8.25 GW of DSR for GB by 2030. Note that peak shaving capacity will
+unlikely help reduce curtailment. They are designed to reduce peak-hour demand rather than to
+provide intertemporal flexibility to shift the residual load and reduce curtailment.
+FES reports capacity for Compressed Air and Liquid Air Storage for GB only. Thus, their discharge,
+charge and volume capacities for compressed air and liquid air storage are derived from FES data.
+Data for these storage technologies from other regions is unavailable.
+
+11
+  https://eepublicdownloads.blob.core.windows.net/public-cdn-container/clean-documents/sdc-
+documents/ERAA/2023/ERAA2023%20PEMMDB%20Generation.xlsx
+
+                                                                                                     28
+Table A. 5: Electricity storage and demand side response capacity in 2030
+
+                        Conventional storage         DSR
+                        Discharge,    Duration*,     Discharge,     Duration*,
+                        MW            hours          MW             hours
+ Austria                 16,463        125           1,400          14
+ Belgium                 2,130         3             10,107         11
+ Czech Republic          4,105         3
+ Denmark                 364           8
+ Finland                 4,030         571            4,641          4
+ France                  28,588        152            9,999          11
+ Germany                 32,652        49             6,722          5
+ GB1                     369          2              42             4
+ GB2                    5694          3              105            4
+ GB3                    883           2              95             4
+ GB4                    9,397         5              369            4
+ GB5                    7,182         2              1,159          4
+ GB6                    319           2              42             4
+ GB7                    2,504         2              253            4
+ Island of Ireland       2,179         3              667            4
+ Italy                   25,431        134            2,286          4
+ Luxembourg              62            1              90             5
+ Netherlands             2,362         2              1,687          4
+ Norway                  36,303        4,786          19,713         7
+ Poland                  3,607         2
+ Portugal                8,598         271
+ Slovenia                1,399         8              110            13
+ Spain                   25,590        527            2,000          4
+ Sweden                  16,826        1,024          3,478          19
+ Switzerland             18,029        303
+Notes: * average for all storage technologies
+
+Assumptions and data processing for Compressed Air and Liquid Air Storage:
+   - The installed capacities for compressed and liquid air storage reported in the FES databook
+       are treated as discharge and charge capacities, respectively.
+   - Discharge durations for zones without specific data are assumed to be 3 hours for compressed
+       air12 and 5 hours for liquid air (Vecchi et al., 2021).
+   - Round-trip efficiency is assumed to be 57.5% for both technologies, corresponding to the
+       midpoint of the 45-70% range reported by Vecchi et al. (2021).
+Network
+The network data for interconnections (IC) between zones in the model includes Net Transfer
+Capacities (NTCs), their assumed hourly availability profiles, and associated losses. The primary
+source for this data is the Pan-European Market Modelling Database (PEMMDB), specifically the file
+PEMMDB_Transfer_Capacities_2030.xlsx, which contains information on both HVDC and HVAC
+lines for European market zones. Supplementary data was drawn from FES, Ofgem13 and public
+sources to calculate interconnections between GB zones and the rest of Europe.
+To create the interconnector data, only interconnections where both connected nodes are listed within
+the relevant zones were included in the analysis. The NTC values for these interconnections were
+derived directly from their rated power. The interconnection availability profiles were assumed to be 1
+
+12
+   https://www.modernpowersystems.com/analysis/compressed-and-liquid-air-for-long-duration-high-
+capacity-11065946/
+13
+   https://www.ofgem.gov.uk/energy-policy-and-regulation/policy-and-regulatory-
+programmes/interconnectors
+
+                                                                                                    29
+(i.e., available at all hours). Where multiple interconnections existed between the same zones, they
+were categorised as additional lines. By 2030, GB is projected to have 14,514 MW of interconnection
+capacity with the rest of Europe:
+
+    1. 2,400 MW with Belgium (NEMO with 1000 MW connected to GB7 and Chronos with 1400
+        MW connected to GB5)
+    2. 1,400 MW with Germany (Neuconnect with 1400 MW connected to GB5)
+    3. 1,400 MW with Denmark (Viking Link with 1400 MW connected to GB5)
+    4. 1000 MW with the Netherlands (Britned with 1000 MW connected to GB5)
+    5. 1,464 MW with Norway (NSL with 1464 MW connected to GB3)
+    6. 1,450 MW with the Island of Ireland (Moyle with 450 MW connected to GB2, EWIC with
+        500 MW connected to GB4, and GreenLink with 500 MW connected to GB5)
+    7. 5,400 MW with France (IFA1 and IFA2 with 3000 MW connected to GB7, ElecLink with
+        1000 MW connected to GB7, and Gridlink with 1400 MW connected to GB5)
+In 2023, GB’s total interconnection capacity was 8464 MW. The final dataset includes the processed
+NTC values and interconnections availability profiles, incorporating the adjustments for GB sub-
+zones. Zones Z2, Z4, and Z5 are connected to the SEM; Z5 is also connected to BE, DE, DK, FR, and
+NL. Z7 is also connected to FR.
+
+Costs and prices
+Load curtailment cost is assumed to be €4,000/MWh-e, which aligns with the ERAA 2023 price cap
+assumption. Carbon prices for the GB and European power markets are assumed to be €107/tCO2 and
+€86/tCO2, respectively.14 Fuel prices were sourced from FES 2024 (taking 2023 gas, coal and oil
+prices) and from the BEIS (2023) Electricity Generation Costs 2023 report (Table A. 6).
+Table A. 6: Assumed fuel prices
+                            €2023 per MWh-th
+ Coal                                14.52
+ Oil                                 53.69
+ Gas                                 40.42
+ Dedicated biomass                   11.83
+ Biomass CHP                         14.64
+ Biomass CCS*                        22.02
+Notes: * BEIS (2020) and ESO (2024) for coal, oil and gas prices
+
+Assumed avoidable (variable non-fuel) cost for exogenous generation (non-dispatchable generation)
+was assumed as follows:
+
+      1.   Other RES: €40.53/MWh-e.
+      2.   Wave energy: €26.69/MWh-e;
+      3.   Landfill gas: €14.83/MWh-e;
+      4.   Hydroelectric; €10.38/MWh-e;
+      5.   Wind onshore: €8.90/MWh-e;
+      6.   Wind offshore: €1.48/MWh-e;
+      7.   Solar PV: €0/MWh-e;
+      8.   Nuclear: -€10 /MWh-e.
+
+
+
+14
+     These carbon price levels were observed in 2023, based on FES 2024
+
+                                                                                                  30
+It should be noted that the nuclear avoidable cost is an artificial construct designed to ensure that the
+dispatch model curtails nuclear power only as a last resort. This assumed variable (non-fuel) cost
+structure prioritises curtailing other renewable energy sources (RES) first, treating them as the most
+expensive, while solar PV and nuclear power are curtailed last. When solar PV is curtailed, the
+shadow price of the demand-supply constraint (system marginal cost) will be zero. However, if
+nuclear power is also curtailed, this value could drop to negative €10. An alternative approach to
+ensuring nuclear has minimal curtailment is to require longer up-and-down times and very low ramp
+rates. However, these features require explicit unit commitments imposed on nuclear, which can be
+modelled, but at the cost of increased computational complexity. There is evidence in the offer and
+bid prices that EDF Energy Nuclear Generation makes into the Balancing mechanism - e.g., on
+19/08/25, all stations had a spread from £10,000 to -£10,000/MWh, indicating their unwillingness to
+flex at short notice.ss
+
+Data and Appendix References
+Ah-Voun, D., Chyong, C. K., & Li, C. (2024). Europe’s energy security: From Russian
+         dependence to renewable reliance. Energy Policy, 184, 113856.
+         https://doi.org/10.1016/j.enpol.2023.113856
+ENTSOE, 2023. ERAA 2023 Study, https://eepublicdownloads.blob.core.windows.net/public-
+         cdn-container/clean-documents/sdc-
+         documents/ERAA/2023/ERAA2023%20PEMMDB%20Generation.xlsx .
+ESO, 2024a. Future Energy Scenarios, https://www.neso.energy/publications/future-energy-
+         scenarios-fes
+ESO, 2024b. Future Energy Scenarios Data Book, at https://www.neso.energy/fes-data-
+         workbook-2024
+Jacobson, M.Z., & Jadhav, V. (2018). World estimates of PV optimal tilt angles and ratios of
+         sunlight incident upon tilted and tracked PV panels relative to horizontal panels. Solar
+         Energy, 169, 55-66.
+PECD 2021. Pan-European Climatic Database (PECD 2021.3)
+         https://zenodo.org/records/7224854
+Pfenninger, P. & I. Staffell, 2016. Using bias-corrected reanalysis to simulate current and
+         future wind power output, energy, 114, 1224-1239,
+         https://doi.org/10.1016/j.energy.2016.08.068 .
+Pfenninger, P. & I. Staffell, 2016. Long-term patterns of European PV output using 30 years
+         of validated hourly reanalysis and satellite data, energy, 114, 1251-1265,
+         https://doi.org/10.1016/j.energy.2016.08.060
+TYNDP, 2022. Ten Year Network Development Plan, https://2022.entsos-tyndp-
+         scenarios.eu/wp-
+         content/uploads/2022/04/TYNDP_2022_Scenario_Building_Guidelines_Version_Apr
+         il_2022.pdf
+Torriti, J. (2024). Governance perspectives on achieving demand side flexibility for net zero.
+         Energy Policy, 191, 114148.
+Vecchi, A., Li, Y., Ding, Y., Mancarella, P., & Sciacovelli, A. (2021). Liquid air energy
+         storage (LAES): A review on technology state-of-the-art, integration pathways, and
+         future perspectives. Advances in Applied Energy, 3, 100047.
+
+
+
+
+                                                                                                        31
+Appendix 2: Additional results
+Table A. 7 shows the full impact of increasing each VRE one zone at a time. The table shows that
+even for expansions far from Z1 and Z2, most of the curtailment occurs in those zones.
+Table A. 7: Full zonal impact of individual VRE increments
+
+ Individual                 Z1        Z2         Z3        Z4        Z5            Z6            Z7         Total
+ expansions
+ OFF               Z1            38        14         1         1         2              0            1        57
+ Curtailment,      Z2            28        16         1         1         2             -0            1        48
+ GWh
+                   Z3             6        10         1         1         2              0            0        20
+                   Z4            37        38         4         3         2              0            1        84
+                   Z5            11        21         2         2         3              0            1        39
+                   Z6            36        30         4         3         7              0            1        80
+                   Z7            10         8         1         1         2              0            0        22
+ ON                Z1        240         7            0         0         1             -0             0     249
+ curtailment,      Z2        176       161            1         0         0             -0             0     339
+ GWh
+                   Z3          1         5            8        -0         2             -0             0      15
+                   Z4         12        11            1        17        -1             -0             0      39
+                   Z5          9        16            2         1        18              0             1      48
+                   Z6         -7         1            0         0         0              2            -0      -3
+                   Z7          1         2            0         0        -1             -0             4       6
+ PV                Z1             2         5         0         0          2             0             0      10
+ Curtailment,      Z2             5         2         0         0          2             0            -0       9
+ GWh
+                   Z3             5         3         1         0          1             0             0      11
+                   Z4             5        14         1         1          0             1             1      22
+                   Z5            48        45         5         7          6             1             3     115
+                   Z6             9         3         1         0         -0            -0             0      13
+                   Z7            16        15         3         1          2             0             1      38
+
+
+
+Table A. 8: Impact of expanding VRE in Z5 with high EU VRE
+
+ High VRE               Z1        Z2        Z3        Z4        Z5        Z6        Z7            Total      normal       delta
+ curtailment     OFF         8        28         4         7         5         2             2         56            39   44%
+ GWh             ON          7        26         3        10        34         1             2         83            48   72%
+                 PV         51        75        13        17         7         3             5        172           115   50%
+
+Table A. 8 shows that at the level of individual expansions in the central part of the country
+(Z5), High EU VRE increases curtailment by 44%-72%.
+
+
+Table A. 9: Levelised marginal costs of VRE, £(2024)/MWh
+
+                       Z1             Z2             Z3             Z4             Z5             Z6           Z7
+ OFF               £95.36          £83.64         £51.48        £44.16         £37.39            £45.87      £41.32
+ ON               £102.46          £84.74         £48.29        £43.67         £37.02            £35.73      £37.89
+ PV grid-scale     £93.87          £77.52         £50.05        £46.29         £38.91            £43.40      £37.97
+ PV mid-scale     £165.62         £146.37        £102.36        £99.35         £88.73            £92.74      £81.97
+
+
+
+                                                                                                                                  32
+Table A. 10: Levelised average cost of VRE, £2024/MWh
+
+                   Z1        Z2       Z3       Z4       Z5       Z6       Z7
+ OFF              £73.06    £58.73   £43.49   £37.02   £31.86   £38.43   £34.71
+ ON               £66.94    £53.13   £40.16   £35.05   £30.58   £35.76   £33.71
+ PV grid-scale    £75.36    £61.09   £44.41   £41.84   £34.32   £36.01   £34.18
+ PV mid-scale    £132.97   £115.35   £90.82   £89.79   £78.27   £76.95   £73.78
+
+
+
+
+                                                                                  33
+Appendix 3: Mathematical formulation of the UCED model
+The model is an extension of two models: (i) the unit commitment and economic dispatch model
+developed by Chyong and Newbery (2022) for the GB electricity market, and (ii) the Pan-European
+electricity dispatch model developed by Chyong et al. (2019). The main extension includes:
+    1. Joint dispatch of electricity and hydrogen;
+    2. Endogenous dispatch of hydropower with energy inflow and storage capability;
+    3. Explicit and implicit demand-side response;
+    4. Improvements to the storage and interconnector modelling, in particular, handling issues
+       related to simultaneous flows and improvements to the ramp limits for interconnectors;
+    5. Nodal market design, including nodal line flow modelling and LMP computations;
+    6. Handling of time-dependent input parameters for generation, storage and transmission.
+The rest of this section presents a mathematical formulation of the new model version, while
+Appendix 1 outlines the data sources and assumptions used to generate the model inputs. We start
+with model notations first and then outline its equations.
+Notation
+This section gives details about symbols used in our unit commitment model. For clarity of
+presentation, all exogenous parameters are written in lowercase. Decision variables are capitalised,
+whereas auxiliary variables are written in lowercase and italicised. Subscripts are used for indexation,
+while superscripts are used to clarify the meaning of variables and parameters when necessary.
+
+Sets and Indices
+ t, tt ∊ T         Set of all time periods in a modelling horizon r;
+
+ r, rr ∊ R         Set of all rolling horizons;
+ j, jj ∊ J         Set of all generators, semi-endogenous interconnectors and storage units in the model; j
+                   ∊ J(f) - subset of all thermal generation units; j ∊ J(s) - subset of all storage units; j ∊
+                   J(i) - subset of all semi-endogenous interconnectors where i denotes an external
+                   market; j ∊ J(v) - subset of all variable renewable electricity (VRE) generation units
+                   (wind and solar).
+Decision Variables
+   Name                               Description/Comment                                        Unit
+ Binary Variables
+ PLANT_COMMIT(r, t, j)              Commitment status of a thermal plant j ∊ J(f) at time t.     n.a.
+                                    1 - committed, otherwise 0; the unit commitment
+                                    feature for unit j can be switched on by setting
+                                    uc_flag(𝑗) = 1 or off by setting this parameter to 0.
+ PLANT_START(r, t, j)               Start-up status of a thermal plant j ∊ J(f) at time t. 1 -   n.a.
+                                    the unit j starts up, otherwise 0
+ PLANT_SHUT(r, t, j)                Shut-down status of a thermal plant j ∊ J(f) at time t. 1    n.a.
+                                    - the unit j shuts down, otherwise 0
+ STOR_CHRG_COMMIT(r, t, j)          Commitment status of a storage unit j ∊ J(s) at time t. 1    n.a.
+                                    -committed to charge, otherwise 0
+
+
+
+                                                                                                        34
+IZFLOW_COMMIT(r, t, n, k, nn) Binary variable indicating whether the interzonal flow     n.a.
+                              for line k is committed between nodes n and nn at time
+                              (r,t). This ensures mutual exclusivity of forward and
+                              backward flows.
+EXT_IC_COMMIT(r, t, j)          A binary variable indicating whether (semi-              n.a.
+                                endogenous) interconnector j(i) is in importing mode
+                                (=1) or export mode (=0).
+Continuous Decision Variables (Electricity)
+FUEL_CONS_POWER(r, t, f, j)     The fuel consumption of generation technology j using    MWh-th
+                                fuel f at node n and time (r,t).
+SPINUP(r, t, j)                 Represents the spinning up reserve provided by           MW
+                                generation unit j at time (r,t)
+NS_SPINUP(r, t, j)              Represents the non-spinning reserve contribution by      MW
+                                generation unit j at time (r,t)
+STOR_SPINUP(r, t, j)            Represents the reserve contribution from storage units   MW
+                                in discharge mode at time (r,t)
+SPINDOWN(r, t, j)               Represents the spinning down reserve provided by         MW
+                                generation unit j at time (r,t)
+STOR_SPINDOWN(r, t, j)          Represents the reserve contribution from storage units   MW
+                                in charging mode (spinning down) at time (r,t)
+EXT_IC_IMP(r, t, j)             Electricity import flow through (semi-endogenous)        MWh
+                                interconnector j at time (r,t)
+EXT_IC_EXP(r, t, j)             Electricity export flow through (semi-endogenous)        MWh
+                                interconnector j at time (r,t)
+E_IZ_FLOW(r, t, n, k, nn)       The decision variable representing interzonal            MWh
+                                electricity flow between nodes n and nn over line k at
+                                time (r,t)
+STOR_CHRG(r, t, j)              Represents the energy charged into storage j at time     MWh
+                                (r,t)
+STOR_DCHRG(r, t, j)             Represents the energy discharged from storage j at       MWh
+                                time (r,t)
+DEM_E_CURT(r, t, n)             Represents electricity demand curtailed at node n at     MWh
+                                time (r,t)
+HYDRO_E_CURT(r, t, n)           Represents curtailment of hydro inflow at time (r,t)     MWh
+Continuous Decision Variables (Hydrogen)
+H2_ELEC_PWR_CONS(r, t, j)       Power consumed (in MWh-e) by hydrogen electrolyser       MWh
+                                j at time (r,t)
+H2_IZ_FLOW(r, t, n, k, nn)      Represents the hydrogen flow from node n to node nn      MWh-th
+                                through pipeline k at time (r,t)
+
+
+
+                                                                                                35
+H2_STOR_CHRG(r, t, j)          Represents the amount of hydrogen charged into               MWh-th
+                               storage unit j at time (r,t)
+H2_STOR_DCHRG(r, t, j)         Represents the amount of hydrogen discharged from            MWh-th
+                               storage unit j at time (r,t)
+H2_DEM_CURTr,t,n               Represents hydrogen demand curtailed at node n at            MWh-th
+                               time (r,t)
+Auxiliary Variables
+𝑝𝑜𝑤𝑒𝑟_𝑜𝑢𝑡(𝑟, 𝑡, 𝑗)             Electrical energy output of a unit j ∊ J(f) at time (r,t),   MWh
+                               defined as follows:
+                                       power_out(𝑟, 𝑡, 𝑗)
+                                       = ∑ FUEL_CONS_POWER(𝑟, 𝑡, 𝑓, 𝑗)
+                                           𝑓
+                                       ⋅ thermal_eff(𝑓, 𝑗)
+𝑣𝑟𝑒_𝑐𝑢𝑟𝑡𝑎𝑖𝑙(𝑟, 𝑡, 𝑗)           Curtailment of variable renewable electricity (VRE)          MWh
+                               technology j (wind and solar) at time (r,t), defined as
+                               follows:
+                                       𝑣𝑟𝑒_𝑐𝑢𝑟𝑡𝑎𝑖𝑙(𝑟, 𝑡, 𝑗)
+                                                       = max_pwr_out(r, t, j)
+                                                       − 𝑝𝑜𝑤𝑒𝑟_𝑜𝑢𝑡(𝑟, 𝑡, 𝑗)
+𝑒𝑥𝑡_𝑖𝑐_𝑛𝑒𝑡_𝑓𝑙𝑜𝑤(𝑟, 𝑡, 𝑗)       Represents (semi-endogenous) external net electricity        MWh
+                               imports (positive) less exports (negative) through
+                               interconnectors j at time (r,t), defined as follows:
+                                        𝑒𝑥𝑡_𝑖𝑐_𝑛𝑒𝑡_𝑓𝑙𝑜𝑤(𝑟, 𝑡, 𝑗)
+                                                      = EXT_IC_IMP(r, t, j)
+                                                      − EXT_IC_EXP(r, t, j)
+𝑟𝑎𝑚𝑝_𝑢𝑝(𝑟, 𝑡, 𝑗)               Represents the ramp-up decision for unit j at time (r,t),    MWh
+                               defined as follows:
+                                      𝑟𝑎𝑚𝑝_𝑢𝑝(𝑟, 𝑡, 𝑗)
+                                                     = 𝑝𝑜𝑤𝑒𝑟_𝑜𝑢𝑡(𝑟, 𝑡, 𝑗)
+                                                     − 𝑝𝑜𝑤𝑒𝑟_𝑜𝑢𝑡(𝑟, 𝑡 − 1, 𝑗)
+𝑟𝑎𝑚𝑝_𝑑𝑜𝑤𝑛(𝑟, 𝑡, 𝑗)             Represents the ramp-down decision for unit j at time         MWh
+                               (r,t), defined as follows:
+                                      𝑟𝑎𝑚𝑝_𝑑𝑜𝑤𝑛(𝑟, 𝑡, 𝑗)
+                                                   = 𝑝𝑜𝑤𝑒𝑟_𝑜𝑢𝑡(𝑟, 𝑡 − 1, 𝑗)
+                                                   − 𝑝𝑜𝑤𝑒𝑟_𝑜𝑢𝑡(𝑟, 𝑡, 𝑗)
+𝑛𝑜𝑑𝑎𝑙_𝑛𝑒𝑡_𝑒𝑛𝑒𝑟𝑔𝑦_𝑖𝑛𝑗(𝑟, 𝑡, 𝑛) Represents net nodal energy injection (used only for          MWh
+                              the nodal market design problem) at node n and time
+                              (r,t), defined as follows:
+
+
+
+
+                                                                                                  36
+                                nodal_net_energy_inj(𝑟, 𝑡, 𝑛)
+                                                 = ∑ power_out(𝑟, 𝑡, 𝑗)
+                                                    𝑗 (𝑛 )
+                                                 ⋅ (1 − eff_loss(j))
+                                                 + ∑ STOR_DCHRG(r, t, j)
+                                                    j(n)
+
+                                                 + ∑ ext_ic_net_flow(𝑟, 𝑡, 𝑗)
+                                                    𝑗 (𝑛 )
+                                                 ⋅ (1 − eff_loss(j))
+                                                 + ∑ [E_IZ_FLOW(r, t, nn, k, n)
+                                                    (nn,k)
+                                                 − E_IZ_FLOW(r, t, n, k, nn)]
+                                                 − [demand_e(r, t, n)
+                                                 − DEM_E_CURT(r, t, n)]
+                                                 − ∑ STOR_CHRG(r, t, j)
+                                                    j(n)
+
+𝑛𝑜𝑑𝑎𝑙_𝑙𝑖𝑛𝑒_𝑓𝑙𝑜𝑤(𝑟, 𝑡, 𝑘)      Represents net nodal energy injection (used only for        MWh
+                              the nodal market design problem) at node n and time
+                              (r,t), defined as follows:
+                                nodal_line_flow(𝑟, 𝑡, 𝑘 )
+                                                 = ∑ nodal_net_energy_inj(𝑟, 𝑡, 𝑛)
+                                                     𝑛
+                                                 ⋅ nodal_reduced_PTDF(𝑛, 𝑘 )
+storage_level(𝑟, 𝑡, 𝑗)        Represents storage level for unit j (electricity) at time   MWh
+                              (r,t), defined as follows:
+                                   storage_level(𝑟, 𝑡, 𝑗)
+                                                   = storage_level(𝑟, 𝑡 − 1, 𝑗)
+                                                   + [stor_hydro_inflow(r, t, j)
+                                                   − HYDRO_CURT(r, t, j)]
+                                                   + [STOR_CHRG(r, t, j)
+                                                   ⋅ (1 − eff_loss(j))
+                                                   − STOR_DCHRG(r, t, j)]
+
+FuelStock_level(𝑟, 𝑡, 𝑓, 𝑗)   Represents fuel stock level of unit j and fuel f at time    MWh-th
+                              (r,t), defined as follows:
+                                FuelStock_level(𝑟, 𝑡, 𝑓, 𝑗)
+                                               = fuel_stock_init(𝑓, 𝑗)
+                                               − FUEL_CONS_POWER(𝑟, 𝑡, 𝑓, 𝑗)
+𝐹𝑙𝑜𝑤𝐶ℎ𝑎𝑛𝑔𝑒_𝐵𝑊_𝐹𝑊(𝑟, 𝑡, 𝑘) An auxiliary binary variable representing a change in           n.a.
+                          flow direction from backwards to forward direction
+                          over line k at time (r,t)
+
+
+
+
+                                                                                                 37
+𝐹𝑙𝑜𝑤𝐶ℎ𝑎𝑛𝑔𝑒_𝐹𝑊_𝐵𝑊(𝑟, 𝑡, 𝑘) An auxiliary binary variable representing a change in             n.a.
+                          flow direction from forward to backwards direction
+                          over line k at time (r,t)
+𝐻2_𝑜𝑢𝑡𝑝𝑢𝑡(𝑟, 𝑡, 𝑗)               The quantity of hydrogen produced by technology j in       MWh-th
+                                 node n at time (r,t), defined as follows:
+                                   H2_output(𝑟, 𝑡, 𝑗)
+                                                    = H2_ELEC_PWR_CONS(𝑟, 𝑡, 𝑗)
+                                                    ⋅ H2_elec_eff(𝑗)
+𝐻2_𝑆𝑡𝑜𝑟𝑎𝑔𝑒_𝑙𝑒𝑣𝑒𝑙(𝑟, 𝑡, 𝑗)        Represents the hydrogen volume held in storage unit j      MWh-th
+                                 at time (r,t), defined as follows:
+                                    H2_Storage_level(𝑟, 𝑡, 𝑗)
+                                                  = H2_Storage_level(𝑟, 𝑡 − 1, 𝑗)
+                                                  + H2_STOR_CHRG(𝑟, 𝑡, 𝑗)
+                                                  ⋅ (1 − eff_loss(𝑗))
+                                                  − H2_STOR_DCHRG(𝑟, 𝑡, 𝑗)
+Input Parameters (Electricity)
+demand_e(r, t, n)                Electricity demand input at node n and time (r,t)          MWh
+spinup_res(r, t, n)              Spinning up reserve requirement at node n and time         MW
+                                 (r,t)
+spindown_res(r, t, n)            Spinning down reserve requirement at node n and time       MW
+                                 (r,t)
+snsp_lim(n)                      Non-synchronous penetration (SNSP) limit for node n;       Unitless
+                                 set as a ratio of demand at node n
+fuel_map(f,j)                    A binary parameter that maps fuel f to technology j        n.a.
+gen_type(j)                      A classification parameter [1- generation; 2 - storage;    n.a.
+                                 3-external (semi-endogenous interconnectors]
+eff_loss(j)                      Loss of energy output associated with parasitic load at    unitless
+                                 a generation plant j. For storage, this is loss due to
+                                 mechanical or chemical processes.
+max_pwr_out(r,t,j)               Maximum generation for unit j at time (r,t)                MW
+min_pwr_out(r,t,j)               Minimum stable generation level for unit j at time (r,t)   MWh
+ramp_up_rt(j)                    Ramp-up rate of unit j                                     MW/time
+                                                                                            step
+ramp_down_rt(j)                  Ramp-down rate of unit j                                   MW/time
+                                                                                            step
+ramp_trans_ext_ic(j)             Transition ramp rate for external IC (semi-                MW/time
+                                 endogenous), defined as                                    step
+                                 min(ramp_up_rt(j),ramp_down_rt(j))
+
+
+
+
+                                                                                                   38
+thermal_eff(f,j)           Thermal efficiency of unit j using fuel f                    MWh-
+                                                                                        e/MWh-th
+carbon_intensity(f,j)      Carbon intensity of technology j using fuel f                tCO2/MWh-
+                                                                                        e
+init_fuel_stock(f,j)       Fuel stock of fuel type f available to technology j at the   MWh-th
+                           beginning of the modelling horizon
+min_uptime(j)              minimum up time of technology j                              Time step
+min_downtime(j)            minimum downtime of technology j                             Time step
+L(j)                       downtime before the start of the modelling horizon           Time step
+G(j)                       uptime before the start of the modelling horizon             Time step
+stor_init_stock(j)         initial energy hold in stock for electricity storage j       MWh
+stor_vol_cap(j)            storage volume capacity                                      MWh
+stor_dchrg_cap(r,t,j)      The storage discharge capacity of unit j at time (r,t)       MW
+stor_chrg_cap(r,t,j)       The storage charge capacity of unit j at time (r,t)          MW
+stor_hydro_inflow(r,t,j)   The energy available for hydro unit j and explicit           MWh
+                           demand-side response (peak shaving) at time (r,t)
+fuel_flow(r,t,f,n)         Fuel type f supply to node n at time (r,t)                   MWh-th
+nodal_PTDF(n,k)            Power transfer distribution factor. This parameter is        Unitless
+                           applied only to the formulation of the nodal model.
+nodal_line_cap(r,t,k)      Line k capacity at time (r,t); This parameter is applied     MW
+                           only to the formulation of the nodal model.
+nodal_line_resistance(k)   Resistance of line k; This parameter is applied only to      p.u.
+                           the formulation of the nodal model.
+nodal_iface_cap(i)         Interface (a collection of lines k) i’s capacity; This       MW
+                           parameter is applied only to the formulation of the
+                           nodal model.
+nodal_line_direction(k)    Interface i’s direction (1- forward; -1 - backwards);        n.a.
+                           This parameter is applied only to the formulation of the
+                           nodal model.
+iz_line_cap(r,t,n,k,nn)    Interzonal line k capacity at time (r,t), connecting         MW
+                           nodes (n,nn)
+iz_line_ramp(n,k,nn)       Ramp rate for line k                                         MW/time
+                                                                                        step
+iz_line_ramp_bw_fw(k)      The transition ramp rate for line k when changing            MW/time
+                           flows from backwards to forward is defined as a lesser       step
+                           of the two ramp rates (n to nn, forward direction and
+                           nn to n, backward direction).
+
+
+
+
+                                                                                               39
+iz_line_ramp_fw_bw(k)         The transition ramp rate for line k when changing         MW/time
+                              flows from forward to backwards is defined as a lesser    step
+                              of the two ramp rates (n to nn, forward direction and
+                              nn to n, backward direction).
+carbon_price(r,t,n)           Carbon price applied at node n and time (r,t)             $/tCO2
+demand_curt_cost(n)           Electricity load shedding cost at node n                  $/MWh
+iz_line_varcost(n,k,nn)       Short-run variable cost of flow over line k               $/MWh
+fuel_cost(r,t,f)              Supply cost of fuel f at time (r,t)                       $/MWh-th
+                                                                                        for thermal
+                                                                                        sources and
+                                                                                        $/MWh-e for
+                                                                                        electricity
+                                                                                        sources
+varcost(r,t,j)                Short-run variable cost of unit j at time (r,t)           $/MWh
+start_cost(j)                 Start-up cost of unit j                                   $/start
+shut_cost(j)                  Shut down cost of unit j                                  $/shut
+ramp_up_cost(j)               Ramp-up cost of unit j                                    $/MWh/time
+                                                                                        step
+ramp_down_cost(j)             Ramp-down cost of unit j                                  $/MWh/time
+                                                                                        step
+spin_up_cost(j)               Spin-up reserve cost provided by unit j                   $/MW
+capcost_res_up(n)             The unit cost associated with upward reserve capacity     $/MW
+                              shortfalls for node n
+capcost_res_down(n)           The unit cost associated with downward reserve            $/MW
+                              capacity shortfalls for node n
+capcost_LB(j)                 Cost associated with lower bound violations               $/MWh-e
+capcost_UB(j)                 Cost associated with upper bound violations               ($/MW-e
+capcost_rampup(j)             Cost associated with ramp-up limit violations             $/MWh-
+                                                                                        e/time step
+capcost_rampdown(j)           Cost associated with ramp-down limit violations           $/MWh-
+                                                                                        e/time step
+capcost_line_flow(k)          Cost per unit of forward or backward flow capacity        $/MW
+                              violation for line k
+capcost_iface_flow(i)         Per-unit penalty cost associated with interface flow      $/MW
+                              capacity violations (forward or backward) for interface
+                              i
+Input Parameters (Hydrogen)
+H2_demand(r,t,n)              Hydrogen demand at node n and time (r,t)                  MWh-th
+
+
+                                                                                                  40
+ H2_elec_cap(r,t,j)                 Electrolysis j’s capacity at time (r,t)                    MW-e
+ H2_elec_ramp_up(j)                 Electrolysis j’s ramp-up capacity                          MW-e/time
+                                                                                               step
+ H2_elec_ramp_down(j)               Electrolysis j’s ramp-down capacity                        MW-e/time
+                                                                                               step
+ H2_elec_eff(j)                     Electrolysis j’s conversion efficiency                     MWh-
+                                                                                               th/MWh-e
+ H2_stor_init_stock(j)              Initial energy available in stock in hydrogen storage j    MWh-th
+ H2_stor_vol_cap(j)                 Hydrogen storage j capacity                                MWh-th
+ H2_stor_chg_cap(r,t,j)             Hydrogen storage j charge capacity at time (r,t)           MWh-th
+ H2_stor_dchg_cap(r,t,j)            Hydrogen storage j discharge capacity at time (r,t)        MWh-th
+ H2_iz_line_cap(r,t,n,k,nn)         Hydrogen pipeline k’s capacity at time (r,t)               MWh-th
+ H2_iz_line_loss(k)                 Hydrogen pipeline k’s line loss (as a fraction of energy   unitless
+                                    transported)
+ H2_demand_curt_cost(n)             Hydrogen demand curtailment cost at node n                 $/MWh-th
+ H2_price(r,t,n)                    Hydrogen price at node n and time (r,t)                    $/MWh-th
+ H2_varcost(r,t,j)                  Hydrogen unit j’s short-run variable cost                  $/MWh-th
+ H2_iz_line_varcost(n,k,nn)         Hydrogen pipeline k’s variable cost                        $/MWh-th
+
+
+Electricity dispatch module
+System constraints
+The balancing electricity supply and demand constraint (eq.A1) ensures that electricity supply
+matches demand within zonal electricity systems when the model operates in zonal mode. It integrates
+supply components, including generation, storage discharge, net interconnector imports (semi-
+endogenous), and interzonal flows (all adjusted for efficiency losses), with electricity demand,
+curtailment, and storage charging. The constraint maintains balance at every node by accounting for
+physical and efficiency losses. Its shadow price reflects the marginal cost of meeting incremental
+electricity demand, serving as a key indicator of marginal supply cost, potential supply constraints and
+system capacity limitations within a zone.
+
+ ∀𝑟, 𝑡, 𝑛: ∑ power_out(𝑟, 𝑡, 𝑗) ⋅ (1 − eff_loss(𝑗)) + ∑ STOR_DCHRG(𝑟, 𝑡, 𝑗)
+          𝑗(𝑛)                                              𝑗(𝑛)
+
+                   + ∑ ext_ic_net_flow(𝑟, 𝑡, 𝑗) ⋅ (1 − eff_loss(𝑗))
+                      𝑗(𝑛)
+
+                   + ∑ E_IZ_FLOW(𝑟, 𝑡, 𝑛𝑛, 𝑘, 𝑛) ⋅ (1 − iz_line_loss(𝑘))                           (A1)
+                      (𝑛𝑛,𝑘)
+                   = demand_e(𝑟, 𝑡, 𝑛) − DEM_E_CURT(𝑟, 𝑡, 𝑛)
+                   + ∑ STOR_CHRG(𝑟, 𝑡, 𝑗) + ∑ E_IZ_FLOW(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛)
+                      𝑗(𝑛)                         (𝑛𝑛,𝑘)
+
+
+
+
+                                                                                                      41
+Equation A2 ensures a total balance between electricity supply and demand across all nodes in the
+nodal model configuration. It accounts for local generation, storage discharge, and interconnector
+imports (all adjusted for efficiency losses) to meet aggregated electricity demand, storage charging,
+and curtailment. Its shadow price captures the marginal cost of meeting incremental total electricity
+demand. This is a key component in calculating locational marginal prices (LMP) at the node level.
+
+ ∀𝑟, 𝑡: ∑ power_out(𝑟, 𝑡, 𝑗) ⋅ (1 − eff_loss(𝑗)) + ∑ STOR_DCHRG(𝑟, 𝑡, 𝑗)
+        (𝑗,𝑛)                                          (𝑗,𝑛)
+
+                  + ∑ ext_ic_net_flow(𝑟, 𝑡, 𝑗) ⋅ (1 − eff_loss(𝑗))
+                     (𝑗,𝑛)
+                                                                                                       (A2)
+                  = ∑[demand_e(𝑟, 𝑡, 𝑛) − DEM_E_CURT(𝑟, 𝑡, 𝑛)]
+                      𝑛
+                  + ∑ STOR_CHRG(𝑟, 𝑡, 𝑗)
+                     (𝑗,𝑛)
+
+
+The spinning-up reserve constraint (eq.A3) ensures that spinning reserve requirements at a node are
+met through contributions from spinning reserves (active generation units), non-spinning reserves
+(offline units capable of rapid activation), and storage units in discharge mode. An artificial variable
+(capacity_res_up(𝑟, 𝑡, 𝑛)) allows for unmet reserve requirements at a high penalty cost, aiding
+infeasibility management. The shadow price of this constraint reflects the marginal cost of fulfilling
+additional reserve requirements, highlighting reserve capacity constraints or the need for greater
+system flexibility.
+
+ ∀𝑟, 𝑡, 𝑛: ∑ SPINUP(𝑟, 𝑡, 𝑗) + ∑ NS_SPINUP(𝑟, 𝑡, 𝑗) + ∑ STOR_SPINUP(𝑟, 𝑡, 𝑗)
+          𝑗(𝑛)                     𝑗(𝑛)                         𝑗(𝑛)                                   (A3)
+                  ≥ spinup_res(𝑟, 𝑡, 𝑛) − capacity_res_up(𝑟, 𝑡, 𝑛)
+
+The spinning down reserve constraint (eq.A4) ensures that spinning down reserve requirements at a
+node are met through contributions from generation units capable of rapidly reducing output and
+storage units in charging mode. An artificial variable (capacity_res_down(𝑟, 𝑡, 𝑛)) permits constraint
+relaxation at a high penalty cost to manage infeasibility. The shadow price of this constraint indicates
+the marginal cost of meeting additional reserve requirements, with high values signalling tight reserve
+capacity or shortfalls that are penalised through the relaxation mechanism.
+
+ ∀𝑟, 𝑡, 𝑛: ∑ SPINDOWN(𝑟, 𝑡, 𝑗) + ∑ STOR_SPINDOWN(𝑟, 𝑡, 𝑗)
+          𝑗(𝑛)                            𝑗(𝑛)                                                         (A4)
+                  ≥ spindown_res(𝑟, 𝑡, 𝑛) − capacity_res_down(𝑟, 𝑡, 𝑛)
+
+The system non-synchronous penetration constraint (eq.A5) limits the share of non-synchronous
+generation (e.g., wind, solar) and electricity imports at a node to a specified fraction of total electricity
+demand, interzonal inflows, storage charging, and hydrogen electrolysis consumption. This constraint
+ensures grid stability by accounting for technical limitations to integrating variable renewable energy.
+The constraint applies exclusively to zonal model formulations, balancing demand and flows at the
+aggregated zone level.
+
+
+
+
+                                                                                                          42
+ ∀𝑟, 𝑡, 𝑛:      ∑         power_out(𝑟, 𝑡, 𝑗) + ∑ E_IZ_FLOW(𝑟, 𝑡, 𝑛𝑛, 𝑘, 𝑛)
+             𝑗(𝑛)∊ 𝐽(𝑣)                     (𝑛𝑛,𝑘)
+                     ≤ snsp_lim(𝑛)
+
+                     ⋅ [DEMAND_E(𝑟, 𝑡, 𝑛) + ∑ E_IZ_FLOW(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛)                             (A5)
+                                                (𝑛𝑛,𝑘)
+
+
+                     + ∑(STOR_CHRG(𝑟, 𝑡, 𝑗) + H2_ELEC_PWR_CONS(𝑟, 𝑡, 𝑗))]
+                          𝑗(𝑛)
+
+
+
+Generation constraints
+Considering operational decisions and reserve contributions, the minimum stable generation
+constraint (eq. A6) ensures that power output from a generation unit meets or exceeds its minimum
+stable generation level. An artificial variable (capacity_power_LB(𝑟, 𝑡, 𝑗)) permits constraint
+relaxation at a high penalty cost to handle potential infeasibilities.
+The maximum generation constraint (eq. A7) ensures that the total power output of a generation unit,
+including spinning reserve contributions, does not exceed its defined capacity. This constraint
+includes an artificial variable (capacity_power_UB(𝑟, 𝑡, 𝑗), allowing for relaxation at a high penalty
+cost if necessary.
+ ∀𝑟, 𝑡, 𝑗: power_out(𝑟, 𝑡, 𝑗)
+                  ≥ [PLANT_COMMIT(𝑟, 𝑡, 𝑗) ⋅ min_pwr_out(𝑟, 𝑡, 𝑗)]
+                                                                                                    (A6)
+                  + min_pwr_out(𝑟, 𝑡, 𝑗) + SPINDOWN(𝑟, 𝑡, 𝑗)
+                  − capacity_power_LB(𝑟, 𝑡, 𝑗)
+ ∀𝑟, 𝑡, 𝑗: power_out(𝑟, 𝑡, 𝑗) + SPINUP(𝑟, 𝑡, 𝑗)
+                  ≤ [PLANT_COMMIT(𝑟, 𝑡, 𝑗) ⋅ max_pwr_out(𝑟, 𝑡, 𝑗)]
+                  + max_pwr_out(𝑟, 𝑡, 𝑗) ⋅ (1 − uc_flag(𝑗))                                         (A7)
+                  + capacity_power_UB(𝑟, 𝑡, 𝑗)
+
+
+The ramp-up (eq. A8) and ramp-down (eq. A9) constraints ensure that the change in power output of
+generation units between consecutive time steps does not exceed their defined ramp limits,
+incorporating operational conditions and spinning reserve contributions. These constraints include
+artificial variables on the right-hand side to relax the upper bound at a high penalty cost if unmet ramp
+limit requirements occur.
+
+ ∀𝑟, 𝑡, 𝑗: ramp_up(𝑟, 𝑡, 𝑗) + SPINUP(𝑟, 𝑡, 𝑗)
+                  ≤ [min_pwr_out(𝑟, 𝑡, 𝑗)
+                  ⋅ (2 − PLANT_COMMIT(𝑟, 𝑡, 𝑗) − PLANT_COMMIT(𝑟, 𝑡 − 1, 𝑗))
+                  + ramp_up_rt(𝑗)                                                                   (A8)
+                  ⋅ (1 + PLANT_COMMIT(𝑟, 𝑡 − 1, 𝑗) − PLANT_COMMIT(𝑟, 𝑡, 𝑗))]
+                  ⋅ uc_flag(𝑗) + ramp_up_rt(𝑗) ⋅ (1 − uc_flag(𝑗))
+                  + capacity_rampup_UB(𝑟, 𝑡, 𝑗)
+ ∀𝑟, 𝑡, 𝑗: ramp_down(𝑟, 𝑡, 𝑗) + SPINDOWN(𝑟, 𝑡, 𝑗)
+                  ≤ [min_pwr_out(𝑟, 𝑡, 𝑗)
+                  ⋅ (2 − PLANT_COMMIT(𝑟, 𝑡, 𝑗) − PLANT_COMMIT(𝑟, 𝑡 − 1, 𝑗))
+                  + ramp_down_rt(𝑗)                                                                 (A9)
+                  ⋅ (1 − PLANT_COMMIT(𝑟, 𝑡 − 1, 𝑗) + PLANT_COMMIT(𝑟, 𝑡, 𝑗))]
+                  ⋅ uc_flag(𝑗) + ramp_down_rt(𝑗) ⋅ (1 − uc_flag(𝑗))
+                  + capacity_rampdown_UB(𝑟, 𝑡, 𝑗)
+
+                                                                                                      43
+where ramp_up(𝑟, 𝑡, 𝑗) = power_out(𝑟, 𝑡, 𝑗) − power_out(𝑟, 𝑡 − 1, 𝑗) and ramp_down(𝑟, 𝑡, 𝑗) =
+power_out(𝑟, 𝑡 − 1, 𝑗) − power_out(𝑟, 𝑡, 𝑗).
+
+The non-synchronous spin-up constraint (eq. A10) limits the reserve contribution of generation units
+to their maximum ramp-up capability when they are not committed to operating. It ensures that non-
+synchronous reserves are available only to units capable of ramping up to full capacity within a single
+time step and applies exclusively to units with high ramp-up rates operating under unit commitment.
+
+ ∀𝑟, 𝑡, 𝑗: NS_SPINUP(𝑟, 𝑡, 𝑗) ≤ [1 − PLANT_COMMIT(𝑟, 𝑡, 𝑗)] ⋅ ramp_up_rt(𝑗)                        (A10)
+
+
+The next seven constraints are related to unit commitment that collectively govern the operational
+decisions for dispatchable generation units. In particular, the logical constraint for unit commitments
+(eq. 11) establishes consistency between commitment, startup, and shutdown decisions, preventing
+contradictory states. Minimum up-time constraints (eq. A12-A14) ensure that once a unit is started, it
+remains online for its required operational duration, accounting for initial conditions, rolling horizon
+requirements, and end-of-horizon scenarios. Similarly, minimum down-time constraints (eq. A15-
+A17) enforce that once a unit is shut down, it remains offline for the mandated downtime,
+incorporating initial conditions, operational transitions, and end-of-horizon considerations.
+
+
+ ∀𝑟, 𝑡, 𝑗: PLANT_COMMIT(𝑟, 𝑡, 𝑗) − PLANT_COMMIT(𝑟, 𝑡 − 1, 𝑗)
+                                                                                                   (A11)
+                = PLANT_START(𝑟, 𝑡, 𝑗) − PLANT_SHUT(𝑟, 𝑡, 𝑗)
+ ∀𝑟, 𝑡, 𝑗:      ∑ (1 − PLANT_COMMIT(𝑟, 𝑡, 𝑗)) = 0                                                  (A12)
+             tt | 𝑡𝑡≤G(j)
+
+ ∀𝑟, 𝑡, 𝑗:                     ∑                  PLANT_COMMIT(𝑟,tt, 𝑗)
+             tt | tt≥t ∧ tt≤(𝑡+MIN_UPTIME(𝑗)−1)                                                    (A13)
+                         ≥ MIN_UPTIME(𝑗)
+                         ⋅ [PLANT_COMMIT(𝑟, 𝑡, 𝑗) − PLANT_COMMIT(𝑟, 𝑡 − 1, 𝑗)]
+ ∀𝑟, 𝑡, 𝑗:           ∑                [PLANT_COMMIT(𝑟,tt, 𝑗)
+             tt | 𝑡≤tt ∧ tt≤card(t)                                                                (A14)
+                         − (PLANT_COMMIT(𝑟, 𝑡, 𝑗) − PLANT_COMMIT(𝑟, 𝑡 − 1, 𝑗))] ≥ 0
+ ∀𝑟, 𝑡, 𝑗:      ∑           PLANT_COMMIT(𝑟,tt, 𝑗) = 0                                              (A15)
+             tt | 𝑡𝑡≤L(j)
+
+ ∀𝑟, 𝑡, 𝑗:                        ∑                 (1 − PLANT_COMMIT(𝑟,tt, 𝑗))
+             tt | tt≥t ∧ 𝑡𝑡≤(𝑡+MIN_DOWNTIME(𝑗)−1)                                                  (A16)
+                         ≥ MIN_DOWNTIME(𝑗)
+                         ⋅ [PLANT_COMMIT(𝑟, 𝑡 − 1, 𝑗) − PLANT_COMMIT(𝑟, 𝑡, 𝑗)]
+ ∀𝑟, 𝑡, 𝑗:           ∑            [1 − PLANT_COMMIT(𝑟,tt, 𝑗)
+             tt | tt≥t ∧ 𝑡𝑡≤card(t)                                                                (A17)
+                         − (PLANT_COMMIT(𝑟, 𝑡 − 1, 𝑗) − PLANT_COMMIT(𝑟, 𝑡, 𝑗))] ≥ 0
+
+
+Storage constraints
+The next three constraints are related to modelling the operational behaviour of storage units. First,
+the storage charge constraint (eq. A18) prevents storage units from charging beyond their design
+capacity, while the storage discharge constraint (eq. A19) limits discharge rates to within defined
+operational capacities. The storage maximum energy constraint (eq. A20) ensures that the energy
+level in storage does not exceed the unit’s maximum volume capacity, accounting for charging,
+discharging, inflows, and losses.
+
+                                                                                                         44
+ ∀𝑟, 𝑡, 𝑗: STOR_CHRG(𝑟, 𝑡, 𝑗)
+                   ≤ stor_chrg_cap(𝑟, 𝑡, 𝑗)                                                         (A18)
+                   ⋅ [STOR_CHRG_COMMIT(𝑟, 𝑡, 𝑗) + (1 − stor_uc_flag(𝑗))]
+ ∀𝑟, 𝑡, 𝑗: STOR_DCHRG(𝑟, 𝑡, 𝑗)
+                   ≤ stor_dchrg_cap(𝑟, 𝑡, 𝑗)                                                        (A19)
+                   ⋅ [1 − STOR_CHRG_COMMIT(𝑟, 𝑡, 𝑗) ⋅ stor_uc_flag(𝑗)]
+ ∀𝑟, 𝑡, 𝑗: storage_level(𝑟, 𝑡, 𝑗) ≤ stor_vol_cap(𝑗),
+ where
+ storage_level(𝑟, 𝑡, 𝑗) = storage_level(𝑟, 𝑡 − 1, 𝑗) + [stor_hydro_inflow(𝑟, 𝑡, 𝑗) −                (A20)
+ HYDRO_CURT(𝑟, 𝑡, 𝑗)] + [STOR_CHRG(𝑟, 𝑡, 𝑗) ⋅ (1 − eff_loss(𝑗)) −
+ STOR_DCHRG(𝑟, 𝑡, 𝑗)].
+
+
+The following two constraints regulate storage’s participation in spinning reserves by linking reserve
+contributions to charging and discharging operations. The storage spin-up constraint (eq. A21)
+ensures that the spinning reserve contribution during discharge does not exceed the current energy
+discharge rate, maintaining consistency with operational limits. Similarly, the storage spin-down
+constraint (eq. A22) limits the spinning reserve contribution during charging to the current charging
+rate, preventing over-commitment of reserve capacity.
+
+
+ ∀𝑟, 𝑡, 𝑗: STOR_SPINUP(𝑟, 𝑡, 𝑗) ≤ STOR_DCHRG(𝑟, 𝑡, 𝑗)                                               (21)
+ ∀𝑟, 𝑡, 𝑗: STOR_SPINDOWN(𝑟, 𝑡, 𝑗) ≤ STOR_CHRG(𝑟, 𝑡, 𝑗)                                              (22)
+
+
+      In this model, two types of DSR are considered: implicit (load shifting) and explicit (peak
+shaving). Both are modelled as storage technologies.
+       Load-shifting assumes that the storage state returns to zero at the end of each modelling horizon
+(see eq. A23 for more details). This assumption ensures energy neutrality for storage units modelled
+as implicit DSR technologies. Starting at zero energy at the beginning of the time horizon (t = 1),
+these units must return to zero by the end. This maintains the total energy balance across the horizon,
+enabling load-shifting without altering overall energy consumption.
+        Peak-shaving DSR, modelled as a storage unit without charging capability (with charge
+capacity set to zero in the input sheet), assumes daily energy response availability, defined in MWh-
+e/day. This availability is provided as “energy inflow” at the start of the first hour of each day. The
+model then optimises the timing and extent of peak-shaving activation within the daily response
+limits.
+
+
+
+ ∀𝑟, 𝑗:    ∑ storage_level(𝑟, 𝑡, 𝑗) = 0                                                             (A23)
+          𝑡=𝑇𝑚𝑎𝑥
+
+
+
+Fuel flow constraints
+The fuel supply constraint (eq. 24) ensures that the total fuel consumption by generation technologies
+at a node does not exceed the maximum allowable fuel flow for that fuel type and time step. Its
+shadow price reflects the marginal benefit of increasing the fuel supply limit.
+
+
+
+                                                                                                      45
+ ∀𝑟, 𝑡, 𝑓, 𝑛: ∑ fuel_cons_power(𝑟, 𝑡, 𝑓, 𝑗) ≤ fuel_flow(𝑟, 𝑡, 𝑓, 𝑛)                              (A24)
+            𝑗(𝑛)
+
+
+
+In this model version, we also consider dual-fuel capability for individual generation units. In
+particular, the dual-fuel modelling framework enables generation units to operate using both primary
+and secondary fuels, with the secondary fuel subject to initial stock constraints. The model tracks
+secondary fuel use through the variable FuelStock_level (eq. A25), ensuring consumption respects the
+fuel stock’s availability. Primary fuels with unlimited availability are modelled without an initial
+stock, whereas secondary fuels with limited supply require an initial stock.
+
+
+ ∀𝑟, 𝑡, 𝑓, 𝑗: FuelStock_level(𝑟, 𝑡, 𝑓, 𝑗)
+                                                                                                 (A25)
+                   = fuel_stock_init(𝑓, 𝑗) − FUEL_CONS_POWER(𝑟, 𝑡, 𝑓, 𝑗)
+
+
+External (semi-endogenous) interconnector constraints
+Semi-endogenous interconnectors are a modelling construct used to represent electricity trade
+between fully optimised systems and systems with simplified assumptions about supply and demand
+(see Chyong and Newbery, 2022 who first implemented this approach in their GB UCED model).
+These interconnectors operate under the principle that while the electricity supply and demand
+balance on one side of the interconnector is fully endogenous - meaning it is optimised within the
+model considering all system constraints and dynamics - the other side is treated as having unlimited
+supply or demand capacity (a “sink”) at an externally determined price.
+-    Imports: When the model determines that it is optimal to import electricity, it assumes an
+     unlimited supply from the external system via the interconnector. The price at which this supply
+     occurs is fixed exogenously, independent of the model’s internal optimisation process. The
+     model then balances how much to import at this fixed price, given its internally optimised
+     demand and supply balance.
+ - Exports: Conversely, when the model chooses to export electricity, it assumes an unlimited
+     ability to send electricity to the external system, where it is absorbed at an exogenously fixed
+     price on the external side of the interconnector. The model then balances the marginal cost of
+     such exports from its internally optimised market against the exogenously fixed price. If the
+     marginal cost of internal supply resources exceeds the fixed price, export will not occur.
+      This approach provides a simplified representation of interconnector flow modelling, helping
+reduce the modelling complexity and size. By not requiring a fully endogenous representation of the
+external system, it becomes possible to focus computational resources on the key research questions
+and projects where detailed interconnection modelling is not necessary.
+       The following eight constraints describe in greater detail the modelling framework for the
+(semi-endogenous) external interconnector (IC). First, the external IC import constraint (eq. A26)
+ensures that electricity imports through an interconnector do not exceed its maximum power capacity,
+with operation contingent on the interconnector being in import mode. Its shadow price reflects the
+marginal benefit of increasing the import capacity. Similarly, the external IC export constraint (eq.
+A27) limits electricity exports to the maximum defined export capacity, enforced only when the
+interconnector is not in import mode. The shadow price for this constraint represents the economic
+value of increasing the export capacity.
+
+
+ ∀𝑟, 𝑡, 𝑗: EXT_IC_IMP(𝑟, 𝑡, 𝑗) ≤ max_pwr_out(𝑟, 𝑡, 𝑗) ⋅ EXT_IC_COMMIT(𝑟, 𝑡, 𝑗)                   (A26)
+ ∀𝑟, 𝑡, 𝑗: EXT_IC_EXP(𝑟, 𝑡, 𝑗) ≤ min_pwr_out(𝑟, 𝑡, 𝑗) ⋅ (1 − EXT_IC_COMMIT(𝑟, 𝑡, 𝑗))             (A27)
+
+
+                                                                                                    46
+     Further, to model the ramp rates and transitions between export and import for (semi-
+endogenous) interconnectors properly, we impose the following constraints.
+-   Import Ramp-Up and Ramp-Down Constraints (eqs. A28-A29): These constraints limit the
+    increase or decrease in import flows across consecutive time steps, subject to predefined ramp
+    rates. We assume the same ramp rate for import flow increases and decreases; hence, we use
+    ramp_up_rt to represent the ramp limit on import flows.
+-   Export Ramp-Up and Ramp-Down Constraints (eqs. A30-A31): Similar to the import ramp rate
+    constraints, these constraints enforce limits on the rate of change of export flows, ensuring that
+    transitions between consecutive time steps do not exceed the interconnector’s ramping capability.
+    We assume the same ramp rate for both export flow increases and decreases; hence, we use
+    ramp_down_rt to represent the ramp limit on export flows.
+-   Transition Ramp Constraints (eqs. A32-A33): These constraints govern the shift between export
+    and import modes, ensuring the combined flow change does not exceed a defined transition ramp
+    rate. This prevents abrupt shifts in flows that could potentially violate ramp rates.
+
+
+ ∀𝑟, 𝑡, 𝑗: EXT_IC_IMP(𝑟, 𝑡, 𝑗) − EXT_IC_IMP(𝑟, 𝑡 − 1, 𝑗) ≤ ramp_up_rt(𝑗)                         (A28)
+ ∀𝑟, 𝑡, 𝑗: EXT_IC_IMP(𝑟, 𝑡 − 1, 𝑗) − EXT_IC_IMP(𝑟, 𝑡, 𝑗) ≤ ramp_up_rt(𝑗)                         (A29)
+ ∀𝑟, 𝑡, 𝑗: EXT_IC_EXP(𝑟, 𝑡, 𝑗) − EXT_IC_EXP(𝑟, 𝑡 − 1, 𝑗) ≤ ramp_down_rt(𝑗)                       (A30)
+ ∀𝑟, 𝑡, 𝑗: EXT_IC_EXP(𝑟, 𝑡 − 1, 𝑗) − EXT_IC_EXP(𝑟, 𝑡, 𝑗) ≤ ramp_down_rt(𝑗)                       (A31)
+ ∀𝑟, 𝑡, 𝑗: EXT_IC_IMP(𝑟, 𝑡, 𝑗) + EXT_IC_EXP(𝑟, 𝑡 − 1, 𝑗) ≤ ramp_trans_ext_ic(𝑗),
+                                                                                                 (A32)
+ where ramp_trans_ext_ic(j) = min(ramp_up_rt(j), ramp_down_rt(j))
+ ∀𝑟, 𝑡, 𝑗: EXT_IC_EXP(𝑟, 𝑡, 𝑗) + EXT_IC_IMP(𝑟, 𝑡 − 1, 𝑗) ≤ ramp_trans_ext_ic(𝑗)                  (A33)
+
+
+       Thus, these constraints (eqs. A28-A33) ensure the feasibility of interconnector flows adhering
+to the required ramp rate restrictions.
+
+
+Nodal network constraints
+We set up the model to allow a detailed network flow modelling, following a nodal market design and
+use power transfer distribution factors to model power network flows. The following three constraints
+describe this power flow and network modelling:
+-   Nodal Net Energy Injection Variable (eq. A34): This variable computes the net energy balance at
+    each node, integrating generation, storage operations, interconnector flows, HVDC line flows,
+    demand (including curtailment), and storage charging. It forms the basis for calculating power
+    flows in eqs. A35 and A36.
+-   Nodal Forward Line Flow Constraint (eq. A35): This constraint limits forward power flow on
+    transmission lines to their maximum allowable capacity, accounting for nodal net energy
+    injections and Power Transfer Distribution Factors (PTDF).
+-   Nodal Backward Line Flow Constraint (eq. A36): This constraint similarly limits the power flow
+    in the reverse direction to the line’s maximum capacity. A relaxation variable in both eqs. A35-
+    A36 allow for constrained violations at a penalised cost.
+
+
+
+
+                                                                                                    47
+ ∀𝑟, 𝑡, 𝑛: nodal_net_energy_inj(𝑟, 𝑡, 𝑛)
+                 = ∑ power_out(𝑟, 𝑡, 𝑗) ⋅ (1 − eff_loss(𝑗))
+                    𝑗(𝑛)
+
+                 + ∑ STOR_DCHRG(𝑟, 𝑡, 𝑗) + ∑ ext_ic_net_flow(𝑟, 𝑡, 𝑗)
+                    𝑗(𝑛)                           𝑗(𝑛)
+                 ⋅ (1 − eff_loss(𝑗))                                                                (A34)
+                 + ∑ [E_IZ_FLOW(𝑟, 𝑡, 𝑛𝑛, 𝑘, 𝑛) − E_IZ_FLOW(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛)]
+                    (𝑛𝑛,𝑘)
+                 − [demand_e(𝑟, 𝑡, 𝑛) − DEM_E_CURT(𝑟, 𝑡, 𝑛)]
+                 − ∑ STOR_CHRG(𝑟, 𝑡, 𝑗)
+                    𝑗(𝑛)
+ ∀𝑟, 𝑡, k: nodal_line_flow(𝑟, 𝑡, 𝑘)
+                   ≤ nodal_line_cap(𝑟, 𝑡, 𝑘) + capacity_line_flow_fw(𝑟, 𝑡, 𝑘),
+ where:
+ nodal_line_flow(𝑟, 𝑡, 𝑘 )
+                 = ∑ nodal_net_energy_inj(𝑟, 𝑡, 𝑛) ⋅ nodal_reduced_PTDF(𝑛, 𝑘 )                      (A35)
+                     𝑛
+ nodal_reduced_PTDF(n, k)
+                  = {0, if |nodal_PTDF(n, k)|
+                  < nodal_PTDF_cutoff, else nodal_PTDF(n, k)}
+ ∀𝑟, 𝑡, 𝑘: nodal_line_flow(𝑟, 𝑡, 𝑘)
+                                                                                                    (A36)
+                  ≥ −(nodal_line_cap(𝑟, 𝑡, 𝑘) + capacity_line_flow_bw(𝑟, 𝑡, 𝑘))
+
+
+      Together, these components (eqs. A34-A36) ensure a comprehensive nodal market model,
+maintaining a detailed power-flow representation while accounting for transmission constraints.
+Shadow prices from these constraints (eqs. A35-A36) provide insights into the value of increasing
+transmission capacity and are used to compute locational marginal prices (LMPs).
+      Further, in the nodal market design mode, we also include interface-level constraints to manage
+aggregated power flows across multiple transmission lines (eqs. A37-A38):
+-   Nodal Forward Interface Flow Constraint (eq. A37): This constraint limits the total forward
+    power flow across all transmission lines within a specified interface to its maximum allowable
+    capacity. It accounts for the directional flow of each line and allows for constraint relaxation at a
+    penalty cost to handle infeasibilities. The shadow price reflects the economic value of increasing
+    the interface’s forward flow capacity, with high values indicating congestion.
+-   Nodal Backward Interface Flow Constraint (eq. A38): This constraint similarly restricts the total
+    backward power flow across transmission lines within an interface to its maximum capacity. It
+    ensures operational limits are respected for flows in the reverse direction, with a relaxation
+    option for constraint violations. The shadow price indicates the value of increasing backwards-
+    flow capacity, highlighting congestion issues when it is high.
+
+
+ ∀𝑟, 𝑡, 𝑖: ∑ nodal_line_direction(k) ∙ nodal_line_flow(𝑟, 𝑡, 𝑘)
+         𝑘(𝑖)                                                                                       (A37)
+                 ≤ nodal_iface_cap(𝑖) + capacity_iface_flow_fw(𝑟, 𝑡, 𝑖)
+ ∀𝑟, 𝑡, 𝑖: ∑ nodal_line_direction(𝑘) ⋅ nodal_line_flow(𝑟, 𝑡, 𝑘)
+         𝑘(𝑖)                                                                                       (A38)
+                 ≥ −(nodal_iface_cap(𝑖) + capacity_iface_flow_bw(𝑟, 𝑡, 𝑖))
+
+
+
+                                                                                                       48
+       These constraints (eqs. A37-A38) ensure that interface-level power flows remain within defined
+limits, addressing the aggregated impacts of line capacities on network flows.
+
+
+Interzonal network constraints
+Similar to the way we model semi-endogenous interconnector flows (eqs. A26-A33), we describe a
+fully endogenous interzonal (IZ) interconnector flows approach here. The first block of constraints for
+fully endogenous interzonal (IZ) flow modelling ensures operational consistency (e.g., avoiding
+simultaneous flows in both directions), maximum flow capacity, and ramp rate for interzonal lines:
+-   Interzonal Flow Commitment Constraint (eq. A39): This constraint enforces that only one flow
+    direction (either forward or backward) can be committed on an interzonal line at any given time
+    step. This prevents simultaneous bidirectional flow commitments on line k.
+-   Interzonal Maximum Flow Constraint (eq. A40): It limits interzonal electricity flow to the
+    dynamic capacity of the line when the flow in a specific direction is committed. This ensures that
+    flows respect the line’s capacity.
+-   Interzonal Flow Ramp-Up Constraint (eq. A41): This constraint restricts the rate of increase in
+    electricity flow on interzonal lines between consecutive time steps, adhering to predefined ramp-
+    up limits.
+-   Interzonal Flow Ramp-Down Constraint (eq. A42): Similarly, this constraint limits the rate of
+    decrease in interzonal flow, enforcing predefined ramp-down limits.
+
+
+ ∀𝑟, 𝑡, 𝑘: ∑ IZFLOW_COMMIT(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛) ≤ 1                                                   (A39)
+          (𝑛,𝑛𝑛)
+ ∀𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛: E_IZ_FLOW(r, t, n, k, nn)
+                   ≤ [IZFLOW_COMMIT(r, t, n, k, nn)                                              (A40)
+                   + (1 − iz_uc_flow_flag(n, k, nn))] ⋅ iz_line_cap(r, t, n, k, nn)
+ ∀𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛: E_IZ_FLOW(r, t, n, k, nn) − E_IZ_FLOW(r, t − 1, n, k, nn)
+                                                                                                 (A41)
+                   ≤ iz_line_ramp(n, k, nn)
+ ∀𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛: E_IZ_FLOW(r, t − 1, n, k, nn) − E_IZ_FLOW(r, t, n, k, nn)
+                                                                                                 (A42)
+                   ≤ iz_line_ramp(n, k, nn)
+
+
+      These constraints (eqs. A39-A42) collectively ensure that interzonal electricity flows align with
+defined maximum flow capacities, directional commitments, and ramping limits.
+       The next block of constraints addresses the operational and transition dynamics of interzonal
+(IZ) flow, ensuring adherence to ramping limits and logical consistency during directional changes.
+The approach is based on a linearised approach involving binary variables -
+FlowChange_BW_FW(r,t,k) and FlowChange_FW_BW(r,t,k) - and the following constraints:
+-   Interzonal Transition Ramp Constraints (eqs. A43-A44): These constraints limit the magnitude of
+    interzonal flow changes during directional transitions, limiting backwards-to-forward (eq. A43)
+    and forward-to-backwards (eq. A44) shifts within ramping limits. They ensure that transitions
+    respect both ramp constraints and dynamic capacity profiles.
+-   Flow Transition Variables for Backwards-to-Forward (eqs. A45-A47): These constraints define
+    the binary variable FlowChange_BW_FW(r,t,k) to track valid transitions from backwards to
+    forward flow. They ensure this variable activates only when flow commitments meet logical
+    conditions for a directional transition while preventing incorrect activations.
+-   Flow Transition Variables for Forward-to-Backwards (eqs. A48-A50): Similar to eqs. A45-A47,
+    these constraints define the binary variable FlowChange_FW_BW(r,t,k) to track valid transitions
+    from forward to backward flow. They enforce logical activation of the variable based on flow
+    commitments at successive time steps.
+
+                                                                                                       49
+∀𝑟, 𝑡, 𝑘: ∑ E_IZ_FLOW(r, t, n, k, nn) ⋅ iz_flow_dir_flag(n, k, nn)
+        (n,nn)
+
+                 + ∑ [E_IZ_FLOW(r, t − 1, n, k, nn)]
+                   (n,nn)
+                 ⋅ (1 − iz_flow_dir_flag(n, k, nn))                                 (A43)
+                 ≤ iz_line_ramp_bw_fw(k) ⋅ FlowChange_BW_FW(r, t, k)
+                 + ∑ iz_line_cap_stat(n, k, nn) ⋅ iz_line_cap_prof(r, t, k)
+                   (n,nn)
+                 ⋅ (1 − FlowChange_BW_FW(r, t, k))
+∀𝑟, 𝑡, 𝑘: ∑ E_IZ_FLOW(r, t, n, k, nn) ⋅ (1 − iz_flow_dir_flag(n, k, nn))
+        (n,nn)
+
+                 + ∑ [E_IZ_FLOW(r, t − 1, n, k, nn)] ⋅ iz_flow_dir_flag(n, k, nn)
+                   (n,nn)
+                                                                                    (A44)
+                 ≤ iz_line_ramp_fw_bw(k) ⋅ FlowChange_FW_BW(r, t, k)
+                 + ∑ iz_line_cap_stat(n, k, nn) ⋅ iz_line_cap_prof(r, t, k)
+                   (n,nn)
+                   ⋅ (1 − FlowChange_FW_BW(r, t, k))
+∀𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛: FlowChange_BW_FW(𝑟, 𝑡, 𝑘)
+                 ≤ ∑ IZFLOW_COMMIT(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛) ⋅ iz_flow_dir_flag(𝑛, 𝑘, 𝑛𝑛)     (A45)
+                   (𝑛,𝑛𝑛)
+∀𝑟, 𝑡, 𝑘: FlowChange_BW_FW(𝑟, 𝑡, 𝑘)
+                 ≤ ∑ IZFLOW_COMMIT(𝑟, 𝑡 − 1, 𝑛, 𝑘, 𝑛𝑛)                              (A46)
+                   (𝑛,𝑛𝑛)
+                ⋅ (1 − iz_flow_dir_flag(𝑛, 𝑘, 𝑛𝑛))
+∀𝑟, 𝑡, 𝑘: FlowChange_BW_FW(𝑟, 𝑡, 𝑘)
+                 ≥ ∑ IZFLOW_COMMIT(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛) ⋅ iz_flow_dir_flag(𝑛, 𝑘, 𝑛𝑛)
+                   (𝑛,𝑛𝑛)
+                                                                                    (A47)
+                 + ∑ IZFLOW_COMMIT(𝑟, 𝑡 − 1, 𝑛, 𝑘, 𝑛𝑛)
+                   (𝑛,𝑛𝑛)
+                ⋅ (1 − iz_flow_dir_flag(𝑛, 𝑘, 𝑛𝑛)) − 1
+∀𝑟, 𝑡, 𝑘: FlowChange_FW_BW(𝑟, 𝑡, 𝑘)
+                 ≤ ∑ IZFLOW_COMMIT(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛)                                  (A48)
+                   (𝑛,𝑛𝑛)
+                ⋅ (1 − iz_flow_dir_flag(𝑛, 𝑘, 𝑛𝑛))
+∀𝑟, 𝑡, 𝑘: FlowChange_FW_BW(𝑟, 𝑡, 𝑘)
+                 ≤ ∑ IZFLOW_COMMIT(𝑟, 𝑡 − 1, 𝑛, 𝑘, 𝑛𝑛)                              (A49)
+                   (𝑛,𝑛𝑛)
+                ⋅ iz_flow_dir_flag(𝑛, 𝑘, 𝑛𝑛)
+∀𝑟, 𝑡, 𝑘: FlowChange_FW_BW(𝑟, 𝑡, 𝑘)
+                 ≥ ∑ IZFLOW_COMMIT(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛)
+                   (𝑛,𝑛𝑛)
+                 ⋅ (1 − iz_flow_dir_flag(𝑛, 𝑘, 𝑛𝑛))                                 (A50)
+                 + ∑ IZFLOW_COMMIT(𝑟, 𝑡 − 1, 𝑛, 𝑘, 𝑛𝑛)
+                   (𝑛,𝑛𝑛)
+                 ⋅ iz_flow_dir_flag(𝑛, 𝑘, 𝑛𝑛) − 1
+
+
+                                                                                      50
+Hydrogen dispatch module
+The hydrogen dispatch module integrates hydrogen production, storage, transport, and utilisation
+within an electricity optimisation framework (Figure A. 1, taking the GB market as an example). This
+approach captures interactions between electricity and hydrogen flows, ensuring a comprehensive
+representation of hydrogen’s role in energy systems. The module supports two modelling approaches
+- price-based and demand-based - offering flexibility to explore scenarios driven by market dynamics
+or predefined hydrogen demand.
+
+
+Node-Based Modelling Framework
+-    Electricity Nodes (e.g., GB_e) handle power for hydrogen production and receive electricity
+     generated from hydrogen-fueled technologies.
+-    Hydrogen Nodes (e.g., GB_h2) consolidate production, storage, and local demand, with future
+     scope for integrating exogenous supply.
+-    Hydrogen Power Generation Nodes (e.g., GB_h2_PowerGen) consume hydrogen to generate
+     electricity, which is then exported back to electricity nodes.
+
+
+
+             GB_e                                 GB_h2
+
+
+
+
+                                            GB_h2_PowerGen
+
+
+Figure A. 1: Schematic of electricity and hydrogen nodes
+Notes: Black font arrows are electricity flow; Green arrows are hydrogen flow.
+
+All in all, this hydrogen module, therefore, has eleven constraints.
+
+
+Hydrogen Supply and Demand Balances
+-    Hydrogen Energy Balance (eq. A51): Ensures that hydrogen production, storage discharge,
+     interzonal inflows, and demand curtailment align with node-level demand. This forms the core
+     balance equation for hydrogen nodes, maintaining system-wide consistency.
+-    Electrolyser Input Balance (eq. A52): Balances electricity demand from electrolysers with
+     electricity inflows to ensure operational feasibility and grid compatibility.
+-    CCGT-H2 Fuel Demand and Supply (eq. A53): Matches hydrogen consumption by hydrogen-
+     fueled power plants with interzonal inflows, maintaining alignment between supply and demand.
+-    CCGT-H2 Electricity Export Balance (eq. A54): Limits electricity exports to the total generation
+     output of hydrogen-fueled power plants, reflecting thermal efficiency and operational realism.
+
+
+
+
+                                                                                                   51
+ ∀𝑟, 𝑡, 𝑛: ∑ H2_output(𝑟, 𝑡, 𝑗) + ∑ H2_STOR_DCHRG(𝑟, 𝑡, 𝑗)
+             𝑗(𝑛)                           𝑗(𝑛)
+
+                      + ∑ H2_IZ_FLOW(𝑟, 𝑡, 𝑛𝑛, 𝑘, 𝑛) ⋅ (1 − H2_iz_line_loss(𝑘))
+                           (𝑛𝑛,𝑘)                                                              (A51)
+                      = H2_demand(𝑟, 𝑡, 𝑛) − H2_DEM_CURT(𝑟, 𝑡, 𝑛)
+                      + ∑ H2_STOR_CHRG(𝑟, 𝑡, 𝑗) + ∑ H2_IZ_FLOW(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛)
+                           𝑗(𝑛)                             (𝑛𝑛,𝑘)
+
+ ∀𝑟, 𝑡, 𝑛: ∑ H2_ELEC_PWR_CONS(𝑟, 𝑡, 𝑗) = ∑ E_IZ_FLOW(𝑟, 𝑡, 𝑛𝑛, 𝑘, 𝑛)                           (A52)
+             𝑗(𝑛)                                        (𝑛𝑛,𝑘)
+
+ ∀𝑟, 𝑡, 𝑛:      ∑          FUEL_CONS_POWER(𝑟, 𝑡, 𝑓, 𝑗)
+             f,j(n)|f=H2
+                                                                                               (A53)
+                      = ∑ H2_IZ_FLOW(𝑟, 𝑡, 𝑛𝑛, 𝑘, 𝑛)
+                           (𝑛𝑛,𝑘)
+
+ ∀𝑟, 𝑡, 𝑛: ∑ E_IZ_FLOW(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛)
+             (𝑘,𝑛𝑛)
+                                                                                               (A54)
+                      =           ∑      FUEL_CONS_POWER(𝑟, 𝑡, 𝑓, 𝑗) ⋅ thermal_eff(𝑓, 𝑗))
+                           𝑓,𝑗(𝑛)|𝑓=H2
+
+
+
+Electrolyser Operation Constraints
+-    Maximum Power Consumption (eq. A55): Sets an upper bound on electrolyser power
+     consumption based on defined capacities.
+-    Ramp-Up and Ramp-Down (eqs. A56-A57): Limit the rate of increase or decrease in electrolyser
+     power consumption.
+
+
+ ∀𝑟, 𝑡, 𝑗: H2_ELEC_PWR_CONS(𝑟, 𝑡, 𝑗) ≤ H2_elec_cap(𝑟, 𝑡, 𝑗)                                    (A55)
+ ∀𝑟, 𝑡, 𝑗: H2_ELEC_PWR_CONS(𝑟, 𝑡, 𝑗) − H2_ELEC_PWR_CONS(𝑟, 𝑡 − 1, 𝑗)
+                                                                                               (A56)
+                 ≤ H2_elec_ramp_up(𝑗)
+ ∀𝑟, 𝑡, 𝑗: H2_ELEC_PWR_CONS(𝑟, 𝑡 − 1, 𝑗) − H2_ELEC_PWR_CONS(𝑟, 𝑡, 𝑗)
+                                                                                               (A57)
+                 ≤ H2_elec_ramp_down(𝑗)
+
+
+Hydrogen Storage Constraints
+-    Charging and Discharging Capacities (eqs. A58-A59): Ensure that hydrogen storage units
+     operate within their defined charging and discharging capacities.
+-    Storage Volume Capacity (eq. A60): Limits the total hydrogen volume in storage units to their
+     maximum capacity.
+
+
+ ∀𝑟, 𝑡, 𝑗: H2_STOR_CHRG(𝑟, 𝑡, 𝑗) ≤ H2_stor_chg_cap(𝑟, 𝑡, 𝑗)                                    (A58)
+ ∀𝑟, 𝑡, 𝑗: H2_STOR_DCHRG(𝑟, 𝑡, 𝑗) ≤ H2_stor_dchg_cap(𝑟, 𝑡, 𝑗)                                  (A59)
+ ∀𝑟, 𝑡, 𝑗: H2_Storage_level(𝑟, 𝑡, 𝑗) ≤ H2_stor_vol_cap(𝑗)                                      (A60)
+
+
+Hydrogen Transport Constraint (eq. A61) caps interzonal hydrogen flows at pipeline capacities.
+
+
+ ∀𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛: H2_IZ_FLOW(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛) ≤ H2_iz_line_cap(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛)                  (A61)
+
+
+
+                                                                                                     52
+With this approach, there are two methods for modelling hydrogen dispatch:
+    1. Hydrogen Price-Based Method
+       In this approach, hydrogen production via electrolysis is driven by the cost dynamics of
+       electricity (endogenously determined in the model) and by an assumed hydrogen price and the
+       variable cost of electrolysis, both of which are model inputs. The model endogenously
+       determines electricity costs, balancing these against the hydrogen price and the variable
+       operating cost of electrolysis. Hydrogen is produced if the assumed hydrogen price is
+       sufficiently high to offset the variable electrolysis costs and any associated electricity
+       production costs.
+       This method also accounts for surplus electricity scenarios, particularly from near-zero-
+       marginal-cost resources such as wind and solar. When electricity prices approach zero due to
+       the potential curtailment of renewables, electrolysis will likely be activated to convert the
+       surplus electricity into hydrogen.
+       This method provides flexibility to simulate hydrogen production in response to market
+       conditions, aligning electrolysis activity with renewable electricity availability and cost
+       dynamics.
+    2. Traditional Demand-Based Method
+       In this more conventional approach, hydrogen demand is treated as an input that must be
+       satisfied. The model enforces hydrogen production to meet the specified demand, irrespective
+       of hydrogen price, variable electrolysis costs, or electricity costs. This is achieved by setting a
+       very high hydrogen curtailment cost, effectively compelling the model to prioritise hydrogen
+       production.
+       However, if the hydrogen curtailment cost is low, the model may curtail demand instead,
+       depending on electricity costs. For instance, high electricity costs could lead to reduced
+       hydrogen production unless there is significant renewable electricity curtailment, in which
+       case production is more likely.
+       This method reflects a scenario in which hydrogen demand is non-negotiable (e.g., industrial
+       or policy-driven targets), ensuring the model meets predefined requirements across various
+       cost conditions.
+       The price-based method offers a market-driven approach to hydrogen production. It simulates
+scenarios in which production responds to electricity market conditions and to assumed hydrogen
+prices. It is ideal for exploring scenarios where surplus renewable energy and fluctuating costs
+influence hydrogen output. In contrast, the demand-based method prioritises meeting specific
+hydrogen demand, aligning with scenarios where hydrogen supply must be ensured, such as industrial
+processes or strategic energy planning targets. Both approaches can be adapted to include hydrogen
+storage and transmission to other markets, thereby enhancing system flexibility and optimising
+hydrogen integration within power systems.
+
+
+Objective Function
+Subject to the abovementioned constraints, the objective function seeks to minimise the total system
+cost of meeting electricity and hydrogen demand. This is achieved by optimising operational costs
+(fuel, carbon, variable, and fixed), incorporating penalties for constraint violations (via artificial
+variables), and accounting for interzonal flow and reserve operation costs. Additionally, the objective
+accounts for revenue from hydrogen sales if modelled as price-based hydrogen dispatch. This section
+first details the total system cost function to be minimised. Then, its components.
+
+
+
+
+                                                                                                       53
+ MIN F =      ∑          FuelCost(𝑟, 𝑡, 𝑓, 𝑗, 𝑛) +      ∑          CarbonCost(𝑟, 𝑡, 𝑓, 𝑗, 𝑛)
+           (𝑟,𝑡,𝑓,𝑗,𝑛)                               (𝑟,𝑡,𝑓,𝑗,𝑛)
+
+                   + ∑ VariableCost(𝑟, 𝑡, 𝑗, 𝑛) + ∑ FixedCost(𝑟, 𝑡, 𝑗, 𝑛)
+                         (𝑟,𝑡,𝑗,𝑛)                                 (𝑟,𝑡,𝑗,𝑛)
+
+                   + ∑ RampCost(𝑟, 𝑡, 𝑗, 𝑛) + ∑ ReserveCost(𝑟, 𝑡, 𝑗, 𝑛)
+                         (𝑟,𝑡,𝑗,𝑛)                           (𝑟,𝑡,𝑗,𝑛)
+
+                   +         ∑          ZonalFlowCost(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛)
+                         (𝑟,𝑡,𝑛,𝑘,𝑛𝑛)
+
+                   + ∑ DemandCurtailmentCost(𝑟, 𝑡, 𝑛)
+                         (𝑟,𝑡,𝑛)
+                                                                                                 (A62)
+                   − ∑ HydrogenRevenue(𝑟, 𝑡, 𝑗, 𝑛)
+                         (𝑟,𝑡,𝑗,𝑛)
+
+                   + ∑ PenaltyReserveCost(𝑟, 𝑡, 𝑛)
+                         (𝑟,𝑡,𝑛)
+
+                   + ∑ PenaltyBoundCost(𝑟, 𝑡, 𝑗, 𝑛)
+                         (𝑟,𝑡,𝑗,𝑛)
+
+                   + ∑ PenaltyLineFlowCost(𝑟, 𝑡, 𝑘)
+                         (𝑟,𝑡,𝑘)
+
+                   + ∑ PenaltyInterfaceCost(𝑟, 𝑡, 𝑖)
+                         (𝑟,𝑡,𝑖)
+
+
+
+Components of the Objective Function:
+Fuel Cost (FuelCost(r,t,f,j,n)): Represents the cost associated with fuel consumption for generation at
+node n for technology j using fuel f at time t.
+
+
+ ∀𝑟, 𝑡, 𝑓, 𝑗, 𝑛: FuelCost(𝑟, 𝑡, 𝑓, 𝑗, 𝑛)
+                    = ext_ic_net_flow(𝑟, 𝑡, 𝑗(𝑓, 𝑛)) ⋅ fuel_cost(𝑟, 𝑡, 𝑓)                        (A63)
+                    + FUEL_CONS_POWER(𝑟, 𝑡, 𝑓, 𝑗(𝑛)) ⋅ fuel_cost(𝑟, 𝑡, 𝑓)
+
+
+Carbon Cost (CarbonCost(r,t,f,j,n)): This function captures the cost of carbon emissions for
+generation at node n for technology j using fuel f at time t.
+
+
+ ∀𝑟, 𝑡, 𝑓, 𝑗, 𝑛: CarbonCost(𝑟, 𝑡, 𝑓, 𝑗, 𝑛)
+                    = FUEL_CONS_POWER(𝑟, 𝑡, 𝑓, 𝑗(𝑛)) ⋅ thermal_eff(𝑓, 𝑗)                         (A64)
+                    ⋅ carbon_price(𝑟, 𝑡, 𝑛) ⋅ carbon_intensity(𝑓, 𝑗)
+
+
+Variable Cost (VariableCost(r,t,j,n)): Accounts for operational and maintenance costs dependent on
+the power and hydrogen output of technology j at node n and time t.
+
+
+
+
+                                                                                                     54
+ ∀𝑟, 𝑡, 𝑓, 𝑗, 𝑛: VariableCost(𝑟, 𝑡, 𝑗, 𝑛)
+                    = varcost(𝑟, 𝑡, 𝑗)
+                    ⋅ (power_out(r,t,j(n)) + STOR_DCHRG(r,t,j(n))                                   (A65)
+                 + ext_ic_net_flow(𝑟, 𝑡, 𝑗(𝑛))) + H2_varcost(𝑟, 𝑡, 𝑗)
+                 ⋅ H2_STOR_DCHRG(𝑟, 𝑡, 𝑗(𝑛))
+
+
+Fixed Cost (FixedCost(r,t,j,n)): This function captures fixed operational costs independent of
+generation levels, including cycling costs associated with starting up and shutting down technologies.
+
+
+ ∀𝑟, 𝑡, 𝑗, 𝑛: FixedCost(𝑟, 𝑡, 𝑗, 𝑛)
+                   = (PLANT_START(𝑟, 𝑡, 𝑗(𝑛)) ⋅ start_cost(𝑗)                                       (A66)
+                 + PLANT_SHUT(𝑟, 𝑡, 𝑗(𝑛)) ⋅ shut_cost(𝑗))
+
+
+Ramp Cost (RampCost(r,t,j,n)): Represents costs incurred due to ramping up or down generation
+levels.
+
+
+   ∀𝑟, 𝑡, 𝑗, 𝑛: RampCost(𝑟, 𝑡, 𝑗, 𝑛)
+                    = (ramp_up(𝑟, 𝑡, 𝑗(𝑛)) ⋅ ramp_up_cost(𝑗) + ramp_down(𝑟, 𝑡, 𝑗(𝑛))                (A67)
+                   ⋅ ramp_down_cost(𝑗))
+
+
+Reserve Cost (ReserveCost(r,t,j,n)): This function reflects costs for maintaining spinning or non-
+spinning reserve capacities. It quantifies the economic burden of ensuring grid stability through
+spinning reserve contributions from various technologies, including storage systems. This helps
+account for reliability costs in overall system operation.
+
+
+ ∀𝑟, 𝑡, 𝑗, 𝑛: ReserveCost(𝑟, 𝑡, 𝑗, 𝑛)
+                   = (NS_SPINUP(𝑟, 𝑡, 𝑗) + SPINUP(𝑟, 𝑡, 𝑗) + STOR_SPINUP(𝑟, 𝑡, 𝑗))                  (A68)
+                   ⋅ spin_up_cost(𝑗)
+
+
+Zonal Flow Cost (ZonalFlowCost(r,t,n,k,nn)): This variable represents costs associated with
+interzonal electricity and hydrogen flows across lines k between nodes n and nn. By factoring in
+variable costs for each flow type, this variable ensures the model appropriately accounts for the
+potential economic impact of transporting energy resources across zones.
+
+
+ ∀𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛: ZonalFlowCost(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛)
+                   = E_IZ_FLOW(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛) ⋅ iz_line_varcost(𝑛, 𝑘, 𝑛𝑛)                          (A69)
+                   + H2_IZ_FLOW(𝑟, 𝑡, 𝑛, 𝑘, 𝑛𝑛) ⋅ H2_iz_line_varcost(𝑛, 𝑘, 𝑛𝑛)
+
+
+Demand Curtailment Cost (DemandCurtailmentCost(r,t,n)): This variable calculates the penalty
+costs associated with unmet electricity and hydrogen demand. The model incentivises supply-side
+
+
+                                                                                                      55
+solutions by assigning high costs to demand curtailment, ensuring that demand is met where feasible
+and economically justifiable.
+
+
+ ∀𝑟, 𝑡, 𝑛: DemandCurtailmentCost(𝑟, 𝑡, 𝑛)
+                 = demand_curt_cost(𝑛) ⋅ DEM_E_CURT(𝑟, 𝑡, 𝑛)                                       (A70)
+                 + h2_demand_curt_cost(𝑛) ⋅ H2_DEM_CURT(𝑟, 𝑡, 𝑛)
+
+
+Hydrogen Revenue (HydrogenRevenue(r,t,j,n)): Represents revenue from selling hydrogen,
+subtracted from the total cost to reflect income. This variable calculates the revenue generated from
+hydrogen sales, factoring in the market price and variable production costs. The net revenue
+contributes to the overall objective function by offsetting system costs, reflecting the economic
+benefits of hydrogen production and sales.
+
+
+ ∀𝑟, 𝑡, 𝑗, 𝑛: HydrogenRevenue(𝑟, 𝑡, 𝑗, 𝑛)
+                                                                                                   (A71)
+                   = H2_output(𝑟, 𝑡, 𝑗(𝑛)) ⋅ (H2_price(𝑟, 𝑡, 𝑛) − H2_varcost(𝑟, 𝑡, 𝑗))
+
+
+Penalty Reserve Cost (PenaltyReserveCost(r,t,n)): Penalty cost for violating reserve requirements at
+node n.
+
+
+ ∀𝑟, 𝑡, 𝑛: 𝑃𝑒𝑛𝑎𝑙𝑡𝑦𝑅𝑒𝑠𝑒𝑟𝑣𝑒𝐶𝑜𝑠𝑡(𝑟, 𝑡, 𝑛)
+                 = capcost_res_up(n) ⋅ 𝑐𝑎𝑝𝑎𝑐𝑖𝑡𝑦_𝑟𝑒𝑠_𝑢𝑝(𝑟, 𝑡, 𝑛)                                    (A72)
+                 + capcost_res_down(n) ⋅ 𝑐𝑎𝑝𝑎𝑐𝑖𝑡𝑦_𝑟𝑒𝑠_𝑑𝑜𝑤𝑛(𝑟, 𝑡, 𝑛)
+
+
+Penalty Bound Cost (PenaltyBoundCost(r,t,j,n)): Penalty cost for exceeding generation capacity
+bounds for technology j at node n. This variable quantifies the penalties for violating operational
+constraints such as lower and upper power bounds and ramp-up and ramp-down limits.
+
+
+    ∀𝑟, 𝑡, 𝑗, 𝑛: 𝑃𝑒𝑛𝑎𝑙𝑡𝑦𝐵𝑜𝑢𝑛𝑑𝐶𝑜𝑠𝑡(𝑟, 𝑡, 𝑗, 𝑛)
+                      = [𝑐𝑎𝑝𝑎𝑐𝑖𝑡𝑦_𝑝𝑜𝑤𝑒𝑟_𝐿𝐵(𝑟, 𝑡, 𝑗(𝑛)) ⋅ capcost_LB(j)
+                      + 𝑐𝑎𝑝𝑎𝑐𝑖𝑡𝑦_𝑝𝑜𝑤𝑒𝑟_𝑈𝐵(𝑟, 𝑡, 𝑗(𝑛)) ⋅ capcost_UB(j)                              (A73)
+                      + 𝑐𝑎𝑝𝑎𝑐𝑖𝑡𝑦_𝑟𝑎𝑚𝑝𝑢𝑝_𝑈𝐵(𝑟, 𝑡, 𝑗(𝑛)) ⋅ capcost_rampup(j)
+                      + 𝑐𝑎𝑝𝑎𝑐𝑖𝑡𝑦_𝑟𝑎𝑚𝑝𝑑𝑜𝑤𝑛_𝑈𝐵(𝑟, 𝑡, 𝑗(𝑛)) ⋅ 𝑐apcost_rampdown(j)]
+
+
+Penalty Line Flow Cost (PenaltyLineFlowCost(r,t,k)): Penalty cost for violating line flow constraints
+on line k. This variable captures the cost penalties for exceeding the transmission flow limits in either
+direction on a line. It ensures the model accounts for such violations and balances the trade-off
+between penalty flow capacity costs and feasible power flows.
+
+
+ ∀𝑟, 𝑡, 𝑘: PenaltyLineFlowCost(𝑟, 𝑡, 𝑘)
+                  = capcost_line_flow(𝑘)                                                           (A74)
+                  ⋅ (capacity_line_flow_fw(𝑟, 𝑡, 𝑘) + capacity_line_flow_bw(𝑟, 𝑡, 𝑘))
+
+
+
+                                                                                                        56
+Penalty Interface Cost (PenaltyInterfaceCost(r,t,i)): Penalty cost for violating interface flow
+constraints on interface i.
+
+
+ ∀𝑟, 𝑡, 𝑖: PenaltyInterfaceCost(𝑟, 𝑡, 𝑖)
+                   = capcost_iface_flow(𝑖)                                                        (A75)
+                   ⋅ (capacity_iface_flow_fw(𝑟, 𝑡, 𝑖) + capacity_iface_flow_bw(𝑟, 𝑡, 𝑖))
+
+
+
+
+                                                                                                    57
+

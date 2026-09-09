@@ -1,0 +1,1573 @@
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+               An Coimisiún um Rialáil Fóntais
+               Commission for Regulation of Utilities
+
+
+
+              Transmission Network
+              Charges for Energy
+              Storage
+
+
+
+
+                Minded-to Interim Decision
+                Reference:     CRU/202645           Date Published:      15/04/2026
+
+              www.cru.ie
+
+0
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+CRU Strategic Plan 2025-27
+
+
+
+
+1
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+Executive Summary
+The CRU is seeking feedback on its minded-to position to issue a new interim decision to
+supersede the CRU/20/115 Network Charges for Commercial Storage Units Interim Solution
+issued in 2020. This Minded-to Interim Decision relates to the transmission use of system
+charges (“TUoS”) paid by Energy Storage Units (“ESUs”), either standalone units or co-located
+with other generation units. It does not apply to storage co-located with demand and does not
+affect existing charging arrangements for Autoproducer Users.1
+
+Battery Energy Storage Systems (“BESS”) have operated under an interim arrangement for
+transmission network charging since 2020.2 The arrangement introduced by the CRU’s 2020
+Interim Decision was put in place given the view that the charging arrangements at the time,
+levying both demand TUoS (“D-TUoS”) and generation TUoS (“G-TUoS)”, may not have
+accurately reflected the costs imposed on the network by BESS and posed a potential barrier to
+entry.
+
+The Interim Decision specified that BESS would pay D-TUoS only i.e., on the basis of their
+withdrawals from the grid and Maximum Import Capacity (“MIC”). At the time, the CRU
+recognised that a full review of the network tariff structure would be required to develop an
+enduring charging regime for storage and intended that it would take place within the wider
+Electricity Network Tariff Structure Review (2the ENTSR”) which commenced in 2020.
+
+However, since the Interim Decision, both the level of investment in ESUs and their role on the
+system have changed substantially. ESUs, which typically provided system support, are now
+able to participate in the wholesale market providing flexibility by storing energy during times of
+high availability for export into the system during low availability. In addition, the ENTSR was
+postponed in 2022, given the necessity to divert CRU resources to manage the impact on energy
+markets arising from the Russian invasion of Ukraine.
+
+Given these circumstances, the CRU is minded-to implement a revised interim decision
+specifying that ESUs should pay G-TUoS and not D-TUoS, consistent with other generation
+units. For clarity, the CRU is not seeking to modify charging arrangements for Distribution Use of
+Service (D”UoS”) charges.
+
+
+
+
+1 The CRU will seek to conduct more comprehensive assessment and identify more enduring
+
+solutions for charging arrangements for electricity network use of system tariffs within the scope of the
+Electricity Network Tariff Structure Review (the ENTSR).
+2 Whereas the CRU’s 2020 Interim Decision applied only to BESS, the CRU is minded-to broaden the
+
+revised Interim Decision to apply to ESUs as described above.
+
+
+2
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+The CRU’s position is that charging ESUs on the basis of G-TUoS would avoid distortions arising
+from volumetric charging on ESUs, promote a level-playing field between ESUs across the
+Single Electricity Market (“the SEM”) and between ESUs and other generation technologies
+providing the same services, and provide locational signals for siting of ESUs. The CRU
+recognises that this proposed change has the potential to increase charges for the remainder of
+D-TUoS customers as set out in the impact statement below. However, given the importance of
+ESUs in delivering the future energy system, the CRU expects the approach set out in this
+Minded-to Interim Decision for consultation to result in overall net benefits for customers.
+
+Given these reasons, the CRU is minded-to implement a revised interim decision reflecting
+the matters set out in this paper for the 2026/27 tariff year (i.e., from October 1st, 2026). The
+proposed change aims to deliver charging arrangements on an interim basis which is more
+aligned with the operational nature of ESUs, including their role in providing balancing and
+congestion relief.
+
+The CRU will seek to conduct more comprehensive assessment and identify enduring solutions
+for charging arrangements for network use of system tariffs within the scope of the ENTSR.
+However, the CRU recognises that the ENTSR will take time to complete, and considers that the
+reasons set out above require action to revise the existing Interim Decision prior to the
+conclusion of the wider, multi-annual review in order to promote efficiency, the use of indigenous
+renewable, sustainable or alternative forms of energy, and to protect the interests of final
+electricity customers.
+
+The CRU is seeking feedback on the minded-to interim decision as set out in this paper.
+
+
+
+
+3
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+Public/Customer Impact Statement
+The CRU expects its minded-to decision to result in the following overall net benefits for
+customers:
+
+    •   relatively lower electricity prices due to the potential for ESUs to store electricity when
+        supply is abundant and releasing it during times of high demand, as well as associated
+        reductions in balancing costs, curtailment and redispatch;
+    •   increased integration of indigenous renewable energy, along with associated emissions
+        reductions;
+    •   enhanced incentives to locate storage in ways that reduce the need for network
+        reinforcements, and
+    •   increased investment in energy storage to provide system services.
+
+
+However, the CRU’s notes that applying G-TUoS rather than D-TUoS to ESUs will, all else being
+equal, result in an increase in D-TUoS charges for other demand paying customers of circa 2%.
+Given TUoS constitutes approximately 8% of the standard domestic electricity bill,3 the CRU
+estimates that the average impact of the CRU’s proposal is approximately 0.2% increase in the
+standard domestic electricity bill.4 The CRU considers that the benefits listed above will likely
+outweigh the marginal increase in D-TUoS charges.
+
+The CRU also recognises the minded-to position will have a distributional impact on customers
+paying G-TUoS. The inclusion of ESUs in the G-TUoS charging base will impact the amount paid
+by different G-TUoS customers. However, unlike D-TUoS, the total average paid by customers
+will not exceed the current amount which is already at the cap of €2.5/MWh set by EU Directive
+838/2010.5
+
+
+
+
+3 The CRU (18 October 2021), CRU’s Electricity Network Tariff Structure Review: Objectives,
+
+Principles & Call for Evidence, CRU/21/123.
+4 The estimated impact on the standard domestic electricity bill assumes that the average domestic
+
+customer has the same demand profile and MIC as the average D-TUoS billpayer. In reality, the
+estimated impact on the standard domestic electricity may be slightly higher or slightly lower,
+depending on whether the demand profile of an average domestic customer leads to the customer
+generally paying more or less TUoS on average.
+5 Commission Regulation (EU) No 838/2010 of 23 September 2010 on laying down guidelines relating
+
+to the inter-transmission system operator compensation mechanism and a common regulatory
+approach to transmission charging, Annex Part B.
+
+
+4
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+Table of Contents
+
+Glossary of Terms and Abbreviations.................................................................... 6
+
+1. Introduction ........................................................................................................ 9
+
+    1.1.   Background ................................................................................................................... 9
+    1.2.   Related Documents ..................................................................................................... 10
+    1.3.   Legal and Policy Background ........................................................................................ 10
+    1.4.   Structure of Paper ....................................................................................................... 11
+
+2. Evolution of Transmission Network Charges and Payment by ESUs ......... 13
+
+    2.1.   Summary of Transmission Use of System Charges in Ireland ......................................... 13
+    2.2.   Pre-2020 Network Charges for BESS Units in Ireland ..................................................... 15
+    2.3.   Post-2020 Network Charging Arrangements for BESS Units in Ireland ........................... 15
+    2.4.   Network Charging Arrangements for BESS Units in Other European Countries .............. 17
+
+3. Re-evaluating Transmission Network Charges for ESUs............................. 19
+
+    3.1.   The Evolving Role of ESUs in the Irish Market ............................................................... 19
+    3.2.   Distortions Arising from Volumetric Charging ............................................................... 20
+    3.3.   A Level Playing Field for ESUs Across the SEM .............................................................. 21
+    3.4.   A Level Playing Field Between ESUs and Other Generation Technologies ...................... 22
+    3.5.   Locational Signals and the Siting of ESUs ...................................................................... 23
+    3.6.   Charging Incentives for ESUs under MIC and MEC ........................................................ 24
+    3.7.   Implications for D-TUoS Customers .............................................................................. 25
+
+4. Minded-to Decision for Consultation ............................................................. 28
+
+5. Responding to this Paper ............................................................................... 29
+
+Appendix: Methodology to Estimate Customer Impact ...................................... 31
+
+
+
+
+5
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+Glossary of Terms and Abbreviations
+
+
+    Abbreviation or Term                          Definition or Meaning
+
+    ACER                                          European Union Agency for the Cooperation of
+                                                  Energy Regulators
+
+    Act                                           Electricity Regulation Act, 1999
+
+    AIE Regulations                               The European Communities (Access to Information
+                                                  on the Environment) Regulations 2007 to 2014
+
+    AIRAA                                         All-Island Resource Adequacy Assessment
+
+    Autoproducer User                             A User who supplies a natural or legal person who
+                                                  consumes and generates electricity in a Single
+                                                  Premises or, on whose behalf another person
+                                                  generates electricity in the Single Premises where
+                                                  such generation is essentially used in that Single
+                                                  Premises
+
+
+                                                  Or
+
+
+                                                  Supplies a natural or legal person who consumes and
+                                                  generates electricity in a Single Premises, or on
+                                                  whose behalf another person generates electricity in
+                                                  the Single Premises whereby the generated
+                                                  electricity is produced through a Combined Heat and
+                                                  Power process under a licence by CRU
+
+    BESS                                          Battery Energy Storage Systems
+
+    CEP                                           Clean Energy Package
+
+    CRU                                           Commission for Regulation of Utilities
+
+    D-TUoS                                        Demand Transmission Use of System
+
+    ECA                                           Economic Consulting Associates
+
+
+
+
+6
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+    EirGrid                                       The holder of the Transmission System Operator
+                                                  licence granted to it by the CRU under section 14(1)
+                                                  (e) of the Act
+
+    ENTSR                                         Electricity Network Tariff Structure Review
+
+    ESBN                                          ESB Networks
+
+    ESI                                           Energy Storage Ireland
+
+    ESU                                           Energy Storage Unit as defined in the Grid Code
+
+    EU                                            European Union
+
+    FOI Act                                       Freedom of Information Act 2014
+
+    G-TUoS                                        Generation Transmission Use of System
+
+    kW                                            Kilowatt
+
+    MEC                                           Maximum Export Capacity
+
+    MIC                                           Maximum Import Capacity
+
+    MW                                            Megawatt
+
+    MWh                                           Megawatt-hour
+
+    NEDS                                          National Energy Demand Strategy
+
+    Network Charges                               For the use of the transmission system infrastructure
+                                                  for the transportation of electricity
+
+    PN                                            Physical Notification
+
+    Postage Stamp Component                       A portion of G-TUoS that is intended to recover a
+                                                  minimum of 70% of the total G-TUoS revenue and is
+                                                  applied evenly across all generators
+
+    Regulatory Authorities (RAs)                  The Utility Regulator (UR) in Northern Ireland and the
+                                                  Commission for Regulation of Utilities (CRU) in
+                                                  Ireland and the term “Regulatory Authority” shall be
+                                                  construed accordingly to mean any one of them as
+                                                  the context admits or requires
+
+    RES                                           Renewable Energy Source
+
+    SDP 2                                         Initiative 2 of the Scheduling and Dispatch
+                                                  Programme
+
+
+
+7
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+    SEAI                                          Sustainable Energy Authority of Ireland
+
+
+    SEM                                           The Single Electricity Market, which is the wholesale
+                                                  all island single electricity market
+
+
+    SEMC                                          Single Electricity Market Committee
+
+
+    SEMO                                          Single Electricity Market Operator
+
+    SONI                                          The System Operator in Northern Ireland and the
+                                                  holder of the Licence to Participate in the
+                                                  Transmission of Electricity granted by the UR under
+                                                  the Electricity (Northern Ireland) Order 1992
+
+    System Services Charge                        For the recovery of the costs arising from the
+                                                  operation and security of the transmission system
+
+    TAO                                           Transmission Asset Owner
+
+    TNUoS charges                                 Transmission Network Use of System charges that
+                                                  recover the cost of installing and maintaining the
+                                                  transmission system in England, Wales, Scotland,
+                                                  and offshore
+
+    Triad                                         The half-hour settlement period of highest demand on
+                                                  the Great Britain’s electricity transmission system
+                                                  between November and February (inclusive) each
+                                                  year
+
+    TSO                                           Transmission System Operator
+
+    TUoS                                          Transmission Use of System
+
+    UR                                            Utility Regulatory in Northern Ireland
+
+
+
+
+8
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+1. Introduction
+This paper is for the attention of all members of the public and the energy industry. It will be of
+particular interest to the ESU industry, customers paying transmission network charges, and
+network companies.
+
+
+1.1. Background
+
+EirGrid’s Grid Code defines ESUs as “Generation Units using storage devices to generate and
+consume electricity as, or as part of, a PPM” (Power Park Module).6 Prior to 2020, ESU capacity
+in Ireland totalled approximately 19.5 MW.7 ESUs connected to the transmission network paid
+Transmission System Use of System charges (“TUoS”) on both energy withdrawals (Demand
+TUoS, or “D-TUoS”) and injections (Generation TUoS, or “G-TUoS”) given the potential to
+impose costs to the transmission network from both activities.8
+
+Battery Energy Storage Systems (BESS) have operated under an interim arrangement for
+transmission network charging since 2020. The CRU introduced an Interim Decision in 2020 with
+the view that existing charging arrangements at the time, levying both demand TUoS (D-TUoS)
+and generation TUoS (G-TUoS), may not have accurately reflected the costs imposed on the
+network by BESS and posed a potential barrier to entry.
+
+However, since the 2020 Interim Decision, both the anticipated investment in ESUs and their role
+on the system have changed substantially, enabled by new policy and market design changes
+such as Initiative 2 of the Scheduling and Dispatch Programme (“SDP 2”).9 These changes
+increase the scope of potential system benefits delivered by ESUs through participation in
+wholesale markets. In addition, the ENTSR was postponed in 2022, with CRU resourcing
+diverted to manage the impact on energy markets arising from the Russian invasion of Ukraine.
+
+Given these changes, and calls from industry to charge ESUs on the basis of G-TUoS in
+alignment with arrangements in Northern Ireland, the CRU is reconsidering the Interim Decision
+on the transmission network charges to be paid by ESUs. The CRU intends to apply the updated
+Interim Decision to all ESUs which are standalone units or co-located with generation, to ensure
+
+
+
+
+6 EirGrid (17 October 2025), EirGrid Grid Code Version 16, p. 417.
+7 SEAI (December 2025), Energy in Ireland 2025 Report, p.70.
+8 The CRU (June 2020), Network Charges for Commercial Storage Units Interim Solution
+
+Consultation Paper, CRU/20/066, p.1. See also SEAI (December 2025), Energy in Ireland 2025
+Report, Table 4.10.
+9 EirGrid, SEMO & SONI (November 2025), Overview of SDP Solution for Battery Units Version 2.0.
+
+
+
+
+9
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+consistency with other generation units. The CRU’s minded-to Interim Decision does not apply to
+storage co-located with demand and does not affect existing charging arrangements for
+Autoproducer Users..10
+
+
+1.2. Related Documents
+
+     •   Network Charges for Commercial Storage Units Interim Solution (CRU/20/115)
+
+
+1.3. Legal and Policy Background
+
+The CRU’s remit regarding electricity network use of system charges is primarily set out in
+Sections 35 and 36 of the Electricity Regulation Act, 1999 (the Act). Here, the CRU may give
+directions to the regulated electricity network companies from time to time regarding the basis for
+use of system charges and approves statements of charges received further to such directions.
+
+More generally, the CRU’s functions and duties are set out principally in Section 9 of the Act.
+Here, the CRU shall carry out its statutory functions in a manner which does not discriminate
+unfairly between relevant stakeholders and with regard to a range of factors which are relevant to
+the matters under consideration here. For example, the CRU must have regard, inter alia, to:11
+
+     •   the need to protect the interests of final customers and to secure that all their reasonable
+         demands for electricity are satisfied;
+     •   the need to promote the continuity, security and quality of supplies of electricity;
+     •   the need to promote competition;
+     •   the need to promote efficiency and the use of renewable, sustainable or alternative forms
+         of energy;
+     •   the benefits of developing demand-side participation in electricity markets, including
+         through energy efficiency, demand-response, distributed generation, energy storage and
+         the use of digital technologies; and
+     •   the use of energy storage technologies in participating in the balancing of electricity
+         demand and supply.
+
+
+
+
+10 The CRU notes that Turlough Hill already pays transmission network charges on the basis of G-
+
+TUoS. See also: EirGrid and SONI (29 August 2025), Approved 2025/2026 Generator Use of System
+Charges (GTUoS).
+11 Electricity Regulation Act 1999 , Section 9: Functions of Commission.
+
+
+
+
+10
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+Section 9 also states that, without prejudice to the duties of the Minister and the CRU not to
+discriminate as above, nothing in the Act shall unduly hamper ‘…investments into, in particular,
+variable and flexible energy generation, energy storage and the deployment of electromobility
+and new interconnectors between Member States’.12
+
+Other governing legislation is also relevant, including the Climate Action and Low Carbon
+Development Act, 2015 and applicable EU legislation. Regarding the latter, most relevant are:
+
+     •   Article 59 of EU Directive 2019/944 states that each regulatory authority has the duty to
+         fix or approve, in accordance with transparent criteria, transmission or distribution tariffs
+         or their methodologies, or both;13
+     •   Matters prescribed in Article 18 of EU Regulation 2019/943 (as set out in Annex A);14
+         and
+     •   Requirements set out in EU Regulation 838/2010 regarding inter TSO compensation
+         and a common regulatory approach to transmission charging.15
+
+Article 18 of EU Regulation 2019/943 is of particular note as it sets out requirements in relation to
+network charges, both connection and use of system, including, for example, that they shall be
+cost-reflective, transparent, take into account the need for network security and flexibility, shall
+be applied in a non-discriminatory manner and shall not include unrelated costs supporting
+unrelated policy objectives. It also states that they shall not discriminate either positively or
+negatively against energy storage or aggregation and shall not create disincentives for self-
+generation, self-consumption or for participation in demand response.
+
+This minded-to decision is published in the context of the Government’s 2024 Electricity Storage
+Policy Framework as referenced in the ‘accelerate flexibility’ theme within the Climate Action
+Plan of the same year.16 17
+
+
+1.4. Structure of Paper
+The structure of the remainder of this paper is as follows:
+
+
+
+
+12 Electricity Regulation Act 1999 (revised up to 31 December 2025), Section 9: Functions of
+
+Commission, para. 4 (ab) (iii).
+13 EU Directive 2019/944, Article 59, para. 1 (a).
+14 EU Regulation 2019/943, Article 18.
+15 EU Regulation 838/2010.
+16Department of Climate, Energy and the Environment (2024) Climate Action Plan 2024. EL
+
+Electricity, pp 33 and 34.
+17 Department of Climate, Energy and the Environment (2024) Electricity Storage Policy Frameowork.
+
+1.3.2 Electricity Storage Technology and 1.3.6. Definition
+
+
+11
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+     •   Section 2 describes existing transmission charges in Ireland, and how these have
+         historically applied for ESUs. It covers the CRU’s 2020 Interim Decision which sought to
+         align with European precedent in network charging arrangements for ESUs;
+     •   Section 3 describes how the role for ESUs has changed in the Irish market since the
+         2020 Interim Decision, and outlines potential benefits and risks that the CRU has
+         identified in re-evaluating its previous position;
+     •   Section 4 outlines the CRU’s minded-to decision, which is to charge ESUs G-TUoS
+         instead of D-TUoS, and describes implementation arrangements; and
+     •   Section 5 outlines how stakeholders can respond to this consultation.
+
+
+
+
+12
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+2. Evolution of Transmission Network
+  Charges and Payment by ESUs
+This Section provides factual background regarding transmission charging structures and rules
+for the relevant charges paid by ESUs to date.
+
+
+2.1. Summary of Transmission Use of System
+         Charges in Ireland
+
+In Ireland, ESUs pay transmission charges on the basis of D-TUoS levied on their energy
+withdrawals and MIC.18 This is in contrast with ESUs in Northern Ireland, which pay G-TUoS on
+the basis of energy injections and MEC. This Section provides an overview of the current
+demand (D-TUoS) and generation (G-TUoS) charging framework in Ireland which has applied
+since the tariff year 2022/23.19
+
+TUoS charges recover (i) the costs of using the transmission system infrastructure to transport
+electricity (“Network Charges”), as well as (ii) the costs arising from the operation and security of
+the transmission system (“System Services Charges”). Costs to be recovered (as determined
+through allowed revenues of network companies) are allocated between D-TUoS and G-TUoS.
+
+Approximately 75% of transmission network costs and full system service costs are recovered
+through D-TUoS.20 D-TUoS charges are formed of three components with both capacity and
+volumetric charging:21
+
+     •   Demand Network Capacity Charge typically levied per MW of Maximum Import
+         Capacity (MIC);22
+
+
+
+
+18 With the exception of Turlough Hill, which pays G-TUoS.
+19 The CRU made a decision on the peak and off-peak TUoS tariff in 2022 which EirGrid has followed
+
+since. See The CRU (28 September 2022), CRU202291, Electricity Network Tariffs 2022/23: National
+Energy Security Framework Response, p.5.
+20 EirGrid (15 September 2025), EirGrid Statement of Charges 2025/2026 v1.0 where System
+
+Services Charges are only allocated to demand users, recoverable through D-TUoS. See also Utility
+Regulator (19 August 2020), G-TUoS Revenue Allocation Consultation, p.4, para 1.5, and SEM-11-
+078, pp.26-27.
+21 EirGrid (15 September 2025), EirGrid Statement of Charges 2025/2026 v1.0: Tariff Schedule DTS-
+
+T, p.7.
+22 EirGrid can also calculate the Demand Network Capacity Charge based on a customer’s Minimum
+
+Charging Capacity, or the highest metered consumption demand within the charging period. See:
+EirGrid (15 September 2025), EirGrid Statement of Charges 2025/2026 v1.0: Tariff Schedule DTS-T,
+p.7.
+
+
+13
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+     •   Demand Network Transfer Charge levied per MWh of energy consumption within the
+         charging period. Together with the Demand Network Capacity Charge, these two
+         Network Charges recover the costs of using transmission system infrastructure to import
+         electricity from the system; and
+     •   Demand System Services Charge levied per MWh of energy consumption with time-of-
+         use variation between peak (17:00 to 19:00) and off-peak hours. The System Services
+         Charge recovers the costs arising from the operation and security of the transmission
+         system.
+
+The remaining share of transmission network costs are recovered through G-TUoS levied on
+generators in Ireland, and generators and ESUs in Northern Ireland.23 G-TUoS charges are
+formed of three components, and largely recover costs using capacity-based charges:24
+
+     •   Generation Network Location-based Capacity Charge levied per kW of the unit’s
+         MEC and includes two sub-components:25
+             o   A “Postage Stamp Component” which is fixed per kW for the charging year
+                 irrespective of the unit’s location in the network; and
+     •   A “Locational Component” which varies per kW depending on the location of the unit’s
+         connection to the transmission network, as introduced above. EirGrid sets the Locational
+         Component to reflect how the costs of providing transmission vary across the network
+         such that it “tends to be higher in regions which are remote from large demand centres,
+         and in parts of the network which have a large number of developments built or
+         planned”.26
+     •   Generation System Services Charges, levied to recover costs associated with
+         operational performance failures by the generator (such as power trips, short-notice
+         changes in output, failure to meet reactive power or reserve requirements).
+
+
+
+
+23 The All-Island G-TUoS pot comprises 25% of the transmission network costs from Ireland, 25 % of
+
+the Northern Ireland Electricity Networks TUoS requirement, and 15% of SONI’s revenue related to
+internal costs. See The Utility Regulator (27 April 2021), G-TUoS Revenue Allocation Decision Paper,
+para 4.3 and 4.4.
+24 EirGrid (15 September 2025), EirGrid Statement of Charges 2025/2026 v1.0: Tariff Schedule DTS-
+
+T, p.7.
+25 EirGrid (8 September 2025), Approved 2025/2026 Generator Use of System Charges (GTUoS):
+
+Accompanying Note, pp.6-9.
+26 EirGrid (8 September 2025), Approved 2025/2026 Generator Use of System Charges (GTUoS):
+
+Accompanying Note, p.7.
+
+
+14
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+While D-TUoS charges are set by EirGrid for Ireland, G-TUoS charges are governed by the
+Single Electricity Market Committee (“the SEMC”) and are set on a SEM wide basis by the
+relevant Transmission System Operators (“the TSOs”).27
+
+
+2.2. Pre-2020 Network Charges for BESS Units in
+         Ireland
+
+Prior to 2020, there was only a small amount of BESS capacity connected to the SEM. In 2020,
+BESS storage capacity in Ireland was 15 MWh, only 1.6% of the 943 MWh in BESS volume
+connected four years later in 2024.28
+
+The predominant role of BESS units has been to provide system services. System processes
+and regulations in the SEM largely precluded BESS units from participating in energy trading to
+provide flexibility in wholesale energy markets (i.e., by importing intermittent generation at times
+of high availability for future export during times of low availability):
+
+     •   BESS units were registered and modelled as “multi-fuel generator” units that did not
+         reflect battery-specific technical capabilities such as charging capability, meaning TSOs
+         could not track battery charge levels; and
+     •   BESS units could not submit negative Physical Notifications (“PNs”) to notify TSOs of
+         their intention to charge in a market period, meaning they had to adhere to pre-approved
+         charging schedules that limited their ability to respond to price signals.
+
+BESS paid both D-TUoS on energy withdrawals and G-TUoS for energy injections, as well as
+paying Network Capacity Charges on both their MIC and MEC through D-TUoS and G-TUoS
+charges.
+
+
+2.3. Post-2020 Network Charging Arrangements for
+         BESS Units in Ireland
+
+
+
+
+27 Unlike the CRU which publishes the allowed revenue for each calendar year, Utility Regulator (UR)
+
+in Northern Ireland publishes allowed revenue for each tariff year. See EirGrid & SONI (8 September
+2025), Approved 2025/2026 Generator Use of System Charges (GTUoS) Accompanying Note, p.5,
+see also UR (September 2025), Regulated Entitlement Values 2025-2026 Tariff Year, para 2.7.
+28 SEAI (December 2025), Energy in Ireland 2025 Report, p.71.
+
+
+
+
+15
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+In 2020 the CRU consulted on an Interim Decision for BESS TUoS charges which sought to
+better align with new European regulations and remove market entry barriers.29 For example, the
+EU’s 2019 Clean Energy Package (” the CEP”) explicitly requires Member States to ensure that
+BESS units are “not subject to any double charging, including network charges” for stored
+energy.30
+
+In its 2020 Interim Decision, the CRU considered three alternative charging arrangements to
+adopt for BESS units:31
+
+     •   Apply D-TUoS charges only to BESS units.
+     •   Apply G-TUoS charges only to BESS units.
+     •   Apply charges similar to Autoproducers, at the higher of either D-TUoS or G-TUoS
+         charges.
+
+The CRU decided that, on an interim basis, BESS units should pay transmission network
+charges on the basis of D-TUoS only. The reasons for the CRU’s Interim Decision were largely
+based on an assessment that “incentivising a storage provider to have a higher MEC and a lower
+MIC, facilitates more efficient operation of the system” because:32
+
+     •   G-TUoS charges are based in part on a unit’s MEC. Charging based on G-TUoS
+         therefore creates potential incentives for BESS to understate their MEC, reducing their
+         capability to provide system services when called upon.33 Charging based on D-TUoS
+         sought to “remove a potential impediment to enabling higher MECs for storage providers”
+         increasing their “capability to provide more system support when called upon by the
+         TSO”;
+     •   Applying D-TUoS charges, which are based in-part on MIC, potentially creates a similar
+         incentive for BESS to understate import capacity thereby limiting the flexibility BESS can
+         provide (which require import capacity to import energy when availability is high).
+         However, the CRU did not view this as an issue at the time, since BESS could “simply
+         import at a lower rate over a longer period of time”; and
+
+
+
+
+29 The CRU (29 September 2020), CRU/20/115 Network Charges for Commercial Storage Units
+
+Interim Solution: Introduction, pp. 1-2.
+30 EU Directive 2019/944, Article 15 (5) (b).
+31 The CRU (29 September 2020), CRU/20/115 Network Charges for Commercial Storage Units
+
+Interim Solution: Proposed Interim Solution, pp. 2-3.
+32 The CRU (29 September 2020), CRU/20/115 Network Charges for Commercial Storage Units
+
+Interim Solution: Proposed Interim Solution, pp. 2-3.
+33 Section 3.6 below discusses this point further.
+
+
+
+
+16
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+     •     In any case, the CRU considered that a higher MIC would “allow storage providers to
+           import large amounts of energy over a short period of time which can increase the
+           complexity of system operation”.34
+
+The CRU made these considerations in the context of the expectation that BESS would largely
+play a role in the provision of system services, whereas now the expectation is that ESUs will
+also play an important role in energy arbitrage.
+
+Since the 2020 Interim Decision, BESS units have paid transmission network charges only on
+the basis of D-TUoS in Ireland.
+
+The CRU intended that the Interim Decision would be a temporary one and subject to review under
+the ENTSR, which was commenced in 2020. However, the ENTSR was postponed, with the CRU
+diverting resources to manage the impact on energy markets arising from the Russian invasion of
+Ukraine.
+
+
+2.4. Network Charging Arrangements for BESS Units
+           in Other European Countries
+Transmission network charging approaches for BESS vary across European jurisdictions. In
+general, countries have sought to avoid charging BESS for withdrawals and injections, by applying
+only one of either demand or generator transmission charges for BESS. Many countries exempt
+BESS from transmission charges altogether, sometimes as part of interim arrangements to allow
+for time to analyse potential enduring solutions.
+
+In some jurisdictions, BESS units have paid generation transmission network charges which are
+generally lower than demand network charges. BESS units located in Northern Ireland pay G-
+TUoS rather than D-TUoS charges.35 In Great Britain, BESS pay zonal and capacity-based
+generation Transmission Network Use of System (”TNUoS”) charges.36 BESS units are only liable
+for demand TNUoS charges if they import energy from the system during peak times (the “Triad”
+period).
+
+
+
+
+34 The CRU (24 June 2020), CRU/20/115, Network Charges for Commercial Storage Units Interim
+
+Solution Decision Paper, p.4.
+35 SONI TUoS Statement of Charge, Applicable from 1st October 2025, pp. 14-17.
+36 NESO The Statement of Use of System Charges, Issue 7.1, Effective from 1 April 2025, pp. 7-11.
+
+
+
+
+17
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+In some European jurisdictions, BESS units are exempt from transmission charges altogether,
+sometimes as interim arrangements ahead of an enduring solution. For example, In Italy37,
+Lithuania38, Spain39, and Portugal, BESS units are eligible for revenue via wholesale and
+system services markets, but are exempt from transmission use of system charges.40 Belgium
+and Germany have previously applied derogations from transmission network charging.41 In
+Poland and Slovakia, BESS are not exempt from transmission charges, but do receive
+favourable terms compared to other transmission-connected demand and generation units.42 In
+France, from August 2026 BESS will be able to opt in to a locational tariff component that
+rewards charging/discharging in line with system needs.43
+
+In summary, the approach to transmission network charging for BESS remains varied across
+European jurisdictions. As set out above, many jurisdictions have introduced either interim
+arrangements and/or derogations on network charges for storage in order to promote investment
+while a more enduring decision is analysed.
+
+The ACER Report on Electricity Network Tariff Methodologies in Europe offers a set of
+recommendations to ensure non-discrimination by network users, including accounting for both
+injections and withdrawals, as well as ensuring cost-reflectivity and efficient price signals by
+moving away from flat energy-based charges and considering locational signals when needed.44
+
+The CRU’s re-evaluation of its Interim Decision seeks to follow a similar approach, ensuring the
+approach taken to network charging does not result in an undue barrier to investment, while
+allowing for more time to carry out comprehensive assessment for a more enduring solution.
+
+
+
+
+37 In Italy, the TSO Terna provides capacity payments to BESS, which can also earn revenue for
+
+system services and through participation in ex ante energy markets.
+38 In Lithuania, BESS imports and withdraws electricity directly from the energy grid, including to
+
+provide system services.
+39 In Spain and Portugal (collectively, the Iberian Grid), BESS units are eligible for participation in both
+
+ancillary services and wholesale energy markets. Spain has also approved plans to procure
+generation (including BESS) through a capacity market.
+40 ACER (26 March 2025), Electricity network tariffs methodologies in Europe: Annex 1, Table 30.
+41 In Germany, BNetzA is considering implementing new network charges for BESS with capacity and
+
+volumetric (on net imports only) payments, which would adjust dynamically to better align
+charging/discharging time and location with system requirements. See: BNetzA (4 March 2026),
+Dynamic network tariff component: points of orientation in the AgNes determination proceedings.
+42 ACER (26 March 2025), Electricity network tariffs methodologies in Europe: Annex 1, Table 30.
+43 CRE (13 March 2025), CRE Decision No. 2025-77.
+44 ACER (26 March 2025), Electricity network tariffs methodologies in Europe, p.18.
+
+
+
+
+18
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+3. Re-evaluating Transmission Network
+  Charges for ESUs
+The CRU is re-evaluating its 2020 Interim Decision regarding transmission network charges for
+ESUs. In its re-evaluation, the CRU has considered a request from the ESI and other industry
+participants to G-TUoS instead of D-TUoS charges for ESUs:
+
+     •   In a letter to the CRU in September 2025, ESI advocated for the CRU to direct TSOs to
+         apply G-TUoS instead of D-TUoS tariffs for ESUs.45 ESI argued that in Northern Ireland,
+         storage units only pay the G-TUoS charges, which “creates an uneven playing field and
+         disadvantages storage units in RoI”.46 ESI also cited evidence from a study that it
+         commissioned from ECA, which estimated benefits of removing D-TUoS charges,
+         including a 30% increase in storage utilisation resulting in a net saving to customers of
+         €37 million per annum (including reduced constraint costs, wholesale energy costs, and
+         carbon costs);47 and
+     •   Statkraft supported ESI in an October 2025 letter to the CRU which also advocated a
+         move to G-TUoS in place of the current D-TUoS charges. Statkraft highlighted that D-
+         TUoS charges create a “significant barrier to investment and operation” of storage
+         assets, and that G-TUoS charges “better reflect the role and contribution of storage to the
+         electricity system”.48
+
+This Section sets out the key reasons and considerations that lead to the CRU’s minded-to
+position.
+
+
+3.1. The Evolving Role of ESUs in the Irish Market
+
+Since 2020, the size of the ESU market in Ireland has grown to meet flexibility requirements in a
+grid that is becoming increasingly reliant on variable generation. The uptake of additional, longer-
+duration storage capacity increased the role for storage units in providing system support. In the
+2024 National Energy Demand Strategy (NEDS), the CRU set out a target of delivering 20% to
+
+
+
+
+45 ESI (23 September 2025), Network Charges for Energy Storage (via Email).
+46 ESI (23 September 2025), Network Charges for Energy Storage (via Email), p.3.
+47 ECA (21 March 2025), Network charges for energy storage, last accessed 31 March 2026, link:
+
+https://www.energystorageireland.com/wp-content/uploads/2025/03/1070_Network-charges-for-
+energy-storage_210325.pdf.
+48 Statkraft (21 October 2025), Network Charges for Energy Storage (via Email).
+
+
+
+
+19
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+30% of demand-side flexibility by 2030 and expects that ESUs will be one of the biggest
+providers of that flexibility within that timeframe.49
+
+ESUs are already contributing additional flexibility and support services across the SEM
+compared to 2020. Changes to system processes and regulations, particularly via SDP 2, have
+increased ESUs’ ability to provide energy flexibility by participating in ex ante energy markets:50
+
+     •   registering BESS units as generators with a “Battery Storage” fuel type which allows for
+         additional “battery-specific” characteristics (such as a minimum and maximum storage
+         quantity);
+     •   allowing BESS units to submit negative PNs (for charging) as well as positive PNs (for
+         discharging) to notify TSOs of their intended output for each trading period, and
+     •   enabling TSOs to schedule BESS units in indicative operating schedules.
+
+The CRU considers that continued investment in ESU capacity is necessary to help facilitate the
+meeting of the Government’s 80% Renewable Energy Source (RES) target by 2030.
+Consideration of the appropriate degree of alignment between price signals for storage
+investment and dispatch with system needs arises in this context. It is therefore essential that
+price signals for storage investment and dispatch align with system needs.
+
+Given the changes highlighted above, the CRU considers that the 2020 Interim Decision may no
+longer be appropriate in the context of the role of storage in the market today.
+
+
+3.2. Distortions Arising from Volumetric Charging
+
+SDP 2 introduced new system processes and regulations to increase ESUs’ ability to participate
+in wholesale energy markets. Price signals in wholesale markets incentivise ESUs to provide
+system flexibility by purchasing low-cost energy during times of high availability and exporting
+during times of low availability. ESUs earn arbitrage revenue on price differences in wholesale
+markets and simultaneously provide system benefits such as lower curtailment and reduced
+reliance on carbon intensive thermal generators.
+
+Unlike G-TUoS charges, D-TUoS charges contain volumetric costs on each MWh of energy
+withdrawn from the grid. Demand Network Transfer Charges and System Services Charges
+
+
+
+
+49 The CRU (25 July 2024), CRU202467, National Energy Demand Strategy Decision Paper Decision
+
+Paper, p.3 & 31.
+50 SEM-O (20 December 2024), Scheduling and Dispatch Programme: Overview of SDP Solution for
+
+Battery Units.
+
+
+20
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+collectively impose an additional charge per MWh cost on imports for ESUs (between €30.56 –
+€33.21 for the 2025/2026 charging period, depending on time of use).51
+
+Charging ESUs on a volumetric basis translates into a minimum price differential in the
+wholesale electricity market required for ESUs to earn arbitrage revenue while generating system
+benefits by shifting generation from times of low to high marginal cost. That is not necessarily a
+problem if the volumetric charges reflect the costs that energy consumption from the network
+tends to impose. But that is considered unlikely to be true for D-TUoS volumetric charges given
+that they recover c. 75% of total D-TUoS revenue, and the majority of transmission network costs
+is typically thought to be driven by accommodating peak demand.52 The CRU will investigate this
+further under the ENTSR.
+
+Therefore, D-TUoS volumetric charges can create a distortion for ESUs that reduces their ability
+to respond to market price signals and deliver system benefits.
+
+Applying G-TUoS instead of D-TUoS removes these additional costs for ESUs to provide
+flexibility by importing and exporting energy in wholesale markets.
+
+The CRU notes that it is necessary to consider cost-reflectivity of network use of system charges
+generally, including for ESUs, and will consider this issue as part of the wider, multi-annual
+ENTSR.
+
+
+3.3. A Level Playing Field for ESUs Across the SEM
+
+Ireland and Northern Ireland share a single electricity market with a common energy market
+price. Demand and generation units (including ESUs) connected to the SEM can freely transfer
+energy across the network (subject to transmission constraints) and participate in the same
+system service markets.
+
+The basis for the application of network use of system charges for ESUs vary across the two
+jurisdictions. ESUs in Northern Ireland pay G-TUoS only, while ESUs in Ireland pay D-TUoS,53
+creating two distortions in signals within the market:
+
+
+
+
+51 EirGrid (15 September 2025), EirGrid Statement of Charges 2025/2026 v1.0: Tariff Schedule DTS-
+
+T, p.7.
+52 ACER (26 March 2025), Electricity network tariffs methodologies in Europe, p. 8.
+53 Unlike other ESUs, Turlough Hill, the sole pumped hydro unit in Ireland, already pays G-TUoS.
+
+Source: EirGrid and SONI (29 August 2025), Approved 2025/2026 Generator Use of System Charges
+(GTUoS).
+
+
+21
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+     •   In charge level, since the value of D-TUoS charges in both jurisdictions are typically
+         higher than G-TUoS charges; and
+     •   In charge type, which creates different signals within the same market by, for instance,
+         imposing a volumetric charge on electricity imports in Ireland only.
+
+Applying G-TUoS rather than D-TUoS in Ireland seeks to mitigate these two distortions by more
+closely aligning the basis for the application of network charges for ESUs between the two
+jurisdictions, creating a more level playing field for future investment. This aligns with the original
+purpose of the locational component of G-TUoS which was “to introduce harmonised all-island
+Generator TUoS tariffs to provide participants in the SEM with a competitive level playing field”.54
+
+
+3.4. A Level Playing Field Between ESUs and Other
+         Generation Technologies
+
+As set out in Section Error! Reference source not found. above, charging D-TUoS to ESUs in
+Ireland creates an unlevel playing field between ESUs across the SEM, and distorts decisions to
+invest in ESUs across different locations in the same market.
+
+For similar reasons, charging ESUs on the basis of D-TUoS also creates an unlevel playing field
+relative to other forms of generation in the SEM to provide similar services to the market. While
+generation pays G-TUoS, storage pays D-TUoS which is both generally higher as a level of a
+charge and levied on different usage behaviours (e.g., a volumetric component). Irrespective of
+the cost reflectivity of either of the charges, the difference in charging basis creates distortions in
+the competition between ESUs and generation to provide the same services to the market (e.g.,
+wholesale energy and system services).
+
+Applying G-TUoS rather than D-TUoS charges to ESUs seeks to mitigate this distortion by more
+closely aligning networks charges for ESUs and other generation technologies, creating a more
+level playing field for future investment.
+
+
+
+
+54 EirGrid & SONI (11 April 2011), SME-11-018, Locational Signals Project: All-Island Generator
+
+TUoS, p.3.
+
+
+22
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+3.5. Locational Signals and the Siting of ESUs
+
+Prospective investors currently face limited locational signals to incentivise optimal siting of future
+storage assets:
+
+     •   D-TUoS tariffs do not vary according to a unit’s location in the network;
+     •   Connection charges for generators (which ESUs are liable to pay) are typically “shallow”,
+         meaning they are liable for the direct cost of connecting to the nearest node, but not for
+         additional transmission reinforcement deeper into the network;55 and
+     •   There is a “single price” for energy in the SEM with no variation to reflect regional market
+         dynamics.
+
+Unlike D-TUoS, G-TUoS charges do contain a Locational Component which varies according to
+the location of a unit’s connection to the network (for 2025/2026, the Locational Component was
+between €3.24 and €11.77 per kW).56 EirGrid sets the Locational Component using the
+regulatory approved G-TUoS methodology which “has been designed to link system usage with
+the transmission investment costs for different parts of the network” meaning “each Generator’s
+TUoS charge should then be reflective of transmission investment costs linked to its own use of
+the system”.57
+
+The price signals provided by variation in G-TUoS charges across locations of the network are
+designed to incentivise more efficient siting decisions by generators and ESUs, by reflecting the
+network costs associated with accommodating injections at those network locations. Generally,
+for generation sources, locations that are more remote from major demand centres, or where
+there is already significant generation development tend to face higher charges to reflect that
+they tend to drive greater network costs to enable the flow of their in-merit energy to meet
+demand.
+
+Therefore, lower network charges closer to major demand centres may incentivise siting of ESUs
+in those locations and drive system cost savings. ESUs can reduce network reinforcement
+
+
+
+
+55 EirGrid & ESB Networks (June 2020), Joint TSO/DSO Group Processing Approach Charging and
+
+Rebating Principles, pp. 5-6. See also https://www.eirgrid.ie/industry/customer-
+information/connection-charges-and-security.
+56 EirGrid (8 September 2025), Approved 2025/2026 Generator Use of System Charges (GTUoS):
+
+Accompanying Note, pp. 9.
+57 EirGrid (8 September 2025), Approved 2025/2026 Generator Use of System Charges (GTUoS):
+
+Accompanying Note, p.6.
+
+
+23
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+associated with serving demand in those locations by discharging at times of peak demand and
+providing additional adequacy.
+
+On the other hand, locational signals provided by G-TUoS may not always be appropriate for
+ESUs relative to other generation types. ESUs located further away from demand centres but
+near other generation sources may face higher locational charges to reflect that conventional
+generation tends to increase network costs in such areas to enable the flow of energy to major
+demand centres. However, ESUs in those locations can help to reduce those network costs by
+absorbing surplus generation, reducing curtailment, and relieving network constraints.
+
+The CRU is aware of the above matters which highlight the need to carry out comprehensive
+assessment to design a more enduring solution for network charging arrangements under the
+wider ENTSR. However, in the CRU’s current view, moving to G-TUoS on an interim basis in
+advance of the wider ENTSR is more conceptually aligned with the role of ESUs than D-TUoS,
+which continues to classify ESU demand as if it were adding to system load rather than
+balancing and providing congestion relief.
+
+
+3.6. Charging Incentives for ESUs under MIC and MEC
+
+The changing roles of ESUs, and particularly BESS, also potentially impact the incentives
+provided by levying network tariffs on the basis of MIC under current arrangements compared to
+MEC under the CRU’s minded-to position.
+
+At the time of its Interim Decision, the CRU considered that ESUs would largely play a role in the
+provision of system services, whereas now the expectation is that ESUs will also play an
+important role in energy arbitrage.
+
+Charging BESS on the basis of D-TUoS incentivised a lower MIC and did not provide incentives
+for BESS to reduce MEC. A BESS unit with higher MEC can provide more system support when
+called upon by the TSO (through MEC), whereas a low MIC could reduce the complexity of
+system operation to accommodate BESS withdrawals. At the time, the CRU considered that
+BESS could “simply import at a lower rate over a longer period of time”.
+
+However, the role of ESUs and particularly of BESS in the Irish market has changed since the
+previous Interim Decision, driven by the SDP 2 and the expanding scope for ESUs to participate
+in the wholesale energy market. Now, the benefits of having higher MICs to respond to price
+signals faster increases. The CRU also notes that in order to reduce curtailment in short windows
+of high system availability and to support the NEDS, ESUs need to have higher MICs to import
+excess energy in a shorter period of time. As ESI states in June 2025:
+
+
+
+24
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+“The ability to fully charge and discharge becomes more commercially and operationally critical,
+making symmetric MIC and MEC not only standard, but essential…based on Energy Storage
+Ireland’s most recent pipeline survey, all member projects currently in development are seeking
+symmetric import and export capabilities (MIC = MEC)”.58
+
+The CRU therefore recognises that the changing role of ESUs means its prior reasoning over the
+incentives provided to ESUs to reduce MIC may no longer be appropriate.
+
+
+
+
+3.7. Implications for D-TUoS Customers
+
+Given the importance of ESUs in enabling the future energy system, the CRU expects its
+minded-to decision to result in overall net benefits for customers. However, the CRU recognises
+that its minded-to position impacts the amount paid in transmission network charges by other D-
+TUoS customers and producers paying G-TUoS. The CRU sets out below a high-level estimate
+of this impact.
+
+For the 2025/26 tariff year, the allowed revenues for EirGrid as the Transmission System
+Operator (TSO) and ESB Networks (ESBN) as the Transmission Asset Owner (TAO) for the
+electricity transmission network are c. €1,396m.59 Of these allowed revenues, the TSO and TAO
+will recover c. €1,278m through D-TUoS charges (including system services charges).60
+
+The CRU’s proposal to apply G-TUoS instead of D-TUoS to ESUs will, all else being equal,
+increase D-TUoS charges for other demand paying customers. The CRU adopts a conservative
+approach to estimate the impact on D-TUoS customers by assuming that all the revenue
+currently paid by ESUs under D-TUoS is now recovered from the remaining D-TUoS customers.
+In reality, ESUs make some offsetting contribution to the revenue requirement through payments
+of G-TUoS up to the cap of €2.5/MWh set by EU Directive 838/2010, given they expand the total
+G-TUoS charging base.
+
+
+
+
+58
+   Energy Storage Ireland (18 June 2025), Response to All-Island Resource Adequacy Assessment
+2026-2035 Methodology and Inputs & Assumptions Consultation, p.3.
+59 The CRU (26 August 2025), Electricity Transmission Network Allowed Revenues for 2026 And
+
+Demand Transmission Use of System (D-TUoS) Tariffs 2025/26 (CRU2025119), p. 1.
+60 The remainder of the allowed revenues (c. €118m) is recovered through G-TUoS. See: EirGrid and
+
+SONI (8 September 2025), Approved 2025/2026 Generator Use of System Charges (GTUoS),
+Accompanying Note, p. 5.
+
+
+25
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+The CRU estimates that ESUs currently contribute c. 2% of total D-TUoS payments in Ireland.61
+The CRU estimates that charging ESUs G-TUoS instead of D-TUoS will mean remaining
+demand customers will need to contribute an additional c. €24.0m - €26.4m (or c. 2% in
+aggregate) through their D-TUoS payments.
+
+TUoS constitutes approximately 8% of the standard domestic electricity bill.62 Therefore, the
+CRU estimates that the average impact of the CRU’s proposal is a c. 0.2% increase in the
+standard domestic electricity bill (i.e., c. 2% increase in D-TUoS multiplied by c. 8% share of total
+electricity bill).63
+
+The CRU estimates the average impact on each component of D-TUoS as follows:64
+
+     •   Demand Network Capacity Charge: increase of c. 5.28%;
+     •   Demand Network Transfer Charge: increase of c. 0.09% - 0.14%; and
+     •   Demand System Services Charge: increase of c. 1.24% - 2.02%.
+
+The CRU explains the estimation procedure in more detail in the Appendix.
+
+While the CRU recognises the impact on D-TUoS customer bills, it considers that the wider
+system benefits of the decision will likely outweigh the estimated increase set out above. As
+described above:
+
+     •   Electricity storage systems can help lower overall energy costs by storing electricity when
+         supply is abundant and releasing it during times of higher demand, thereby easing
+         pressure on the system during peak periods (see Section 3.2).
+     •   ESUs can support more efficient locational and operational decisions by encouraging
+         storage to connect and operate in areas where it provides the greatest value to the
+
+
+
+
+61
+   The CRU (26 August 2025), Electricity Transmission Network Allowed Revenues for 2026 And
+Demand Transmission Use of System (D-TUoS) Tariffs 2025/26 (CRU2025119), p. 1.
+62 The CRU (18 October 2021), CRU’s Electricity Network Tariff Structure Review: Objectives,
+
+Principles & Call for Evidence, CRU/21/123.
+63 The estimated impact on the standard domestic electricity bill assumes that the average domestic
+
+customer has the same demand profile and MIC as the average D-TUoS billpayer. In reality, the
+estimated impact on the standard domestic electricity may be slightly higher or slightly lower,
+depending on whether the demand profile of an average domestic customer leads to the customer
+generally paying more or less TUoS on average.
+64 The CRU’s estimates rely on assumptions on the charging profile of ESUs which are currently
+
+connected to EirGrid’s transmission network. The CRU estimates total D-TUoS payments by these
+ESUs under the charges for the 2025/26 tariff year, i.e., the Demand Network Capacity Charge, the
+Demand Network Transfer Charge, and the Demand System Services Charge. The CRU assumes
+that the share of total D-TUoS payments recovered through each charge remains constant. The CRU
+explains its estimation procedure in more detail in the Appendix.
+
+
+26
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+         network, including where it can help alleviate constraints and reduce congestion (see
+         Section 3.5).
+     •   Greater investment in ESU capacity can strengthen system security and flexibility by
+         providing fast-response services such as frequency support, reserve, balancing and
+         other ancillary services (see Section 3.1). This can reduce reliance on more carbon-
+         intensive or higher-cost conventional generation for system support purposes.
+
+Over time, these benefits should contribute to a more efficient use of network infrastructure,
+improved integration of renewable generation and a more resilient electricity system overall. On
+that basis, while there may be a limited increase in certain customer charges in the short term,
+the CRU considers that the broader and longer-term benefits of energy storage deployment are
+likely to outweigh these impacts. The CRU therefore expects a net positive impact for electricity
+consumers if its minded-to interim decision is implemented.
+
+The CRU also recognises its proposal will have a small, and mainly distributional impact on
+producers paying G-TUoS. The amount paid by different G-TUoS payers (net of any repayments
+over the cap of €2.5/MWh set by EU Directive 838/2010) will vary given that the charging base
+will vary with the inclusion of ESUs. Whether aggregate revenue from other producers (excluding
+ESUs) varies due to the CRU’s proposed decision depends on whether ESUs contribute to G-
+TUoS at, or above, €2.5/MWh.
+
+
+
+
+27
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+4. Minded-to Decision for Consultation
+Considering the context and reasons above, the CRU is minded-to implement a revised
+Interim Decision specifying that standalone ESUs, or those co-located with other forms of
+generation, should pay G-TUoS, consistent with other generation units. For clarity, the revised
+Interim Decision will not apply to storage co-located with demand, does not affect existing
+charging arrangements for Autoproducer Users and does not seek to revise arrangements for
+Distribution Use of Service (DUoS) charges.
+
+The CRU considers that there is a need to revise the current interim network charging
+arrangements for ESUs at this time given the matters set out earlier in this paper. The CRU
+considers that application to standalone ESUs or those co-located with generation but not to
+ESUs co-located with demand – including Autoproducer Users - is a pragmatic approach that
+should facilitate implementation in advance of the wider, multi-annual ENTSR. To seek to carry
+out a wider ranging review at this time would impact on timelines for decision making,
+implementation and for the potential benefits of the interim arrangement set out in this paper to
+accrue to electricity customers.
+
+The CRU is minded-to apply network charges to ESUs on the same basis as for other
+generation units. The CRU will seek to conduct more comprehensive assessment and identify
+more enduring solutions for charging arrangements for network tariffs within the scope of the
+ENTSR. However, the CRU recognises that the ENTSR will take time to complete, and considers
+that the reasons set out above require action to revise the existing Interim Decision prior to the
+conclusion of the wider, multi-annual review in order to promote efficiency, the use of indigenous
+renewable, sustainable or alternative forms of energy, and protect the interests of customers in
+the market.
+
+Given these reasons, the CRU is minded-to implement its revised Interim Decision for the
+2026/2027 tariff year (i.e., publication of charges from 1 September 2026 to apply from 1
+October 2026). The CRU is working with EirGrid to ensure that the CRU’s decision further to this
+consultation process can be implemented as above. The CRU recognises that the annual
+network tariff calculation process is underway and that arrangements will have to be put in place
+to ensure that the CRU’s decision on this matter is appropriately reflected for the upcoming tariff
+year. The CRU acknowledges EirGrid’s co-operation on this matter.
+
+The proposed change will remain an Interim Decision and aims to deliver charging arrangements
+which are more aligned with the operational nature of ESUs including their role in providing
+balancing and congestion relief.
+
+
+
+
+28
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+5. Responding to this Paper
+The CRU is seeking feedback on its minded-to Interim Decision. Responses to this consultation
+should be submitted through the dedicated CRU consultation by close of business on 13 May
+2026.
+
+Specifically, the CRU requests feedback on the following questions:
+
+     1. Do you agree with the CRU’s minded-to position to remove D-TUoS for ESUs and charge
+         on the basis of G-TUoS and not D-TUoS, consistent with other generation units?
+
+     2. Do you agree with the reasons stated for the position, which are that replacing D-TUoS
+         charges for ESUs with G-TUoS:
+
+     •   provides a locational siting signal for ESUs;
+     •   promotes a level playfield across ESUs located across the SEM;
+     •   promotes a level playing field between ESUs and generators within the SEM; and
+     •   promotes ESUs’ ability to provide system benefits in wholesale markets by removing the
+         distortions of volumetric charging?
+
+     3. Do you have any feedback regarding the CRU’s proposed implementation of its
+         decision?
+
+     4. Should the CRU be considering other factors in evaluating the effectiveness of this
+         interim decision and in future work regarding a more enduring decision?
+
+It is not mandatory to answer all the questions in this consultation. Unless marked confidential, all
+responses from companies or organisations will be published in full on the CRU’s website.
+Respondents may request that their response is kept confidential. The CRU shall respect this
+request, subject to any obligations to disclose information. Respondents who wish to have their
+responses remain confidential should clearly state this in their response and include the reasons
+for confidentiality. All respondents may be listed in a summary of responses, even those who
+request that elements of their response should be treated as confidential. Responses from
+identifiable members of the public will be anonymised prior to publication on the CRU website
+unless the respondent explicitly requests their personal details to be published.
+
+Respondents should note that all material held by the CRU, including confidential consultation
+submissions, are subject to the Freedom of Information Act 2014 (‘FOI Act’) and the European
+Communities (Access to Information on the Environment) Regulations 2007 to 2014 (‘AIE
+Regulations’). Therefore, such submissions may potentially be released in response to requests
+
+
+
+29
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+made under the FOI Act and the AIE Regulations. The CRU privacy notice sets out how we
+protect the privacy rights of individuals here.65
+
+The CRU will consider responses by stakeholders submitted by close of business on 13 May
+2026.
+
+Pending evaluation of consultation responses, the proposed interim decision will enable the
+implementation of new transmission network charging arrangements at the start of Tariff year
+2026/2027.
+
+Following implementation of the interim decision, the CRU will further consider consultation
+responses, insights from implementation of the interim decision and experiences from other
+jurisdictions in the analysis and development of an enduring tariff arrangement.
+
+
+
+
+65 The CRU Privacy Notice, see https://www.cru.ie/privacy-notice/.
+
+
+
+
+30
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+Appendix: Methodology to Estimate
+Customer Impact
+The CRU’s minded-to position impacts the amount paid in transmission network charges by other
+D-TUoS and G-TUoS customers. The CRU sets out below a high-level estimate of this impact.
+As explained in Section 3.7, the estimated impact may be an over-estimate because it does not
+account for the contribution of ESUs to the G-TUoS revenue requirement up to the cap of
+€2.5/MWh set by EU Directive 838/2010.
+
+Broadly, the approach seeks to estimate the existing D-TUoS revenue from ESUs by making an
+assumption over ESU capacity and energy withdrawals. Then it estimates the increase in D-
+TUoS charges required to recover that additional revenue from remaining D-TUoS customers.
+
+The CRU uses two approaches to estimate ESU capacity and energy withdrawals:
+
+     •   An approach using ESU energy consumption (MWh) data from EirGrid (“the EirGrid
+         method”); and
+     •   A bottom-up consumption per MW based on the average ESU cycle estimations for
+         ESUs of different durations from the ECA study (“the ECA method”).66
+
+The EirGrid method uses EirGrid’s data on annual energy consumption (MWh) from ESUs ,
+which is c. 130 GWh in 2025. Under the ECA method, the CRU estimates that, based on ESU
+capacity connected to EirGrid’s transmission grid (834 MW in 2025) and average ESU cycles per
+day from the ECA study, annual energy consumption from ESUs is c. 200 GWh in 2025.
+
+Using both approaches, the CRU estimates that D-TUoS revenue from ESS constitutes
+approximately 2% of all allowed revenue allocated to D-TUoS (including through the system
+services charge). This means the overall D-TUoS allocated to the remainder of the demand
+charging base increases by around 2%.
+
+Given TUoS constitutes approximately 8% of the standard domestic electricity bill,67 the CRU
+estimates that the average impact of the CRU’s proposal is a c. 0.2% increase in the standard
+domestic electricity bill.
+
+
+
+
+66 ECA (21 March 2025), Network charges for energy storage, Figure 6.
+67 The CRU (18 October 2011), CRU’s Electricity Network Tariff Structure Review: Objectives,
+
+Principles & Call for Evidence, CRU/21/123.
+
+
+31
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+The CRU calculates the average increase for each D-TUoS component (i.e., the Capacity
+Charge, the Network Transfer Charge, and the System Services Charge) to recover the same
+revenue:
+
+     •   The Capacity Charge allocated to the remainder of the demand charging base increases
+         by c. 5% under both methods;
+     •   The Network Transfer Charge allocated to the remainder of the demand charging base
+         increases by less than 0.2% under both methods; and
+     •   The System Services Charge allocated to the remainder of the demand charging base
+         increases by c. 1% under the EirGrid method, and c. 2% under the ECA method.68
+
+As a sensitivity, the CRU also estimated the impact of its minded-to position under the
+assumption that ESU capacity in Ireland (excluding pumped storage) increases to c. 1,510 MW
+by 2030, as per the TSOs’ All-Island Resource Adequacy Assessment 2026-2035 (AIRAA).69
+The CRU assumes that all other factors remain constant, in particular the allowed revenue to be
+recovered under D-TUoS, total demand from all other demand customers, and the proportion of
+D-TUoS recovered from the different components. For this sensitivity, the CRU estimates that:
+
+     •   Total D-TUoS recovered from the remaining demand customers increases by c. 3.5%
+         under the EirGrid method and c. 3.9% under the ECA method. This implies an average
+         increase of the standard domestic electricity bill of c. 0.3%.
+     •   The Capacity Charge allocated to the remainder of the demand charging base increases
+         by c. 10% under both methods.
+     •   The Network Transfer Charge allocated to the remainder of the demand charging base
+         increases by c. 0.2% under the EirGrid method and c. 0.3% under the ECA method.
+     •   The System Services charge allocated to the remainder of the demand charging base
+         increased by c. 2% under the EirGrid method and c. 4% under the ECA method.
+
+For this sensitivity, the CRU estimates that annual consumption from ESUs in 2030 is c. 230
+GWh under the EirGrid method, and c. 370 GWh under the ECA method.
+
+The CRU makes the following assumptions to estimate the average impact of the minded-to
+interim decision on demand customers:
+
+
+
+
+68 The CRU notes that average impacts estimated under the ECA method are in general higher than
+
+under the EirGrid method. This is because under the ECA method, the estimated annual energy
+consumption (MWh) of ESUs in Ireland is higher than under the EirGrid method.
+69 EirGrid and SONI (2025), All-Island Resource Adequacy Assessment 2026-2035, p 99.
+
+
+
+
+32
+An Coimisiún um Rialáil Fóntais Commission for Regulation of Utilities
+
+
+
+
+     •   Under both methods, to obtain the total ESU capacity, the CRU considers the registered
+         capacity of transmission-connected ESUs in Ireland, i.e., c. 834 MW. This capacity
+         excludes Turlough Hill which already pays TUoS on the basis of G-TUoS. By omitting
+         distribution-connected ESUs, the CRU notes these estimates carry the risk of
+         underestimating the tariff impact. However, this impact is likely to be small as the share
+         of ESUs connected directly to the distribution network is relatively small in terms of the
+         total MW capacity.
+     •   Under both methods, the CRU assumes that ESUs charge (i.e., consumes energy)
+         during the off-peak ToU band, which means the higher System Services Charge rate for
+         the peak window does not apply.
+     •   Under both methods, the CRU assumes zero MWh unauthorised usage by ESUs.
+     •   Under the EirGrid method, the CRU assumes that annual energy consumption from
+         ESUs per unit of capacity stays constant. To estimate annual energy consumption from
+         ESUs in 2030, the CRU first divides total ESU capacity (in MW) by annual consumption
+         from ESUs in 2025 (in MWh), to calculate energy consumption per unit of capacity. The
+         CRU then multiplies ESU capacity for 2030 by the ratio from the first step to arrive at the
+         estimate of annual energy consumption from ESUs in 2030.
+     •   Under both methods, to estimate the impact on the individual components of D-TUoS,
+         the CRU first calculates ESU payments of each D-TUoS component (i.e., the Demand
+         Network Capacity Charge, the Demand Network Transfer Charge, and the Demand
+         System Services Charge). The CRU assumes that the proportion of D-TUoS recovered
+         from each component remains constant. The CRU then estimates the average increase
+         in each charging component that the remaining demand customers face. In other words,
+         the CRU assumes that the revenue recovered from ESUs e.g., through the Demand
+         System Services Charge will be recovered by the remaining demand customers through
+         the Demand System Services Charge, not another component of D-TUoS.
+
+
+
+
+33
+

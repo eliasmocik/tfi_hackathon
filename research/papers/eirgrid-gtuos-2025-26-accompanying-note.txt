@@ -1,0 +1,222 @@
+Approved 2025/2026
+Generator Use of
+System Charges
+(GTUoS)
+Accompanying Note
+
+8 September 2025
+Contents
+1. Introduction                                                              4
+
+2. Total Revenue Requirement and GTUoS                                       5
+
+3. Approved 2025/2026 Tariffs                                                6
+
+4. Specific Influencing Factors for 2025/2026 GTUoS Model 7
+
+5. Analysis of Tariffs                                                       9
+
+6. Contact                                                                 10
+
+
+
+
+Approved 2025/2026 GTUoS Charges – Accompanying Note | 8 September 2025   Page 2
+COPYRIGHT © EirGrid/SONI
+
+All rights reserved. No part of this work may be modified or reproduced or copied in any form or by means
+- graphic, electronic or mechanical, including photocopying, recording, taping or information and retrieval
+system, or used for any purpose other than its designated purpose, without the written permission of
+EirGrid/SONI.
+
+
+
+
+Approved 2025/2026 GTUoS Charges – Accompanying Note | 8 September 2025                             Page 3
+1. Introduction
+This document accompanies the Approved Generator Transmission Use of System (GTUoS) charges for both
+Ireland1 and Northern Ireland2 as calculated by the Transmission System Operators (TSOs) for the 2025/2026
+tariff year and published on the EirGrid and SONI websites on 8 September August 2025.
+The approved charges are based upon the methodology as consulted on and approved by the Regulatory
+Authorities (RAs); the Commission for Regulation of Utilities (CRU) in Ireland and the Utility Regulator (UR)
+in Northern Ireland.
+The methodology used to calculate the 2025/2026 tariffs is the same as that used for the calculation of the
+2024/2025 tariffs. The assumptions used in the GTUoS calculation are based on publicly available
+information on connected and contracted generation and associated transmission reinforcements.
+Interconnector flows and conventional generation fuel prices are based on the 2025/2026 Imperfections
+Revenue Requirement Forecast3.
+
+
+
+
+1 https://cms.eirgrid.ie/sites/default/files/publications/2526_Approved_GTUoS_Tariffs_IE_v1.0.pdf
+2   https://cms.soni.ltd.uk/sites/default/files/publications/2526-Approved-GTUoS-Tariffs-NI-v1.0.pdf
+3 https://www.semcommittee.com/publications/sem-25-028-imperfections-charges-october-2025-september-2026-
+
+consultation-paper
+
+
+
+Approved 2025/2026 GTUoS Charges – Accompanying Note | 8 September 2025                                     Page 4
+2. Total Revenue Requirement and
+   GTUoS
+The revenue requirement is approved annually by the respective regulators in order to ensure recovery of
+costs associated with the operation, development and planning of the transmission network in a particular
+tariff year.
+The 2025/2026 GTUoS tariffs are based on a revenue requirement of €141,588,709. The overall revenue
+requirement for GTUoS has increased by 13.9% relative to the revenue requirement for 2024/2025 tariffs.
+The breakdown of the approved revenues for recovery in 2024/25 and 2023/24 are summarised in Table 1
+below.
+
+
+         Allowed Revenue                  2025/26                      2024/25            %
+
+                  IE                   €117,686,250                  €97,549,137       +20.6%
+
+                                        £20,993,530                  £22,794,975        -7.9%
+                 NI
+                                        €23,902,459                  €26,760,947       -10.7%
+
+             All-Island                €141,588,709                 €124,310,084       +13.9%
+
+                                        Table 1: Revenue Requirement
+
+In terms of the Northern Ireland revenue, the TUoS reflected in the NI amount for 2025/2026 as set out
+above is as per the Utility Regulator G-TUoS Revenue Allocation Decision Paper.4
+
+
+
+
+4 https://www.uregni.gov.uk/news-centre/g-tuos-revenue-allocation-decision-paper
+
+
+
+
+Approved 2025/2026 GTUoS Charges – Accompanying Note | 8 September 2025                            Page 5
+3. Approved 2025/2026 Tariffs
+There is an on-going need to develop the electricity network on the island of Ireland to ensure security of
+supply now and into the future. There is an associated cost with this transmission investment which is levied
+on users of the transmission system via transmission use of system charges for demand and generator
+customers.
+The regulatory approved methodology for GTUoS charging arrangements has been designed to link system
+usage with the transmission investment costs for different parts of the network. Each Generator’s TUoS
+charge should then be reflective of transmission investment costs linked to its own use of the system.
+GTUoS is made up of a postage stamp and locational component. The postage stamp portion is intended to
+recover a minimum of 70% of the total GTUoS revenue and is applied evenly across all generators, while the
+locational element is intended to provide for recovery of a maximum of 30%.
+The following factors that vary year on year have a major impact on the locational aspect of the tariffs:
+    •   The Overall Revenue Requirement to be recovered via the GTUoS tariffs;
+
+    •   Power flows (which depend on network configuration and dispatch);
+
+    •   Levels of generation and the contribution of each generator to the direction of flows on each
+        network reinforcement;
+
+    •   The assets included in the cost file including the Planned Network development and associated
+        costs; and
+
+    •   Interconnector flows.
+
+
+
+
+Approved 2025/2026 GTUoS Charges – Accompanying Note | 8 September 2025                               Page 6
+4. Specific Influencing Factors for
+   2025/2026 GTUoS Model
+On average the 2025/2026 tariffs are higher than the 2024/2025 tariffs. The change in total amount of
+chargeable generation capacity is negligible, following the closure of older large thermal units offsetting
+the addition of new generation.
+The 2025/2026 GTUoS tariffs show similar trends to the 2024/2025 tariffs. There are some locational
+variances, which arise from power flow changes and how these flows are using the assets, which are included
+in the cost file, in the model.
+As provided for in the methodology there is a 13 year window for inclusion of developments in the model,
+i.e. 01 October 2018 until 30 September 2031. Since the 2024/25 tariffs were set, a significant number of
+reinforcements have been added to the cost file, a similar number have also been removed, either having
+naturally fallen out of the cost window, or being removed as they have exceeded the maximum 12 year
+period in the cost file. Due to these locational changes, certain nodes in the northwest (Donegal) and
+southeast have seen the greatest increases in tariffs, while nodes in Northern Ireland and some in the
+southwest have had reduced tariffs.
+There are four dispatch scenarios considered in the GTUoS model, consistent with those used in planning
+studies:
+    1. Winter Peak demand, Merit Order dispatch, 0% solar, 0% Wind
+    2. Summer Peak demand, Merit Order dispatch, High Solar, 0% Wind
+    3. Summer Peak demand, Merit Order dispatch, High Solar, High Wind
+    4. Summer Minimum demand, Merit Order dispatch, 0% Solar, High Wind
+
+The methodology considers these four scenarios, assuming the Median Transmission Peak Demand for 20255.
+There are five network file study years, from Winter 2026 until Summer 2031.
+In terms of the 2025/2026 tariffs; Northern Ireland tariffs are primarily influenced by the Winter Peak
+scenario, while the Ireland tariffs are predominantly influenced by the Summer Minimum (High Wind)
+scenario, although Summer Peak Low Wind is also highly influential. This may be due to the increase in
+solar power on the system.
+A significant influencing factor hitherto has been the Turleenan-Woodland circuit. For GTUoS 2025/26, this
+circuit has been delayed until October 2031, which is outside the Cost Window, therefore it is not included
+for the first time since commencement of calculation of GTUoS in its current format. The cost of Turleenan-
+Woodland was previously allocated a large proportion of the 30% locational GTUoS pot resulting in lower
+costs associated with other reinforcements. With Turleenan-Woodland removed the proportion of revenue
+to be recovered across other reinforcements will have increased. The overall location element of the
+revenue to be recovered is reduced to 24% for GTUoS 2025/26.
+GTUoS tariffs tend to be higher in regions which are remote from large demand centres, and in parts of the
+network which have a large number of developments built or planned, namely in the northwest and the
+southwest of Ireland. GTUoS Tariffs tend to be lower around the east, the northeast of Ireland and Northern
+Ireland. NI tariffs are still lower on average than Ireland tariffs.
+Reinforcements falling out of the cost window in Donegal have led to significant increases at a number of
+localised nodes in the north of the county, as they would previously have been offsetting flows and would
+have received advantageous locational outcomes in previous GTUoS assessments as a result. The largest
+increases in south east are primarily due to the high dispatch of the Greenlink interconnector, located in
+
+5 All Island Resource Adequacy Assessment 2025-2034
+
+
+
+
+Approved 2025/2026 GTUoS Charges – Accompanying Note | 8 September 2025                             Page 7
+the southeast, which has added up to 500MW of generation (or demand) in this area, combined with
+reduction in dispatch of EWIC, located north of Dublin, with a knock-on effect on base case flows.
+
+
+
+
+Approved 2025/2026 GTUoS Charges – Accompanying Note | 8 September 2025                     Page 8
+5. Analysis of Tariffs
+In this section we look at the overall trends of the approved GTUoS tariffs.
+The maximum, minimum and overall range of tariffs is shown in Table 2 below. The postage stamp part of
+the tariff has increased (due to increase in revenue to be recovered).
+                                                   25/26 Tariffs             24/25 Tariffs
+                                                    €/kW/year                 €/kW/year
+                     Postage stamp                    €6.8560                   €5.5717
+                     Maximum tariff                  €15.0065                  €13.0642
+                     Minimum tariff                   €3.2384                   €5.4919
+                         Range                       €11.7681                   €7.5723
+
+
+
+                                        Table 2: Analysis of Tariffs
+
+The change in the average tariff from last year’s tariffs is shown in Table 3 below.
+                                              25/26 Tariffs          24/25
+                                                                                    % difference
+                                               €/kW/year           €/kW/year
+                 Ireland average                €9.4269             €8.0582             -5.8%
+             Northern Ireland average           €7.7239             €7.6057             -6.6%
+                All-Island average              €9.0608             €7.9596             -5.9%
+                                         Table 3: Average Tariffs
+
+The change in the average tariff over the last 5 years is shown in Figure 1.
+
+
+
+
+                                   Figure 1: GTUoS Average - yearly change
+
+
+Approved 2025/2026 GTUoS Charges – Accompanying Note | 8 September 2025                            Page 9
+6. Contact
+If you have any queries relating to these Approved GTUoS Tariffs for 2025/2026 please E-mail:
+Tariffs@EirGrid.com or Tariffs@soni.ltd.uk.
+
+
+
+
+Approved 2025/2026 GTUoS Charges – Accompanying Note | 8 September 2025                         Page 10
+

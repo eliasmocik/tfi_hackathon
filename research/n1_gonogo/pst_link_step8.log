@@ -1,0 +1,11 @@
+year cols matching generators: 594 of 710 ; generators with a profile in kit week: 603
+load cols matching: 246 of 246
+p_min_pu clipped for 42 units
+PST link added, p_nom 123.0
+  chunk 1/7 done, 96s
+                                                         case  rating   lodf  intact_hours_over  intact_max  n1_hours_over  n1_share  n1_max  n1_overload_MWh
+CG3 Flagford T 220/110 w1 (2nd) | loss Flagford-Srananagh 220   125.0 -0.290                  0        92.0             50     0.046   175.7           4740.0
+NW branches overloaded intact under unconstrained dispatch (share of hours):
+               branch                      from          to  rating  share_over  max_flow
+         2321-28710-1                  DRUMKEEN     CLOGHER   123.0       0.015     135.9
+          1701-1981-1                 CATH_FALL CORRACLASSY   210.0       0.002     221.8

@@ -1,0 +1,2752 @@
+Firm Access Methodology in Ireland decision
+    “EirGrid – proposed methodology”
+
+
+               SEM-23-004
+                 25/01/23
+ EXECUTIVE SUMMARY
+
+Introduction
+
+The purpose of this paper is to determine a new Firm Access methodology in
+Ireland. This decision paper is being presented by the SEM Committee. The RAs
+note that this decision paper is only in relation to a firm access methodology in
+Ireland. Any possible changes to this policy in Northern Ireland in the future would be
+a separate decision. A Firm Access Methodology offers a trade-off between
+promoting investment in generation and protecting consumers from higher levels of
+constraints costs.
+
+Since 2017 the CRU has been examining the impact of connection policy and
+Irelands ambitious renewable targets. Following extensive consultation over a
+number of years the CRU introduced a new connection policy Enduring Connection
+Policy (ECP-1 in 2018 and ECP-2 in 2020). In those decisions the CRU directed the
+system operators (EirGrid and ESB Networks) to issue connection offers on a non-
+firm basis. This was a move away from the previous policy in which connection offers
+were issued on a firm basis.
+
+In June 2020 decision paper (CRU/20/060) Enduring Connection Policy Stage 2
+(ECP-2) the CRU directed the TSO to develop a new methodology in Ireland to
+schedule Firm Access Quantities (FAQs) for contracted projects based on network
+development plans. The level of Firm Access available in the transmission network
+for a generator is that generator’s FAQ. Following that decision EirGrid commenced
+development of a new firm access methodology for Ireland.
+
+Background
+
+The purpose of firm access is to achieve a balance between granting generators
+access to the network in advance of transmission network reinforcements while
+protecting the end consumer from high constraint payments. This will help facilitate
+the connection of renewable generator projects towards Irelands ambitious
+renewable electricity targets for 2030.
+
+Firm Access is primarily related to receiving compensation payments when
+dispatched down, a unit which has no firm access will receive no compensation for
+
+                                                                                       1
+lost output. Generators connecting to parts of the network with available capacity can
+receive firm access, while generators in parts of the network with limited capacity
+can connect on a non-firm basis.
+
+It should be noted that firm access is separate to the physical access a generator
+would achieve to the transmission system once all deep connection work is
+completed. The concept of firm access is a market measure which flows through the
+SEM settlement process as set out in the Trading & Settlement Code (TSC) which
+determines the compensation payments a generator will receive when it is
+dispatched down (constrained) from its original market position.
+
+The previous Firm Access methodology for Ireland (Gate 3 ITC approach) was
+similar to the equivalent firm access approach in Northern Ireland. However, these
+approaches had some differences in practice with Ireland’s approach carried out in
+batches with no firm access methodology in place since the Gate 3 Group
+Processing Approach closed. The Northern Ireland Firm Access approach has
+operated on a continuous basis.
+
+Firm Access Methodology consultation
+
+In December 2021 EirGrid published the Firm Access Methodology Review paper,
+this paper set out their proposed core concepts and approach taken in the
+development of a new Firm Access methodology in Ireland. In June 2022, following
+engagement with industry and the RAs, the TSO (EirGrid) submitted an updated
+Firm Access Methodology Review paper.
+
+In light of the impact that firm access policy may have on the SEM, the CRU
+engaged with SEM Committee regarding EirGrid’s proposed methodology. Following
+consideration, the SEM Committee decided that Firm Access policy on the island is a
+SEM matter and therefore should be consulted upon on an all-island basis. In
+September 2022 the SEM Committee published a consultation paper on determining
+a new Firm Access methodology in Ireland. This was published alongside EirGrid’s
+updated Firm Access Methodology Review paper. This consultation remained open
+for 6 weeks, closing in early November 2022. In this paper the RAs requested further
+detail from EirGrid on certain elements of the methodology. It was reaffirmed that the
+
+
+
+                                                                                      2
+proposed Firm Access methodology if decided upon will be implemented in Ireland
+only.
+
+Firm Access Methodology decision
+
+The purpose of this decision paper is to determine a new Firm Access methodology
+in Ireland. In section 2 of this paper a summary of the consultation paper
+(SEM/22/068) is provided. In section 3 of this paper there is a summary of
+consultation responses and RA feedback on the different key elements of the
+detailed methodology. In section 5 of this paper a summary of the decisions on
+different key elements of the detailed firm access methodology is provided.
+
+Treatment of offshore
+
+Having considered the feedback received through the consultation and in light of the
+tight timings, the RAs are conscious that offshore developers entering the ORESS 1
+(Offshore Renewable Electricity Support Scheme) auction need further certainty
+regarding their Firm Access status as soon as possible. Not having this certainty in
+advance of ORESS 1 may impact on their ability to finance their offshore development
+projects.
+
+SEMC has decided the following treatment for offshore phase 1 projects successful in
+ORESS 1:
+
+      •    Firm Access Date is provided in Full Connection Offer based on the firm access
+           methodology in this decision.
+
+      •    Backstop of 2030 for full firm access in the worst-case scenario. Irrespective of
+           whether the ATRs are completed the project would receive FAQ for its
+           Maximum Export Capacity (MEC) as specified in Full Connection Offer with a
+           backstop date of 2030 at the latest.
+
+      •    If the Connection Agreement is not executed by 31 December 2025, then the
+           firm access allocation will fall away in line with the Full Connection Offer
+           validity.1
+
+      •    If Connection Agreement is executed but is subsequently terminated due to
+           contractual longstop dates being exceeded (or any other appropriate reason),
+
+1
+    Refer to CRU/2022/968 for Full Connection Offer validity and extension
+
+                                                                                               3
+       the firm access allocation falls away. For clarity, if a project loses its Marine
+       Area Consent then the firm access allocation falls away
+
+Firm access policy for offshore Phase 1 projects unsuccessful in ORESS 1 and
+Phase 2 projects will be determined after the Department of the Environment,
+Climate and Communications’ (DECC’s) decision on the Phase 2 project selection.
+
+A summary of the decisions on different key elements of the detailed firm access
+methodology in Ireland are outlined in table 1 below.
+
+Interim jurisdictional settlement
+
+The RAs propose a jurisdictional settlement measure that is triggered if the expected
+delivery of reinforcements is delayed beyond the FAQ date. In this approach if the
+related network re-enforcements are not completed by the allocated FAQ date, then
+the associated generator(s) FAQ are moved to separate jurisdictional TSO cost
+recovery, paid for by the consumer in the relevant jurisdiction. When these re-
+enforcements are completed, this unit’s FAQ is then moved into the existing all-island
+settlement and paid from there. This measure is designed to ensure that all island
+consumers are not adversely affected by any jurisdictional policy, while still not
+preventing the implementation of jurisdictional measures as required. In light of this
+jurisdictional settlement measure, future decisions on Firm Access Methodology can
+remain with the relevant jurisdictional Regulatory Authority.
+
+The RAs note that there are a number of areas that will require further consideration
+beyond this decision paper. The interim settlement measure would capture any legacy
+generation made firm, any partial firmness and interaction with firm threshold where
+re-enforcements are delayed beyond original FAQ date. These elements will require
+further engagement with EirGrid to develop more detail on how these will be defined
+and work. Further analysis from EirGrid will help inform the appropriate allocation of
+costs on a jurisdictional and on an all-island basis. It is envisaged that this work will be
+captured as part of a more detailed methodology paper led by the CRU.
+
+
+
+                     SEM Committee decision              Further detail
+
+ Time bound          Agree with the proposed
+
+
+                                                                                           4
+Firm Access       approach of having a time
+date              bound Firm Access date.
+
+Partial Firm      Agree with the proposed           A review of the size of this
+Access            approach of allocating partial    partial FAQ block can be
+Quantities        Firm Access Quantities in         included as part of a more
+                  discrete blocks of 20MW.          detailed methodology paper led
+                                                    by the CRU.
+
+Stage of          The SEM Committee are of the
+development       view that certainty needs to be
+project           provided earlier in the project
+considered for    process timeline, proposing the
+firm access       connection agreement
+                  stage for projects to meet
+                  committed status.
+
+Inclusion of                                        Further detail on longstop date
+longstop date                                       element as part of more
+                                                    detailed methodology paper led
+                                                    by the CRU.
+
+Batteries and     Agree with proposed approach      Following completion of
+other system      of treating batteries and other   Electricity Storage Policy
+service           service providers as outside      Framework by DECC a review
+providers         the scope of this Firm Access     will be carried out.
+                  methodology.
+
+Maximum           Agree with proposed MEC floor
+Export Capacity   of 1 MW.
+floor of 1MW
+
+Allocation        Agrees with the introduction of   Further detail and an indicative
+frequency         an Annual Review process.         timeline of how the Annual
+                                                    Review process will work as
+                                                    part of a more detailed
+                                                    methodology paper led by the
+
+
+
+                                                                                       5
+                                                    CRU.
+
+
+
+Firm Threshold   Agree with concept of a Firm       Further detail and analysis as
+                 Threshold.                         part of a more detailed
+                                                    methodology paper led by the
+                                                    CRU.
+
+Order of         Agree with proposed order of
+allocation       allocation approach of First to
+                 be committed – first to be Firm.
+
+Transmission                                        Further engagement by CRU
+Development                                         with EirGrid regarding data to
+Plan                                                improve forecasting of ATR
+                                                    completion dates for future
+                                                    assessments.
+
+Look back and                                       Further detail on look-back and
+look forward                                        look-forward approach as part
+approach                                            of a more detailed methodology
+                                                    paper led by the CRU.
+
+Delivery                                            CRU will continue to review the
+incentives                                          TSOs performance against
+                                                    existing PR5 incentives. CRU
+                                                    will look to review and
+                                                    potentially develop further
+                                                    incentives as part of a wider
+                                                    review during PR6
+                                                    development.
+
+Independent      Support view that there is a       The Auditor Terms of
+assurance        need for independent               Reference will be developed
+                 assurance around the Firm          and implemented on a
+                 Access process in the form of      jurisdictional basis by CRU.
+                 an independent Audit.
+
+
+                                                                                      6
+ Legacy                    Connected legacy generation
+ generation                in Ireland which currently does
+                           not have firm access should be
+                           included in this firm access
+                           methodology.
+
+ Jurisdictional            Introduction of a jurisdictional
+ cost recovery             settlement measure, if the
+                           related network re-
+                           enforcements are not
+                           completed by the allocated
+                           FAQ date, then the associated
+                           generator(s) FAQ is moved to
+                           separate jurisdictional TSO
+                           cost recovery, paid for by
+                           consumers in the relevant
+                           jurisdiction. When these re-
+                           enforcements are completed,
+                           this unit’s FAQ is then moved
+                           back into existing all-island
+                           settlement.
+
+Table 1: Summary of decisions
+
+
+
+
+Next Steps
+
+This decision paper outlines the SEM Committee’s view on a number of the key
+design elements of a new Firm Access methodology in Ireland.
+
+The RAs are of the view that there are a number of areas that will require further
+consideration beyond this decision paper. These elements will require further
+engagement by CRU with EirGrid to develop more detail on how these will be
+defined and work. It is envisaged that this work will be captured as part of a more
+detailed methodology paper led by the CRU.
+
+                                                                                      7
+Following this decision, the CRU will request EirGrid to carry out an initial firm
+access run in early 2023 capturing existing connected non-firm generation and
+offshore phase 1 projects. This will allow bidders in ORESS 1 to have certainty
+regarding their firm access status in sufficient time to efficiently reflect this in their
+bids.
+
+The CRU will continue to engage with EirGrid on the detailed aspects of the
+implementation of a Firm Access methodology in Ireland.
+
+
+
+
+                                                                                             8
+Table of Contents
+
+
+Glossary of Terms and Abbreviations ................................................................................ 11
+     Abbreviation or Term ......................................................................................................... 11
+     Definition or Meaning ........................................................................................................ 11
+1.      Introduction ..................................................................................................................... 13
+     1.1       Legal context in Ireland .......................................................................................... 13
+     1.2       SEM matter ............................................................................................................... 13
+     1.3       Firm Access methodology proposal..................................................................... 14
+     1.4       Purpose of Paper..................................................................................................... 14
+     1.5       Related Documents ................................................................................................. 14
+     1.6       Structure of Paper ................................................................................................... 15
+2.      Consultation summary .................................................................................................. 16
+     2.1       Background of Firm Access in Ireland ................................................................. 16
+     2.2       Firm Access Methodology Principles ................................................................... 16
+     2.3       Delivery incentives on the TSO ............................................................................. 17
+     2.4       Level of firm versus non-firm generation in Ireland ........................................... 17
+     2.5       CRU’s direction in ECP2 decision (CRU/20/060) ................................................. 18
+     2.6       Summary and assessment of EirGrid’s proposal ............................................... 18
+3.      Consultation responses and RA feedback .................................................................. 22
+     3.1       Consultation SEM-22-068 ....................................................................................... 22
+     3.2       Responses and feedback on detailed methodology .......................................... 22
+        Time bound Firm Access dates ........................................................................................................... 22
+        Partial Firm Access quantities .............................................................................................................. 26
+        Stage of development ........................................................................................................................... 29
+        Batteries and other service providers .................................................................................................. 33
+        Maximum Export Capacity (MEC) floor of 1MW ................................................................................ 36
+        Allocation frequency .............................................................................................................................. 39
+        Firm Threshold....................................................................................................................................... 42
+        Order of allocation ................................................................................................................................. 44
+        Transmission Development Plan basis ............................................................................................... 46
+        Look back and look forward approach ................................................................................................ 49
+        Delivery incentives ................................................................................................................................ 52
+        Independent assurance ........................................................................................................................ 55
+        General questions ................................................................................................................................. 57
+        Legacy generation ................................................................................................................................. 59
+        Proposed methodology in relation to the equivalent approach taken in Northern Ireland. ............ 61
+
+4.      Treatment of offshore (phase 1) ................................................................................... 64
+
+                                                                                                                                                              9
+5.     Summary SEM Committee decision ............................................................................. 66
+     5.1     Introduction ............................................................................................................. 66
+     5.2     Summary of decisions ............................................................................................ 66
+6.     Next Steps ....................................................................................................................... 69
+
+
+
+
+                                                                                                                                        10
+Glossary of Terms and Abbreviations
+
+
+Abbreviation or Term                  Definition or Meaning
+
+1999 Act                              Electricity Regulation Act, 1999
+
+
+ATR                                   Associated Transmission Reinforcements
+
+
+CRU                                   Commission for Regulation of Utilities (formerly,
+
+                                      Commission for Energy Regulation)
+
+
+DECC                                  Department of the Environment, Climate and
+
+                                      Communications
+
+
+DSO                                   Distribution System Operator (ESB Networks)
+
+
+ECP                                   Enduring Connection Policy
+
+
+ECP-1                                 First stage of the Enduring Connection Policy;
+
+                                      includes the 2018 batch and non-batch
+
+                                      processes.
+
+
+ECP-2                                 Second stage of the Enduring Connection Policy.
+
+
+FAQ                                   Firm Access Quantity
+
+
+FCO                                   Full Connection Offer (for Offshore Phase 1
+
+                                      projects)
+
+
+GPA                                   Group Processing Approach
+
+
+MEC                                   Maximum Export Capacity
+
+
+MW                                    Megawatt
+
+
+
+
+                                                                                 11
+Non-GPA   Non-Group Processing Approach
+
+
+ORESS 1   Offshore Renewable Electricity Support Scheme
+
+          1
+
+
+PR5       Price Review 5 for TSO and DSO
+
+
+RA        Regulatory Authorities
+
+
+SEM       Single Electricity Market
+
+
+TSO       Transmission System Operator (EirGrid)
+
+
+
+
+                                                   12
+1. Introduction
+
+1.1 Legal context in Ireland
+Under section 34 of the Electricity Regulation Act 1999, as amended, (the 1999 Act),
+the CRU may give directions to the transmission system operator (TSO) and
+distribution system operator (DSO), collectively the “System Operators” (SOs) on the
+terms and conditions of access to the distribution and transmission system.
+
+The CRU’s functions and duties are set out principally in section 9 of the 1999 Act.
+Section 9 (4) (a) of the 1999 Act, the CRU shall carry out its statutory functions in a
+manner which does not discriminate unfairly between relevant stakeholders, and
+also have regard, among other things, to the need to:
+
+   •   protect the interests of final customers and to secure that all their reasonable
+       demands for electricity are satisfied;
+   •   promote the continuity, security, and quality of supplies of electricity;
+   •   promote competition; and
+   •   promote efficiency and the use of renewable, sustainable, or alternative forms
+       of energy.
+
+The CRU has a requirement as set out in EU legislation (Article 59(7) of 2019/944
+common rules for the internal market for electricity) to approve national
+methodologies such as this Firm Access methodology. It is in the context of this
+approval requirement that the RAs carried out this consultation process. The
+purpose of this paper is to summarise responses received and outline the RA’s
+views and assessment of EirGrid’s proposed methodology.
+
+
+
+1.2 SEM matter
+In light of the impact that firm access policy may have on the SEM, the SEM
+Committee decided that Firm Access policy on the island is a SEM matter and
+therefore should be consulted upon on an all-island basis. Section 8A of the 1999
+Act defines a SEM matter as:
+
+       (5) For the purposes of this Act a matter is a SEM matter if the SEM
+       Committee determines that the exercise of a relevant function of the
+       Commission in relation to that matter materially affects, or is likely materially
+
+
+
+                                                                                           13
+       to affect, the Single Electricity Market.
+
+
+
+
+1.3 Firm Access methodology proposal
+In December 2021 EirGrid published the Firm Access Methodology Review paper.
+This was following the CRUs direction in ECP-2 (CRU/20/060). EirGrid’s review
+paper set out EirGrid’s proposed core concepts and approach taken in the
+development of a new Firm Access methodology.
+
+Following engagement with industry and the RAs, EirGrid submitted an updated Firm
+Access Methodology Proposal paper in June 2022 reflecting this feedback. This
+paper was published alongside the consultation paper SEM-22-068. This
+consultation paper summarised EirGrid’s proposed methodology.
+
+
+
+1.4 Purpose of Paper
+Following the closure of the consultation window the purpose of this paper is to
+summarise responses received and outline the RA’s views and assessment of
+EirGrid’s proposed methodology.
+
+
+
+1.5    Related Documents
+   •   CER/01/072 – Firm and Non Firm Access to the Transmission System
+       direction
+   •   CER/01/111 - Firm and Non Firm Access to the Transmission System
+       decision
+   •   CER/03/036 – Commission Decision on Future of Direction on Firm and Non
+       Firm Access to the Transmission System
+   •   CER/05/107 – Renewable Connection Offers and Transmission
+       Reinforcement Works
+   •   CER/08/260 – Criteria for Gate 3 Renewable Generator Offers & Related
+       Matters
+   •   CER/09/031 – Treatment of Conventional Generator Connection Applicants;
+
+
+                                                                                   14
+   •   CER/09/191 – Direction on Conventional Offer Issuance Criteria and Matters
+       Related to Gate 3;
+   •   CER/11/102 – Celtic Decision on calculation of interim Firm Access Quantities
+       for Gates 1 & 2 Generators;
+   •   CRU/20/060 – Review Enduring Connection Policy Stage 2 (ECP-2) Decision.
+   •   SEM-22-068 - Firm Access Methodology in Ireland decision “EirGrid –
+       proposed methodology” consultation.
+
+
+
+1.6 Structure of Paper
+This paper is structured as follows:
+
+   •   Section 1 provides an introduction and background information to this paper;
+   •   Section 2 sets out, a summary of the RA’s consultation paper SEM-22-068;
+   •   Section 3 sets out a summary of responses received and RA’s view on
+       different methodology elements;
+   •   Section 4 sets out treatment of phase 1 offshore projects;
+   •   Section 5 sets out a summary of SEM Committee decisions; and
+   •   Section 6 sets out the next steps.
+
+
+
+
+                                                                                  15
+2. Consultation summary
+The purpose of the paper Firm Access Methodology in Ireland “EirGrid – proposed
+methodology” (SEM-22-068) was to set out, for consultation, a proposed new Firm
+Access methodology in Ireland. It described how a Firm Access Methodology offers a
+trade-off between promoting investment in generation and protecting consumers from
+higher levels of constraints costs.
+
+2.1 Background of Firm Access in Ireland
+Consultation SEM-22-068 provided a background of Firm Access in Ireland since
+2001. Figure 1 below provides a summary of the different Firm Access methodologies
+developed in Ireland.
+
+
+
+
+Figure 1: Summary of Firm Access in Ireland
+
+
+
+
+2.2 Firm Access Methodology Principles
+Consultation SEM-22-068 described the purpose of Firm Access to achieve a balance
+between granting generators access to the network in advance of transmission
+reinforcements and to protect the end consumer from high constraint payments
+through better locational signals.
+
+A Firm Access methodology attempts to both:
+
+1.       Promote investment in Generation
+
+
+                                                                                  16
+               •         Provide certainty on access rights earlier in the development process
+
+               •         Increase the certainty on the nature and timing of access rights
+
+               •         Increase the likelihood of being allocated Firm Access at an earlier
+                         date
+
+
+
+2.        Safeguard consumer costs
+
+               •         Minimise current and future constraint costs
+
+               •         Incentivise efficient network and generator investment
+
+               •         Share risks in a cost-reflective way
+
+These trade-offs are summarised in figure 2 below.
+
+                                      High
+                                      Constraint
+                                      Risk
+                                                   Excess Firm
+                                                     Access
+
+
+
+     Low Generator                                         High Generator
+     Certainty                                             Certainty
+
+
+
+
+                                                    Efficiently
+                   Non-Firm
+                                                    Allocated
+                    Access
+                                                   Firm Access
+
+                                      Low
+                                      Constraint
+                                      Risk
+
+
+Figure 2: Trade-offs in Firm Access
+
+
+
+
+2.3 Delivery incentives on the TSO
+Consultation SEM-22-068 described delivery incentives on the TSO and assessed if
+the objectives of the Firm Access Methodology were aligned with these.
+
+
+
+2.4 Level of firm versus non-firm generation in Ireland
+It was described in consultation SEM-22-068 that there is circa 1.4 GW of connected
+legacy generation in Ireland which remains non-firm, with approximately 1 GW of this
+
+                                                                                                17
+wind and majority of the other 0.4 GW conventional thermal generation. Table 2 sets
+out the approximate proportion of connected firm versus non-firm generation in
+Ireland.
+
+                                  Total capacity2
+                                  (MW)                           Non- firm (MW)   Non- firm (%)   Firm (%)
+    Dispatchable
+    generation                             7,313                       400              5%             95%
+
+    All renewables                         5,475                       1,000            18%            82%
+
+    Total                                 12,788                       1,400            11%            89%
+Table 2: Summary of firm versus non-firm generation in Ireland
+
+
+
+
+It was also described that there is circa 400 MW of wind generation which has still not
+connected but has full Firm Access. There is another circa 500 MW of contracted
+generation which is linked to ATRs but is still not connected.
+
+
+
+2.5 CRU’s direction in ECP2 decision (CRU/20/060)
+Consultation SEM-22-068 described how the CRU in decision paper (CRU/20/060)
+Enduring Connection Policy Stage 2 (ECP-2) directed the TSO to develop a new
+methodology to schedule Firm Access Quantities (FAQs) for contracted projects
+based on network development plans. It was described how, in response, EirGrid
+published a Firm Access Methodology Review paper in December 2021 and, following
+engagement with industry, submitted an updated Firm Access Methodology Proposal
+paper in June 2022 which was published alongside consultation SEM-22-068.
+
+
+
+2.6 Summary and assessment of EirGrid’s proposal
+EirGrid described how the key objectives for the Firm Access methodology were to
+ensure renewables targets can be met while maintaining security of supply.
+
+EirGrid described the following high-level concepts in their methodology:
+
+      •     The new methodology to provide time bound Firm Access dates, initially
+            derived based on the timeline for delivery of planned reinforcements, but not
+            directly linked to the final completion of these specific reinforcements.
+
+
+2
+    From Generation Capacity Statement 2021.
+
+                                                                                                  18
+    •    Firm Access to be allocated via annual reviews. The review will cover any
+         connected and committed non-firm generators.
+
+    •    Annual reviews will also provide location signals for future Firm Access capacity
+         based on the TDP.
+
+    •    Firm Access test for renewable energy sources will consider a minimum level of
+         acceptable constraint (Firm Threshold). This threshold will be reviewed on an
+         annual basis. Where the analysis demonstrates that constraints are expected to
+         be below this Firm Threshold, that generator will be granted Firm Access.
+
+    •    An MEC “floor” of 1 MW will be applied. Firm Access is not considered relevant
+         below this level.
+
+EirGrid described the high-level methodology using the below diagram figure 3 in their
+proposal.
+
+
+
+
+Figure 3: Methodology for Firm Access Annual Review
+
+
+
+
+                                                                                         19
+               A summary of the EirGrid proposed methodology in the consultation is outlined in the
+               table below in table 3.
+
+
+
+
+Element           Description                                 Previous Gate 3 ITC       RA assessment
+                                                              approach
+
+Time bound        Generators are guaranteed to receive        Generators receive        Proposed approach provides more
+Firm Access       Firm Access on the date associated with     FAQ only once             certainty for investors in generators
+date              a Scheduled FAQ offer.                      Associated                but may increase the constraints costs
+                                                              Transmission              risks for end consumers.
+                                                              Reinforcements (ATRs)
+                                                              are completed.
+Partial Firm      EirGrid proposed an updated approach        Gate 3 ITC process        Partial FAQ approach may add more
+Access            whereby a generator cannot be firm for      offered FAQ in            complexity to the allocation
+quantities        the total MEC, partial Firm Access in       granularity of 0.5MW.     programme versus the original
+                  blocks of 20 MW will be considered.                                   proposal. However larger discrete
+                                                                                        blocks (e.g. 20MW blocks) than
+                                                                                        previous ITC granularity of 0.5MW. RAs
+                                                                                        note that this is also positive for
+                                                                                        locational signals and therefore
+                                                                                        competition.
+Stage of          EirGrid proposed an updated approach to     Contracted projects       The stage of development at which a
+development       allocate Firm Access to committed           were considered in        project becomes eligible for Firm
+                  projects (beyond Consents Issue Date).      Incremental Transfer      Access represents a trade-off between
+                                                              Capacity (ITC) process.
+                                                                                        investor confidence pre-connection
+                                                                                        and efficient allocation. Proposed
+                                                                                        approach by EirGrid has the effect of
+                                                                                        reducing uncertainty for generators
+                                                                                        and investors before connection.
+
+Batteries and     EirGrid proposed that for the purposes of   Different approach        RAs note the level of uncertainty in this
+other service     the Firm Access methodology, Firm           taken.                    area but also the trend of increased
+providers         Access for service providers is outside                               storage in recent years. RAs recognise
+                  scope.
+                                                                                        the increasing importance of battery
+                                                                                        storage and need to facilitate the
+                                                                                        increased inclusion of this technology.
+
+Maximum           EirGrid describes a MEC “floor” of 1 MW     No change, MEC floor      MEC floor of 1 MW currently aligns
+Export            will be applied, with Firm Access not       of 1 MW applied to        with the controllable limit.
+Capacity          considered relevant below this level.       ITC.
+(MEC) floor
+of 1MW
+
+
+
+
+                                                                                                                 20
+Allocation       EirGrid proposes that Firm Access will be           ITC programme was          The result of this approach is that
+frequency        allocated in the form of an Annual                  run in batch format,       generators that are non-firm in one
+                 Review process.                                     not a regular recurring    year may end up receiving Firm Access
+                                                                     process.                   in a subsequent year. Generators
+                                                                                                connecting in later years have a
+                                                                                                transparent route to Firm Access.
+Firm             The Firm Threshold is the threshold at              Gate 3 ITC programme       Precise method for calculating the Firm
+Threshold        which the maximum level of acceptable               operated on a n-1          Threshold for a given year or how
+                 constraints for a network area is met in a          transmission planning      different Firm Thresholds for different
+                 year of analysis.                                   standard.                  locations might work in practice, will
+                                                                                                require more detail from EirGrid.
+Transmission EirGrid's proposed forward-looking                      Gate 3 ITC did not         The information in these reports can
+Development assessment used to determine Firm                        include a forward-         strengthen the locational signals from
+Plan basis   Access dates for Scheduled FAQs is based                looking assessment.        the Methodology to potential
+             on the latest Transmission Development                                             connections. The information may also
+             Plan.                                                                              increase investor confidence more
+                                                                                                generally as uncertainty about the
+                                                                                                future likelihood of Firm Access is
+                                                                                                reduced.
+Order of         EirGrid proposed an updated approach                Gate 3 ITC programme       Transparent and practical approach.
+allocation       ‘First to commit – first to be Firm                 used date order            The transparency of this approach in
+                 allocation order’.                                  allocation of applicants   turn promotes fairness.
+                                                                     for scheduled firm
+                                                                     capacity.
+Look back        EirGrid proposed that at a high level the           ITC programme run          In the look back step an annual review
+and look         new methodology would be composed of                more comparable with       is carried out, generators in areas with
+forward          two steps, a look back and look forward             look back approach.        capacity will be granted Firm Access.
+approach         step.                                                                          The look forward step provides a
+                                                                                                locational signal for future new
+                                                                                                capacity.
+             Table 3: Summary of Firm Access design in consultation (SEM-22-068)
+
+
+
+
+                                                                                                                         21
+3. Consultation responses and RA feedback
+
+
+3.1 Consultation SEM-22-068
+On 27 September 2022 the RAs published the consultation on Firm Access
+Methodology in Ireland (SEM-22-068). This consultation remained open for 6 weeks
+and closed on Tuesday 8 November. In this consultation the RA’s requested feedback
+on 19 questions. The RAs received 28 responses to this consultation from a wide
+variety of industry participants.
+
+3.2 Responses and feedback on detailed methodology
+As part of this decision, it is envisaged that certain detailed elements may require
+further consideration beyond this decision paper. This will require further engagement
+with EirGrid to inform these areas. It is envisaged that this work will be captured as
+part of a more detailed methodology paper.
+
+
+
+Time bound Firm Access dates
+EirGrid Proposal
+
+EirGrid proposed an approach where generators are guaranteed to receive Firm
+Access on the date associated with a Scheduled FAQ offer. This is in contrast to the
+legacy Gate 3 ITC approach where the date of completion of all Associated
+Transmission Reinforcements (ATRs) determined the FAQ date for a generator.
+
+
+
+Consultation question(s):
+
+   1. Comments are invited from interested parties on EirGrid’s proposed approach
+       of having a time bound Firm Access date. Comments are also invited on
+       alternative options (i.e ATRs etc). Should scheduled FAQ date be linked with
+       ATRs, with more targeted delivery incentives? Please provide reasons and
+       rationale for any views provided.
+
+   2. Comments are invited from respondents regarding EirGrid’s historical
+       performance on delivering ATRs. How can EirGrid’s performance be improved?
+       Please provide reasons and rationale for any views provided.
+
+
+
+Consultation responses
+                                                                                         22
+Question 1:
+
+The majority of respondents broadly supported this approach, with some citing it is the
+best way of meeting the twin objectives of ensuring investor confidence while
+minimising cost to consumers. It was suggested this approach is in line with EU
+regulations. Some respondents stated that it places the risk of grid reinforcement
+delivery on EirGrid and ESBN who are best placed to manage it. It was described by
+one respondent how linking Firm Access to the delivery of the associated ATRs is not
+effective as planned grid reinforcement activities are regularly rescheduled by the
+TSO, outside of any input or control by the generation developer. Some respondents
+suggested that Firm Access dates should be brought forward if ATRs are delivered
+earlier than forecast.
+
+Some respondents suggested the firm access date should be based on a realistic
+estimate of the timelines required to complete ATRs. It was noted by one respondent
+that the value or impact of this approach is highly sensitive to the actual dates
+specified for time bound firm access in respect of each Connection Agreement.
+Another respondent stated it is important that the time-bounds applied by EirGrid are
+standardised or capped in some way to avoid FAQ dates which are infeasible for
+investment cases. One respondent stated that the scheduled Firm Access Quantity
+date should be linked to projected delivery of ATRs, as this provides some protection
+for customers.
+
+One respondent suggested as an alternative that cost versus risk could be shared
+between the generators and customer on the basis of a deemed firm access
+increasing on a linear glide path.
+
+One respondent stated that there needs to be a clear understanding as to how this is
+going to be implemented for units that are already connected to the system, citing that
+some units have been connected for more than 5 years and are still non-firm. One
+respondent proposed that in the look back analysis that these projects should have the
+original ATR dates applied when determining a connected generators Firm Access
+year. Another respondent suggested repowering projects need to be incentivised as
+much as new renewable projects.
+
+A number of respondents in favour of time bound firm access date suggested
+appropriate delivery incentives on EirGrid and ESBN to ensure they deliver needed
+
+
+                                                                                        23
+grid infrastructure to schedule. One respondent stated they did not agree with the
+SEMC suggestion that this approach would weaken the incentive on the TSO to
+deliver transmission reinforcement works.
+
+One respondent stated they do not agree with EirGrid’s time bound approach to firm
+access dates. They described that EirGrid’s ATRs tend to be overly optimistic in their
+delivery timelines. This respondent suggested that in order to send appropriate
+locational signals to the market, EirGrid should project appropriate timelines for the
+delivery of reinforcements.
+
+
+
+Question 2:
+
+A number of respondents stated many ATRs have not been delivered as projected by
+EirGrid, with substantial delays to ATR completion in many cases. It was described
+how a significant percentage of the Gate 3 ATRs still haven’t been delivered with
+some being pushed out to the end of this decade. One respondent stated that this has
+had a very damaging impact on renewables in Ireland. One respondent described how
+delays to ATRs can arise well into the staged delivery of the transmission
+reinforcement project, with multi-annual delays announced within a couple of years of
+the original planned delivery date.
+
+One respondent stated that EirGrid’s ATRs tend to be overly optimistic in their delivery
+timelines, particularly in cases that involve permitting, property agreements and areas
+where construction of infrastructure is challenging such as the Dublin region. It was
+acknowledged by respondents that EirGrid were not exempt from project delivery
+challenges, whether it be landowner issues, technical, resourcing etc.
+
+One respondent suggested EirGrid and ESBN should be incentivised to expedite
+projects which create grid capacity such as new circuits projects. One respondent
+suggested it is critical that EirGrid be allowed to deliver Anticipatory Investment in the
+Irish grid. It was suggested that it is the responsibility of the RAs to control, manage
+and oversee the SOs on delivery of ATRs.
+
+A number of respondents suggested that the maximum duration allowable for ATR
+completion should be based on standard timelines rather than based on a measure of
+historical/actual timelines for recent ATRs. It was described how this would drive
+reliable and efficient delivery of future ATRs. One respondent stated that it is important
+
+                                                                                           24
+that EirGrid should develop appropriate project projections as to do otherwise would
+be to mislead the market.
+
+A number of respondents stated that stakeholder engagement regarding the progress
+of ATRs has been poor. A number of respondents suggested improvements in this
+area such as a more transparent and collaborative industry engagement process that
+would enhance investor confidence/awareness of issues, while also increasing the
+scrutiny on how individual projects are progressing. Also the establishment of localised
+delivery boards was raised to ensure there is a more focused and efficient delivery of
+a defined list of transmission reinforcement projects.
+
+
+
+RA comment
+
+The RAs note that the majority of respondents broadly supported this approach, with
+some citing it is the best way of meeting the twin objectives of ensuring investor
+confidence while minimising cost to consumers, suggesting it places the risk of grid
+reinforcement delivery on those who are best placed to manage it. The RAs noted in
+the consultation that this approach provides more certainty for investors in generators,
+however this approach may also increase the constraints costs for end consumers as
+a result of potential delays in reinforcements and forecasting error. The RAs
+acknowledge the concerns raised by respondents that under the previous Gate 3 ITC
+approach project developers had FAQ dates impacted by delays outside of their
+control. The RAs note one respondent suggested that cost versus risk could be shared
+between the generators and customer on the basis of a deemed firm access
+increasing on a linear glide path. In examining this issue the RAs have engaged with
+EirGrid regarding the historic performance of ATRs delivery. The RAs recognise the
+benefits of introducing a timebound firm access date and removing this uncertainty
+from generators. The RAs can see the benefit and certainty provided to generators by
+breaking the link between the date of completion of all Associated Transmission
+Reinforcements (ATRs) determining the FAQ date for a generator. The RAs note that
+costs from this methodology will be clearly quantified and published to ensure
+transparency.
+
+The RAs note that some respondents put forward different suggestions as to when the
+firm access date (to complete ATRs) should be based upon (standard versus
+
+
+                                                                                       25
+historic/actual timelines). The RAs are of the view that this issue falls more under the
+discussion on the Transmission Development Plan (TDP) later in this paper.
+
+The RAs note respondent’s comments and experiences on historic ATR delivery. The
+RAs note respondents views on stakeholder engagement regarding the progress of
+ATRs, and suggested improvements in this area such as a more transparent and
+collaborative industry engagement process.
+
+
+
+SEM Committee decision
+
+The SEM Committee agrees with the proposed approach of having a time bound Firm
+Access date, with generators assured to receive Firm Access on the date associated
+with a Scheduled FAQ offer.
+
+
+
+
+Partial Firm Access quantities
+EirGrid Proposal
+
+EirGrid initially proposed in their methodology published in December 2021 that Firm
+Access Quantity (FAQ) would be provided in full or not at all. In this approach there
+would be no partial or incremental FAQ. EirGrid described how the previous ITC Firm
+Access approach had a granularity tolerance down to 0.5 MW. Following engagement
+with industry and completing some test analysis, EirGrid adjusted this element in its
+updated proposed methodology. In certain situations, EirGrid will now consider
+allocating steps of partial Firm Access in discrete blocks i.e. 20MW blocks. EirGrid
+described how where a generator cannot be firm for the total MEC, partial Firm Access
+in blocks of 20 MW will be considered and allocated where possible.
+
+
+
+Consultation question:
+
+   3. Comments are invited on whether stakeholders agree with the proposed
+       approach of allocating partial Firm Access Quantities. Please provide reasons
+       and rationale for any views provided.
+
+
+
+
+                                                                                           26
+Consultation responses
+
+The majority of respondents supported this proposed approach of allocating partial
+Firm Access Quantities and were supportive of the move away from the previous
+approach of no partial firmness. One respondent described how this approach can
+provide developers with a better understanding of the projected constraints impacts on
+their project; this can result in a positive impact on the support mechanism costs
+required to develop these projects.
+
+One respondent suggested that not allocating firm access in tranches would make the
+process ill-defined. Some respondents described how they do not see it as appropriate
+to consider a different level of allocating firm access based on size of project. One
+respondent stated it would be discriminatory to large renewable projects if firm access
+was only allocated on an ‘all or nothing’ approach. Another respondent described how
+with partial firm access approach large projects such as offshore will not have to wait
+many years for a reinforcement date to bring constraints below a certain threshold.
+
+Several respondents sought greater clarity on how the value of 20MW was determined
+and how it will be allocated to existing and new generators. One respondent asked will
+the first to commit, first to firm approach be continued with the oldest “committed”
+projects receiving firm access first or will additional FAQ be divided pro-rata between
+operational generators.
+
+One respondent suggested allocation of firm access in 10MW tranches, given the
+number of solar developments in the 30MW to 100MW range relative to other
+technologies. Another respondent stated it was unclear why the granularity of partial
+quantities is so greatly reduced, moving discrete blocks of 0.5 MW to blocks of 20
+MW. One respondent sought to clarify that where a generator is less than 20MW
+MEC, the test will be whether there is firm access for that generator, and not just for a
+full 20MW block. One respondent suggested the MW blocks will need further
+consideration and we recommended further discussion with industry bodies to detail
+an appropriate approach. Another respondent suggested smaller FAQ improvements
+are still helpful to projects, so some flexibility to provide this where a 20MW block
+cannot be achieved should not be ruled out.
+
+
+
+RA Assessment
+
+                                                                                          27
+The RAs in the consultation welcomed the proposed updated approach of in certain
+situations allocating partial Firm Access in discrete blocks of 20MW. The RAs note
+that the majority of respondents supported this proposed approach of allocating partial
+Firm Access Quantities and welcomed the move away from the previous approach of
+no partial firmness. In the RAs view although this approach may add more complexity
+to the allocation programme versus the original proposal it provides many benefits.
+The RAs note how respondents cited benefits of this approach such as providing
+developers with a better understanding of the projected constraints impacts on their
+project. It was suggested not allocating firm access in tranches would make the
+process ill-defined, especially for larger projects.
+
+The RAs note that several respondents sought greater clarity on how the value of
+20MW was determined and how it will be allocated to existing and new generators.
+The RAs note that some respondents questioned the size of allocation tranches,
+suggesting smaller tranches such as 10MW, and clarity was sought if a generator has
+less than 20MW MEC. The RAs note that EirGrid’s proposed approach is that partial
+Firm Access in blocks of 20 MW will only be considered where a generator cannot be
+firm for the total MEC. The RAs are of the view that blocks of 20MW seem
+appropriate, however this can be given further consideration beyond this decision
+paper. It is envisaged that this will be captured as part of a more detailed methodology
+paper led by the CRU.
+
+
+
+SEM Committee decision
+
+The SEM Committee agrees with the proposed approach of allocating partial Firm
+Access Quantities in discrete blocks of 20MW.
+
+The SEM Committee notes that a review of the size of this block can be included as
+part of a more detailed methodology paper led by the CRU.
+
+
+
+
+                                                                                       28
+Stage of development
+EirGrid Proposal
+
+EirGrid initially proposed in their methodology published in December 2021 that only
+connected generators would be considered for Firm Access. EirGrid noted in their
+original proposed methodology that in the Gate process, some connected generators
+remained non-firm due to Firm Access rights being assigned to projects which never
+connected. Following engagement with industry and the RAs, EirGrid adjusted this
+element in its updated proposed methodology moving forward the timeline for when
+Firm Access is allocated. The new proposed approach proposes to allocate Firm
+Access to projects once they reach committed project phase (progress beyond
+Consents Issue Date).
+
+
+
+Consultation question:
+
+   4. Comments are invited from respondents on the proposed approach of
+       allocating Firm Access to generators once they reach committed project phase
+       (progress beyond Consents Issue Date). Please provide reasons and rationale
+       for any views provided.
+
+   5. Comments are invited from respondents on the inclusion of a longstop date
+       with awarded FAQs. Please provide reasons and rationale for any views
+       provided.
+
+
+
+Consultation responses
+
+Question 4:
+
+Respondents welcomed bringing the timing trigger for the calculation of FAQ earlier in
+the development process in EirGrid’s updated proposal. The majority of respondents
+stated that Firm Access certainty is required earlier in the project process, in advance
+of CRM and RESS auction bidding. A number of these respondents proposed that firm
+access certainty is brought back to an earlier stage such as connection agreement or
+offshore GCA with measures to prevent hoarding of capacity such as a use-it or lose-it
+approach. It was described how this would remove a source of uncontrollable risk,
+reducing auction outturn prices and improve value to the consumer. One respondent
+
+
+                                                                                       29
+described how this degree of risk is unacceptable for an investor when participating in
+any of the relevant auctions. Some respondents described how it is essential that
+certainty is provided earlier in the project timeframe, ideally before RESS auction
+bidding or securing a CPPA.
+
+One respondent stated there is a particular concern with the impact of constraints on
+proposed projects going into ORESS auctions, suggesting the relative size of these
+projects needs to be taken into consideration when assessing the consumer detriment
+associated with efficiency of bids into these 15-year contracts. Another respondent
+suggested an allocation of firm access to projects with planning consent or with a Grid
+Connection Assessment (GCA) may be sufficient for ORESS 1 projects. One
+respondent suggested using the Consents Issue Date could be appropriate for
+onshore connections but that this is not the case for offshore developments.
+
+A number of respondents proposed that Second Stage Payment is utilised as the
+trigger for the calculation of any firm access date rather than the Consents Issue Date.
+A number of respondents stated CID is not a concept for DSO projects suggesting
+second stage payment is used by the relevant system operator as the milestone to
+ensure a consistent approach. One respondent stated the Consents Issue Date is not
+a fully objective, irrevocable, measure of project progress.
+
+A number of respondents supported the proposed approach for eligibility, given the
+increased certainty it provides to developers prior to connection. One of these
+respondents suggested it should be applied to existing connected non-firm generators
+and “committed” non-firm units. Another respondent described how the Consents
+Issue Date (CID) milestone is the earliest definitive indicator of whether a project is
+fully committed to delivering on time. This respondent suggested developers should be
+provided with a reasonably definitive “indication” of their future FAQ at a stage prior to
+participating in a RESS or O-RESS auction.
+
+
+
+Question 5:
+
+The majority of respondents supported the introduction of a longstop date suggesting
+it is key that firm access is allocated efficiently and is not hoarded. One respondent
+described how this would ensure that EirGrid have more confidence that these
+projects will deliver, that their Firm Access capacity will be used, while also protecting
+
+                                                                                          30
+the financial commitments that developers have made. A number of respondents
+suggested it should be linked to termination of the connection agreement or GCA. One
+of these respondents suggested this would remove any requirement for a separate
+longstop date for firm access. Another respondent suggested this date should be
+defined differently to the longstop date provided in a grid offer. One respondent
+suggested a longstop date of 5 years post the final ATR associated with a project’s
+grid connection is appropriate, allowing a generator to price in the risk into its bid price
+or CPPA.
+
+A number of respondents questioned if a longstop date is required if firm access is
+allocated only after the CID stage of a project’s development. One respondent
+described how projects will have invested significant amounts to reach the point where
+they are awarded FAQs so the chance of hoarding is diminished. It was described that
+measures to mitigate the risk of hoarding are much more appropriate if firm access
+allocation is brought forward from CID stage.
+
+A number of respondents suggested the longstop date should not apply where a unit
+does not connect as a result of third-party delays which are outside the control of the
+developer, suggesting derogations should be included to reflect this. It was described
+how the longstop date needs to be set at a level which filters out infeasible or unlikely
+projects but will not unintentionally result in projects having their Firm Access rights
+revoked when nearing completion. One respondent stated it had some concerns with
+regard to the introduction of longstop dates, suggesting more specific detail was
+required on enforcement, penalties, and general conditions to ensure that projects are
+managed compliantly and do not lose their firm access allocation. A number of
+respondents welcomed further engagement on the best mechanisms to implement
+and how a longstop date would be evaluated.
+
+
+
+RA Assessment
+
+Question 4:
+
+The RAs welcome the updated approach of allocating Firm Access earlier in the
+process than when generators are connected. The RAs note that respondents
+welcomed bringing the timing trigger for the calculation of FAQ earlier in the
+development process, however the majority of respondents stated that certainty is
+
+                                                                                           31
+required earlier in the project process, such as at connection agreement or offshore
+GCA, so certainty is provided in advance of auction bidding or securing a CPPA. The
+RAs note that a number of respondents supported the proposed approach for
+eligibility, given the increased certainty it provides to developers prior to connection.
+The RAs recognise that the stage of development at which a project becomes eligible
+for Firm Access represents a trade-off between investor confidence pre-connection
+and efficient allocation. The RAs welcome EirGrid’s proposed approach of moving the
+allocation of Firm Access to earlier in the development process for generators. The
+RAs on balance are of the view that certainty needs to be provided earlier in the
+project process timeline, suggesting the milestone of connection agreement stage for
+projects. This approach would ensure certainty is provided in advance of auction
+bidding or securing a CPPA.
+
+The RAs note that a number of respondents proposed that Second Stage Payment is
+utilised as the trigger for the calculation of any firm access date rather than the
+Consents Issue Date. It was suggested that CID is not a concept for DSO projects
+suggesting second stage payment is used. The RAs are minded to describe this
+milestone in an appropriate manner to reflect when a project reaches committed
+project phase. As described above the RAs are of the view that certainty needs to be
+provided earlier in the project process timeline, using proposed milestone of offer
+acceptance.
+
+Question 5:
+
+The RAs note that the majority of respondents supported the introduction of a longstop
+date suggesting it is key that firm access is allocated efficiently and is not hoarded.
+Other respondents questioned if a longstop date is required if firm access is allocated
+only after the CID stage of a project’s development. The RAs note that number of
+respondents raised some concerns on how this longstop will be developed to ensure it
+works appropriately, seeking further detail such as on enforcement, penalties,
+derogations and general conditions. A number of respondents welcomed further
+engagement on the best mechanisms to implement and how a longstop date would be
+evaluated. The RAs note that moving the certainty provided on calculation of firm
+access date to earlier in the project process timeline increases the onus on the
+operation of a longstop date. The CRU will consider the longstop date element further
+as part of a more detailed methodology paper.
+
+                                                                                            32
+SEM Committee decision
+
+The SEM Committee agrees with the proposed approach of EirGrid allocating Firm
+Access to generators once they reach a specific committed project phase. The SEM
+Committee are of the view that certainty needs to be provided earlier in the project
+process timeline, proposing the connection agreement stage for projects to meet
+committed status.
+
+The SEM Committee are of the view that the longstop date element requires further
+consideration as part of a more detailed methodology paper.
+
+
+
+
+Batteries and other service providers
+EirGrid Proposal
+
+In its proposal EirGrid stated that for the purposes of the Firm Access methodology,
+Firm Access for batteries and other service providers is outside of scope for this
+methodology and therefore not applicable at this time. EirGrid stated this approach
+may be reviewed in the future as part of other work streams directly related to the
+development of these services.
+
+Consultation question:
+
+   6. Comments are invited from respondents on the proposed approach of treating
+       batteries and other service providers as outside the scope of the Firm Access
+       methodology. Please provide reasons and rationale for any views provided.
+
+
+
+Consultation responses
+
+The majority of respondents did not agree with the proposed approach of treating
+batteries and other service providers as outside the scope of the methodology.
+Respondents stated it is important to consider the beneficial impacts of energy storage
+in terms of alleviating constraints and the potential for energy storage to create firm
+capacity in regions of the grid to support renewable development. It was described
+
+
+                                                                                          33
+how batteries can operate as a local energy sink to enable a higher level of FAQ for
+non-storage generators.
+
+A number of respondents stated there is no equitable rationale for not applying the
+same firm access approach for all unit types. Another respondent stated firm access
+should not discriminate between technology type or service offering, be it inertia/sync
+comp, system services or energy. One respondent stated this approach would appear
+to be discriminatory and indirectly anti-competitive as it will impact on the incentive for
+certain technologies to participate in the capacity auctions. A number of respondents
+described how as energy storage requires a “Licence to Generate” alongside other
+forms of licenced generation, the proposed treatment of storage can be considered
+discriminatory under EU legislation.
+
+One respondent stated that longer duration energy storage is already here and must
+be considered today. Another respondent stated the commercial case for developing
+longer duration batteries fails if they cannot participate in the energy market freely.
+Another stated consideration needs to be applied to battery projects that were
+successful in the CRM auction and, reasonably, considered firm access energy market
+revenue to be part of the business case at some point in the future. One respondent
+described how longer duration technologies create more space for new renewables
+per MW relative to shorter duration. It was described how the proposed approach
+ignores the reality that battery storage units will need to participate across all revenue
+streams, including the wholesale market, capacity market as well as System Services
+revenues, and therefore an approach which excludes storage from 2 of the 3 future
+revenue streams will create distortion and risk loss of investment. One respondent
+described the proposed approach as a clear barrier to developing projects that will not
+support investor confidence if they are excluded from fair participation in wholesale
+markets.
+
+A number of respondents looked for confirmation as to how hybrid sites will be treated
+in terms of Firm Access and if these will be included, with one respondent suggesting
+it is important that hybrid renewable-BES projects are not in any way disadvantaged.
+
+A number of respondents agreed that it was perhaps more efficient to the overall
+timely delivery of this Firm Access Policy that batteries and other service providers
+were excluded, but these respondents urged the SEM Committee to undertake an
+
+
+                                                                                          34
+urgent further assessment of how to capture batteries and other service providers.
+One of these respondents suggested the urgent need to resolve the lack of firmness
+for batteries, as not to do so reduces not only Ireland’s ability to achieve CAP targets
+in the medium term, but also reduces the extent to which batteries can provide price
+arbitrage to the benefit of present consumers.
+
+
+
+RA Assessment
+
+The RAs note that the majority of respondents did not agree with the proposed
+approach of treating batteries and other service providers as outside the scope of the
+methodology, with respondents stating it is important to consider the beneficial
+impacts of including energy storage in the methodology. Respondents stated firm
+access should not discriminate between technology type or service offering,
+suggesting the proposed approach would damage investor confidence and act as a
+clear barrier to developing projects. Respondents also cited the potential benefits of
+long duration storage. The RAs note the different concerns raised by respondents.
+The RAs recognise the increasing importance of battery storage, and the need to
+facilitate the increased inclusion of this technology in order to facilitate meeting
+Irelands renewable electricity targets.
+
+The RAs note that a number of respondents agreed that it may be more efficient to the
+timely delivery of this Firm Access Policy that batteries and other service providers
+were excluded, but these respondents urged an urgent further assessment of how to
+capture batteries and other service providers in the methodology. Also, the RAs note
+that EirGrid stated this approach may be reviewed in the future as part of other work
+streams directly related to the development of these services. The RAs note that the
+Department of the Environment, Climate and Communications (DECC) currently have
+a consultation open on developing an Electricity Storage Policy Framework for
+Ireland3. This consultation closes on 27 January 2023. The outcome of this work will
+inform the design and delivery of an electricity storage policy framework for Ireland
+which will be launched next year. The RAs are minded to agree with EirGrid’s
+proposed approach of treating batteries and other service providers as outside the
+
+
+3
+ gov.ie - Consultation on developing an Electricity Storage Policy Framework for Ireland
+(www.gov.ie)
+
+                                                                                           35
+scope of the Firm Access methodology for the near term. Following completion of this
+policy framework by DECC the RAs propose carrying out a review looking at the
+treatment of batteries and other service providers in the methodology.
+
+The RAs note that a number of respondents looked for confirmation as to how hybrid
+sites will be treated in terms of Firm Access and if these will be included in the
+methodology. The RAs note that the treatment of hybrid sites is part of a broader issue
+which is currently under review. The RAs are of the view that clarity on treatment of
+hybrid sites must be confirmed before treatment in this methodology can be
+determined.
+
+
+
+SEM Committee decision
+
+The SEM Committee agrees with the proposed approach of treating batteries and
+other service providers as outside the scope of the Firm Access methodology.
+
+Following completion of Electricity Storage Policy Framework by DECC a review will
+be carried out looking at the treatment of batteries and other service providers in the
+Firm Access methodology.
+
+
+
+
+Maximum Export Capacity (MEC) floor of 1MW
+EirGrid Proposal
+
+EirGrid described in the proposed methodology that a MEC “floor” of 1 MW will be
+applied, with Firm Access not considered relevant below this level.
+
+
+
+Consultation question:
+
+   7. Comments are invited from respondents on the proposed approach of having a
+       MEC “floor” of 1 MW. Please provide reasons and rationale for any views
+       provided.
+
+
+
+Consultation responses
+
+                                                                                          36
+A number of respondents supported the application of a 1MW MEC “floor” under the
+proposed methodology given the TSOs view that Firm Access is not considered
+relevant below this level. One of these respondents noted that below 1 MW would
+generally be connected at the MV/LV distribution voltage.
+
+The majority of respondents agreed with the concept of an MEC floor but instead of
+tying the floor to a fixed MW threshold, they proposed that the floor should be linked to
+the controllable limit instead as this limit may change over time depending on policy.
+One respondent who agreed with the principle of aligning the 1MW level to the current
+controllable limit, suggested there shouldn’t necessarily be an automatic change to the
+1MW floor level given the likely resource requirements that could be required if the
+MEC floor were to be lowered and much smaller sites need to be modelled for Firm
+Access.
+
+A number of respondents did not agree with the automatic granting of firm access to
+all generators under 1 MW, describing it as discriminatory and would lead to unfair
+competition between generators seeking to obtain firm access. It was stated that
+Microgen and small-scale generation cannot hold off allocation of firm access for large
+scale projects that had progressed to planning and grid ahead of them. Another
+respondent stated that whilst generation under 1MW currently comprises a small
+percentage of installed renewable capacity, it was suggested that the RAs learn from
+the experience in Northern Ireland whereby the incentives for small scale and micro
+generation have resulted in over 400MW of installed capacity connecting to the
+system without any controllability.
+
+One respondent suggested that in the case of community renewable energy projects
+of less than 5MW, that these projects should be considered non-controllable as was
+previously the case for sub 5MW projects.
+
+
+
+RA Assessment
+
+The RAs note that the majority of respondents agreed with the concept of an MEC
+floor, with Firm Access not considered relevant below this level. Most respondents
+supported the application of a 1MW MEC “floor” under the proposed methodology
+however the majority of these respondents proposed that the floor should be directly
+linked to the controllable limit instead as this limit may change over time depending on
+
+                                                                                         37
+policy. The RAs noted in the consultation the rationale in EirGrid’s proposal that the
+MEC floor of 1 MW was aligned with the controllable limit. The RAs recognise the
+rationale of directly linking this value to the controllable limit, however the RAs may
+want to consider other information as required when reviewing the MEC floor level
+going forward. In the RA’s view if in the event the controllable limit is changed the RAs
+would still have the flexibility to adjust the MEC floor level if deemed appropriate.
+
+The RAs note that a number of respondents did not agree or had concerns with a
+MEC floor of 1 MW, describing it as discriminatory leading to unfair competition
+between generators of different size. The RAs recognise that in setting a MEC floor, a
+balance has to be struck between a number of competing factors. These include what
+is practical in terms of modelling and analysis by EirGrid in the firm access
+assessment, with this floor providing a cut off for units of a certain size. Also it must be
+considered whether this output from the firm access assessment is of much use to
+projects of a certain size e.g. if not controllable.
+
+It was suggested by one respondent that in the case of community renewable energy
+projects of less than 5MW, that these projects should be considered non-controllable
+as was previously the case for sub 5MW projects. The RAs note that the decision
+being covered here is purely in relation to the MEC “floor” level that will be applied to
+the Firm Access methodology. The controllable limit was used to inform this level
+however this paper is not looking at this controllable limit itself.
+
+As noted by the RAs in the consultation the controllable limit could change in the
+future, but any change to the MEC floor would be subject to further review.
+
+
+
+SEM Committee decision
+
+The SEM Committee agrees with the proposed methodology that a MEC floor of 1
+MW will apply, with Firm Access not considered relevant below this level.
+
+
+
+
+                                                                                            38
+Allocation frequency
+EirGrid Proposal
+
+In its proposal, EirGrid proposes that Firm Access will be allocated in the form of an
+Annual Review process, with assessments made in each Annual Review.
+
+
+
+Consultation question:
+
+   8. Comments are invited from respondents on the Annual Review process. Please
+       provide reasons and rationale for any views provided.
+
+
+
+Consultation responses
+
+The majority of respondents welcomed the proposed approach of an Annual Review
+process. It was described that the proposed annual review is a positive change to the
+methodology and will assist in providing up to date locational signals for future firm
+access capacity as well as increasing the speed of firm access allocation. Most
+respondents requested more detail/clarity in respect of how this annual review process
+will work. Some respondents suggested it is not possible to fully support this proposed
+process without sufficient detail on how it would work. Respondents asked questions
+such as when can the first Annual Review of Committed Generators take place? will
+the Annual Review take place at a regular and specified date each year?
+
+Respondents suggested it would be important that the annual review aligns with the
+ECP gate type approach and allow sufficient time for participants to include firm
+access information into support mechanism auctions. It was described that the Annual
+Review and allocation of firm access must be at a point when developers can take it
+into account when developing RESS/ORESS/CPPA prices. One respondent
+suggested that if the calculation of the firm FAQ date cannot be brought forward to
+before the relevant route-to-market auction (RESS, CRM), consideration should be
+given to a once-off calculation of the firm access on achievement of reaching the
+committed project milestone.
+
+One respondent stated that while an annual review will improve the frequency of the
+investment signal, it is vital that the annual review doesn’t result in misleading and
+inconsistent signals that could leave investors stranded due to no fault of their own.
+
+
+                                                                                         39
+One respondent noted that similar to grid connection, if a small window is missed in
+planning a wait of up to 12 months could occur.
+
+One respondent suggested that a high degree of transparency and clarity on how the
+review is carried out is necessary in order to avoid distortions or unfair outcomes. This
+respondent suggested the development of the Annual Review process would be best
+addressed through thorough engagement and workshops with industry and wider
+stakeholders. Another respondent suggested the allocation process must not be
+allowed to operate independently of other grid processes such as the ECP to mitigate
+against divergence of award dates for generators between connection agreements
+and FAQs.
+
+One respondent proposed as an alternative the continuous allocation of FAQ for
+projects that meet the committed stage suggesting there is no apparent major need or
+benefit to completing FAQ analysis in batches of projects on an annual basis. It was
+suggested an annual review process could introduce a delay of 6-18 months for a
+project getting FAQ information.
+
+
+
+RA Assessment
+
+The RAs note that the majority of respondents welcomed the proposed approach of an
+Annual Review process, describing it as a positive change to the methodology. As set
+out in the consultation the RAs welcome the introduction of an Annual Review
+process. The RAs note that most respondents requested more detail and clarity in
+respect of how this annual review process will work, with some respondents
+suggesting it is not possible to fully support this proposed process without sufficient
+detail on how it would work. Respondents asked when can the first Annual Review
+take place? Will the Annual Review take place at a regular and specified date each
+year? Will it be in advance of relevant route-to-market auction? The RAs note the
+strong interaction between different elements of the proposed methodology in
+determining when FAQ dates are provided, such as between the allocation frequency
+and stage of development elements. It was suggested the development of the Annual
+Review process would be best addressed through thorough engagement and
+workshops with industry and wider stakeholders. The RAs are of the view that this
+area will require further consideration beyond this decision paper. This will require
+
+
+                                                                                          40
+further engagement with EirGrid to develop more detail and an indicative timeline of
+how the Annual Review process will work. It is envisaged that this will be captured as
+part of a more detailed methodology paper led by the CRU.
+
+It was described how if a small window was missed in planning a wait of up to 12
+months could occur until the next assessment. Also an alternative approach was
+proposed of continuous allocation once projects meet the committed stage. The RAs
+note the concerns raised by some respondents of having to wait for the next Annual
+Review, however the RAs view is that once this element is fully developed that
+participants will have certainty of being able to receive Firm Access in a subsequent
+year, having a transparent route to Firm Access.
+
+The RAs note that a number of respondents raised concerns around the design of an
+Annual Review process, suggesting that transparency and clarity around the process
+was necessary in order to avoid distortions, unfair outcomes and inconsistent signals.
+Another respondent suggested the allocation process must not be allowed to operate
+independently of other grid processes to mitigate against divergence of award dates
+for generators between connection agreements and FAQs. The RAs agree that
+generators need certainty and stability from the Annual Review process, however as
+stated above the RAs consider this area requires more detail beyond this decision
+paper. The CRU proposes to assess this area further as part of a more detailed
+methodology paper.
+
+
+
+SEM Committee decision
+
+The SEM Committee agrees with the introduction of an Annual Review process.
+
+The SEM Committee notes that this will require further detail and an indicative timeline
+of how the Annual Review process will work as part of a more detailed methodology
+paper led by the CRU.
+
+
+
+
+                                                                                        41
+Firm Threshold
+EirGrid Proposal
+
+EirGrid described in the proposed methodology the introduction of a Firm Threshold.
+This Firm access test for renewable energy sources will consider a minimum level of
+acceptable constraint. EirGrid described how the introduction of a Firm Threshold
+moves the process away from a binary computation exercise and towards a targeted
+assessment which considers the main bottlenecks on the system which are directly
+contributing to constraints.
+
+
+
+Consultation question:
+
+   9. Comments are invited from respondents on the Firm Threshold. Please provide
+       reasons and rationale for any views provided.
+
+
+
+Consultation responses
+
+The majority of respondents requested more detail and clarity on this proposed
+approach. Respondents suggested they cannot comment on the merits of this
+proposal without further detail been provided. Respondents questioned how will Firm
+Threshold be set? And under what process can it change? Respondents supported
+the concept of a Firm Threshold and moving away from a binary computation exercise.
+It was suggested that the methodology should ensure fairness and prevent
+discrimination across regions and technologies.
+
+One respondent stated it does not seem appropriate that a different threshold should
+apply in different areas. Other respondents suggested that a firm threshold may deter
+investment in much needed parts of the network. Clarification was sought as to
+whether more than one threshold value is required, referring to EirGrid’s flow chart
+which referenced Regional Network Constraints and System Wide Constraints. One
+respondent suggested it would make sense to have a higher threshold in areas where
+EirGrid does not have sufficient ATRs planned. One respondent proposed applying a
+single minimum level of acceptable constraint threshold for projects in all areas
+however it was suggested the this should not lead to a circumstance by which certain
+areas of the grid are essentially ignored or de-prioritised for reinforcement.
+
+
+                                                                                       42
+A number of respondents suggested that the firm threshold should be implemented on
+technology-neutral basis, stating all unit types (both RES and non-RES) require equal
+access to firmness to aid their business cases for continuing operations. One
+respondent described how it is unclear whether the firm threshold would apply to all
+generation or renewable generation only.
+
+A number of respondents suggested annual changes/reviews to the threshold are not
+seen as appropriate, suggesting it would have an adverse impact on long-term project
+planning and could introduce frequent changes in locational signals.
+
+A number of respondents noted that EirGrid have already made a 5% allowance for
+constraints in SOEF and so suggested it would therefore appear that they have
+effectively predetermined that the threshold for firm access should be 5%. A number of
+respondents stated that the Firm Threshold level should be set at 5%, with one
+respondent suggesting 5% as a minimum.
+
+One respondent requested clarity on the influence of cross-border infrastructure on the
+Bulk Transmission System constraints. A number of respondents welcomed more
+detail on the mechanism for calculation and on whether it will be tied to ECP
+constraints analysis. A number of respondents suggested this issue requires further
+consultation.
+
+
+
+RA Assessment
+
+The Firm Threshold is a new concept for the Irish transmission system, with
+respondents broadly supporting this proposal. The RAs support the introduction of a
+Firm Threshold and moving away from a binary computation exercise as in previous
+Gate 3 ITC approach. The RAs note that most respondents requested more detail and
+clarity on how this proposed approach would work in practice. The RAs recognise that
+further detail is required on areas such as how the Firm Threshold will be set, under
+what process it could be changed, whether different thresholds would apply in different
+areas and whether it would apply to all technology types. The RAs note the view of
+some respondents that this issue requires further consultation. The RAs are of the
+view that the detailed determination of the Firm Threshold will require further
+consideration beyond this decision paper. This will require further engagement with
+EirGrid to develop more detail and analysis to inform this decision. It is envisaged that
+
+                                                                                        43
+this will be captured as part of a more detailed methodology paper led by the CRU.
+
+The RAs note that a number of respondents did not support the uncertainty introduced
+by an annual review to the threshold. The RAs can appreciate this viewpoint but also
+see the benefit of having this flexibility built into the methodology design to adjust the
+Firm Threshold as required as experience and outcomes dictate. Without further detail
+on how the Firm Threshold will be set and under what type of process it would be
+changed under it is difficult to fully assess this question at this stage. The CRU
+proposes to assess this area further in the more detailed methodology paper.
+
+The RAs note that a number of respondents suggested that the firm threshold should
+be implemented on a technology-neutral basis. The RAs are of the view that this
+seems appropriate and will be assessed further in the more detailed methodology
+paper.
+
+
+
+SEM Committee decision
+
+The SEM Committee welcomes the concept of a Firm Threshold.
+
+The SEM Committee note that this will require further detail and analysis as part of a
+more detailed methodology paper led by the CRU.
+
+
+
+
+Order of allocation
+EirGrid Proposal
+
+EirGrid initially proposed an order of allocation in their methodology published in
+December 2021 based on a ‘First to connect – first to be Firm allocation’ order.
+Following engagement with industry and the RAs, EirGrid adjusted this element of
+allocating Firm Access to projects once they are committed. Projects which progress
+beyond Consents Issue Date are said to have reached committed project phase,
+these committed projects are made firm until constraints increase beyond the Firm
+Threshold. This allocation order is now more clearly described as First to be
+committed – first to be Firm.
+
+
+
+                                                                                             44
+Consultation question:
+
+   10. Comments are invited from interested parties on the approach of First to be
+       committed – first to be Firm. Please provide reasons and rationale for any
+       views provided.
+
+
+
+Consultation responses
+
+The majority of respondents supported the approach of first to commit – first to be firm.
+Many of these respondents sought further detail, suggesting while the approach may
+not be optimal, firm access should be granted in a clear, reliable and transparent
+manner. A number of respondents sought clarity on how this will work for both new
+projects and existing generators, asking will existing non-firm generators get firm
+access first. One respondent suggested clarity is needed on how this is treated across
+different technologies, stating different technologies offer different value to the
+electricity system. One respondent suggested consideration is needed on how Firm
+Access is awarded in a tiebreak situation.
+
+One respondent welcomed the proposed change from First to be Connected
+methodology to the First to be Committed in EirGrid’s updated proposal. One
+respondent stated the first to commit first to be firm approach is optimal, only allocating
+Firm Access only after a project achieves the CID milestone, mitigating much of the
+risk that a project allocated firm access will fail to deliver.
+
+A number of respondents did not agree that a first to connect first to be firm approach
+is an appropriate or prudent approach. One respondent suggested careful
+consideration needs to be applied to the trade-off between allocating Firm Access in
+the most optimised manner and the risk of increased costs that the generator, and
+ultimately consumer, will have to pay. One respondent described a scenario that
+certain generators (due to their time-of-day production profile) trigger constraints
+above the Firm Threshold, whereas other generators with later commitment dates,
+such as solar with day-time production may not. One respondent suggested that the
+role of EirGrid as the Offshore Transmission Asset Owner will need careful
+consideration when allocating Firmness on a first come first served basis.
+
+
+
+
+                                                                                        45
+RA Assessment
+
+The RAs are of the view that EirGrid’s proposed approach of First to be committed –
+first to be Firm is a transparent and practical approach. The RAs note that most
+respondents agreed with this approach, with some of these respondents seeking
+clarity on certain areas such as how it will work for new projects versus existing
+generators. In the RAs understanding the order of allocation between existing non-firm
+generators and new projects would be dictated by the timing of these projects
+reaching committed status. Another respondent queried if treatment is different across
+different technology types. In the RAs understanding the First to be committed – first
+to be Firm allocation approach is technology neutral. One respondent raised question
+of how Firm Access is awarded in a tiebreak situation. The RAs agree that some
+provision would need to be developed to deal with this scenario.
+
+The RAs note that a number of respondents did not agree with this proposed
+approach, describing the trade-off between allocating Firm Access in the most
+optimised manner and the risk of increased costs that the generator, and ultimately
+consumer, will have to pay. The RAs consider that the transparency of the proposed
+approach in turn promotes fairness. It is a straightforward approach to understand and
+replicate.
+
+
+
+SEM Committee decision
+
+The SEM Committee agrees with the proposed order of allocation approach of First to
+be committed – first to be Firm.
+
+
+
+
+Transmission Development Plan basis
+EirGrid Proposal
+
+EirGrid’s proposed forward-looking assessment to determine Firm Access dates for
+Scheduled FAQs is based on the latest EirGrid Transmission Development Plan.
+Reinforcements in the plans and their expected completion dates are considered as
+part of the process to see if, and when, the capacity in an area will increase above the
+
+                                                                                         46
+Firm Threshold.
+
+
+
+Consultation question:
+
+   11. Comments are invited from respondents on the use of the Transmission
+       Development Plan as part of the Firm Access methodology. Please provide
+       reasons and rationale for any views provided.
+
+
+
+Consultation responses
+
+A number of respondents did not object to the use of the Transmission Development
+Plan (TDP) however these respondents raised different concerns with the current
+TDP. Respondents saw the benefit of having a transparent single source of
+information. A number of respondents suggested that it is not clear that the current
+TDP includes all Shaping our Electricity Future (SOEF) reinforcements. A number of
+respondents suggested the TDP needs to encompass broader system needs that
+have been identified by EirGrid in their other forward-looking assessments such as
+Tomorrow’s Energy Scenarios (TES) System Needs Assessment, SOEF roadmap
+and the All-Island Generation Capacity Statement. Respondents raised the timing of
+the TDP process and how it will interplay with the Annual Review process.
+Respondents suggested that greater transparency is required as to why EirGrid are
+not looking to deliver reinforcement in certain locations within TDP reports, raising
+concerns about areas of the network that may be undesirable or inconvenient for the
+TSO to develop.
+
+It was noted that both the TDP & SOEF only extend to 2030. One respondent stated
+
+the process is unclear regarding how many years the firm access methodology will
+look forward when considering ATRs. It was suggested consideration should be given
+to longer term projects beyond 2030.
+
+A number of respondents noted that EirGrid publishes a more frequent Network
+Delivery Portfolio (NDP) which is likely to contain more up to date information. More
+detail was requested on how the NDP publications will tie into the TDP, and the firm
+access review process. It was described that the NDP delivers updated ATR status
+quarterly suggesting that this could be a superior source of information for ATRs when
+
+
+                                                                                        47
+calculating any available firm FAQ date.
+
+A number of respondents suggested that the TDP should not be the sole basis for
+scheduling FAQs, highlighting that information in the TDPs can be years out of date
+due to data freeze date. Respondents suggested the Firm Access methodology
+should be based off appropriate timeline for addressing known system needs, such as
+those identified in the TES System Needs Assessment and Shaping our Electricity
+Future (SOEF). A number of respondents suggested using standard timelines for
+progressing through steps 1-3 of the Grid Development Framework. One respondent
+who disagreed with the use of the TDP suggested projections in these plans are often
+unrealistic and overly ambitious. It was described if projects rely on these dates to
+support their auction bids, then undoubtedly this will cost the consumer money. As
+raised in timebound firm access date section one respondent stated it is important that
+the time-bounds applied by EirGrid are standardised or capped in some way to avoid
+FAQ dates which are infeasible for investment cases, while another respondent stated
+that the scheduled Firm Access Quantity date should be linked to projected delivery of
+ATRs, as this provides some protection for customers.
+
+
+
+RA Assessment
+
+In the consultation the RAs noted the approach of the Transmission Development Plan
+(TDP) flowing into the Firm Access methodology. The RAs note that most respondents
+suggested the TDP should include forward-looking assessments from EirGrid in other
+documents such as Tomorrow’s Energy Scenarios (TES) System Needs Assessment,
+SOEF roadmap and the All-Island Generation Capacity Statement. The RAs see merit
+in engaging further with EirGrid to confirm whether they envisage including some of
+these forward-looking assessments as part of the firm access assessment process.
+
+Respondents also raised issues highlighting that information in the TDP can be years
+out of date due to the data freeze date. The RAs note that respondents suggested
+using the quarterly Network Delivery Portfolio (NDP) as it is likely to contain more up to
+date information. The RAs note that some respondents saw the benefit of having a
+transparent single source of information. The RAs note concerns raised about the TDP
+reflecting out of date information and can see the merits in exploring the use of more
+regular information such as the quarterly NDP. The CRU proposes to engage further
+
+
+                                                                                         48
+with EirGrid regarding using data that is sufficiently up to date to support the firm
+access assessment process.
+
+The RAs note that some respondents put forward different suggestions as to what the
+firm access date (to complete ATRs) should be based upon, whether to use standard
+or historic/actual timelines. The RAs note that a number of respondents raised the
+standard timelines used for progressing through steps 1-3 of the Grid Development
+Framework, while another respondent suggested projections in the TDP plans are
+often unrealistic and overly ambitious. The RAs note the different views raised on this
+and note the need to engage further with EirGrid regarding how they propose to
+forecast expected ATR completion dates as part of this firm access methodology.
+
+
+
+SEM Committee decision
+
+The SEM Committee notes that there will be further engagement by CRU with EirGrid
+regarding data to improve forecasting of ATR completion dates for future
+assessments.
+
+
+
+
+Look back and look forward approach
+EirGrid Proposal
+
+EirGrid proposed that at a high level the new methodology would be composed of two
+steps, a look back and look forward step. In the look back step an annual review is
+carried out, generators in areas with capacity will be granted Firm Access. Generators
+in areas where the TDP will create future capacity will be allocated a set date for Firm
+Access. The look forward step provides a locational signal for future new capacity. The
+locational signal will consider the TDP against the new Firm Access methodology to
+signal areas of the power system with Firm Access.
+
+
+
+Consultation question:
+
+   12. Comments are invited from respondents on the proposed look-back and look-
+       forward approach, and the interaction between these steps. Please provide
+       reasons and rationale for any views provided.
+
+                                                                                        49
+Consultation responses
+
+A number of respondents suggested the value of the look-forward approach is reliant
+on its consistency of approach with the subsequent look-back calculation. One
+respondent suggested there can be years between participating in an auction on the
+basis of a look forward approach, and finally having the look-back calculation
+performed. Another respondent suggested that fixing the Firm Threshold value and/or
+ATR dates would materially contribute to that consistency between the two processes.
+One respondent suggested that developers receive as close as possible to a definitive
+indication of what their FAQ will be such that it can meaningfully inform their bids for
+RESS/O-RESS support.
+
+A number of respondents support the look-back and look-forward approach. Many of
+these respondents sought more detail on the methodology. A number of respondents
+suggested that a clear and transparent look-back and look-forward approach will aid
+investors understanding of the decision process.
+
+Respondents raised the timing of the look-back and look-forward approaches. One
+respondent suggested that the look-back is needed immediately to address the
+existing issues with the grid and the look forward is needed ahead of ORESS 1 and
+RESS3. Another respondent stated it seems the most acceptable approach to apply
+the look-back approach first before applying the look-forward step.
+
+Some respondents sought clarity on statements in Appendix D of EirGrid’s proposal.
+In Appendix D “Step 2 Look Forward Approach” it states “[t]he early projects to
+connect in these areas are made firm until constraints increase beyond the Firm
+Threshold”. This respondent sought clarity on what this statement means, to confirm
+that once a project is provided with firm access that it retains it. Another respondent
+stated it is unclear from Appendix D if the “First to commit – First to be Firm” under the
+Look Back approach will also be applied to the Look Forward approach. It was
+suggested that the “First to connect – First to be Firm approach” may increase risk on
+generators and could subsequently impact on bid price in the auctions.
+
+Some respondents supported the concept of a look forward step as a locational signal
+for future capacity. Other respondents raised concerns about the potential for EirGrid
+to issue locational signals based on their planned ATRs and constraints in regions. It
+
+                                                                                           50
+was suggested it grants the TSO the power to decide where and which parts of the
+network they choose to develop, at the same time effectively freezing new generation
+out of these areas. One respondent described how many renewable projects under
+development are already well advanced in terms of landowner engagements, ecology
+studies and planning preparations. A number of respondents suggested that it is not
+the place of a TSO to influence developer investment in a competitive market.
+
+
+
+RA Assessment
+
+The RAs note respondents suggestion that the look-forward approach should be
+consistent with the look-back calculation. The RAs note how EirGrid in Appendix D of
+the proposal stated that the Look Forward approach follows a similar concept to what
+was outlined for the Look Back section. This section subsequently described the look
+forward approach stating reports will signal the potential constraints trajectory, based
+on expected connection dates and development projects arising from the TDP. The
+RAs note that the exact form of the look-back and look-forward approaches, although
+consistent may differ for practical reasons, in what information and signals these are
+trying to provide to the market. The RAs note that respondents sought more detail on
+the methodology. It is envisaged that a more detailed methodology paper will provide
+more clarity on the look-back and look-forward approaches.
+
+The RAs note that respondents raised the timing of the look-back and look-forward
+approaches, suggesting the look-back approach should take place first before
+applying the look-forward step. The RAs see merit in EirGrid’s proposed approach of
+carrying out a look-back step, and then carrying out look-forward step annually. As
+described above it is envisaged that a more detailed methodology paper will provide
+more clarity on the timing and interactions between the look-back and look-forward
+approaches.
+
+The RAs note the differing views from respondents on the look-forward step providing
+locational signals for future capacity. In the ECP 2 decision paper (CRU20/060) the
+CRU noted that location will be a significant contributory factor to the timelines for firm
+access availability. As described above it is envisaged that a more detailed
+methodology paper will provide more clarity on the look-forward approach.
+
+One respondent sought clarity on a statement in Appendix D of EirGrid’s proposal,
+
+                                                                                         51
+looking to confirm that once a project is provided with firm access that it retains it. In
+the RA’s understanding this text described the firm threshold being met in an example,
+with everything up to that level being made firm. In relation to this query, once a
+project is provided with firm access (below firm threshold) they retain it. The RAs note
+that other provisions such as a longstop date may be in place as a deterrent for
+hoarding FAQs, these provisions could take FAQ from projects in particular
+circumstances.
+
+The RAs note that one respondent stated it was unclear from Appendix D if the “First
+to commit – First to be Firm” under the Look Back approach will also be applied to the
+Look Forward approach. As described above it is envisaged that a more detailed
+methodology paper will provide more clarity on the look-forward approach.
+
+
+
+SEM Committee decision
+
+The SEM Committee agrees with the proposed look-back and look-forward approach.
+
+It is envisaged that further detail on look-back and look-forward approach will be
+developed as part of a more detailed methodology paper.
+
+
+
+
+Delivery incentives
+In consultation SEM-22-068 the RAs noted that there can be a gap between the
+estimated delivery date and actual completion date of system reinforcement works as
+evidenced in the TDP. It was described how it is important that effective delivery
+incentives are placed on the TSO to maintain downward pressure on these costs. The
+interaction of the Firm Access Methodology with the PR5 incentives was discussed.
+
+
+
+Consultation question:
+
+   13. Comments are invited from interested parties on the interaction of delivery
+       incentives with the proposed Firm Access methodology. Please provide
+       rationale for to support these views
+
+
+
+                                                                                             52
+   14. Views are invited from interested parties on how the TSO should be
+       incentivised to alleviate constraints. Please provide supporting rationale for
+       these views.
+
+
+
+Consultation responses
+
+The majority of respondents suggested focusing on existing PR5 incentives, and also
+proposed expanding existing or creating new incentives to focus on delivery incentives
+and minimising constraints costs. One of these respondents suggested introducing
+more severe penalties to adequately incentivise the TSO. It was suggested that
+delivery incentives should exist in parallel with the allocation of binding firm access
+dates. Respondents suggested the performance of the TSO should be measured
+against the costs associated with constraining the system.
+
+One respondent suggested that EirGrid need to be incentivised to reduce dispatch
+down to below 5% (in line with Art.13 of CEP), and stated they did not believe that the
+current incentives are specific enough to proactively reduce constraints and to
+futureproof the system. Another respondent stated that a firm access specific incentive
+should be introduced, the exact mechanisms of which may be considered once full
+visibility of the proposed firm access methodology, allocation blocks and firm threshold
+has been achieved.
+
+One respondent suggested that the TSO could publish annual constraint information,
+this could identify the constraints each year as well as the associated amount in
+constraint costs associated with each constraint. A number of respondents suggested
+there is a potential conflict of interest here suggesting there will need to be
+independent assurance surrounding the Firm Access methodology. Concerns were
+raised around if the use of penalties / incentives resulted in additional buffer time /
+contingencies being included in the assumed delivery dates for the required
+reinforcements. One respondent described where incentives are linked to the
+reduction of Imperfections Charges (Dispatch Balancing Costs), this creates incentives
+for EirGrid to “give up” on challenging areas of the network, seek to change the
+dispatch of firm and non-firm generators, and be pessimistic on the scheduled delivery
+of ATRs so to reduce the amount of firm access issued, or generators with firm access
+that are constrained. It was suggested the TSO incentives should require the RAs to
+
+
+                                                                                          53
+monitor progress of reinforcements, including those set out in SOEF, against original
+scheduled completion dates.
+
+One respondent proposed that a claw-back mechanism is introduced where missed
+deliveries of FAQ will put at risk any upside earned by the TSO. Another respondent
+suggested a double-sided incentive on the TSOs that would pay the TSOs for every
+1% of reduced ATR induced constraints below a set target and a penalty for every 1%
+above a set target. One respondent stated that the TSO should be allocated additional
+resourcing and funding to help with the internal workload which will in turn, help to
+alleviate the constraints.
+
+One respondent suggested that where any cross-border infrastructure is relevant to
+the calculation of constrained operation of generators, incentives on SONI should also
+be considered; This respondent sought clarity as to how this consultation process will
+feed back into the jurisdictional incentives on EirGrid, which are a jurisdictional matter.
+One respondent stated that it is important that any incentives (or penalties) which
+relate to the alleviation of constraints are applied to both the TSO and TAO (ESBN).
+
+One respondent stated they have concerns with the interaction of delivery incentives,
+the Firm Access Methodology and the SEMC decision paper SEM-22-009. One
+respondent stated that the implementation of the SEMC decision to compensation up
+to the RESS strike price for constraints and curtailment as an important decision that
+should be implemented in full and one that will incentivise the TSO to delivery on
+reinforcements on time.
+
+The TSO noted that it is already incentivised by the CRU to alleviate constraints via
+the PR5 Imperfections and Constraints Incentive as set out in Section 7.12 of the
+CRU’s PR5 Regulatory Framework. In this context it was suggested that any
+consideration of changes to EirGrid’s PR5 incentive framework would require specific
+engagement between EirGrid and the CRU.
+
+
+
+RA Assessment
+
+The RAs note that many respondents suggested focusing on existing PR5 incentives,
+and also proposed expanding existing or creating new incentives to focus on delivery
+incentives and minimising constraints costs. The RAs note the different suggestions
+put forward by respondents, with concerns raised around potential conflicts of interest
+
+                                                                                         54
+for the TSO and the RAs role in alleviating these concerns.
+
+The RAs note that incentives on EirGrid are developed and implemented on a
+jurisdictional basis by CRU. In the medium term the CRU will continue to review the
+TSOs performance against the existing relevant PR5 incentives. The CRU will look to
+review and potentially develop further incentives taking account of this firm access
+methodology as required as part of a wider review during PR6 development.
+
+
+
+
+Independent assurance
+The Gate 3 Incremental Transfer Capacity (ITC) process was subject to an
+independent technical audit. In consultation SEM-22-068 it described how the RAs
+were of the view that a similar independent audit may be appropriate in any updated
+Firm Access methodology. In order to facilitate this Terms of Reference (ToR) would
+be required to be developed for these roles.
+
+
+
+Consultation question:
+
+   15. Comments are invited from respondents on the need for independent
+       assurance around the Firm Access process. Please provide rationale to support
+       these views.
+
+
+
+Consultation responses
+
+The majority of respondents supported the concept of putting in place independent
+assurance around the Firm Access process. Some respondents welcomed further
+engagement on how it could be implemented. It was suggested that the assurance
+process must operate on an annual cadence to an agreed Terms of Reference on
+which market participants can comment. A number of respondents suggested it should
+capture all aspects of the process including the firm threshold methodology, the
+allocating of firm access (frequency and allocation order) and the development of ATR
+dates. One of these respondents suggested the depth of that review can focus on
+procedure rather than the calculation process, where that process is replicable by the
+
+                                                                                       55
+wider industry.
+
+One respondent stated they support the need for independent assurance especially if
+a first committed-first firm approach is adopted, as this will place a greater scrutiny on
+the role and performance of the TSO. It was suggested by respondents that more
+transparency on the methodology, inputs and results from the FAQ process can
+lighten the audit requirements. This level of transparency will also be required to
+enable developers to replicate the FAQ process.
+
+A number of respondents supported an independent audit for updated Firm Access
+methodology provided it does not cause any undue delay and the process to develop
+the Terms of Reference and to select an auditor is fair and transparent. It was
+suggested the approach should be done in a way that doesn’t delay provision of
+information to committed projects. One respondent sought further clarity on how the
+RAs propose to use independent assurance to assess how the TSO is able to deliver
+firmness.
+
+A number of respondents did not support the need for independent assurance. One
+respondent suggested that where the models and assumptions are made public, this
+“sunlight” reduces the need for onerous audit requirements. Another respondent
+suggested requiring the set-up of an independent assurance body would delay the
+implementation of the new process. This respondent stated they do not believe there
+would be a need for an Independent Monitor to oversee this process, and expected
+that CRU would deliver this assessment as part of their wider governance and
+assurance roles associated with the Price Control and ECP frameworks.
+
+
+
+RA Assessment
+
+The RAs note that the majority of respondents supported the concept of putting in
+place independent assurance around the Firm Access process. The RAs consider that
+the assurance provided by an independent auditor in the operation of an updated Firm
+Access methodology is very beneficial. This will require the development of a relevant
+Terms of Reference. The RAs note that the Auditor Terms of Reference will be
+developed and implemented on a jurisdictional basis by CRU.
+
+
+
+
+                                                                                         56
+SEM Committee decision
+
+The SEM Committee supports the view that there is a need for independent
+assurance around the Firm Access process in the form of an independent Audit.
+
+The SEM Committee notes that the Auditor Terms of Reference will be developed and
+implemented on a jurisdictional basis by CRU.
+
+
+
+
+General questions
+In consultation SEM-22-068 the RAs asked a number of general questions for
+comment.
+
+
+
+Consultation question:
+
+   16. General comments are invited from interested parties on whether they agree
+       with EirGrid’s proposed Firm Access methodology. Should a party disagree
+       with EirGrid’s approach, please provide reasons and rationale for this.
+
+   17. Suggestions and/or alternative approaches are invited from interested parties
+       on EirGrid’s proposal. Please provide rationale to support this.
+
+
+
+Consultation responses
+
+Question 16:
+
+The majority of respondents in general supported the proposals, but most respondents
+requested further clarity and greater information on different aspects of the design. It
+was described how this will improve investor confidence and provide better certainty
+on the future delivery of firm access. Another respondent suggested the need for
+further detail on the calculation of the firm access threshold, the likely thresholds for
+different regions, the timing of the proposed annual reviews. One respondent stated it
+is important to get confirmation of the timelines for this methodology’s implementation.
+Some respondents suggested alternative proposals for the first ORESS 1 auction, to
+mitigate unavoidable risk for bidders.
+
+A number of respondents requested greater information on the modelling process,
+
+                                                                                            57
+describing it as core to the entire proposal. More detail was requested on how firm
+access allocation is to be calculated. It was asked how will the Regional Networks be
+defined (ECP study areas, constraint groups) and will these change year-to-year?
+Under what network conditions will the constraints, e.g. N-1, be modelled? How will
+the model identify constraints, curtailment and oversupply? Will it be based on the
+existing Renewable Dispatch Tool process, or under a more to-be idealised constraint
+allocation?
+
+
+
+Question 17:
+
+A number of respondents suggested different ideas around locational signals. One
+respondent suggested better locational signals through the provision of “heat maps”
+demonstrating annually for each of the next 5 years the grid regions offering i) spare
+capacity, ii) the level of firm access available (Firm Access Quantities – FAQs), and iii)
+the connection costs associated. Another respondent suggested it is more appropriate
+for locational signals to be set by the regulator rather than by EirGrid. One respondent
+noted that the Firm access threshold creates a relatively binary, arbitrary and crude
+locational signal for new renewable generation, suggesting as an alternative to apply
+nodal caps or a forward nodal CfD on constraints whereby compensation would be
+made in circumstances where outturn constraints exceed the cap.
+
+One respondent suggested a separate process for the first Offshore RESS auction,
+thereby ensuring all Phase 1 projects can compete within ORESS 1. It was suggested
+that EirGrid should be directed to complete the look ahead process for each Phase 1
+project seeking to participate in ORESS 1 before the end of December 2022. This
+respondent suggested that if this work cannot be completed before the end of 2022,
+then Phase 1 offshore projects seeking prequalification for the ORESS1 auction
+should be granted a deemed Time Bound Firm Access date of 1st January 2030.
+
+One respondent suggested that the RAs should give careful consideration to releasing
+Firm Access of retiring units to other market participants, and stated they disagreed
+with the exclusive focus on current renewable generation. One respondent sought to
+confirm that all energy generators will be included in this firm access methodology,
+suggesting it was not expressly clear that this methodology applies to future
+conventional generation as well.
+
+
+                                                                                         58
+RA Assessment
+
+The RAs note respondents general support to the proposed methodology, and
+respondents request for further detail on different elements of the design. The RAs
+note that there are a number of areas that will require further consideration beyond
+this decision paper. These elements will require further engagement by CRU with
+EirGrid to develop more detail on how these will be defined and work. It is envisaged
+that this work will be captured as part of a more detailed methodology paper.
+
+The RAs note respondents' different proposals around locational signals. The RAs are
+of the view that some of the proposed locational signals will be further clarified as part
+of the more detailed methodology paper led by CRU. The RAs note one respondent
+suggested a separate process for the first Offshore RESS auction. As set out in
+section 4 the RAs propose certain provisions for offshore phase 1 projects successful
+in ORESS 1.
+
+
+
+
+Legacy generation
+
+
+Consultation question:
+
+   18. Comments are invited from interested parties on the benefit of providing firm
+       access to connected legacy generation in Ireland which currently have non-firm
+       access. Should legacy non firm generators be considered in any new firm
+       access methodology? Please provide rationale to support this.
+
+
+
+Consultation responses
+
+The majority of respondents suggested that all existing non-firm generators should be
+included in the firm access methodology. It was suggested it was critical that the new
+firm access policy considers existing projects with Gate 3 connection offers that have
+ATRs and Firm Access. One of these respondents proposed that in the look back
+analysis these projects have the current ATR dates applied, or earlier from the new
+                                                                                         59
+methodology, when determining a connected generators Firm Access year. Another
+respondent suggested connected non-firm units should have priority access to FAQ. It
+was suggested that legacy projects which have already connected on a non-firm basis
+should be assessed against the current network and future planned reinforcements to
+establish a firm access year, this respondent encouraged the RAs to ensure that the
+decision can be fully implemented so as to ensure that all connected legacy
+generators are capable of becoming firm. One respondent suggested that failing to
+apply firm access to connected legacy generation would not only significantly increase
+the risk perception of the Irish market as a place to develop renewables it would
+negatively impact the ability of existing projects to maximise the existing connection
+infrastructure by re-powering or co-locating storage in the future.
+
+A number of respondents made a distinction between pre and post ECP projects, and
+between non-GPA and GPA projects when talking about legacy generation. A number
+of respondents proposed that generators which have been given a connection
+agreement in the absence of any firm-access policy (i.e. non-GPA, RESS-1, RESS-2)
+are included within this methodology, while legacy generators should remain under the
+ATR process, as these were the understood rules at the time of entry into a
+connection agreement. One respondent suggested that generators which jumped the
+connection process queue for immediate security of supply concerns in Ireland under
+the CRM under CRU direction, have made their investment decision based on the
+rules which were in place at that time, and so should not receive firm access under
+this process. One respondent described how a critical issue for new or repowering
+generators is that they will not have priority dispatch and that the SEM Committee has
+decided that they will be dispatched down first over existing generators with priority
+dispatch, it was suggested that incentivising investment must be the priority given the
+imminent 2030 targets that must be met.
+
+A number of respondents suggested there are issues of fairness for projects whose
+Firm Capacity was dependent upon ATRs which remain significantly delayed or
+potentially have been dropped, it is unclear how their Firm Access could ever be
+granted. However, one of these respondents suggested it may have detrimental
+effects on Security of Supply, stating it is likely that legacy generation does not have
+the same need for an investment case given that it is already built.
+
+
+
+                                                                                           60
+RA Assessment
+
+The RAs note comments received in relation to providing firm access to connected
+legacy generation in Ireland which currently have non-firm access. The RAs note the
+distinction made by some respondents as to which projects in their view should be
+included in this firm access methodology. On balance the RAs are of the view that
+connected legacy generation in Ireland which currently does not have firm access
+should be included in this firm access methodology. These legacy projects which are
+already connected on a non-firm basis should be assessed in the current methodology
+reflecting the current network and planned reinforcements, providing these legacy
+generators with a path to becoming firm.
+
+
+
+SEM Committee decision
+
+The SEM Committee are of the view that connected legacy generation in Ireland which
+currently does not have firm access should be included in this firm access
+methodology.
+
+
+
+
+Proposed methodology in relation to the equivalent approach taken in Northern
+Ireland.
+
+
+Consultation question:
+
+   19. Comments are invited from respondents on the need to consider this proposed
+      methodology in relation to the equivalent approach taken in Northern Ireland.
+      Do respondents have any views on the interactions and differences between
+      these different approaches.
+
+
+
+Consultation responses
+
+The majority of respondents suggested Irelands and Northern Irelands firm access
+approaches should be aligned. A number of these respondents suggested that
+
+
+                                                                                      61
+Northern Ireland needs to be included in this firm access methodology review in
+Ireland. It was suggested that in order to maintain the integrity of the SEM, it is crucial
+that there is a joined-up approach in place on the island of Ireland. It was suggested
+that the approaches to Firm Access should be aligned as much as possible in Ireland
+and Northern Ireland.
+
+A number of respondents suggested that a common approach is needed in order to
+prevent market distortions, potentially affecting the ability of a generator to meet its
+obligations under the all-island Capacity Remuneration Mechanism, and creating
+distortions in renewables and grid build out. One respondent stated that if the Northern
+Irish market fails to adopt a similar policy for Firm Access, it will create a disconnect
+between the Irish and Northern Irish market, to the detriment of renewables
+investment in NI.
+
+One respondent who supported a joined-up approach across the island of Ireland did
+not propose having the same approach in Northern Ireland and Ireland, proposing that
+a similar approach should be adopted North and South, such that they are able to
+provide the same effect.
+
+A number of respondents stated they do not believe there is an issue that there could
+be diverging approaches to the allocation of firm access between Ireland and Northern
+Ireland. One respondent stated that firm access has not proven a competitive
+distortion to battery or conventional generation development North or South. A number
+of respondents noted that where there is concern regarding cross-jurisdiction burden
+of costs, Imperfections Charges may be set on a jurisdictional basis by the SEM
+Committee (noting that the T&SC algebra facilitates this).
+
+One respondent who did not have a view on an equivalent approach taken in Northern
+Ireland urged the SEMC to ensure there is no delay to this decision and thereafter
+implementation of the new proposals in Ireland, given the upcoming RESS auctions
+and the urgent need that EirGrid design a new Firm Access Methodology.
+
+
+
+RA Assessment
+
+The RAs note respondents’ views on Ireland’s and Northern Ireland’s firm access
+approaches being aligned and views around the effects of this. The RAs note that this
+decision paper is only in relation to a firm access methodology in Ireland. Any possible
+
+                                                                                            62
+changes to this policy in Northern Ireland in the future would be a separate decision.
+
+The RAs note that a number of respondents suggested that imperfections charges
+could be set on a jurisdictional basis by the SEM Committee. The RAs propose a
+jurisdictional settlement measure that is triggered if the expected delivery of
+reinforcements is delayed beyond the FAQ date. In this approach if the related
+network re-enforcements are not completed by the allocated FAQ date, then the
+associated generator(s) FAQ are moved to separate jurisdictional TSO cost recovery,
+paid for by the consumer in the relevant jurisdiction. When these re-enforcements are
+completed, then this units FAQ is then moved into the existing all-island settlement
+and paid from there. This measure is designed to ensure that all island consumers are
+not adversely affected by any jurisdictional policy, while still not preventing the
+implementation of jurisdictional measures as required. The RAs note that costs from
+this methodology will be clearly quantified and published to ensure transparency.
+
+The RAs note that there are a number of areas that will require further consideration
+beyond this decision paper. The interim settlement measure would capture any legacy
+generation made firm, any partial firmness and interaction with firm threshold where
+re-enforcements are delayed beyond original FAQ date. These elements will require
+further engagement with EirGrid to develop more detail on how these will be defined
+and work. Further analysis from EirGrid will help inform the appropriate allocation of
+costs on a jurisdictional and on an all-island basis. It is envisaged that this work will be
+captured as part of a more detailed methodology paper.
+
+
+
+SEM Committee decision
+
+The SEM Committee proposes the introduction of a jurisdictional settlement measure
+that is triggered if the expected delivery of reinforcements is delayed beyond the FAQ
+date. In this approach if the related network re-enforcements are not completed by the
+allocated FAQ date, then the associated generator(s) FAQ is moved to separate
+jurisdictional TSO cost recovery, paid for by consumers in the relevant jurisdiction.
+When these re-enforcements are completed, this units FAQ is then moved back into
+the existing all-island settlement.
+
+
+
+
+                                                                                          63
+4. Treatment of offshore (phase 1)
+The RAs note that in consultation paper (SEM/22/068) no differentiation was made
+between the treatment of onshore and offshore generation in the proposed firm access
+methodology.
+
+The Offshore Wind Renewable Electricity Support Scheme Competition (ORESS 1) is
+due to take place in early May 2023, with qualification opening in January 2023.
+Having considered the feedback received through the consultation and in light of the
+tight timings, the RAs are conscious that Offshore developers entering ORESS 1
+require certainty regarding their Firm Access status as soon as possible. Not having
+this certainty in advance of ORESS 1 may impact on their ability to enter into the
+ORESS 1 auction and their ability to finance their offshore development projects.
+
+The SEM Committee has therefore decided to treat Offshore Phase 1 projects that are
+successful in ORESS 1 differently due to the following reasons:
+
+    •   Financing for offshore projects requires a higher level of certainty on Firm
+        Access due to large project size and resulting financial exposure.
+
+    •   Phase 1 projects are connecting into the grid at good locations (with relatively
+        low constraints) when all associated reinforcement projects are complete4.
+
+
+
+SEM Committee has decided the following treatment for offshore phase 1 projects
+successful in ORESS 1:
+
+    •   Firm Access Date is provided in the Full Connection Offer based on the firm
+        access methodology in this decision.
+
+    •   Backstop of 2030 for full firm access in the worst-case scenario. Irrespective of
+        whether the ATRs are completed the project would receive FAQ for its
+        Maximum Export Capacity (MEC) as specified in Full Connection Offer with a
+        backstop date of 2030 at the latest.
+
+    •   If the Connection Agreement is not executed by 31 December 2025, then the
+        firm access allocation will fall away in line with the Full Connection Offer
+
+
+
+
+4
+ In addition, one of the six Phase 1 projects expected to participate in ORESS 1 already has firm access
+allocated to a portion of its capacity from an existing connection agreement.
+
+                                                                                                           64
+           validity.5
+
+      •    If Connection Agreement is executed but is subsequently terminated due to
+           contractual longstop dates being exceeded (or any other appropriate reason),
+           the firm access allocation falls away. For clarity, if a project loses its Marine
+           Area Consent then the firm access allocation falls away.
+
+      •    Firm access policy for offshore Phase 1 projects unsuccessful in ORESS 1 and
+           Phase 2 projects will be determined after the Department of the Environment,
+           Climate and Communications’ (DECC’s) decision on the Phase 2 project
+           selection.
+
+Following this decision, the CRU will request EirGrid to carry out an initial firm access
+run in early 2023 capturing existing connected non-firm generation and offshore phase
+1 projects. This will allow bidders in ORESS 1 to have certainty regarding their firm
+access status in sufficient time to efficiently reflect this in their bids.
+
+
+
+SEM Committee decision
+
+SEM Committee has decided the following treatment for offshore phase 1 projects
+successful in ORESS 1:
+
+      •    Firm Access Date is provided in Full Connection Offer based on the firm access
+           methodology in this decision.
+
+      •    Backstop of 2030 for full firm access in the worst-case scenario.
+
+      •    If the Connection Agreement is not executed by 31 December 2025, then the
+           firm access allocation will fall away in line with the Full Connection Offer
+           validity.6
+
+      •    If Connection Agreement is executed but is subsequently terminated the firm
+           access allocation falls away.
+
+
+
+
+5
+    Refer to CRU/2022/968 for Full Connection Offer validity and extension
+6
+    Refer to CRU/2022/968 for Full Connection Offer validity and extension
+
+                                                                                               65
+5. Summary SEM Committee decision
+
+5.1 Introduction
+In the previous section the RAs set out their response to feedback to the different
+questions posed in the consultation and set out their views on the different elements of
+EirGrid’s proposed methodology. These decisions are set out below.
+
+
+
+5.2 Summary of decisions
+The SEM Committee decisions and next steps on the different elements of EirGrid’s
+proposed methodology are summarised in table 4 below. The RAs note that this
+decision paper is only in relation to a firm access methodology in Ireland. Any possible
+changes to this policy in Northern Ireland in the future would be a separate decision.
+
+
+
+                    SEM Committee decision             Further detail
+
+ Time bound         Agree with the proposed
+ Firm Access        approach of having a time
+ date               bound Firm Access date.
+
+ Partial Firm       Agree with the proposed            A review of the size of this
+ Access             approach of allocating partial     partial FAQ block can be
+ Quantities         Firm Access Quantities in          included as part of a more
+                    discrete blocks of 20MW.           detailed methodology paper led
+                                                       by the CRU.
+
+ Stage of           The SEM Committee are of the
+ development        view that certainty needs to be
+ project            provided earlier in the project
+ considered for     process timeline, proposing the
+ firm access        connection agreement
+                    stage for projects to meet
+                    committed status.
+
+ Inclusion of                                          Further detail on longstop date
+ longstop date                                         element as part of more
+
+
+
+                                                                                         66
+                                                     detailed methodology paper.
+
+
+Batteries and     Agree with proposed approach       Following completion of
+other system      of treating batteries and other    Electricity Storage Policy
+service           service providers as outside       Framework by DECC a review
+providers         the scope of this Firm Access      will be carried out.
+                  methodology.
+
+Maximum           Agree with proposed MEC floor
+Export Capacity   of 1 MW.
+floor of 1MW
+
+Allocation        Agree with the introduction of     Further detail and an indicative
+frequency         an Annual Review process.          timeline of how the Annual
+                                                     Review process will work as
+                                                     part of a more detailed
+                                                     methodology paper led by the
+                                                     CRU.
+
+Firm Threshold    Agree with concept of a Firm       Further detail and analysis as
+                  Threshold.                         part of a more detailed
+                                                     methodology paper led by the
+                                                     CRU.
+
+Order of          Agree with proposed order of
+allocation        allocation approach of First to
+                  be committed – first to be Firm.
+
+Transmission                                         Further engagement by CRU
+Development                                          with EirGrid regarding data to
+Plan                                                 improve forecasting of ATR
+                                                     completion dates for future
+                                                     assessments.
+
+Look back and                                        Further detail on look-back and
+look forward                                         look-forward approach as part
+approach                                             of a more detailed methodology
+
+
+                                                                                      67
+                                                    paper led by the CRU.
+
+
+Delivery                                            CRU will continue to review the
+incentives                                          TSOs performance against
+                                                    existing PR5 incentives. CRU
+                                                    will look to review and
+                                                    potentially develop further
+                                                    incentives as part of a wider
+                                                    review during PR6
+                                                    development.
+
+Independent      Support view that there is a       The Auditor Terms of
+assurance        need for independent               Reference will be developed
+                 assurance around the Firm          and implemented on a
+                 Access process in the form of      jurisdictional basis by CRU.
+                 an independent Audit.
+
+Legacy           Connected legacy generation
+generation       in Ireland which currently does
+                 not have firm access should be
+                 included in this firm access
+                 methodology.
+
+Jurisdictional   Introduction of a jurisdictional
+cost recovery    settlement measure, if the
+                 related network re-
+                 enforcements are not
+                 completed by the allocated
+                 FAQ date, then the associated
+                 generator(s) FAQ is moved to
+                 separate jurisdictional TSO
+                 cost recovery, paid for by
+                 consumers in the relevant
+                 jurisdiction. When these re-
+                 enforcements are completed,
+
+
+                                                                                    68
+                           this units FAQ is then moved
+                           back into existing all-island
+                           settlement.
+
+Table 4: Summary of decisions
+
+
+
+
+6. Next Steps
+
+This decision paper outlines the SEM Committees view on a number of the key
+design elements of a new Firm Access methodology in Ireland.
+
+The RAs are of the view that there are a number of areas that will require further
+consideration beyond this decision paper. These elements will require further
+engagement by CRU with EirGrid to develop more detail on how these will be
+defined and work. It is envisaged that this work will be captured as part of a more
+detailed methodology paper led by CRU.
+
+Following this decision, the CRU will request EirGrid to carry out an initial firm
+access run in early 2023 capturing existing connected non-firm generation and
+offshore phase 1 projects. This will allow bidders in ORESS 1 to have certainty
+regarding their firm access status in sufficient time to efficiently reflect this in their
+bids.
+
+The CRU will continue to engage with EirGrid on the detailed aspects of the
+implementation of a Firm Access methodology in Ireland.
+
+
+
+
+                                                                                             69
+

@@ -1,0 +1,67 @@
+generator,bus,station,carrier,p_nom,psse_bus_name,class,matched_name,matched_mec,match_status
+13471-1,1341,Binbane,wind,0.66,W_BURTONPORT,P,,,unmatched
+13472-DW,1341,Binbane,wind,2.55,W_SHANAGH_KI,U,Shannagh (1) previously Kilcar,2.55,matched_multi
+13473-4,1341,Binbane,wind,9.99,W_CORKERMO,P,Corkermore (1),9.99,matched
+13474-1,1341,Binbane,wind,6.0,W_KILLIN_HIL,P,Killin Hill (1),6.0,matched
+13475-6,1341,Binbane,wind,7.65,W_LOUGHDER,P,Loughderryduff (1),7.65,matched
+13476-3,1341,Binbane,wind,11.9,W_MEENACHU,P,Meenachullalan (1),11.9,matched
+13477-2,1341,Binbane,wind,2.55,W_KILLYBEG,U,Killybegs (1),2.55,matched_multi
+13479-9,1341,Binbane,wind,3.4,W_MEENADREEN,P,,,unmatched
+15771-1,1571,Ardnagappary,wind,1.98,W_CRONALAGHT,P,,,unmatched
+15772-1,1571,Ardnagappary,wind,3.0,W_CRONALAGHT,P,,,unmatched
+16371-1,1631,Corderry,wind,3.4,W_CARANNE_HI,U,Carrane Hill (1),3.4,matched_multi
+16372-2,1631,Corderry,wind,3.4,W_BLACK_BANK,U,Black Banks (1),3.4,matched_multi
+16373-3,1631,Corderry,wind,6.8,W_BLACK_BANK,P,Black Banks (2),6.8,matched
+16374-4,1631,Corderry,wind,7.65,W_ALTAGOWLAN,P,Altagowlan (1),7.65,matched
+16375-1,1631,Corderry,wind,3.96,W_MONEENATIE,U,Moneenatieve (1),3.96,matched
+16376-6,1631,Corderry,wind,4.95,W_GEEVAGH,U,Geevagh (1),4.95,matched
+16377-1,1631,Corderry,wind,9.0,W_TULLYNAMOY,P,Tullynamoyle (1),9.0,matched
+16378-1,1631,Corderry,wind,1.598,W_CARANNE_HI,U,Tullynamoyle 3 (Carrane Hill merged capacity),1.598,matched
+16379-2,1631,Corderry,wind,0.29,W_MONEENATIE,P,,,unmatched
+16382-1,1631,Corderry,wind,10.225,W_TULLYNAMOY,P,Tullynamoyle 2 Wind Farm,10.225,matched
+16392-1,1631,Corderry,wind,11.98,W_TULLYNAMOY,P,Tullynamoyle Wind Farm 3 (Formerly Geevagh 2),11.98,matched
+17075-7,1341,Binbane,wind,1.98,W_ANARGET,P,,,unmatched
+17077-8,1341,Binbane,wind,0.02,W_ANARGET,P,,,unmatched
+19371-1,1931,Cunghill,wind,23.75,W_KINGSMOUNT,P,Kingsmountain (1),23.75,matched
+19372-2,1931,Cunghill,wind,11.05,W_KINGSMOUNT,P,Kingsmountain (2),11.05,matched
+26732-1,2671,Garvagh,wind,34.0,W_DERRYSALLA,N,Derrysallagh Wind Farm (Formerly Kilronan 2),34.0,matched
+26771-1,2671,Garvagh,wind,26.0,W_GAR_GLEBE_,P,Garvagh - Glebe (1a),26.0,matched
+26773-1,2671,Garvagh,wind,22.0,W_GAR_TULLIN,P,Garvagh - Tullynahaw (1c),22.0,matched
+35971-1,3591,Lenalea,wind,30.5,W_LENALEA,P,,,unmatched
+40471-1,4041,Moy,wind,6.0,W_LACKAN,P,Lackan (1),6.0,matched
+40771-1,4071,Meentycat,wind,52.9,W_MEENTYCAT,P,,,unmatched
+40772-2,4071,Meentycat,wind,18.06,W_MEENTYCAT,P,,,unmatched
+40773-3,4071,Meentycat,wind,14.0,W_MEENTYCAT,P,Meentycat (2),14.0,matched
+40971-1,4091,Mulreavy,wind,82.0,W_MULREAVY,P,Mulreavy (Mulreavy (1)),82.0,matched
+40972-2,4091,Mulreavy,wind,4.25,W_CROAGHNAME,P,Mulreavy Ext (Croaghnameal (1)),4.25,matched
+40973-1,4091,Mulreavy,wind,3.6,W_MEENADREEN,P,Mulreavy Ext (Meenadreen South (1)),3.6,matched
+43771-1,4371,Glenree,wind,28.0,W_BUNNYCONNE,N,Bunnyconnellan (1),28.0,matched
+43774-2,4371,Glenree,wind,34.15,W_CARROWLEAG,P,Carrowleagh (1),34.15,matched
+49971-1,4991,Sorne Hill,wind,31.5,W_SORNE_HILL,P,Sorne Hill (1),31.5,matched
+49972-7,4991,Sorne Hill,wind,2.3,W_SINGLE_TUR,U,Sorne Hill Single Turbine (Enros),2.3,matched
+49973-2,4991,Sorne Hill,wind,7.4,W_SORNE_HILL,P,Sorne Hill (2),7.4,matched
+49974-6,4991,Sorne Hill,wind,4.25,W_THREETR,U,Three Trees (1),4.25,matched_multi
+49975-4,4991,Sorne Hill,wind,4.2,W_MEENKEER,U,Meenkeeragh (1),4.2,matched_multi
+49976-3,4991,Sorne Hill,wind,9.2,W_FLUGHLAND,P,Flughland (1),9.2,matched
+49977-1,4991,Sorne Hill,wind,0.6,W_GLACKMORE_,P,,,unmatched
+49978-2,4991,Sorne Hill,wind,1.4,W_GLACKMORE_,U,Glackmore Hill (2),1.4,matched
+49979-3,4991,Sorne Hill,wind,0.3,W_GLACKMORE_,P,,,unmatched
+49992-1,4991,Sorne Hill,wind,2.1,W_CORVIN,U,Corvin Wind Turbine,2.1,matched
+53671-1,5361,Trillick,wind,5.0,W_CROCKAHE,U,Crockahenny (1),5.0,matched
+53672-2,5361,Trillick,wind,4.8,W_DRUMLOUG,U,Drumlough Hill (1),4.8,matched
+53673-3,5361,Trillick,wind,14.0,W_BEAMHIL,P,Beam Hill (1),14.0,matched
+53674-4,5361,Trillick,wind,9.99,W_DRUMLOUG,P,Drumlough Hill (2),9.99,matched
+67059-1,5241,Tawnaghmore,wind,19.2,W_BS_KILLALA,P,Killala Wind Farm (Phase 1),19.2,matched
+67059-2,5241,Tawnaghmore,wind,10.8,W_BS_KILLALA,P,,,unmatched
+68087-1,4981,Sligo,wind,7.65,W_CARRICKEEN,P,Carrickeeney (1),7.65,matched
+68101-1,4981,Sligo,wind,6.0,W_FAUGHA_PH1,P,Faughary (1),6.0,matched
+68195-1,5361,Trillick,wind,4.0,W_COOLY_PH1,U,Cooly (1),4.0,matched
+68223-1,1341,Binbane,wind,0.5,W_ANARGET_PH,P,,,unmatched
+68254-1,4371,Glenree,wind,2.65,W_CARROWLE_P,N,Carrowleagh (2),2.65,matched
+68260-1,1571,Ardnagappary,wind,17.96,W_CRONALAG_P,N,Cronalaght (2),17.96,matched
+68269-1,1341,Binbane,wind,20.0,W_CLOGHERA_P,P,,,unmatched
+68269-2,1341,Binbane,wind,3.6,W_CLOGHERA_P,N,Clogheravaddy Wind Farm (Phase 3),3.6,matched
+68284-1,5361,Trillick,wind,6.9,W_BEAMHILL_P,P,Meenaward,6.9,matched
+68308-1,4091,Mulreavy,wind,5.4,W_MEENAD_S_P,P,Mulreavy Ext (Meenadreen South (2)),5.4,matched
+68312-1,4371,Glenree,wind,12.5,W_BLACKLOU_P,N,Black Lough (1),12.5,matched
+69197-1,17010,Cathaleen's Fall,wind,17.5,W_ACRES,P,Spaddan (1),17.5,matched

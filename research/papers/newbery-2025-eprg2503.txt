@@ -1,0 +1,485 @@
+Implications of Renewable Electricity
+Curtailment for Delivered Costs
+
+EPRG Working Paper                 EPRG2503
+Cambridge Working Paper in Economics                          CWPE2511
+
+
+David Newbery1
+Abstract
+At high penetration levels, the ratio of the marginal: average curtailment (mc/ac) of an extra
+MW of wind is typically 3+ times its average. For a portfolio of on- and off-shore wind and
+solar PV, the ratio is considerably higher. With increasing methods of using potentially
+surplus VRE (exports, storage) average curtailment falls but the mc/ac ratio rises. The
+marginal levelised cost of VRE is inversely proportional to the Marginal Capacity Factor,
+which falls as marginal curtailment increases, raising concerns that reducing average
+curtailment may not lower the marginal cost of VRE. This paper proves this is not the case.
+Reducing curtailment has a magnified effect on marginal curtailment and does indeed lower
+the marginal cost of VRE.
+
+Keywords              Variable Renewable Electricity, Marginal Curtailment, Average
+Curtailment, Levelised Cost of Electricity, VRE support design.
+
+JEL Classification    L94; Q42; Q48
+
+
+
+
+1
+ Faculty of Economics, University of Cambridge, Sidgwick Ave., Cambridge CB3 9DE.
+dmgn@cam.ac.uk
+                                www.jbs.cam.ac.uk/eprg
+    Implications of Renewable Electricity Curtailment for Delivered Costs
+                                    David Newbery2
+                         Cambridge Energy Policy Research Group
+                                    18 February 2025
+
+     1. Introduction
+Governments and other agencies setting decarbonisation targets and designing Variable
+Renewable Electricity (VRE) support mechanisms usually rank alternative technologies by
+their Levelised Cost of Electricity, LCoE), calculated as follows. If the cost of installing a
+MW of capacity (including the cost of the site, engineering works, and accumulating the cost
+of finance until commissioning (see BEIS, 2023) is K, then the capital cost per year is found
+by annuitizing this sum over its lifetime, T years, at a suitable real weighted average cost of
+capital (WACC) of r. The WACC will depend on the degree of risk of the investment, which
+may be substantially reduced with a suitable contract. Thus if β = 1/(1+r), the annuitized
+annual value is A= rK/(1 – βT). The annual total fixed cost per MW is then F = A + f, where f
+is the annual cost per MW of other fixed costs (e.g. grid connection costs, insurance, etc.).
+For VRE with a potential capacity factor (PCF, as a percentage) the LCoE is F/(PCF*8760)
++ v, where v is the variable O&M cost in £/MWh.
+        As an example, BEIS (2023) gives the overnight cost3 of onshore wind in 2018 prices
+as £1,120/kW (for 2030 commissioning) or £1,356/kW accumulating interest during
+construction at 5%. With a 25yr life A = £96,202/MWyr. As f is given as £29,500/MWyr, v
+= £6/MWh, so LCoE = £42.20+£6 = £48.20/MWh. Offshore wind has a higher capital cost
+(£1,975/kW with interest) but a longer life (30yrs) giving A = £128,464, higher f =
+£92,500/MWyr, lower v = £3/MWh, higher PCF (60% for 2030), so the LCoE = £44.25+£3=
+£47.25/MWh, cheaper than onshore wind (although the ratio of investment cost is 46%
+higher per kW). Clearly capacity factors make a considerable difference to the LCoEs. The
+theme of this article is to investigate the difference between, and varying importance of, the
+potential capacity factor used above, the average capacity experienced once curtailment
+occurs, and the marginal capacity factor, which determines the output contribution of the last
+MW of VRE installed.
+        Figure 1 shows a range of technologies and their LCoEs, taken from the same source,
+BEIS (2023). It shows that all VRE are of comparable cost (for 2025 delivery) and far
+cheaper than new gas-fired Combined Cycle Gas Turbines, where the carbon cost dominates
+the delivered cost. The carbon price used in figure 1 has been raised to about £250/tonne
+CO2e (+/- £125/t) rising at 1.5% real per year.4 Even at the forward EU emissions trading
+prices, which for March delivery 2025 is €80/tonne CO2 (£68/t), the additional carbon price
+would make CCGT considerably more costly than VRE. The question addressed here is
+whether the LCoE as defined is an appropriate measure for VRE, and whether a more
+appropriate measure would change the relative costs of different options.
+
+
+
+2
+  Faculty of Economics, University of Cambridge, Sidgwick Ave., Cambridge CB3 9DE.
+dmgn@cam.ac.uk
+3
+  The simple sum of annual payments until commissioning, as if delivered “overnight”.
+4
+  https://www.gov.uk/government/publications/valuing-greenhouse-gas-emissions-in-policy-
+appraisal/valuation-of-greenhouse-gas-emissions-for-policy-appraisal-and-evaluation
+Figure 1 LCOE estimates for projects commissioning in 2025, in real 2021 prices
+Source: BEIS (2023).
+     2. Renewable Electricity costs
+The usual objections to the LCoE concept applied to VRE is that it excludes a variety of
+additional costs needed to integrate VRE into the system, such as providing inertia and other
+stability services, back-up power when unavailable, etc. (Heptonstall and Gross, 2020).
+Recognising both their importance and system dependence (notably, on VRE penetration and
+system flexibility), this article concentrates on a neglected cost aspect of VRE that becomes
+critically important at the high penetration levels only recently experienced. As the ratio of
+peak to average output is high for VRE (3-4: 1 for onshore wind, 2-3: 1 for offshore wind
+and 4-9: 1 for solar PV), high average penetration inevitably leads to the need to turn down
+or curtail VRE output, for two difference reasons.
+
+        Transmission limits lead to local constraints, while system-wide stability
+requirements, most importantly, the need for adequate inertia to prevent too rapid a fall in
+frequency with supply dips, lead to system-wide curtailment. The Single Electricity Market
+(SEM) of the Island of Ireland currently restricts wind penetration to 75% of demand, to
+leave space for spinning turbines to provide the required inertia. SEM (2024) helpfully
+defines and distinguishes between constraints and curtailment. O’Shaughnessy et al. (2020)
+find that in Arizona and Hawaii, PV is already curtailed (about 3%) because of excess supply,
+while Texas and other countries constrain PV because of transmission constraints. For
+present purposes both curtailing VRE because of transmission limits and system
+requirements raise the same issues, although relaxing each typically requires different
+approaches.
+        Scotland has experienced high levels of constraint, shown in figure 2, while in 2020
+the SEM with a wind share of 34% of total generation had to dispatch down 12.1% of wind
+output, 6.2% because of transmission constraints and 5.9% curtailed because of system-wide
+limits (the 75% limit of penetration, Eirgrid/SONI, 2023). Most sources are not so careful in
+distinguishing between the two and typically label both as curtailment (as in the source for
+Figure 2) but as this paper addresses both reasons for curtailment that is less important here.
+Figure 2 Scottish wind curtailment, mostly from transmission constraints
+Source: Renewable Energy Foundation at https://www.ref.org.uk/ref-blog/371-constraint-
+payments-to-wind-power-in-2020-and-2021
+        Economists have long argued that it is marginal, not average cost that determines
+efficient allocation, and similarly with VRE it is the marginal cost of delivered power that
+determines their contribution to and cost of decarbonising electricity. That in turn depends on
+their marginal capacity factor, MCF, derived below. All the examples cited above give the
+average curtailment, and only recently has any attention been directed to measuring and
+analysing marginal curtailment. Newbery (2023a) argued that the marginal: average
+curtailment ratio (mc/ac)5 was likely to be 3-4 or more, and estimated its value for the
+projected wind share in the SEM in 2026, under the two jurisdictions’ National Energy and
+Climate Plans (DCCAE, 2019).6 That study ignored internal transmission constraints and
+instead concentrated on the impact that the System Non-Synchronous Penetration (SNSP, i.e.
+the share of wind in total demand) level had for marginal curtailment – the 75% noted above.
+Novan & Wang (2024) estimated in California the average curtailment rate for grid-scale PV
+was 4.3%, while the marginal rate was more than double at 9.2%.
+        Simshauser and Newbery (2024) applied the same methodology to examine the
+implications of marginal curtailment in a Renewable Energy Zone (REZ) located far from the
+main transmission system in Queensland, Australia. In this case the source of potential
+curtailment was the limited capacity of the transmission link to the grid. They asked whether
+average or marginal curtailment was relevant to inviting developers to jointly finance the
+connection to the grid. They found mc/ac ratios of 3.2-3.6 (Simshauser and Newbery, figs.
+5,6).
+
+
+5
+  Lower case letters are used for average and marginal curtailment as upper case are used
+for Average and Marginal Capacity factors.
+6
+  At the time of writing that paper, Northern Ireland, as part of the UK, did not have a formal
+NCEP, but by 2022 this had changed with the Climate Change Act (Northern Ireland) 2022
+at https://www.daera-ni.gov.uk/articles/northern-ireland-climate-change-adaptation-
+programme
+          Subsequently, Newbery and Biggar (2024) developed a theoretical framework for
+addressing the export constraint facing the REZ. They compared different pricing (including
+nodal pricing) and access regimes (pro-rata curtailment or priority dispatch) to compare their
+impact on the incentives for VRE merchant or market-driven entry and their efficiency.
+Newbery and Chyong (2025) extended the analysis of single VRE (wind in the SEM) or a
+composite VRE (wind and PV in Queensland) to a portfolio of different VRE options (on-
+and off-shore wind and solar PV). They found mc/ac ratios for wind ranging from 5 (with the
+lowest set of options for surplus VRE absorption) rising to 6 (with exports but no storage) to
+7.5 (storage and exports) for off-shore wind, higher for on-shore wind (with pro-rata
+curtailment). Ratios for solar PV varied from 3 – 9. In most cases the variety of different
+VRE amplified the ratio as each VRE impacted on and increased the curtailment of other
+VREs, with the ratio rising as average curtailment fell, as shown below.
+        This paper sets out that theoretical model and extends it to draw out its implications
+for estimating the appropriate cost of VRE for different market and support designs and for
+non-linear curtailment schedules. It differs from these earlier papers in extending the analysis
+to a portfolio of different VRE options, drawing on the empirical data analysed in Newbery
+and Chyong (2025), and in concentrating on the implications of the mc/ac ratio for estimating
+the Levelised Average and Marginal Costs of Electricity, LACoE and LMCoE.
+
+   3. Marginal and average curtailment in a simple model of excess VRE
+Figure 3 shows potential VRE (before curtailment) for a 2030 scenario taken from ESO
+(2024) Future Energy Scenario Hydrogen Evolution (FES HE) (as discussed in Newbery and
+Chyong, 2025).
+
+
+
+
+Figure 3 Potential GB 2030 VRE before curtailment, FES HE scenario
+Source: ESO (2024) and data from Newbery and Chyong (2025), EU NCEP case
+As the superimposed line illustrates, the VRE duration curve is approximately linear over
+most of its length, as in Newbery and Biggar (2024, fig. 2). This allows for a considerable
+simplification in deriving marginal and average curtailment, as Figure 4 illustrates for a
+piecewise approximation to figure 3, although the non-linearity at the top end needs further
+analysis, discussed below.
+
+
+
+
+Figure 4 Piecewise linear representation of VRE with curtailment
+
+         In figure 4, the original potential VRE duration schedule is ABDF, of which the
+triangle ACB is curtailed. If VRE is expanded by 1 MW (of peak delivery) the VRE schedule
+shifts proportionately to the new schedule, GHF (where the shift is proportional to the
+potential VRE delivered, so point B moves upward to point H by an amount V0/V, as AG is 1
+unit). From simple geometry, total curtailment is the area of ACB = ½(V – V0).y*, where V0
+is the capacity of VRE penetration at which curtailment is first necessary, V is the current
+VRE capacity, and y* is the number of hours that VRE is curtailed. It also follows that
+marginal curtailment is the area of the figure AGHB, ½(AG + BH)*AC = ½(1 + V0/V).y*
+(ignoring the insignificant triangle at the extension of CB).
+         Average curtailment, ac, is total curtailment divided by VRE capacity, while marginal
+curtailment, mc, is from above:
+                          ac = ½(V – V0).y*/V, mc = ½(1 + V0/V).y*,                              (1)
+so the ratio mc/ac is
+                          mc/ac = (V + V0)/(V – V0).                                             (2)
+This ratio falls with increases in V and increases with increases in V0.
+         Thus far the geometry works as well for a single VRE or a portfolio as shown in
+Figure 3. It is not, however, immediately obvious that the ratio of mc/ac should be higher for
+a portfolio of VRE than for a single VRE. This is demonstrated more formally in the
+following simple (but general) model. Suppose that installed capacity of technology j is Vj,
+(e.g. j = 1 for onshore wind, j = 2 for offshore wind and j = 3 for solar PV). Let its capacity
+factor in hour h be denoted by θjh, so that potential output in that hour is θjhVj. Let residual
+demand available to absorb VRE be Rh in hour h and curtailment kh:
+                                 kh = Max{0, ∑ j θjhVj – Rh},                                (3)
+
+If xh is the pro-rata proportion of curtailment
+
+                         (1 - xh)∑ j θjhVj = Rh, if ∑ jθjhVj – Rh > 0.                       (4)
+
+In cases of positive curtailment, from (3) and (4)
+
+                                 kh = xh.∑ j θjhVj.                                          (5)
+
+         If there is a single VRE, wind, say, V1 = W, as in the SEM, then average curtailment,
+ac, is
+                                         ac = ∑ h xh.θh/H,                                   (6)
+
+where H is the number of hours in the year (8,760). Marginal curtailment, mc, is
+
+                         mch = dkh/dW = xh.θh + Wθh dxh/dW, mc = ∑h mch/H,                   (7)
+so
+                                 mc/ac = 1 + W. ∑ h dxh/dW/∑ h xh.θh ≡ 1 + εxW,              (8)
+where εxW is the (weighted average) elasticity d ln (∑ h xh.θh)/d ln W.
+       Now contrast this single VRE case with the portfolio case (5):
+
+                                         acj = ∑ h xh.θjh/H,                                 (9)
+and
+                mcjh = dkh/dVj = xh.θjh + ∑i θih dxh/dVi,         mcj = ∑h mcjh/H.         (10)
+This time the ratio is
+                                        mcj/acj = 1 + εxVj + ∑i≠j εxVi.                    (11)
+
+The ratio of each mc/ac thus includes the direct effect visible for a single VRE but in addition
+the spillover impacts represented by the last term in (11), clearly positive and hence
+amplifying the ratio.
+    4. The role of marginal curtailment in cost calculations
+The introduction pointed to the importance of the Levelised Cost of Electricity, (LCoE), and
+showed how it is calculated from the Potential Capacity Factor, PCF. If ACF is the Average
+and MCF the Marginal Capacity Factors (as percentages), ac the average curtailment and mc
+the marginal curtailment (also as percentages) of all VRE curtailed as a result of any
+increment including spill-overs, then for each VRE type j:
+                                        ACFj = PCFj - acj,                                 (12)
+                                        MCFj = PCFj - mcj.                                 (13)
+Just as LCoE is
+                                        LCoE = Fj/(8760*PCFj) + vj,                        (14)
+so the levelised average and marginal cost of any VRE are
+                              LACoE = Fj/(8760*ACFj) + vj,                                 (15)
+                              LMCoE = Fj/(8760*MCFj) + vj.                                 (16)
+
+For the simple case in which vj = 0 (e.g. PV)
+                              LMCoE/LACoE = ACFj/MCFj.                                     (17)
+                              LMCoE/LCoE = PCFj/MCFj.                                      (18)
+    5. The relevance of different cost measures
+The UK Government organises periodic auctions that allocate Contracts-for-Difference with
+Feed-in Tariffs (CfDs with FiTs) for VRE. This particular contract is for a set strike price, s,
+determined by the auction, under which the holder sells in the relevant market and receives
+(or pays) (s – p) per MW from or to the Government-backed Low Carbon Contract Company,
+where p is the reference price.7 If the VRE is curtailed then it is offered compensation for the
+difference between the amount it could have dispatched and the amount actually dispatched.8
+As such they have a firm access right to the transmission system with the System Operator.
+         For example, the latest (Round 6) CfDs with FiTs auction (Sep 2024) cleared at strike
+prices (£2023/MWh) of £67.09 (PV), £68.18 (onshore wind) and £72.65 (offshore wind)9
+when the forward baseload wholesale electricity price in June 2024 was £77/MWh.10 Thus,
+all VRE are of apparently comparable cost (as suggested in figure 1) and, at current
+wholesale prices, do not need subsidy, as noted for offshore wind by Jansen et al. (2020).
+Bidders in the auction would logically base their bids on the LCoE as they should be paid
+their offered amount at the strike price even if they are curtailed.
+         In contrast, in the Australian Renewable Energy Zones described in Simshauser and
+Newbery (2024) the transmission company builds a merchant connection to the grid with a
+fixed capacity, whose cost is allocated in proportion to an expected and allowed volume of
+VRE entry. As developers enter up to the agreed level, they can expect to be curtailed a
+certain fraction of the time. When curtailment occurs each VRE will be curtailed in
+proportion to their offered amount (pro-rata curtailment), and so will experience average
+curtailment. Their business case would logically be based on the LACoE. Newbery and
+Biggar (2024) showed that if entrants were charged the average cost of the planned capacity
+of the link (which would anticipate an expected level of curtailment) efficient entry would
+then result – so for planned transmission constrained VRE LACoE is the correct measure.
+         Finally, the Irish System Operator, Eirgrid, proposed that “Generators connecting to
+parts of the network with spare capacity could receive firm access. Generators in parts of the
+network with limited capacity could connect on a non-firm basis, in advance of the
+completion of reinforcements, but would not receive compensation if they are dispatched
+
+7
+  https://assets.publishing.service.gov.uk/media/5a79bce4e5274a684690bbdb/7077-
+electricity-market-reform-annex-a.pdf
+8
+  See the description of Defined Curtailment Compensation in FiT CONTRACT FOR
+DIFFERENCE: STANDARD TERMS AND CONDITIONS at
+https://assets.publishing.service.gov.uk/media/61e04175d3bf7f054db937f6/AR4_Standard_
+Terms_and_Conditions.pdf
+9
+  https://www.gov.uk/government/publications/contracts-for-difference-cfd-allocation-round-
+6-results
+10
+   https://www.ofgem.gov.uk/energy-data-and-research/data-portal/wholesale-market-
+indicators
+down.” (Eirgrid, 2022, p5). Developers entering constrained parts of the network would be
+constrained without compensation before incumbents with firm access agreements, who
+would be compensated for any curtailment. Under such a contract, developers would
+logically look at the LMCoE when deciding whether to enter.11
+        Clearly different support designs and market access arrangements can have a
+significant impact on the choice of project, and whether or not the choice is efficient, i.e. cost
+minimising in delivering the desired electricity, emissions reduction and system stability. The
+immediate question to address is how various interventions impact curtailment and the
+different cost measures.
+
+    6. Consequences of reducing constraints and curtailment
+Transmission constraints are typically addressed for already-connected generation by
+investing in additional capacity, where the benefit of reduced curtailment can be balanced
+against the extra cost of relieving the constraint, and where innovative solutions might be
+cheaper. For new entrants, strong locational price signals should guide developers to
+unconstrained parts of the network. The UK Government consulted on a Review of
+Electricity Market Arrangements in 2022,12 drawing attention to the importance of locational
+pricing for reducing the cost of resolving transmission constraints. For the considerable
+volume of VRE connected to the distribution network (132kV and below in GB) firm
+connections require the generator to pay the cost of reinforcements needed to justify firmness
+(and the right for compensation for curtailment). It is also possible to request a non-firm
+connection usually at a considerable cost-saving as costly reinforcement is avoided. This may
+come with a guaranteed minimum level of curtailment and is thus comparable to the REZ
+case discussed above.13
+        Curtailment for system stability reasons is less straightforward. The acceptable level
+of SNSP (which includes VRE, but also DC interconnectors and any power source lacking
+the inertia of spinning mass like a turbine) can be increased by raising the acceptable rate of
+change of frequency (RoCoF), which normally requires possibly costly adjustments to
+control settings, or introducing synthetic inertia by power electronics. Thus the SEM
+increased RoCoF from 0.5 to 1 herz/second in order to raise SNSP to a target of 75% by
+2020. The more direct solution is to increase demand, for if the SNSP limit is say 90%, then
+an increase in demand of 100 MW can facilitate an extra 90MW of VRE before curtailment.
+The two obvious method are to build interconnectors for exporting surplus VRE, and storage
+to absorb excess VRE. Creating new demand for e.g. green hydrogen through electrolysis can
+also help absorb excess VRE, as can some demand side response, shifting demand from low
+VRE to high VRE periods.
+        In both cases average curtailment, ac, should fall by raising V0, but that raises the
+mc/ac ratio, and it is marginal cost and hence mc that is relevant for efficient choices. The
+central question of this article is whether lowering ac also lowers the MCF. As noted from
+equation (1) in the linear case, lowering ac is equivalent to raising V0, and so we need to find
+whether this raises the MCF towards the PCF and so lowering the LMCoE. This is
+
+11
+   Eirgrid (2024, p9) notes that 4,355 MW of wind and solar had applied for non-firm
+connections
+12
+   https://www.gov.uk/government/collections/review-of-electricity-market-arrangements-
+rema
+13
+   See https://smarter.energynetworks.org/projects/ukpnt202/
+equivalent to showing that mc falls as V0 rises. At first sight, differentiating equation (1) by
+V0 would seem to deliver a positive value, which would lower the MCF, but that is to ignore
+the term dy*/dV0, which needs to be evaluated. In figure 4, if the angle BAC = α, then y* =
+α(V – V0), so equation (1) can be rewritten
+                              mc = ½α(V + V0).(V – V0)/V,                                     (18)
+so
+                                     d(mc)/dV0 = - αV0/V,                                     (19)
+which is negative. Consequently, MCF rises with V0 and LMCoE falls. The next question is
+whether this holds true for the more general non-linear case of figure 5.
+
+
+
+
+Figure 5 More realistic shape of curtailment schedule
+Source: As for Figure 3 but restricted to curtailed hours.
+
+        Figure 5 shows that for high levels of V0 the actual curtailment schedule
+corresponding to the VRE of figure 3 is more like a piece-wise linear schedule than the
+simple linear schedule of the curtailed section of figure 4. In this case the (negative) slope of
+the curtailment schedule at y* is α = y*/(V′ – V0), so y* = α(V′ – V0) < α(V - V0). Nevertheless,
+the same argument applies as in (19), leading to
+                         d(mc)/ dV0 = - ½α(2V0+V - V′)/V < 0,                                (20)
+as before. This gives:
+
+Proposition. If for unchanged VRE, average curtailment is reduced, then the Marginal
+Curtailment Factor increases and the LMCoE falls, lowering the marginal cost of VRE
+expansion.
+Proof. From (1), if V is unchanged and ac falls, then V0 rises. From (20) if V0 rises, then mc
+falls and as MCF = PCF – mc from (13), MCF rises and LMCoE falls (from 16).
+
+   7. Illustrations
+Table 1 below uses results from Newbery and Chyong (2025) to illustrate the huge difference
+between the different cost measures of each VRE depending on the extent to which surplus
+VRE can be exported (the trade cases), stored, and the extent to which neighbours are
+saturated with VRE (comparing the FES and NCEP trade cases). In all cases the simple
+LCoE measure is the same but the others vary as predicted according to changes in the
+average curtailment rate.
+
+Table 1 Capacity factors and levelised costs, pro-rata curtailment, £(2018)
+No trade no storage      OFF       ON       PV large   PV mid
+PCF                       60%       34%        11%        11%
+ACF                      58.3%     32.9%     10.7%      10.7%
+MCF                      49.1%     23.1%      9.6%       9.6%
+LCoE £/MWh               £43.04    £48.20    £40.64     £60.96
+LACoE £/MWh              £47.80    £53.51    £44.70     £67.05
+LMCoE £/MWh              £92.06    £66.80    £51.98     £77.97
+Trade no storage
+ACF                       58.8%    33.2%      10.8%     10.8%
+MCF                       51.1%    27.5%      10.3%     10.3%
+LACoE £/MWh              £43.90    £49.22    £41.39     £62.09
+LMCoE £/MWh              £50.36    £58.18    £43.40     £65.10
+FES trade w/storage
+ACF                      58.80%   33.20%     10.80%    10.80%
+MCF                      51.10%   27.50%     10.30%    10.30%
+LACoE £/MWh              £43.89    £49.18    £41.46     £62.19
+LMCoE £/MWh              £50.38    £58.13    £43.39     £65.08
+NECP trade w/storage
+ACF                      57.80%   32.60%     10.60%    10.60%
+MCF                      47.80%   26.50%      7.00%     7.00%
+LACoE £/MWh              £44.65    £50.01    £42.30     £63.45
+LMCoE £/MWh              £53.72    £60.06    £63.59     £95.38
+Note: FES trade is EU VRE under ESO (2024) FES Hydrogen Evolution, NCEP assumes the
+EU meets its 2030 NCEP targets, OFF is offshore wind, ON is onshore wind, PV is grid-
+scale PV, PV mid is mid-size PV (10-50 kW).
+Source: Cost data from BEIS (2023), other data from Newbery and Chyong (2025)14
+
+    8. Conclusions
+The three different measures of the cost of VRE are first, the levelised cost assuming no
+curtailment (relevant to developers if curtailment is compensated) but not necessarily
+efficient; second, the cost assuming average curtailment, relevant for merchant (unsubsidized)
+entry where transmission is built and paid for and is the only source of curtailment; and
+finally the cost assuming marginal curtailment, relevant where curtailment is a system-wide
+imperative. Regardless of this, unless complementary actions to reduce curtailment are
+combined with VRE expansion (as they are in the Queensland Renewable Energy Zones), the
+marginal cost of expanding a portfolio of different VRE of total capacity, V, (off- and on-
+
+
+14
+     I am indebted to Kong Chyong for permission to use this data
+shore wind and solar PV) depends on its marginal, not average curtailment. However, the
+marginal curtailment can be a large multiple (3 - 9) of average curtailment, and the marginal:
+average curtailment ratio (mc/ac) rises as ac falls, raising concerns that efforts to reduce
+curtailment may not reduce marginal costs.
+          The argument of this paper is that lowering average curtailment by increasing V0 (the
+level of VRE that first gives rise to curtailment) impacts marginal curtailment in two ways:
+first, it directly raises marginal curtailment, which is proportional to (V + V0) in the linear
+case, but second, it also reduces the number of curtailed hours, and as marginal curtailment is
+also proportional to curtailed hours, the paper proves that this second impact outweighs the
+first. The algebraic argument extends to the kinds of non-linearity found in practice.
+Lowering average curtailment does indeed reduce marginal curtailment and hence lowers the
+marginal cost of VRE.
+References
+BEIS, 2023. Electricity Generation Costs (2023), October
+        https://www.gov.uk/government/publications/electricity-generation-costs-2023
+DCCAE (Department of Communications, Climate Action and the Environment), 2019.
+        National Energy & Climate Plan 2021-2030 at https://ec.europa.eu/info/energy-
+        climate-change-environment/implementation-eu-countries/energy-and-climate-
+        governance-and-reporting/national-energy-and-climate-plans_en accessed 17/05/21.
+Eirgrid, 2022. Firm Access Methodology: Proposal. Technical Report, Eirgrid SEM22-068a,
+        https://www.semcommittee.com/publications/sem-22-068-firm-accessmethodology-
+        ireland-eirgrid-proposed-methodology .
+Eirgrid/SONI, 2023. Annual Renewable Energy Constraint and Curtailment Report, 2022.
+        Available at https://cms.eirgrid.ie/sites/default/files/publications/Annual-Renewable-
+        Constraint-and-Curtailment-Report-2022-V1.0.pdf
+Eirgrid, 2024. Firm Access 2024 Review Report, Final Technical Report at
+        https://cms.eirgrid.ie/sites/default/files/publications/Firm_Access_2024_Review_Fina
+        l_Report_June_2024.pdf accessed 24/01/25
+ESO 2024. Future Energy Scenarios at https://www.nationalgrideso.com/future-
+        energy/future-energy-scenarios accessed 1/8/24
+Heptonstall, P.J. and R. J. K. Gross, 2020. A systematic review of the costs and impacts of
+        integrating variable renewables into power grids. Nature Energy, at
+        https://doi.org/10.1038/s41560-020-00695-4
+Jansen, M., Staffell, I., Kitzing, L., Quoilin, S., Wiggelinkhuizen, E., Bulder, B., Riepin, I.,
+        and Müsgens, F., 2020. Offshore wind competitiveness in mature markets without
+        subsidy. Nat. Energy 5, 1–9. https://doi.org/10.1038/s41560-020-0661-2
+Newbery, D., 2023a. High wind and PV penetration: marginal curtailment and market failure
+        under “subsidy-free” entry, Energy Economics, 126 (107011), 1-11, doi:
+        https://doi.org/10.1016/j.eneco.2023.107011
+Newbery, D., 2023b. Designing efficient Renewable Electricity Support Schemes, The
+        Energy Journal, Vol. 44(3), 1-22., https://doi.org/10.5547/01956574.44.3.dnew
+Newbery, D. and D. Biggar, 2024. Marginal curtailment of wind and solar PV: transmission
+        constraints, pricing and access regimes for efficient investment, Energy Policy
+        Volume 191, August, 114206. https://doi.org/10.1016/j.enpol.2024.114206
+Newbery, D. and K. Chyong, 2025. Marginal Curtailment Spillovers in Renewable
+        Electricity Portfolios: Implications for Least-Cost Zero-Carbon Power Systems,
+        EPRG Working Paper, forthcoming.
+O’Shaughnessy, E., J.R. Cruce & K. Xu, 2020. Too much of a good thing? Global trends in
+        the curtailment of solar PV Solar Energy 208, 1068–1077
+        https://doi.org/10.1016/j.solener.2020.08.075
+SEM, 2024. TSO’s proposed definitions of Curtailment, Constraint and Energy Balancing
+        for Non-Synchronous Renewable Generation Units, SEM Committee SEM-24-044 at
+        https://www.semcommittee.com/publications/sem-24-044-tso-proposed-definitions-
+        curtailment-constraint-and-energy-balancing
+Simshauser, P. and D. Newbery, 2024. Non-firm vs priority access: On the long run average
+        and marginal costs of renewables in Australia, Energy Economics, 136, 107671.
+        https://doi.org/10.1016/j.eneco.2024.107671
+

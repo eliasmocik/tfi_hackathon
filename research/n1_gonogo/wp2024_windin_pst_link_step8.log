@@ -1,0 +1,21 @@
+year cols matching generators: 462 of 541 ; generators with a profile in kit week: 11
+load cols matching: 232 of 232
+p_min_pu clipped for 57 units
+PST link added, p_nom 93.0
+
+                                                         case  rating   lodf  intact_hours_over  intact_max  n1_hours_over  n1_share  n1_max  n1_overload_MWh
+         CG3 Flagford-Sligo 110 | loss Flagford-Srananagh 220   121.0  0.304                  0        96.4            228     0.208   198.3          47656.0
+  CG3 Flagford T2102 220/110 w1 | loss Flagford-Srananagh 220   125.0 -0.292                  0        42.1              0     0.000   119.4              0.0
+CG3 Flagford T 220/110 w1 (2nd) | loss Flagford-Srananagh 220   125.0 -0.281                  0        40.5              0     0.000   114.8              0.0
+      CG1 Letterkenny-Lenalea 110 | loss Binbane-CathFall 110   159.0 -1.000                  0        54.2              0     0.000    94.0              0.0
+     CG1 Letterkenny-Trillick 110 | loss Binbane-CathFall 110   123.0 -0.000                  0        85.6              0     0.000    85.6              0.0
+     CG1 Drumkeen-Letterkenny 110 | loss Binbane-CathFall 110   123.0 -0.528                  0        86.2              0     0.000   105.9              0.0
+         Srananagh 220/110 T w1 | loss Flagford-Srananagh 220   250.0  1.000                 89       339.7              0     0.000     0.0              0.0
+         Corderry-Srananagh 110 | loss Flagford-Srananagh 220   210.0  0.388                  0        49.2              0     0.000   166.7              0.0
+         CathFall-Srananagh 110 | loss Flagford-Srananagh 220   191.0  0.088                  0       155.8              0     0.000   125.9              0.0
+
+NW branches overloaded intact under unconstrained dispatch (share of hours):
+               branch                      from          to  rating  share_over  max_flow
+T5042-5041-50421-1-w1 star of 5042-5041-50421-1   SRANANAGH   250.0       0.081     339.7
+          1701-1981-1                 CATH_FALL CORRACLASSY   210.0       0.002     228.8
+         2521-66094-1                  FLAGFORD SLIABH BAWN   123.0       0.001     126.1

@@ -1,0 +1,202 @@
+loaded WP2033 all-island: 754 buses, 755 lines, 168 hours
+
+=== 3581-89516-1: 3581 LETTERKENNY -> 89516 STRA, binds 131 h ===
+                    station carrier   p_nom  shift_factor
+name                                                     
+68204-1    3581 LETTERKENNY    wind  20.000         0.513
+35877-6    3581 LETTERKENNY    wind   4.990         0.513
+35876-3    3581 LETTERKENNY    wind  11.880         0.513
+35875-1    3581 LETTERKENNY    wind  15.000         0.513
+35873-3    3581 LETTERKENNY    wind   3.400         0.513
+35872-2    3581 LETTERKENNY    wind   2.450         0.513
+35871-1    3581 LETTERKENNY    wind   2.550         0.513
+49971-1     4991 SORNE HILL    wind  31.500         0.513
+49977-1     4991 SORNE HILL    wind   0.600         0.513
+49978-2     4991 SORNE HILL    wind   1.400         0.513
+49979-3     4991 SORNE HILL    wind   0.300         0.513
+49992-1     4991 SORNE HILL    wind   2.100         0.513
+49974-6     4991 SORNE HILL    wind   4.250         0.513
+49976-3     4991 SORNE HILL    wind   9.200         0.513
+49975-4     4991 SORNE HILL    wind   4.200         0.513
+49973-2     4991 SORNE HILL    wind   7.400         0.513
+49972-7     4991 SORNE HILL    wind   2.300         0.513
+68195-1       5361 TRILLICK    wind   4.000         0.513
+53674-4       5361 TRILLICK    wind   9.990         0.513
+53673-3       5361 TRILLICK    wind  14.000         0.513
+53672-2       5361 TRILLICK    wind   4.800         0.513
+53671-1       5361 TRILLICK    wind   5.000         0.513
+68284-1       5361 TRILLICK    wind   6.900         0.513
+35971-1        3591 LENALEA    wind  30.500         0.486
+40771-1      4071 MEENTYCAT    wind  52.900         0.482
+40772-2      4071 MEENTYCAT    wind  18.060         0.482
+40773-3      4071 MEENTYCAT    wind  14.000         0.482
+15772-1   1571 ARDNAGAPPARY    wind   3.000         0.412
+15771-1   1571 ARDNAGAPPARY    wind   1.980         0.412
+68260-1   1571 ARDNAGAPPARY    wind  17.960         0.412
+68402-1     5191 TIEVEBRACK    wind  29.900         0.412
+51971-1   51911 CROAGHONAGH    wind  91.200         0.380
+51972-1   51911 CROAGHONAGH    wind  48.000         0.380
+68223-1        1341 BINBANE    wind   0.500         0.361
+68244-1        1341 BINBANE    wind   1.900         0.361
+68268-1        1341 BINBANE    wind   4.200         0.361
+68269-1        1341 BINBANE    wind  20.000         0.361
+68269-2        1341 BINBANE    wind   3.600         0.361
+68407-1        1341 BINBANE    wind   9.400         0.361
+13471-1        1341 BINBANE    wind   0.660         0.361
+17075-7        1341 BINBANE    wind   1.980         0.361
+13477-2        1341 BINBANE    wind   2.550         0.361
+13473-4        1341 BINBANE    wind   9.990         0.361
+13472-DW       1341 BINBANE    wind   2.550         0.361
+13474-1        1341 BINBANE    wind   6.000         0.361
+13475-6        1341 BINBANE    wind   7.650         0.361
+13476-3        1341 BINBANE    wind  11.900         0.361
+13479-9        1341 BINBANE    wind   3.400         0.361
+17077-8        1341 BINBANE    wind   0.020         0.361
+13478-1        1341 BINBANE    wind   3.000         0.361
+69197-1     17010 CATH FALL    wind  17.500         0.286
+17078-1     17010 CATH FALL    wind  37.500         0.286
+68101-1          4981 SLIGO    wind   6.000         0.128
+49871-1          4981 SLIGO    wind   4.080         0.128
+68087-1          4981 SLIGO    wind   7.650         0.128
+16371-1       1631 CORDERRY    wind   3.400         0.119
+16372-2       1631 CORDERRY    wind   3.400         0.119
+16373-3       1631 CORDERRY    wind   6.800         0.119
+16374-4       1631 CORDERRY    wind   7.650         0.119
+16375-1       1631 CORDERRY    wind   3.960         0.119
+16376-6       1631 CORDERRY    wind   4.950         0.119
+16377-1       1631 CORDERRY    wind   9.000         0.119
+16378-1       1631 CORDERRY    wind   1.598         0.119
+16379-2       1631 CORDERRY    wind   0.290         0.119
+16382-1       1631 CORDERRY    wind  10.225         0.119
+16385-1       1631 CORDERRY    wind  16.350         0.119
+16392-1       1631 CORDERRY    wind  11.980         0.119
+19371-1       1931 CUNGHILL    wind  23.750         0.112
+19372-2       1931 CUNGHILL    wind  11.050         0.112
+68254-1        4371 GLENREE    wind   2.650         0.093
+68312-1        4371 GLENREE    wind  12.500         0.093
+43771-1        4371 GLENREE    wind  28.000         0.093
+43774-2        4371 GLENREE    wind  34.150         0.093
+40471-1            4041 MOY    wind   6.000         0.080
+
+per-station |SF|, sorted (look for the step):
+station
+3581 LETTERKENNY     0.513
+4991 SORNE HILL      0.513
+5361 TRILLICK        0.513
+3591 LENALEA         0.486
+4071 MEENTYCAT       0.482
+1571 ARDNAGAPPARY    0.412
+5191 TIEVEBRACK      0.412
+51911 CROAGHONAGH    0.380
+1341 BINBANE         0.361
+17010 CATH FALL      0.286
+4981 SLIGO           0.128
+1631 CORDERRY        0.119
+1931 CUNGHILL        0.112
+4371 GLENREE         0.093
+4041 MOY             0.080
+
+constraint group at |SF| >= 5%: ['ARDNAGAPPARY', 'BINBANE', 'CATH FALL', 'CORDERRY', 'CROAGHONAGH', 'CUNGHILL', 'GLENREE', 'LENALEA', 'LETTERKENNY', 'MEENTYCAT', 'MOY', 'SLIGO', 'SORNE HILL', 'TIEVEBRACK', 'TRILLICK']
+constraint group by biggest step (EirGrid's rule), cut after 17010 CATH FALL at |SF| 0.29: ['ARDNAGAPPARY', 'BINBANE', 'CATH FALL', 'CROAGHONAGH', 'LENALEA', 'LETTERKENNY', 'MEENTYCAT', 'SORNE HILL', 'TIEVEBRACK', 'TRILLICK']
+  overlap with EirGrid NW Group 1: ['ARDNAGAPPARY', 'BINBANE', 'LENALEA', 'SORNE HILL', 'TRILLICK']; EirGrid-only []; ours-only ['CATH FALL', 'CORDERRY', 'CROAGHONAGH', 'CUNGHILL', 'GLENREE', 'LETTERKENNY', 'MEENTYCAT', 'MOY', 'SLIGO', 'TIEVEBRACK']
+  overlap with EirGrid NW Group 2: ['MEENTYCAT']; EirGrid-only []; ours-only ['ARDNAGAPPARY', 'BINBANE', 'CATH FALL', 'CORDERRY', 'CROAGHONAGH', 'CUNGHILL', 'GLENREE', 'LENALEA', 'LETTERKENNY', 'MOY', 'SLIGO', 'SORNE HILL', 'TIEVEBRACK', 'TRILLICK']
+
+=== 3691-4041-1: 3691 LAGHTANVACK -> 4041 MOY, binds 5 h ===
+                    station carrier   p_nom  shift_factor
+name                                                     
+40471-1            4041 MOY    wind   6.000        -0.263
+43771-1        4371 GLENREE    wind  28.000        -0.217
+68312-1        4371 GLENREE    wind  12.500        -0.217
+43774-2        4371 GLENREE    wind  34.150        -0.217
+68254-1        4371 GLENREE    wind   2.650        -0.217
+19372-2       1931 CUNGHILL    wind  11.050        -0.144
+19371-1       1931 CUNGHILL    wind  23.750        -0.144
+49871-1          4981 SLIGO    wind   4.080        -0.086
+68101-1          4981 SLIGO    wind   6.000        -0.086
+68087-1          4981 SLIGO    wind   7.650        -0.086
+16375-1       1631 CORDERRY    wind   3.960        -0.070
+16377-1       1631 CORDERRY    wind   9.000        -0.070
+16385-1       1631 CORDERRY    wind  16.350        -0.070
+16382-1       1631 CORDERRY    wind  10.225        -0.070
+16379-2       1631 CORDERRY    wind   0.290        -0.070
+16378-1       1631 CORDERRY    wind   1.598        -0.070
+16371-1       1631 CORDERRY    wind   3.400        -0.070
+16376-6       1631 CORDERRY    wind   4.950        -0.070
+16374-4       1631 CORDERRY    wind   7.650        -0.070
+16373-3       1631 CORDERRY    wind   6.800        -0.070
+16372-2       1631 CORDERRY    wind   3.400        -0.070
+16392-1       1631 CORDERRY    wind  11.980        -0.070
+17078-1     17010 CATH FALL    wind  37.500        -0.052
+69197-1     17010 CATH FALL    wind  17.500        -0.052
+68223-1        1341 BINBANE    wind   0.500        -0.047
+68244-1        1341 BINBANE    wind   1.900        -0.047
+68268-1        1341 BINBANE    wind   4.200        -0.047
+68269-1        1341 BINBANE    wind  20.000        -0.047
+68269-2        1341 BINBANE    wind   3.600        -0.047
+68407-1        1341 BINBANE    wind   9.400        -0.047
+13472-DW       1341 BINBANE    wind   2.550        -0.047
+13471-1        1341 BINBANE    wind   0.660        -0.047
+13473-4        1341 BINBANE    wind   9.990        -0.047
+13474-1        1341 BINBANE    wind   6.000        -0.047
+13475-6        1341 BINBANE    wind   7.650        -0.047
+13476-3        1341 BINBANE    wind  11.900        -0.047
+13477-2        1341 BINBANE    wind   2.550        -0.047
+17077-8        1341 BINBANE    wind   0.020        -0.047
+13478-1        1341 BINBANE    wind   3.000        -0.047
+13479-9        1341 BINBANE    wind   3.400        -0.047
+17075-7        1341 BINBANE    wind   1.980        -0.047
+51972-1   51911 CROAGHONAGH    wind  48.000        -0.046
+51971-1   51911 CROAGHONAGH    wind  91.200        -0.046
+68402-1     5191 TIEVEBRACK    wind  29.900        -0.044
+68260-1   1571 ARDNAGAPPARY    wind  17.960        -0.044
+15771-1   1571 ARDNAGAPPARY    wind   1.980        -0.044
+15772-1   1571 ARDNAGAPPARY    wind   3.000        -0.044
+40772-2      4071 MEENTYCAT    wind  18.060        -0.040
+40773-3      4071 MEENTYCAT    wind  14.000        -0.040
+40771-1      4071 MEENTYCAT    wind  52.900        -0.040
+35971-1        3591 LENALEA    wind  30.500        -0.040
+49974-6     4991 SORNE HILL    wind   4.250        -0.039
+49971-1     4991 SORNE HILL    wind  31.500        -0.039
+49972-7     4991 SORNE HILL    wind   2.300        -0.039
+49973-2     4991 SORNE HILL    wind   7.400        -0.039
+49978-2     4991 SORNE HILL    wind   1.400        -0.039
+49977-1     4991 SORNE HILL    wind   0.600        -0.039
+49976-3     4991 SORNE HILL    wind   9.200        -0.039
+49992-1     4991 SORNE HILL    wind   2.100        -0.039
+49979-3     4991 SORNE HILL    wind   0.300        -0.039
+49975-4     4991 SORNE HILL    wind   4.200        -0.039
+53674-4       5361 TRILLICK    wind   9.990        -0.039
+68284-1       5361 TRILLICK    wind   6.900        -0.039
+53673-3       5361 TRILLICK    wind  14.000        -0.039
+68195-1       5361 TRILLICK    wind   4.000        -0.039
+53672-2       5361 TRILLICK    wind   4.800        -0.039
+53671-1       5361 TRILLICK    wind   5.000        -0.039
+35875-1    3581 LETTERKENNY    wind  15.000        -0.039
+68204-1    3581 LETTERKENNY    wind  20.000        -0.039
+35873-3    3581 LETTERKENNY    wind   3.400        -0.039
+35872-2    3581 LETTERKENNY    wind   2.450        -0.039
+35871-1    3581 LETTERKENNY    wind   2.550        -0.039
+35877-6    3581 LETTERKENNY    wind   4.990        -0.039
+35876-3    3581 LETTERKENNY    wind  11.880        -0.039
+
+per-station |SF|, sorted (look for the step):
+station
+4041 MOY             0.263
+4371 GLENREE         0.217
+1931 CUNGHILL        0.144
+4981 SLIGO           0.086
+1631 CORDERRY        0.070
+17010 CATH FALL      0.052
+1341 BINBANE         0.047
+51911 CROAGHONAGH    0.046
+5191 TIEVEBRACK      0.044
+1571 ARDNAGAPPARY    0.044
+4071 MEENTYCAT       0.040
+3591 LENALEA         0.040
+4991 SORNE HILL      0.039
+5361 TRILLICK        0.039
+3581 LETTERKENNY     0.039
+
+constraint group at |SF| >= 5%: ['CATH FALL', 'CORDERRY', 'CUNGHILL', 'GLENREE', 'MOY', 'SLIGO']
+constraint group by biggest step (EirGrid's rule), cut after 4371 GLENREE at |SF| 0.22: ['GLENREE', 'MOY']
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q5_shift_factors.csv

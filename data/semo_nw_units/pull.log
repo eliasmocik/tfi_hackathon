@@ -1,0 +1,37 @@
+BM-101 GU_400021 4274
+BM-101 GU_403990 4274
+BM-101 GU_403750 4274
+BM-101 GU_406560 4274
+BM-101 GU_405130 4274
+BM-101 GU_403760 4274
+BM-101 GU_403880 4274
+BM-101 GU_401280 4274
+BM-101 GU_403400 4274
+BM-101 GU_400950 4274
+BM-101 GU_402160 4274
+BM-101 GU_402200 4274
+BM-101 GU_400550 4274
+BM-101 GU_404630 4274
+BM-101 GU_400070 4274
+BM-101 GU_405870 4274
+BM-101 GU_401730 4274
+BM-101 GU_401720 4274
+BM-101 GU_405930 4274
+BM-101 GU_404480 4274
+BM-101 GU_400940 4274
+BM-101 GU_403840 4274
+BM-101 GU_403800 4274
+BM-101 GU_404560 4274
+BM-101 GU_403900 0
+BM-101 GU_400030 4274
+BM-101 GU_401190 0
+BM-101 GU_404930 4274
+BM-101 GU_400020 0
+BM-101 GU_407660 4274
+Traceback (most recent call last):
+  File "/Users/elias/Desktop/aiOS/tfi_hackathon/data/semo_nw_units/pull.py", line 28, in <module>
+    rows = pull(report, u)
+  File "/Users/elias/Desktop/aiOS/tfi_hackathon/data/semo_nw_units/pull.py", line 21, in pull
+    if page >= j["pagination"]["totalPages"]: break
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'totalPages'

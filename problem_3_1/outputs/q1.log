@@ -1,0 +1,20 @@
+loaded WP2033 all-island: 754 buses, 755 lines, 168 hours
+
+North-West branches at their rating (of 168 hours):
+                          from          to  rating_mva  hours_at_rating
+branch                                                                 
+3581-89516-1  3581 LETTERKENNY  89516 STRA       123.0              131
+3691-4041-1   3691 LAGHTANVACK    4041 MOY       192.0                5
+
+baseline NW renewable dispatch-down: 22,432 MWh
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q1_binding_hours.csv
+  3581-89516-1 x0.8 -> 28,023 MWh dispatched down
+  3581-89516-1 x0.9 -> 25,126 MWh dispatched down
+  3581-89516-1 x1.1 -> 22,046 MWh dispatched down
+  3581-89516-1 x1.2 -> 22,046 MWh dispatched down
+  3691-4041-1 x0.8 -> 22,220 MWh dispatched down
+  3691-4041-1 x0.9 -> 22,319 MWh dispatched down
+  3691-4041-1 x1.1 -> 22,457 MWh dispatched down
+  3691-4041-1 x1.2 -> 22,456 MWh dispatched down
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q1_rating_sweep.csv
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q1_constrained_lines.png

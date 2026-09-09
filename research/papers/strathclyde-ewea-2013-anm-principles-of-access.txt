@@ -1,0 +1,476 @@
+         THE COST OF ACTIVE NETWORK MANAGEMENT SCHEMES AT DISTRIBUTION LEVEL
+
+
+         THE COST OF ACTIVE NETWORK MANAGEMENT SCHEMES AT
+                          DISTRIBUTION LEVEL
+
+                                      Laura Kane1, Graham Ault2
+                          laura.kane@strath.ac.uk, graham.ault@strath.ac.uk
+    1Wind Energy Systems CDT, University of Strathclyde, Department of Electronic and Electrical
+
+                 Engineering, Royal College Building, R3.36, 204 George St, Glasgow
+    2University of Strathclyde, Department of Electronic and Electrical Engineering, Royal College
+
+                               Building, R3.16, 204 George St, Glasgow
+
+Summary
+
+The growth of wind generation in distribution networks is leading to the development of Active
+Network Management (ANM) strategies. ANM systems aim to increase the capacity of renewable and
+distributed generation (DG) that can connect to the network. In addition to DG, ANM schemes can
+also include storage devices and Demand Side Management (DSM) strategies.
+
+Currently ANM schemes are mainly part of network research and development programmes, funded
+through network innovation schemes. In future, ANM schemes will need to cover the costs of
+establishing such a scheme through payments from the network owners and the users of the network.
+
+This paper discusses the current charging arrangements which account for network upgrades and the
+access arrangements for wind farms connecting to networks which are close to capacity. The Orkney
+ANM scheme is used as a case study, where the costs of the implemented ANM scheme are
+compared to conventional network upgrades.
+
+In order to run ANM as a ‘business as usual’ case, there must be a way in which to recover the costs
+incurred in implementing and operating an ANM scheme on the network. These costs could be
+recovered through Use of System (UoS) charging, and there is an opportunity for domestic customers
+participating in an ANM scheme (through Demand Side Management, for example) to further reduce
+electricity bills by providing ancillary services to the network.
+
+ANM may increase the cost of electricity for domestic customers, however this increase can be
+considered substantially less than the cost incurred for significant network upgrades.
+
+1    Introduction
+
+Recent reviews, consultations, and developments such as RIIO-T1 [1] by the gas and electricity
+regulator, Ofgem have placed a strong emphasis on developing innovative solutions in the way in
+which they manage networks. Active Network Management (ANM) is just one of these innovative
+solutions. ANM is the use of IT, automation and control to manage grid constraints associated with
+the integration of distributed generation. ANM can be used to manage energy producing or
+consuming devices to resolve network constraints on both Transmission and Distribution systems.
+
+As part of ANM schemes, the network owner/operator may be required to invest in additional network
+management equipment. This may include
+
+       Communications
+       Controllers - for individual users of the network – both generator and demand, and at
+        domestic and commercial level
+       Additional Operation and Maintenance costs
+       Staff – either additional staff, or training existing staff
+
+
+
+
+                                                  1
+          THE COST OF ACTIVE NETWORK MANAGEMENT SCHEMES AT DISTRIBUTION LEVEL
+
+
+The additional costs associated with ANM can be compared to the costs associated with upgrading
+the physical assets on the network i.e. increasing capacity of existing lines, or the addition of new
+circuits.
+
+This paper discusses the format ANM contracts for wind generators might take in a ‘business as
+usual’ case, the benefits of utilising ANM schemes to delay the cost of network upgrades, and the
+mechanisms through which the costs of ANM may be recovered and
+
+2    Access Arrangements and ANM Schemes
+
+Both the UK Government and the Scottish Government have targets [2, 3] to meet in the coming
+decades with regard to clean energy resources. Delays to network upgrades would result in a large
+volume of renewable technologies, such as wind generation, prevented from connecting to the
+network. ANM is one method of facilitating connection of non-firm generation in the interim while
+waiting for additional network capacity.
+
+The Register of Active Network Management Pilots, Trials, Research, Development and
+Demonstration Activities was published in 2008 [4] and lists all projects related to ANM systems, from
+research projects through to full scale deployment. Network issues that can be resolved through the
+use of ANM include voltage control, power flow management and frequency issues.
+
+The funds for ANM projects typically come through regulator and government funding. The Low
+Carbon Network Fund (LCNF) [5] was introduced by Ofgem in 2010. The fund provides support to
+DNOs in order to allow them to test new technology, and trial operational and commercial
+arrangements. The aim of the LCNF is to improve knowledge and understanding of DNOs and try out
+new and high risk technologies that will help in the move towards a low carbon economy.
+
+Registered Power Zones [6] are areas of the National Grid network which have specifically
+designated for research and development purposes. They are used to try and test out new
+technologies which will aid the connection of DG at distribution level. There are three RPZ in the UK –
+Skegness and The Fen, Orkney Islands and Marsham primary.
+
+RPZ and the LCNF are of key importance for the development and deployment of smart grid systems.
+
+3    Types of Access Arrangements
+
+In order to increase the level of generation connected to a network, that is close to capacity, networks
+can offer a ‘non-firm’ connection arrangement where the generator will be asked to reduce output at
+times when there are constraints on the network e.g. periods of low demand and high generation.
+There is no compensation given for curtailment of non-firm generation.
+
+The current method of access arrangement for multiple non-firm generators connected to an ANM
+schemes, in Shetland and Orkney is ‘Last in First Off’ (LIFO) [7, 8]. In this arrangement the newest
+generator or last to connect will be first to be asked to curtail should the situation arise. This method is
+simple to implement, transparent and will not have a negative effect on generators previously
+connected to the network. However, this method may not be the most efficient way to manage the
+network, both electrically and economically.
+
+Other options for access arrangements are discussed in [9] and [10]. A number of these are listed
+below
+
+       Pro-rata: All generators are curtailed equally, in either absolute or relative terms
+       Shedding Rota: Generators curtailed according to a rota defined by agreement between the
+        System Operator and participants.
+
+
+
+                                                     2
+         THE COST OF ACTIVE NETWORK MANAGEMENT SCHEMES AT DISTRIBUTION LEVEL
+
+
+       Curtailment Market: Generators are curtailed according to a market system, such as
+        submitted bids into a balancing mechanism.
+       Greatest Technical Benefit
+       Greatest Carbon Benefit
+
+Access Arrangements can be split into two main groups, Market Arrangements, and Non Market
+Arrangements. In all cases, the network operator must assess the impact of the arrangements in
+terms of fairness, transparency, compliance with current grid codes, flexibility, robustness and their
+ability to ensure a safe, secure and reliable power system. The impact of the access arrangement on
+generator long term profit must also be considered, as this will influence the ability of the developer to
+raise funds for the project from a lending institution.
+
+Non-Market arrangements are arrangements which use predetermined rules to curtail non-firm
+generation connected a network. These rules are decided by the DNO and generators wishing to
+connect to the network must adhere to these rules. Generators will have no control over the order of
+curtailment. Non-market arrangements include LIFO, Pro-Rata, rota and technical best. These
+arrangements are typically the most straight forward to establish on the network and do not require
+any changes to grid codes etc.
+
+Market arrangements pass some of the control back to generators in terms of their ability to influence
+the order of curtailment through monetary bids and offers. This could take the form of a curtailment
+market where participants bid to remain connected, or be curtailed during a period of congestion. Or
+participants could bid for a location on the curtailment rota. The creation of market arrangements may
+require a change to grid codes and they may also encourage incumbent generators to enter the
+curtailment market alongside non-firm wind generators.
+
+4    Operational and Installation costs of ANM
+
+Incentive schemes and research funding has encouraged the deployment of ANM schemes in a
+number of distribution networks. ANM is considered a significant alternative to network
+reinforcements, mainly due to the difference in costs between the two.
+
+The Aura-NMS (Autonomous Regional Active Network Management System) [11] is a research
+consortium consisting of seven universities, two distribution network operators and ABB. The
+research focuses on investigating real time control algorithms for voltage control, power flow
+management and restoration. One of the functions of AuRA-NMS is to automatically detect and offer
+solutions to thermal overloads which can be caused by the unpredictability of renewable distributed
+generation. AuRA-NMS has developed control techniques which can be applied to any network
+topology i.e. all techniques developed are flexible.
+
+In the cost-benefit analysis of Aura-NMS [12], a comparison of voltage control and constraint
+management techniques proposed by AuRA-NMS and the existing techniques used in a passive
+network is made. DG is added to two nodes on a small 33kV distribution network, and the changes in
+voltage and constraints noted. A cost is assigned to voltages in terms of the number of tap changes
+required by transformers. The cost of constraints is priced per MWh. The paper concludes that the
+value of the ANM increases as the level of DG connected to the network increases.
+
+Further work by the authors in [13], has shown that network investment can be deferred or reduced by
+deploying an ANM scheme (AuRA-NMS in this case). The network planning method proposed by the
+authors considers only the reinforcement on circuits. The objective of the model is to minimise the
+total cost of network investment and curtailment of wind. Two operational conditions (each with
+different renewable generation outputs) are considered
+
+       Peak load with zero output of renewable generation
+
+
+                                                    3
+            THE COST OF ACTIVE NETWORK MANAGEMENT SCHEMES AT DISTRIBUTION LEVEL
+
+
+          Minimum load with renewable generation at a maximum
+
+The problem is solved iteratively using Benders’ decomposition method. The curtailment of DG output
+is optimised when the security constraint, N-1 contingency, is violated, and loss of curtailment
+calculated based on the output duration curve (obtained from historical data on wind speed and the
+power curve).
+
+The results of the simulation have shown that by installing AuRA-NMS, the network reinforcements of
+the network in question can be reduced from four circuits to two. The cost of the ANM scheme, plus
+the two circuits is at a lower cost than the construction of four circuits based on an electricity price of
+£50/MWh and the cost of ANM scheme being £700k. A sensitivity analysis was carried out to assess
+the impact of changing costs of electricity and ANM schemes and it was found that the cost of the
+ANM scheme was still the least cost solution.
+
+The authors have assumed that the cost of ANM would be provided by an ‘innovation fund’ however
+as ANM schemes become the ‘business as usual’ case, the funding for installation and running of the
+ANM will need to be provided by stakeholders involved in the system e.g. generators, demand
+customers, network owners and operators.
+
+Similar results are demonstrated in [14] where the value of the ANM increases as the volume of DG
+connection to the system increases. A comparison of different ANM schemes highlights the
+importance of generation curtailment (when used with voltage control) to minimise losses on the
+network, and reduce investment costs. The exclusion of generation curtailment would result in larger
+Static Var Compensator (SVC) required for voltage control on the network. To contrast, the exclusion
+of SVC from the ANM scheme reduces losses and investment costs when compared with the use of
+both curtailment and SVC. However, this will increase curtailment on the network – which could result
+in higher operational costs of compensation as part of the contractual arrangement.
+
+5     Connection and System Charging
+
+5.1       Transmission
+
+The purpose of system charging is to allow the transmission owner (National Grid in England and
+Wales, and Scottish Hydro Electrics Transmission Ltd (SHETL) and Scottish Power Transmission
+(SPT) in Scotland) or system operator (National Grid) to recover the costs of the service they provide
+at a reasonable rate of return.
+
+Currently, all users (both generation and demand) who wish to connect to the GB Main Integrated
+Transmission System (MITS) must pay a Connection Charge, a Transmission Network Use of System
+(TNUoS) Charge and a Balancing Service Use of System (BSUoS) Charge.
+
+The Connection Charge is related to the costs of assets installed in order for that user to be able to
+connect to the transmission system. These costs can include: civil costs, engineering costs, land
+clearance and preparation costs.
+
+The TNUoS Charge covers the cost of installing and maintaining the National Electricity Transmission
+System (NETS) i.e. the physical connection costs which is not specific to the connection site, which is
+covered by the connection charge The Maximum Allowed Revenue (MAR) is set by OFGEM during
+the pricing control review for each transmission network operator (TNO). The recovery of TNUoS
+revenue is split between generation and demand 27% to 73% respectively.
+
+The BSUoS Charge allows the GB System Operator to recover the costs incurred in balancing the
+transmission system i.e. ensuring safe and secure supply to end users. National Grid is incentivised
+by Ofgem, the gas and electricity regulator, to acquire these balancing services in a cost effective
+
+
+
+                                                     4
+            THE COST OF ACTIVE NETWORK MANAGEMENT SCHEMES AT DISTRIBUTION LEVEL
+
+
+manner. The Statement of the Balancing Services Use of System charging methodology can be found
+within the Use of System Charging Methodology (page 72 onwards) [15].
+
+5.2       Distribution
+
+Similarly to transmission network users, distribution network users must pay Connection charges and
+Distribution Network Use of System (DNUoS) charges.
+
+Depending the location of size of the connectee, the DNO may have to modify an existing part of the
+network in order to accommodate the generation connection e.g. reinforcements to the network. In
+addition to charges for network modifications, charges can include
+
+          Connection application fees
+          System/feasibility/fault level studies
+          Provision of wayleaves
+          Meetings with DNO or site visits
+          Administration
+          Metering charges
+
+Costs of connection paid in full by the connectee include shallow connection costs, e.g. any additional
+assets required to connect into the network. Any reinforcement required to the shared distribution
+network is split between the DNO and the connectee. However, reinforcement costs in excess of
+£200/kW will be charged to the connectee in full.
+
+The split of costs between connectee and DNO is calculated using Cost Apportionment Facts (CAFs).
+There are two variations of CAFs calculations, Security CAF and Fault Level CAF. The choice is
+dependent on the requirement for reinforcement.
+
+The Common Distribution Charging Methodology (CDCM) [16] is a common tariff structure used in a
+14 DNO areas to set Use of System tariffs. The aim of CDCM is to encourage DNOs to make the
+most efficient use of network capacity and to reward network users (both generation and demand)
+who manage their import/export patterns to avoid an increase in power flows during peak periods
+
+DNUoS is categorised by the voltage level at which generation is connected, and the type of meter
+which is installed (Half Hourly (HH) or Non Half Hourly (NHH)). DNUoS is charged to Electricity
+Suppliers by the DNO for using the network to transport electricity – this cost can then be passed
+through to the customer. Generation is also subject to UoS charging, however these charges are
+currently negative i.e. the generator is seen as negative demand and receives UoS credits.
+
+Under new CDCM for distribution networks, generators who are connected under a non-firm
+arrangement have a deemed capacity of 0MW, and therefore this section of the UoS charges will be
+zero. Non-firm generators are still required to pay for connection charges in order to obtain connection
+to the network.
+
+6     Case Study – Orkney ANM Scheme
+
+A report produced by KEMA [17] on the Orkney ANM scheme highlights the project successes and
+problems encountered during the creation of the scheme.
+
+The Orkney ANM project was implemented as an alternative solution to network reinforcements. The
+reinforcements were in the form of a new subsea cable linking Orkney to mainland GB grid, which
+would have cost an estimated £30million. Regardless of the construction of the subsea cable, there
+would still be local constraints on the network which would require some form of constraint
+management.
+
+
+
+                                                    5
+         THE COST OF ACTIVE NETWORK MANAGEMENT SCHEMES AT DISTRIBUTION LEVEL
+
+
+The total cost of the ANM scheme is £500k. Project developers remained interested in connecting to
+ANM scheme regardless of projected curtailment figures.
+
+From inception, the Orkney ANM scheme took 6 years to reach operational stage. This lengthy period
+was the result of advanced modelling required for generators, extensive testing, and external causes
+such as planning consent and construction work.
+
+In order to create the real time ANM system, the appropriate protection systems had to be installed,
+similarly SCADA systems and the controllers and monitors required to operate the ANM system had
+to be installed on the network.
+
+One of the consultancies involved in the research and development of the Orkney ANM scheme now
+holds a contract with the network to analyse and monitor the total curtailment of the generators
+connected to the network, and to validate the estimates made during connection agreements. The
+same consultancy also provided training packages for the network control room staff.
+
+The one of the key lessons learned from the Orkney ANM Scheme was the importance of
+communication systems. The communications for each curtail-able site was the responsibility of the
+generator. While some generators installed a more reliable VHF radio link, there were problems with
+existing radio links which operated at a lower frequency. When the communication links between
+generators and network were down, generators were automatically tripped off the system to prevent
+any network problems. However initial due to unreliability of some communication links, this has led to
+large levels of unnecessary curtailment for some generators.
+
+In the future, the network could set minimum levels of technology which are required for the ANM
+schemes in order to avoid unnecessary curtailment.
+
+7   Discussion
+
+The cost of ANM has been demonstrated to be lower than traditional network reinforcements.
+However the mechanism by which costs are recovered by the network needs to be defined.
+
+As discussed in Section 5, the costs of network reinforcements are recovered through a combination
+of connection and use of system charging depending on the voltage level of the connection. To date,
+the cost of ANM schemes has been largely funded through network research and development funds,
+and schemes such as RPZ and LCNF. As ANM schemes become a ‘business as usual’ model, a
+mechanism by which the network can recover the costs of installing, operating and maintaining an
+ANM system must be established. The model shown in Figure 1 demonstrates the flow of money and
+services between a number of key stakeholders in an ANM scheme. This is a format developed by
+Oxford Business School [18] and has been used to show similar transactions for distribution network
+market structures.
+
+The base case against which all flows are compared is a standard network configuration, without the
+inclusion of any network management of incentives to encourage renewable energy and most
+domestic electricity users sourcing power from vertically integrated suppliers and large centralised
+generators.
+
+In Figure 1, the installation of an ANM scheme on the network allows more wind to connect to the
+network. This reduces the volume of electricity provided by conventional generating methods and
+therefore reduces the emissions of the distribution network.
+
+The cost of the ANM Kit is paid for by the Wind Farm, which will experience lower connection costs
+than that of typical connection agreements.
+
+
+
+
+                                                   6
+         THE COST OF ACTIVE NETWORK MANAGEMENT SCHEMES AT DISTRIBUTION LEVEL
+
+
+There will be higher DNUoS charges due to an increase in Network Equipment and management, this
+however, is lower the the costs which would be incurred if Network Reinforcements were taken
+forward.
+
+
+
+
+  Figure 1: Business model of ANM scheme (Based on models produced by Supergen HiDef
+                       Distributed Energy Business Modelling [18])
+
+
+
+
+                        Figure 2: Legend for Business Model in Figure 1.
+
+In addition to the basic recovery of costs for the construction, operation and maintenance of the ANM
+scheme, there is the option to create ancillary services by incentivising domestic Demand Side
+
+
+                                                  7
+         THE COST OF ACTIVE NETWORK MANAGEMENT SCHEMES AT DISTRIBUTION LEVEL
+
+
+Management (DDSM). The installation of storage devices in the homes of domestic customers is
+being trialled by Scottish & Southern Electric (SSE) for the Northern Isles New Energy Solutions
+(NINES) project [8]. As part of this project, SSE are also required to come up with a method of
+incentivising the uptake of storage devices in the homes of domestic customers and a mechanism
+through which to distribute the incentive.
+
+8    Conclusion
+
+Changes to connection arrangements for generators connecting to ANM schemes could increase
+customer bills; however this increase will be a fraction of the cost which would be incurred as a result
+of network upgrades.
+
+All costs for creating and managing ANM schemes could be recouped through Use of System (UoS)
+charging by introduction of a market for ancillary services. This market would be simpler than market
+at transmission level. These charges filter down to consumer tariffs. Customers would be entitled to
+‘rewards’ based on their level of participation in ANM schemes.
+
+DG would participate in a curtailment market where generators bid on a day-ahead basis for access
+to the network during constraints. All costs are recovered during a settlement period which would see
+generators pay or be paid through UoS monthly payments.
+
+There is potential for ANM schemes to increase consumer bills, however there will be options
+available for customers to participate more actively in ANM schemes through the use of demand-side
+management which can result in rewards for customers, and possible reductions in energy bills.
+
+
+
+
+                                                    8
+          THE COST OF ACTIVE NETWORK MANAGEMENT SCHEMES AT DISTRIBUTION LEVEL
+
+
+9      References
+
+[1]      Ofgem. (2012, 15th January). RIIO-T1 (first transmission price control review under the RIIO
+         model) Available: http://www.ofgem.gov.uk/Networks/Trans/PriceControls/RIIO-
+         T1/Pages/RIIO-T1.aspx
+[2]      DECC. (2008, 15th January). Carbon Budgets. Available:
+         http://www.decc.gov.uk/en/content/cms/emissions/carbon_budgets/carbon_budgets.aspx
+[3]      Scottish Government. (2009). Climate Change (Scotland) Act 2009. Available:
+         http://www.scotland.gov.uk/Topics/Environment/climatechange/scotlands-
+         action/climatechangeact
+[4]      R. A. F. Currie and G. W. Ault, "Register of Active Management Pilots, Trials, Research,
+         Development and Demonstration Activities," 2006.
+[5]      Ofgem. (2012, 7th September). Low Carbon Networks Fund. Available:
+         http://www.ofgem.gov.uk/networks/elecdist/lcnf/pages/lcnf.aspx
+[6]      Ofgem. (2012, 7th September). Innovation. Available:
+         http://www.ofgem.gov.uk/Networks/Techn/NetwrkSupp/Innovat/Pages/Innvtion.aspx
+[7]      R. A. F. Currie, G. W. Ault, C. E. T. Foote, N. M. McNeill, and A. K. Gooding, "Smarter ways to
+         provide grid connections for renewable generators," in Power and Energy Society General
+         Meeting, 2010 IEEE, 2010, pp. 1-6.
+[8]      Scottish and Southern Energy Power Distribution. (2012, 13th November). Northern Isles
+         New Energy Solutions (NINES). Available: http://www.ssepd.co.uk/News/NINES/
+[9]      R. A. F. Currie, O'Neill, B., Foote, C., Gooding, A., Ferris,R., Douglas, J. , "Commercial
+         Arrangements to facilitate active network management," in CIRED 21st International
+         Conference on Electricity Distribution, Frankfurt, 2011.
+[10]     ESB National Grid, "Options for Operational Rules to Curtail Wind Generation," CER/04/247,
+         2004.
+[11]     E. M. Davidson, M. J. Dolan, G. W. Ault, and S. D. J. McArthur, "AuRA-NMS: An autonomous
+         regional active network management system for EDF energy and SP energy networks," in
+         Power and Energy Society General Meeting, 2010 IEEE, 2010, pp. 1-6.
+[12]     H. Zechun and L. Furong, "Cost-Benefit Analyses of Active Distribution Network
+         Management, Part I: Annual Benefit Analysis," Smart Grid, IEEE Transactions on, vol. 3, pp.
+         1067-1074, 2012.
+[13]     H. Zechun and L. Furong, "Cost-Benefit Analyses of Active Distribution Network
+         Management, Part II: Investment Reduction Analysis," Smart Grid, IEEE Transactions on, vol.
+         3, pp. 1075-1081, 2012.
+[14]     D. Papadaskalopoulos, E. Manitsas, P. Mancarella, and G. Strbac, "Optimization of operating
+         and investment costs of active management deployment in distribution networks," in
+         PowerTech, 2011 IEEE Trondheim, 2011, pp. 1-8.
+[15]     National Grid, "The Statement of Use of System Charging Methodology," April 2010.
+[16]     Ofgem, "Electricity Distribution Structure of Charges: the common distribution charging
+         metholody at lower voltages," Decision Document 20th November 2009.
+[17]     KEMA, "Smart Grid Strategic Review: The Orkney Islands Active Network Management
+         Scheme," 8th March 2012.
+[18]     Environmental Change Institute at University of Oxford. (2011, 2011). Supergen HiDEF
+         Distributed Energy Business Modeling. Available: http://distributed-
+         energy.ouce.ox.ac.uk/debmvefsplash.php#
+
+
+
+
+                                                    9
+

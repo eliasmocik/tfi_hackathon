@@ -1,0 +1,26 @@
+# --- environments and caches
+participant-kit/.venv/
+**/__pycache__/
+*.pyc
+.DS_Store
+
+# --- data too large for GitHub (kept locally; see data/README.md and data/synth_out_extra/README.md)
+data/entsoe_lmp_2022/
+data/synth_out/
+data/synth_out_extra/*.csv.gz
+data/semo_nw_units/BM-*.csv
+data/BM-037_dispatch_instructions_*.csv
+data/EirGrid_ECP-GSS-1_Constraint_Analysis_2026-03.xlsx
+*.parquet
+project/out/_chunks_*/
+project/years/
+project/kit/*.nc
+
+# --- keep: participant-kit/networks/*.nc (1-2 MB each), research/, src/, out/*.csv, *.md, *.png
+
+# project/data duplicates data/ for the container run; the big pulls stay out of git
+project/data/BM-*.csv
+project/kit/*.nc
+
+# desktop app scratch
+Claude outputs/

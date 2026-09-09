@@ -1,0 +1,67 @@
+loaded WP2033 all-island: 754 buses, 755 lines, 168 hours
+target line 3581-89516-1: 3581 LETTERKENNY -> 89516 STRA, 123 MVA, binds 131 h in baseline
+  1341 BINBANE           line binds 146 h, NW dispatch-down 21,805 MWh
+  1571 ARDNAGAPPARY      line binds 135 h, NW dispatch-down 21,689 MWh
+  1631 CORDERRY          line binds 131 h, NW dispatch-down 22,150 MWh
+  1701 CATH_FALL         line binds 131 h, NW dispatch-down 21,874 MWh
+  1761 CLIFF             line binds 136 h, NW dispatch-down 21,876 MWh
+  1931 CUNGHILL          line binds 130 h, NW dispatch-down 22,163 MWh
+  2321 DRUMKEEN          line binds 137 h, NW dispatch-down 21,664 MWh
+  2801 GOLAGH            line binds 133 h, NW dispatch-down 21,795 MWh
+  2870 CLOGHER           line binds 135 h, NW dispatch-down 21,796 MWh
+  2871 CLOGHER           line binds 135 h, NW dispatch-down 21,795 MWh
+  3581 LETTERKENNY       line binds 136 h, NW dispatch-down 21,599 MWh
+  3591 LENALEA           line binds 135 h, NW dispatch-down 21,626 MWh
+  4041 MOY               line binds 132 h, NW dispatch-down 22,233 MWh
+  4071 MEENTYCAT         line binds 138 h, NW dispatch-down 21,660 MWh
+  4371 GLENREE           line binds 134 h, NW dispatch-down 22,205 MWh
+  4981 SLIGO             line binds 131 h, NW dispatch-down 22,132 MWh
+  4991 SORNE HILL        line binds 142 h, NW dispatch-down 21,597 MWh
+  5041 SRANANAGH         line binds 125 h, NW dispatch-down 22,110 MWh
+  5042 SRANANAGH         line binds 131 h, NW dispatch-down 22,222 MWh
+  5191 TIEVEBRACK        line binds 135 h, NW dispatch-down 21,687 MWh
+  5361 TRILLICK          line binds 142 h, NW dispatch-down 21,598 MWh
+  17010 CATH FALL        line binds 131 h, NW dispatch-down 21,874 MWh
+  17061 CATH             line binds 131 h, NW dispatch-down 21,874 MWh
+  28019 GOLAGH           line binds 134 h, NW dispatch-down 21,794 MWh
+  28710 CLOGHER          line binds 135 h, NW dispatch-down 21,794 MWh
+  28712 CLOGHER          line binds 133 h, NW dispatch-down 21,794 MWh
+  40461 MOY              line binds 132 h, NW dispatch-down 22,233 MWh
+  51911 CROAGHONAGH      line binds 135 h, NW dispatch-down 21,794 MWh
+
+best hosts for a 50 MW / 4 h battery:
+                   line_binding_hours  nw_dispatch_down_mwh  battery_mwh_throughput  dispatch_down_removed_mwh
+bus                                                                                                           
+4991 SORNE HILL                   142               21597.3                   804.5                      834.8
+5361 TRILLICK                     142               21597.6                   804.5                      834.6
+3581 LETTERKENNY                  136               21599.0                   804.5                      833.2
+3591 LENALEA                      135               21626.2                   836.0                      805.9
+4071 MEENTYCAT                    138               21660.0                   846.2                      772.1
+2321 DRUMKEEN                     137               21664.4                   846.2                      767.7
+5191 TIEVEBRACK                   135               21686.9                   974.0                      745.2
+1571 ARDNAGAPPARY                 135               21689.3                   974.0                      742.8
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q2_battery_siting.csv
+    50 MW x 2 h -> line binds 138 h
+    50 MW x 4 h -> line binds 142 h
+    50 MW x 8 h -> line binds 144 h
+   100 MW x 2 h -> line binds 143 h
+   100 MW x 4 h -> line binds 150 h
+   100 MW x 8 h -> line binds 150 h
+   200 MW x 2 h -> line binds 146 h
+   200 MW x 4 h -> line binds 155 h
+   200 MW x 8 h -> line binds 156 h
+   400 MW x 2 h -> line binds 155 h
+   400 MW x 4 h -> line binds 156 h
+   400 MW x 8 h -> line binds 157 h
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q2_battery_sizing.csv
+
+share of NW dispatch-down removed, battery at 4991 SORNE HILL
+hours     2     4     8
+p_mw                   
+50      2.0   4.0   5.0
+100     4.0   6.0  11.0
+200     6.0  11.0  15.0
+400    11.0  15.0  22.0
+
+no battery up to 400 MW / 8 h eliminates constraint: the best, 400 MW / 8 h, removes 22 %. The line binds 131 of 168 hours; storage can shift wind inside a week but cannot create export capacity that is missing 3 hours in 4.
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q2_battery.png

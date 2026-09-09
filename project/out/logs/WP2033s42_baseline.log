@@ -1,0 +1,42 @@
+[WP2033s42] tie 3581-89516-1 -> Link LKY-STRABANE-PST p_nom 123.0
+[WP2033s42] year columns matching 594/710; wind/solar without column: 82 (7770.4 MW) borrowed, 0 from the same bus
+[WP2033s42] non-renewable generators without a column (keep p_max_pu=1): 40
+[WP2033s42] p_min_pu clipped for 42 generators
+[WP2033s42] group_units: {"n_units": 72, "n_matched": 56, "match_rate": 0.7777777777777778, "mw_total": 802.523, "mw_G": 752.0649999999999, "mw_excluded_U": 50.458, "n_G": 57, "n_U": 15, "n_P": 46, "n_N": 11, "mw_P": 589.3249999999999, "mw_N": 162.73999999999998, "n_unmatched": 16, "n_multi": 6}
+[WP2033s42] CG3 buses whose number differs from MASTER §2: none
+[WP2033s42] chunk 1/27 optimal obj 20946028.7 93s
+[WP2033s42] tie 3581-89516-1 -> Link LKY-STRABANE-PST p_nom 123.0
+[WP2033s42] year columns matching 594/710; wind/solar without column: 82 (7770.4 MW) borrowed, 0 from the same bus
+[WP2033s42] non-renewable generators without a column (keep p_max_pu=1): 40
+[WP2033s42] p_min_pu clipped for 42 generators
+[WP2033s42] group_units: {"n_units": 72, "n_matched": 56, "match_rate": 0.7777777777777778, "mw_total": 802.523, "mw_G": 752.0649999999999, "mw_excluded_U": 50.458, "n_G": 57, "n_U": 15, "n_P": 46, "n_N": 11, "mw_P": 589.3249999999999, "mw_N": 162.73999999999998, "n_unmatched": 16, "n_multi": 6}
+[WP2033s42] CG3 buses whose number differs from MASTER §2: none
+[WP2033s42] chunk 2/27 optimal obj 36239843.3 74s
+[WP2033s42] chunk 3/27 optimal obj 35829228.6 150s
+[WP2033s42] chunk 4/27 optimal obj 22228275.5 228s
+[WP2033s42] chunk 5/27 optimal obj 37507338.1 292s
+[WP2033s42] chunk 6/27 optimal obj 34314272.0 362s
+[WP2033s42] chunk 7/27 optimal obj 31833570.3 437s
+[WP2033s42] chunk 8/27 optimal obj 23285455.5 505s
+[WP2033s42] chunk 9/27 optimal obj 32081166.7 574s
+[WP2033s42] chunk 10/27 optimal obj 34974711.1 641s
+[WP2033s42] chunk 11/27 optimal obj 21903124.7 715s
+[WP2033s42] chunk 12/27 optimal obj 36034794.3 787s
+[WP2033s42] chunk 13/27 optimal obj 32635795.3 860s
+[WP2033s42] chunk 14/27 optimal obj 25009034.1 931s
+[WP2033s42] chunk 15/27 optimal obj 33795434.0 996s
+[WP2033s42] chunk 16/27 optimal obj 41806687.8 1068s
+[WP2033s42] chunk 17/27 optimal obj 31959565.5 1135s
+[WP2033s42] chunk 18/27 optimal obj 34964104.0 1208s
+[WP2033s42] chunk 19/27 optimal obj 35953563.0 1279s
+[WP2033s42] chunk 20/27 optimal obj 36602556.1 1350s
+[WP2033s42] chunk 21/27 optimal obj 32393509.4 1421s
+[WP2033s42] chunk 22/27 optimal obj 25449008.9 1491s
+[WP2033s42] chunk 23/27 optimal obj 19836048.6 1571s
+[WP2033s42] chunk 24/27 optimal obj 27718544.8 1645s
+[WP2033s42] chunk 25/27 optimal obj 23124171.7 1719s
+[WP2033s42] chunk 26/27 optimal obj 39112757.0 1785s
+[WP2033s42] chunk 27/27 optimal obj 4247736.4 1794s
+[WP2033s42] chunks: 27, all optimal: True
+[WP2033s42] sanity: {"case": "WP2033s42", "hours": 4380, "step": 2, "all_chunks_optimal": true, "wind_energy_MWh": 29998215.273618355, "wind_avail_MWh": 33765173.89232258, "ws_energy_MWh": 32651318.49557495, "ws_avail_MWh": 36549177.521441475, "wind_surplus_share": 0.11156343014009296, "ws_surplus_share": 0.10664696965013387, "load_shedding_hours": 0, "load_shedding_MWh": 0.0, "tie_p_nom": 123.0, "tie_at_cap_share": 1.0, "tie_at_cap_hours": 4380, "tie_mean_flow_MW": -98.23150684931507, "G_energy_MWh": 1889363.3825429184, "G_avail_MWh": 2072924.0674357, "G_surplus_share": 0.08855157204086805, "solve_seconds": 1799.3361568450928, "n_snapshots": 4380, "year_cols_matching": 594, "year_cols_total": 710, "borrowed": 82, "borrowed_mw": 7770.38, "borrowed_same_bus": 0, "thermal_without_column": 40, "p_min_pu_clipped": 42, "n_lines": 754, "n_transformers": 225}
+[WP2033s42] stage baseline done in 1799s

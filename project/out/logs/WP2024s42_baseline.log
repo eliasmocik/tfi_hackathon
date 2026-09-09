@@ -1,0 +1,68 @@
+[WP2024s42] tie 3581-89516-1 -> Link LKY-STRABANE-PST p_nom 93.0
+[WP2024s42] year columns matching 462/541; wind/solar without column: 32 (1037.5 MW) borrowed, 0 from the same bus
+[WP2024s42] non-renewable generators without a column (keep p_max_pu=1): 9
+[WP2024s42] p_min_pu clipped for 57 generators
+[WP2024s42] group_units: {"n_units": 66, "n_matched": 51, "match_rate": 0.7727272727272727, "mw_total": 736.893, "mw_G": 686.4350000000001, "mw_excluded_U": 50.458, "n_G": 51, "n_U": 15, "n_P": 45, "n_N": 6, "mw_P": 587.725, "mw_N": 98.71000000000001, "n_unmatched": 15, "n_multi": 6}
+[WP2024s42] CG3 buses whose number differs from MASTER §2: none
+[WP2024s42] chunk 1/53 optimal obj 28981152.6 63s
+[WP2024s42] chunk 2/53 optimal obj 45569528.3 128s
+[WP2024s42] chunk 3/53 optimal obj 38584907.2 183s
+[WP2024s42] tie 3581-89516-1 -> Link LKY-STRABANE-PST p_nom 93.0
+[WP2024s42] year columns matching 462/541; wind/solar without column: 32 (1037.5 MW) borrowed, 0 from the same bus
+[WP2024s42] non-renewable generators without a column (keep p_max_pu=1): 9
+[WP2024s42] p_min_pu clipped for 57 generators
+[WP2024s42] group_units: {"n_units": 66, "n_matched": 51, "match_rate": 0.7727272727272727, "mw_total": 736.893, "mw_G": 686.4350000000001, "mw_excluded_U": 50.458, "n_G": 51, "n_U": 15, "n_P": 45, "n_N": 6, "mw_P": 587.725, "mw_N": 98.71000000000001, "n_unmatched": 15, "n_multi": 6}
+[WP2024s42] CG3 buses whose number differs from MASTER §2: none
+[WP2024s42] chunk 4/53 optimal obj 38862305.3 59s
+[WP2024s42] chunk 5/53 optimal obj 44504338.9 114s
+[WP2024s42] chunk 6/53 optimal obj 48221250.4 173s
+[WP2024s42] chunk 7/53 optimal obj 34647920.9 224s
+[WP2024s42] chunk 8/53 optimal obj 32531454.4 282s
+[WP2024s42] chunk 9/53 optimal obj 25214441.4 338s
+[WP2024s42] chunk 10/53 optimal obj 31031566.8 393s
+[WP2024s42] chunk 11/53 optimal obj 44660384.9 450s
+[WP2024s42] chunk 12/53 optimal obj 36144511.5 507s
+[WP2024s42] chunk 13/53 optimal obj 29951064.7 570s
+[WP2024s42] chunk 14/53 optimal obj 28340954.8 624s
+[WP2024s42] chunk 15/53 optimal obj 26198362.7 679s
+[WP2024s42] chunk 16/53 optimal obj 35851471.5 731s
+[WP2024s42] chunk 17/53 optimal obj 43148218.3 785s
+[WP2024s42] chunk 18/53 optimal obj 33031669.2 833s
+[WP2024s42] chunk 19/53 optimal obj 43097626.7 883s
+[WP2024s42] chunk 20/53 optimal obj 40497771.6 939s
+[WP2024s42] chunk 21/53 optimal obj 36312225.8 986s
+[WP2024s42] chunk 22/53 optimal obj 39245280.8 1035s
+[WP2024s42] chunk 23/53 optimal obj 38613577.8 1084s
+[WP2024s42] chunk 24/53 optimal obj 39637379.3 1141s
+[WP2024s42] chunk 25/53 optimal obj 36646029.5 1193s
+[WP2024s42] chunk 26/53 optimal obj 33630003.1 1244s
+[WP2024s42] chunk 27/53 optimal obj 24365275.1 1296s
+[WP2024s42] chunk 28/53 optimal obj 23786214.4 1342s
+[WP2024s42] chunk 29/53 optimal obj 33698192.0 1393s
+[WP2024s42] chunk 30/53 optimal obj 40095777.0 1443s
+[WP2024s42] chunk 31/53 optimal obj 35222409.0 1490s
+[WP2024s42] chunk 32/53 optimal obj 35820536.2 1538s
+[WP2024s42] chunk 33/53 optimal obj 41955645.7 1587s
+[WP2024s42] chunk 34/53 optimal obj 37538679.4 1634s
+[WP2024s42] chunk 35/53 optimal obj 29431688.0 1686s
+[WP2024s42] chunk 36/53 optimal obj 23980724.8 1740s
+[WP2024s42] chunk 37/53 optimal obj 24902172.9 1794s
+[WP2024s42] chunk 38/53 optimal obj 40374139.4 1844s
+[WP2024s42] chunk 39/53 optimal obj 42632988.4 1894s
+[WP2024s42] chunk 40/53 optimal obj 30022578.8 1946s
+[WP2024s42] chunk 41/53 optimal obj 35572157.8 1999s
+[WP2024s42] chunk 42/53 optimal obj 34560542.8 2053s
+[WP2024s42] chunk 43/53 optimal obj 43249084.4 2107s
+[WP2024s42] chunk 44/53 optimal obj 36204310.1 2156s
+[WP2024s42] chunk 45/53 optimal obj 25484425.9 2207s
+[WP2024s42] chunk 46/53 optimal obj 29866041.6 2261s
+[WP2024s42] chunk 47/53 optimal obj 36696184.4 2311s
+[WP2024s42] chunk 48/53 optimal obj 41538677.3 2362s
+[WP2024s42] chunk 49/53 optimal obj 25313015.3 2419s
+[WP2024s42] chunk 50/53 optimal obj 34290705.4 2469s
+[WP2024s42] chunk 51/53 optimal obj 37813149.3 2519s
+[WP2024s42] chunk 52/53 optimal obj 33897168.2 2571s
+[WP2024s42] chunk 53/53 optimal obj 4289794.8 2582s
+[WP2024s42] chunks: 53, all optimal: True
+[WP2024s42] sanity: {"case": "WP2024s42", "hours": 8760, "step": 1, "all_chunks_optimal": true, "wind_energy_MWh": 17255186.6869102, "wind_avail_MWh": 17596608.73716089, "ws_energy_MWh": 18041069.081700504, "ws_avail_MWh": 18391288.54046306, "wind_surplus_share": 0.01940271874828181, "ws_surplus_share": 0.019042681973698072, "load_shedding_hours": 0, "load_shedding_MWh": 0.0, "tie_p_nom": 93.0, "tie_at_cap_share": 1.0, "tie_at_cap_hours": 8760, "tie_mean_flow_MW": 91.8958904109589, "G_energy_MWh": 1853070.9403871398, "G_avail_MWh": 1883890.5038778998, "G_surplus_share": 0.016359530146428103, "solve_seconds": 2589.658677816391, "n_snapshots": 8760, "year_cols_matching": 462, "year_cols_total": 541, "borrowed": 32, "borrowed_mw": 1037.519, "borrowed_same_bus": 0, "thermal_without_column": 9, "p_min_pu_clipped": 57, "n_lines": 644, "n_transformers": 203}
+[WP2024s42] stage baseline done in 2590s

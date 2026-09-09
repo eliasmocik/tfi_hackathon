@@ -1,0 +1,63 @@
+loaded WP2033 all-island: 754 buses, 755 lines, 168 hours
+  1341 BINBANE           private   24.0  external  -12.3  system   11.7  MWh/MW
+  1571 ARDNAGAPPARY      private   21.0  external   -5.8  system   15.2  MWh/MW
+  1631 CORDERRY          private   27.2  external   -5.3  system   22.0  MWh/MW
+  1701 CATH_FALL         private   26.3  external   -9.1  system   17.2  MWh/MW
+  1761 CLIFF             private   26.3  external   -9.1  system   17.2  MWh/MW
+  1931 CUNGHILL          private   23.8  external   -3.7  system   20.2  MWh/MW
+  2321 DRUMKEEN          private   14.5  external   -2.3  system   12.3  MWh/MW
+  2801 GOLAGH            private   15.4  external   -6.3  system    9.2  MWh/MW
+  2870 CLOGHER           private   15.7  external   -6.5  system    9.2  MWh/MW
+  2871 CLOGHER           private   15.4  external   -6.3  system    9.2  MWh/MW
+  3581 LETTERKENNY       private   17.0  external   -0.1  system   16.9  MWh/MW
+  3591 LENALEA           private   14.3  external   -2.4  system   12.0  MWh/MW
+  4041 MOY               private   24.7  external   -4.2  system   20.4  MWh/MW
+  4071 MEENTYCAT         private   14.5  external   -2.3  system   12.3  MWh/MW
+  4371 GLENREE           private   26.8  external   -3.8  system   23.0  MWh/MW
+  4981 SLIGO             private   25.7  external   -5.7  system   20.0  MWh/MW
+  4991 SORNE HILL        private    6.6  external   -0.0  system    6.6  MWh/MW
+  5041 SRANANAGH         private   25.7  external   -5.9  system   19.7  MWh/MW
+  5042 SRANANAGH         private   25.7  external   -4.6  system   21.0  MWh/MW
+  5191 TIEVEBRACK        private   26.7  external   -7.6  system   19.1  MWh/MW
+  5361 TRILLICK          private    6.6  external   -0.0  system    6.6  MWh/MW
+  17010 CATH FALL        private   26.3  external   -9.1  system   17.2  MWh/MW
+  17061 CATH             private   26.3  external   -9.1  system   17.2  MWh/MW
+  28019 GOLAGH           private   15.4  external   -6.3  system    9.1  MWh/MW
+  28710 CLOGHER          private   15.4  external   -6.3  system    9.2  MWh/MW
+  28712 CLOGHER          private   15.7  external   -6.5  system    9.2  MWh/MW
+  40461 MOY              private   24.7  external   -4.2  system   20.4  MWh/MW
+  51911 CROAGHONAGH      private   15.4  external   -6.3  system    9.2  MWh/MW
+
+new 50 MW farm, ranked by SYSTEM value (best first):
+                   private_mwh_per_mw  external_mwh_per_mw  system_mwh_per_mw  own_dispatch_down_pct  private_rank  system_rank  tier1_rank
+station                                                                                                                                    
+4371 GLENREE                     26.8                 -3.8               23.0                   58.6             2            1           1
+1631 CORDERRY                    27.2                 -5.3               22.0                   65.1             1            2           6
+5042 SRANANAGH                   25.7                 -4.6               21.0                   57.5             9            3           5
+4041 MOY                         24.7                 -4.2               20.4                   64.1            11            4           2
+40461 MOY                        24.7                 -4.2               20.4                   64.1            11            5           3
+1931 CUNGHILL                    23.8                 -3.7               20.2                   62.9            14            6           4
+4981 SLIGO                       25.7                 -5.7               20.0                   57.5             9            7           7
+5041 SRANANAGH                   25.7                 -5.9               19.7                   57.5             9            8           8
+5191 TIEVEBRACK                  26.7                 -7.6               19.1                   73.3             3            9          28
+17061 CATH                       26.3                 -9.1               17.2                   64.5             5           10           9
+1701 CATH_FALL                   26.3                 -9.1               17.2                   64.5             5           11          10
+1761 CLIFF                       26.3                 -9.1               17.2                   64.5             5           11          11
+17010 CATH FALL                  26.3                 -9.1               17.2                   64.5             5           13          12
+3581 LETTERKENNY                 17.0                 -0.1               16.9                   81.4            16           14          27
+1571 ARDNAGAPPARY                21.0                 -5.8               15.2                   74.6            15           15          26
+2321 DRUMKEEN                    14.5                 -2.3               12.3                   80.1            24           16          23
+4071 MEENTYCAT                   14.5                 -2.3               12.3                   80.1            25           17          24
+3591 LENALEA                     14.3                 -2.4               12.0                   80.5            26           18          20
+1341 BINBANE                     24.0                -12.3               11.7                   64.7            13           19          25
+2870 CLOGHER                     15.7                 -6.5                9.2                   74.1            17           20          13
+28712 CLOGHER                    15.7                 -6.5                9.2                   74.1            18           21          14
+2801 GOLAGH                      15.4                 -6.3                9.2                   74.6            20           22          15
+2871 CLOGHER                     15.4                 -6.3                9.2                   74.6            19           23          16
+28710 CLOGHER                    15.4                 -6.3                9.2                   74.6            21           24          17
+51911 CROAGHONAGH                15.4                 -6.3                9.2                   74.6            21           24          18
+28019 GOLAGH                     15.4                 -6.3                9.1                   74.6            23           26          19
+5361 TRILLICK                     6.6                 -0.0                6.6                   86.4            27           27          21
+4991 SORNE HILL                   6.6                 -0.0                6.6                   86.4            27           27          22
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q4_siting.csv
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q4_siting.png

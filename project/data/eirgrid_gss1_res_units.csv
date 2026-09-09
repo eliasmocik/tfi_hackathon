@@ -1,0 +1,847 @@
+name,area,node,gen_type,system_operator,connection_status,processing,mec_mw,controllability,priority,battery_mwh
+Athea (1)a,E,Athea,wind,TSO,connected,Gate 1,34.35,Y,wind priority,N/A
+Ballycadden (1),H2,Crory,wind,DSO,connected,Gate 1,14.45,Y,wind priority,N/A
+Beenanaspock and Tobertooreen Wind Farm,E,Athea,wind,TSO,connected,Gate 1,23.15,Y,wind not priority,N/A
+Clahane (1),E,Clahane,wind,TSO,connected,Gate 1,37.8,Y,wind priority,N/A
+Coomacheo (1),E,Garrow,wind,TSO,connected,Gate 1,41.225,Y,wind priority,N/A
+Corkermore (1),A,Binbane,wind,DSO,connected,Gate 1,9.99,Y,wind priority,N/A
+Cronelea (1),H2,Carlow,wind,DSO,connected,Gate 1,4.99,Y,wind priority,N/A
+Dunmore (1),G,Drybridge,wind,DSO,connected,Gate 1,1.7,N,wind uncontrolled,N/A
+Glanlee (1),E,Glanlee,wind,TSO,connected,Gate 1,29.8,Y,wind priority,N/A
+Killin Hill (1),A,Binbane,wind,DSO,connected,Gate 1,6,Y,wind priority,N/A
+Killybegs (1),A,Binbane,wind,DSO,connected,Gate 1,2.55,N,wind uncontrolled,N/A
+Knockawarriga (1),E,Trien,wind,DSO,connected,Gate 1,22.5,Y,wind priority,N/A
+Knocknalour (1),H2,Crory,wind,DSO,connected,Gate 1,5,Y,wind priority,N/A
+Lackan (1),B,Moy,wind,DSO,connected,Gate 1,6,Y,wind priority,N/A
+Loughderryduff (1),A,Binbane,wind,DSO,connected,Gate 1,7.65,Y,wind priority,N/A
+Lurganboy (1),A,Letterkenny,wind,DSO,connected,Gate 1,4.99,N,wind uncontrolled,N/A
+Meenachullalan (1),A,Binbane,wind,DSO,connected,Gate 1,11.9,Y,wind priority,N/A
+Meentycat (2),A,Meentycat,wind,TSO,connected,Gate 1,14,Y,wind priority,N/A
+Moneypoint WF,E,Moneypoint,wind,TSO,connected,Gate 1,17.25,Y,wind priority,N/A
+Mount Eagle (2),E,Tralee,wind,DSO,connected,Gate 1,1.7,N,wind uncontrolled,N/A
+Muingnaminnane (1),E,Reamore,wind,DSO,connected,Gate 1,15.3,Y,wind priority,N/A
+Mullananalt (1),G,Meath Hill,wind,DSO,connected,Gate 1,7.5,Y,wind priority,N/A
+Richfield (2),H2,Wexford,wind,DSO,connected,Gate 1,6.75,Y,wind priority,N/A
+Tournafulla (2),E,Trien,wind,DSO,connected,Gate 1,17.2,Y,wind priority,N/A
+Ballaman formerly (Kennystown) (1),H2,Crory,wind,DSO,connected,Gate 2,3.6,N,wind uncontrolled,N/A
+Ballybane 2 (Glanta Commons) Wind Farm,F,Ballylickey,wind,DSO,connected,Gate 2,8.4,Y,wind priority,N/A
+Ballyduff (1),H2,Crory,wind,DSO,connected,Gate 2,4,N,wind uncontrolled,N/A
+Ballymartin (1),H2,Waterford,wind,DSO,connected,Gate 2,6,Y,wind priority,N/A
+Ballynancoran (1),H2,Crory,wind,DSO,connected,Gate 2,4,N,wind uncontrolled,N/A
+Ballywater (2),H2,Ballywater,wind,TSO,connected,Gate 2,10.5,Y,wind priority,N/A
+Bawnmore (1) formerly Burren (Cork),F,Macroom,wind,DSO,connected,Gate 2,24,Y,wind priority,N/A
+Beale Hill (3),E,Trien,wind,DSO,connected,Gate 2,1.3,N,wind uncontrolled,N/A
+Beenanaspock and Tobertooreen Wind Farm (battery),E,Athea,battery,TSO,connected,Gate 2,11,N,battery,5.5
+Boggeragh (1),E,Boggeragh,wind,TSO,connected,Gate 2,57,Y,wind priority,N/A
+Boolinrudda (formerly Loughaun North),D,Slievecallan,wind,TSO,connected,Gate 2,45,Y,wind priority,N/A
+Booltiagh (2),D,Booltiagh,wind,TSO,connected,Gate 2,12,Y,wind priority,N/A
+Bunnyconnellan (1),B,Glenree,wind,DSO,connected,Gate 2,28,Y,wind not priority,N/A
+Caherdowney (1),E,Garrow,wind,DSO,connected,Gate 2,10,Y,wind priority,N/A
+Cappawhite A Wind Farm (Gate 2),H1,Cauteen,wind,DSO,connected,Gate 2,2.92,Y,wind priority,N/A
+Cappawhite B,H1,Cauteen,wind,DSO,connected,Gate 2,13.18,Y,wind priority,N/A
+Carrons (1),E,Rathkeale,wind,DSO,connected,Gate 2,4.99,N,wind uncontrolled,N/A
+Carrowleagh (1),B,Glenree,wind,DSO,connected,Gate 2,34.15,Y,wind priority,N/A
+Castledockrell (1),H2,Castledockrell,wind,TSO,connected,Gate 2,20,Y,wind priority,N/A
+Castledockrell (2),H2,Castledockrell,wind,TSO,connected,Gate 2,2,Y,wind priority,N/A
+Castledockrell (3),H2,Castledockrell,wind,TSO,connected,Gate 2,3.3,Y,wind priority,N/A
+Castledockrell (4),H2,Castledockrell,wind,TSO,connected,Gate 2,16.1,Y,wind priority,N/A
+Cloghanaleskirt (1),E,Cloghboola,wind,DSO,connected,Gate 2,12.55,Y,wind priority,N/A
+Cloonlusk (1),B,Cloon,wind,DSO,connected,Gate 2,4.25,N,wind uncontrolled,N/A
+Clydaghroe (1),E,Garrow,wind,DSO,connected,Gate 2,4.99,N,wind uncontrolled,N/A
+Coollegrean (1),E,Cordal,wind,DSO,connected,Gate 2,18.5,Y,wind priority,N/A
+Coomacheo (2),E,Garrow,wind,TSO,connected,Gate 2,18,Y,wind priority,N/A
+Coomagearlahy (2),E,Coomagearlahy,wind,TSO,connected,Gate 2,8.5,Y,wind priority,N/A
+Coomagearlahy (3),E,Coomagearlahy,wind,TSO,connected,Gate 2,30,Y,wind priority,N/A
+Crocane (1),I,Midleton,wind,DSO,connected,Gate 2,1.7,N,wind uncontrolled,N/A
+Cronelea (2),H2,Carlow,wind,DSO,connected,Gate 2,4.5,Y,wind priority,N/A
+Cronelea Upper (2),H2,Carlow,wind,DSO,connected,Gate 2,1.7,N,wind uncontrolled,N/A
+Cuillalea (2),B,Castlebar,wind,DSO,connected,Gate 2,1.59,N,wind uncontrolled,N/A
+Curraghgraigue (2),H1,Nenagh,wind,DSO,connected,Gate 2,2.44,N,wind uncontrolled,N/A
+Derrynadivva Wind Farm (prev. Raheen Bar 2),B,Castlebar,wind,DSO,connected,Gate 2,8.5,Y,wind priority,N/A
+Dromada (1),E,Dromada,wind,TSO,connected,Gate 2,28.5,Y,wind priority,N/A
+Dromdeeveen (2),E,Glenlara 220kV side,wind,DSO,connected,Gate 2,16.5,Y,wind priority,N/A
+Dunmore (2),G,Drybridge,wind,DSO,connected,Gate 2,1.8,N,wind uncontrolled,N/A
+Esk (1),E,Boggeragh,wind,DSO,connected,Gate 2,5.95,Y,wind not priority,N/A
+Flughland (1),A,Sorne Hill,wind,DSO,connected,Gate 2,9.2,Y,wind priority,N/A
+Garracummer (1),H1,Cauteen,wind,DSO,connected,Gate 2,36.9,Y,wind priority,N/A
+Garranereagh (1),F,Bandon,wind,DSO,connected,Gate 2,8.75,Y,wind priority,N/A
+Garvagh - Glebe (1a),A,Garvagh,wind,TSO,connected,Gate 2,26,Y,wind priority,N/A
+Garvagh - Tullynahaw (1c),A,Garvagh,wind,TSO,connected,Gate 2,22,Y,wind priority,N/A
+Gibbet Hill (1),H2,Crory,wind,DSO,connected,Gate 2,14.8,Y,wind priority,N/A
+Glackmore Hill (2),A,Sorne Hill,wind,DSO,connected,Gate 2,1.4,N,wind uncontrolled,N/A
+Glanaruddery 1 (formerly Dromadda More Wind Farm),E,Cloghboola,wind,DSO,connected,Gate 2,20,Y,wind priority,N/A
+Glenough (1),H1,Cauteen,wind,DSO,connected,Gate 2,33,Y,wind priority,N/A
+Gortahile (1),H2,Carlow,wind,DSO,connected,Gate 2,21,Y,wind priority,N/A
+Grouse Lodge (1),E,Rathkeale,wind,DSO,connected,Gate 2,15,Y,wind priority,N/A
+Holyford (1),H1,Cauteen,wind,DSO,connected,Gate 2,9,Y,wind priority,N/A
+Kilbranish (1),H2,Crane,wind,DSO,connected,Gate 2,2.5,Y,wind priority,N/A
+Killaveenoge Windfarm (Derryvacorneen merge with Barrboy Windfarm),F,Dunmanway,wind,DSO,connected,Gate 2,17,Y,wind priority,N/A
+Kingsmountain (2),B,Cunghill,wind,TSO,connected,Gate 2,11.05,Y,wind priority,N/A
+Knockacummer (1),E,Knockacummer,wind,TSO,connected,Gate 2,105,Y,wind priority,N/A
+Knockalassa (formerly Keelderry),D,Slievecallan,wind,TSO,connected,Gate 2,26.875,Y,wind priority,N/A
+Knockaneden (1),E,Oughtragh,wind,DSO,connected,Gate 2,9,Y,wind priority,N/A
+Knockawarriga Extension (Glenduff & Caherlevoy),E,Trien,wind,DSO,connected,Gate 2,6.6,Y,wind not priority,N/A
+Knocknagashel Wind (Cloghboola (1)),E,Cloghboola,wind,TSO,connected,Gate 2,46,Y,wind priority,N/A
+Knocknagoum (1),E,Reamore,wind,DSO,connected,Gate 2,42.55,Y,wind priority,N/A
+Leabeg (1),C,Dallow,wind,DSO,connected,Gate 2,4.25,N,wind uncontrolled,N/A
+Lenanavea (Burren) Wind Farm,B,Castlebar,wind,DSO,connected,Gate 2,4.65,N,wind uncontrolled,N/A
+Lisheen (1),H1,Lisheen,wind,TSO,connected,Gate 2,36,Y,wind priority,N/A
+Lisheen (1a),H1,Lisheen,wind,TSO,connected,Gate 2,23,Y,wind priority,N/A
+Mace Upper (1),B,Dalton,wind,DSO,connected,Gate 2,2.55,N,wind uncontrolled,N/A
+Martinstown Solar formerly Crowinstown Great wind,G,Navan,solar,DSO,due to connected,Gate 2,4.999,Y,solar not priority,N/A
+Mauricetown (Glenduff) Wind Farm,E,Glenlara 220kV side,wind,DSO,connected,Gate 2,13.8,Y,wind not priority,N/A
+Meenanilta (3),A,Letterkenny,wind,DSO,connected,Gate 2,3.4,N,wind uncontrolled,N/A
+Meenkeeragh (1),A,Sorne Hill,wind,DSO,connected,Gate 2,4.2,N,wind uncontrolled,N/A
+Mountain Lodge (3),G,Ratrussan,wind,TSO,connected,Gate 2,5.82,Y,wind priority,N/A
+Mulreavy (Mulreavy (1)),A,Mulreavy,wind,TSO,connected,Gate 2,82,Y,wind priority,N/A
+Mulreavy Ext (Croaghnameal (1)),A,Mulreavy,wind,TSO,connected,Gate 2,4.25,Y,wind priority,N/A
+Mulreavy Ext (Meenadreen South (1)),A,Mulreavy,wind,TSO,connected,Gate 2,3.6,Y,wind priority,N/A
+Pluckanes (1),I,Kilbarry,wind,DSO,connected,Gate 2,0.85,N,wind uncontrolled,N/A
+Raheen Barr extension (was Derrynadivva extension),B,Castlebar,wind,DSO,connected,Gate 2,6.8,Y,wind not priority,N/A
+Rahora (1),H2,Waterford,wind,DSO,connected,Gate 2,4.25,N,wind uncontrolled,N/A
+Reenascreena (1),F,Dunmanway,wind,DSO,connected,Gate 2,4.5,N,wind uncontrolled,N/A
+Roosky (1),B,Tonroe,wind,DSO,connected,Gate 2,3.6,N,wind uncontrolled,N/A
+Scartaglen (1),E,Cordal,wind,DSO,connected,Gate 2,35.45,Y,wind priority,N/A
+Seltanaveeny (1),A,Arigna,wind,DSO,connected,Gate 2,4.6,N,wind uncontrolled,N/A
+Shannagh (1) previously Kilcar,A,Binbane,wind,DSO,connected,Gate 2,2.55,N,wind uncontrolled,N/A
+Skrine (1),C,Lanesboro,wind,DSO,connected,Gate 2,4.6,N,wind uncontrolled,N/A
+Slievereagh (1),H1,Tipperary,wind,DSO,connected,Gate 2,3,N,wind uncontrolled,N/A
+Sorne Hill (2),A,Sorne Hill,wind,DSO,connected,Gate 2,7.4,Y,wind priority,N/A
+Sorne Hill Single Turbine (Enros),A,Sorne Hill,wind,DSO,connected,Gate 2,2.3,N,wind uncontrolled,N/A
+Templederry (1),H1,Nenagh,wind,DSO,connected,Gate 2,3.9,N,wind uncontrolled,N/A
+Three Trees (1),A,Sorne Hill,wind,DSO,connected,Gate 2,4.25,N,wind uncontrolled,N/A
+Tullynamoyle (1),A,Corderry,wind,DSO,connected,Gate 2,9,Y,wind priority,N/A
+Tullynamoyle 3 (Carrane Hill merged capacity),A,Corderry,wind,DSO,connected,Gate 2,1.598,N,wind uncontrolled,N/A
+WEDcross (1),E,Knockearagh,wind,DSO,connected,Gate 2,4.5,N,wind uncontrolled,N/A
+An Cnoc,H1,Thurles,wind,DSO,connected,Gate 3,11.5,Y,wind priority,N/A
+Ardderoo 2 (Formerly Buffy),B,Knockranny,wind,TSO,connected,Gate 3,64.2,Y,wind not priority,N/A
+Ardderoo Wind Farm,B,Knockranny,wind,TSO,connected,Gate 3,27,Y,wind not priority,N/A
+Ballagh (1),E,Trien,wind,DSO,connected,Gate 3,4.6,N,wind uncontrolled,N/A
+Ballinacurry WF,H1,Thurles,wind,DSO,connected,Gate 3,4.6,N,wind uncontrolled,N/A
+Ballybane 2A,F,Ballylickey,wind,DSO,connected,Gate 3,17.5,Y,wind priority,N/A
+Ballybane 2A (Glanta Commons) Wind Farm Extension,F,Ballylickey,wind,DSO,connected,Gate 3,1.55,Y,wind priority,N/A
+Ballybane 3 (Glanta Commons) Wind Farm,F,Ballylickey,wind,DSO,connected,Gate 3,4.45,Y,wind priority,N/A
+Ballybay Wind Farm (Tullaroan),H1,Thurles,wind,DSO,connected,Gate 3,13.8,Y,wind priority,N/A
+Ballycadden (2),H2,Crory,wind,DSO,connected,Gate 3,9.762,Y,wind priority,N/A
+Ballycumber (1),H2,Arklow,wind,DSO,connected,Gate 3,18,Y,wind priority,N/A
+Ballycurreen (1),K,Dungarvan,wind,DSO,connected,Gate 3,4.99,N,wind uncontrolled,N/A
+Ballymartin (2),H2,Waterford,wind,DSO,connected,Gate 3,8.28,Y,wind priority,N/A
+Barranafaddock (1),H1,Barrymore,wind,DSO,connected,Gate 3,32.4,Y,wind priority,N/A
+Boggeragh 2,E,Boggeragh,wind,TSO,connected,Gate 3,65.7,Y,wind priority,N/A
+Boolard Wind Farm (Charlevile),E,Charleville,wind,DSO,connected,Gate 3,4.45,N,wind uncontrolled,N/A
+Boolynagleragh (1),D,Booltiagh,wind,DSO,connected,Gate 3,36.98,Y,wind not priority,N/A
+Bruckana (1),H1,Lisheen,wind,DSO,connected,Gate 3,39.6,Y,wind priority,N/A
+Bunnahowen (1),B,Bellacorick,wind,DSO,connected,Gate 3,2.55,N,wind uncontrolled,N/A
+Cahermurphy (1),D,Booltiagh,wind,DSO,connected,Gate 3,6,Y,wind not priority,N/A
+Cappawhite A,H1,Cauteen,wind,DSO,connected,Gate 3,49.08,Y,wind priority,N/A
+Carrickeeney (1),B,Sligo,wind,DSO,connected,Gate 3,7.65,Y,wind priority,N/A
+Carrigdangan (formerly Barnadivine),F,Dunmanway,wind,TSO,connected,Gate 3,60,Y,wind not priority,N/A
+Carrowleagh (2),B,Glenree,wind,DSO,connected,Gate 3,2.65,Y,wind not priority,N/A
+Carrownawelaun (1),D,Tullabrack,wind,DSO,connected,Gate 3,4.6,N,wind uncontrolled,N/A
+Castlepook (1),E,Charleville,wind,DSO,connected,Gate 3,33.1,Y,wind priority,N/A
+Clahane (2),E,Clahane,wind,TSO,connected,Gate 3,13.8,Y,wind priority,N/A
+Cleanrath (1),E,Coomataggart,wind,DSO,connected,Gate 3,42.64,Y,wind not priority,N/A
+Clogheravaddy Wind Farm (Phase 1),A,Binbane,wind,DSO,connected,Gate 3,9.2,Y,wind not priority,N/A
+Clogheravaddy Wind Farm (Phase 2),A,Binbane,wind,DSO,connected,Gate 3,10.8,Y,wind not priority,N/A
+Collon Wind Power,G,Drybridge,wind,DSO,connected,Gate 3,2.3,N,wind uncontrolled,N/A
+Coolberrin Wind Farm (formerly Bragan Wind Farm),G,Lisdrum,wind,DSO,due to connected,Gate 3,33.1,Y,wind not priority,N/A
+Cooly (1),A,Trillick,wind,DSO,connected,Gate 3,4,N,wind uncontrolled,N/A
+Cordal (1+2),E,Cordal,wind,TSO,connected,Gate 3,54,Y,wind priority,N/A
+Corvin Wind Turbine,A,Sorne Hill,wind,DSO,connected,Gate 3,2.1,N,wind uncontrolled,N/A
+Corvoderry (was Gortnahurra (1)),B,Bellacorick,wind,DSO,due to connected,Gate 3,33.9,Y,wind not priority,N/A
+Cronalaght (2),A,Ardnagappary,wind,DSO,connected,Gate 3,17.96,Y,wind not priority,N/A
+Cureeny (1),H1,Killonan,wind,DSO,due to connected,Gate 3,84,Y,wind not priority,N/A
+Curraghderrig (1),E,Trien,wind,DSO,connected,Gate 3,4.5,N,wind uncontrolled,N/A
+Derreenacrinnig West (prev Kilvinane 2 WF),F,Ballylickey,wind,DSO,due to connected,Gate 3,5.82,Y,wind not priority,N/A
+Derrysallagh Wind Farm (Formerly Kilronan 2),A,Garvagh,wind,DSO,connected,Gate 3,34,Y,wind not priority,N/A
+Dooray WF,J,Portlaoise,wind,DSO,due to connected,Gate 3,45.001,Y,wind not priority,N/A
+Esk Wind Farm (sub metered Gneeves 2 Merge),E,Boggeragh,wind,DSO,connected,Gate 3,5.4,Y,wind not priority,N/A
+Faughary (1),B,Sligo,wind,DSO,connected,Gate 3,6,Y,wind priority,N/A
+Foyle Windfarm,H1,Thurles,wind,DSO,connected,Gate 3,9.6,Y,wind priority,N/A
+Garracummer (2),H1,Cauteen,wind,DSO,connected,Gate 3,1,Y,wind priority,N/A
+Glanaruddery 2 (formerly Dromadda More 2),E,Cloghboola,wind,DSO,connected,Gate 3,12,Y,wind priority,N/A
+Glantaunyalkeen Windfarm( Cloghboola (2) Ext),E,Cloghboola,wind,DSO,connected,Gate 3,9.999,Y,wind priority,N/A
+Glencarbry (1),H1,Cauteen,wind,DSO,connected,Gate 3,33,Y,wind priority,N/A
+Gortnacloghy Wind Farm,E,Trien,wind,DSO,connected,Gate 3,4.4,N,wind uncontrolled,N/A
+Grousemount WF,E,Coomataggart,wind,TSO,connected,Gate 3,114.2,Y,wind not priority,N/A
+Grove Hill (1) formerly Tullynageer,G,Dundalk,wind,DSO,connected,Gate 3,16.1,Y,wind priority,N/A
+Gurteen (1),H1,Thurles,wind,DSO,connected,Gate 3,2.3,N,wind uncontrolled,N/A
+Kelwin Power Plant - Phase 2,E,Kilpaddoge,battery,TSO,connected,Gate 3,26.6,N,battery,13.3
+Kilberehert (1),E,Charleville,wind,DSO,connected,Gate 3,4.799,N,wind uncontrolled,N/A
+Kill Hill (1) - phase 1,H1,Kill Hill,wind,TSO,connected,Gate 3,36,Y,wind priority,N/A
+Killala Battery - Phase 2,B,Tawnaghmore,battery,DSO,connected,Gate 3,10.8,N,battery,10.8
+Killala Wind Farm (Phase 1),B,Tawnaghmore,wind,DSO,connected,Gate 3,19.2,Y,wind priority,N/A
+Killaveenoge Windfarm (Derryvacorneen merge with Barrboy),F,Dunmanway,wind,DSO,connected,Gate 3,7.8,Y,wind priority,N/A
+Kilmeedy (1),E,Charleville,wind,DSO,connected,Gate 3,4.7,N,wind uncontrolled,N/A
+Kiltumper,D,Booltiagh,wind,DSO,connected,Gate 3,4.99,N,wind uncontrolled,N/A
+Knockadosan Solar (formerly Springfarm Wind Farm),H2,Arklow,solar,DSO,due to connected,Gate 3,6,Y,solar not priority,N/A
+Knockalough (1),B,Knockranny,wind,TSO,connected,Gate 3,33.6,Y,wind priority,N/A
+Knocknagoum (2) formerly Muingnatee (3),E,Reamore,wind,DSO,connected,Gate 3,1.8,N,wind uncontrolled,N/A
+Knocknalour (2),H2,Crory,wind,DSO,connected,Gate 3,3.95,N,wind uncontrolled,N/A
+Knocknamona Wind Farm (Prev. Crohaun),K,Woodhouse,wind,TSO,due to connected,Gate 3,34,Y,wind not priority,N/A
+Knocknatallig,E,Charleville,wind,DSO,connected,Gate 3,18.3,Y,wind priority,N/A
+Leanamore (1) (formerly Tarbert (1)),E,Kilpaddoge,wind,DSO,connected,Gate 3,18,Y,wind priority,N/A
+Leitir Guingaid & Doire Chrith1 & 2 Merge,B,Salthill,wind,DSO,connected,Gate 3,40.9,Y,wind priority,N/A
+Lettergull (1),A,Letterkenny,wind,DSO,due to connected,Gate 3,20,Y,wind not priority,N/A
+Lisdowney (1),H2,Ballyragget,wind,DSO,connected,Gate 3,9.2,Y,wind priority,N/A
+Lissycasey (1),D,Booltiagh,wind,DSO,connected,Gate 3,13.399,Y,wind not priority,N/A
+Lumcloon ESS (Derrycarney),C,Derrycarney,battery,TSO,connected,Gate 3,100,N,battery,50
+Magheramore and Cloontooa (1),B,Dalton,wind,DSO,connected,Gate 3,40.8,Y,wind priority,N/A
+Meenachullalan (2),A,Binbane,wind,DSO,due to connected,Gate 3,1.9,Y,wind not priority,N/A
+Meenaward,A,Trillick,wind,DSO,connected,Gate 3,6.9,Y,wind priority,N/A
+Meenwaun WF,C,Dallow,wind,DSO,connected,Gate 3,9.99,Y,wind priority,N/A
+Monaincha Bog Wind Farm,H1,Ikerrin,wind,DSO,connected,Gate 3,35.95,Y,wind priority,N/A
+Mount Lucas (1),J,Mount Lucas,wind,TSO,connected,Gate 3,79.2,Y,wind priority,N/A
+Mulreavy Ext (Meenadreen South (2)),A,Mulreavy,wind,TSO,connected,Gate 3,5.4,Y,wind priority,N/A
+Oriel 1,G,Oriel 220kV,offshore wind,TSO,due to connected,Gate 3,210,Y,wind not priority,N/A
+Oweninny 3 (Previously Oweninny 5),B,Bellacorick,wind,TSO,due to connected,Gate 3,50,Y,wind not priority,N/A
+Oweninny Power (1),B,Bellacorick,wind,TSO,connected,Gate 3,89,Y,wind not priority,N/A
+Oweninny Power (2),B,Bellacorick,wind,TSO,connected,Gate 3,83,Y,wind not priority,N/A
+Raheenleagh (1),H2,Arklow,wind,DSO,connected,Gate 3,35.2,Y,wind priority,N/A
+Raragh (2),G,Meath Hill,wind,DSO,connected,Gate 3,11.5,Y,wind not priority,N/A
+Rathnacally (1),E,Charleville,wind,DSO,connected,Gate 3,4.45,N,wind uncontrolled,N/A
+Rossaveel Wind,B,Screebe,wind,DSO,connected,Gate 3,3,N,wind uncontrolled,N/A
+Scartaglen (2),E,Cordal,wind,DSO,connected,Gate 3,3.8,Y,wind priority,N/A
+Seecon (1),B,Uggool,wind,TSO,connected,Gate 3,105,Y,wind priority,N/A
+Shannonbridge ESS,C,Shannonbridge,battery,TSO,connected,Gate 3,100,N,battery,50
+Sheskin (1),B,Bellacorick,wind,DSO,connected,Gate 3,32.9,Y,wind not priority,N/A
+Sliabh Bawn (1),C,Sliabh Bawn,wind,TSO,connected,Gate 3,58,Y,wind priority,N/A
+Slievereagh Wind Farm (2),H1,Tipperary,wind,DSO,connected,Gate 3,1.6,N,wind uncontrolled,N/A
+Sorrell Island (prev Glenmore) (1),D,Booltiagh,wind,DSO,connected,Gate 3,24,Y,wind not priority,N/A
+Spaddan (1),A,Cathaleen's Fall,wind,DSO,connected,Gate 3,17.5,Y,wind priority,N/A
+Stack's Mountain,E,Reamore,wind,DSO,due to connected,Gate 3,25.3,Y,wind not priority,N/A
+Teevurcher,G,Meath Hill,wind,DSO,connected,Gate 3,9,Y,wind priority,N/A
+Tullabrack (1),D,Tullabrack,wind,DSO,connected,Gate 3,13.8,Y,wind priority,N/A
+Tullynamalra (1),G,Meath Hill,wind,DSO,connected,Gate 3,2.638,N,wind uncontrolled,N/A
+Tullynamoyle 2 Wind Farm,A,Corderry,wind,DSO,connected,Gate 3,10.225,Y,wind priority,N/A
+Tullynamoyle Wind Farm 3 (Formerly Geevagh 2),A,Corderry,wind,DSO,connected,Gate 3,11.98,Y,wind priority,N/A
+Uggool (1),B,Uggool,wind,TSO,connected,Gate 3,64,Y,wind priority,N/A
+Woodhouse (1),K,Woodhouse,wind,TSO,connected,Gate 3,20,Y,wind priority,N/A
+Altagowlan (1),A,Corderry,wind,DSO,connected,Pre-Gate,7.65,Y,wind priority,N/A
+Anarget (1),A,Cathaleen's Fall,wind,DSO,connected,Pre-Gate,1.98,N,wind uncontrolled,N/A
+Arklow Bank (1),H2,Arklow,offshore wind,DSO,connected,Pre-Gate,25.2,Y,wind priority,N/A
+Ballincollig Hill (1),E,Tralee,wind,DSO,connected,Pre-Gate,15,Y,wind priority,N/A
+Ballinlough (1),H1,Nenagh,wind,DSO,connected,Pre-Gate,2.55,N,wind uncontrolled,N/A
+Ballinveny (1),H1,Nenagh,wind,DSO,connected,Pre-Gate,2.55,N,wind uncontrolled,N/A
+Ballybane (Glanta Commons) Wind Farm,F,Ballylickey,wind,DSO,connected,Pre-Gate,19.55,Y,wind priority,N/A
+Ballywater (1),H2,Ballywater,wind,TSO,connected,Pre-Gate,31.5,Y,wind priority,N/A
+Beale Hill (1),E,Trien,wind,DSO,connected,Pre-Gate,1.65,N,wind uncontrolled,N/A
+Beale Hill (2),E,Trien,wind,DSO,connected,Pre-Gate,2.55,N,wind uncontrolled,N/A
+Beallough (1),K,Butlerstown,wind,DSO,connected,Pre-Gate,1.7,N,wind uncontrolled,N/A
+Beam Hill (1),A,Trillick,wind,DSO,connected,Pre-Gate,14,Y,wind priority,N/A
+Beenageeha (1),E,Tralee,wind,DSO,connected,Pre-Gate,3.96,N,wind uncontrolled,N/A
+Bellacorick (1),B,Bellacorick,wind,DSO,connected,Pre-Gate,6.45,Y,wind priority,N/A
+Black Banks (1),A,Corderry,wind,DSO,connected,Pre-Gate,3.4,N,wind uncontrolled,N/A
+Black Banks (2),A,Corderry,wind,DSO,connected,Pre-Gate,6.8,Y,wind priority,N/A
+Booltiagh (1),D,Booltiagh,wind,TSO,connected,Pre-Gate,19.45,Y,wind priority,N/A
+Cark (1),A,Letterkenny,wind,DSO,connected,Pre-Gate,15,N,wind uncontrolled,N/A
+Carnsore (1),H2,Wexford,wind,DSO,connected,Pre-Gate,11.9,N,wind uncontrolled,N/A
+Carrane Hill (1),A,Corderry,wind,DSO,connected,Pre-Gate,3.4,N,wind uncontrolled,N/A
+Carrickallen Wind Farm,G,Shankill,wind,DSO,connected,Pre-Gate,22,Y,wind priority,N/A
+Carrig (1),C,Dallow,wind,DSO,connected,Pre-Gate,2.55,N,wind uncontrolled,N/A
+Carrigcannon (1),E,Boggeragh,wind,DSO,connected,Pre-Gate,20,Y,wind priority,N/A
+Coomagearlahy (1),E,Coomagearlahy,wind,TSO,connected,Pre-Gate,42.5,Y,wind priority,N/A
+Coomatallin (1),F,Dunmanway,wind,DSO,connected,Pre-Gate,5.95,Y,wind priority,N/A
+Coreen (1),A,Gortawee,wind,DSO,connected,Pre-Gate,3,N,wind uncontrolled,N/A
+Corrie Mountain (1),A,Arigna,wind,DSO,connected,Pre-Gate,4.8,N,wind uncontrolled,N/A
+Crockahenny (1),A,Trillick,wind,DSO,connected,Pre-Gate,5,N,wind uncontrolled,N/A
+Cronalaght (1),A,Ardnagappary,wind,DSO,connected,Pre-Gate,4.98,N,wind uncontrolled,N/A
+Cronelea Upper (1),H2,Carlow,wind,DSO,connected,Pre-Gate,2.55,N,wind uncontrolled,N/A
+Cuillalea (1),B,Castlebar,wind,DSO,connected,Pre-Gate,3.4,N,wind uncontrolled,N/A
+Culliagh (1),A,Letterkenny,wind,DSO,connected,Pre-Gate,11.88,N,wind uncontrolled,N/A
+Currabwee (1),F,Dunmanway,wind,DSO,connected,Pre-Gate,4.62,N,wind uncontrolled,N/A
+Curraghgraigue (1),H1,Nenagh,wind,DSO,connected,Pre-Gate,2.55,N,wind uncontrolled,N/A
+Dromdeeveen (1),E,Glenlara 220kV side,wind,DSO,connected,Pre-Gate,10.5,Y,wind priority,N/A
+Drumlough Hill (1),A,Trillick,wind,DSO,connected,Pre-Gate,4.8,N,wind uncontrolled,N/A
+Drumlough Hill (2),A,Trillick,wind,DSO,connected,Pre-Gate,9.99,Y,wind priority,N/A
+Gartnaneane (1),G,Meath Hill,wind,DSO,connected,Pre-Gate,10.5,N,wind uncontrolled,N/A
+Gartnaneane (2),G,Meath Hill,wind,DSO,connected,Pre-Gate,4.5,N,wind uncontrolled,N/A
+Geevagh (1),A,Corderry,wind,DSO,connected,Pre-Gate,4.95,N,wind uncontrolled,N/A
+Gneeves (1),E,Knockearagh,wind,DSO,connected,Pre-Gate,9.35,Y,wind priority,N/A
+Golagh (1),A,Golagh,wind,TSO,connected,Pre-Gate,12,N,wind uncontrolled,N/A
+Golagh (1) (battery),A,Golagh,battery,TSO,connected,Pre-Gate,3,N,battery,3
+Greenoge (1),H2,Crane,wind,DSO,connected,Pre-Gate,4.99,N,wind uncontrolled,N/A
+Inverin (Knock South) (1),B,Screebe,wind,DSO,connected,Pre-Gate,2.64,N,wind uncontrolled,N/A
+Kealkil (Curraglass) (1),F,Ballylickey,wind,DSO,connected,Pre-Gate,8.5,N,wind uncontrolled,N/A
+Kilronan (1),A,Arigna,wind,DSO,connected,Pre-Gate,5,N,wind uncontrolled,N/A
+Kilvinane (1),F,Bandon,wind,DSO,connected,Pre-Gate,4.5,N,wind uncontrolled,N/A
+Kingsmountain (1),B,Cunghill,wind,TSO,connected,Pre-Gate,23.75,Y,wind priority,N/A
+Knockastanna (1),D,Ardnacrusha,wind,DSO,connected,Pre-Gate,7.5,Y,wind priority,N/A
+Lahanaght Hill (1),F,Dunmanway,wind,DSO,connected,Pre-Gate,4.25,N,wind uncontrolled,N/A
+Largan Hill (1),B,Tonroe,wind,DSO,connected,Pre-Gate,5.94,N,wind uncontrolled,N/A
+Meenadreen (1),A,Cathaleen's Fall,wind,DSO,connected,Pre-Gate,3.4,N,wind uncontrolled,N/A
+Meenanilta (1),A,Letterkenny,wind,DSO,connected,Pre-Gate,2.55,N,wind uncontrolled,N/A
+Meenanilta (2),A,Letterkenny,wind,DSO,connected,Pre-Gate,2.45,N,wind uncontrolled,N/A
+Meentycat (1),A,Meentycat,wind,TSO,connected,Pre-Gate,70.96,Y,wind priority,N/A
+Milane Hill (1),F,Dunmanway,wind,DSO,connected,Pre-Gate,5.94,N,wind uncontrolled,N/A
+Moanmore (1),D,Tullabrack,wind,DSO,connected,Pre-Gate,12.6,N,wind uncontrolled,N/A
+Moneenatieve (1),A,Corderry,wind,DSO,connected,Pre-Gate,3.96,N,wind uncontrolled,N/A
+Mount Eagle (1),E,Tralee,wind,DSO,connected,Pre-Gate,5.1,N,wind uncontrolled,N/A
+Mountain Lodge (1),G,Ratrussan,wind,TSO,connected,Pre-Gate,24.8,Y,wind priority,N/A
+Mountain Lodge (2),G,Shankill,wind,DSO,connected,Pre-Gate,3,N,wind uncontrolled,N/A
+Raheen Barr (1),B,Castlebar,wind,DSO,connected,Pre-Gate,18.7,N,wind uncontrolled,N/A
+Rathcahill (1),E,Rathkeale,wind,DSO,connected,Pre-Gate,12.5,Y,wind priority,N/A
+Ratrussan (1a),G,Ratrussan,wind,TSO,connected,Pre-Gate,48,Y,wind priority,N/A
+Richfield (1),H2,Wexford,wind,DSO,connected,Pre-Gate,20.25,Y,wind priority,N/A
+Skehanagh (1),C,Dallow,wind,DSO,connected,Pre-Gate,4.25,N,wind uncontrolled,N/A
+Sonnagh Old (1),C,Somerset,wind,DSO,connected,Pre-Gate,7.65,N,wind uncontrolled,N/A
+Sorne Hill (1),A,Sorne Hill,wind,DSO,connected,Pre-Gate,31.5,Y,wind priority,N/A
+Spion Kop (1),A,Arigna,wind,DSO,connected,Pre-Gate,1.2,N,wind uncontrolled,N/A
+Taurbeg (1),E,Glenlara,wind,DSO,connected,Pre-Gate,26,Y,wind priority,N/A
+Tournafulla (1),E,Trien,wind,DSO,connected,Pre-Gate,7.5,Y,wind priority,N/A
+Tursillagh (1),E,Tralee,wind,DSO,connected,Pre-Gate,15,N,wind uncontrolled,N/A
+Tursillagh (2),E,Tralee,wind,DSO,connected,Pre-Gate,6.8,N,wind uncontrolled,N/A
+Aghada BESS 02,I,Aghada,battery,TSO,connected,Pre-Gate 1,159,N,battery,318
+Aghada BESS 01,I,Aghada,battery,TSO,connected,Post Gate 1,19,N,battery,38
+Ballinknockane Solar Farm,E,Ballinknockane,solar,TSO,due to connected,Non GPA,50,Y,solar not priority,N/A
+Ballycrissane Solar Farm,C,Somerset,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Ballycullane Solar Park,H2,Great Island,solar,DSO,connected,Non GPA,4.99,Y,solar not priority,N/A
+Ballytobin Solar PV,H2,Kilkenny,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Banemore Solar Farm,E,Clahane,solar,TSO,due to connected,Non GPA,34,Y,solar not priority,N/A
+Barnderg Solar Farm,B,Cloon,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Beaulieu PV,G,Drybridge,solar,DSO,connected,Non GPA,3.99,Y,solar not priority,N/A
+Blundelstown,J,Blundelstown,solar,TSO,connected,Non GPA,60,Y,solar not priority,N/A
+Blusheens Solar (1),H2,Wexford,solar,DSO,connected,Non GPA,7.98,Y,solar not priority,N/A
+Bodenstown Solar Farm,J,Monread,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Bullstown Solar Farm,J,Finglas,solar,DSO,connected,Non GPA,8.42,Y,solar not priority,N/A
+Carrick Solar,H1,Ballydine,solar,DSO,due to connected,Non GPA,5.8,Y,solar not priority,N/A
+Carrickabane Solar Farm,G,Shankill,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Castlekelly Solar PV Farm,H2,Kilkenny,solar,DSO,connected,Non GPA,4,Y,solar not priority,N/A
+Coolyduff,I,Kilbarry,solar,DSO,connected,Non GPA,4.95,Y,solar not priority,N/A
+Courtown Solar Farm (previously Coolnastudd),H2,Banoge,solar,DSO,connected,Non GPA,4,Y,solar not priority,N/A
+Creevy Solar,C,Lanesboro,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Crossfield,E,Mallow,solar,DSO,connected,Non GPA,4.95,Y,solar not priority,N/A
+Curraghmartin Solar Park,H2,Waterford,solar,DSO,connected,Non GPA,3.99,Y,solar not priority,N/A
+DePuy,I,Barnahely,wind,DSO,connected,Non GPA,2.5,N,wind uncontrolled,N/A
+DePuy Synthes Turbine2,I,Barnahely,wind,DSO,connected,Non GPA,0.99,N,wind uncontrolled,N/A
+Dromalour,E,Glenlara,solar,DSO,connected,Non GPA,4.95,Y,solar not priority,N/A
+Drombeg Solar Park,E,Drombeg,solar,TSO,connected,Non GPA,50,Y,solar not priority,N/A
+Drumgarriff South,I,Kilbarry,solar,DSO,connected,Non GPA,4.95,Y,solar not priority,N/A
+Dunmurry Springs PV,J,Newbridge,solar,DSO,connected,Non GPA,12,Y,solar not priority,N/A
+Farranlahassery Solar,H1,Cahir,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Featherbed Lane Solar,J,Glasmore,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Gallanstown Solar,J,Gallanstown,solar,TSO,connected,Non GPA,119,Y,solar not priority,N/A
+Grady Joinery,B,Tonroe,wind,DSO,connected,Non GPA,2.5,N,wind uncontrolled,N/A
+Grangegeeth Solar,G,Drybridge,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Harristown Solar PV,J,Harristown,solar,TSO,due to connected,Non GPA,42.3,Y,solar not priority,N/A
+Hilltown PV,G,Baltrasna,solar,DSO,connected,Non GPA,9.99,Y,solar not priority,N/A
+Hortland PV (from merge Knockanally and Hortland),J,Dunfirth,solar,DSO,connected,Non GPA,14,Y,solar not priority,N/A
+Kelwin Power Plant,E,Kilpaddoge,wind,TSO,connected,Non GPA,37,Y,wind priority,N/A
+Kelwin Power Plant (battery),E,Kilpaddoge,battery,TSO,connected,Non GPA,2.6,N,battery,5.2
+Kerdiffstown PV,J,Monread,solar,DSO,connected,Non GPA,4,Y,solar not priority,N/A
+Kilkeelan Solar Farm,G,Navan,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Knockglass Solar Farm,F,Macroom,solar,DSO,connected,Non GPA,4,Y,solar not priority,N/A
+Laghtane Solar Farm,H1,Ahane,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Leacht Cross Solar,I,Barnahely,solar,DSO,due to connected,Non GPA,4.95,Y,solar not priority,N/A
+Lehinch Solar Farm,J,Thornsberry,solar,DSO,connected,Non GPA,4,Y,solar not priority,N/A
+Liffey Autoproduction Project,G,Shankill,wind,DSO,connected,Non GPA,1.6,N,wind uncontrolled,N/A
+Liffey Autoproduction Project (extension),G,Shankill,wind,DSO,connected,Non GPA,1.417,N,wind uncontrolled,N/A
+Lisbrien Solar Farm,H1,Nenagh,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Lisduff Solar Park (Claremorris),B,Dalton,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Lisnageeragh Solar Farm,C,Richmond,solar,DSO,connected,Non GPA,4,Y,solar not priority,N/A
+Liss Solar Farm (prev Lands at Liss),C,Mullingar,solar,DSO,connected,Non GPA,4,Y,solar not priority,N/A
+Loughteague,J,Coolnabacky,solar,TSO,due to connected,Non GPA,55,Y,solar not priority,N/A
+Maine Solar,E,Oughtragh,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Marlinstown Solar Farm (prev Russellstown),C,Mullingar,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Millvale PV,H2,Ballybeg,solar,DSO,connected,Non GPA,8,Y,solar not priority,N/A
+Monatooreen Solar,I,Knockraha,solar,TSO,due to connected,Non GPA,25.7,Y,solar not priority,N/A
+Muinagh Solar Farm,J,Thornsberry,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Painestown Hill Solar Farm,G,Baltrasna,solar,DSO,connected,Non GPA,7.14,Y,solar not priority,N/A
+Rathleg Solar Farm,C,Carrick on Shannon,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Rosspile Solar Farm,H2,Rosspile,solar,TSO,connected,Non GPA,95,Y,solar not priority,N/A
+Shanagraigue,I,Trabeg,solar,DSO,connected,Non GPA,4.95,Y,solar not priority,N/A
+Shanderry Solar Farm,J,Portlaoise,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Shannagh Beg Solar Farm,C,Athlone,solar,DSO,due to connected,Non GPA,4,Y,solar not priority,N/A
+Shantallow Solar,B,Shantallow,solar,TSO,due to connected,Non GPA,35,Y,solar not priority,N/A
+Taghadoe Solar Farm,J,Griffinrath,solar,DSO,due to connected,Non GPA,25,Y,solar not priority,N/A
+Threecastles Solar Farm,J,Kilteel,solar,DSO,due to connected,Non GPA,15,Y,solar not priority,N/A
+Timahoe North solar,J,Timahoe,solar,TSO,connected,Non GPA,70,Y,solar not priority,N/A
+Tullabeg Solar Park,H2,Tullabeg,solar,TSO,connected,Non GPA,50,Y,solar not priority,N/A
+Wind Energy Project (Janssen),I,Barnahely,wind,DSO,connected,Non GPA,2,N,wind uncontrolled,N/A
+Woodstock North Solar Farm,J,Athy,solar,DSO,due to connected,Non GPA,4.99,Y,solar not priority,N/A
+Inchicore BESS,J,Inchicore,battery,DSO,connected,T-4 2022/23,30,N,battery,60
+Poolbeg BESS,J,Poolbeg,battery,TSO,connected,T-4 2022/23,75,N,battery,150
+South Wall BESS,J,Irishtown,battery,TSO,connected,T-4 2022/23,30,N,battery,60
+Cushaling ESPS,J,Cushaling,battery,TSO,connected,T-3 2024/25,20,N,battery,40
+Shannonbridge B ESS,C,Shannonbridge,battery,TSO,connected,T-3 2024/25,63.2,N,battery,158
+Brianstown BESS,C,Richmond,battery,DSO,due to connected,T-4 2026/27,5.45,N,battery,*
+Kish (Crag Wicklow),H2,Oaklands,battery,TSO,due to connected,T-4 2026/27,114,N,battery,*
+Knockraha BESS,I,Knockraha,Battery,TSO,due to connected,T-4 2028/29,100,N,battery,*
+Arklow Bank Phase 2 A,H2,Arklow 220kV,offshore wind,TSO,due to connected,Offshore wind,400,Y,wind not priority,N/A
+Arklow Bank Phase 2 B,H2,Arklow 220kV,offshore wind,TSO,due to connected,Offshore wind,400,Y,wind not priority,N/A
+Bray Bank (Dublin Array),J,Carrickmines 220kV,offshore wind,TSO,due to connected,Offshore wind,412,Y,wind not priority,N/A
+Codling Offshore Wind A,J,Poolbeg north 220kV,offshore wind,TSO,due to connected,Offshore wind,400,Y,wind not priority,N/A
+Codling Offshore Wind B,J,Poolbeg south 220kV,offshore wind,TSO,due to connected,Offshore wind,450,Y,wind not priority,N/A
+Codling Offshore Wind C,J,Poolbeg south 220kV,offshore wind,TSO,due to connected,Offshore wind,450,Y,wind not priority,N/A
+Great Island OWF,H2,Great Island 220kV,offshore wind,TSO,due to connected,Offshore wind,450,Y,wind not priority,N/A
+Kish Bank (Dublin Array),J,Carrickmines 220kV,offshore wind,TSO,due to connected,Offshore wind,412,Y,wind not priority,N/A
+Knockraha,I,Knockraha 220kV,offshore wind,TSO,due to connected,Offshore wind,450,Y,wind not priority,N/A
+North Irish Sea Array A,J,Belcamp 220kV,offshore wind,TSO,due to connected,Offshore wind,250,Y,wind not priority,N/A
+North Irish Sea Array B,J,Belcamp 220kV,offshore wind,TSO,due to connected,Offshore wind,250,Y,wind not priority,N/A
+Oriel offshore new A,G,Oriel 220kV,offshore wind,TSO,due to connected,Offshore wind,165,Y,wind not priority,N/A
+Avonbeg ESS,H2,Crane,battery,DSO,connected,ECP-1,16,N,battery,8
+Ballyedock,H2,Great Island,solar,DSO,due to connected,ECP-1,12,Y,solar not priority,N/A
+Ballymacadam (Monraha) Solar PV Farm,H1,Cahir,solar,DSO,connected,ECP-1,21,Y,solar not priority,N/A
+Ballynacrusha,I,Cow Cross,solar,DSO,due to connected,ECP-1,4.95,Y,solar not priority,N/A
+Bilboa (1),H2,Carlow,wind,DSO,due to connected,ECP-1,15,Y,wind not priority,N/A
+Black Lough (1),B,Glenree,wind,DSO,connected,ECP-1,12.5,Y,wind not priority,N/A
+Blackwater Bog Solar 1,C,Shannonbridge,solar,TSO,due to connected,ECP-1,65,Y,solar not priority,N/A
+Callatrim South Solar Farm (prev. Kilcawha),F,Bandon,solar,DSO,due to connected,ECP-1,5.95,Y,solar not priority,N/A
+Carrigdangan Wind Farm - Phase 2,F,Dunmanway,wind,TSO,due to connected,ECP-1,7.95,Y,wind not priority,N/A
+Carrowbeg Battery Storage (Prev MCB),B,Dalton,battery,DSO,due to connected,ECP-1,12,N,battery,*
+Cleggill Solar Park,C,Richmond,solar,DSO,due to connected,ECP-1,8,Y,solar not priority,N/A
+Cloghan Wind Farm,C,Derrycarney,wind,TSO,connected,ECP-1,34,Y,wind not priority,N/A
+Cloncreen Wind farm,J,Cushaling,wind,TSO,connected,ECP-1,75,Y,wind not priority,N/A
+Cloncreen Wind farm (battery),J,Cushaling,battery,TSO,connected,ECP-1,25,N,battery,50
+Clonfad Solar,J,Clonfad,solar,TSO,due to connected,ECP-1,100,Y,solar not priority,N/A
+Cloonascragh Solar,B,Cloon,solar,DSO,due to connected,ECP-1,20,Y,solar not priority,N/A
+Clooncon East Single WTG,C,Athlone,wind,DSO,connected,ECP-1,0.9,N,wind uncontrolled,N/A
+Cluide Solar,G,Drybridge,solar,DSO,due to connected,ECP-1,4,Y,solar not priority,N/A
+Confey Solar Park,J,Griffinrath,solar,DSO,due to connected,ECP-1,15.5,Y,solar not priority,N/A
+Croaghonagh 1 Windfarm (Merged with Carrickalangan),A,Croaghonagh,wind,TSO,connected,ECP-1,138.1,Y,wind not priority,N/A
+Crossmore (1),D,Booltiagh,wind,DSO,connected,ECP-1,15,Y,wind not priority,N/A
+Currabeha,F,Bandon,solar,DSO,due to connected,ECP-1,4.95,Y,solar not priority,N/A
+Davidstown Solar,H2,Wexford,solar,DSO,connected,ECP-1,4.95,Y,solar not priority,N/A
+Dooleeg More (1),B,Bellacorick,wind,DSO,due to connected,ECP-1,2.5,Y,wind not priority,N/A
+Dromroe Solar,E,Tralee,solar,DSO,due to connected,ECP-1,4,Y,solar not priority,N/A
+Drumroe East Solar Farm,K,Dungarvan,solar,DSO,due to connected,ECP-1,15,Y,solar not priority,N/A
+ESK Wind Farm Phase 2,E,Boggeragh,wind,DSO,connected,ECP-1,12,Y,wind not priority,N/A
+Firgrove,D,Drumline,solar,DSO,due to connected,ECP-1,4,Y,solar not priority,N/A
+Firlough TG371 was Carrowleagh-Kilbride DG741,B,Firlough,wind,TSO,due to connected,ECP-1,48.3,Y,wind not priority,N/A
+Foxhall PV,K,Dungarvan,solar,DSO,due to connected,ECP-1,3.99,Y,solar not priority,N/A
+Friarspark (was Glebe Golf Course),G,Navan,solar,DSO,connected,ECP-1,4,Y,solar not priority,N/A
+Gardnershill FGS,J,Stephenstown,battery,DSO,connected,ECP-1,8.5,N,battery,9.350000000000001
+Garryndruig,F,Bandon,solar,DSO,due to connected,ECP-1,4.95,Y,solar not priority,N/A
+Gaskinstown Solar Farm,G,Deenes,solar,TSO,connected,ECP-1,85,Y,solar not priority,N/A
+Gillinstown Solar,G,Garballagh,solar,TSO,connected,ECP-1,95,Y,solar not priority,N/A
+Glen Solar,A,Garvagh,solar,TSO,due to connected,ECP-1,40,Y,solar not priority,N/A
+Gorey Battery Energy Storage,H2,Banoge,battery,DSO,connected,ECP-1,9,N,battery,4.5
+Gorey Solar,H2,Banoge,solar,DSO,connected,ECP-1,4,Y,solar not priority,N/A
+Gorman (Graigs)  Energy Storage Station,G,Gorman,battery,TSO,connected,ECP-1,30,N,battery,15
+Gorman Energy Storage Station - Extension,G,Gorman,battery,TSO,connected,ECP-1,20,N,battery,10
+Horsepasture Solar Farm (Grian PV),H1,Doon,solar,DSO,due to connected,ECP-1,8,Y,solar not priority,N/A
+Keiloge Solar (Prev Coolnagapogue Solar Farm Phase 1),K,Butlerstown,solar,DSO,due to connected,ECP-1,3.95,Y,solar not priority,N/A
+Kilcarrig Solar PV Farm,H2,Carlow,solar,DSO,due to connected,ECP-1,4,Y,solar not priority,N/A
+Kilmannock Battery Storage Facility,H2,Great Island,battery,DSO,due to connected,ECP-1,30,N,battery,*
+Knockeenbui (1),F,Dunmanway,wind,DSO,due to connected,ECP-1,13.8,Y,wind not priority,N/A
+Lenalea Wind Farm,A,Lenalea,wind,TSO,connected,ECP-1,30.1,Y,wind not priority,N/A
+Lisdrumdoagh Energy Storage Facility,G,Lisdrum,battery,TSO,connected,ECP-1,60,N,battery,30
+Lisheen 3,H1,Lisheen,wind,TSO,connected,ECP-1,28.8,Y,wind not priority,N/A
+Lurrig Solar Farm,I,Midleton,solar,DSO,connected,ECP-1,3.6,Y,solar not priority,N/A
+Macallian Solar,H2,Crane,solar,DSO,connected,ECP-1,9,Y,solar not priority,N/A
+Monroe East solar from merge Ballyfowloo Lawclon,H1,Cahir,solar,DSO,connected,ECP-1,8,Y,solar not priority,N/A
+Mully Graffy Windfarm (Kilgorman),A,Tievebrack,wind,TSO,due to connected,ECP-1,29.9,Y,wind not priority,N/A
+Porterstown Battery Storage Facility,J,Kilteel,battery,TSO,connected,ECP-1,30,N,battery,30
+Rathnaskilloge,K,Rathnaskilloge,solar,TSO,connected,ECP-1,95,Y,solar not priority,N/A
+Rhode 37.5MW ESS,J,Derryiron,battery,DSO,due to connected,ECP-1,37.5,N,battery,*
+Rooaun Solar,C,Athlone,solar,DSO,due to connected,ECP-1,4,Y,solar not priority,N/A
+Roxborough,C,Lanesboro,wind,DSO,due to connected,ECP-1,4.95,Y,wind not priority,N/A
+Sorrell Island (Glenmore) WF Ext,D,Booltiagh,wind,DSO,connected,ECP-1,8,Y,wind not priority,N/A
+Stamullen Solar Park,G,Drybridge,solar,DSO,due to connected,ECP-1,3.99,Y,solar not priority,N/A
+Taghart (1),G,Meath Hill,wind,DSO,connected,ECP-1,23.06,Y,wind not priority,N/A
+Tead More Solar (Meelshane),I,Midleton,solar,DSO,due to connected,ECP-1,3.95,Y,solar not priority,N/A
+Templerainey East Solar Farm (Ballycooleen),H2,Arklow,solar,DSO,due to connected,ECP-1,4,Y,solar not priority,N/A
+Tullynally Estate,C,Mullingar,solar,DSO,due to connected,ECP-1,4,Y,solar not priority,N/A
+Willville Solar Park,G,Dundalk,solar,DSO,due to connected,ECP-1,3.99,Y,solar not priority,N/A
+Ardderoo wind extension,B,Knockranny,wind,TSO,due to connected,ECP-2.1,18,Y,wind not priority,N/A
+Ballinalard Solar Farm,H1,Tipperary,solar,DSO,due to connected,ECP-2.1,4,Y,solar not priority,N/A
+Ballinrea Solar Park,I,Raffeen,solar,TSO,due to connected,ECP-2.1,55,Y,solar not priority,N/A
+Ballylongford Windfarm,E,Drombeg,wind,DSO,due to connected,ECP-2.1,25.2,Y,wind not priority,N/A
+Ballymanus Wind Farm,H2,Arklow,wind,DSO,due to connected,ECP-2.1,39.99,Y,wind not priority,N/A
+Bilboa Wind farm Ext,H2,Carlow,wind,DSO,due to connected,ECP-2.1,6,Y,wind not priority,N/A
+Bradán Wind Farm (Killybegs Community Wind Turbine),A,Binbane,wind,DSO,due to connected,ECP-2.1,4.2,Y,wind not priority,N/A
+Claremorris 2 Solar Farm,B,Dalton,solar,DSO,due to connected,ECP-2.1,4,Y,solar not priority,N/A
+Clogheravaddy Wind Farm (Phase 3),A,Binbane,wind,DSO,connected,ECP-2.1,3.6,Y,wind not priority,N/A
+Clondardis Solar,C,Shanonagh,solar,TSO,due to connected,ECP-2.1,58.6,Y,solar not priority,N/A
+Clonin North solar,J,Derryiron,solar,TSO,due to connected,ECP-2.1,47,Y,solar not priority,N/A
+Clooninagh Wind Farm,B,Cloon,wind,DSO,due to connected,ECP-2.1,4.5,Y,wind not priority,N/A
+Coole wind,C,Mullingar,wind,TSO,due to connected,ECP-2.1,88,Y,wind not priority,N/A
+Coolnagloose Community Solar Farm,H2,Arklow,solar,DSO,due to connected,ECP-2.1,0.85,N,solar uncontrolled,N/A
+Cooltubbrid West Solar,K,Dungarvan,solar,DSO,connected,ECP-2.1,4,Y,solar not priority,N/A
+Coppenagh solar,H2,Carlow,solar,DSO,due to connected,ECP-2.1,4.6,Y,solar not priority,N/A
+Coumaclovane Solar Extension,E,Coomagearlahy,solar,TSO,due to connected,ECP-2.1,7,Y,solar not priority,N/A
+Crossmore (2),D,Booltiagh,wind,DSO,connected,ECP-2.1,10.2,Y,wind not priority,N/A
+Cushaling wind (loop into Cushaling - Newbridge),J,Philipstown,wind,TSO,connected,ECP-2.1,50,Y,wind not priority,N/A
+Derryadd battery,C,Lanesboro,battery,TSO,due to connected,ECP-2.1,16,N,battery,*
+Derryadd wind,C,Lanesboro,wind,TSO,due to connected,ECP-2.1,90,Y,wind not priority,N/A
+Dooleeg More Ext.,B,Bellacorick,wind,DSO,due to connected,ECP-2.1,1.3,Y,wind not priority,N/A
+Drehid wind,J,Mulgeeth,wind,TSO,connected,ECP-2.1,60,Y,wind not priority,N/A
+Dromsallagh Solar,D,Ardnacrusha,solar,DSO,due to connected,ECP-2.1,4,Y,solar not priority,N/A
+Drumlins Park wind,G,Lislea,wind,TSO,connected,ECP-2.1,48.8,Y,wind not priority,N/A
+Dysart PV,J,Dunfirth,solar,DSO,due to connected,ECP-2.1,17.5,Y,solar not priority,N/A
+Erkina solar,H1,Timoney,solar,TSO,due to connected,ECP-2.1,66.56,Y,solar not priority,N/A
+Farran South,H1,Barrymore,solar,DSO,due to connected,ECP-2.1,15,Y,solar not priority,N/A
+Farrangalway Solar PV Farm,F,Bandon,solar,DSO,due to connected,ECP-2.1,4.95,Y,solar not priority,N/A
+Firlough Wind Farm,B,Firlough,wind,TSO,due to connected,ECP-2.1,27.3,Y,wind not priority,N/A
+Friarspark Solar 2,G,Navan,solar,DSO,due to connected,ECP-2.1,2.1,Y,solar not priority,N/A
+Gortaheera CM2 Windfarm,D,Booltiagh,wind,DSO,due to connected,ECP-2.1,3,Y,wind not priority,N/A
+Harlockstown Solar (Gallanstown Solar Extension),J,Gallanstown,solar,TSO,connected,ECP-2.1,31.6,Y,solar not priority,N/A
+Keatingstown Solar Farm,H2,Kilkenny,solar,DSO,due to connected,ECP-2.1,6,Y,solar not priority,N/A
+Kilcannon,K,Dungarvan,solar,DSO,due to connected,ECP-2.1,4.95,Y,solar not priority,N/A
+Kilkeelan Phase 2 Solar Farm,G,Navan,solar,DSO,due to connected,ECP-2.1,1.35,Y,solar not priority,N/A
+Knocknamork solar,E,Ballyvouskil 220,solar,TSO,due to connected,ECP-2.1,12.5,Y,solar not priority,N/A
+Knocknamork wind,E,Ballyvouskil 220,wind,TSO,due to connected,ECP-2.1,42,Y,wind not priority,N/A
+Knockranny wind,B,Knockranny,wind,TSO,due to connected,ECP-2.1,47.3,Y,wind not priority,N/A
+Loan PV,H2,Ballyragget,solar,DSO,due to connected,ECP-2.1,4.99,Y,solar not priority,N/A
+Lysaghtstown Solar,I,Lysaghtstown,solar,TSO,connected,ECP-2.1,87,Y,solar not priority,N/A
+Mainscourt,J,Grange,solar,DSO,due to connected,ECP-2.1,39.99,Y,solar not priority,N/A
+Middleton solar (Longford),C,Lanesboro,solar,TSO,due to connected,ECP-2.1,56.6,Y,solar not priority,N/A
+Moanvane wind,J,Mount Lucas,wind,TSO,connected,ECP-2.1,56.4,Y,wind not priority,N/A
+Muinagh Solar Farm phase 2,J,Thornsberry,solar,DSO,due to connected,ECP-2.1,1.8,Y,solar not priority,N/A
+North Arklow battery,H2,Arklow,battery,TSO,due to connected,ECP-2.1,30,N,battery,*
+North Arklow Solar,H2,Arklow,solar,TSO,due to connected,ECP-2.1,47,Y,solar not priority,N/A
+Parksgrove solar,H2,Ballyragget,solar,DSO,due to connected,ECP-2.1,35,Y,solar not priority,N/A
+Pinewoods wind,H2,Garrintaggart,wind,TSO,due to connected,ECP-2.1,49.5,Y,wind not priority,N/A
+Porterstown BS Facility Ph.2,J,Kilteel,battery,TSO,due to connected,ECP-2.1,60,N,battery,*
+Rathlockstown Solar,J,Gallanstown,solar,TSO,connected,ECP-2.1,18.9,Y,solar not priority,N/A
+Templehouse Community Wind Turbine,B,Sligo,wind,DSO,due to connected,ECP-2.1,4.08,Y,wind not priority,N/A
+The Dell Solar,H2,Crory,solar,DSO,due to connected,ECP-2.1,20,Y,solar not priority,N/A
+Tracystown Solar,H2,Wexford,solar,TSO,due to connected,ECP-2.1,101.1,Y,solar not priority,N/A
+Tullyhaw Community Wind Turbine,A,Gortawee,wind,DSO,due to connected,ECP-2.1,4.2,Y,wind not priority,N/A
+Tullynamoyle Wind Farm 5,A,Corderry,wind,DSO,due to connected,ECP-2.1,16.35,Y,wind not priority,N/A
+WEP Solar Slanemore Mullingar,C,Mullingar,solar,DSO,due to connected,ECP-2.1,16.85,Y,solar not priority,N/A
+Willville Extension Solar Park,G,Dundalk,solar,DSO,due to connected,ECP-2.1,1,Y,solar not priority,N/A
+Yellow River Wind Farm,J,Derryiron,wind,TSO,connected,ECP-2.1,101,Y,wind not priority,N/A
+Ardagh South Energy Storage Facility,G,Meath Hill,battery,TSO,due to connected,ECP-2.2,60,N,battery,*
+Ardnadoman Solar Farm,C,Somerset,solar,DSO,due to connected,ECP-2.2,4,Y,solar not priority,N/A
+Ballinaclough Solar Farm,H2,Ballybeg,solar,DSO,due to connected,ECP-2.2,8.5,Y,solar not priority,N/A
+Ballyboughlin Solar Farm,J,Thornsberry,solar,DSO,due to connected,ECP-2.2,14,Y,solar not priority,N/A
+Ballyduff PV,I,Midleton,solar,DSO,due to connected,ECP-2.2,7,Y,solar not priority,N/A
+Ballyenaghty Solar Park,E,Tralee,solar,DSO,due to connected,ECP-2.2,9.9,Y,solar not priority,N/A
+Ballymoneen Solar Park,B,Cashla,solar,TSO,due to connected,ECP-2.2,100,Y,solar not priority,N/A
+Ballyroe Solar,E,Charleville,solar,TSO,due to connected,ECP-2.2,120,Y,solar not priority,N/A
+Ballyvatta Solar Extension,I,Knockraha,solar,TSO,due to connected,ECP-2.2,16.3,Y,solar not priority,N/A
+Barnacurragh Solar Park,B,Cloon,solar,TSO,due to connected,ECP-2.2,50,Y,solar not priority,N/A
+Barnesmore Windfarm Repowering,A,Golagh,wind,TSO,due to connected,ECP-2.2,48,Y,wind not priority,N/A
+Berrings Solar Farm,F,Macroom,solar,DSO,due to connected,ECP-2.2,13.8,Y,solar not priority,N/A
+Carriglong Solar Park,K,Butlerstown,solar,DSO,due to connected,ECP-2.2,32.7,Y,solar not priority,N/A
+Clashwilliam Solar,H2,Kilkenny,solar,DSO,due to connected,ECP-2.2,44,Y,solar not priority,N/A
+Coldwinters Energy Hub battery,J,Finglas,battery,DSO,due to connected,ECP-2.2,15,N,battery,*
+Coolboy Solar Farm,H2,Arklow,solar,DSO,due to connected,ECP-2.2,5.99,Y,solar not priority,N/A
+Coole Wind Farm - Extension,C,Mullingar,wind,TSO,due to connected,ECP-2.2,9.5,Y,wind not priority,N/A
+Coppenagh Solar Park Extension,H2,Carlow,solar,DSO,due to connected,ECP-2.2,4.7,Y,solar not priority,N/A
+Darthogue Solar Farm,J,Crakenstown,solar,TSO,due to connected,ECP-2.2,47,Y,solar not priority,N/A
+Derrinlough Wind Farm,C,Stonestown,wind,TSO,connected,ECP-2.2,105,Y,wind not priority,N/A
+Derrykillew Wind Farm,A,Cathaleen's Fall,wind,DSO,due to connected,ECP-2.2,37.5,Y,wind not priority,N/A
+Drumman Solar Farm,G,Shankill,solar,DSO,due to connected,ECP-2.2,7,Y,solar not priority,N/A
+East Laois Solar Farm Extension,J,Coolnabacky,solar,TSO,due to connected,ECP-2.2,25,Y,solar not priority,N/A
+Erkina Solar Park Extension,H1,Timoney,solar,TSO,due to connected,ECP-2.2,90,Y,solar not priority,N/A
+Farranmacedmond Solar Farm,H2,Waterford,solar,DSO,due to connected,ECP-2.2,6,Y,solar not priority,N/A
+Farranrory Wind Farm,H2,Ballyragget,wind,DSO,due to connected,ECP-2.2,45,Y,wind not priority,N/A
+Fieldstown Solar,J,Finglas,solar,TSO,due to connected,ECP-2.2,75,Y,solar not priority,N/A
+Finnis PV,F,Bandon,solar,DSO,connected,ECP-2.2,8.5,Y,solar not priority,N/A
+Garballagh2 Solar Farm,G,Garballagh,solar,TSO,due to connected,ECP-2.2,48,Y,solar not priority,N/A
+Garr Solar & Storage,J,Derryiron,solar,TSO,due to connected,ECP-2.2,85,Y,solar not priority,N/A
+Garr Solar & Storage,J,Derryiron,battery,TSO,due to connected,ECP-2.2,50,N,battery,*
+Garreenleen Solar Farm,H2,Kellis,solar,TSO,due to connected,ECP-2.2,81,Y,solar not priority,N/A
+Islanduane Solar Farm,E,Limerick,solar,DSO,due to connected,ECP-2.2,4.95,Y,solar not priority,N/A
+Johnstown North PV,H2,Arklow,solar,DSO,due to connected,ECP-2.2,22,Y,solar not priority,N/A
+Kilmannock Battery Storage Facility Phase 2,H2,Great Island,battery,TSO,due to connected,ECP-2.2,90,N,battery,*
+Leacht Cross Solar Phase 2,I,Barnahely,solar,DSO,due to connected,ECP-2.2,5,Y,solar not priority,N/A
+Leamór Community Wind Turbine,C,Dallow,wind,DSO,due to connected,ECP-2.2,4.99,Y,wind not priority,N/A
+Lissane West Solar Farm,D,Ennis,solar,DSO,due to connected,ECP-2.2,18.3,Y,solar not priority,N/A
+Magherareagh Solar PV Farm,H1,Cahir,solar,DSO,due to connected,ECP-2.2,3.3,Y,solar not priority,N/A
+Manusmore Solar Park,D,Ennis,solar,TSO,due to connected,ECP-2.2,60,Y,solar not priority,N/A
+Milltown Community Solar Farm,B,Cloon,solar,DSO,due to connected,ECP-2.2,4.99,Y,solar not priority,N/A
+Monvallet Hybrid Solar & Battery Farm,G,Louth,solar,TSO,due to connected,ECP-2.2,50,Y,solar not priority,N/A
+Monvallet Hybrid Solar & Battery Farm (battery),G,Louth,battery,TSO,due to connected,ECP-2.2,134.4,N,battery,*
+Poulbautia Solar Farm,K,Dungarvan,solar,DSO,due to connected,ECP-2.2,19,Y,solar not priority,N/A
+Rosspile2 Solar plus Storage Facility,H2,Rosspile,battery,TSO,due to connected,ECP-2.2,100,N,battery,*
+Smithstown,J,Griffinrath,solar,DSO,due to connected,ECP-2.2,25.3,Y,solar not priority,N/A
+Thomastown Road Solar,H2,Kilkenny,solar,DSO,due to connected,ECP-2.2,4,Y,solar not priority,N/A
+Timahoe North ph2 battery,J,Timahoe,battery,TSO,due to connected,ECP-2.2,20,N,battery,*
+Timahoe North Phase 2 Solar Farm,J,Timahoe,solar,TSO,due to connected,ECP-2.2,60,Y,solar not priority,N/A
+Tomsallagh Solar,H2,Effernoge,solar,TSO,due to connected,ECP-2.2,50,Y,solar not priority,N/A
+Altcor Wind Farm,A,Binbane,wind,DSO,due to connected,ECP-2.3,9,Y,wind not priority,N/A
+Ballingaddy Solar,D,Ennis,solar,DSO,due to connected,ECP-2.3,4.99,Y,solar not priority,N/A
+Ballykenny Solar,C,Richmond,solar,DSO,due to connected,ECP-2.3,9,Y,solar not priority,N/A
+Ballymoney PV,H2,Arklow,solar,DSO,due to connected,ECP-2.3,7.6,Y,solar not priority,N/A
+Ballyteige Solar Park,J,Thornsberry,solar,TSO,due to connected,ECP-2.3,90,Y,solar not priority,N/A
+Ballyvouskil Battery Storage,E,Ballyvouskil 220,battery,TSO,due to connected,ECP-2.3,70,N,battery,*
+Barnaleen Solar Farm,H1,Cauteen,solar,TSO,due to connected,ECP-2.3,55,Y,solar not priority,N/A
+Barryscourt Solar Farm (Battery),I,Cow Cross,battery,DSO,due to connected,ECP-2.3,2,N,battery,*
+Barryscourt Solar Farm (Solar),I,Cow Cross,solar,DSO,due to connected,ECP-2.3,8,Y,solar not priority,N/A
+Booltiagh Energy Storage,D,Booltiagh,battery,TSO,due to connected,ECP-2.3,30,N,battery,*
+Bracklyn Wind Farm (Battery),J,Bracklyn,battery,TSO,due to connected,ECP-2.3,25,N,battery,*
+Bracklyn Wind Farm (Wind),J,Bracklyn,wind,TSO,due to connected,ECP-2.3,64.8,Y,wind not priority,N/A
+Cahershaughnessy Solar,D,Ennis,solar,DSO,due to connected,ECP-2.3,8.8,Y,solar not priority,N/A
+Carrigogna Solar,I,Midleton,solar,DSO,due to connected,ECP-2.3,10,Y,solar not priority,N/A
+Carrigraigue Solar Extension,E,Boggeragh,solar,TSO,due to connected,ECP-2.3,11.5,Y,solar not priority,N/A
+Carrownagowan Wind Farm,D,Ardnacrusha,wind,TSO,due to connected,ECP-2.3,91.2,Y,wind not priority,N/A
+Castlebanny Wind Farm,H2,Kilvinoge,wind,TSO,due to connected,ECP-2.3,138.6,Y,wind not priority,N/A
+Chafhill Wind Farm (prev. Glenree),B,Glenree,wind,DSO,due to connected,ECP-2.3,4.95,Y,wind not priority,N/A
+Clonymeath Solar (Battery),J,Fosterstown,battery,TSO,due to connected,ECP-2.3,10,N,battery,*
+Clonymeath Solar (Solar),J,Fosterstown,solar,TSO,due to connected,ECP-2.3,78.8,Y,solar not priority,N/A
+Cuilmore Solar Park,C,Athlone,solar,DSO,due to connected,ECP-2.3,40,Y,solar not priority,N/A
+Darthogue Solar Farm Extension,J,Crakenstown,solar,TSO,due to connected,ECP-2.3,70,Y,solar not priority,N/A
+Drombeg Solar Park Phase II (Ballydonohoe),E,Drombeg,solar,TSO,due to connected,ECP-2.3,44,Y,solar not priority,N/A
+Drumnahough Wind Farm,A,Lenalea,wind,TSO,due to connected,ECP-2.3,72,Y,wind not priority,N/A
+Farran South Solar Phase 2,H1,Barrymore,solar,DSO,due to connected,ECP-2.3,5.49,Y,solar not priority,N/A
+Fieldstown Solar Farm Ext,J,Finglas,solar,TSO,due to connected,ECP-2.3,18.27,Y,solar not priority,N/A
+Gorman Solar Farm,G,Gorman,solar,TSO,due to connected,ECP-2.3,46,Y,solar not priority,N/A
+Gortawee Battery Storage Facility ,A,Gortawee,battery,TSO,due to connected,ECP-2.3,75,N,battery,*
+Gortdrum Solar PV,H1,Cauteen,solar,DSO,due to connected,ECP-2.3,48,Y,solar not priority,N/A
+Grangeford Solar PV,H2,Kellis,solar,TSO,due to connected,ECP-2.3,48,Y,solar not priority,N/A
+Grian PV Ballyboe,H1,Ballydine,solar,DSO,due to connected,ECP-2.3,12,Y,solar not priority,N/A
+Kilcurly Solar,G,Dundalk,solar,DSO,due to connected,ECP-2.3,44.9,Y,solar not priority,N/A
+Kilcush Solar Farm,J,Philipstown,solar,TSO,due to connected,ECP-2.3,50,Y,solar not priority,N/A
+Kiloran Solar PV Farm,H1,Lisheen,solar,TSO,due to connected,ECP-2.3,76,Y,solar not priority,N/A
+Loughdenee Solar,K,Butlerstown,solar,DSO,due to connected,ECP-2.3,9,Y,solar not priority,N/A
+Lysaghtstown Phase 2,I,Lysaghtstown,solar,TSO,due to connected,ECP-2.3,45,Y,solar not priority,N/A
+Midleton Battery Storage Facility ,I,Midleton,battery,TSO,due to connected,ECP-2.3,80,N,battery,*
+Milltown Solar,G,Balruntagh,solar,TSO,due to connected,ECP-2.3,115,Y,solar not priority,N/A
+Monart Spa Ground Mount 3,H2,Crane,solar,DSO,due to connected,ECP-2.3,1.3,Y,solar not priority,N/A
+Old Court Solar Farm,J,Timahoe,solar,TSO,due to connected,ECP-2.3,90,Y,solar not priority,N/A
+Pickardstown PV,K,Butlerstown,solar,DSO,due to connected,ECP-2.3,8.8,Y,solar not priority,N/A
+Reask Solar  Farm,J,Crakenstown,solar,TSO,due to connected,ECP-2.3,55,Y,solar not priority,N/A
+Shrownowen Windfarm,E,Pollagh,wind,TSO,due to connected,ECP-2.3,50,Y,wind not priority,N/A
+Stacks Mountain Wind Farm 2,E,Reamore,wind,DSO,due to connected,ECP-2.3,4.5,Y,wind not priority,N/A
+Taduff Solar Park,C,Athlone,solar,TSO,due to connected,ECP-2.3,80,Y,solar not priority,N/A
+Tawnaghmore BESS ,B,Tawnaghmore,battery,TSO,due to connected,ECP-2.3,80,N,battery,*
+Thornsberry Battery Storage Facility,J,Thornsberry,battery,TSO,due to connected,ECP-2.3,150,N,battery,*
+Toolestown Solar,J,Maynooth,solar,TSO,due to connected,ECP-2.3,50,Y,solar not priority,N/A
+Treascon Solar Farm,J,Bracklone,solar,TSO,due to connected,ECP-2.3,60,Y,solar not priority,N/A
+Tullabeg Phase 2,H2,Tullabeg,solar,TSO,due to connected,ECP-2.3,105,Y,solar not priority,N/A
+Ballina Beverages Energy Centre (battery),B,Moy,battery,DSO,due to connected,ECP-2.3 (Cat B),2,N,battery,*
+College Export AutoProducer (solar),G,Meath Hill,solar,DSO,due to connected,ECP-2.3 (Cat B),0.4,Y,solar not priority,N/A
+Amberhill Community Solar Farm,K,Butlerstown,solar,DSO,due to connected,ECP-2.3 (Cat C),4.99,Y,solar not priority,N/A
+Carrowgarve Solar,B,Moy,solar,DSO,due to connected,ECP-2.3 (Cat C),4,Y,solar not priority,N/A
+Clonmel Renewable Energy Community A,H1,Doon,solar,DSO,due to connected,ECP-2.3 (Cat C),4.99,Y,solar not priority,N/A
+Cloonbar WF,B,Cloon,wind,DSO,due to connected,ECP-2.3 (Cat C),4.99,Y,wind not priority,N/A
+Knockreagh Community Solar ,E,Oughtragh,solar,DSO,due to connected,ECP-2.3 (Cat C),4.4,Y,solar not priority,N/A
+Lissavilla Polecat Solar,C,Carrick on Shannon,solar,DSO,due to connected,ECP-2.3 (Cat C),0.14,N,solar uncontrolled,N/A
+LT SolarFruit,J,Finglas,solar,DSO,due to connected,ECP-2.3 (Cat C),2.8,Y,solar not priority,N/A
+Polecat Community PV,C,Carrick on Shannon,solar,DSO,due to connected,ECP-2.3 (Cat C),4.99,Y,solar not priority,N/A
+AMS battery,I,Castleview,Battery,DSO,due to connected,ECP-2.4,1,N,battery,*
+AMS solar,I,Castleview,solar,DSO,due to connected,ECP-2.4,3.49,Y,solar not priority,N/A
+Ardass Solar,C,Carrick on Shannon,solar,DSO,due to connected,ECP-2.4,4.99,Y,solar not priority,N/A
+Aught Wind Farm,A,Letterkenny,wind,TSO,due to connected,ECP-2.4,57.4,Y,wind not priority,N/A
+Ballycunneen PV,D,Drumline,solar,DSO,due to connected,ECP-2.4,12,Y,solar not priority,N/A
+Ballyglasheen West BESS Facility,H1,Tipperary,Battery,TSO,due to connected,ECP-2.4,60,N,battery,*
+Ballyglass Solar Farm,D,Ardnacrusha,solar,TSO,due to connected,ECP-2.4,80.019,Y,solar not priority,N/A
+Ballykenny Solar Extension,C,Richmond,solar,DSO,due to connected,ECP-2.4,6,Y,solar not priority,N/A
+Ballylongford Solar,E,Pollagh,solar,TSO,due to connected,ECP-2.4,128,Y,solar not priority,N/A
+Ballymac Phase 1 and 2,K,Dungarvan,Battery,TSO,due to connected,ECP-2.4,55,N,battery,*
+Ballymac Solar,K,Dungarvan,solar,TSO,due to connected,ECP-2.4,5,Y,solar not priority,N/A
+Ballymoneen Phase 2,B,Cashla,solar,TSO,due to connected,ECP-2.4,5,Y,solar not priority,N/A
+Ballymoneen Phase 2 Battery,B,Cashla,Battery,TSO,due to connected,ECP-2.4,75,N,battery,*
+Ballyroe Solar Extension,E,Charleville,solar,TSO,due to connected,ECP-2.4,45,Y,solar not priority,N/A
+Ballysumaghan BESS & SC,B,Srananagh,Battery,TSO,due to connected,ECP-2.4,200,N,battery,*
+Ballyvalode Solar,H1,Cauteen,solar,TSO,due to connected,ECP-2.4,113,Y,solar not priority,N/A
+Barnaleen Solar Phase 2,H1,Cauteen,solar,TSO,due to connected,ECP-2.4,35,Y,solar not priority,N/A
+Clondardis Solar Extension,C,Shanonagh,solar,TSO,due to connected,ECP-2.4,11.4,Y,solar not priority,N/A
+Cloondara Solar Park ,C,Richmond,solar,DSO,due to connected,ECP-2.4,4,Y,solar not priority,N/A
+Coolcarrigan Solar P2,J,Timahoe,solar,TSO,due to connected,ECP-2.4,120,Y,solar not priority,N/A
+Coolcarrigan Solar P2 Battery,J,Timahoe,Battery,TSO,due to connected,ECP-2.4,80,N,battery,*
+Coom Green Energy Park,H1,Barrymore,wind,TSO,due to connected,ECP-2.4,105.6,Y,wind not priority,N/A
+Coom Green Energy Park Battery,H1,Barrymore,Battery,TSO,due to connected,ECP-2.4,50,N,battery,*
+Cronalaght 3 Wind Farm,A,Ardnagappary,wind,DSO,due to connected,ECP-2.4,9,Y,wind not priority,N/A
+Culmullin Solar Farm,J,Arodstown,solar,TSO,due to connected,ECP-2.4,70,Y,solar not priority,N/A
+Darthogue Solar Farm Ext 2,J,Gallanstown,solar,TSO,due to connected,ECP-2.4,13.5,Y,solar not priority,N/A
+Dernacart Windfarm,J,Bracklone,wind,TSO,due to connected,ECP-2.4,57.6,Y,wind not priority,N/A
+Drumgoolan Solar and Battery Farm,G,Louth,solar,TSO,due to connected,ECP-2.4,75,Y,solar not priority,N/A
+Drumgoolan Solar and Battery Farm Battery,G,Louth,Battery,TSO,due to connected,ECP-2.4,40.5,N,battery,*
+Drummin Solar,D,Ardnacrusha,solar,DSO,due to connected,ECP-2.4,35,Y,solar not priority,N/A
+Fieldstown Extension No.2,J,Finglas,solar,TSO,due to connected,ECP-2.4,60,Y,solar not priority,N/A
+Flagford Battery Storage,C,Flagford,Battery,TSO,due to connected,ECP-2.4,100,N,battery,*
+Friarstown Solar Farm,H2,Carlow,solar,TSO,due to connected,ECP-2.4,50,Y,solar not priority,N/A
+Friarstown Solar Farm Battery,H2,Carlow,Battery,TSO,due to connected,ECP-2.4,30,N,battery,*
+Garreenleen Solar Farm Phase 2,H2,Kellis,solar,TSO,due to connected,ECP-2.4,82,Y,solar not priority,N/A
+Golden Forth Solar Park,H2,Stratford,solar,DSO,due to connected,ECP-2.4,0.999,Y,solar not priority,N/A
+JOHNSTOWN SOLAR PARK,H2,Carlow,solar,DSO,due to connected,ECP-2.4,9.99,Y,solar not priority,N/A
+Kilcormac Solar,C,Derrycarney,solar,TSO,due to connected,ECP-2.4,125,Y,solar not priority,N/A
+Kilmorna Energy Storage Facility,E,Knockanure,Battery,TSO,due to connected,ECP-2.4,170,N,battery,*
+Kilrue Solar,J,Crakenstown,solar,TSO,due to connected,ECP-2.4,195,Y,solar not priority,N/A
+Knockroe Wind Farm,H1,Doon,wind,DSO,due to connected,ECP-2.4,33.6,Y,wind not priority,N/A
+Leam Windfarm,C,Carrick on Shannon,wind,DSO,due to connected,ECP-2.4,6.9,Y,wind not priority,N/A
+Lyrenacarriga Windfarm and BESS,K,Woodhouse,wind,TSO,due to connected,ECP-2.4,85,Y,wind not priority,N/A
+Lyrenacarriga Windfarm and BESS Battery,K,Woodhouse,Battery,TSO,due to connected,ECP-2.4,60,N,battery,*
+Maine Solar Extension,E,Oughtragh,solar,DSO,due to connected,ECP-2.4,1,Y,solar not priority,N/A
+Mill Farm Solar,G,Ricetown,solar,TSO,due to connected,ECP-2.4,63,Y,solar not priority,N/A
+Modelligo Solar Farm,K,Dungarvan,solar,TSO,due to connected,ECP-2.4,80,Y,solar not priority,N/A
+Mullagharoy Solar Farm,G,Drybridge,solar,DSO,due to connected,ECP-2.4,0.99,Y,solar not priority,N/A
+Reask Phase 2,J,Crakenstown,solar,TSO,due to connected,ECP-2.4,30,Y,solar not priority,N/A
+Sandford Energy Solar Farm Ext. ,E,Tralee,solar,DSO,due to connected,ECP-2.4,1.5,Y,solar not priority,N/A
+Seven Hills Wind Farm,C,Athlone,wind,TSO,due to connected,ECP-2.4,122.4,Y,wind not priority,N/A
+Spion Kop Windfarm Ext. (Ext to DG978),A,Arigna,wind,DSO,due to connected,ECP-2.4,1.5,Y,wind not priority,N/A
+Tarbert BESS,E,Tarbert,Battery,TSO,due to connected,ECP-2.4,100,N,battery,*
+Templemichael Solar Plus Storage Facility,H2,Arklow,solar,TSO,due to connected,ECP-2.4,30,Y,solar not priority,N/A
+Templemichael Solar Plus Storage Facility Battery,H2,Arklow,Battery,TSO,due to connected,ECP-2.4,20,N,battery,*
+Tincurry Solar Farm,H2,Lodgewood,solar,TSO,due to connected,ECP-2.4,109,Y,solar not priority,N/A
+Tincurry Solar Farm Battery,H2,Lodgewood,Battery,TSO,due to connected,ECP-2.4,60,N,battery,*
+Tullabeg Phase 3,H2,Tullabeg,solar,TSO,due to connected,ECP-2.4,30,Y,solar not priority,N/A
+TULLYNAMOYLE WIND FARM 6,A,Corderry,wind,DSO,due to connected,ECP-2.4,20.2,Y,wind not priority,N/A
+White Hill Wind Farm,H2,Kellymount,wind,TSO,due to connected,ECP-2.4,50.4,Y,wind not priority,N/A
+Ardass Solar Ext.,C,Carrick on Shannon,solar,DSO,due to connected,ECP-2.4 (Cat C),4.99,Y,solar not priority,N/A
+Brighter Community Solar Farm Kilcummin,E,Knockearagh,solar,DSO,due to connected,ECP-2.4 (Cat C),4.99,Y,solar not priority,N/A
+Moy Valley Decarbonising Community CLG,B,Castlebar,solar,DSO,due to connected,ECP-2.4 (Cat C),4.99,Y,solar not priority,N/A
+Project GiMAT,J,Fosterstown,solar,DSO,due to connected,ECP-2.4 (Cat C),4.99,Y,solar not priority,N/A
+Ballinagree,E,Clashavoon,wind,TSO,due to connected,ECP-2.5,112,Y,wind not priority,N/A
+Ballivor,J,Craddanstown,wind,TSO,due to connected,ECP-2.5,182,Y,wind not priority,N/A
+Ballyboe ph2,H1,Doon,solar,DSO,due to connected,ECP-2.5,4,Y,solar not priority,N/A
+Ballydonagh,C,Somerset,solar,TSO,due to connected,ECP-2.5,90,Y,solar not priority,N/A
+Ballyduff solar ph2,I,Midleton,solar,DSO,due to connected,ECP-2.5,8,Y,solar not priority,N/A
+Ballymoneen ph3 solar,B,Cashla,solar,TSO,due to connected,ECP-2.5,20,Y,solar not priority,N/A
+Ballymoney Solar ph2,H2,Arklow,solar,DSO,due to connected,ECP-2.5,6.3,Y,solar not priority,N/A
+Ballynahina Solar,I,Kilbarry,solar,DSO,due to connected,ECP-2.5,30,Y,solar not priority,N/A
+Ballyteigue Solar ph2,J,Thornsberry,solar,TSO,due to connected,ECP-2.5,90,Y,solar not priority,N/A
+Barretspark Battery,B,Cashla,Battery,TSO,due to connected,ECP-2.5,100,N,Battery,*
+Baunogephlure Battery,H2,Kellis,Battery,TSO,due to connected,ECP-2.5,50,N,battery,*
+Baunogephlure Solar,H2,Kellis,solar,TSO,due to connected,ECP-2.5,55,Y,solar not priority,N/A
+Bishopswood Solar,J,Bracklone,solar,TSO,due to connected,ECP-2.5,25,Y,solar not priority,N/A
+Borrisbeg,H1,Borrisbeg,wind,TSO,due to connected,ECP-2.5,54,Y,wind not priority,N/A
+Brianstown Bess Phase 2,C,Richmond,Battery,DSO,due to connected,ECP-2.5,9.55,N,battery,*
+Brinny solar non export,F,Bandon,solar,TSO,due to connected,ECP-2.5,8.2,N,solar uncontrolled,N/A
+Brownstown Battery,H2,Kilkenny,Battery,TSO,due to connected,ECP-2.5,50,N,battery,*
+Brownstown Solar,H2,Kilkenny,solar,TSO,due to connected,ECP-2.5,50,Y,solar not priority,N/A
+Clonloghan Solar Farm,D,Drumline,solar,DSO,due to connected,ECP-2.5,9.99,Y,solar not priority,N/A
+Clonymeath Solar ph2,J,Curraghdoo,solar,TSO,due to connected,ECP-2.5,4,Y,solar not priority,N/A
+Coppenagh Solar ph3,H2,Carlow,solar,DSO,due to connected,ECP-2.5,20,Y,solar not priority,N/A
+Cregg Solar,C,Cregg,solar,TSO,due to connected,ECP-2.5,75,Y,solar not priority,N/A
+Culmullin Solar Farm Ext,J,Arodstown,solar,TSO,due to connected,ECP-2.5,120,Y,solar not priority,N/A
+Cush,C,Dallow,wind,TSO,due to connected,ECP-2.5,57.6,Y,wind not priority,N/A
+Debsborough Solar Farm,H1,Nenagh,solar,DSO,due to connected,ECP-2.5,42,Y,solar not priority,N/A
+Delamain Solar,J,Dunstown,solar,TSO,due to connected,ECP-2.5,210,Y,solar not priority,N/A
+Derrycarney solar,C,Derrycarney,solar,TSO,due to connected,ECP-2.5,105,Y,solar not priority,N/A
+Dexcom Roadrunner - Battery CHP Solar,B,Galway,Battery,DSO,due to connected,ECP-2.5,6,N,battery,*
+Dexcom Roadrunner - Battery CHP Solar,B,Galway,solar,DSO,due to connected,ECP-2.5,1.2,Y,solar not priority,N/A
+Drumlins BESS,G,Lislea,battery,TSO,due to connected,ECP-2.5,20,N,battery,*
+Erkina Solar ph2,H1,Timoney,solar,TSO,due to connected,ECP-2.5,15,Y,solar not priority,N/A
+Esk (3),E,Boggeragh,solar,DSO,due to connected,ECP-2.5,12.7,Y,solar not priority,N/A
+Extension Maothail Solar,C,Carrick on Shannon,solar,DSO,due to connected,ECP-2.5,1,Y,solar not priority,N/A
+Fahybeg,D,Ardnacrusha,wind,DSO,due to connected,ECP-2.5,40,Y,wind not priority,N/A
+Garravagh Solar ph2,I,Coolroe,solar,DSO,due to connected,ECP-2.5,14,Y,solar not priority,N/A
+Gormagh Battery,J,Thornsberry,Battery,TSO,due to connected,ECP-2.5,40,N,battery,*
+Gormagh Solar Farm,J,Thornsberry,solar,TSO,due to connected,ECP-2.5,40,Y,solar not priority,N/A
+Grangeford Solar ph2,H2,Kellis,solar,TSO,due to connected,ECP-2.5,22,Y,solar not priority,N/A
+Hawkinstown Solar,G,Deenes,solar,TSO,due to connected,ECP-2.5,85,Y,solar not priority,N/A
+Kellistown Battery,H2,Kellis,battery,TSO,due to connected,ECP-2.5,100,N,battery,*
+Kilbeg Solar,B,Dalton,solar,DSO,due to connected,ECP-2.5,12,Y,solar not priority,N/A
+Kilcash Wind Farm,C,Lanesboro,wind,DSO,due to connected,ECP-2.5,4.5,Y,wind not priority,N/A
+Kilderry Solar,H2,Kilkenny,solar,DSO,due to connected,ECP-2.5,35,Y,solar not priority,N/A
+Kinnegad solar non export,J,Kinnegad,solar,TSO,due to connected,ECP-2.5,12,N,solar uncontrolled,N/A
+Liss Wind Farm,H1,Thurles,wind,DSO,due to connected,ECP-2.5,2.35,Y,wind not priority,N/A
+Lissanore Wind Turbine,C,Richmond,wind,DSO,due to connected,ECP-2.5,4.5,Y,wind not priority,N/A
+Lumcloon,C,Derrycarney,solar,TSO,due to connected,ECP-2.5,95,Y,solar not priority,N/A
+Manusmore Solar 2,D,Coolshamroge,solar,TSO,due to connected,ECP-2.5,60,Y,solar not priority,N/A
+Meenadreen BESS ECP-2.5,A,Clogher,Battery,TSO,due to connected,ECP-2.5,75,N,battery,*
+Meenawley,A,Binbane,wind,DSO,due to connected,ECP-2.5,4.5,Y,wind not priority,N/A
+Milltown ph2 solar,G,Balruntagh,solar,TSO,due to connected,ECP-2.5,19,Y,solar not priority,N/A
+Mothel Battery,H1,Curraghduff,battery,TSO,due to connected,ECP-2.5,55,N,battery,*
+Mothel solar,H1,Curraghduff,solar,TSO,due to connected,ECP-2.5,125,Y,solar not priority,N/A
+Moyvilla Solar,B,Cashla,solar,TSO,due to connected,ECP-2.5,85,Y,solar not priority,N/A
+Powerscourt BESS,H1,Doon,battery,TSO,due to connected,ECP-2.5,100,N,battery,*
+Rahanisky,I,Kilbarry,solar,DSO,due to connected,ECP-2.5,39.9,Y,solar not priority,N/A
+Rath Solar PV (ECP2.4+2.5),C,Derrycarney,solar,TSO,due to connected,ECP-2.5,119.25,Y,solar not priority,N/A
+Rathcoursey Battery,I,Rathcoursey,Battery,TSO,due to connected,ECP-2.5,30,N,battery,*
+Rathcoursey Solar,I,Rathcoursey,solar,TSO,due to connected,ECP-2.5,110,Y,solar not priority,N/A
+Rathdrinagh Solar,G,Garballagh,solar,TSO,due to connected,ECP-2.5,72,Y,solar not priority,N/A
+Rathduff Solar,H1,Tipperary,solar,DSO,due to connected,ECP-2.5,25,Y,solar not priority,N/A
+Sheskin South,B,Bellacorick,wind,TSO,due to connected,ECP-2.5,129.6,Y,wind not priority,N/A
+Springmount PV,H1,Springmount,solar,TSO,due to connected,ECP-2.5,65,Y,solar not priority,N/A
+Tomsallagh ph2,H2,Effernoge,solar,DSO,due to connected,ECP-2.5,1,Y,solar not priority,N/A
+Boliden Tara Mines Solar Farm (non export),G,Navan,solar,DSO,due to connected,ECP-2.5 (Cat B),17,N,solar uncontrolled,N/A
+Carrigaline PV,I,Barnahely,solar,DSO,due to connected,ECP-2.5 (Cat B),4,N,solar uncontrolled,N/A
+Ballinakilla Wind Farm,B,Cloon,wind,DSO,due to connected,ECP-2.5 (Cat C),4.5,Y,wind not priority,N/A
+Ballinderry Solar,B,Cloon,solar,DSO,due to connected,ECP-2.5 (Cat C),4.99,Y,solar not priority,N/A
+Cloonaraher Wind Farm ,B,Tonroe,wind,DSO,due to connected,ECP-2.5 (Cat C),4.99,Y,wind not priority,N/A
+Derrylough WF,C,Athlone,wind,DSO,due to connected,ECP-2.5 (Cat C),4.99,Y,wind not priority,N/A
+Derryveagh solar,C,Athlone,solar,DSO,due to connected,ECP-2.5 (Cat C),4.99,Y,solar not priority,N/A
+Dolanstown Solar Farm,J,Griffinrath,solar,DSO,due to connected,ECP-2.5 (Cat C),4.9,Y,solar not priority,N/A
+Dundalk Golf club,G,Dundalk,solar,DSO,due to connected,ECP-2.5 (Cat C),4.99,Y,solar not priority,N/A
+Blackhall Solar,J,Arodstown,solar,TSO,due to connected,ECP-2.5.1,165.6,Y,solar not priority,N/A
+Creemore Battery,J,Woodland,battery,TSO,due to connected,ECP-2.5.1,290,N,battery,*
+Glenard (1),A,Letterkenny,wind,TSO,due to connected,ECP-2.5.1,93,Y,wind not priority,N/A
+Gortyrahilly,E,Coomataggart,wind,TSO,due to connected,ECP-2.5.1,85.8,Y,wind not priority,N/A
+Inchamore,E,Glanlee,wind,TSO,due to connected,ECP-2.5.1,26,Y,wind not priority,N/A
+Kildallan Solar,C,Shanonagh,solar,TSO,due to connected,ECP-2.5.1,130,Y,solar not priority,N/A
+Kilrue Solar extension,J,Crakenstown,solar,TSO,due to connected,ECP-2.5.1,175,Y,solar not priority,N/A
+Knockanarragh,G,Balruntagh,wind,TSO,due to connected,ECP-2.5.1,50.4,Y,wind not priority,N/A
+Oweninney (3) extension,B,Bellacorick,wind,TSO,due to connected,ECP-2.5.1,40,Y,wind not priority,N/A
+ShannonB BESS new,C,Shannonbridge,Battery,TSO,due to connected,ECP-2.5.1,75,N,battery,*
+Taduff Battery,C,Athlone,Battery,TSO,due to connected,ECP-2.5.1,80,N,battery,*
+Agharue wind Farm,H2,Kilkenny,wind,TSO,due to connected,ECP-GSS1,46.2,Y,wind not priority,N/A
+Annagh Wind Farm,E,Charleville,wind,DSO,due to connected,ECP-GSS1,37.2,Y,wind not priority,N/A
+Ardgoulbeg Solar,E,Rathkeale,solar,TSO,due to connected,ECP-GSS1,54,Y,solar not priority,N/A
+Athclare (prev Croaghaun) Wind Farm,H2,Castledockrell,wind,DSO,due to connected,ECP-GSS1,38.5,Y,wind not priority,N/A
+Ballinla Wind Farm,J2,Derryiron,wind,TSO,due to connected,ECP-GSS1,55,Y,wind not priority,N/A
+Ballinlee Windfarm,E,Charleville,wind,TSO,due to connected,ECP-GSS1,76.5,Y,wind not priority,N/A
+Ballinrobe Solar Farm,B,Dalton,solar,DSO,due to connected,ECP-GSS1,1,Y,solar not priority,N/A
+Ballybeg Solar Farm,H1,Barrymore,solar,DSO,due to connected,ECP-GSS1,1.96,Y,Solar not priority,N/A
+Ballycar Windfarm,D,Ardnacrusha,wind,TSO,due to connected,ECP-GSS1,54,Y,wind not priority,N/A
+Ballycunneen PV and BESS P2,D,Drumline,solar,DSO,due to connected,ECP-GSS1,14,Y,solar not priority,N/A
+Ballykett Windfarm,D,Tullabrack,wind,DSO,due to connected,ECP-GSS1,18,Y,wind not priority,N/A
+Ballyloo Solar,H2,Kellis,solar,TSO,due to connected,ECP-GSS1,241,Y,solar not priority,N/A
+Ballymahon PV and BESS,C,Foigha,battery,TSO,due to connected,ECP-GSS1,70,N,battery,*
+Ballymahon PV and BESS,C,Foigha,solar,TSO,due to connected,ECP-GSS1,70,Y,solar not priority,N/A
+Ballynalacken Wind Farm,H2,Ballyragget,wind,TSO,due to connected,ECP-GSS1,50.4,Y,wind not priority,N/A
+Ballyragget BESS,H2,Ballyragget,Battery,TSO,due to connected,ECP-GSS1,79,N,battery,*
+Ballyroe Solar,E,Charleville,solar,TSO,due to connected,ECP-GSS1,7,Y,solar not priority,N/A
+Ballysallagh Solar,I,Knockraha,solar,TSO,due to connected,ECP-GSS1,159,Y,solar not priority,N/A
+Barnacurragh Solar 2,B,Cloon,solar,TSO,due to connected,ECP-GSS1,20,Y,solar not priority,N/A
+Bocade Glebe (prev Killeshandra) Solar,A,Gortawee,solar,DSO,due to connected,ECP-GSS1,5,Y,solar not priority,N/A
+Boscabell Solar Farm,H1,Meldrum,solar,TSO,due to connected,ECP-GSS1,80,Y,solar not priority,N/A
+Bracklone BESS,J2,Bracklone,Battery,TSO,due to connected,ECP-GSS1,115,N,battery,*
+Cadamstown Solar,J2,Timahoe,battery,TSO,due to connected,ECP-GSS1,211,N,battery,*
+Cadamstown Solar,J2,Timahoe,solar,TSO,due to connected,ECP-GSS1,343,Y,solar not priority,N/A
+Cappakeel Solar Farm,J2,Bracklone,solar,TSO,due to connected,ECP-GSS1,226,Y,solar not priority,N/A
+Castlegarden Solar Farm and Battery,H2,Kilkenny,battery,TSO,due to connected,ECP-GSS1,80,N,battery,*
+Castlegarden Solar Farm and Battery,H2,Kilkenny,solar,TSO,due to connected,ECP-GSS1,56,Y,solar not priority,N/A
+Cloonanny Wind Farm ,C,Richmond,wind,DSO,due to connected,ECP-GSS1,14,Y,wind not priority,N/A
+Cloonkett Windfarm,E,Prospect,wind,TSO,due to connected,ECP-GSS1,63,Y,wind not priority,N/A
+Cooloo Wind Farm,B,Cloon,wind,TSO,due to connected,ECP-GSS1,64.8,Y,wind not priority,N/A
+Coolvallanane Beg Solar Farm,F,Brinny,solar,DSO,due to connected,ECP-GSS1,11.95,Y,solar not priority,N/A
+Croagh Wind Farm,A,Garvagh,wind,DSO,due to connected,ECP-GSS1,48,Y,wind not priority,N/A
+Culmullin Solar Farm Extension,J,Arodstown,solar,TSO,due to connected,ECP-GSS1,110,Y,solar not priority,N/A
+Cummeennabuddoge Wind Farm,E,Ballyvouskil 220,wind,TSO,due to connected,ECP-GSS1,122.4,Y,wind not priority,N/A
+Derrynadarragh Windfarm,J2,Bracklone,wind,TSO,due to connected,ECP-GSS1,64.8,Y,wind not priority,N/A
+Drumdowney Solar Farm,H2,Great Island,solar,TSO,due to connected,ECP-GSS1,125,Y,solar not priority,N/A
+Foigha Solar,C,Foigha,solar,TSO,due to connected,ECP-GSS1,85,Y,solar not priority,N/A
+Fyanstown Solar,G,Navan,solar,TSO,due to connected,ECP-GSS1,100,Y,solar not priority,N/A
+Garrane Windfarm,E,Charleville,wind,TSO,due to connected,ECP-GSS1,54,Y,wind not priority,N/A
+Garreenleen Phase 3 Solar Farm & Garreenleen BESS,H2,Kellis,solar,TSO,due to connected,ECP-GSS1,63,Y,solar not priority,N/A
+Glenpatrick Solar Farm,H1,Doon,solar,DSO,due to connected,ECP-GSS1,8,Y,solar not priority,N/A
+Hiskinstown Solar and Battery,J2,Kinnegad,battery,TSO,due to connected,ECP-GSS1,50,N,battery,*
+Hiskinstown Solar and Battery,J2,Kinnegad,solar,TSO,due to connected,ECP-GSS1,75,Y,solar not priority,N/A
+Kilcandra Solar Farm,H2,Ballybeg,solar,TSO,due to connected,ECP-GSS1,134,Y,solar not priority,N/A
+Kilgarvan Wind Farm Repower,E,Glanlee,wind,TSO,due to connected,ECP-GSS1,10,Y,wind not priority,N/A
+Killary Solar Farm,G,Gorman,solar,TSO,due to connected,ECP-GSS1,70,Y,solar not priority,N/A
+Killough Solar,H1,Thurles,solar,TSO,due to connected,ECP-GSS1,140,Y,solar not priority,N/A
+Kilmorna Solar,E,Knockanure,solar,TSO,due to connected,ECP-GSS1,116,Y,solar not priority,N/A
+Kilmullen (prev Bracklone) PV and BESS,J2,Bracklone,solar,DSO,due to connected,ECP-GSS1,10,Y,solar not priority,N/A
+Knockanedan wind Farm,D,Booltiagh,wind,TSO,due to connected,ECP-GSS1,48,Y,wind not priority,N/A
+Knockdinnin Solar,J,Richardstown,solar,TSO,due to connected,ECP-GSS1,110,Y,solar not priority,N/A
+Knockshanvo Wind Farm,D,Ardnacrusha,wind,TSO,due to connected,ECP-GSS1,64.8,Y,wind not priority,N/A
+Laccamore PV and BESS,E,Tralee,battery,TSO,due to connected,ECP-GSS1,60,N,battery,*
+Laccamore PV and BESS,E,Tralee,solar,TSO,due to connected,ECP-GSS1,100,Y,solar not priority,N/A
+Lackareagh Wind farm,D,Ardnacrusha,wind,TSO,due to connected,ECP-GSS1,46.2,Y,wind not priority,N/A
+Lahardan BESS Solar,K,Cullenagh,battery,TSO,due to connected,ECP-GSS1,133,N,battery,*
+Lahardan BESS Solar,K,Cullenagh,solar,TSO,due to connected,ECP-GSS1,50,Y,solar not priority,N/A
+Lanesboro BESS 2,C,Lanesboro,Battery,TSO,due to connected,ECP-GSS1,100,N,battery,*
+Leamore single turbine,J2,Dallow,wind,DSO,due to connected,ECP-GSS1,4.5,Y,wind not priority,N/A
+Meath Hill BESS,G,Meath Hill,Battery,TSO,due to connected,ECP-GSS1,100,N,battery,*
+Moanmore Lower Wind Farm,D,Tullabrack,wind,DSO,due to connected,ECP-GSS1,13.5,Y,wind not priority,N/A
+Mogullaun Solar Farm,D,Drumline,solar,TSO,due to connected,ECP-GSS1,70.2,Y,solar not priority,N/A
+Mullacash Solar and Battery,J,Dunstown,battery,TSO,due to connected,ECP-GSS1,138.4,N,battery,*
+Mullacash Solar and Battery,J,Dunstown,solar,TSO,due to connected,ECP-GSS1,231.8,Y,solar not priority,N/A
+Prospect BESS,E,Prospect,Battery,TSO,due to connected,ECP-GSS1,200,N,battery,*
+Rathcoon Solar Farm,G,Gorman,solar,TSO,due to connected,ECP-GSS1,80,Y,solar not priority,N/A
+Rosehill PV and BESS,H2,Kilkenny,solar,DSO,due to connected,ECP-GSS1,5,Y,solar not priority,N/A
+Rosehill PV and BESS,H2,Kilkenny,battery,DSO,due to connected,ECP-GSS1,5,N,battery,*
+Scart Mountain Wind Farm,K,Woodhouse,wind,TSO,due to connected,ECP-GSS1,108,Y,wind not priority,N/A
+Screeb Battery storage,B,Screebe,Battery,TSO,due to connected,ECP-GSS1,120,N,battery,*
+Seskin Renewables Wind Farm,H2,Ballyragget,wind,TSO,due to connected,ECP-GSS1,48,Y,wind not priority,N/A
+Seskin Storage,H1,Cauteen,Battery,TSO,due to connected,ECP-GSS1,50,N,battery,*
+Shannonbridge BESS 2,C,Shannonbridge,Battery,TSO,due to connected,ECP-GSS1,100,N,battery,*
+Shelbourne Solar Farm,H2,Loughtown,battery,TSO,due to connected,ECP-GSS1,50,N,battery,*
+Shelbourne Solar Farm,H2,Loughtown,solar,TSO,due to connected,ECP-GSS1,200,Y,solar not priority,N/A
+Shessy PV and BESS,D,Derrybrien,battery,TSO,due to connected,ECP-GSS1,40,N,battery,*
+Shessy PV and BESS,D,Derrybrien,solar,TSO,due to connected,ECP-GSS1,70,Y,solar not priority,N/A
+Sillouge BESS,G,Navan,Battery,TSO,due to connected,ECP-GSS1,150,N,battery,*
+South Galway Solar,B,Cashla,solar,TSO,due to connected,ECP-GSS1,101,Y,solar not priority,N/A
+Swordlestown Solar and Battery,J,Dunstown,battery,TSO,due to connected,ECP-GSS1,200,N,battery,*
+Swordlestown Solar and Battery,J,Dunstown,solar,TSO,due to connected,ECP-GSS1,250,Y,solar not priority,N/A
+Tibbotstown Solar (Lysaghtstown 3),I,Lysaghtstown,solar,TSO,due to connected,ECP-GSS1,74,Y,solar not priority,N/A
+Tullacondra Windfarm,E,Mallow,wind,DSO,due to connected,ECP-GSS1,40.5,Y,wind not priority,N/A
+Western Brand South Site,B,Dalton,solar,DSO,due to connected,ECP-GSS1,3,Y,solar not priority,N/A
+Whitestown PV,J,Stephenstown,solar,DSO,due to connected,ECP-GSS1,9.99,Y,solar not priority,N/A

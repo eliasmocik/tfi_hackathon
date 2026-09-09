@@ -1,0 +1,3 @@
+case,carrier,target_cf,achievable_cf,snapshot,note
+TYTFS2024_WP2033_V35,wind,0.09948804980694809,0.3629721317873656,2030-01-17 18:00:00,applied
+TYTFS2024_WP2033_V35,solar,0.1,0.0,2030-01-17 18:00:00,not applied: the case's value is unreachable at this hour of this date

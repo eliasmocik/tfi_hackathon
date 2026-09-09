@@ -1,0 +1,14 @@
+loaded WP2033 all-island: 754 buses, 755 lines, 168 hours
+44 of 47 NW lines treated as overhead
+
+NW renewable dispatch-down:     static 22,432 MWh -> DLR 22,062 MWh  (-2 %)
+island renewable dispatch-down: static 243,592 MWh -> DLR 243,498 MWh  (-0 %)
+
+binding hours per overhead line, static vs DLR:
+              static_hours_at_rating  dlr_hours_at_rating
+name                                                     
+3581-89516-1                     131                  123
+3691-4041-1                        5                    5
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q3_dlr_binding_hours.csv
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q3_dlr_per_farm.csv
+-> /Users/elias/Desktop/aiOS/tfi_hackathon/problem_3_1/outputs/q3_dlr.png
