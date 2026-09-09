@@ -51,7 +51,9 @@ def main() -> int:
     uidx = {u: i for i, u in enumerate(units)}
     n = len(units)
 
-    bands = [b for b in W.BANDS if not np.isinf(b)]
+    # the infinite band (pure effectiveness) is included so the table can say
+    # what it costs in equity; it has no ex-ante bound by construction
+    bands = list(W.BANDS)
     cum_cut = {b: np.zeros(n) for b in bands}
     cum_avail = np.zeros(n)
     obs_cut = np.zeros(n)
@@ -87,7 +89,8 @@ def main() -> int:
             r_before = cum_cut[b][idx] / av_i
             tot_av = cum_avail[idx].sum()
             rbar = (cum_cut[b][idx].sum() / tot_av) if tot_av > 0 else 0.0
-            elig = r_before <= rbar + b / 100.0
+            elig = (np.ones(len(idx), bool) if np.isinf(b)
+                    else r_before <= rbar + b / 100.0)
             if not elig.any():
                 elig = np.ones(len(idx), bool)
             # a feasibility escape is a half-hour where the eligible set alone
@@ -117,11 +120,11 @@ def main() -> int:
         d_pp = 100.0 * delta[b]
         rows.append({
             "band_pp": b,
-            "claimed_bound_pp": b + d_pp,
+            "claimed_bound_pp": (np.inf if np.isinf(b) else b + d_pp),
             "realised_max_divergence_pp": realised,
             "delta_pp": d_pp,
-            "bound_holds": bool(realised <= b + d_pp + 1e-9),
-            "slack_pp": (b + d_pp) - realised,
+            "bound_holds": (True if np.isinf(b) else bool(realised <= b + d_pp + 1e-9)),
+            "slack_pp": (np.inf if np.isinf(b) else (b + d_pp) - realised),
             "feasibility_escapes": escapes[b],
             "escape_share": escapes[b] / n_hh if n_hh else np.nan,
         })

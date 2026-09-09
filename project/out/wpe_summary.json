@@ -64,6 +64,16 @@
    "slack_pp": 3.4438716162984395,
    "feasibility_escapes": 0,
    "escape_share": 0.0
+  },
+  {
+   "band_pp": Infinity,
+   "claimed_bound_pp": Infinity,
+   "realised_max_divergence_pp": 45.237522268774136,
+   "delta_pp": 6.220727437546395,
+   "bound_holds": true,
+   "slack_pp": Infinity,
+   "feasibility_escapes": 0,
+   "escape_share": 0.0
   }
  ]
 }
