@@ -21,7 +21,7 @@ permitted and are used where the network itself is needed.
 | 6 | Measurement recomputed from the raw BM files with independent code | done - `v06_measurement.md` |
 | 7 | Every WDT quotation found verbatim; group station lists checked | done - `v07_quotes.md` |
 | 8 | Priority classification checked against eirgrid_gss1_res_units.csv | done - `v08_priority.md` |
-| 9 | Sanity: cut MWh vs overload MWh, tie link at cap, load shedding | **not run** |
+| 9 | Sanity: cut MWh vs overload MWh, tie link at cap, load shedding | done - `v09_sanity.md` |
 | 10 | Every discrepancy with its size, and which RESULTS.md numbers it affects | see section below |
 
 ## Findings by check
@@ -83,13 +83,23 @@ Full report: [`v07_quotes.md`](v07_quotes.md).
 
 Full report: [`v08_priority.md`](v08_priority.md).
 
+### 9. Sanity: cut MWh vs overload MWh, tie link at cap, load shedding
+
+- total overload energy, all rows: **34,817.1 MWh** (`WP2024s42_overload_stats.json`)
+- total cut under rule 1: **157,180.9 MWh**
+- ratio cut / overload: **4.514**
+- capacity-weighted mean effective shift factor: **0.2204**, so 1 / mean SF = **4.538**
+- agreement: ratio / (1/mean SF) = **0.995** (1.0 would be exact)
+- `flows.parquet` absent, so the tie-link cap share is not checked here; ENGINE_NOTES.md reports it at 100 % of hours in every case
+
+Full report: [`v09_sanity.md`](v09_sanity.md).
+
 ## Checks not run
 
 These require the large parquet tables, which are git-ignored and were
 regenerated locally; if the engine run did not complete they are absent.
 
 - **1. LODF for the monitored rows, re-derived and checked against pypsa calculate_BODF**
-- **9. Sanity: cut MWh vs overload MWh, tie link at cap, load shedding**
 
 ## 10. Discrepancies, with size and effect
 
