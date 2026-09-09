@@ -40,8 +40,14 @@ def need(p: Path) -> bool:
 
 
 def check_2() -> str:
-    """F and O recomputed from the saved overload table's own components."""
+    """O recomputed as max(|F| - rating, 0) from the saved flows and the ratings.
+
+    out/<case>_overloads.csv carries F_ and O_ per row but not the ratings;
+    those are in <case>_overload_stats.json.
+    """
+    import json
     ov = pd.read_csv(OUT / f"{CASE}_overloads.csv", index_col=0, parse_dates=True)
+    stats = json.loads((OUT / f"{CASE}_overload_stats.json").read_text(encoding="utf-8"))
     lines = ["# Verification section 10.2 - overload series recomputed", "",
              f"Case `{CASE}`. Source `out/{CASE}_overloads.csv` "
              f"({len(ov)} hours, {len(ov.columns)} columns).", ""]
@@ -54,12 +60,11 @@ def check_2() -> str:
         rcol = f"rating_{row}"
         if fcol not in ov.columns or ocol not in ov.columns:
             continue
-        rating = ov[rcol].to_numpy() if rcol in ov.columns else None
-        if rating is None:
+        r = stats.get(f"rating_{row}")
+        if r is None:
             continue
         f = ov[fcol].to_numpy()[idx]
         o = ov[ocol].to_numpy()[idx]
-        r = rating[idx]
         recomputed = np.maximum(np.abs(f) - r, 0.0)
         d = np.abs(recomputed - o)
         checked += n
