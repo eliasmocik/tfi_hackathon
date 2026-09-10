@@ -46,7 +46,10 @@ CG1_STATIONS = {"ARDNAGAPPARY", "BINBANE", "LENALEA", "TRILLICK"}
 CG3_STATIONS = CG1_STATIONS | {
     "CATHALEENS FALL", "CORDERRY", "CUNGHILL", "GARVAGH", "GLENREE",
     "MEENTYCAT", "MOY", "MULREAVY", "SLIGO", "TAWNAGHMORE"}
-BANDS = [0.0, 1.0, 2.0, 3.0, 5.0, 10.0, np.inf]
+#: The sweep is dense between 3 and 10 pp because the dominance boundary -
+#: the widest band that beats today's rule on BOTH spill and equity - falls in
+#: that interval; 4/6/7/8 were added to locate it rather than assert it.
+BANDS = [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 10.0, np.inf]
 WIN_START, WIN_END = pd.Timestamp("2026-06-08 00:00"), pd.Timestamp("2026-09-05 23:59")
 
 SET_CODES = {"LOCL": "constraint", "CURL": "curtail"}

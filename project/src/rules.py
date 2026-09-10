@@ -30,8 +30,8 @@ import engine_prep as ep  # noqa: E402
 
 OUT = ep.OUT
 ROWS = list(ep.MONITORED)                # FLG_SLIGO_N1, T25221_N1, T25222_N1, FLG_SLIGO_N0
-BANDS = [0, 1, 2, 3, 5, 10, np.inf]
-BAND_NAMES = {0: "band0", 1: "band1", 2: "band2", 3: "band3", 5: "band5", 10: "band10", np.inf: "bandinf"}
+BANDS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 10, np.inf]
+BAND_NAMES = {b: ("bandinf" if np.isinf(b) else f"band{b:g}") for b in BANDS}
 RULES = ["rule1", "rule2", "rule3", "rule1N"] + list(BAND_NAMES.values())
 TOL_MW = 1e-6           # bisection tolerance on the total cut (MASTER §4.1) and residual-hour threshold
 EPS = 1e-12

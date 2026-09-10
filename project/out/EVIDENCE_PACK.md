@@ -64,23 +64,23 @@ Source `out/wpe_bound.csv`:
 | | today (b=0) | b = 3 pp | pure effectiveness |
 |---|---|---|---|
 | spill saved vs observed | 0.11 % | 3.74 % | 8.53 % |
-| **guaranteed** divergence bound | 22.41 pp | 25.11 pp | none |
-| realised divergence | 21.23 pp | 21.23 pp | 71.77 pp |
+| **guaranteed** divergence bound | 0.42 pp | 3.42 pp | none |
+| realised divergence | 1.39 pp | 3.32 pp | 32.96 pp |
 | feasibility escapes | 101 | 3 | 0 |
 
 **The asymmetry is the point.** Pro rata bounds nothing. Its equality is
 asserted at the instant of application; over this window it realised
-**33.71 pp** of divergence between the worst-hit unit and the group
-mean. The band rule at b = 3 offers an ex-ante guarantee of 25.11 pp,
+**7.41 pp** of divergence between the worst-hit unit and the group
+mean. The band rule at b = 3 offers an ex-ante guarantee of 3.42 pp,
 provable in advance and testable after the fact. A court can check a bound;
 it cannot check an intention.
 
 State honestly which comparison is which:
 
-- model against model, b = 3 costs 0.00 pp of realised
+- model against model, b = 3 costs 1.93 pp of realised
   equality against b = 0 while saving 3.74 % of spill;
-- the *guarantee* at b = 3 (25.11 pp) is tighter than pro
-  rata's *realised* 33.71 pp.
+- the *guarantee* at b = 3 (3.42 pp) is tighter than pro
+  rata's *realised* 7.41 pp.
 
 ## 6. What it would cost to run
 

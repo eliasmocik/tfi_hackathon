@@ -48,7 +48,7 @@ closed to zero the replay converges on what actually happened.
 | A2 cut <= declared availability | worst excess 0.000e+00 MW | yes |
 | A3 no negative cut | 0 negative entries | yes |
 | A4 band 0 tracks observed pro-rata | gap 0.108 % | yes |
-| A5 annual cut monotone non-increasing in b | 0 breaks; totals 11060 > 10877 > 10729 > 10658 > 10530 > 10343 > 10127 | yes |
+| A5 annual cut monotone non-increasing in b | 0 breaks; totals 11060 > 10877 > 10729 > 10658 > 10591 > 10530 > 10479 > 10436 > 10396 > 10343 > 10127 | yes |
 | A6 every half-hour feasible | 0 infeasible of 670 | yes |
 | A7 observed r matches the measurement pipeline | 15 units, worst abs diff 9.021e-16 | yes |
 
@@ -60,19 +60,23 @@ This is the single line the brief asks for in WP-B.
 
 Claim: under the band rule of width b, r_i - rbar <= b + delta for every unit
 and every half-hour, where delta is the largest single-event ratio increment.
-delta is **measured**, not assumed, at **22.41 pp**.
+delta is **measured**, not assumed, at **0.42 pp**.
 
 | band, pp | guaranteed bound, pp | realised divergence, pp | holds | escapes | escape share |
 |---|---|---|---|---|---|
-| 0 | 22.41 | 21.23 | yes | 101 | 15.1 % |
-| 1 | 23.11 | 21.23 | yes | 23 | 3.4 % |
-| 2 | 24.11 | 21.23 | yes | 6 | 0.9 % |
-| 3 | 25.11 | 21.23 | yes | 3 | 0.4 % |
-| 5 | 27.11 | 21.23 | yes | 0 | 0.0 % |
-| 10 | 32.11 | 21.23 | yes | 0 | 0.0 % |
-| inf | none | 71.77 | yes | 0 | 0.0 % |
+| 0 | 0.42 | 1.39 | NO | 101 | 15.1 % |
+| 1 | 1.43 | 1.78 | NO | 23 | 3.4 % |
+| 2 | 2.43 | 2.33 | yes | 6 | 0.9 % |
+| 3 | 3.42 | 3.32 | yes | 3 | 0.4 % |
+| 4 | 4.42 | 4.33 | yes | 0 | 0.0 % |
+| 5 | 5.43 | 5.29 | yes | 0 | 0.0 % |
+| 6 | 6.43 | 6.32 | yes | 0 | 0.0 % |
+| 7 | 7.43 | 7.29 | yes | 0 | 0.0 % |
+| 8 | 8.43 | 8.30 | yes | 0 | 0.0 % |
+| 10 | 10.43 | 10.30 | yes | 0 | 0.0 % |
+| inf | none | 32.96 | yes | 0 | 0.0 % |
 
-Observed pro rata realised **33.71 pp** of divergence over the window,
+Observed pro rata realised **7.41 pp** of divergence over the window,
 and offers **no ex-ante bound at all**. That asymmetry, not the point
 estimate, is the legal argument.
 
@@ -80,8 +84,8 @@ estimate, is the legal argument.
 
 Two different comparisons are in play and they must not be blurred:
 
-1. **Model against model.** Band 3 realises 21.23 pp against band 0's 21.23 pp - a cost of 0.00 pp - while saving 3.74 % of spill.
-2. **Guarantee against reality.** Band 3's *guaranteed* bound of 25.11 pp is tighter than pro rata's *realised* 33.71 pp. This is the dominance test as the brief states it (v2, C4),
+1. **Model against model.** Band 3 realises 3.32 pp against band 0's 1.39 pp - a cost of 1.93 pp - while saving 3.74 % of spill.
+2. **Guarantee against reality.** Band 3's *guaranteed* bound of 3.42 pp is tighter than pro rata's *realised* 7.41 pp. This is the dominance test as the brief states it (v2, C4),
    and it passes.
 
 The gap between modelled band 0 and observed pro rata is real-world mechanism
@@ -120,7 +124,9 @@ The team does not choose the weights. This is the transfer function:
 | weight on spill | winner (realised equity) | winner (guaranteed bound) |
 |---|---|---|
 | 0.00 | Today (pro rata) | Today (pro rata) |
-| 0.05 | Band 5 pp | Today (pro rata) |
+| 0.10 | Band 2 pp | Today (pro rata) |
+| 0.30 | Band 3 pp | Today (pro rata) |
+| 0.35 | Band 5 pp | Today (pro rata) |
 | 0.55 | Band 5 pp | Pure effectiveness |
 | 0.70 | Pure effectiveness | Pure effectiveness |
 
