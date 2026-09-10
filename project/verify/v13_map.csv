@@ -11,9 +11,9 @@ check,passed,detail
 10 Corderry/Cunghill claim on the page is true,True,"18.1 km vs 18.7 km, SF ratio 1.575"
 11 no-spatial-gradient statistic on the page is true,True,"Spearman +0.200, p=0.606"
 12 no interpolated surface in the page,True,"9 discrete marks, no blur/IDW/kriging"
-13 sequential ramp is monotone in lightness,True,"#eef5fd -> #0d366b, 8 steps"
-14 not colour-alone: table + size + legend present,True,"table, size key, ramp legend, aria labels"
-15 every CSS token used is defined,True,"14 used, 24 defined"
+13 sequential ramp is monotone in lightness,True,"#eef4fc -> #0d2f63, 8 steps"
+14 not colour-alone: table + size key + ramp,True,"table, size key, ramp legend, aria labels"
+15 every CSS token used is defined,True,"10 used, 15 defined"
 16 burn-in statistics recompute from source,True,"burn-in 48 half-hours, worst 0.00e+00"
 17 page is pure ASCII (charset-independent),True,no non-ASCII bytes
 18 rule views share a single colour scale,True,"RMAX spans observed, band3 and effectiveness"

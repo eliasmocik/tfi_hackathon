@@ -28,8 +28,9 @@ COUNTIES = Path("C:/src/organisers/grid_TF_Wind/data/counties_osi.gpkg")
 # Counties drawn on the main map. The study is North-West Constraint Group 3,
 # not the whole island, so the map is framed on the region rather than the
 # country: a national frame would imply a national result.
-NW_COUNTIES = ["Donegal", "Sligo", "Leitrim", "Mayo", "Roscommon",
-               "Cavan", "Longford", "Galway", "Monaghan", "Westmeath"]
+# Only the counties the group and its constrained line sit in. The rest was
+# land the study says nothing about, filling the frame with irrelevant ink.
+NW_COUNTIES = ["Donegal", "Sligo", "Leitrim", "Mayo", "Roscommon"]
 
 # The constraint being managed (MASTER section 0).
 MONITORED = ("2522", "4981")     # Flagford - Sligo 110 kV, the row that binds
@@ -113,6 +114,11 @@ def main() -> int:
                              for q in (p.geoms if p.geom_type == "MultiPolygon" else [p])])
 
     g["geometry"] = g.geometry.map(polygons_only)
+    # Dissolve to one landmass. County borders are ink that carries nothing
+    # about the constraint, and on a projected slide they read as noise; the
+    # coastline alone is enough to place the group.
+    land = g.union_all()
+    g = gpd.GeoDataFrame({"name": ["land"]}, geometry=[land], crs=g.crs)
     # simplify hard and round to ~11 m: this is a schematic of where the farms
     # are, not a survey, and the page has to stay small enough to load
     g["geometry"] = g.geometry.simplify(0.02, preserve_topology=True)
