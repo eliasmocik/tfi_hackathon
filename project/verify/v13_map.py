@@ -46,6 +46,8 @@ def main() -> int:
         return 1
     D = json.loads(m.group(1))                      # what the page actually shows
     st = pd.read_csv(OUT / "wpa_stations.csv")      # the committed truth
+    units = pd.read_csv(OUT / "wpa_units.csv")
+    band5 = units.groupby("station").cut_MWh_band5.sum()   # recommended rule
     summary = json.loads((OUT / "wpa_summary.json").read_text(encoding="utf-8"))
     sf_tab = pd.read_csv(OUT / "WP2024s42_shift_factors.csv")
     buses = pd.read_csv(NETWORK / "buses.csv", dtype={"name": str})
@@ -61,7 +63,7 @@ def main() -> int:
     for r in st.itertuples():
         p = by_stn[r.station.title()]
         for key, col in (("observed", r.observed_cut_MWh),
-                         ("band3", r.band3_cut_MWh),
+                         ("band", float(band5[r.station])),
                          ("effectiveness", r.effectiveness_cut_MWh)):
             worst = max(worst, abs(p["r"][key] - col / r.avail_MWh)); n += 1
     check("2 displayed ratios equal cut/avail from source", worst < 1e-12,
@@ -71,7 +73,7 @@ def main() -> int:
     tot_err = {}
     for key, sk in (("observed", "observed_cut_MWh"),
                     ("effectiveness", "effectiveness_cut_MWh"),
-                    ("band3", "band3pp_cut_MWh")):
+                    ("band", "band5pp_cut_MWh")):
         s = sum(p["cut"][key] for p in D["stations"])
         tot_err[key] = abs(s - summary[sk]) / summary[sk]
     check("3 station cuts sum to the group totals", max(tot_err.values()) < 1e-9,
@@ -110,10 +112,10 @@ def main() -> int:
 
     # 7 — rule ordering holds: effectiveness <= band3 <= observed
     tot = {k: sum(p["cut"][k] for p in D["stations"])
-           for k in ("observed", "band3", "effectiveness")}
-    ok = tot["effectiveness"] <= tot["band3"] <= tot["observed"] + 1e-9
-    check("7 total cut ordering eff <= band3 <= observed", ok,
-          " <= ".join(f"{tot[k]:.0f}" for k in ("effectiveness", "band3", "observed")))
+           for k in ("observed", "band", "effectiveness")}
+    ok = tot["effectiveness"] <= tot["band"] <= tot["observed"] + 1e-9
+    check("7 total cut ordering eff <= band 5 <= observed", ok,
+          " <= ".join(f"{tot[k]:.0f}" for k in ("effectiveness", "band", "observed")))
 
     # 8 — the headline on the page equals the committed saving
     save = 100 * (tot["observed"] - tot["effectiveness"]) / tot["observed"]
@@ -126,7 +128,7 @@ def main() -> int:
     T = D["trajectory"]
     okt = (len(T["t"]) == len(tr)
            and abs(T["observed"][-1] - tr.observed_maxdiv_pp.iloc[-1]) < 1e-3
-           and abs(T["band3"][-1] - tr.band3_maxdiv_pp.iloc[-1]) < 1e-3)
+           and abs(T["band5"][-1] - tr.band5_maxdiv_pp.iloc[-1]) < 1e-3)
     check("9 trajectory matches wpe_trajectory.csv", okt,
           f"{len(T['t'])} points, final observed {T['observed'][-1]:.2f} pp")
 
@@ -199,8 +201,10 @@ def main() -> int:
                       abs(v["max_after"] - col[B:].max()),
                       abs(v["median_after"] - float(np.median(col[B:]))),
                       abs(v["final"] - col[-1]))
-    check("16 burn-in statistics recompute from source", worst_b < 1e-9,
-          f"burn-in {B} half-hours, worst {worst_b:.2e}")
+    esum = json.loads((OUT / "wpe_summary.json").read_text(encoding="utf-8"))
+    warm_ok = B == int(round(float(esum["warmup_days"]) * 48))
+    check("16 warm-up statistics recompute from source", worst_b < 1e-9 and warm_ok,
+          f"warm-up {esum['warmup_days']} d = {B} half-hours, worst {worst_b:.2e}")
 
     # 17 - the page is pure ASCII, so it renders under any charset. Served
     # standalone it has no charset declaration of its own, and a literal arrow
@@ -214,6 +218,15 @@ def main() -> int:
             and "one scale" in html)
     check("18 rule views share a single colour scale", ok18,
           "RMAX spans observed, band3 and effectiveness")
+
+    # 19 - the map shows the rule the dominance analysis actually recommends
+    dom = json.loads((OUT / "wpe_dominance.json").read_text(encoding="utf-8"))
+    ok19 = (abs(D["meta"]["band_pp"] - dom["recommended_band_pp"]) < 1e-9
+            and "Band 5pp" in html
+            and abs(D["meta"]["band_saving_pct"] - dom["recommended_saving_pct"]) < 1e-9)
+    check("19 map shows the recommended band", ok19,
+          f"b = {D['meta']['band_pp']:g} pp, saving "
+          f"{D['meta']['band_saving_pct']:.2f} % (wpe_dominance.json)")
 
     df = pd.DataFrame(results, columns=["check", "passed", "detail"])
     df.to_csv(VER / "v13_map.csv", index=False)

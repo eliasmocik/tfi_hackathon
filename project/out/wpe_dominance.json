@@ -1,0 +1,32 @@
+{
+ "recommended_band_pp": 5.0,
+ "dominance_upper_bound_pp": 8.0,
+ "recommended_saving_pct": 4.8987042366568,
+ "recommended_saving_MWh": 10529.612613878484,
+ "recommended_divergence_pp": 5.286379338533495,
+ "observed_divergence_pp": 7.413715075409222,
+ "bands_that_dominate": [
+  0.0,
+  1.0,
+  2.0,
+  3.0,
+  4.0,
+  5.0
+ ],
+ "holds_in_both_halves": true,
+ "dominate_full_window_but_not_every_half": [
+  6.0,
+  7.0
+ ],
+ "synthetic_rule1_divergence_pp": {
+  "WP2024s42": 0.7191936630413148,
+  "WP2033s42": 1.2309063667926474,
+  "WP2033s43": 1.4896617566022077
+ },
+ "synthetic_note": "The synthetic model's pro rata is idealised and already near-equal, so the dominance test is not meaningful there; it is a test against what the real rule actually produced.",
+ "synthetic_saving_at_recommended_pct": {
+  "WP2024s42": 4.8845311262991755,
+  "WP2033s42": 6.875480889309749,
+  "WP2033s43": 5.941451901323111
+ }
+}

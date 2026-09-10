@@ -124,7 +124,7 @@ footer{margin-top:14px;font-family:"IBM Plex Mono",monospace;font-size:10px;
   <div>
     <div class="seg" role="group" aria-label="Rule">
       <button data-mode="observed" aria-pressed="true">Today</button>
-      <button data-mode="band3" aria-pressed="false">Band 3pp</button>
+      <button data-mode="band" aria-pressed="false">Band 5pp</button>
       <button data-mode="effectiveness" aria-pressed="false">Effectiveness</button>
       <button data-mode="sf" aria-pressed="false">Shift factor</button>
     </div>
@@ -145,7 +145,7 @@ footer{margin-top:14px;font-family:"IBM Plex Mono",monospace;font-size:10px;
 
   <aside>
     <table>
-      <thead><tr><th>Station</th><th>SF</th><th>Today</th><th>Band 3</th><th>Eff.</th></tr></thead>
+      <thead><tr><th>Station</th><th>SF</th><th>Today</th><th>Band 5</th><th>Eff.</th></tr></thead>
       <tbody id="tbody"></tbody>
     </table>
     <div class="pair">
@@ -157,7 +157,7 @@ footer{margin-top:14px;font-family:"IBM Plex Mono",monospace;font-size:10px;
 </main>
 
 <div class="traj">
-  <p class="trajcap">Worst farm's gap from group average, pp <span>from +24 h</span></p>
+  <p class="trajcap">Worst farm's gap from group average, pp <span id="warm"></span></p>
   <svg id="traj" role="img" aria-label="Worst farm's gap from the group average across the window, four rules, percentage points"></svg>
 </div>
 
@@ -174,14 +174,14 @@ const el = (t, a={}) => { const e = document.createElementNS(NS, t);
 
 const MODES = {
   observed:{get:s=>s.r.observed, kind:"seq"},
-  band3:{get:s=>s.r.band3, kind:"seq"},
+  band:{get:s=>s.r.band, kind:"seq"},
   effectiveness:{get:s=>s.r.effectiveness, kind:"seq"},
   sf:{get:s=>s.sf, kind:"sf"}
 };
 let mode = "observed";
 
 // one scale across the three rule views, so the panels compare directly
-const RMAX = Math.max(...DATA.stations.flatMap(s=>[s.r.observed,s.r.band3,s.r.effectiveness]));
+const RMAX = Math.max(...DATA.stations.flatMap(s=>[s.r.observed,s.r.band,s.r.effectiveness]));
 const SFLO = Math.min(...DATA.stations.map(s=>s.sf));
 const SFHI = Math.max(...DATA.stations.map(s=>s.sf));
 
@@ -331,7 +331,7 @@ function buildTable(){
     '<tr data-stn="' + s.station + '"><td>' + s.station + '</td>'
     + '<td class="n">' + s.sf.toFixed(3) + '</td>'
     + '<td class="n">' + pc(s.r.observed) + '</td>'
-    + '<td class="n">' + pc(s.r.band3) + '</td>'
+    + '<td class="n">' + pc(s.r.band) + '</td>'
     + '<td class="n">' + pc(s.r.effectiveness) + '</td></tr>').join("");
 }
 
@@ -343,7 +343,7 @@ function buildTraj(){
   const series = [
     {k:"observed", label:"today",         col:"var(--accent)", wid:1.8},
     {k:"bandinf",  label:"effectiveness", col:"var(--s3)",     wid:1.4},
-    {k:"band3",    label:"band 3pp",      col:"var(--s6)",     wid:1.8},
+    {k:"band5",    label:"band 5pp",      col:"var(--s6)",     wid:1.8},
     {k:"band0",    label:"band 0pp",      col:"var(--ink3)",   wid:1.2}
   ];
   // The ledger divides by cumulative availability, so the opening hours are
@@ -396,6 +396,8 @@ function buildTraj(){
 
 document.getElementById("figSave").textContent = DATA.meta.effectiveness_saving_pct.toFixed(2) + "%";
 document.getElementById("figHH").textContent = DATA.meta.half_hours;
+document.getElementById("warm").textContent =
+  "from +" + DATA.trajectory.warmup_days + " d";
 document.getElementById("foot").textContent =
   "North-West Constraint Group 3 \u00b7 " + DATA.meta.window[0].slice(0,10)
   + " to " + DATA.meta.window[1].slice(0,10) + " \u00b7 "

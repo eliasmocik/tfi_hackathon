@@ -18,8 +18,8 @@ constraint pattern is representative. It is one summer; state that.
 | Consumer EUR at 80/MWh (UNVERIFIED rate) | Consumers, taxpayers | 954 | 27472 | 33103 | 43391 | 75599 |  |
 | Consumer EUR at 100/MWh (UNVERIFIED rate) | Consumers, taxpayers | 1192 | 34339 | 41379 | 54238 | 94498 |  |
 | Consumer EUR at 120/MWh (UNVERIFIED rate) | Consumers, taxpayers | 1431 | 41207 | 49655 | 65086 | 113398 |  |
-| Equity: guaranteed bound, pp | Generators | 22.41 | 24.11 | 25.11 | 27.11 | inf |  |
-| Equity: realised divergence, pp | Generators | 21.23 | 21.23 | 21.23 | 21.23 | 71.77 |  |
+| Equity: guaranteed bound, pp | Generators | 0.42 | 2.43 | 3.42 | 5.43 | inf |  |
+| Equity: realised divergence, pp | Generators | 1.39 | 2.33 | 3.32 | 5.29 | 32.96 |  |
 | Feasibility escapes (of 638 hh) | Generators, TSO | 101 | 6 | 3 | 0 | 0 |  |
 | Operator actions per event | TSO | 1 | 1 | 1 | 1 | 1 |  |
 | Security | All | invariant | invariant | invariant | invariant | invariant |  |
@@ -40,12 +40,12 @@ So the sensitivity reduces to one dial.
 | weight on spill | weight on equity | winner (realised equity) | winner (guaranteed bound) |
 |---|---|---|---|
 | 0.00 | 1.00 | Today (pro rata) | Today (pro rata) |
-| 0.05 | 0.95 | Band 5 pp | Today (pro rata) |
-| 0.10 | 0.90 | Band 5 pp | Today (pro rata) |
-| 0.15 | 0.85 | Band 5 pp | Today (pro rata) |
-| 0.20 | 0.80 | Band 5 pp | Today (pro rata) |
-| 0.25 | 0.75 | Band 5 pp | Today (pro rata) |
-| 0.30 | 0.70 | Band 5 pp | Today (pro rata) |
+| 0.05 | 0.95 | Today (pro rata) | Today (pro rata) |
+| 0.10 | 0.90 | Band 2 pp | Today (pro rata) |
+| 0.15 | 0.85 | Band 2 pp | Today (pro rata) |
+| 0.20 | 0.80 | Band 2 pp | Today (pro rata) |
+| 0.25 | 0.75 | Band 2 pp | Today (pro rata) |
+| 0.30 | 0.70 | Band 3 pp | Today (pro rata) |
 | 0.35 | 0.65 | Band 5 pp | Today (pro rata) |
 | 0.40 | 0.60 | Band 5 pp | Today (pro rata) |
 | 0.45 | 0.55 | Band 5 pp | Today (pro rata) |

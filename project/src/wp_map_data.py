@@ -43,6 +43,12 @@ def canon(s) -> str:
 
 def main() -> int:
     st = pd.read_csv(OUT / "wpa_stations.csv")
+    # wpa_stations.csv carries band 3; the recommended rule is band 5 pp
+    # (out/wpe_dominance.json), so its per-station total is aggregated from the
+    # per-unit table and checked against the group total further down.
+    units = pd.read_csv(OUT / "wpa_units.csv")
+    band5 = units.groupby("station").cut_MWh_band5.sum()
+    dom = json.loads((OUT / "wpe_dominance.json").read_text(encoding="utf-8"))
     sf = pd.read_csv(OUT / "WP2024s42_shift_factors.csv")
     buses = pd.read_csv(NETWORK / "buses.csv", dtype={"name": str})
     summary = json.loads((OUT / "wpa_summary.json").read_text(encoding="utf-8"))
@@ -76,12 +82,12 @@ def main() -> int:
             "avail_MWh": avail,
             "cut": {
                 "observed": float(r.observed_cut_MWh),
-                "band3": float(r.band3_cut_MWh),
+                "band": float(band5[r.station]),
                 "effectiveness": float(r.effectiveness_cut_MWh),
             },
             "r": {
                 "observed": float(r.observed_cut_MWh) / avail,
-                "band3": float(r.band3_cut_MWh) / avail,
+                "band": float(band5[r.station]) / avail,
                 "effectiveness": float(r.effectiveness_cut_MWh) / avail,
             },
         })
@@ -137,7 +143,8 @@ def main() -> int:
 
     # temporal: divergence trajectory over the window (real, committed data)
     traj = pd.read_csv(OUT / "wpe_trajectory.csv", parse_dates=["StartTime"])
-    keep = ["observed_maxdiv_pp", "band3_maxdiv_pp", "bandinf_maxdiv_pp",
+    esum = json.loads((OUT / "wpe_summary.json").read_text(encoding="utf-8"))
+    keep = ["observed_maxdiv_pp", "band5_maxdiv_pp", "bandinf_maxdiv_pp",
             "band0_maxdiv_pp"]
     step = max(1, len(traj) // 400)          # thin for the browser, keep the shape
     t = traj.iloc[::step]
@@ -147,7 +154,7 @@ def main() -> int:
     # peaks at 21.2 pp in row 0. Every rule's maximum sits in the first day. The
     # honest statistics are therefore taken after 48 half-hours (24 h), and the
     # page shades that stretch so the reader can see what was excluded and why.
-    BURN = 48
+    BURN = int(round(float(esum["warmup_days"]) * 48))
     stats = {}
     for k in keep:
         v = traj[k].to_numpy(float)
@@ -161,6 +168,7 @@ def main() -> int:
         "t": [x.isoformat() for x in t.StartTime],
         "burn_in": BURN,
         "burn_in_hours": BURN // 2,
+        "warmup_days": float(esum["warmup_days"]),
         "stats": stats,
         **{k.replace("_maxdiv_pp", ""): [round(float(v), 4) for v in t[k]] for k in keep},
     }
@@ -172,7 +180,8 @@ def main() -> int:
             "units": summary["units"],
             "observed_cut_MWh": summary["observed_cut_MWh"],
             "effectiveness_saving_pct": summary["effectiveness_saving_pct"],
-            "band3_saving_pct": summary["band3pp_saving_pct"],
+            "band_pp": float(dom["recommended_band_pp"]),
+            "band_saving_pct": summary["band5pp_saving_pct"],
             "source": "out/wpa_stations.csv, out/wpa_summary.json, "
                       "out/wpe_trajectory.csv (all as committed)",
         },

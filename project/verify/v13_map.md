@@ -16,11 +16,11 @@ source, and are recorded here with their results:
 |---|---|---|---|
 | 1 | station set matches wpa_stations.csv | pass | 9 stations |
 | 2 | displayed ratios equal cut/avail from source | pass | 27 values, worst 0.00e+00 |
-| 3 | station cuts sum to the group totals | pass | observed 1.6e-16 effectiveness 0.0e+00 band3 0.0e+00 |
+| 3 | station cuts sum to the group totals | pass | observed 1.6e-16 effectiveness 0.0e+00 band 1.7e-16 |
 | 4 | shift factors match WP2024s42_shift_factors.csv | pass | worst 2.78e-17 |
 | 5 | coordinates are the model's bus positions | pass | worst 0.00e+00 deg |
 | 6 | stations fall in their expected county | pass | all 9 correct |
-| 7 | total cut ordering eff <= band3 <= observed | pass | 10127 <= 10658 <= 11072 |
+| 7 | total cut ordering eff <= band 5 <= observed | pass | 10127 <= 10530 <= 11072 |
 | 8 | headline saving reproduces from station rows | pass | 8.5349% vs 8.5349% |
 | 9 | trajectory matches wpe_trajectory.csv | pass | 670 points, final observed 3.00 pp |
 | 10 | 10 Corderry/Cunghill claim on the page is true | pass | 18.1 km vs 18.7 km, SF ratio 1.575 |
@@ -29,11 +29,12 @@ source, and are recorded here with their results:
 | 13 | 13 sequential ramp is monotone in lightness | pass | #eef4fc -> #0d2f63, 8 steps |
 | 14 | 14 not colour-alone: table + size key + ramp | pass | table, size key, ramp legend, aria labels |
 | 15 | 15 every CSS token used is defined | pass | 10 used, 15 defined |
-| 16 | 16 burn-in statistics recompute from source | pass | burn-in 48 half-hours, worst 0.00e+00 |
+| 16 | 16 warm-up statistics recompute from source | pass | warm-up 7.0 d = 336 half-hours, worst 0.00e+00 |
 | 17 | 17 page is pure ASCII (charset-independent) | pass | no non-ASCII bytes |
 | 18 | 18 rule views share a single colour scale | pass | RMAX spans observed, band3 and effectiveness |
+| 19 | 19 map shows the recommended band | pass | b = 5 pp, saving 4.90 % (wpe_dominance.json) |
 
-**18 of 18 checks pass.**
+**19 of 19 checks pass.**
 
 ## Design parses
 

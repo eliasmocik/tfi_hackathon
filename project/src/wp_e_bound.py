@@ -26,6 +26,7 @@ Outputs out/wpe_bound.csv, out/wpe_trajectory.csv and out/wpe_summary.json.
 from __future__ import annotations
 
 import json
+import os
 
 import numpy as np
 import pandas as pd
@@ -33,6 +34,20 @@ import pandas as pd
 import wp_a_replay as W
 
 OUT = W.OUT
+
+#: Days at the start of the window during which the ledger accumulates but the
+#: divergence and delta statistics are NOT recorded.
+#:
+#: r_i = cumulative cut / cumulative availability divides by a denominator that
+#: starts at zero, so in the opening hours a single instruction moves a unit's
+#: ratio by tens of percentage points and the "largest single-event increment"
+#: is a property of the empty ledger, not of the rule. Measured here: with no
+#: warm-up delta is 22.1 pp and every band shows the same 21.2 pp realised
+#: divergence; after one week they separate and track b (see
+#: wpe_warmup_sensitivity.csv, which reports the whole range so the choice is
+#: visible rather than tuned). A real annual scheme would either seed the
+#: ledger from the previous year or state the same warm-up in its licence text.
+WARMUP_DAYS = float(os.environ.get("WARMUP_DAYS", 7.0))
 
 
 def main() -> int:
@@ -64,6 +79,12 @@ def main() -> int:
     obs_max_div = 0.0
     traj = []
     n_hh = 0
+    t0 = meas.StartTime.min()
+    # sensitivity: the same statistics under a range of warm-ups
+    SENS = [0.0, 3.0, 7.0, 14.0]
+    sens_div = {(w, b): 0.0 for w in SENS for b in bands}
+    sens_delta = {(w, b): 0.0 for w in SENS for b in bands}
+    sens_obs = {w: 0.0 for w in SENS}
 
     for t, g in meas.groupby("StartTime", sort=True):
         idx = np.array([uidx[u] for u in g.ResourceName])
@@ -81,7 +102,14 @@ def main() -> int:
         av_all = np.maximum(cum_avail, 1e-9)
         r_obs = obs_cut / av_all
         rbar_obs = obs_cut.sum() / cum_avail.sum() if cum_avail.sum() > 0 else 0.0
-        obs_max_div = max(obs_max_div, float((r_obs - rbar_obs).max()))
+        age_days = (t - t0).total_seconds() / 86400.0
+        counted = age_days >= WARMUP_DAYS
+        obs_div_now = float((r_obs - rbar_obs).max())
+        if counted:
+            obs_max_div = max(obs_max_div, obs_div_now)
+        for w in SENS:
+            if age_days >= w:
+                sens_obs[w] = max(sens_obs[w], obs_div_now)
 
         row = {"StartTime": t}
         for b in bands:
@@ -104,15 +132,31 @@ def main() -> int:
             r_after = cum_cut[b] / np.maximum(cum_avail, 1e-9)
             rbar_all = cum_cut[b].sum() / cum_avail.sum() if cum_avail.sum() > 0 else 0.0
             div = float((r_after - rbar_all).max())
-            max_div[b] = max(max_div[b], div)
             step = float((cum_cut[b][idx] / av_i - r_before).max())
-            delta[b] = max(delta[b], step)
+            if counted:
+                max_div[b] = max(max_div[b], div)
+                delta[b] = max(delta[b], step)
+            for w in SENS:
+                if age_days >= w:
+                    sens_div[(w, b)] = max(sens_div[(w, b)], div)
+                    sens_delta[(w, b)] = max(sens_delta[(w, b)], step)
             row[f"band{W.band_key(b)}_maxdiv_pp"] = 100.0 * div
         row["observed_maxdiv_pp"] = 100.0 * float((r_obs - rbar_obs).max())
         traj.append(row)
 
     tj = pd.DataFrame(traj)
     tj.to_csv(OUT / "wpe_trajectory.csv", index=False)
+
+    sens_rows = []
+    for w in SENS:
+        for b in bands:
+            sens_rows.append({
+                "warmup_days": w, "band_pp": b,
+                "realised_max_divergence_pp": 100.0 * sens_div[(w, b)],
+                "delta_pp": 100.0 * sens_delta[(w, b)],
+                "observed_pro_rata_max_divergence_pp": 100.0 * sens_obs[w],
+            })
+    pd.DataFrame(sens_rows).to_csv(OUT / "wpe_warmup_sensitivity.csv", index=False)
 
     rows = []
     for b in bands:
@@ -132,6 +176,7 @@ def main() -> int:
     bd.to_csv(OUT / "wpe_bound.csv", index=False)
 
     summary = {
+        "warmup_days": WARMUP_DAYS,
         "half_hours": n_hh,
         "units": n,
         "observed_pro_rata_max_divergence_pp": 100.0 * obs_max_div,
@@ -144,7 +189,8 @@ def main() -> int:
     print(bd.to_string(index=False))
     print(f"\nobserved pro-rata max divergence: {100 * obs_max_div:.3f} pp "
           f"(no ex-ante bound exists for it)")
-    print(f"half-hours: {n_hh}")
+    print(f"half-hours: {n_hh}   warm-up: {WARMUP_DAYS:g} days "
+          f"(statistics recorded after it; the ledger accumulates throughout)")
     return 0
 
 
