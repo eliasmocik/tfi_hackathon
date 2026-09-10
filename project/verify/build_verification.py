@@ -41,6 +41,8 @@ CHECKS = {
          "cuts_band3.parquet (the HANDOFF's most valuable check)", "v11_band_rule"),
     12: ("The same re-implementation at b = infinity - the control that isolates "
          "path dependence", "v11_band_inf"),
+    13: ("The constraint-group map: every displayed figure re-derived, plus the "
+         "rendered page checked in a browser", "v13_map"),
 }
 
 
@@ -163,6 +165,19 @@ def main() -> int:
         "no headline number moves | Break the tie deterministically (bus id as "
         "secondary sort key). Relevant to hackathon problem 3.2, which proposes "
         "generating groups from this threshold. |",
+        "| D10 | The divergence trajectory needs a burn-in and was being quoted "
+        "without one | `r_i` divides cumulative cut by cumulative availability, so "
+        "in the opening hours the denominator is a single half-hour. **Every** "
+        "rule's maximum falls in the first day, and band 0 pp - the most equal "
+        "rule that can exist - peaks at 21.23 pp in row 0. The 20.52 pp quoted "
+        "for observed pro rata is that artefact, not a steady state | **Yes.** "
+        "`out/EVIDENCE_PACK.md` and `out/WP_RESULTS.md` both quote 20.52 pp | "
+        "Quote statistics after a 24-hour (48 half-hour) burn-in instead. On that "
+        "basis observed pro rata runs a median 4.85 pp and band 3 pp a median "
+        "3.04 pp, so **band 3 is tighter than today's rule and cheaper at the "
+        "same time** - a stronger claim than the one the artefact supported. The "
+        "map states it this way; the two generated documents still need "
+        "regenerating. |",
         "| D9 | The band rule is **path-dependent**: r_i feeds the next hour's "
         "eligible set | an independent re-implementation reproduces the total cut "
         "to 4.9e-4 and the year-end ratio spread to 0.13 pp (13.74 vs 13.87 pp), "
