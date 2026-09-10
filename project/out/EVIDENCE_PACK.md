@@ -36,10 +36,10 @@ was actually under constraint, computes the flow relief the observed cut
 delivered, and asks what the cheapest cut delivering **the same relief**
 would have been. Source `out/wpa_summary.json`.
 
-- Window 2026-06-09 23:00:00 to 2026-09-05 23:30:00, 638 half-hours, 15 units.
-- Observed cut **10,844 MWh**.
-- Effectiveness-ordered cut delivering identical relief **9,915 MWh**.
-- **Excess spill under pro rata: 929 MWh, 8.57 %.**
+- Window 2026-06-08 23:00:00 to 2026-09-05 23:30:00, 670 half-hours, 15 units.
+- Observed cut **11,072 MWh**.
+- Effectiveness-ordered cut delivering identical relief **10,127 MWh**.
+- **Excess spill under pro rata: 945 MWh, 8.53 %.**
 
 This uses real instructions and real availability. No synthetic weather
 enters it. The counterfactual is constrained to the same relief, so it is
@@ -47,7 +47,7 @@ not a security trade.
 
 ## 4. Security is not traded
 
-Every rule delivers the observed relief exactly (worst rel dev 3.344e-16, `out/wpa_assertions.csv`).
+Every rule delivers the observed relief exactly (worst rel dev 4.309e-16, `out/wpa_assertions.csv`).
 Grid stability does not consider economics, and nothing here asks it to:
 efficiency and equity operate only inside the security-feasible set.
 
@@ -63,24 +63,24 @@ Source `out/wpe_bound.csv`:
 
 | | today (b=0) | b = 3 pp | pure effectiveness |
 |---|---|---|---|
-| spill saved vs observed | 0.24 % | 3.75 % | 8.57 % |
-| **guaranteed** divergence bound | 6.22 pp | 9.22 pp | none |
-| realised divergence | 5.80 pp | 6.13 pp | 45.24 pp |
-| feasibility escapes | 100 | 2 | 0 |
+| spill saved vs observed | 0.11 % | 3.74 % | 8.53 % |
+| **guaranteed** divergence bound | 22.41 pp | 25.11 pp | none |
+| realised divergence | 21.23 pp | 21.23 pp | 71.77 pp |
+| feasibility escapes | 101 | 3 | 0 |
 
 **The asymmetry is the point.** Pro rata bounds nothing. Its equality is
 asserted at the instant of application; over this window it realised
-**20.52 pp** of divergence between the worst-hit unit and the group
-mean. The band rule at b = 3 offers an ex-ante guarantee of 9.22 pp,
+**33.71 pp** of divergence between the worst-hit unit and the group
+mean. The band rule at b = 3 offers an ex-ante guarantee of 25.11 pp,
 provable in advance and testable after the fact. A court can check a bound;
 it cannot check an intention.
 
 State honestly which comparison is which:
 
-- model against model, b = 3 costs 0.33 pp of realised
-  equality against b = 0 while saving 3.75 % of spill;
-- the *guarantee* at b = 3 (9.22 pp) is tighter than pro
-  rata's *realised* 20.52 pp.
+- model against model, b = 3 costs 0.00 pp of realised
+  equality against b = 0 while saving 3.74 % of spill;
+- the *guarantee* at b = 3 (25.11 pp) is tighter than pro
+  rata's *realised* 33.71 pp.
 
 ## 6. What it would cost to run
 
@@ -88,9 +88,9 @@ One operator action per event, as today. The eligible list is
 precomputed and refreshed on a slow cadence, not solved in the control
 room. Source `out/wpc_burden.csv`.
 
-- k = 2 sub-groups, daily refresh: **54.1 %** of the
+- k = 2 sub-groups, daily refresh: **54.4 %** of the
   ideal gain retained.
-- k = 3: 43.7 %.
+- k = 3: 40.3 %.
 
 The brief's own test for implementability (at least 50 % retained at
 k <= 3, daily) is **not met**: it holds at
@@ -178,7 +178,7 @@ weaker line of evidence, kept for the frontier shape only:
 
 - rule 2 against rule 1: D_ratio 0.856, i.e. pro
   rata spills 16.8 % more over a
-  synthetic year, against the measured 8.57 % on real data.
+  synthetic year, against the measured 8.53 % on real data.
 - The two agree in direction and differ in size, which is what one
   should expect: the synthetic year has more binding hours and a
   different fleet. Report the measured number as the headline.

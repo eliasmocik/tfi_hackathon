@@ -3,24 +3,24 @@
 The team does not select the weights. The SEM Committee, CRU or DECC does.
 This table is the transfer function; the weights are the policy choice.
 
-Window: 2026-06-09 23:00:00 to 2026-09-05 23:30:00 (88.0 days, 638 half-hours with relief, 15 units).
+Window: 2026-06-08 23:00:00 to 2026-09-05 23:30:00 (89.0 days, 670 half-hours with relief, 15 units).
 Annualised columns scale the window linearly, which assumes the summer
 constraint pattern is representative. It is one summer; state that.
 
 | criterion | serves | Today (pro rata) | Band 2 pp | Band 3 pp | Band 5 pp | Pure effectiveness | weight |
 |---|---|---|---|---|---|---|---|
-| Spill, MWh (window) | Generators, carbon, consumers | 10818.9 | 10519.5 | 10437.8 | 10317.2 | 9915.3 |  |
-| Spill saved vs today, MWh | All | 25.5 | 325.0 | 406.6 | 527.2 | 929.2 |  |
-| Spill saved, % | All | 0.24 | 3.00 | 3.75 | 4.86 | 8.57 |  |
-| Spill saved, MWh/yr (scaled) | All | 106 | 1348 | 1686 | 2186 | 3853 |  |
-| Consumer EUR at 40/MWh (UNVERIFIED rate) | Consumers, taxpayers | 1021 | 13000 | 16265 | 21090 | 37167 |  |
-| Consumer EUR at 60/MWh (UNVERIFIED rate) | Consumers, taxpayers | 1531 | 19499 | 24398 | 31635 | 55750 |  |
-| Consumer EUR at 80/MWh (UNVERIFIED rate) | Consumers, taxpayers | 2042 | 25999 | 32530 | 42180 | 74333 |  |
-| Consumer EUR at 100/MWh (UNVERIFIED rate) | Consumers, taxpayers | 2552 | 32499 | 40663 | 52725 | 92917 |  |
-| Consumer EUR at 120/MWh (UNVERIFIED rate) | Consumers, taxpayers | 3063 | 38999 | 48795 | 63270 | 111500 |  |
-| Equity: guaranteed bound, pp | Generators | 6.22 | 8.22 | 9.22 | 11.22 | inf |  |
-| Equity: realised divergence, pp | Generators | 5.80 | 5.80 | 6.13 | 9.52 | 45.24 |  |
-| Feasibility escapes (of 638 hh) | Generators, TSO | 100 | 7 | 2 | 0 | 0 |  |
+| Spill, MWh (window) | Generators, carbon, consumers | 11060.1 | 10728.6 | 10658.2 | 10529.6 | 10127.0 |  |
+| Spill saved vs today, MWh | All | 11.9 | 343.4 | 413.8 | 542.4 | 945.0 |  |
+| Spill saved, % | All | 0.11 | 3.10 | 3.74 | 4.90 | 8.53 |  |
+| Spill saved, MWh/yr (scaled) | All | 49 | 1408 | 1697 | 2224 | 3875 |  |
+| Consumer EUR at 40/MWh (UNVERIFIED rate) | Consumers, taxpayers | 477 | 13736 | 16552 | 21695 | 37799 |  |
+| Consumer EUR at 60/MWh (UNVERIFIED rate) | Consumers, taxpayers | 715 | 20604 | 24827 | 32543 | 56699 |  |
+| Consumer EUR at 80/MWh (UNVERIFIED rate) | Consumers, taxpayers | 954 | 27472 | 33103 | 43391 | 75599 |  |
+| Consumer EUR at 100/MWh (UNVERIFIED rate) | Consumers, taxpayers | 1192 | 34339 | 41379 | 54238 | 94498 |  |
+| Consumer EUR at 120/MWh (UNVERIFIED rate) | Consumers, taxpayers | 1431 | 41207 | 49655 | 65086 | 113398 |  |
+| Equity: guaranteed bound, pp | Generators | 22.41 | 24.11 | 25.11 | 27.11 | inf |  |
+| Equity: realised divergence, pp | Generators | 21.23 | 21.23 | 21.23 | 21.23 | 71.77 |  |
+| Feasibility escapes (of 638 hh) | Generators, TSO | 101 | 6 | 3 | 0 | 0 |  |
 | Operator actions per event | TSO | 1 | 1 | 1 | 1 | 1 |  |
 | Security | All | invariant | invariant | invariant | invariant | invariant |  |
 | Carbon, tCO2 (UNVERIFIED factor) | Third parties, State | - | - | - | - | - |  |
@@ -40,13 +40,13 @@ So the sensitivity reduces to one dial.
 | weight on spill | weight on equity | winner (realised equity) | winner (guaranteed bound) |
 |---|---|---|---|
 | 0.00 | 1.00 | Today (pro rata) | Today (pro rata) |
-| 0.05 | 0.95 | Band 2 pp | Today (pro rata) |
-| 0.10 | 0.90 | Band 3 pp | Today (pro rata) |
-| 0.15 | 0.85 | Band 3 pp | Today (pro rata) |
-| 0.20 | 0.80 | Band 3 pp | Today (pro rata) |
-| 0.25 | 0.75 | Band 3 pp | Today (pro rata) |
-| 0.30 | 0.70 | Band 3 pp | Today (pro rata) |
-| 0.35 | 0.65 | Band 3 pp | Today (pro rata) |
+| 0.05 | 0.95 | Band 5 pp | Today (pro rata) |
+| 0.10 | 0.90 | Band 5 pp | Today (pro rata) |
+| 0.15 | 0.85 | Band 5 pp | Today (pro rata) |
+| 0.20 | 0.80 | Band 5 pp | Today (pro rata) |
+| 0.25 | 0.75 | Band 5 pp | Today (pro rata) |
+| 0.30 | 0.70 | Band 5 pp | Today (pro rata) |
+| 0.35 | 0.65 | Band 5 pp | Today (pro rata) |
 | 0.40 | 0.60 | Band 5 pp | Today (pro rata) |
 | 0.45 | 0.55 | Band 5 pp | Today (pro rata) |
 | 0.50 | 0.50 | Band 5 pp | Today (pro rata) |

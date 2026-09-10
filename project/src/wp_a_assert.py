@@ -101,7 +101,13 @@ def main() -> int:
     # A7: the replay's own observed-cut bookkeeping against the separate
     # measurement pipeline, which reaches the same quantity by a different route
     a7_worst, a7_n = float("nan"), 0
+    # Prefer the re-run in verify/repro when it exists (it is the measurement
+    # pipeline on the *same* BM window as this replay). Fall back to the
+    # committed out/measurement_units.csv, which is the right target whenever
+    # data/ and out/ are on the same window.
     mu = OUT.parent / "verify" / "repro" / "measurement_units.csv"
+    if not mu.exists():
+        mu = OUT / "measurement_units.csv"
     wu = OUT / "wpa_units.csv"
     if mu.exists() and wu.exists():
         m = pd.read_csv(mu).set_index("unit")

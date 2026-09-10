@@ -34,6 +34,14 @@ DATA, OUT = ROOT / "data", ROOT / "out"
 # shift factor - MW of relief per MW cut - is the negated raw PTDF difference.
 SF_COL, SF_SIGN = "SF_FLG_SLIGO_N1", -1.0
 
+#: Shift factors closer than this are physically indistinguishable and are
+#: treated as tied. The model's own reproducibility is ~1e-12 but the DC
+#: approximation is good to a few percent, so any ordering inside 1e-4 is
+#: noise. The real spread across CG3 is 0.187 to 0.295, three orders of
+#: magnitude wider, so no genuine difference is masked. Set 0 for strict
+#: one-at-a-time ordering (the behaviour before 2026-09-10).
+SF_TIE_TOL = float(__import__("os").environ.get("SF_TIE_TOL", 1e-4))
+
 CG1_STATIONS = {"ARDNAGAPPARY", "BINBANE", "LENALEA", "TRILLICK"}
 CG3_STATIONS = CG1_STATIONS | {
     "CATHALEENS FALL", "CORDERRY", "CUNGHILL", "GARVAGH", "GLENREE",
@@ -122,8 +130,37 @@ def station_shift_factors() -> pd.Series:
     return pd.Series(out, name="SF_eff")
 
 
-def greedy_to_relief(sf, cap, R, eligible=None):
+def tie_groups(sf, tol=SF_TIE_TOL):
+    """Indices banded by shift factor, most effective band first.
+
+    A unit joins the open band while its shift factor is within ``tol`` of that
+    band's *first* (highest) member, so a band is never wider than ``tol`` -
+    single-linkage chaining cannot stretch it. With ``tol = 0`` every unit is
+    its own band and the caller reverts to strict one-at-a-time ordering.
+    """
+    order = np.argsort(-sf, kind="stable")
+    bands, cur = [], [order[0]]
+    for i in order[1:]:
+        if sf[cur[0]] - sf[i] < tol:
+            cur.append(i)
+        else:
+            bands.append(np.array(cur, dtype=int))
+            cur = [i]
+    bands.append(np.array(cur, dtype=int))
+    return bands
+
+
+def greedy_to_relief(sf, cap, R, eligible=None, tol=SF_TIE_TOL):
     """Cut in descending shift factor until the relief R is delivered.
+
+    Units whose shift factors agree to within ``tol`` are one band and share
+    that band's cut **pro rata on declared availability**, exactly as MASTER
+    section 0 treats several farms at one station. Without this the four
+    Donegal stations whose shift factors agree to 1.1e-5 (Meentycat, Trillick,
+    Lenalea, Binbane) are ordered by float noise in the sixth decimal, and a
+    third of the effectiveness cut is allocated by that noise: the totals are
+    unaffected, because the band members are equally effective, but the
+    per-station split is an artefact of the sort rather than a result.
 
     Eligible units are taken first; if they cannot reach R the remaining units
     follow in the same descending-effectiveness order (the feasibility escape
@@ -132,16 +169,26 @@ def greedy_to_relief(sf, cap, R, eligible=None):
     c = np.zeros_like(cap)
     if R <= 0:
         return c
-    order = np.argsort(-sf)
-    if eligible is not None:
-        order = np.concatenate([order[eligible[order]], order[~eligible[order]]])
+    bands = tie_groups(sf, tol)
+    passes = [True, False] if eligible is not None else [None]
     remaining = R
-    for i in order:
-        if remaining <= 1e-9 or sf[i] <= 0 or cap[i] <= 0:
-            continue
-        take = min(cap[i], remaining / sf[i])
-        c[i] = take
-        remaining -= take * sf[i]
+    for want in passes:
+        for band in bands:
+            if remaining <= 1e-9:
+                break
+            idx = band if want is None else band[eligible[band] == want]
+            idx = idx[(sf[idx] > 0) & (cap[idx] > 0)]
+            if idx.size == 0:
+                continue
+            # Proportional to availability: every member scales by the same
+            # alpha, so none saturates before another and the band is exhausted
+            # only when alpha reaches 1.
+            band_relief = float(np.dot(sf[idx], cap[idx]))
+            if band_relief <= 0:
+                continue
+            alpha = min(1.0, remaining / band_relief)
+            c[idx] = alpha * cap[idx]
+            remaining -= alpha * band_relief
     return c
 
 
